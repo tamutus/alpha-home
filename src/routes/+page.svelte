@@ -81,7 +81,7 @@
     color: #58a6ff;
     font-size: 0.55rem;
     line-height: 1.0;
-    text-align: center;
+    text-align: left;
   }
 
   .content {
