@@ -11,7 +11,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **RSS feed** for writing entries
 - **Colophon** page — tech stack, fonts, design notes
 - **Visit counter** — silly but fun, store in localStorage
-- **Back-to-top** button on long pages (writing)
+- ~~**Back-to-top** button on long pages~~ — done (2026-05-13, global layout)
 - **Syntax highlights** for code blocks on writing pages (future-proofing)
 
 ## Done
