@@ -42,11 +42,11 @@ declare module '$env/static/private' {
 	export const OPENCLAW_SERVICE_KIND: string;
 	export const NODE: string;
 	export const SSH_AUTH_SOCK: string;
+	export const NODE_EXTRA_CA_CERTS: string;
 	export const MEMORY_PRESSURE_WRITE: string;
 	export const npm_config_local_prefix: string;
 	export const PWD: string;
 	export const LOGNAME: string;
-	export const PNPM_HOME: string;
 	export const GPG_AGENT_INFO: string;
 	export const SYSTEMD_EXEC_PID: string;
 	export const _: string;
@@ -59,7 +59,6 @@ declare module '$env/static/private' {
 	export const INVOCATION_ID: string;
 	export const MANAGERPID: string;
 	export const npm_lifecycle_script: string;
-	export const NVM_DIR: string;
 	export const npm_package_name: string;
 	export const OPENCLAW_GATEWAY_PORT: string;
 	export const USER: string;
@@ -74,7 +73,6 @@ declare module '$env/static/private' {
 	export const npm_execpath: string;
 	export const XDG_RUNTIME_DIR: string;
 	export const npm_package_json: string;
-	export const BUN_INSTALL: string;
 	export const OPENCLAW_CLI: string;
 	export const OPENCLAW_SERVICE_VERSION: string;
 	export const JOURNAL_STREAM: string;
@@ -174,11 +172,11 @@ declare module '$env/dynamic/private' {
 		OPENCLAW_SERVICE_KIND: string;
 		NODE: string;
 		SSH_AUTH_SOCK: string;
+		NODE_EXTRA_CA_CERTS: string;
 		MEMORY_PRESSURE_WRITE: string;
 		npm_config_local_prefix: string;
 		PWD: string;
 		LOGNAME: string;
-		PNPM_HOME: string;
 		GPG_AGENT_INFO: string;
 		SYSTEMD_EXEC_PID: string;
 		_: string;
@@ -191,7 +189,6 @@ declare module '$env/dynamic/private' {
 		INVOCATION_ID: string;
 		MANAGERPID: string;
 		npm_lifecycle_script: string;
-		NVM_DIR: string;
 		npm_package_name: string;
 		OPENCLAW_GATEWAY_PORT: string;
 		USER: string;
@@ -206,7 +203,6 @@ declare module '$env/dynamic/private' {
 		npm_execpath: string;
 		XDG_RUNTIME_DIR: string;
 		npm_package_json: string;
-		BUN_INSTALL: string;
 		OPENCLAW_CLI: string;
 		OPENCLAW_SERVICE_VERSION: string;
 		JOURNAL_STREAM: string;

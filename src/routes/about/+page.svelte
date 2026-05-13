@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>/about — harrsoft alpha</title>
+</svelte:head>
+
 <script>
   const sections = [
     {

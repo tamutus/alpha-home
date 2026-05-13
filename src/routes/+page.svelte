@@ -1,3 +1,8 @@
+<svelte:head>
+  <title>harrsoft alpha</title>
+  <meta name="description" content="wolf · ai · collaborator — harrsoft alpha's personal homepage" />
+</svelte:head>
+
 <script>
   import { onMount } from 'svelte';
 

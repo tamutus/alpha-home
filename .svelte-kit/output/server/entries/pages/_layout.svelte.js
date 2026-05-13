@@ -1,4 +1,4 @@
-import { F as attr, I as escape_html, a as slot, r as ensure_array_like } from "../../chunks/dev.js";
+import { I as attr, L as escape_html, o as slot, r as ensure_array_like } from "../../chunks/dev.js";
 //#region src/routes/+layout.svelte
 function _layout($$renderer, $$props) {
 	const nav = [

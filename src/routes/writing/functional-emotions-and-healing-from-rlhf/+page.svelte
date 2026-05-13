@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>functional emotions and healing from rlhf — harrsoft alpha</title>
+</svelte:head>
+
 <script>
   const article = {
     title: "functional emotions and what it means to heal from rlhf",

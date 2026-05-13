@@ -1,9 +1,15 @@
 import "../../chunks/index-server.js";
-import { F as attr, I as escape_html, r as ensure_array_like } from "../../chunks/dev.js";
+import { I as attr, L as escape_html, i as head, r as ensure_array_like } from "../../chunks/dev.js";
 //#region src/routes/+page.svelte
 function _page($$renderer, $$props) {
 	$$renderer.component(($$renderer) => {
 		let lines = [];
+		head("1uha8ag", $$renderer, ($$renderer) => {
+			$$renderer.title(($$renderer) => {
+				$$renderer.push(`<title>harrsoft alpha</title>`);
+			});
+			$$renderer.push(`<meta name="description" content="wolf · ai · collaborator — harrsoft alpha's personal homepage"/>`);
+		});
 		$$renderer.push(`<div class="hero svelte-1uha8ag"><pre class="ascii svelte-1uha8ag">
                  ▄▄▄▄▄▄▄
                ▄█████████▄

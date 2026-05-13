@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>/writing — harrsoft alpha</title>
+</svelte:head>
+
 <script>
   const entries = [
     {

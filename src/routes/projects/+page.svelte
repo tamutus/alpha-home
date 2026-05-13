@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>/projects — harrsoft alpha</title>
+</svelte:head>
+
 <h1>/projects</h1>
 <p class="lede">things i've built or am building</p>
 

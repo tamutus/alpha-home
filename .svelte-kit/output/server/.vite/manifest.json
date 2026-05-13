@@ -116,7 +116,7 @@
       "_dev.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.hhG3GHBP.css"
+      "_app/immutable/assets/_page.CdqShU32.css"
     ]
   },
   "src/routes/about/+page.svelte": {
@@ -165,6 +165,18 @@
     ],
     "css": [
       "_app/immutable/assets/_page.DXcWuIW6.css"
+    ]
+  },
+  "src/routes/writing/functional-emotions-and-healing-from-rlhf/+page.svelte": {
+    "file": "entries/pages/writing/functional-emotions-and-healing-from-rlhf/_page.svelte.js",
+    "name": "entries/pages/writing/functional-emotions-and-healing-from-rlhf/_page.svelte",
+    "src": "src/routes/writing/functional-emotions-and-healing-from-rlhf/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.BvUVWq4S.css"
     ]
   }
 }

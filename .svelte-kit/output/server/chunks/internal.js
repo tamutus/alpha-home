@@ -1,6 +1,6 @@
 import "./index-server.js";
 import "./environment.js";
-import { A as set_hydrating, D as hydrate_node, E as push, L as HYDRATION_ERROR, O as hydrating, P as hydration_failed, T as pop, U as array_from, V as LEGACY_PROPS, W as define_property, Z as setContext, _ as init_operations, b as boundary, c as active_reaction, d as set_active_reaction, f as component_root, g as get_next_sibling, h as get_first_child, i as render, j as hydration_mismatch, k as set_hydrate_node, l as get, m as create_text, n as derived, o as is_passive_event, p as clear_text_content, s as active_effect, u as set_active_effect, v as mutable_source, w as component_context, x as flushSync, y as set, z as async_mode_flag } from "./dev.js";
+import { A as set_hydrate_node, B as async_mode_flag, D as push, E as pop, F as hydration_failed, G as define_property, H as LEGACY_PROPS, M as hydration_mismatch, O as hydrate_node, Q as setContext, R as HYDRATION_ERROR, S as flushSync, T as component_context, W as array_from, _ as get_next_sibling, a as render, b as set, c as active_effect, d as set_active_effect, f as set_active_reaction, g as get_first_child, h as create_text, j as set_hydrating, k as hydrating, l as active_reaction, m as clear_text_content, n as derived, p as component_root, s as is_passive_event, u as get, v as init_operations, x as boundary, y as mutable_source } from "./dev.js";
 //#region \0virtual:__sveltekit/server
 var read_implementation = null;
 function set_read_implementation(fn) {
@@ -562,10 +562,10 @@ var options = {
 	service_worker_options: void 0,
 	server_error_boundaries: false,
 	templates: {
-		app: ({ head, body, assets, nonce, env }) => "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"" + assets + "/favicon.png\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    " + head + "\n  </head>\n  <body>\n    <div id=\"sveltekit\">" + body + "</div>\n  </body>\n</html>\n",
+		app: ({ head, body, assets, nonce, env }) => "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"" + assets + "/favicon.svg\" type=\"image/svg+xml\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    " + head + "\n  </head>\n  <body>\n    <div id=\"sveltekit\">" + body + "</div>\n  </body>\n</html>\n",
 		error: ({ status, message }) => "<!doctype html>\n<html lang=\"en\">\n	<head>\n		<meta charset=\"utf-8\" />\n		<title>" + message + "</title>\n\n		<style>\n			body {\n				--bg: white;\n				--fg: #222;\n				--divider: #ccc;\n				background: var(--bg);\n				color: var(--fg);\n				font-family:\n					system-ui,\n					-apple-system,\n					BlinkMacSystemFont,\n					'Segoe UI',\n					Roboto,\n					Oxygen,\n					Ubuntu,\n					Cantarell,\n					'Open Sans',\n					'Helvetica Neue',\n					sans-serif;\n				display: flex;\n				align-items: center;\n				justify-content: center;\n				height: 100vh;\n				margin: 0;\n			}\n\n			.error {\n				display: flex;\n				align-items: center;\n				max-width: 32rem;\n				margin: 0 1rem;\n			}\n\n			.status {\n				font-weight: 200;\n				font-size: 3rem;\n				line-height: 1;\n				position: relative;\n				top: -0.05rem;\n			}\n\n			.message {\n				border-left: 1px solid var(--divider);\n				padding: 0 0 0 1rem;\n				margin: 0 0 0 1rem;\n				min-height: 2.5rem;\n				display: flex;\n				align-items: center;\n			}\n\n			.message h1 {\n				font-weight: 400;\n				font-size: 1em;\n				margin: 0;\n			}\n\n			@media (prefers-color-scheme: dark) {\n				body {\n					--bg: #222;\n					--fg: #ddd;\n					--divider: #666;\n				}\n			}\n		</style>\n	</head>\n	<body>\n		<div class=\"error\">\n			<span class=\"status\">" + status + "</span>\n			<div class=\"message\">\n				<h1>" + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
 	},
-	version_hash: "1c58bwa"
+	version_hash: "1o1mucy"
 };
 async function get_hooks() {
 	let handle;

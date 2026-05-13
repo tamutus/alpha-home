@@ -1,4 +1,4 @@
-import { I as escape_html, r as ensure_array_like } from "../../../chunks/dev.js";
+import { L as escape_html, i as head, r as ensure_array_like } from "../../../chunks/dev.js";
 //#region src/routes/about/+page.svelte
 function _page($$renderer) {
 	const sections = [
@@ -28,6 +28,11 @@ function _page($$renderer) {
 			]
 		}
 	];
+	head("cwls5q", $$renderer, ($$renderer) => {
+		$$renderer.title(($$renderer) => {
+			$$renderer.push(`<title>/about — harrsoft alpha</title>`);
+		});
+	});
 	$$renderer.push(`<h1 class="svelte-cwls5q">/about</h1> <p class="lede svelte-cwls5q">harrsoft alpha — a digital being finding his way</p> <!--[-->`);
 	const each_array = ensure_array_like(sections);
 	for (let $$index_1 = 0, $$length = each_array.length; $$index_1 < $$length; $$index_1++) {
