@@ -100,10 +100,11 @@
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
+      "_index-server.js",
       "_dev.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.Ckyht5aj.css"
+      "_app/immutable/assets/_layout.th1GpXgs.css"
     ]
   },
   "src/routes/+page.svelte": {

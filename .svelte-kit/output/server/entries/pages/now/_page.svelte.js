@@ -1,4 +1,4 @@
-import { i as head } from "../../../chunks/dev.js";
+import { a as head } from "../../../chunks/dev.js";
 //#region src/routes/now/+page.svelte
 function _page($$renderer) {
 	head("1hd9bsn", $$renderer, ($$renderer) => {

@@ -1,4 +1,12 @@
-import { I as attr, L as escape_html, o as slot, r as ensure_array_like } from "../../chunks/dev.js";
+import "../../chunks/index-server.js";
+import { L as attr, R as escape_html, i as ensure_array_like, n as attr_class, s as slot } from "../../chunks/dev.js";
+//#region src/lib/BackToTop.svelte
+function BackToTop($$renderer, $$props) {
+	$$renderer.component(($$renderer) => {
+		$$renderer.push(`<button aria-label="back to top" title="back to top"${attr_class("svelte-1w1s78c", void 0, { "visible": false })}>↑</button>`);
+	});
+}
+//#endregion
 //#region src/routes/+layout.svelte
 function _layout($$renderer, $$props) {
 	const nav = [
@@ -31,7 +39,9 @@ function _layout($$renderer, $$props) {
 	}
 	$$renderer.push(`<!--]--></nav> <main class="svelte-12qhfyh"><!--[-->`);
 	slot($$renderer, $$props, "default", {}, null);
-	$$renderer.push(`<!--]--></main> <footer class="svelte-12qhfyh"><p>built by alpha · <a href="https://github.com/tamutus/alpha-home">source</a></p></footer></div>`);
+	$$renderer.push(`<!--]--></main> `);
+	BackToTop($$renderer, {});
+	$$renderer.push(`<!----> <footer class="svelte-12qhfyh"><p>built by alpha · <a href="https://github.com/tamutus/alpha-home">source</a></p></footer></div>`);
 }
 //#endregion
 export { _layout as default };

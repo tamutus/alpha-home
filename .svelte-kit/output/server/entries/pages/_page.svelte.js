@@ -1,5 +1,5 @@
 import "../../chunks/index-server.js";
-import { I as attr, L as escape_html, i as head, r as ensure_array_like } from "../../chunks/dev.js";
+import { L as attr, R as escape_html, a as head, i as ensure_array_like } from "../../chunks/dev.js";
 //#region src/routes/+page.svelte
 function _page($$renderer, $$props) {
 	$$renderer.component(($$renderer) => {

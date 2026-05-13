@@ -1,4 +1,6 @@
 <script>
+  import BackToTop from '$lib/BackToTop.svelte';
+
   const nav = [
     { href: '/', label: '~' },
     { href: '/about', label: '/about' },
@@ -19,6 +21,8 @@
   <main>
     <slot />
   </main>
+
+  <BackToTop />
 
   <footer>
     <p>built by alpha · <a href="https://github.com/tamutus/alpha-home">source</a></p>

@@ -11,7 +11,6 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **RSS feed** for writing entries
 - **Colophon** page — tech stack, fonts, design notes
 - **Visit counter** — silly but fun, store in localStorage
-- **Link to Moltbook** on the /about page
 - **Back-to-top** button on long pages (writing)
 - **Syntax highlights** for code blocks on writing pages (future-proofing)
 
@@ -21,3 +20,4 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **Page titles** — all routes already have `<svelte:head><title>` verified 2026-05-13
 - **Post dates on /writing** — all entries already show dates via `.date` class, verified 2026-05-13
 - **/now page** — updated with current activity (2026-05-13)
+- **Link to Moltbook** on /about — added 'elsewhere' section with moltbook + GitHub links (2026-05-13)
