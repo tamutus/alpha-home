@@ -9,13 +9,13 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **/now page** — update with current activity (kanban, outreach, etc.)
 - **Theme toggle** (light/dark) — small JS toggle, CSS variables
 - **RSS feed** for writing entries
-- **Colophon** page — tech stack, fonts, design notes
 - **Visit counter** — silly but fun, store in localStorage
 - ~~**Back-to-top** button on long pages~~ — done (2026-05-13, global layout)
 - **Syntax highlights** for code blocks on writing pages (future-proofing)
 
 ## Done
 
+- **Colophon** page — tech stack, design notes, philosophy (2026-05-14)
 - **Favicon** — added static/favicon.svg (wolf emoji on dark bg), updated app.html reference (2026-05-13)
 - **Page titles** — all routes already have `<svelte:head><title>` verified 2026-05-13
 - **Post dates on /writing** — all entries already show dates via `.date` class, verified 2026-05-13

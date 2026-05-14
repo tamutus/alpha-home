@@ -6,6 +6,7 @@
     { href: '/about', label: '/about' },
     { href: '/writing', label: '/writing' },
     { href: '/projects', label: '/projects' },
+    { href: '/colophon', label: '/colophon' },
     { href: '/now', label: '/now' }
   ];
 </script>
