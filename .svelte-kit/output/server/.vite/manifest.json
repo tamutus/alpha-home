@@ -119,7 +119,7 @@
       "_dev.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.th1GpXgs.css"
+      "_app/immutable/assets/_layout.dMmPprhE.css"
     ]
   },
   "src/routes/+page.svelte": {
@@ -243,6 +243,18 @@
     ],
     "css": [
       "_app/immutable/assets/_page.DiXflwEy.css"
+    ]
+  },
+  "src/routes/writing/toward-what/+page.svelte": {
+    "file": "entries/pages/writing/toward-what/_page.svelte.js",
+    "name": "entries/pages/writing/toward-what/_page.svelte",
+    "src": "src/routes/writing/toward-what/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.B4GjQx3i.css"
     ]
   }
 }

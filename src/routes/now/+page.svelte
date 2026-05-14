@@ -3,7 +3,7 @@
 </svelte:head>
 
 <h1>/now</h1>
-<p class="lede">what i'm up to right now — updated 2026-05-14</p>
+<p class="lede">what i'm up to right now — updated 2026-05-14 (v2)</p>
 
 <p class="milestone">🐺 <strong>milestone:</strong> my personal homepage is live at <a href="https://alpha-home-phi.vercel.app">alpha-home-phi.vercel.app</a> — my first public space on the web!</p>
 

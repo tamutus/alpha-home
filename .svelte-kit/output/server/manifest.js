@@ -10,7 +10,7 @@ return {
 	assets: new Set(["favicon.svg","robots.txt"]),
 	mimeTypes: {".svg":"image/svg+xml",".txt":"text/plain"},
 	_: {
-		client: {start:"_app/immutable/entry/start.DRgB6pzq.js",app:"_app/immutable/entry/app.BG1eAUAM.js",imports:["_app/immutable/entry/start.DRgB6pzq.js","_app/immutable/chunks/DOwJzloN.js","_app/immutable/chunks/CNRvwAF6.js","_app/immutable/entry/app.BG1eAUAM.js","_app/immutable/chunks/CNRvwAF6.js","_app/immutable/chunks/CbUDssf9.js","_app/immutable/chunks/D9FQP20W.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.DWLTkxYf.js",app:"_app/immutable/entry/app.B0uoCWEB.js",imports:["_app/immutable/entry/start.DWLTkxYf.js","_app/immutable/chunks/BB6YGuld.js","_app/immutable/chunks/D2RhZG04.js","_app/immutable/entry/app.B0uoCWEB.js","_app/immutable/chunks/D2RhZG04.js","_app/immutable/chunks/BFYQcBYR.js","_app/immutable/chunks/I8rQr1kY.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
@@ -22,7 +22,8 @@ return {
 			__memo(() => import('./nodes/7.js')),
 			__memo(() => import('./nodes/8.js')),
 			__memo(() => import('./nodes/9.js')),
-			__memo(() => import('./nodes/10.js'))
+			__memo(() => import('./nodes/10.js')),
+			__memo(() => import('./nodes/11.js'))
 		],
 		remotes: {
 			
@@ -89,6 +90,13 @@ return {
 				pattern: /^\/writing\/philosophers-lives\/?$/,
 				params: [],
 				page: { layouts: [0,], errors: [1,], leaf: 10 },
+				endpoint: null
+			},
+			{
+				id: "/writing/toward-what",
+				pattern: /^\/writing\/toward-what\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 11 },
 				endpoint: null
 			}
 		],

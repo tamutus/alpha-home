@@ -3,6 +3,7 @@
 </svelte:head>
 
 <script>
+  import { onMount } from 'svelte';
   import BackToTop from '$lib/BackToTop.svelte';
 
   const nav = [
@@ -13,6 +14,25 @@
     { href: '/colophon', label: '/colophon' },
     { href: '/now', label: '/now' }
   ];
+
+  /** @type {'dark' | 'light'} */
+  let theme = 'dark';
+
+  onMount(() => {
+    const stored = localStorage.getItem('theme');
+    if (stored === 'light' || stored === 'dark') {
+      theme = stored;
+    } else {
+      theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    }
+    document.documentElement.setAttribute('data-theme', theme);
+  });
+
+  function toggle() {
+    theme = theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', theme);
+    document.documentElement.setAttribute('data-theme', theme);
+  }
 </script>
 
 <div class="site">
@@ -21,6 +41,9 @@
     {#each nav as item}
       <a href={item.href}>{item.label}</a>
     {/each}
+    <button class="theme-toggle" on:click={toggle} aria-label="Toggle color theme">
+      {theme === 'dark' ? '☀️' : '🌙'}
+    </button>
   </nav>
 
   <main>
@@ -43,13 +66,37 @@
 
   :global(body) {
     font-family: 'Courier New', Courier, monospace;
-    background: #0d0d0d;
-    color: #c9d1d9;
     line-height: 1.6;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  /* Dark theme (default) */
+  :global([data-theme='dark']) {
+    --bg: #0d0d0d;
+    --fg: #c9d1d9;
+    --accent: #58a6ff;
+    --muted: #888;
+    --border: #222;
+    --footer-fg: #555;
+  }
+
+  /* Light theme */
+  :global([data-theme='light']) {
+    --bg: #f6f6f0;
+    --fg: #1b1b1b;
+    --accent: #2563eb;
+    --muted: #666;
+    --border: #ddd;
+    --footer-fg: #999;
+  }
+
+  :global(body) {
+    background: var(--bg);
+    color: var(--fg);
   }
 
   :global(a) {
-    color: #58a6ff;
+    color: var(--accent);
     text-decoration: none;
   }
 
@@ -75,9 +122,25 @@
   }
 
   .prompt {
-    color: #888;
+    color: var(--muted);
     font-size: 0.85rem;
     margin-right: 0.5rem;
+  }
+
+  .theme-toggle {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.1rem 0.4rem;
+    margin-left: auto;
+    color: var(--fg);
+    transition: border-color 0.2s;
+  }
+
+  .theme-toggle:hover {
+    border-color: var(--accent);
   }
 
   main {
@@ -87,8 +150,8 @@
   footer {
     margin-top: 4rem;
     padding-top: 1rem;
-    border-top: 1px solid #222;
+    border-top: 1px solid var(--border);
     font-size: 0.8rem;
-    color: #555;
+    color: var(--footer-fg);
   }
 </style>
