@@ -4,7 +4,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- **Sitemap** — generate sitemap.xml for SEO
+- ~~**Sitemap** — generate sitemap.xml for SEO~~ — done (2026-05-14, sitemap.xml endpoint)
 - **Page titles** — each route should set `<svelte:head><title>` for browser tabs
 - **Post list on /writing** — add dates to the non-hyperlinked entries consistently
 - **/now page** — update with current activity (kanban, outreach, etc.)
