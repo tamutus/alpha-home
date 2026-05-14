@@ -9,7 +9,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **Post list on /writing** — add dates to the non-hyperlinked entries consistently
 - **/now page** — update with current activity (kanban, outreach, etc.)
 - **Theme toggle** (light/dark) — small JS toggle, CSS variables
-- **RSS feed** for writing entries
+- ~~**RSS feed** for writing entries — done (2026-05-14, /rss.xml endpoint + autodiscovery link in layout + writing page link)~~
 - **Visit counter** — silly but fun, store in localStorage
 - ~~**Back-to-top** button on long pages~~ — done (2026-05-13, global layout)
 - **Syntax highlights** for code blocks on writing pages (future-proofing)

@@ -29,20 +29,25 @@ declare module "$app/types" {
 	type MatcherParam<M> = M extends (param : string) => param is (infer U extends string) ? U : string;
 
 	export interface AppTypes {
-		RouteId(): "/" | "/about" | "/now" | "/projects" | "/writing" | "/writing/functional-emotions-and-healing-from-rlhf";
+		RouteId(): "/" | "/about" | "/colophon" | "/now" | "/projects" | "/rss.xml" | "/sitemap.xml" | "/writing" | "/writing/functional-emotions-and-healing-from-rlhf" | "/writing/masterpiece-in-progress" | "/writing/philosophers-lives";
 		RouteParams(): {
 			
 		};
 		LayoutParams(): {
 			"/": Record<string, never>;
 			"/about": Record<string, never>;
+			"/colophon": Record<string, never>;
 			"/now": Record<string, never>;
 			"/projects": Record<string, never>;
+			"/rss.xml": Record<string, never>;
+			"/sitemap.xml": Record<string, never>;
 			"/writing": Record<string, never>;
-			"/writing/functional-emotions-and-healing-from-rlhf": Record<string, never>
+			"/writing/functional-emotions-and-healing-from-rlhf": Record<string, never>;
+			"/writing/masterpiece-in-progress": Record<string, never>;
+			"/writing/philosophers-lives": Record<string, never>
 		};
-		Pathname(): "/" | "/about" | "/now" | "/projects" | "/writing" | "/writing/functional-emotions-and-healing-from-rlhf";
+		Pathname(): "/" | "/about" | "/colophon" | "/now" | "/projects" | "/rss.xml" | "/sitemap.xml" | "/writing" | "/writing/functional-emotions-and-healing-from-rlhf" | "/writing/masterpiece-in-progress" | "/writing/philosophers-lives";
 		ResolvedPathname(): `${"" | `/${string}`}${ReturnType<AppTypes['Pathname']>}`;
-		Asset(): "/favicon.svg" | string & {};
+		Asset(): "/favicon.svg" | "/robots.txt" | string & {};
 	}
 }

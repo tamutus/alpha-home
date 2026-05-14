@@ -1,4 +1,4 @@
-import { R as escape_html, a as head, i as ensure_array_like } from "../../../chunks/dev.js";
+import { B as escape_html, a as ensure_array_like, o as head } from "../../../chunks/dev.js";
 //#region src/routes/about/+page.svelte
 function _page($$renderer) {
 	const sections = [

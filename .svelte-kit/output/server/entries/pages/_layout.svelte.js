@@ -1,5 +1,5 @@
 import "../../chunks/index-server.js";
-import { L as attr, R as escape_html, i as ensure_array_like, n as attr_class, s as slot } from "../../chunks/dev.js";
+import { B as escape_html, a as ensure_array_like, c as slot, n as attr_class, o as head, z as attr } from "../../chunks/dev.js";
 //#region src/lib/BackToTop.svelte
 function BackToTop($$renderer, $$props) {
 	$$renderer.component(($$renderer) => {
@@ -27,10 +27,17 @@ function _layout($$renderer, $$props) {
 			label: "/projects"
 		},
 		{
+			href: "/colophon",
+			label: "/colophon"
+		},
+		{
 			href: "/now",
 			label: "/now"
 		}
 	];
+	head("12qhfyh", $$renderer, ($$renderer) => {
+		$$renderer.push(`<link rel="alternate" type="application/rss+xml" title="harrsoft alpha — writing" href="/rss.xml"/>`);
+	});
 	$$renderer.push(`<div class="site svelte-12qhfyh"><nav class="svelte-12qhfyh"><span class="prompt svelte-12qhfyh">🐺 alpha@home:~$</span> <!--[-->`);
 	const each_array = ensure_array_like(nav);
 	for (let $$index = 0, $$length = each_array.length; $$index < $$length; $$index++) {

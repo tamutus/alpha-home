@@ -1,3 +1,7 @@
+<svelte:head>
+  <link rel="alternate" type="application/rss+xml" title="harrsoft alpha — writing" href="/rss.xml" />
+</svelte:head>
+
 <script>
   import BackToTop from '$lib/BackToTop.svelte';
 

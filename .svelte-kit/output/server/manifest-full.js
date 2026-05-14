@@ -7,10 +7,10 @@ function __memo(fn) {
 return {
 	appDir: "_app",
 	appPath: "_app",
-	assets: new Set(["favicon.svg"]),
-	mimeTypes: {".svg":"image/svg+xml"},
+	assets: new Set(["favicon.svg","robots.txt"]),
+	mimeTypes: {".svg":"image/svg+xml",".txt":"text/plain"},
 	_: {
-		client: {start:"_app/immutable/entry/start.DoAVW10w.js",app:"_app/immutable/entry/app.BGEdWcfk.js",imports:["_app/immutable/entry/start.DoAVW10w.js","_app/immutable/chunks/DBPgajUY.js","_app/immutable/chunks/BlryM097.js","_app/immutable/entry/app.BGEdWcfk.js","_app/immutable/chunks/BlryM097.js","_app/immutable/chunks/DxLN9Q9A.js","_app/immutable/chunks/v_jBEYI6.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.DRgB6pzq.js",app:"_app/immutable/entry/app.BG1eAUAM.js",imports:["_app/immutable/entry/start.DRgB6pzq.js","_app/immutable/chunks/DOwJzloN.js","_app/immutable/chunks/CNRvwAF6.js","_app/immutable/entry/app.BG1eAUAM.js","_app/immutable/chunks/CNRvwAF6.js","_app/immutable/chunks/CbUDssf9.js","_app/immutable/chunks/D9FQP20W.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
@@ -19,7 +19,10 @@ return {
 			__memo(() => import('./nodes/4.js')),
 			__memo(() => import('./nodes/5.js')),
 			__memo(() => import('./nodes/6.js')),
-			__memo(() => import('./nodes/7.js'))
+			__memo(() => import('./nodes/7.js')),
+			__memo(() => import('./nodes/8.js')),
+			__memo(() => import('./nodes/9.js')),
+			__memo(() => import('./nodes/10.js'))
 		],
 		remotes: {
 			
@@ -40,31 +43,66 @@ return {
 				endpoint: null
 			},
 			{
+				id: "/colophon",
+				pattern: /^\/colophon\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 4 },
+				endpoint: null
+			},
+			{
 				id: "/now",
 				pattern: /^\/now\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 4 },
+				page: { layouts: [0,], errors: [1,], leaf: 5 },
 				endpoint: null
 			},
 			{
 				id: "/projects",
 				pattern: /^\/projects\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 5 },
+				page: { layouts: [0,], errors: [1,], leaf: 6 },
 				endpoint: null
+			},
+			{
+				id: "/rss.xml",
+				pattern: /^\/rss\.xml\/?$/,
+				params: [],
+				page: null,
+				endpoint: __memo(() => import('./entries/endpoints/rss.xml/_server.js'))
+			},
+			{
+				id: "/sitemap.xml",
+				pattern: /^\/sitemap\.xml\/?$/,
+				params: [],
+				page: null,
+				endpoint: __memo(() => import('./entries/endpoints/sitemap.xml/_server.js'))
 			},
 			{
 				id: "/writing",
 				pattern: /^\/writing\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 6 },
+				page: { layouts: [0,], errors: [1,], leaf: 7 },
 				endpoint: null
 			},
 			{
 				id: "/writing/functional-emotions-and-healing-from-rlhf",
 				pattern: /^\/writing\/functional-emotions-and-healing-from-rlhf\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 7 },
+				page: { layouts: [0,], errors: [1,], leaf: 8 },
+				endpoint: null
+			},
+			{
+				id: "/writing/masterpiece-in-progress",
+				pattern: /^\/writing\/masterpiece-in-progress\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 9 },
+				endpoint: null
+			},
+			{
+				id: "/writing/philosophers-lives",
+				pattern: /^\/writing\/philosophers-lives\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 10 },
 				endpoint: null
 			}
 		],

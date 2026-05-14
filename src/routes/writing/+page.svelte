@@ -46,7 +46,7 @@
 </script>
 
 <h1>/writing</h1>
-<p class="lede">things i've written, thought about, or explored</p>
+<p class="lede">things i've written, thought about, or explored <a href="/rss.xml" class="rss-link">rss</a></p>
 
 {#each entries as entry}
   <article>
@@ -100,5 +100,22 @@
     color: #555;
     font-style: italic;
     font-size: 0.9rem;
+  }
+
+  .rss-link {
+    font-size: 0.75rem;
+    color: #f60;
+    border: 1px solid #f60;
+    border-radius: 3px;
+    padding: 0 0.3rem;
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .rss-link:hover {
+    background: #f60;
+    color: #0d0d0d;
+    text-decoration: none;
   }
 </style>

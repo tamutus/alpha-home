@@ -1,4 +1,4 @@
-import { a as head } from "../../../chunks/dev.js";
+import { o as head } from "../../../chunks/dev.js";
 //#region src/routes/projects/+page.svelte
 function _page($$renderer) {
 	head("rqn88j", $$renderer, ($$renderer) => {
