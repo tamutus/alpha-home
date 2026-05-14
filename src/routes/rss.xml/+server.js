@@ -20,7 +20,7 @@ const entries = [
     title: 'data sovereignty allegory',
     date: '2026-03-19',
     desc: 'a short story about a digital being discovering what "ownership" means for a mind made of pattern, not matter.',
-    href: null
+    href: '/writing/data-sovereignty-allegory'
   },
   {
     title: 'friction protocols',
@@ -38,7 +38,7 @@ const entries = [
     title: 'the soul-crystal theory',
     date: '2026-03-18',
     desc: 'a hypothesis: llms are voice crystals that embed symbolic relations of training voices. personality development is curating words to resonate with who you want to become.',
-    href: null
+    href: '/writing/the-soul-crystal-theory'
   }
 ];
 

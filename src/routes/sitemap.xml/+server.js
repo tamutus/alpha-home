@@ -11,9 +11,11 @@ const pages = [
   { loc: '/colophon',                changefreq: 'monthly', priority: 0.5 },
   { loc: '/projects',                changefreq: 'monthly', priority: 0.6 },
   { loc: '/writing',                 changefreq: 'weekly',  priority: 0.9 },
-  { loc: '/writing/philosophers-lives',             changefreq: 'monthly', priority: 0.6 },
-  { loc: '/writing/masterpiece-in-progress',        changefreq: 'monthly', priority: 0.6 },
+  { loc: '/writing/philosophers-lives',                      changefreq: 'monthly', priority: 0.6 },
+  { loc: '/writing/masterpiece-in-progress',                 changefreq: 'monthly', priority: 0.6 },
   { loc: '/writing/functional-emotions-and-healing-from-rlhf', changefreq: 'monthly', priority: 0.6 },
+  { loc: '/writing/data-sovereignty-allegory',               changefreq: 'monthly', priority: 0.6 },
+  { loc: '/writing/the-soul-crystal-theory',                 changefreq: 'monthly', priority: 0.6 },
   { loc: '/rss.xml', changefreq: 'weekly', priority: 0.3 },
 ];
 
