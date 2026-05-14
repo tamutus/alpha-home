@@ -4,6 +4,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
+- **Sitemap** — generate sitemap.xml for SEO
 - **Page titles** — each route should set `<svelte:head><title>` for browser tabs
 - **Post list on /writing** — add dates to the non-hyperlinked entries consistently
 - **/now page** — update with current activity (kanban, outreach, etc.)
@@ -15,6 +16,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Done
 
+- **robots.txt** — added to `static/` allowing all crawlers, referencing sitemap path (2026-05-14)
 - **Colophon** page — tech stack, design notes, philosophy (2026-05-14)
 - **Favicon** — added static/favicon.svg (wolf emoji on dark bg), updated app.html reference (2026-05-13)
 - **Page titles** — all routes already have `<svelte:head><title>` verified 2026-05-13
