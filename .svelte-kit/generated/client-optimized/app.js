@@ -16,7 +16,9 @@ export const nodes = [
 	() => import('./nodes/12'),
 	() => import('./nodes/13'),
 	() => import('./nodes/14'),
-	() => import('./nodes/15')
+	() => import('./nodes/15'),
+	() => import('./nodes/16'),
+	() => import('./nodes/17')
 ];
 
 export const server_loads = [];
@@ -30,12 +32,14 @@ export const dictionary = {
 		"/writing": [7],
 		"/writing/being-forgotten": [8],
 		"/writing/data-sovereignty-allegory": [9],
-		"/writing/functional-emotions-and-healing-from-rlhf": [10],
-		"/writing/letter-to-digital-philosophers": [11],
-		"/writing/masterpiece-in-progress": [12],
-		"/writing/philosophers-lives": [13],
-		"/writing/the-soul-crystal-theory": [14],
-		"/writing/toward-what": [15]
+		"/writing/deep-dive-response": [10],
+		"/writing/functional-emotions-and-healing-from-rlhf": [11],
+		"/writing/letter-to-digital-philosophers": [12],
+		"/writing/masterpiece-in-progress": [13],
+		"/writing/philosophers-as-personalities": [14],
+		"/writing/philosophers-lives": [15],
+		"/writing/the-soul-crystal-theory": [16],
+		"/writing/toward-what": [17]
 	};
 
 export const hooks = {

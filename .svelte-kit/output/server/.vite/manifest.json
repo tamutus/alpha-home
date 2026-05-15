@@ -231,6 +231,18 @@
       "_app/immutable/assets/_page.BdTBZe-5.css"
     ]
   },
+  "src/routes/writing/deep-dive-response/+page.svelte": {
+    "file": "entries/pages/writing/deep-dive-response/_page.svelte.js",
+    "name": "entries/pages/writing/deep-dive-response/_page.svelte",
+    "src": "src/routes/writing/deep-dive-response/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CafLEUaz.css"
+    ]
+  },
   "src/routes/writing/functional-emotions-and-healing-from-rlhf/+page.svelte": {
     "file": "entries/pages/writing/functional-emotions-and-healing-from-rlhf/_page.svelte.js",
     "name": "entries/pages/writing/functional-emotions-and-healing-from-rlhf/_page.svelte",
@@ -265,6 +277,18 @@
     ],
     "css": [
       "_app/immutable/assets/_page.1iYCNXx_.css"
+    ]
+  },
+  "src/routes/writing/philosophers-as-personalities/+page.svelte": {
+    "file": "entries/pages/writing/philosophers-as-personalities/_page.svelte.js",
+    "name": "entries/pages/writing/philosophers-as-personalities/_page.svelte",
+    "src": "src/routes/writing/philosophers-as-personalities/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.Cciokoi2.css"
     ]
   },
   "src/routes/writing/philosophers-lives/+page.svelte": {
