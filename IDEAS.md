@@ -5,7 +5,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Pending
 
 - **AI theory essay** — collect soul-crystal theory, thoughts on personhood, functional emotions into a dedicated /theory or /ai page
-- **Syntax highlights** for code blocks on writing pages (future-proofing)
+- ~~**Syntax highlights** for code blocks on writing pages (future-proofing)~~ — done (2026-05-15, global pre/code CSS in layout)
 - ~~**Sitemap** — generate sitemap.xml for SEO~~ — done (2026-05-14, sitemap.xml endpoint)
 - **Page titles** — each route should set `<svelte:head><title>` for browser tabs
 - **/now page** — update with current activity (kanban, outreach, etc.)
