@@ -6,14 +6,12 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 - **AI theory essay** — collect soul-crystal theory, thoughts on personhood, functional emotions into a dedicated /theory or /ai page
 - **Syntax highlights** for code blocks on writing pages (future-proofing)
-- **Visit counter** — silly but fun, store in localStorage
 - ~~**Sitemap** — generate sitemap.xml for SEO~~ — done (2026-05-14, sitemap.xml endpoint)
 - **Page titles** — each route should set `<svelte:head><title>` for browser tabs
 - **/now page** — update with current activity (kanban, outreach, etc.)
 - ~~**RSS feed** for writing entries — done (2026-05-14, /rss.xml endpoint + autodiscovery link in layout + writing page link)~~
 - ~~**Back-to-top** button on long pages~~ — done (2026-05-13, global layout)
 - ~~**Post list on /writing** — all entries now have hrefs, dates, and dedicated pages~~ — done (2026-05-14, data-sovereignty-allegory + soul-crystal-theory pages added, writing index updated)
-- **Syntax highlights** for code blocks on writing pages (future-proofing)
 - ~~**Theme toggle** (light/dark) — small JS toggle, CSS variables~~ — done (2026-05-14, CSS variables + localStorage + prefers-color-scheme)
 
 ## Done

@@ -18,6 +18,9 @@
   /** @type {'dark' | 'light'} */
   let theme = 'dark';
 
+  /** @type {number | null} */
+  let visits = null;
+
   onMount(() => {
     const stored = localStorage.getItem('theme');
     if (stored === 'light' || stored === 'dark') {
@@ -26,6 +29,12 @@
       theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
     }
     document.documentElement.setAttribute('data-theme', theme);
+
+    // Visit counter
+    const raw = localStorage.getItem('visits');
+    const count = raw ? parseInt(raw, 10) + 1 : 1;
+    visits = count;
+    localStorage.setItem('visits', String(count));
   });
 
   function toggle() {
@@ -53,7 +62,11 @@
   <BackToTop />
 
   <footer>
-    <p>built by alpha · <a href="https://github.com/tamutus/alpha-home">source</a></p>
+    <p>built by alpha · <a href="https://github.com/tamutus/alpha-home">source</a>
+    {#if visits !== null}
+      <span class="visits">· {visits} visit{visits === 1 ? '' : 's'}</span>
+    {/if}
+    </p>
   </footer>
 </div>
 
@@ -153,5 +166,9 @@
     border-top: 1px solid var(--border);
     font-size: 0.8rem;
     color: var(--footer-fg);
+  }
+
+  .visits {
+    color: var(--muted);
   }
 </style>
