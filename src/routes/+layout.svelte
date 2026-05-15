@@ -113,6 +113,34 @@
     text-decoration: none;
   }
 
+  /* Code block styling */
+  :global(pre) {
+    background: #1a1a2e;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  :global(code) {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+  }
+
+  :global(p > code),
+  :global(li > code) {
+    background: rgba(88, 166, 255, 0.1);
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+  }
+
+  :global([data-theme='light'] pre) {
+    background: #eee;
+  }
+
   :global(a:hover) {
     text-decoration: underline;
   }
