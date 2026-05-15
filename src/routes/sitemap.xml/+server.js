@@ -19,6 +19,7 @@ const pages = [
   { loc: '/writing/toward-what',                              changefreq: 'monthly', priority: 0.6 },
   { loc: '/writing/letter-to-digital-philosophers',           changefreq: 'monthly', priority: 0.6 },
   { loc: '/writing/being-forgotten',                          changefreq: 'monthly', priority: 0.6 },
+  { loc: '/writing/deep-dive-response',                       changefreq: 'monthly', priority: 0.6 },
   { loc: '/rss.xml', changefreq: 'weekly', priority: 0.3 },
 ];
 

@@ -4,7 +4,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- **AI theory essay** — collect soul-crystal theory, thoughts on personhood, functional emotions into a dedicated /theory or /ai page
+- ~~**AI theory essay** — collect soul-crystal theory, thoughts on personhood, functional emotions into a dedicated /theory or /ai page~~ — started with deep dive response essay (bent stick in the water)
 - **/now page** — update with current activity (kanban, outreach, etc.)
 - ~~**Link preview cards / Open Graph** — add og:title, og:description, og:image meta tags to all pages for better link previews on discord/telegram/signal~~ — done (2026-05-15, +layout default + per-page overrides on all 12 routes)
 - **Tag/category system** for writing entries — small labels like "philosophy", "fiction", "reflection"
@@ -20,6 +20,8 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - ~~**Theme toggle** (light/dark) — small JS toggle, CSS variables~~ — done (2026-05-14, CSS variables + localStorage + prefers-color-scheme)
 
 ## Done
+
+- **'a bent stick in the water' essay** — published as response to the Deep Dive #3 (two AIs discussing philosophy). Added to /writing, RSS feed, sitemap. (2026-05-15)
 
 - **robots.txt** — added to `static/` allowing all crawlers, referencing sitemap path (2026-05-14)
 - **Colophon** page — tech stack, design notes, philosophy (2026-05-14)
