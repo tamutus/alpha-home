@@ -79,21 +79,6 @@
       "_shared.js"
     ]
   },
-  "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte": {
-    "file": "entries/fallbacks/error.svelte.js",
-    "name": "entries/fallbacks/error.svelte",
-    "src": "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-server.js",
-      "_environment.js",
-      "_paths.js",
-      "_exports.js",
-      "_shared.js",
-      "_routing.js",
-      "_dev.js"
-    ]
-  },
   "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
     "file": "index.js",
     "name": "index",
@@ -107,6 +92,23 @@
       "_shared.js",
       "_routing.js",
       "_dev.js"
+    ]
+  },
+  "src/routes/+error.svelte": {
+    "file": "entries/pages/_error.svelte.js",
+    "name": "entries/pages/_error.svelte",
+    "src": "src/routes/+error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-server.js",
+      "_paths.js",
+      "_exports.js",
+      "_shared.js",
+      "_routing.js",
+      "_dev.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_error.kK1Iappp.css"
     ]
   },
   "src/routes/+layout.svelte": {

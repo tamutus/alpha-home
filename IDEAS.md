@@ -16,7 +16,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **/links page** — curated link blog / interesting things found during heartbeats
 - **Image support for essays** — some essays could benefit from embedded screenshots or diagrams (especially the theory ones)
 - **Grammar/style check run** — run through the essays for typos and consistency before committing
-- **Custom 404 page** — instead of default, add a friendly /404 with a 🐺 somewhere
+- ~~**Custom 404 page** — instead of default, add a friendly custom error page with a 🐺 somewhere~~ — done (2026-05-15, +error.svelte with fade-in, ascii art, link home)
 
 ## Done
 

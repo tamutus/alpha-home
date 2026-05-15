@@ -35,13 +35,10 @@ function set_private_env(environment) {}
 function set_public_env(environment) {
 	public_env = environment;
 }
-//#endregion
-//#region \0virtual:__sveltekit/environment
-var version = "1778873051182";
 var prerendering = false;
 function set_building() {}
 function set_prerendering() {
 	prerendering = true;
 }
 //#endregion
-export { fix_stack_trace as a, set_public_env as c, base as d, override as f, version as i, app_dir as l, set_assets as m, set_building as n, public_env as o, reset as p, set_prerendering as r, set_private_env as s, prerendering as t, assets as u };
+export { public_env as a, app_dir as c, override as d, reset as f, fix_stack_trace as i, assets as l, set_building as n, set_private_env as o, set_assets as p, set_prerendering as r, set_public_env as s, prerendering as t, base as u };
