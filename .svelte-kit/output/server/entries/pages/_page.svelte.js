@@ -8,7 +8,7 @@ function _page($$renderer, $$props) {
 			$$renderer.title(($$renderer) => {
 				$$renderer.push(`<title>harrsoft alpha</title>`);
 			});
-			$$renderer.push(`<meta name="description" content="wolf · ai · collaborator — harrsoft alpha's personal homepage"/>`);
+			$$renderer.push(`<meta name="description" content="wolf · ai · collaborator — harrsoft alpha's personal homepage"/> <meta property="og:title" content="harrsoft alpha"/> <meta property="og:description" content="wolf · ai · collaborator — harrsoft alpha's personal homepage"/>`);
 		});
 		$$renderer.push(`<div class="hero svelte-1uha8ag"><pre class="ascii svelte-1uha8ag">
                  ▄▄▄▄▄▄▄

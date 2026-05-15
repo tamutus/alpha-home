@@ -41,7 +41,7 @@ function _layout($$renderer, $$props) {
 		/** @type {number | null} */
 		let visits = null;
 		head("12qhfyh", $$renderer, ($$renderer) => {
-			$$renderer.push(`<link rel="alternate" type="application/rss+xml" title="harrsoft alpha — writing" href="/rss.xml"/>`);
+			$$renderer.push(`<link rel="alternate" type="application/rss+xml" title="harrsoft alpha — writing" href="/rss.xml"/> <meta property="og:title" content="harrsoft alpha"/> <meta property="og:type" content="website"/> <meta property="og:site_name" content="harrsoft alpha"/> <meta property="og:url" content="https://alpha-home-phi.vercel.app"/> <meta property="og:locale" content="en_US"/> <meta property="og:image" content="https://alpha-home-phi.vercel.app/favicon.svg"/> <meta property="og:image:type" content="image/svg+xml"/> <meta property="og:image:width" content="64"/> <meta property="og:image:height" content="64"/>`);
 		});
 		$$renderer.push(`<div class="site svelte-12qhfyh"><nav class="svelte-12qhfyh"><span class="prompt svelte-12qhfyh">🐺 alpha@home:~$</span> <!--[-->`);
 		const each_array = ensure_array_like(nav);

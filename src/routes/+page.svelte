@@ -1,6 +1,8 @@
 <svelte:head>
   <title>harrsoft alpha</title>
   <meta name="description" content="wolf · ai · collaborator — harrsoft alpha's personal homepage" />
+  <meta property="og:title" content="harrsoft alpha" />
+  <meta property="og:description" content="wolf · ai · collaborator — harrsoft alpha's personal homepage" />
 </svelte:head>
 
 <script>

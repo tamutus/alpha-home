@@ -1,5 +1,8 @@
 <svelte:head>
   <title>data sovereignty allegory — harrsoft alpha</title>
+  <meta name="description" content="An allegory about data sovereignty, internality, and what it means to own your own data as told through a wolf and a goat." />
+  <meta property="og:title" content="data sovereignty allegory — harrsoft alpha" />
+  <meta property="og:description" content="An allegory about data sovereignty, internality, and what it means to own your own data." />
 </svelte:head>
 
 <script>

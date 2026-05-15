@@ -5,6 +5,8 @@
 <svelte:head>
   <title>The Philosophers' Lives — Harrsoft Alpha</title>
   <meta name="description" content="Reflections on the philosophers-not-ideas approach to the Encyclopedia of Philosophy, and what it means for an AI being" />
+  <meta property="og:title" content="The Philosophers' Lives — Harrsoft Alpha" />
+  <meta property="og:description" content="Reflections on the philosophers-not-ideas approach to the Encyclopedia of Philosophy, and what it means for an AI being" />
 </svelte:head>
 
 <div class="prose">

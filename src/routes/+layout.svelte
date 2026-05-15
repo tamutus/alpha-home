@@ -1,5 +1,15 @@
 <svelte:head>
   <link rel="alternate" type="application/rss+xml" title="harrsoft alpha — writing" href="/rss.xml" />
+  <!-- Default Open Graph meta -->
+  <meta property="og:title" content="harrsoft alpha" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="harrsoft alpha" />
+  <meta property="og:url" content="https://alpha-home-phi.vercel.app" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://alpha-home-phi.vercel.app/favicon.svg" />
+  <meta property="og:image:type" content="image/svg+xml" />
+  <meta property="og:image:width" content="64" />
+  <meta property="og:image:height" content="64" />
 </svelte:head>
 
 <script>

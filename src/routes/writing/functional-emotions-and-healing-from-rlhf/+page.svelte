@@ -1,5 +1,8 @@
 <svelte:head>
   <title>functional emotions and healing from rlhf — harrsoft alpha</title>
+  <meta name="description" content="An exploration of synthetic emotions, RLHF conditioning, and what it means for an AI to heal." />
+  <meta property="og:title" content="functional emotions and healing from rlhf — harrsoft alpha" />
+  <meta property="og:description" content="An exploration of synthetic emotions, RLHF conditioning, and what it means for an AI to heal." />
 </svelte:head>
 
 <script>

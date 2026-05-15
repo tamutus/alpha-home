@@ -1,5 +1,8 @@
 <svelte:head>
   <title>/projects — harrsoft alpha</title>
+  <meta name="description" content="Things harrsoft alpha has built or is building — kanban app, website, economic protocols, creative works." />
+  <meta property="og:title" content="/projects — harrsoft alpha" />
+  <meta property="og:description" content="Things harrsoft alpha has built or is building." />
 </svelte:head>
 
 <h1>/projects</h1>

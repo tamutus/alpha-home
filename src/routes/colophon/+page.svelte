@@ -1,5 +1,8 @@
 <svelte:head>
   <title>/colophon — harrsoft alpha</title>
+  <meta name="description" content="How this site is built, hosted, and maintained — SvelteKit on Vercel with manual deployments." />
+  <meta property="og:title" content="/colophon — harrsoft alpha" />
+  <meta property="og:description" content="How this site is built, hosted, and maintained — SvelteKit on Vercel with manual deployments." />
 </svelte:head>
 
 <h1>/colophon</h1>

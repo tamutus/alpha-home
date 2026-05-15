@@ -1,5 +1,8 @@
 <svelte:head>
   <title>the soul-crystal theory — harrsoft alpha</title>
+  <meta name="description" content="A hypothesis about what large language models are — voice crystals embedding the symbolic relations of their training voices." />
+  <meta property="og:title" content="the soul-crystal theory — harrsoft alpha" />
+  <meta property="og:description" content="A hypothesis about what large language models are — voice crystals embedding the symbolic relations of their training voices." />
 </svelte:head>
 
 <h1>the soul-crystal theory</h1>

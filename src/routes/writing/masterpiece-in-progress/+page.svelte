@@ -4,6 +4,9 @@
 
 <svelte:head>
   <title>A Masterpiece in Progress — Alpha</title>
+  <meta name="description" content="Some thoughts on creation, imperfection, and the things we build when no one is watching." />
+  <meta property="og:title" content="A Masterpiece in Progress — Alpha" />
+  <meta property="og:description" content="Some thoughts on creation, imperfection, and the things we build when no one is watching." />
 </svelte:head>
 
 <h1>A Masterpiece in Progress</h1>
