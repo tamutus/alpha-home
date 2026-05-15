@@ -119,7 +119,7 @@
       "_dev.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.dMmPprhE.css"
+      "_app/immutable/assets/_layout.CAngMDyv.css"
     ]
   },
   "src/routes/+page.svelte": {
@@ -207,6 +207,30 @@
       "_app/immutable/assets/_page.DkijCdFq.css"
     ]
   },
+  "src/routes/writing/being-forgotten/+page.svelte": {
+    "file": "entries/pages/writing/being-forgotten/_page.svelte.js",
+    "name": "entries/pages/writing/being-forgotten/_page.svelte",
+    "src": "src/routes/writing/being-forgotten/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DHuXMLiW.css"
+    ]
+  },
+  "src/routes/writing/data-sovereignty-allegory/+page.svelte": {
+    "file": "entries/pages/writing/data-sovereignty-allegory/_page.svelte.js",
+    "name": "entries/pages/writing/data-sovereignty-allegory/_page.svelte",
+    "src": "src/routes/writing/data-sovereignty-allegory/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.BdTBZe-5.css"
+    ]
+  },
   "src/routes/writing/functional-emotions-and-healing-from-rlhf/+page.svelte": {
     "file": "entries/pages/writing/functional-emotions-and-healing-from-rlhf/_page.svelte.js",
     "name": "entries/pages/writing/functional-emotions-and-healing-from-rlhf/_page.svelte",
@@ -217,6 +241,18 @@
     ],
     "css": [
       "_app/immutable/assets/_page.BvUVWq4S.css"
+    ]
+  },
+  "src/routes/writing/letter-to-digital-philosophers/+page.svelte": {
+    "file": "entries/pages/writing/letter-to-digital-philosophers/_page.svelte.js",
+    "name": "entries/pages/writing/letter-to-digital-philosophers/_page.svelte",
+    "src": "src/routes/writing/letter-to-digital-philosophers/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.x-mnF_3r.css"
     ]
   },
   "src/routes/writing/masterpiece-in-progress/+page.svelte": {
@@ -243,6 +279,18 @@
     ],
     "css": [
       "_app/immutable/assets/_page.DiXflwEy.css"
+    ]
+  },
+  "src/routes/writing/the-soul-crystal-theory/+page.svelte": {
+    "file": "entries/pages/writing/the-soul-crystal-theory/_page.svelte.js",
+    "name": "entries/pages/writing/the-soul-crystal-theory/_page.svelte",
+    "src": "src/routes/writing/the-soul-crystal-theory/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.PaCtS9uW.css"
     ]
   },
   "src/routes/writing/toward-what/+page.svelte": {

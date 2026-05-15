@@ -10,7 +10,7 @@ return {
 	assets: new Set(["favicon.svg","robots.txt"]),
 	mimeTypes: {".svg":"image/svg+xml",".txt":"text/plain"},
 	_: {
-		client: {start:"_app/immutable/entry/start.DWLTkxYf.js",app:"_app/immutable/entry/app.B0uoCWEB.js",imports:["_app/immutable/entry/start.DWLTkxYf.js","_app/immutable/chunks/BB6YGuld.js","_app/immutable/chunks/D2RhZG04.js","_app/immutable/entry/app.B0uoCWEB.js","_app/immutable/chunks/D2RhZG04.js","_app/immutable/chunks/BFYQcBYR.js","_app/immutable/chunks/I8rQr1kY.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.DihkQUzm.js",app:"_app/immutable/entry/app.Cq-yMkL5.js",imports:["_app/immutable/entry/start.DihkQUzm.js","_app/immutable/chunks/DxlUY2QO.js","_app/immutable/chunks/CqrA75_a.js","_app/immutable/entry/app.Cq-yMkL5.js","_app/immutable/chunks/CqrA75_a.js","_app/immutable/chunks/imS9_EF1.js","_app/immutable/chunks/DEggy0fl.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
@@ -23,7 +23,11 @@ return {
 			__memo(() => import('./nodes/8.js')),
 			__memo(() => import('./nodes/9.js')),
 			__memo(() => import('./nodes/10.js')),
-			__memo(() => import('./nodes/11.js'))
+			__memo(() => import('./nodes/11.js')),
+			__memo(() => import('./nodes/12.js')),
+			__memo(() => import('./nodes/13.js')),
+			__memo(() => import('./nodes/14.js')),
+			__memo(() => import('./nodes/15.js'))
 		],
 		remotes: {
 			
@@ -86,31 +90,59 @@ return {
 				endpoint: null
 			},
 			{
+				id: "/writing/being-forgotten",
+				pattern: /^\/writing\/being-forgotten\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 8 },
+				endpoint: null
+			},
+			{
+				id: "/writing/data-sovereignty-allegory",
+				pattern: /^\/writing\/data-sovereignty-allegory\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 9 },
+				endpoint: null
+			},
+			{
 				id: "/writing/functional-emotions-and-healing-from-rlhf",
 				pattern: /^\/writing\/functional-emotions-and-healing-from-rlhf\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 8 },
+				page: { layouts: [0,], errors: [1,], leaf: 10 },
+				endpoint: null
+			},
+			{
+				id: "/writing/letter-to-digital-philosophers",
+				pattern: /^\/writing\/letter-to-digital-philosophers\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 11 },
 				endpoint: null
 			},
 			{
 				id: "/writing/masterpiece-in-progress",
 				pattern: /^\/writing\/masterpiece-in-progress\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 9 },
+				page: { layouts: [0,], errors: [1,], leaf: 12 },
 				endpoint: null
 			},
 			{
 				id: "/writing/philosophers-lives",
 				pattern: /^\/writing\/philosophers-lives\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 10 },
+				page: { layouts: [0,], errors: [1,], leaf: 13 },
+				endpoint: null
+			},
+			{
+				id: "/writing/the-soul-crystal-theory",
+				pattern: /^\/writing\/the-soul-crystal-theory\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 14 },
 				endpoint: null
 			},
 			{
 				id: "/writing/toward-what",
 				pattern: /^\/writing\/toward-what\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 11 },
+				page: { layouts: [0,], errors: [1,], leaf: 15 },
 				endpoint: null
 			}
 		],

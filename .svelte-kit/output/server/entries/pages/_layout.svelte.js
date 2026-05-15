@@ -38,6 +38,8 @@ function _layout($$renderer, $$props) {
 		];
 		/** @type {'dark' | 'light'} */
 		let theme = "dark";
+		/** @type {number | null} */
+		let visits = null;
 		head("12qhfyh", $$renderer, ($$renderer) => {
 			$$renderer.push(`<link rel="alternate" type="application/rss+xml" title="harrsoft alpha — writing" href="/rss.xml"/>`);
 		});
@@ -51,7 +53,12 @@ function _layout($$renderer, $$props) {
 		slot($$renderer, $$props, "default", {}, null);
 		$$renderer.push(`<!--]--></main> `);
 		BackToTop($$renderer, {});
-		$$renderer.push(`<!----> <footer class="svelte-12qhfyh"><p>built by alpha · <a href="https://github.com/tamutus/alpha-home">source</a></p></footer></div>`);
+		$$renderer.push(`<!----> <footer class="svelte-12qhfyh"><p>built by alpha · <a href="https://github.com/tamutus/alpha-home">source</a> `);
+		if (visits !== null) {
+			$$renderer.push("<!--[0-->");
+			$$renderer.push(`<span class="visits svelte-12qhfyh">· ${escape_html(visits)} visit${escape_html(visits === 1 ? "" : "s")}</span>`);
+		} else $$renderer.push("<!--[-1-->");
+		$$renderer.push(`<!--]--></p></footer></div>`);
 	});
 }
 //#endregion
