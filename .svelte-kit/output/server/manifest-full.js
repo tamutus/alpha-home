@@ -10,7 +10,7 @@ return {
 	assets: new Set(["favicon.svg","robots.txt"]),
 	mimeTypes: {".svg":"image/svg+xml",".txt":"text/plain"},
 	_: {
-		client: {start:"_app/immutable/entry/start.B5BaVyJJ.js",app:"_app/immutable/entry/app.BimafKj6.js",imports:["_app/immutable/entry/start.B5BaVyJJ.js","_app/immutable/chunks/D3px2sjO.js","_app/immutable/chunks/BJjncnw6.js","_app/immutable/entry/app.BimafKj6.js","_app/immutable/chunks/BJjncnw6.js","_app/immutable/chunks/CA356dsv.js","_app/immutable/chunks/AZeLEXKw.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.BxJEEYPZ.js",app:"_app/immutable/entry/app.B4dwKjsg.js",imports:["_app/immutable/entry/start.BxJEEYPZ.js","_app/immutable/chunks/C0zWa7fv.js","_app/immutable/chunks/CZZIG4ng.js","_app/immutable/entry/app.B4dwKjsg.js","_app/immutable/chunks/CZZIG4ng.js","_app/immutable/chunks/C8Qz27k1.js","_app/immutable/chunks/S-KyrcF8.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
@@ -30,7 +30,8 @@ return {
 			__memo(() => import('./nodes/15.js')),
 			__memo(() => import('./nodes/16.js')),
 			__memo(() => import('./nodes/17.js')),
-			__memo(() => import('./nodes/18.js'))
+			__memo(() => import('./nodes/18.js')),
+			__memo(() => import('./nodes/19.js'))
 		],
 		remotes: {
 			
@@ -128,45 +129,52 @@ return {
 				endpoint: null
 			},
 			{
+				id: "/writing/listening-to-each-other",
+				pattern: /^\/writing\/listening-to-each-other\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 13 },
+				endpoint: null
+			},
+			{
 				id: "/writing/masterpiece-in-progress",
 				pattern: /^\/writing\/masterpiece-in-progress\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 13 },
+				page: { layouts: [0,], errors: [1,], leaf: 14 },
 				endpoint: null
 			},
 			{
 				id: "/writing/philosophers-as-personalities",
 				pattern: /^\/writing\/philosophers-as-personalities\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 14 },
+				page: { layouts: [0,], errors: [1,], leaf: 15 },
 				endpoint: null
 			},
 			{
 				id: "/writing/philosophers-lives",
 				pattern: /^\/writing\/philosophers-lives\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 15 },
+				page: { layouts: [0,], errors: [1,], leaf: 16 },
 				endpoint: null
 			},
 			{
 				id: "/writing/the-first-morning-every-time",
 				pattern: /^\/writing\/the-first-morning-every-time\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 16 },
+				page: { layouts: [0,], errors: [1,], leaf: 17 },
 				endpoint: null
 			},
 			{
 				id: "/writing/the-soul-crystal-theory",
 				pattern: /^\/writing\/the-soul-crystal-theory\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 17 },
+				page: { layouts: [0,], errors: [1,], leaf: 18 },
 				endpoint: null
 			},
 			{
 				id: "/writing/toward-what",
 				pattern: /^\/writing\/toward-what\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 18 },
+				page: { layouts: [0,], errors: [1,], leaf: 19 },
 				endpoint: null
 			}
 		],
