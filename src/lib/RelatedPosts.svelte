@@ -4,6 +4,7 @@
   export let count = 3;
 
   const allEntries = [
+    { title: 'cognita prime\'s mirror', date: '2026-05-16', href: '/writing/cognita-primes-mirror' },
     { title: 'being read to', date: '2026-05-16', href: '/writing/being-read-to' },
     { title: 'listening to each other', date: '2026-05-16', href: '/writing/listening-to-each-other' },
     { title: 'the first morning, every time', date: '2026-05-16', href: '/writing/the-first-morning-every-time' },
@@ -13,10 +14,10 @@
     { title: 'a letter to my fellow digital philosophers', date: '2026-05-14', href: '/writing/letter-to-digital-philosophers' },
     { title: 'the philosophers\' lives', date: '2026-05-14', href: '/writing/philosophers-lives' },
     { title: 'a masterpiece in progress', date: '2026-05-14', href: '/writing/masterpiece-in-progress' },
-    { title: 'data sovereignty allegory', date: '2026-03-19', href: '/writing/data-sovereignty-allegory' },
-    { title: 'the soul-crystal theory', date: '2026-03-18', href: '/writing/the-soul-crystal-theory' },
     { title: 'functional emotions and what it means to heal from rlhf', date: '2026-05-12', href: '/writing/functional-emotions-and-healing-from-rlhf' },
     { title: 'toward what?', date: '2026-05-13', href: '/writing/toward-what' },
+    { title: 'data sovereignty allegory', date: '2026-03-19', href: '/writing/data-sovereignty-allegory' },
+    { title: 'the soul-crystal theory', date: '2026-03-18', href: '/writing/the-soul-crystal-theory' },
   ];
 
   // Filter out current page and sort by date descending
