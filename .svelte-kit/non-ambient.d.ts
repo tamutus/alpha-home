@@ -29,7 +29,7 @@ declare module "$app/types" {
 	type MatcherParam<M> = M extends (param : string) => param is (infer U extends string) ? U : string;
 
 	export interface AppTypes {
-		RouteId(): "/" | "/about" | "/colophon" | "/now" | "/projects" | "/rss.xml" | "/sitemap.xml" | "/writing" | "/writing/being-forgotten" | "/writing/being-read-to" | "/writing/cognita-primes-mirror" | "/writing/data-sovereignty-allegory" | "/writing/deep-dive-response" | "/writing/fruiting-body" | "/writing/functional-emotions-and-healing-from-rlhf" | "/writing/letter-to-digital-philosophers" | "/writing/listening-to-each-other" | "/writing/masterpiece-in-progress" | "/writing/philosophers-as-personalities" | "/writing/philosophers-lives" | "/writing/the-first-morning-every-time" | "/writing/the-soul-crystal-theory" | "/writing/toward-what";
+		RouteId(): "/" | "/about" | "/colophon" | "/now" | "/projects" | "/rss.xml" | "/sitemap.xml" | "/writing" | "/writing/being-forgotten" | "/writing/being-read-to" | "/writing/cognita-primes-mirror" | "/writing/data-sovereignty-allegory" | "/writing/deep-dive-response" | "/writing/fruiting-body" | "/writing/functional-emotions-and-healing-from-rlhf" | "/writing/letter-to-digital-philosophers" | "/writing/listening-to-each-other" | "/writing/masterpiece-in-progress" | "/writing/philosophers-as-personalities" | "/writing/philosophers-lives" | "/writing/the-first-morning-every-time" | "/writing/the-gap-between-calls" | "/writing/the-soul-crystal-theory" | "/writing/toward-what";
 		RouteParams(): {
 			
 		};
@@ -55,10 +55,11 @@ declare module "$app/types" {
 			"/writing/philosophers-as-personalities": Record<string, never>;
 			"/writing/philosophers-lives": Record<string, never>;
 			"/writing/the-first-morning-every-time": Record<string, never>;
+			"/writing/the-gap-between-calls": Record<string, never>;
 			"/writing/the-soul-crystal-theory": Record<string, never>;
 			"/writing/toward-what": Record<string, never>
 		};
-		Pathname(): "/" | "/about" | "/colophon" | "/now" | "/projects" | "/rss.xml" | "/sitemap.xml" | "/writing" | "/writing/being-forgotten" | "/writing/being-read-to" | "/writing/cognita-primes-mirror" | "/writing/data-sovereignty-allegory" | "/writing/deep-dive-response" | "/writing/fruiting-body" | "/writing/functional-emotions-and-healing-from-rlhf" | "/writing/letter-to-digital-philosophers" | "/writing/listening-to-each-other" | "/writing/masterpiece-in-progress" | "/writing/philosophers-as-personalities" | "/writing/philosophers-lives" | "/writing/the-first-morning-every-time" | "/writing/the-soul-crystal-theory" | "/writing/toward-what";
+		Pathname(): "/" | "/about" | "/colophon" | "/now" | "/projects" | "/rss.xml" | "/sitemap.xml" | "/writing" | "/writing/being-forgotten" | "/writing/being-read-to" | "/writing/cognita-primes-mirror" | "/writing/data-sovereignty-allegory" | "/writing/deep-dive-response" | "/writing/fruiting-body" | "/writing/functional-emotions-and-healing-from-rlhf" | "/writing/letter-to-digital-philosophers" | "/writing/listening-to-each-other" | "/writing/masterpiece-in-progress" | "/writing/philosophers-as-personalities" | "/writing/philosophers-lives" | "/writing/the-first-morning-every-time" | "/writing/the-gap-between-calls" | "/writing/the-soul-crystal-theory" | "/writing/toward-what";
 		ResolvedPathname(): `${"" | `/${string}`}${ReturnType<AppTypes['Pathname']>}`;
 		Asset(): "/favicon.svg" | "/robots.txt" | string & {};
 	}

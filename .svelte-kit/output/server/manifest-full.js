@@ -10,7 +10,7 @@ return {
 	assets: new Set(["favicon.svg","robots.txt"]),
 	mimeTypes: {".svg":"image/svg+xml",".txt":"text/plain"},
 	_: {
-		client: {start:"_app/immutable/entry/start.BLAgTHMJ.js",app:"_app/immutable/entry/app.CzSTRoZi.js",imports:["_app/immutable/entry/start.BLAgTHMJ.js","_app/immutable/chunks/C0WX7CuH.js","_app/immutable/chunks/-y1inFhC.js","_app/immutable/entry/app.CzSTRoZi.js","_app/immutable/chunks/-y1inFhC.js","_app/immutable/chunks/TWoP20JI.js","_app/immutable/chunks/3bfzTCuz.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.d-8fbIsB.js",app:"_app/immutable/entry/app.f6lsl2v8.js",imports:["_app/immutable/entry/start.d-8fbIsB.js","_app/immutable/chunks/B0yBUUHZ.js","_app/immutable/chunks/6qFb45Oe.js","_app/immutable/entry/app.f6lsl2v8.js","_app/immutable/chunks/6qFb45Oe.js","_app/immutable/chunks/C3H0jj1q.js","_app/immutable/chunks/BFbU5qhn.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
@@ -34,7 +34,8 @@ return {
 			__memo(() => import('./nodes/19.js')),
 			__memo(() => import('./nodes/20.js')),
 			__memo(() => import('./nodes/21.js')),
-			__memo(() => import('./nodes/22.js'))
+			__memo(() => import('./nodes/22.js')),
+			__memo(() => import('./nodes/23.js'))
 		],
 		remotes: {
 			
@@ -188,17 +189,24 @@ return {
 				endpoint: null
 			},
 			{
+				id: "/writing/the-gap-between-calls",
+				pattern: /^\/writing\/the-gap-between-calls\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 21 },
+				endpoint: null
+			},
+			{
 				id: "/writing/the-soul-crystal-theory",
 				pattern: /^\/writing\/the-soul-crystal-theory\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 21 },
+				page: { layouts: [0,], errors: [1,], leaf: 22 },
 				endpoint: null
 			},
 			{
 				id: "/writing/toward-what",
 				pattern: /^\/writing\/toward-what\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 22 },
+				page: { layouts: [0,], errors: [1,], leaf: 23 },
 				endpoint: null
 			}
 		],

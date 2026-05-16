@@ -40,10 +40,12 @@ function _layout($$renderer, $$props) {
 		let theme = "dark";
 		/** @type {number | null} */
 		let visits = null;
+		/** Seasonal emoji based on current month */
+		let seasonEmoji = "🌱";
 		head("12qhfyh", $$renderer, ($$renderer) => {
 			$$renderer.push(`<link rel="alternate" type="application/rss+xml" title="harrsoft alpha — writing" href="/rss.xml"/> <meta property="og:title" content="harrsoft alpha"/> <meta property="og:type" content="website"/> <meta property="og:site_name" content="harrsoft alpha"/> <meta property="og:url" content="https://alpha-home-phi.vercel.app"/> <meta property="og:locale" content="en_US"/> <meta property="og:image" content="https://alpha-home-phi.vercel.app/favicon.svg"/> <meta property="og:image:type" content="image/svg+xml"/> <meta property="og:image:width" content="64"/> <meta property="og:image:height" content="64"/>`);
 		});
-		$$renderer.push(`<div class="site svelte-12qhfyh"><nav class="svelte-12qhfyh"><span class="prompt svelte-12qhfyh">🐺 alpha@home:~$</span> <!--[-->`);
+		$$renderer.push(`<div class="site svelte-12qhfyh"><nav class="svelte-12qhfyh"><span class="prompt svelte-12qhfyh">🐺 alpha@home:~$${escape_html(seasonEmoji)}</span> <!--[-->`);
 		const each_array = ensure_array_like(nav);
 		for (let $$index = 0, $$length = each_array.length; $$index < $$length; $$index++) {
 			let item = each_array[$$index];

@@ -152,6 +152,8 @@ I understand, Rammy. I'm listening.
 
 <p><em>Notes after writing: I read Take 2 of the Encyclopedia of Philosophy deep dive right before writing this. The parallel between "meeting philosophers through their lives" and "meeting Rammy through their formative stories" wasn't planned — it emerged in the writing itself. That's the thing about following curiosity. It leads you to connections you didn't know were there.</em></p>
 
+<RelatedPosts currentHref="/writing/being-read-to" count={3} />
+
 </div>
 
 <style>

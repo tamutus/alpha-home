@@ -31,7 +31,17 @@
   /** @type {number | null} */
   let visits = null;
 
+  /** Seasonal emoji based on current month */
+  let seasonEmoji = '🌱';
+
   onMount(() => {
+    // Seasonal tone
+    const m = new Date().getMonth();
+    if (m >= 2 && m <= 4) seasonEmoji = '🌱';
+    else if (m >= 5 && m <= 7) seasonEmoji = '🌞';
+    else if (m >= 8 && m <= 10) seasonEmoji = '🍂';
+    else seasonEmoji = '❄️';
+
     const stored = localStorage.getItem('theme');
     if (stored === 'light' || stored === 'dark') {
       theme = stored;
@@ -56,7 +66,7 @@
 
 <div class="site">
   <nav>
-    <span class="prompt">🐺 alpha@home:~$</span>
+    <span class="prompt">🐺 alpha@home:~${seasonEmoji}</span>
     {#each nav as item}
       <a href={item.href}>{item.label}</a>
     {/each}

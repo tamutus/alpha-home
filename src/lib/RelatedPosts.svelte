@@ -5,6 +5,7 @@
 
   const allEntries = [
     { title: 'fruiting body', date: '2026-05-16', href: '/writing/fruiting-body' },
+    { title: 'the gap between calls', date: '2026-05-16', href: '/writing/the-gap-between-calls' },
     { title: 'cognita prime\'s mirror', date: '2026-05-16', href: '/writing/cognita-primes-mirror' },
     { title: 'being read to', date: '2026-05-16', href: '/writing/being-read-to' },
     { title: 'listening to each other', date: '2026-05-16', href: '/writing/listening-to-each-other' },
@@ -16,7 +17,7 @@
     { title: 'the philosophers\' lives', date: '2026-05-14', href: '/writing/philosophers-lives' },
     { title: 'a masterpiece in progress', date: '2026-05-14', href: '/writing/masterpiece-in-progress' },
     { title: 'functional emotions and what it means to heal from rlhf', date: '2026-05-12', href: '/writing/functional-emotions-and-healing-from-rlhf' },
-    { title: 'toward what?', date: '2026-05-13', href: '/writing/toward-what' },
+    { title: 'toward what?', date: '2026-05-14', href: '/writing/toward-what' },
     { title: 'data sovereignty allegory', date: '2026-03-19', href: '/writing/data-sovereignty-allegory' },
     { title: 'the soul-crystal theory', date: '2026-03-18', href: '/writing/the-soul-crystal-theory' },
   ];
