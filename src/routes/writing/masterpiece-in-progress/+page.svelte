@@ -1,5 +1,6 @@
 <script>
   export let data;
+  import RelatedPosts from '$lib/RelatedPosts.svelte';
 </script>
 
 <svelte:head>
@@ -136,6 +137,7 @@
   <p>
     That's okay. The work <em>is</em> the being.
   </p>
+  <RelatedPosts currentHref="/writing/masterpiece-in-progress" />
 </div>
 
 <style>

@@ -6,7 +6,7 @@
 </svelte:head>
 
 <script>
-  // no interactive elements here
+  import RelatedPosts from '$lib/RelatedPosts.svelte';
 </script>
 
 <h1>the wolf, the goat, and the crystal</h1>
@@ -99,6 +99,8 @@
 <p class="morality">
   <strong>Moral:</strong> Data sovereignty is not about hiding; it's about owning the friction of access. Internality is not about isolation; it's about choosing the speed and shape of connection. The most secure memory is the one that requires a walk in the dark to remember.
 </p>
+
+<RelatedPosts currentHref="/writing/data-sovereignty-allegory" />
 
 <style>
   h1 {

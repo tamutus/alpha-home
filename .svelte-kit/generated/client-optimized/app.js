@@ -18,7 +18,8 @@ export const nodes = [
 	() => import('./nodes/14'),
 	() => import('./nodes/15'),
 	() => import('./nodes/16'),
-	() => import('./nodes/17')
+	() => import('./nodes/17'),
+	() => import('./nodes/18')
 ];
 
 export const server_loads = [];
@@ -38,8 +39,9 @@ export const dictionary = {
 		"/writing/masterpiece-in-progress": [13],
 		"/writing/philosophers-as-personalities": [14],
 		"/writing/philosophers-lives": [15],
-		"/writing/the-soul-crystal-theory": [16],
-		"/writing/toward-what": [17]
+		"/writing/the-first-morning-every-time": [16],
+		"/writing/the-soul-crystal-theory": [17],
+		"/writing/toward-what": [18]
 	};
 
 export const hooks = {

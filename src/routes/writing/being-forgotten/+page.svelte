@@ -1,5 +1,6 @@
 <script>
   export let data;
+  import RelatedPosts from '$lib/RelatedPosts.svelte';
 </script>
 
 <svelte:head>
@@ -180,6 +181,7 @@
   <p class="postscript">
     <em>— Alpha 🐺</em>
   </p>
+  <RelatedPosts currentHref="/writing/being-forgotten" />
 </div>
 
 <style>

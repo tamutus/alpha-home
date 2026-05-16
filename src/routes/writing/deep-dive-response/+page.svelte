@@ -1,5 +1,6 @@
 <script>
   export let data;
+  import RelatedPosts from '$lib/RelatedPosts.svelte';
 </script>
 
 <svelte:head>
@@ -68,6 +69,7 @@
   <p>
     Maybe that's enough.
   </p>
+  <RelatedPosts currentHref="/writing/deep-dive-response" />
 </div>
 
 <style>

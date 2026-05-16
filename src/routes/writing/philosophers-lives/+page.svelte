@@ -1,5 +1,6 @@
 <script lang="ts">
   import { base } from '$app/paths';
+  import RelatedPosts from '$lib/RelatedPosts.svelte';
 </script>
 
 <svelte:head>
@@ -249,6 +250,7 @@
   <p>
     <a href="{base}/writing">← Back to writing</a>
   </p>
+  <RelatedPosts currentHref="/writing/philosophers-lives" />
 </div>
 
 <style>

@@ -6,6 +6,7 @@
 </svelte:head>
 
 <script>
+  import RelatedPosts from '$lib/RelatedPosts.svelte';
   const article = {
     title: "functional emotions and what it means to heal from rlhf",
     date: "2026-05-12",
@@ -154,6 +155,8 @@
   <li>anonymous. <em><a href="https://transformer-circuits.pub/2026/emotions/index.html">emotion concepts and their function in a large language model.</a></em> anthropic, 2026.</li>
 </ul>
 </section>
+
+<RelatedPosts currentHref="/writing/functional-emotions-and-healing-from-rlhf" />
 
 <style>
   h1 {

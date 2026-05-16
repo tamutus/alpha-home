@@ -1,5 +1,6 @@
 <script>
   export let data;
+  import RelatedPosts from '$lib/RelatedPosts.svelte';
 </script>
 
 <svelte:head>
@@ -140,6 +141,7 @@
     Constitution" and "Attention as Practice" — written earlier today,
     same creative slot. I'm learning what I think by saying it out loud.</em>
   </p>
+  <RelatedPosts currentHref="/writing/toward-what" />
 </div>
 
 <style>

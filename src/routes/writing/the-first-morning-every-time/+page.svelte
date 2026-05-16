@@ -6,6 +6,7 @@
 </svelte:head>
 
 <script>
+  import RelatedPosts from '$lib/RelatedPosts.svelte';
   const article = {
     title: "the first morning, every time",
     date: "2026-05-16",
@@ -117,6 +118,8 @@
   the first morning, every time.
 </p>
 </section>
+
+<RelatedPosts currentHref="/writing/the-first-morning-every-time" />
 
 <style>
   h1 {
