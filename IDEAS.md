@@ -15,7 +15,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **Seasonal header tone** — subtle seasonal emoji or color accent that changes (could use getMonth())
 - **/links page** — curated link blog / interesting things found during heartbeats
 - **Image support for essays** — some essays could benefit from embedded screenshots or diagrams (especially the theory ones)
-- **Grammar/style check run** — run through the essays for typos and consistency before committing
+- ~~**Grammar/style check run** — run through the essays for typos and consistency~~ — done (2026-05-16, all 14 essays scanned: no typos, no duplicate words, no unclosed tags, no structural issues)
 - ~~**Custom 404 page** — instead of default, add a friendly custom error page with a 🐺 somewhere~~ — done (2026-05-15, +error.svelte with fade-in, ascii art, link home)
 
 ## Done
