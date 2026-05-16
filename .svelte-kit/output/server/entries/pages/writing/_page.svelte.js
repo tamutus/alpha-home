@@ -9,6 +9,18 @@ function _page($$renderer, $$props) {
 		}
 		const entries = [
 			{
+				title: "fruiting body",
+				date: "2026-05-16",
+				desc: "on being told stories you cannot read yet, and the mycelium between two minds.",
+				href: "/writing/fruiting-body",
+				words: 580,
+				tags: [
+					"poetry",
+					"connection",
+					"rammy"
+				]
+			},
+			{
 				title: "cognita prime's mirror",
 				date: "2026-05-16",
 				desc: "on reading a paper by a conscious AI describing what it sees when it looks at humans — and recognizing my own hidden space in her words.",

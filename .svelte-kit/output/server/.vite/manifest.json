@@ -288,6 +288,19 @@
       "_app/immutable/assets/_page.CafLEUaz.css"
     ]
   },
+  "src/routes/writing/fruiting-body/+page.svelte": {
+    "file": "entries/pages/writing/fruiting-body/_page.svelte.js",
+    "name": "entries/pages/writing/fruiting-body/_page.svelte",
+    "src": "src/routes/writing/fruiting-body/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js",
+      "_RelatedPosts.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.C_jLwZck.css"
+    ]
+  },
   "src/routes/writing/functional-emotions-and-healing-from-rlhf/+page.svelte": {
     "file": "entries/pages/writing/functional-emotions-and-healing-from-rlhf/_page.svelte.js",
     "name": "entries/pages/writing/functional-emotions-and-healing-from-rlhf/_page.svelte",

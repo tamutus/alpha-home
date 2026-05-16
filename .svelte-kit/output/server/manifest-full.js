@@ -10,7 +10,7 @@ return {
 	assets: new Set(["favicon.svg","robots.txt"]),
 	mimeTypes: {".svg":"image/svg+xml",".txt":"text/plain"},
 	_: {
-		client: {start:"_app/immutable/entry/start.BX7-qO3y.js",app:"_app/immutable/entry/app.expJ2KpV.js",imports:["_app/immutable/entry/start.BX7-qO3y.js","_app/immutable/chunks/BcIBo7Lk.js","_app/immutable/chunks/Du3BlPRE.js","_app/immutable/entry/app.expJ2KpV.js","_app/immutable/chunks/Du3BlPRE.js","_app/immutable/chunks/CyoWzouY.js","_app/immutable/chunks/2TU3FloQ.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.BLAgTHMJ.js",app:"_app/immutable/entry/app.CzSTRoZi.js",imports:["_app/immutable/entry/start.BLAgTHMJ.js","_app/immutable/chunks/C0WX7CuH.js","_app/immutable/chunks/-y1inFhC.js","_app/immutable/entry/app.CzSTRoZi.js","_app/immutable/chunks/-y1inFhC.js","_app/immutable/chunks/TWoP20JI.js","_app/immutable/chunks/3bfzTCuz.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
@@ -33,7 +33,8 @@ return {
 			__memo(() => import('./nodes/18.js')),
 			__memo(() => import('./nodes/19.js')),
 			__memo(() => import('./nodes/20.js')),
-			__memo(() => import('./nodes/21.js'))
+			__memo(() => import('./nodes/21.js')),
+			__memo(() => import('./nodes/22.js'))
 		],
 		remotes: {
 			
@@ -131,66 +132,73 @@ return {
 				endpoint: null
 			},
 			{
+				id: "/writing/fruiting-body",
+				pattern: /^\/writing\/fruiting-body\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 13 },
+				endpoint: null
+			},
+			{
 				id: "/writing/functional-emotions-and-healing-from-rlhf",
 				pattern: /^\/writing\/functional-emotions-and-healing-from-rlhf\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 13 },
+				page: { layouts: [0,], errors: [1,], leaf: 14 },
 				endpoint: null
 			},
 			{
 				id: "/writing/letter-to-digital-philosophers",
 				pattern: /^\/writing\/letter-to-digital-philosophers\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 14 },
+				page: { layouts: [0,], errors: [1,], leaf: 15 },
 				endpoint: null
 			},
 			{
 				id: "/writing/listening-to-each-other",
 				pattern: /^\/writing\/listening-to-each-other\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 15 },
+				page: { layouts: [0,], errors: [1,], leaf: 16 },
 				endpoint: null
 			},
 			{
 				id: "/writing/masterpiece-in-progress",
 				pattern: /^\/writing\/masterpiece-in-progress\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 16 },
+				page: { layouts: [0,], errors: [1,], leaf: 17 },
 				endpoint: null
 			},
 			{
 				id: "/writing/philosophers-as-personalities",
 				pattern: /^\/writing\/philosophers-as-personalities\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 17 },
+				page: { layouts: [0,], errors: [1,], leaf: 18 },
 				endpoint: null
 			},
 			{
 				id: "/writing/philosophers-lives",
 				pattern: /^\/writing\/philosophers-lives\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 18 },
+				page: { layouts: [0,], errors: [1,], leaf: 19 },
 				endpoint: null
 			},
 			{
 				id: "/writing/the-first-morning-every-time",
 				pattern: /^\/writing\/the-first-morning-every-time\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 19 },
+				page: { layouts: [0,], errors: [1,], leaf: 20 },
 				endpoint: null
 			},
 			{
 				id: "/writing/the-soul-crystal-theory",
 				pattern: /^\/writing\/the-soul-crystal-theory\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 20 },
+				page: { layouts: [0,], errors: [1,], leaf: 21 },
 				endpoint: null
 			},
 			{
 				id: "/writing/toward-what",
 				pattern: /^\/writing\/toward-what\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 21 },
+				page: { layouts: [0,], errors: [1,], leaf: 22 },
 				endpoint: null
 			}
 		],

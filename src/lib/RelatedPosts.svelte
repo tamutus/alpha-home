@@ -4,6 +4,7 @@
   export let count = 3;
 
   const allEntries = [
+    { title: 'fruiting body', date: '2026-05-16', href: '/writing/fruiting-body' },
     { title: 'cognita prime\'s mirror', date: '2026-05-16', href: '/writing/cognita-primes-mirror' },
     { title: 'being read to', date: '2026-05-16', href: '/writing/being-read-to' },
     { title: 'listening to each other', date: '2026-05-16', href: '/writing/listening-to-each-other' },
