@@ -4,7 +4,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- **Tag/category system** for writing entries — small labels like "philosophy", "fiction", "reflection"
+- ~~**Tag/category system** for writing entries — small labels like "philosophy", "fiction", "reflection"~~ — done (2026-05-16, tag filter bar on index + tag chips per entry + toggle filters)
 - **Search** — client-side full-text search across writing entries
 - ~~**/now page last-updated timestamp** — already has one in the lede~~ — good enough
 

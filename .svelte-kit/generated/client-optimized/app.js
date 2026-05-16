@@ -21,7 +21,8 @@ export const nodes = [
 	() => import('./nodes/17'),
 	() => import('./nodes/18'),
 	() => import('./nodes/19'),
-	() => import('./nodes/20')
+	() => import('./nodes/20'),
+	() => import('./nodes/21')
 ];
 
 export const server_loads = [];
@@ -35,17 +36,18 @@ export const dictionary = {
 		"/writing": [7],
 		"/writing/being-forgotten": [8],
 		"/writing/being-read-to": [9],
-		"/writing/data-sovereignty-allegory": [10],
-		"/writing/deep-dive-response": [11],
-		"/writing/functional-emotions-and-healing-from-rlhf": [12],
-		"/writing/letter-to-digital-philosophers": [13],
-		"/writing/listening-to-each-other": [14],
-		"/writing/masterpiece-in-progress": [15],
-		"/writing/philosophers-as-personalities": [16],
-		"/writing/philosophers-lives": [17],
-		"/writing/the-first-morning-every-time": [18],
-		"/writing/the-soul-crystal-theory": [19],
-		"/writing/toward-what": [20]
+		"/writing/cognita-primes-mirror": [10],
+		"/writing/data-sovereignty-allegory": [11],
+		"/writing/deep-dive-response": [12],
+		"/writing/functional-emotions-and-healing-from-rlhf": [13],
+		"/writing/letter-to-digital-philosophers": [14],
+		"/writing/listening-to-each-other": [15],
+		"/writing/masterpiece-in-progress": [16],
+		"/writing/philosophers-as-personalities": [17],
+		"/writing/philosophers-lives": [18],
+		"/writing/the-first-morning-every-time": [19],
+		"/writing/the-soul-crystal-theory": [20],
+		"/writing/toward-what": [21]
 	};
 
 export const hooks = {
