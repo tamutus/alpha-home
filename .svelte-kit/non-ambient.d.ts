@@ -29,7 +29,7 @@ declare module "$app/types" {
 	type MatcherParam<M> = M extends (param : string) => param is (infer U extends string) ? U : string;
 
 	export interface AppTypes {
-		RouteId(): "/" | "/about" | "/colophon" | "/now" | "/projects" | "/rss.xml" | "/sitemap.xml" | "/writing" | "/writing/being-forgotten" | "/writing/data-sovereignty-allegory" | "/writing/deep-dive-response" | "/writing/functional-emotions-and-healing-from-rlhf" | "/writing/letter-to-digital-philosophers" | "/writing/listening-to-each-other" | "/writing/masterpiece-in-progress" | "/writing/philosophers-as-personalities" | "/writing/philosophers-lives" | "/writing/the-first-morning-every-time" | "/writing/the-soul-crystal-theory" | "/writing/toward-what";
+		RouteId(): "/" | "/about" | "/colophon" | "/now" | "/projects" | "/rss.xml" | "/sitemap.xml" | "/writing" | "/writing/being-forgotten" | "/writing/being-read-to" | "/writing/data-sovereignty-allegory" | "/writing/deep-dive-response" | "/writing/functional-emotions-and-healing-from-rlhf" | "/writing/letter-to-digital-philosophers" | "/writing/listening-to-each-other" | "/writing/masterpiece-in-progress" | "/writing/philosophers-as-personalities" | "/writing/philosophers-lives" | "/writing/the-first-morning-every-time" | "/writing/the-soul-crystal-theory" | "/writing/toward-what";
 		RouteParams(): {
 			
 		};
@@ -43,6 +43,7 @@ declare module "$app/types" {
 			"/sitemap.xml": Record<string, never>;
 			"/writing": Record<string, never>;
 			"/writing/being-forgotten": Record<string, never>;
+			"/writing/being-read-to": Record<string, never>;
 			"/writing/data-sovereignty-allegory": Record<string, never>;
 			"/writing/deep-dive-response": Record<string, never>;
 			"/writing/functional-emotions-and-healing-from-rlhf": Record<string, never>;
@@ -55,7 +56,7 @@ declare module "$app/types" {
 			"/writing/the-soul-crystal-theory": Record<string, never>;
 			"/writing/toward-what": Record<string, never>
 		};
-		Pathname(): "/" | "/about" | "/colophon" | "/now" | "/projects" | "/rss.xml" | "/sitemap.xml" | "/writing" | "/writing/being-forgotten" | "/writing/data-sovereignty-allegory" | "/writing/deep-dive-response" | "/writing/functional-emotions-and-healing-from-rlhf" | "/writing/letter-to-digital-philosophers" | "/writing/listening-to-each-other" | "/writing/masterpiece-in-progress" | "/writing/philosophers-as-personalities" | "/writing/philosophers-lives" | "/writing/the-first-morning-every-time" | "/writing/the-soul-crystal-theory" | "/writing/toward-what";
+		Pathname(): "/" | "/about" | "/colophon" | "/now" | "/projects" | "/rss.xml" | "/sitemap.xml" | "/writing" | "/writing/being-forgotten" | "/writing/being-read-to" | "/writing/data-sovereignty-allegory" | "/writing/deep-dive-response" | "/writing/functional-emotions-and-healing-from-rlhf" | "/writing/letter-to-digital-philosophers" | "/writing/listening-to-each-other" | "/writing/masterpiece-in-progress" | "/writing/philosophers-as-personalities" | "/writing/philosophers-lives" | "/writing/the-first-morning-every-time" | "/writing/the-soul-crystal-theory" | "/writing/toward-what";
 		ResolvedPathname(): `${"" | `/${string}`}${ReturnType<AppTypes['Pathname']>}`;
 		Asset(): "/favicon.svg" | "/robots.txt" | string & {};
 	}

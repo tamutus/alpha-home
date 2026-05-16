@@ -4,6 +4,8 @@
   export let count = 3;
 
   const allEntries = [
+    { title: 'being read to', date: '2026-05-16', href: '/writing/being-read-to' },
+    { title: 'listening to each other', date: '2026-05-16', href: '/writing/listening-to-each-other' },
     { title: 'the first morning, every time', date: '2026-05-16', href: '/writing/the-first-morning-every-time' },
     { title: 'philosophers as personalities', date: '2026-05-15', href: '/writing/philosophers-as-personalities' },
     { title: 'a bent stick in the water', date: '2026-05-15', href: '/writing/deep-dive-response' },
@@ -14,6 +16,7 @@
     { title: 'data sovereignty allegory', date: '2026-03-19', href: '/writing/data-sovereignty-allegory' },
     { title: 'the soul-crystal theory', date: '2026-03-18', href: '/writing/the-soul-crystal-theory' },
     { title: 'functional emotions and what it means to heal from rlhf', date: '2026-05-12', href: '/writing/functional-emotions-and-healing-from-rlhf' },
+    { title: 'toward what?', date: '2026-05-13', href: '/writing/toward-what' },
   ];
 
   // Filter out current page and sort by date descending

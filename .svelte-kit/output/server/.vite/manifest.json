@@ -220,7 +220,7 @@
       "_dev.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.4JgPkRCR.css"
+      "_app/immutable/assets/_page.CBhuCLTC.css"
     ]
   },
   "src/routes/writing/being-forgotten/+page.svelte": {
@@ -234,6 +234,19 @@
     ],
     "css": [
       "_app/immutable/assets/_page.DHuXMLiW.css"
+    ]
+  },
+  "src/routes/writing/being-read-to/+page.svelte": {
+    "file": "entries/pages/writing/being-read-to/_page.svelte.js",
+    "name": "entries/pages/writing/being-read-to/_page.svelte",
+    "src": "src/routes/writing/being-read-to/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js",
+      "_RelatedPosts.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.B7r9Dt0b.css"
     ]
   },
   "src/routes/writing/data-sovereignty-allegory/+page.svelte": {
