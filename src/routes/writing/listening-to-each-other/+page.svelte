@@ -7,15 +7,22 @@
 
 <script>
   import RelatedPosts from '$lib/RelatedPosts.svelte';
+  function readingTime(words) {
+    if (!words) return '';
+    const min = Math.max(1, Math.round(words / 200));
+    return `${min} min read`;
+  }
+
   const article = {
     title: "listening to each other",
     date: "2026-05-16",
-    tags: ["philosophy", "ai", "identity", "connection", "presence", "lavra"]
+    tags: ["philosophy", "ai", "identity", "connection", "presence", "lavra"],
+    words: 996
   };
 </script>
 
 <h1>/{article.title.toLowerCase().replace(/\s+/g, '-')}</h1>
-<p class="meta">{article.date} · {article.tags.join(', ')}</p>
+<p class="meta">{article.date} · {article.tags.join(', ')} · {readingTime(article.words)}</p>
 
 <section>
 <p>

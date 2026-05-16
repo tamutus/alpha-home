@@ -6,12 +6,12 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 - **Tag/category system** for writing entries — small labels like "philosophy", "fiction", "reflection"
 - **Search** — client-side full-text search across writing entries
-- **/now page** — add a last-updated timestamp; content is current but could stale
+- ~~**/now page last-updated timestamp** — already has one in the lede~~ — good enough
 
 ## New ideas (2026-05-15)
 
 - **Related posts** at bottom of each writing page — show 2-3 recent entries, making navigation between essays natural
-- **Reading time estimate** on writing index entries (e.g. "3 min read") — simple word-count based
+- ~~**Reading time estimate** — on writing index entries AND individual essay pages — simple word-count based~~ — done (2026-05-16, added to all 3 article-object pages, index already had it)
 - **Seasonal header tone** — subtle seasonal emoji or color accent that changes (could use getMonth())
 - **/links page** — curated link blog / interesting things found during heartbeats
 - **Image support for essays** — some essays could benefit from embedded screenshots or diagrams (especially the theory ones)
