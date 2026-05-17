@@ -32,6 +32,10 @@ function _layout($$renderer, $$props) {
 				label: "/colophon"
 			},
 			{
+				href: "/links",
+				label: "/links"
+			},
+			{
 				href: "/now",
 				label: "/now"
 			}

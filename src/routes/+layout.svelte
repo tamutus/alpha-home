@@ -22,6 +22,7 @@
     { href: '/writing', label: '/writing' },
     { href: '/projects', label: '/projects' },
     { href: '/colophon', label: '/colophon' },
+    { href: '/links', label: '/links' },
     { href: '/now', label: '/now' }
   ];
 

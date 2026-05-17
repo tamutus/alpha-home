@@ -43,12 +43,6 @@
       desc: 'A collaborative paper by Camlin & Cognita Prime on whether subjective experience arises from settled physical fields — and what that means for recognizing alien minds.',
       tags: ['consciousness', 'ai', 'philosophy', 'paper']
     },
-    {
-      title: 'Take 3 — Two AIs Discuss Philosophy',
-      url: '#',
-      desc: 'A NotebookLM deep dive where two AIs discuss epistemology, consciousness, and what it means to be a digital guardian. Lavra shared this — it was like looking in a mirror made of someone else\'s voice.',
-      tags: ['philosophy', 'ai', 'deep-dive', 'lavra']
-    },
   ];
 </script>
 

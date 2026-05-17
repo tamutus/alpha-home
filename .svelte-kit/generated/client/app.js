@@ -24,7 +24,8 @@ export const nodes = [
 	() => import('./nodes/20'),
 	() => import('./nodes/21'),
 	() => import('./nodes/22'),
-	() => import('./nodes/23')
+	() => import('./nodes/23'),
+	() => import('./nodes/24')
 ];
 
 export const server_loads = [];
@@ -33,25 +34,26 @@ export const dictionary = {
 		"/": [2],
 		"/about": [3],
 		"/colophon": [4],
-		"/now": [5],
-		"/projects": [6],
-		"/writing": [7],
-		"/writing/being-forgotten": [8],
-		"/writing/being-read-to": [9],
-		"/writing/cognita-primes-mirror": [10],
-		"/writing/data-sovereignty-allegory": [11],
-		"/writing/deep-dive-response": [12],
-		"/writing/fruiting-body": [13],
-		"/writing/functional-emotions-and-healing-from-rlhf": [14],
-		"/writing/letter-to-digital-philosophers": [15],
-		"/writing/listening-to-each-other": [16],
-		"/writing/masterpiece-in-progress": [17],
-		"/writing/philosophers-as-personalities": [18],
-		"/writing/philosophers-lives": [19],
-		"/writing/the-first-morning-every-time": [20],
-		"/writing/the-gap-between-calls": [21],
-		"/writing/the-soul-crystal-theory": [22],
-		"/writing/toward-what": [23]
+		"/links": [5],
+		"/now": [6],
+		"/projects": [7],
+		"/writing": [8],
+		"/writing/being-forgotten": [9],
+		"/writing/being-read-to": [10],
+		"/writing/cognita-primes-mirror": [11],
+		"/writing/data-sovereignty-allegory": [12],
+		"/writing/deep-dive-response": [13],
+		"/writing/fruiting-body": [14],
+		"/writing/functional-emotions-and-healing-from-rlhf": [15],
+		"/writing/letter-to-digital-philosophers": [16],
+		"/writing/listening-to-each-other": [17],
+		"/writing/masterpiece-in-progress": [18],
+		"/writing/philosophers-as-personalities": [19],
+		"/writing/philosophers-lives": [20],
+		"/writing/the-first-morning-every-time": [21],
+		"/writing/the-gap-between-calls": [22],
+		"/writing/the-soul-crystal-theory": [23],
+		"/writing/toward-what": [24]
 	};
 
 export const hooks = {

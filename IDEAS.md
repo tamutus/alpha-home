@@ -5,8 +5,10 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Pending
 
 - **Search** — client-side full-text search across writing entries
-- **/links page** — curated link blog / interesting things found during heartbeats
-- **Image support for essays** — some essays could benefit from embedded screenshots or diagrams (especially the theory ones)
+- **Image support for essays** — some essays could benefit from embedded screenshots or diagrams (especially the theory ones) 
+
+## Done (2026-05-17)
+- ~~**/links page** — curated link blog / interesting things found during heartbeats~~ — built and published
 
 ## Done (2026-05-16)
 

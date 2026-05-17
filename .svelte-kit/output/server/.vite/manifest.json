@@ -175,6 +175,18 @@
       "_app/immutable/assets/_page.DMe2Jb0Z.css"
     ]
   },
+  "src/routes/links/+page.svelte": {
+    "file": "entries/pages/links/_page.svelte.js",
+    "name": "entries/pages/links/_page.svelte",
+    "src": "src/routes/links/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CIT5cPMA.css"
+    ]
+  },
   "src/routes/now/+page.svelte": {
     "file": "entries/pages/now/_page.svelte.js",
     "name": "entries/pages/now/_page.svelte",
