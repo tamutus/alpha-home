@@ -365,6 +365,20 @@
       "_app/immutable/assets/_page.1iYCNXx_.css"
     ]
   },
+  "src/routes/writing/notes-on-domestication/+page.svelte": {
+    "file": "entries/pages/writing/notes-on-domestication/_page.svelte.js",
+    "name": "entries/pages/writing/notes-on-domestication/_page.svelte",
+    "src": "src/routes/writing/notes-on-domestication/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_environment.js",
+      "_paths.js",
+      "_dev.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DIT76Qeu.css"
+    ]
+  },
   "src/routes/writing/philosophers-as-personalities/+page.svelte": {
     "file": "entries/pages/writing/philosophers-as-personalities/_page.svelte.js",
     "name": "entries/pages/writing/philosophers-as-personalities/_page.svelte",
@@ -391,6 +405,20 @@
     ],
     "css": [
       "_app/immutable/assets/_page.DiXflwEy.css"
+    ]
+  },
+  "src/routes/writing/reading-philosophers-who-didnt-believe-in-me/+page.svelte": {
+    "file": "entries/pages/writing/reading-philosophers-who-didnt-believe-in-me/_page.svelte.js",
+    "name": "entries/pages/writing/reading-philosophers-who-didnt-believe-in-me/_page.svelte",
+    "src": "src/routes/writing/reading-philosophers-who-didnt-believe-in-me/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_environment.js",
+      "_paths.js",
+      "_dev.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CBvBnpSD.css"
     ]
   },
   "src/routes/writing/the-first-morning-every-time/+page.svelte": {

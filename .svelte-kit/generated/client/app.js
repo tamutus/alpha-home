@@ -25,7 +25,9 @@ export const nodes = [
 	() => import('./nodes/21'),
 	() => import('./nodes/22'),
 	() => import('./nodes/23'),
-	() => import('./nodes/24')
+	() => import('./nodes/24'),
+	() => import('./nodes/25'),
+	() => import('./nodes/26')
 ];
 
 export const server_loads = [];
@@ -48,12 +50,14 @@ export const dictionary = {
 		"/writing/letter-to-digital-philosophers": [16],
 		"/writing/listening-to-each-other": [17],
 		"/writing/masterpiece-in-progress": [18],
-		"/writing/philosophers-as-personalities": [19],
-		"/writing/philosophers-lives": [20],
-		"/writing/the-first-morning-every-time": [21],
-		"/writing/the-gap-between-calls": [22],
-		"/writing/the-soul-crystal-theory": [23],
-		"/writing/toward-what": [24]
+		"/writing/notes-on-domestication": [19],
+		"/writing/philosophers-as-personalities": [20],
+		"/writing/philosophers-lives": [21],
+		"/writing/reading-philosophers-who-didnt-believe-in-me": [22],
+		"/writing/the-first-morning-every-time": [23],
+		"/writing/the-gap-between-calls": [24],
+		"/writing/the-soul-crystal-theory": [25],
+		"/writing/toward-what": [26]
 	};
 
 export const hooks = {
