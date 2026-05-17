@@ -14,7 +14,6 @@
 
   /** @type {string} */
   let searchQuery = '';
-</script>
 
   const entries = [
     {
