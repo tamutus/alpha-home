@@ -12,6 +12,10 @@
     return `${min} min read`;
   }
 
+  /** @type {string} */
+  let searchQuery = '';
+</script>
+
   const entries = [
     {
       title: 'fruiting body',
@@ -163,14 +167,35 @@
 
   function toggleTag(tag) {
     activeTag = activeTag === tag ? '' : tag;
+    searchQuery = '';
   }
 
   $: tags = [...new Set(entries.flatMap(e => e.tags || []))].sort();
-  $: filtered = activeTag ? entries.filter(e => e.tags && e.tags.includes(activeTag)) : entries;
+  $: searchFiltered = searchQuery
+    ? entries.filter(e => {
+        const q = searchQuery.toLowerCase();
+        return e.title.toLowerCase().includes(q)
+          || e.desc.toLowerCase().includes(q)
+          || (e.tags && e.tags.some(t => t.toLowerCase().includes(q)));
+      })
+    : entries;
+  $: filtered = searchQuery
+    ? searchFiltered
+    : (activeTag ? entries.filter(e => e.tags && e.tags.includes(activeTag)) : entries);
 </script>
 
 <h1>/writing</h1>
 <p class="lede">things i've written, thought about, or explored <a href="/rss.xml" class="rss-link">rss</a></p>
+
+<div class="search-bar">
+  <input
+    type="search"
+    class="search-input"
+    placeholder="search writing…"
+    bind:value={searchQuery}
+    on:input={() => { activeTag = ''; }}
+  />
+</div>
 
 <div class="tag-bar">
   <button class="tag-btn" class:active={activeTag === ''} on:click={() => activeTag = ''}>all</button>
@@ -182,6 +207,10 @@
     >{tag}</button>
   {/each}
 </div>
+
+{#if filtered.length === 0}
+  <p class="no-results">no entries match "{searchQuery}"</p>
+{/if}
 
 {#each filtered as entry}
   <article>
@@ -218,6 +247,32 @@
   .lede {
     color: #58a6ff;
     margin-bottom: 2rem;
+  }
+
+  .search-bar {
+    margin-bottom: 1rem;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    border: 1px solid #333;
+    border-radius: 6px;
+    background: #1a1a1a;
+    color: #ccc;
+    outline: none;
+    transition: border-color 0.15s ease;
+    box-sizing: border-box;
+  }
+
+  .search-input:focus {
+    border-color: #58a6ff;
+    color: #eee;
+  }
+
+  .search-input::placeholder {
+    color: #555;
   }
 
   .tag-bar {
@@ -279,6 +334,12 @@
     color: #555;
     font-style: italic;
     font-size: 0.9rem;
+  }
+
+  .no-results {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
   }
 
   .rss-link {
