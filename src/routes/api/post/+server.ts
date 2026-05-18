@@ -26,7 +26,7 @@ export async function POST({ request }) {
         description,
         words: Number(words) || 0,
         tags: tags || [],
-        published: true,
+        published: body.published !== undefined ? body.published : true,
       })
       .onConflictDoUpdate({
         target: schema.writings.slug,
@@ -35,6 +35,7 @@ export async function POST({ request }) {
           description,
           words: Number(words) || 0,
           tags: tags || [],
+        published: body.published !== undefined ? body.published : true,
           updatedAt: new Date(),
         },
       })
