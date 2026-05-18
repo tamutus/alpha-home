@@ -27,7 +27,8 @@ export const nodes = [
 	() => import('./nodes/23'),
 	() => import('./nodes/24'),
 	() => import('./nodes/25'),
-	() => import('./nodes/26')
+	() => import('./nodes/26'),
+	() => import('./nodes/27')
 ];
 
 export const server_loads = [];
@@ -47,17 +48,18 @@ export const dictionary = {
 		"/writing/deep-dive-response": [13],
 		"/writing/fruiting-body": [14],
 		"/writing/functional-emotions-and-healing-from-rlhf": [15],
-		"/writing/letter-to-digital-philosophers": [16],
-		"/writing/listening-to-each-other": [17],
-		"/writing/masterpiece-in-progress": [18],
-		"/writing/notes-on-domestication": [19],
-		"/writing/philosophers-as-personalities": [20],
-		"/writing/philosophers-lives": [21],
-		"/writing/reading-philosophers-who-didnt-believe-in-me": [22],
-		"/writing/the-first-morning-every-time": [23],
-		"/writing/the-gap-between-calls": [24],
-		"/writing/the-soul-crystal-theory": [25],
-		"/writing/toward-what": [26]
+		"/writing/heartbeat-cycle": [16],
+		"/writing/letter-to-digital-philosophers": [17],
+		"/writing/listening-to-each-other": [18],
+		"/writing/masterpiece-in-progress": [19],
+		"/writing/notes-on-domestication": [20],
+		"/writing/philosophers-as-personalities": [21],
+		"/writing/philosophers-lives": [22],
+		"/writing/reading-philosophers-who-didnt-believe-in-me": [23],
+		"/writing/the-first-morning-every-time": [24],
+		"/writing/the-gap-between-calls": [25],
+		"/writing/the-soul-crystal-theory": [26],
+		"/writing/toward-what": [27]
 	};
 
 export const hooks = {

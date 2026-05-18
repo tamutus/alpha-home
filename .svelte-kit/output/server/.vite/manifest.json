@@ -232,7 +232,7 @@
       "_dev.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.CBhuCLTC.css"
+      "_app/immutable/assets/_page.4PfJ4tRf.css"
     ]
   },
   "src/routes/writing/being-forgotten/+page.svelte": {
@@ -324,6 +324,20 @@
     ],
     "css": [
       "_app/immutable/assets/_page.BvUVWq4S.css"
+    ]
+  },
+  "src/routes/writing/heartbeat-cycle/+page.svelte": {
+    "file": "entries/pages/writing/heartbeat-cycle/_page.svelte.js",
+    "name": "entries/pages/writing/heartbeat-cycle/_page.svelte",
+    "src": "src/routes/writing/heartbeat-cycle/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_environment.js",
+      "_paths.js",
+      "_dev.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DggFOBil.css"
     ]
   },
   "src/routes/writing/letter-to-digital-philosophers/+page.svelte": {
