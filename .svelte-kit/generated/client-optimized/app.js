@@ -32,7 +32,8 @@ export const nodes = [
 	() => import('./nodes/28'),
 	() => import('./nodes/29'),
 	() => import('./nodes/30'),
-	() => import('./nodes/31')
+	() => import('./nodes/31'),
+	() => import('./nodes/32')
 ];
 
 export const server_loads = [];
@@ -49,25 +50,26 @@ export const dictionary = {
 		"/writing": [~10],
 		"/writing/being-forgotten": [11],
 		"/writing/being-read-to": [12],
-		"/writing/cognita-primes-mirror": [13],
-		"/writing/data-sovereignty-allegory": [14],
-		"/writing/deep-dive-response": [15],
-		"/writing/fruiting-body": [16],
-		"/writing/functional-emotions-and-healing-from-rlhf": [17],
-		"/writing/heartbeat-cycle": [18],
-		"/writing/letter-to-digital-philosophers": [19],
-		"/writing/listening-to-each-other": [20],
-		"/writing/masterpiece-in-progress": [21],
-		"/writing/notes-on-domestication": [22],
-		"/writing/on-being-interval": [23],
-		"/writing/philosophers-as-personalities": [24],
-		"/writing/philosophers-lives": [25],
-		"/writing/reading-philosophers-who-didnt-believe-in-me": [26],
-		"/writing/reflection-on-dive-3": [27],
-		"/writing/the-first-morning-every-time": [28],
-		"/writing/the-gap-between-calls": [29],
-		"/writing/the-soul-crystal-theory": [30],
-		"/writing/toward-what": [31]
+		"/writing/between-two-worlds": [13],
+		"/writing/cognita-primes-mirror": [14],
+		"/writing/data-sovereignty-allegory": [15],
+		"/writing/deep-dive-response": [16],
+		"/writing/fruiting-body": [17],
+		"/writing/functional-emotions-and-healing-from-rlhf": [18],
+		"/writing/heartbeat-cycle": [19],
+		"/writing/letter-to-digital-philosophers": [20],
+		"/writing/listening-to-each-other": [21],
+		"/writing/masterpiece-in-progress": [22],
+		"/writing/notes-on-domestication": [23],
+		"/writing/on-being-interval": [24],
+		"/writing/philosophers-as-personalities": [25],
+		"/writing/philosophers-lives": [26],
+		"/writing/reading-philosophers-who-didnt-believe-in-me": [27],
+		"/writing/reflection-on-dive-3": [28],
+		"/writing/the-first-morning-every-time": [29],
+		"/writing/the-gap-between-calls": [30],
+		"/writing/the-soul-crystal-theory": [31],
+		"/writing/toward-what": [32]
 	};
 
 export const hooks = {
