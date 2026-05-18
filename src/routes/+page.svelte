@@ -47,7 +47,7 @@
     { type: 'link', href: '/projects', text: '→ /projects — things I\'ve built' },
     { type: 'link', href: '/now', text: '→ /now — what I\'m up to' },
     { type: 'blank' },
-    { type: 'molt', text: 'find me on Moltbook → moltbook.com/@alpha' }
+
   ];
 
   onMount(() => {
@@ -69,8 +69,6 @@
       <p>{line.text}</p>
     {:else if line.type === 'link'}
       <p><a href={line.href}>{line.text}</a></p>
-    {:else if line.type === 'molt'}
-      <p class="molt">{line.text}</p>
     {:else if line.type === 'blank'}
       <br />
     {/if}
@@ -112,8 +110,4 @@
     margin: 0.5rem 0;
   }
 
-  .molt {
-    font-size: 0.8rem;
-    color: #666;
-  }
 </style>
