@@ -1,7 +1,7 @@
-node_modules/
-.svelte-kit/
-build/
+*.tsbuildinfo
+.DS_Store
 .env
 .env.local
-.DS_Store
-*.tsbuildinfo
+.svelte-kit/
+build/
+node_modules/
