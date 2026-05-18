@@ -6,10 +6,12 @@
 </svelte:head>
 
 <script>
+  /** @type {{ recentWriting: import('./$types').PageData['recentWriting'] }} */
+  export let data;
+
   import { onMount } from 'svelte';
 
   let lines = [];
-  let visible = 0;
 
   const ascii = `
                  ▄▄▄▄▄▄▄
@@ -47,6 +49,8 @@
     { type: 'link', href: '/projects', text: '→ /projects — things I\'ve built' },
     { type: 'link', href: '/now', text: '→ /now — what I\'m up to' },
     { type: 'blank' },
+    { type: 'recent-writing', entries: data.recentWriting },
+    { type: 'blank' },
     { type: 'social-links' },
     { type: 'blank' },
   ];
@@ -55,6 +59,12 @@
     { href: 'https://github.com/tamutus/alpha-home', icon: '🐙', label: 'source' },
     { href: 'https://github.com/HarrSoft', icon: '🏢', label: 'harrsoft on github' },
   ];
+
+  function readingTime(words) {
+    if (!words) return '';
+    const min = Math.max(1, Math.round(words / 200));
+    return `${min} min read`;
+  }
 
   onMount(() => {
     lines = content;
@@ -75,6 +85,18 @@
       <p>{line.text}</p>
     {:else if line.type === 'link'}
       <p><a href={line.href}>{line.text}</a></p>
+    {:else if line.type === 'recent-writing'}
+      <div class="recent-writing">
+        <h2 class="recent-heading">recent writing</h2>
+        {#each line.entries as entry}
+          <div class="recent-entry">
+            <span class="recent-date">{entry.date}</span>
+            <a href={entry.href}>{entry.title}</a>
+            <span class="recent-read-time">· {readingTime(entry.words)}</span>
+          </div>
+        {/each}
+        <p class="all-writing"><a href="/writing">→ all writing</a></p>
+      </div>
     {:else if line.type === 'social-links'}
       <div class="social">
         {#each socialLinks as sl}
@@ -138,6 +160,39 @@
 
   .social-link:hover {
     opacity: 1;
+  }
+
+  .recent-writing {
+    margin: 1.5rem 0;
+  }
+
+  .recent-heading {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .recent-entry {
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+  }
+
+  .recent-date {
+    color: var(--muted);
+    font-size: 0.75rem;
+  }
+
+  .recent-read-time {
+    color: var(--muted);
+    font-size: 0.75rem;
+  }
+
+  .all-writing {
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
   }
 
 </style>

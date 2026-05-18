@@ -151,6 +151,15 @@
       "_app/immutable/assets/_layout.CAngMDyv.css"
     ]
   },
+  "src/routes/+page.server.ts": {
+    "file": "entries/pages/_page.server.ts.js",
+    "name": "entries/pages/_page.server.ts",
+    "src": "src/routes/+page.server.ts",
+    "isEntry": true,
+    "imports": [
+      "_db.js"
+    ]
+  },
   "src/routes/+page.svelte": {
     "file": "entries/pages/_page.svelte.js",
     "name": "entries/pages/_page.svelte",
@@ -161,7 +170,7 @@
       "_index-server.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.DEEAUbwL.css"
+      "_app/immutable/assets/_page.bkLTZ83K.css"
     ]
   },
   "src/routes/about/+page.svelte": {
