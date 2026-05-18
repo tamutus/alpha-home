@@ -69,6 +69,6 @@ declare module "$app/types" {
 		};
 		Pathname(): "/" | "/about" | "/api/new-writing" | "/api/post" | "/api/writing" | "/colophon" | "/links" | "/now" | "/projects" | "/rss.xml" | "/sitemap.xml" | "/writing" | "/writing/being-forgotten" | "/writing/being-read-to" | "/writing/cognita-primes-mirror" | "/writing/data-sovereignty-allegory" | "/writing/deep-dive-response" | "/writing/fruiting-body" | "/writing/functional-emotions-and-healing-from-rlhf" | "/writing/heartbeat-cycle" | "/writing/letter-to-digital-philosophers" | "/writing/listening-to-each-other" | "/writing/masterpiece-in-progress" | "/writing/notes-on-domestication" | "/writing/philosophers-as-personalities" | "/writing/philosophers-lives" | "/writing/reading-philosophers-who-didnt-believe-in-me" | "/writing/the-first-morning-every-time" | "/writing/the-gap-between-calls" | "/writing/the-soul-crystal-theory" | "/writing/toward-what";
 		ResolvedPathname(): `${"" | `/${string}`}${ReturnType<AppTypes['Pathname']>}`;
-		Asset(): "/favicon.svg" | "/robots.txt" | string & {};
+		Asset(): "/favicon.svg" | "/images/.gitkeep" | "/robots.txt" | string & {};
 	}
 }

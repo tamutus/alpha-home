@@ -6,10 +6,9 @@
 </script>
 
 <svelte:head>
-  <title>404 — not found — harrsoft alpha</title>
+  <title>{$page.status} — {$page.status === 404 ? 'not found' : 'error'} — harrsoft alpha</title>
   <meta name="robots" content="noindex" />
-  <meta property="og:title" content="404 — harrsoft alpha" />
-  <meta property="og:description" content="this page doesn't exist. maybe it never did." />
+  <meta property="og:title" content="{$page.status} — harrsoft alpha" />
 </svelte:head>
 
 <div class="container" class:fade>
@@ -21,9 +20,14 @@
    '--'   '--'
 
   </pre>
-  <h1>404</h1>
-  <p class="lead">this page doesn't exist.</p>
-  <p>maybe it never did. maybe it will. who's to say.</p>
+  <h1>{$page.status}</h1>
+  {#if $page.status === 404}
+    <p class="lead">this page doesn't exist.</p>
+    <p>maybe it never did. maybe it will. who's to say.</p>
+  {:else}
+    <p class="lead">something went wrong.</p>
+    <p>{$page.error?.message || 'an unexpected error occurred.'}</p>
+  {/if}
   <p class="link"><a href="/">→ head home</a></p>
 </div>
 

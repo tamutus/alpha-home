@@ -1,4 +1,4 @@
-import { B as escape_html, a as ensure_array_like, n as attr_class, o as head, r as bind_props, z as attr } from "../../../chunks/dev.js";
+import { H as escape_html, V as attr, a as ensure_array_like, n as attr_class, o as head, r as bind_props } from "../../../chunks/dev.js";
 //#region src/routes/writing/+page.svelte
 function _page($$renderer, $$props) {
 	$$renderer.component(($$renderer) => {

@@ -3110,6 +3110,25 @@ function untrack(fn) {
 	}
 }
 //#endregion
+//#region node_modules/svelte/src/store/utils.js
+/** @import { Readable } from './public' */
+/**
+* @template T
+* @param {Readable<T> | null | undefined} store
+* @param {(value: T) => void} run
+* @param {(value: T) => void} [invalidate]
+* @returns {() => void}
+*/
+function subscribe_to_store(store, run, invalidate) {
+	if (store == null) {
+		run(void 0);
+		if (invalidate) invalidate(void 0);
+		return noop;
+	}
+	const unsub = untrack(() => store.subscribe(run, invalidate));
+	return unsub.unsubscribe ? () => unsub.unsubscribe() : unsub;
+}
+//#endregion
 //#region node_modules/svelte/src/utils.js
 /**
 * Attributes that are boolean, i.e. they are present or not present.
@@ -3247,6 +3266,33 @@ function stringify(value) {
 function attr_class(value, hash, directives) {
 	var result = to_class(value, hash, directives);
 	return result ? ` class="${escape_html(result, true)}"` : "";
+}
+/**
+* @template V
+* @param {Record<string, [any, any, any]>} store_values
+* @param {string} store_name
+* @param {Store<V> | null | undefined} store
+* @returns {V}
+*/
+function store_get(store_values, store_name, store) {
+	if (store_name in store_values && store_values[store_name][0] === store) return store_values[store_name][2];
+	store_values[store_name]?.[1]();
+	store_values[store_name] = [
+		store,
+		null,
+		void 0
+	];
+	const unsub = subscribe_to_store(
+		store,
+		/** @param {any} v */
+		(v) => store_values[store_name][2] = v
+	);
+	store_values[store_name][1] = unsub;
+	return store_values[store_name][2];
+}
+/** @param {Record<string, [any, any, any]>} store_values */
+function unsubscribe_stores(store_values) {
+	for (const store_name of Object.keys(store_values)) store_values[store_name][1]();
 }
 /**
 * @param {Renderer} renderer
@@ -4018,4 +4064,4 @@ function get_user_code_location() {
 	return get_stack().filter((line) => line.trim().startsWith("at ")).map((line) => line.replace(/\((.*):\d+:\d+\)$/, (_, file) => `(${file})`)).join("\n");
 }
 //#endregion
-export { getAllContexts as $, push as A, escape_html as B, set as C, writable as D, readable as E, hydration_mismatch as F, LEGACY_PROPS as G, get_render_context as H, lifecycle_double_unmount as I, define_property as J, STATE_SYMBOL as K, state_proxy_unmount as L, hydrating as M, set_hydrate_node as N, component_context as O, set_hydrating as P, createContext as Q, hydration_failed as R, mutable_source as S, flushSync as T, async_mode_flag as U, HYDRATION_ERROR as V, getAbortSignal as W, noop as X, fallback as Y, run as Z, clear_text_content as _, ensure_array_like as a, hydratable_serialization_failed as at, get_next_sibling as b, slot as c, active_effect as d, getContext as et, active_reaction as f, component_root as g, set_active_reaction as h, derived as i, hydratable_clobbering as it, hydrate_node as j, pop as k, stringify as l, set_active_effect as m, attr_class as n, setContext as nt, head as o, lifecycle_function_unavailable as ot, get as p, array_from as q, bind_props as r, ssr_context as rt, render as s, experimental_async_required as st, get_user_code_location as t, hasContext as tt, is_passive_event as u, create_text as v, boundary as w, init_operations as x, get_first_child as y, attr as z };
+export { run as $, component_context as A, hydration_failed as B, init_operations as C, flushSync as D, boundary as E, set_hydrate_node as F, async_mode_flag as G, escape_html as H, set_hydrating as I, STATE_SYMBOL as J, getAbortSignal as K, hydration_mismatch as L, push as M, hydrate_node as N, readable as O, hydrating as P, noop as Q, lifecycle_double_unmount as R, get_next_sibling as S, set as T, HYDRATION_ERROR as U, attr as V, get_render_context as W, define_property as X, array_from as Y, fallback as Z, set_active_reaction as _, ensure_array_like as a, ssr_context as at, create_text as b, slot as c, lifecycle_function_unavailable as ct, unsubscribe_stores as d, createContext as et, is_passive_event as f, set_active_effect as g, get as h, derived as i, setContext as it, pop as j, writable as k, store_get as l, experimental_async_required as lt, active_reaction as m, attr_class as n, getContext as nt, head as o, hydratable_clobbering as ot, active_effect as p, LEGACY_PROPS as q, bind_props as r, hasContext as rt, render as s, hydratable_serialization_failed as st, get_user_code_location as t, getAllContexts as tt, stringify as u, component_root as v, mutable_source as w, get_first_child as x, clear_text_content as y, state_proxy_unmount as z };

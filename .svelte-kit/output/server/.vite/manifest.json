@@ -126,6 +126,7 @@
     "src": "src/routes/+error.svelte",
     "isEntry": true,
     "imports": [
+      "_environment.js",
       "_paths.js",
       "_exports.js",
       "_shared.js",

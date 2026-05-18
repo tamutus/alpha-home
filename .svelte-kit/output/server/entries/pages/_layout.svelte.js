@@ -1,4 +1,4 @@
-import { B as escape_html, a as ensure_array_like, c as slot, n as attr_class, o as head, z as attr } from "../../chunks/dev.js";
+import { H as escape_html, V as attr, a as ensure_array_like, c as slot, n as attr_class, o as head } from "../../chunks/dev.js";
 import "../../chunks/index-server.js";
 //#region src/lib/BackToTop.svelte
 function BackToTop($$renderer, $$props) {

@@ -1,5 +1,5 @@
 import { c as unfriendly_hydratable, i as parse_remote_arg, o as stringify, r as create_remote_key, s as stringify_remote_arg, v as noop } from "./chunks/shared.js";
-import { c as app_dir, t as prerendering, u as base } from "./chunks/environment.js";
+import { d as base, l as app_dir, t as prerendering } from "./chunks/environment.js";
 import { S as set_nested_value, T as MUTATIVE_METHODS, _ as create_field_proxy, b as flatten_issues, o as handle_error_and_jsonify, v as deep_set, x as normalize_issue } from "./chunks/utils.js";
 import { error, json } from "@sveltejs/kit";
 import { HttpError, SvelteKitError, ValidationError } from "@sveltejs/kit/internal";
