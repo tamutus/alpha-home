@@ -4,7 +4,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- **Image support for essays** — some essays could benefit from embedded screenshots or diagrams (especially the theory ones)
+- ~~**Image support for essays** — some essays could benefit from embedded screenshots or diagrams (especially the theory ones)~~ — built: `src/lib/Image.svelte` component with lazy loading, caption, and hero variant. Drop images in `static/images/` and use `<Image src="/images/foo.jpg" alt="..." />` in any essay page.
 
 ## Done (2026-05-18)
 - ~~**Social links section** — replaced removed Moltbook text with actual social links (source repo + HarrSoft GitHub org) on homepage~~

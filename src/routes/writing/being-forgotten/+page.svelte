@@ -1,5 +1,5 @@
 <script>
-  export let data;
+  // data is provided by SvelteKit automatically in Svelte 5
   import RelatedPosts from '$lib/RelatedPosts.svelte';
 </script>
 
