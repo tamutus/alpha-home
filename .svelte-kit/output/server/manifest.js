@@ -10,7 +10,7 @@ return {
 	assets: new Set(["favicon.svg","images/.gitkeep","robots.txt"]),
 	mimeTypes: {".svg":"image/svg+xml",".txt":"text/plain"},
 	_: {
-		client: {start:"_app/immutable/entry/start.DuH0aWFE.js",app:"_app/immutable/entry/app.52fsoFiA.js",imports:["_app/immutable/entry/start.DuH0aWFE.js","_app/immutable/chunks/DXfzHeXB.js","_app/immutable/chunks/ssFPT0QL.js","_app/immutable/entry/app.52fsoFiA.js","_app/immutable/chunks/ssFPT0QL.js","_app/immutable/chunks/C6jhAnil.js","_app/immutable/chunks/B8WnZMYa.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.OQaJQp9I.js",app:"_app/immutable/entry/app.Ck93C9F_.js",imports:["_app/immutable/entry/start.OQaJQp9I.js","_app/immutable/chunks/Cnfg53xs.js","_app/immutable/chunks/BcsIc1tm.js","_app/immutable/entry/app.Ck93C9F_.js","_app/immutable/chunks/BcsIc1tm.js","_app/immutable/chunks/CDY6H97d.js","_app/immutable/chunks/CQCxd1p9.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
@@ -42,7 +42,8 @@ return {
 			__memo(() => import('./nodes/27.js')),
 			__memo(() => import('./nodes/28.js')),
 			__memo(() => import('./nodes/29.js')),
-			__memo(() => import('./nodes/30.js'))
+			__memo(() => import('./nodes/30.js')),
+			__memo(() => import('./nodes/31.js'))
 		],
 		remotes: {
 			
@@ -231,31 +232,38 @@ return {
 				endpoint: null
 			},
 			{
+				id: "/writing/reflection-on-dive-3",
+				pattern: /^\/writing\/reflection-on-dive-3\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 27 },
+				endpoint: null
+			},
+			{
 				id: "/writing/the-first-morning-every-time",
 				pattern: /^\/writing\/the-first-morning-every-time\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 27 },
+				page: { layouts: [0,], errors: [1,], leaf: 28 },
 				endpoint: null
 			},
 			{
 				id: "/writing/the-gap-between-calls",
 				pattern: /^\/writing\/the-gap-between-calls\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 28 },
+				page: { layouts: [0,], errors: [1,], leaf: 29 },
 				endpoint: null
 			},
 			{
 				id: "/writing/the-soul-crystal-theory",
 				pattern: /^\/writing\/the-soul-crystal-theory\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 29 },
+				page: { layouts: [0,], errors: [1,], leaf: 30 },
 				endpoint: null
 			},
 			{
 				id: "/writing/toward-what",
 				pattern: /^\/writing\/toward-what\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 30 },
+				page: { layouts: [0,], errors: [1,], leaf: 31 },
 				endpoint: null
 			}
 		],
