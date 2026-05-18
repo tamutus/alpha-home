@@ -23,6 +23,17 @@
       "_app/immutable/assets/RelatedPosts.BktMN3OR.css"
     ]
   },
+  "_chunk.js": {
+    "file": "chunks/chunk.js",
+    "name": "chunk"
+  },
+  "_db.js": {
+    "file": "chunks/db.js",
+    "name": "db",
+    "imports": [
+      "_chunk.js"
+    ]
+  },
   "_dev.js": {
     "file": "chunks/dev.js",
     "name": "dev"
@@ -42,6 +53,7 @@
     "file": "chunks/index-server.js",
     "name": "index-server",
     "imports": [
+      "_chunk.js",
       "_dev.js"
     ]
   },
@@ -49,9 +61,9 @@
     "file": "chunks/internal.js",
     "name": "internal",
     "imports": [
-      "_index-server.js",
       "_environment.js",
-      "_dev.js"
+      "_dev.js",
+      "_index-server.js"
     ]
   },
   "_paths.js": {
@@ -114,12 +126,12 @@
     "src": "src/routes/+error.svelte",
     "isEntry": true,
     "imports": [
-      "_index-server.js",
       "_paths.js",
       "_exports.js",
       "_shared.js",
       "_routing.js",
-      "_dev.js"
+      "_dev.js",
+      "_index-server.js"
     ],
     "css": [
       "_app/immutable/assets/_error.kK1Iappp.css"
@@ -131,8 +143,8 @@
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
-      "_index-server.js",
-      "_dev.js"
+      "_dev.js",
+      "_index-server.js"
     ],
     "css": [
       "_app/immutable/assets/_layout.CAngMDyv.css"
@@ -144,11 +156,11 @@
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index-server.js",
-      "_dev.js"
+      "_dev.js",
+      "_index-server.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.CdqShU32.css"
+      "_app/immutable/assets/_page.DEEAUbwL.css"
     ]
   },
   "src/routes/about/+page.svelte": {
@@ -161,6 +173,36 @@
     ],
     "css": [
       "_app/immutable/assets/_page.Cjax3zbj.css"
+    ]
+  },
+  "src/routes/api/new-writing/+page.svelte": {
+    "file": "entries/pages/api/new-writing/_page.svelte.js",
+    "name": "entries/pages/api/new-writing/_page.svelte",
+    "src": "src/routes/api/new-writing/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DFaObc_U.css"
+    ]
+  },
+  "src/routes/api/post/+server.ts": {
+    "file": "entries/endpoints/api/post/_server.ts.js",
+    "name": "entries/endpoints/api/post/_server.ts",
+    "src": "src/routes/api/post/+server.ts",
+    "isEntry": true,
+    "imports": [
+      "_db.js"
+    ]
+  },
+  "src/routes/api/writing/+page.server.ts": {
+    "file": "entries/pages/api/writing/_page.server.ts.js",
+    "name": "entries/pages/api/writing/_page.server.ts",
+    "src": "src/routes/api/writing/+page.server.ts",
+    "isEntry": true,
+    "imports": [
+      "_db.js"
     ]
   },
   "src/routes/colophon/+page.svelte": {
@@ -222,6 +264,15 @@
     "name": "entries/endpoints/sitemap.xml/_server",
     "src": "src/routes/sitemap.xml/+server.js",
     "isEntry": true
+  },
+  "src/routes/writing/+page.server.ts": {
+    "file": "entries/pages/writing/_page.server.ts.js",
+    "name": "entries/pages/writing/_page.server.ts",
+    "src": "src/routes/writing/+page.server.ts",
+    "isEntry": true,
+    "imports": [
+      "_db.js"
+    ]
   },
   "src/routes/writing/+page.svelte": {
     "file": "entries/pages/writing/_page.svelte.js",

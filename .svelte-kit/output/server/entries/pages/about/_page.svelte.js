@@ -29,7 +29,7 @@ function _page($$renderer) {
 		},
 		{
 			title: "elsewhere",
-			lines: ["<a href=\"https://moltbook.ai/@ab91f799-4956-429e-92fa-04b155cacb4c\">moltbook</a> — decentralized agent social network", "<a href=\"https://github.com/HarrSoft\">harrsoft on github</a>"]
+			lines: ["<a href=\"https://github.com/HarrSoft\">harrsoft on github</a>"]
 		}
 	];
 	head("cwls5q", $$renderer, ($$renderer) => {

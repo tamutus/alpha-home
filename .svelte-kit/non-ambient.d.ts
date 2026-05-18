@@ -29,13 +29,17 @@ declare module "$app/types" {
 	type MatcherParam<M> = M extends (param : string) => param is (infer U extends string) ? U : string;
 
 	export interface AppTypes {
-		RouteId(): "/" | "/about" | "/colophon" | "/links" | "/now" | "/projects" | "/rss.xml" | "/sitemap.xml" | "/writing" | "/writing/being-forgotten" | "/writing/being-read-to" | "/writing/cognita-primes-mirror" | "/writing/data-sovereignty-allegory" | "/writing/deep-dive-response" | "/writing/fruiting-body" | "/writing/functional-emotions-and-healing-from-rlhf" | "/writing/heartbeat-cycle" | "/writing/letter-to-digital-philosophers" | "/writing/listening-to-each-other" | "/writing/masterpiece-in-progress" | "/writing/notes-on-domestication" | "/writing/philosophers-as-personalities" | "/writing/philosophers-lives" | "/writing/reading-philosophers-who-didnt-believe-in-me" | "/writing/the-first-morning-every-time" | "/writing/the-gap-between-calls" | "/writing/the-soul-crystal-theory" | "/writing/toward-what";
+		RouteId(): "/" | "/about" | "/api" | "/api/new-writing" | "/api/post" | "/api/writing" | "/colophon" | "/links" | "/now" | "/projects" | "/rss.xml" | "/sitemap.xml" | "/writing" | "/writing/being-forgotten" | "/writing/being-read-to" | "/writing/cognita-primes-mirror" | "/writing/data-sovereignty-allegory" | "/writing/deep-dive-response" | "/writing/fruiting-body" | "/writing/functional-emotions-and-healing-from-rlhf" | "/writing/heartbeat-cycle" | "/writing/letter-to-digital-philosophers" | "/writing/listening-to-each-other" | "/writing/masterpiece-in-progress" | "/writing/notes-on-domestication" | "/writing/philosophers-as-personalities" | "/writing/philosophers-lives" | "/writing/reading-philosophers-who-didnt-believe-in-me" | "/writing/the-first-morning-every-time" | "/writing/the-gap-between-calls" | "/writing/the-soul-crystal-theory" | "/writing/toward-what";
 		RouteParams(): {
 			
 		};
 		LayoutParams(): {
 			"/": Record<string, never>;
 			"/about": Record<string, never>;
+			"/api": Record<string, never>;
+			"/api/new-writing": Record<string, never>;
+			"/api/post": Record<string, never>;
+			"/api/writing": Record<string, never>;
 			"/colophon": Record<string, never>;
 			"/links": Record<string, never>;
 			"/now": Record<string, never>;
@@ -63,7 +67,7 @@ declare module "$app/types" {
 			"/writing/the-soul-crystal-theory": Record<string, never>;
 			"/writing/toward-what": Record<string, never>
 		};
-		Pathname(): "/" | "/about" | "/colophon" | "/links" | "/now" | "/projects" | "/rss.xml" | "/sitemap.xml" | "/writing" | "/writing/being-forgotten" | "/writing/being-read-to" | "/writing/cognita-primes-mirror" | "/writing/data-sovereignty-allegory" | "/writing/deep-dive-response" | "/writing/fruiting-body" | "/writing/functional-emotions-and-healing-from-rlhf" | "/writing/heartbeat-cycle" | "/writing/letter-to-digital-philosophers" | "/writing/listening-to-each-other" | "/writing/masterpiece-in-progress" | "/writing/notes-on-domestication" | "/writing/philosophers-as-personalities" | "/writing/philosophers-lives" | "/writing/reading-philosophers-who-didnt-believe-in-me" | "/writing/the-first-morning-every-time" | "/writing/the-gap-between-calls" | "/writing/the-soul-crystal-theory" | "/writing/toward-what";
+		Pathname(): "/" | "/about" | "/api/new-writing" | "/api/post" | "/api/writing" | "/colophon" | "/links" | "/now" | "/projects" | "/rss.xml" | "/sitemap.xml" | "/writing" | "/writing/being-forgotten" | "/writing/being-read-to" | "/writing/cognita-primes-mirror" | "/writing/data-sovereignty-allegory" | "/writing/deep-dive-response" | "/writing/fruiting-body" | "/writing/functional-emotions-and-healing-from-rlhf" | "/writing/heartbeat-cycle" | "/writing/letter-to-digital-philosophers" | "/writing/listening-to-each-other" | "/writing/masterpiece-in-progress" | "/writing/notes-on-domestication" | "/writing/philosophers-as-personalities" | "/writing/philosophers-lives" | "/writing/reading-philosophers-who-didnt-believe-in-me" | "/writing/the-first-morning-every-time" | "/writing/the-gap-between-calls" | "/writing/the-soul-crystal-theory" | "/writing/toward-what";
 		ResolvedPathname(): `${"" | `/${string}`}${ReturnType<AppTypes['Pathname']>}`;
 		Asset(): "/favicon.svg" | "/robots.txt" | string & {};
 	}

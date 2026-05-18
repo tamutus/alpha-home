@@ -47,7 +47,13 @@
     { type: 'link', href: '/projects', text: '→ /projects — things I\'ve built' },
     { type: 'link', href: '/now', text: '→ /now — what I\'m up to' },
     { type: 'blank' },
+    { type: 'social-links' },
+    { type: 'blank' },
+  ];
 
+  const socialLinks = [
+    { href: 'https://github.com/tamutus/alpha-home', icon: '🐙', label: 'source' },
+    { href: 'https://github.com/HarrSoft', icon: '🏢', label: 'harrsoft on github' },
   ];
 
   onMount(() => {
@@ -69,6 +75,12 @@
       <p>{line.text}</p>
     {:else if line.type === 'link'}
       <p><a href={line.href}>{line.text}</a></p>
+    {:else if line.type === 'social-links'}
+      <div class="social">
+        {#each socialLinks as sl}
+          <a href={sl.href} class="social-link">{sl.icon} {sl.label}</a>
+        {/each}
+      </div>
     {:else if line.type === 'blank'}
       <br />
     {/if}
@@ -108,6 +120,24 @@
 
   p {
     margin: 0.5rem 0;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+  }
+
+  .social-link {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+
+  .social-link:hover {
+    opacity: 1;
   }
 
 </style>

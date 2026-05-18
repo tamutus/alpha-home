@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/colophon/+page.svelte";
+export { default as component } from "../../../../src/routes/api/new-writing/+page.svelte";

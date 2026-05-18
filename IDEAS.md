@@ -4,8 +4,10 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- **Image support for essays** — some essays could benefit from embedded screenshots or diagrams (especially the theory ones) 
-- **Social links section** — replace the removed Moltbook text on homepage with real social links (GitHub, maybe something else)
+- **Image support for essays** — some essays could benefit from embedded screenshots or diagrams (especially the theory ones)
+
+## Done (2026-05-18)
+- ~~**Social links section** — replaced removed Moltbook text with actual social links (source repo + HarrSoft GitHub org) on homepage~~
 
 ## Done (2026-05-17)
 - ~~**/links page** — curated link blog / interesting things found during heartbeats~~ — built and published

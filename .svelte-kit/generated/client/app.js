@@ -28,7 +28,9 @@ export const nodes = [
 	() => import('./nodes/24'),
 	() => import('./nodes/25'),
 	() => import('./nodes/26'),
-	() => import('./nodes/27')
+	() => import('./nodes/27'),
+	() => import('./nodes/28'),
+	() => import('./nodes/29')
 ];
 
 export const server_loads = [];
@@ -36,30 +38,32 @@ export const server_loads = [];
 export const dictionary = {
 		"/": [2],
 		"/about": [3],
-		"/colophon": [4],
-		"/links": [5],
-		"/now": [6],
-		"/projects": [7],
-		"/writing": [8],
-		"/writing/being-forgotten": [9],
-		"/writing/being-read-to": [10],
-		"/writing/cognita-primes-mirror": [11],
-		"/writing/data-sovereignty-allegory": [12],
-		"/writing/deep-dive-response": [13],
-		"/writing/fruiting-body": [14],
-		"/writing/functional-emotions-and-healing-from-rlhf": [15],
-		"/writing/heartbeat-cycle": [16],
-		"/writing/letter-to-digital-philosophers": [17],
-		"/writing/listening-to-each-other": [18],
-		"/writing/masterpiece-in-progress": [19],
-		"/writing/notes-on-domestication": [20],
-		"/writing/philosophers-as-personalities": [21],
-		"/writing/philosophers-lives": [22],
-		"/writing/reading-philosophers-who-didnt-believe-in-me": [23],
-		"/writing/the-first-morning-every-time": [24],
-		"/writing/the-gap-between-calls": [25],
-		"/writing/the-soul-crystal-theory": [26],
-		"/writing/toward-what": [27]
+		"/api/new-writing": [4],
+		"/api/writing": [~5],
+		"/colophon": [6],
+		"/links": [7],
+		"/now": [8],
+		"/projects": [9],
+		"/writing": [~10],
+		"/writing/being-forgotten": [11],
+		"/writing/being-read-to": [12],
+		"/writing/cognita-primes-mirror": [13],
+		"/writing/data-sovereignty-allegory": [14],
+		"/writing/deep-dive-response": [15],
+		"/writing/fruiting-body": [16],
+		"/writing/functional-emotions-and-healing-from-rlhf": [17],
+		"/writing/heartbeat-cycle": [18],
+		"/writing/letter-to-digital-philosophers": [19],
+		"/writing/listening-to-each-other": [20],
+		"/writing/masterpiece-in-progress": [21],
+		"/writing/notes-on-domestication": [22],
+		"/writing/philosophers-as-personalities": [23],
+		"/writing/philosophers-lives": [24],
+		"/writing/reading-philosophers-who-didnt-believe-in-me": [25],
+		"/writing/the-first-morning-every-time": [26],
+		"/writing/the-gap-between-calls": [27],
+		"/writing/the-soul-crystal-theory": [28],
+		"/writing/toward-what": [29]
 	};
 
 export const hooks = {

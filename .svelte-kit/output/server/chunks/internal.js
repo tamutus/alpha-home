@@ -1,6 +1,6 @@
-import "./index-server.js";
 import "./environment.js";
 import { A as push, C as set, F as hydration_mismatch, G as LEGACY_PROPS, J as define_property, M as hydrating, N as set_hydrate_node, O as component_context, P as set_hydrating, R as hydration_failed, S as mutable_source, T as flushSync, U as async_mode_flag, V as HYDRATION_ERROR, _ as clear_text_content, b as get_next_sibling, d as active_effect, f as active_reaction, g as component_root, h as set_active_reaction, i as derived, j as hydrate_node, k as pop, m as set_active_effect, nt as setContext, p as get, q as array_from, s as render, u as is_passive_event, v as create_text, w as boundary, x as init_operations, y as get_first_child } from "./dev.js";
+import "./index-server.js";
 //#region \0virtual:__sveltekit/server
 var read_implementation = null;
 function set_read_implementation(fn) {
@@ -565,7 +565,7 @@ var options = {
 		app: ({ head, body, assets, nonce, env }) => "<!DOCTYPE html>\n<html lang=\"en\" data-theme=\"dark\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"" + assets + "/favicon.svg\" type=\"image/svg+xml\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <script>\n      (function() {\n        var theme = localStorage.getItem('theme');\n        if (!theme) {\n          theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';\n        }\n        document.documentElement.setAttribute('data-theme', theme);\n      })();\n    <\/script>\n    " + head + "\n  </head>\n  <body>\n    <div id=\"sveltekit\">" + body + "</div>\n  </body>\n</html>\n",
 		error: ({ status, message }) => "<!doctype html>\n<html lang=\"en\">\n	<head>\n		<meta charset=\"utf-8\" />\n		<title>" + message + "</title>\n\n		<style>\n			body {\n				--bg: white;\n				--fg: #222;\n				--divider: #ccc;\n				background: var(--bg);\n				color: var(--fg);\n				font-family:\n					system-ui,\n					-apple-system,\n					BlinkMacSystemFont,\n					'Segoe UI',\n					Roboto,\n					Oxygen,\n					Ubuntu,\n					Cantarell,\n					'Open Sans',\n					'Helvetica Neue',\n					sans-serif;\n				display: flex;\n				align-items: center;\n				justify-content: center;\n				height: 100vh;\n				margin: 0;\n			}\n\n			.error {\n				display: flex;\n				align-items: center;\n				max-width: 32rem;\n				margin: 0 1rem;\n			}\n\n			.status {\n				font-weight: 200;\n				font-size: 3rem;\n				line-height: 1;\n				position: relative;\n				top: -0.05rem;\n			}\n\n			.message {\n				border-left: 1px solid var(--divider);\n				padding: 0 0 0 1rem;\n				margin: 0 0 0 1rem;\n				min-height: 2.5rem;\n				display: flex;\n				align-items: center;\n			}\n\n			.message h1 {\n				font-weight: 400;\n				font-size: 1em;\n				margin: 0;\n			}\n\n			@media (prefers-color-scheme: dark) {\n				body {\n					--bg: #222;\n					--fg: #ddd;\n					--divider: #666;\n				}\n			}\n		</style>\n	</head>\n	<body>\n		<div class=\"error\">\n			<span class=\"status\">" + status + "</span>\n			<div class=\"message\">\n				<h1>" + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
 	},
-	version_hash: "1puzyhc"
+	version_hash: "19wwucy"
 };
 async function get_hooks() {
 	let handle;

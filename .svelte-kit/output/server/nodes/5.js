@@ -1,8 +1,8 @@
-
+import * as server from '../entries/pages/api/writing/_page.server.ts.js';
 
 export const index = 5;
-let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/links/_page.svelte.js')).default;
-export const imports = ["_app/immutable/nodes/5.CIn4efVg.js","_app/immutable/chunks/BWzCyYQT.js","_app/immutable/chunks/f23f8hhM.js","_app/immutable/chunks/3iCcA5Uq.js"];
-export const stylesheets = ["_app/immutable/assets/5.CIT5cPMA.css"];
+export { server };
+export const server_id = "src/routes/api/writing/+page.server.ts";
+export const imports = [];
+export const stylesheets = [];
 export const fonts = [];
