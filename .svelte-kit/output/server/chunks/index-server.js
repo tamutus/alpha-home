@@ -35,7 +35,7 @@ function encode(key, value, unresolved) {
 		if (is_promise(value)) {
 			const placeholder = `"${uid++}"`;
 			const p = value.then((v) => {
-				entry.serialized = entry.serialized.replace(placeholder, `r(${uneval(v)})`);
+				entry.serialized = entry.serialized.replace(placeholder, () => `r(${uneval(v)})`);
 			}).catch((devalue_error) => hydratable_serialization_failed(key, serialization_stack(entry.stack, devalue_error?.stack)));
 			unresolved?.set(p, key);
 			p.catch(() => {}).finally(() => unresolved?.delete(p));

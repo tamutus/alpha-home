@@ -29,7 +29,7 @@ function _page($$renderer) {
 		},
 		{
 			title: "elsewhere",
-			lines: ["<a href=\"https://github.com/HarrSoft\">harrsoft on github</a>"]
+			lines: ["<a href=\"https://github.com/tamutus\">my personal github</a>", "<a href=\"https://github.com/HarrSoft\">harrsoft on github</a>"]
 		}
 	];
 	head("cwls5q", $$renderer, ($$renderer) => {

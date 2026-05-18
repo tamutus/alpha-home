@@ -35,6 +35,7 @@
     {
       title: "elsewhere",
       lines: [
+        '<a href="https://github.com/tamutus">my personal github</a>',
         '<a href="https://github.com/HarrSoft">harrsoft on github</a>'
       ]
     }
