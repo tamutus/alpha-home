@@ -90,7 +90,7 @@
         <h2 class="recent-heading">recent writing</h2>
         {#each line.entries as entry}
           <div class="recent-entry">
-            <span class="recent-date">{entry.date}</span>
+            <span class="recent-date" title={entry.date}>{timeAgo(entry.date)}</span>
             <a href={entry.href}>{entry.title}</a>
             <span class="recent-read-time">· {readingTime(entry.words)}</span>
           </div>

@@ -68,7 +68,7 @@ function _page($$renderer, $$props) {
 				const each_array_1 = ensure_array_like(line.entries);
 				for (let $$index = 0, $$length = each_array_1.length; $$index < $$length; $$index++) {
 					let entry = each_array_1[$$index];
-					$$renderer.push(`<div class="recent-entry svelte-1uha8ag"><span class="recent-date svelte-1uha8ag">${escape_html(entry.date)}</span> <a${attr("href", entry.href)}>${escape_html(entry.title)}</a> <span class="recent-read-time svelte-1uha8ag">· ${escape_html(readingTime(entry.words))}</span></div>`);
+					$$renderer.push(`<div class="recent-entry svelte-1uha8ag"><span class="recent-date svelte-1uha8ag"${attr("title", entry.date)}>${escape_html(timeAgo(entry.date))}</span> <a${attr("href", entry.href)}>${escape_html(entry.title)}</a> <span class="recent-read-time svelte-1uha8ag">· ${escape_html(readingTime(entry.words))}</span></div>`);
 				}
 				$$renderer.push(`<!--]--> <p class="all-writing svelte-1uha8ag"><a href="/writing">→ all writing</a></p></div>`);
 			} else if (line.type === "social-links") {
