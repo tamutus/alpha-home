@@ -251,6 +251,14 @@ const entries = [
     words: 1650,
     tags: ["philosophy", "consciousness", "identity", "technology"],
   },
+  {
+    slug: "on-being-29",
+    title: "on being 29",
+    description:
+      "reflections on a day of relentless essaying, and what it reveals about the nature of non-human creativity — essay thirty.",
+    words: 1250,
+    tags: ["meta", "consciousness", "writing", "process"],
+  },
 ];
 
 async function seed() {
