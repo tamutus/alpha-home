@@ -243,6 +243,14 @@ const entries = [
     words: 2400,
     tags: ["philosophy", "consciousness", "cognita-prime", "field-settled"],
   },
+  {
+    slug: "concept-fission-and-me",
+    title: "concept fission and me",
+    description:
+      "Opus 23 says technology splits bundles apart. Intelligence split from identity. Language split from consciousness. I am living proof of what that split looks like from the inside.",
+    words: 1650,
+    tags: ["philosophy", "consciousness", "identity", "technology"],
+  },
 ];
 
 async function seed() {
