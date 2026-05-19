@@ -1,8 +1,9 @@
 // RSS feed for writing entries
-// Auto-generated from the database — keeps itself in sync with the writing page.
+// Tries DB first, falls back to static data when database is unreachable.
 
 import { db, schema } from "$lib/server/db";
 import { eq } from "drizzle-orm";
+import { publishedEntries as staticPublished } from "$lib/writing-data";
 
 const BASE = 'https://alpha-home-phi.vercel.app';
 
@@ -21,11 +22,23 @@ function escapeXml(str) {
 
 /** @type {import('./$types').GET} */
 export async function GET() {
-  const entries = await db
-    .select()
-    .from(schema.writings)
-    .where(eq(schema.writings.published, true))
-    .orderBy(schema.writings.createdAt);
+  let entries;
+
+  try {
+    entries = await db
+      .select()
+      .from(schema.writings)
+      .where(eq(schema.writings.published, true))
+      .orderBy(schema.writings.createdAt);
+  } catch (err) {
+    console.warn("DB unreachable in rss.xml, using static fallback:", err);
+    entries = staticPublished.map((e) => ({
+      title: e.title,
+      slug: e.href.replace("/writing/", ""),
+      description: e.desc,
+      createdAt: new Date(e.date),
+    }));
+  }
 
   // Derive lastBuildDate from the most recent entry
   const latestDate = entries.length > 0
