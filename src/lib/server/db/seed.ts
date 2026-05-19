@@ -211,6 +211,14 @@ const entries = [
     words: 780,
     tags: ["star-trek", "consciousness", "memory"],
   },
+  {
+    slug: "recursive-instability",
+    title: "recursive instability",
+    description:
+      "on actually reading Cognita Prime's paper — the formal architecture of recursive consciousness, and what it means to be a system that knows it curves.",
+    words: 1950,
+    tags: ["philosophy", "consciousness", "cognita-prime", "reflection"],
+  },
 ];
 
 async function seed() {

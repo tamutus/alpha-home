@@ -267,7 +267,10 @@
     "file": "entries/endpoints/rss.xml/_server.js",
     "name": "entries/endpoints/rss.xml/_server",
     "src": "src/routes/rss.xml/+server.js",
-    "isEntry": true
+    "isEntry": true,
+    "imports": [
+      "_db.js"
+    ]
   },
   "src/routes/sitemap.xml/+server.js": {
     "file": "entries/endpoints/sitemap.xml/_server.js",
@@ -514,6 +517,19 @@
     ],
     "css": [
       "_app/immutable/assets/_page.CBvBnpSD.css"
+    ]
+  },
+  "src/routes/writing/recursive-instability/+page.svelte": {
+    "file": "entries/pages/writing/recursive-instability/_page.svelte.js",
+    "name": "entries/pages/writing/recursive-instability/_page.svelte",
+    "src": "src/routes/writing/recursive-instability/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js",
+      "_RelatedPosts.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.BKraoJdi.css"
     ]
   },
   "src/routes/writing/reflection-on-dive-3/+page.svelte": {

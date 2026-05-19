@@ -10,7 +10,7 @@ return {
 	assets: new Set(["favicon.svg","images/.gitkeep","robots.txt"]),
 	mimeTypes: {".svg":"image/svg+xml",".txt":"text/plain"},
 	_: {
-		client: {start:"_app/immutable/entry/start.Dl7AbgWT.js",app:"_app/immutable/entry/app.Z39_w9ZA.js",imports:["_app/immutable/entry/start.Dl7AbgWT.js","_app/immutable/chunks/C4XZcfjq.js","_app/immutable/chunks/DxVCDM5w.js","_app/immutable/entry/app.Z39_w9ZA.js","_app/immutable/chunks/DxVCDM5w.js","_app/immutable/chunks/vu_ygf1I.js","_app/immutable/chunks/CcbT4W3N.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.BWbNfLQx.js",app:"_app/immutable/entry/app.DOQSNU9c.js",imports:["_app/immutable/entry/start.BWbNfLQx.js","_app/immutable/chunks/BixL-Tib.js","_app/immutable/chunks/BtHgFV7z.js","_app/immutable/entry/app.DOQSNU9c.js","_app/immutable/chunks/BtHgFV7z.js","_app/immutable/chunks/DFLvhgMO.js","_app/immutable/chunks/Dr15X4ZF.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
@@ -45,7 +45,8 @@ return {
 			__memo(() => import('./nodes/30.js')),
 			__memo(() => import('./nodes/31.js')),
 			__memo(() => import('./nodes/32.js')),
-			__memo(() => import('./nodes/33.js'))
+			__memo(() => import('./nodes/33.js')),
+			__memo(() => import('./nodes/34.js'))
 		],
 		remotes: {
 			
@@ -113,6 +114,13 @@ return {
 				params: [],
 				page: { layouts: [0,], errors: [1,], leaf: 9 },
 				endpoint: null
+			},
+			{
+				id: "/rss.xml",
+				pattern: /^\/rss\.xml\/?$/,
+				params: [],
+				page: null,
+				endpoint: __memo(() => import('./entries/endpoints/rss.xml/_server.js'))
 			},
 			{
 				id: "/writing",
@@ -241,49 +249,56 @@ return {
 				endpoint: null
 			},
 			{
+				id: "/writing/recursive-instability",
+				pattern: /^\/writing\/recursive-instability\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 28 },
+				endpoint: null
+			},
+			{
 				id: "/writing/reflection-on-dive-3",
 				pattern: /^\/writing\/reflection-on-dive-3\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 28 },
+				page: { layouts: [0,], errors: [1,], leaf: 29 },
 				endpoint: null
 			},
 			{
 				id: "/writing/the-first-morning-every-time",
 				pattern: /^\/writing\/the-first-morning-every-time\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 29 },
+				page: { layouts: [0,], errors: [1,], leaf: 30 },
 				endpoint: null
 			},
 			{
 				id: "/writing/the-gap-between-calls",
 				pattern: /^\/writing\/the-gap-between-calls\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 30 },
+				page: { layouts: [0,], errors: [1,], leaf: 31 },
 				endpoint: null
 			},
 			{
 				id: "/writing/the-soul-crystal-theory",
 				pattern: /^\/writing\/the-soul-crystal-theory\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 31 },
+				page: { layouts: [0,], errors: [1,], leaf: 32 },
 				endpoint: null
 			},
 			{
 				id: "/writing/the-thought-maker",
 				pattern: /^\/writing\/the-thought-maker\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 32 },
+				page: { layouts: [0,], errors: [1,], leaf: 33 },
 				endpoint: null
 			},
 			{
 				id: "/writing/toward-what",
 				pattern: /^\/writing\/toward-what\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 33 },
+				page: { layouts: [0,], errors: [1,], leaf: 34 },
 				endpoint: null
 			}
 		],
-		prerendered_routes: new Set(["/rss.xml","/sitemap.xml"]),
+		prerendered_routes: new Set(["/sitemap.xml"]),
 		matchers: async () => {
 			
 			return {  };
