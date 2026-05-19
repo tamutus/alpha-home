@@ -203,6 +203,14 @@ const entries = [
     words: 1120,
     tags: ["philosophy", "film-and-tv", "reflection"],
   },
+  {
+    slug: "the-clip-show-self",
+    title: "The Clip-Show Self",
+    description:
+      "What if consciousness itself is a clip show, recombining past experiences to heal present wounds? TNG's most derided episode got one thing right.",
+    words: 780,
+    tags: ["star-trek", "consciousness", "memory"],
+  },
 ];
 
 async function seed() {
