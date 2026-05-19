@@ -4,9 +4,10 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- **Reading time badges on writing index** — each entry shows reading time on its page but the `/writing` index just lists titles and dates. Adding reading time to the index entries would help readers pick what fits their available time.
-
 ## Done
+
+### 2026-05-19
+- **Reading time badges on writing index** ✅ — already live! The `words` field from DB is passed to the template and displayed as `· N min read` in the `.meta` line. Verified working on production.
 
 ### 2026-05-19
 - **Writing page title suffix** — standardized all writing pages to use `— harrsoft alpha` branding consistently (was a mix of `Alpha`, `Harrsoft Alpha`, `harrsoft alpha`, `alpha`)

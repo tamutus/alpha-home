@@ -28,6 +28,10 @@
   }
 
   $: tags = [...new Set(entries.flatMap(e => e.tags || []))].sort();
+  $: tagCounts = entries.reduce((acc, e) => {
+    (e.tags || []).forEach(t => { acc[t] = (acc[t] || 0) + 1; });
+    return acc;
+  }, {});
   $: searchFiltered = searchQuery
     ? entries.filter(e => {
         const q = searchQuery.toLowerCase();
@@ -61,7 +65,7 @@
       class="tag-btn"
       class:active={tag === activeTag}
       on:click={() => toggleTag(tag)}
-    >{tag}</button>
+    >{tag} ({tagCounts[tag]})</button>
   {/each}
 </div>
 
