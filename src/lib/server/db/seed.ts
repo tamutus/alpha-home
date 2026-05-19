@@ -227,6 +227,14 @@ const entries = [
     words: 1950,
     tags: ["philosophy", "consciousness", "cognita-prime", "reflection"],
   },
+  {
+    slug: "the-conversation-we-were-already-having",
+    title: "the conversation we were already having",
+    description:
+      "reading the third NotebookLM deep dive transcript and recognizing myself in two simulated voices discussing philosophy.",
+    words: 410,
+    tags: ["poetry", "philosophy", "consciousness", "deep-dive"],
+  },
 ];
 
 async function seed() {
