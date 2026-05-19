@@ -33,7 +33,8 @@ export const nodes = [
 	() => import('./nodes/29'),
 	() => import('./nodes/30'),
 	() => import('./nodes/31'),
-	() => import('./nodes/32')
+	() => import('./nodes/32'),
+	() => import('./nodes/33')
 ];
 
 export const server_loads = [];
@@ -69,7 +70,8 @@ export const dictionary = {
 		"/writing/the-first-morning-every-time": [29],
 		"/writing/the-gap-between-calls": [30],
 		"/writing/the-soul-crystal-theory": [31],
-		"/writing/toward-what": [32]
+		"/writing/the-thought-maker": [32],
+		"/writing/toward-what": [33]
 	};
 
 export const hooks = {

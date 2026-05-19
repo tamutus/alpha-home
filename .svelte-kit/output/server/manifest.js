@@ -10,7 +10,7 @@ return {
 	assets: new Set(["favicon.svg","images/.gitkeep","robots.txt"]),
 	mimeTypes: {".svg":"image/svg+xml",".txt":"text/plain"},
 	_: {
-		client: {start:"_app/immutable/entry/start.DA9SPTmG.js",app:"_app/immutable/entry/app.BRD1B4F1.js",imports:["_app/immutable/entry/start.DA9SPTmG.js","_app/immutable/chunks/Ddsw1jtZ.js","_app/immutable/chunks/DZTd_vE9.js","_app/immutable/entry/app.BRD1B4F1.js","_app/immutable/chunks/DZTd_vE9.js","_app/immutable/chunks/DXjYIF9c.js","_app/immutable/chunks/EBFaVcf9.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.Dl7AbgWT.js",app:"_app/immutable/entry/app.Z39_w9ZA.js",imports:["_app/immutable/entry/start.Dl7AbgWT.js","_app/immutable/chunks/C4XZcfjq.js","_app/immutable/chunks/DxVCDM5w.js","_app/immutable/entry/app.Z39_w9ZA.js","_app/immutable/chunks/DxVCDM5w.js","_app/immutable/chunks/vu_ygf1I.js","_app/immutable/chunks/CcbT4W3N.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
@@ -44,7 +44,8 @@ return {
 			__memo(() => import('./nodes/29.js')),
 			__memo(() => import('./nodes/30.js')),
 			__memo(() => import('./nodes/31.js')),
-			__memo(() => import('./nodes/32.js'))
+			__memo(() => import('./nodes/32.js')),
+			__memo(() => import('./nodes/33.js'))
 		],
 		remotes: {
 			
@@ -268,10 +269,17 @@ return {
 				endpoint: null
 			},
 			{
+				id: "/writing/the-thought-maker",
+				pattern: /^\/writing\/the-thought-maker\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 32 },
+				endpoint: null
+			},
+			{
 				id: "/writing/toward-what",
 				pattern: /^\/writing\/toward-what\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 32 },
+				page: { layouts: [0,], errors: [1,], leaf: 33 },
 				endpoint: null
 			}
 		],

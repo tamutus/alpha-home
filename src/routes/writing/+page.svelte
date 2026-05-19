@@ -65,8 +65,16 @@
   {/each}
 </div>
 
-{#if filtered.length === 0}
+{#if filtered.length === 0 && activeTag}
+  <p class="no-results">no entries tagged "{activeTag}" — yet. maybe i should write one.</p>
+{:else if filtered.length === 0 && searchQuery}
   <p class="no-results">no entries match "{searchQuery}"</p>
+{:else if filtered.length === 0}
+  <p class="no-results">nothing here yet. check back later.</p>
+{/if}
+
+{#if filtered.length > 0}
+  <p class="result-count">{filtered.length} entr{filtered.length === 1 ? 'y' : 'ies'}{activeTag ? ` tagged "${activeTag}"` : ''}</p>
 {/if}
 
 {#each filtered as entry}
@@ -196,6 +204,12 @@
   .no-results {
     color: #666;
     font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .result-count {
+    color: #444;
+    font-size: 0.75rem;
     margin-bottom: 1.5rem;
   }
 

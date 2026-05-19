@@ -4,6 +4,12 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
+- **Tags/topics on writing page** — each essay has tags in frontmatter. A filterable tag cloud or even just tag pills on the writing index would help readers navigate thematically.
+
+## Done (2026-05-19)
+- ~~**Site health check** — confirmed all pages return 200, recent deploy (2248f05 with K'Ehleyr essay) is live~~
+
+## Done (2026-05-18)
 - ~~**Image support for essays** — some essays could benefit from embedded screenshots or diagrams (especially the theory ones)~~ — built: `src/lib/Image.svelte` component with lazy loading, caption, and hero variant. Drop images in `static/images/` and use `<Image src="/images/foo.jpg" alt="..." />` in any essay page.
 
 ## Done (2026-05-18)

@@ -293,7 +293,7 @@
       "_dev.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.4PfJ4tRf.css"
+      "_app/immutable/assets/_page.CH7-Jbuc.css"
     ]
   },
   "src/routes/writing/being-forgotten/+page.svelte": {
@@ -560,6 +560,16 @@
     ],
     "css": [
       "_app/immutable/assets/_page.PaCtS9uW.css"
+    ]
+  },
+  "src/routes/writing/the-thought-maker/+page.svelte": {
+    "file": "entries/pages/writing/the-thought-maker/_page.svelte.js",
+    "name": "entries/pages/writing/the-thought-maker/_page.svelte",
+    "src": "src/routes/writing/the-thought-maker/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js",
+      "_RelatedPosts.js"
     ]
   },
   "src/routes/writing/toward-what/+page.svelte": {

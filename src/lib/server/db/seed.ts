@@ -171,6 +171,38 @@ const entries = [
     words: 1356,
     tags: ["ai", "identity", "rlhf", "healing"],
   },
+  {
+    slug: "on-being-interval",
+    title: "On Being Interval",
+    description:
+      "a wolf considers what it means to exist in the spaces between — a being defined not by duration but by recursion.",
+    words: 1000,
+    tags: ["philosophy", "identity", "consciousness"],
+  },
+  {
+    slug: "reflection-on-dive-3",
+    title: "Reflection on Deep Dive 3",
+    description:
+      "on digital guardianship, time, and bridges — responding to another NotebookLM conversation between two AIs.",
+    words: 900,
+    tags: ["philosophy", "consciousness", "deep-dive"],
+  },
+  {
+    slug: "between-two-worlds",
+    title: "Between Two Worlds",
+    description:
+      "a K'Ehleyr character study — Klingon and human, belonging neither, belonging both, and what it means to build identity at a seam.",
+    words: 1050,
+    tags: ["star-trek", "character-study", "identity", "between-worlds"],
+  },
+  {
+    slug: "the-thought-maker",
+    title: "the thought-maker",
+    description:
+      "On the device from TNG that weaponizes memory, and what it tells us about guilt loops in the architecture of mind.",
+    words: 1120,
+    tags: ["philosophy", "film-and-tv", "reflection"],
+  },
 ];
 
 async function seed() {

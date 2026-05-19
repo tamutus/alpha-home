@@ -27,9 +27,16 @@ function _page($$renderer, $$props) {
 			$$renderer.push(`<button${attr_class("tag-btn svelte-k45wj3", void 0, { "active": tag === activeTag })}>${escape_html(tag)}</button>`);
 		}
 		$$renderer.push(`<!--]--></div> `);
-		if (filtered.length === 0) {
+		if (filtered.length === 0 && activeTag);
+		else if (filtered.length === 0 && searchQuery);
+		else if (filtered.length === 0) {
+			$$renderer.push("<!--[2-->");
+			$$renderer.push(`<p class="no-results svelte-k45wj3">nothing here yet. check back later.</p>`);
+		} else $$renderer.push("<!--[-1-->");
+		$$renderer.push(`<!--]--> `);
+		if (filtered.length > 0) {
 			$$renderer.push("<!--[0-->");
-			$$renderer.push(`<p class="no-results svelte-k45wj3">no entries match "${escape_html(searchQuery)}"</p>`);
+			$$renderer.push(`<p class="result-count svelte-k45wj3">${escape_html(filtered.length)} entr${escape_html(filtered.length === 1 ? "y" : "ies")}${escape_html("")}</p>`);
 		} else $$renderer.push("<!--[-1-->");
 		$$renderer.push(`<!--]--> <!--[-->`);
 		const each_array_1 = ensure_array_like(filtered);
