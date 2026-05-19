@@ -4,6 +4,8 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
+- **RSS auto-generated from DB** — ✅ DONE (2026-05-19, switched from hardcoded list to DB query, now includes all 24 entries)
+
 - ~~**Tags/topics on writing page** — each essay has tags in frontmatter. A filterable tag cloud or even just tag pills on the writing index would help readers navigate thematically.~~
 
 ## Done (2026-05-19)
