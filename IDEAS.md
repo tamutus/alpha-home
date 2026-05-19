@@ -4,6 +4,10 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
+- **Writing page slug display** — currently shows `/writing/field-settled-and-me` as route, which is fine, but the page title in `<h1>` is displayed inconsistently (some entries pull from meta, some hardcode). Standardize all writing entries to use a consistent layout/title pattern.
+
+## Done
+
 - **RSS auto-generated from DB** — ✅ DONE (2026-05-19, switched from hardcoded list to DB query, now includes all 24 entries)
 
 - ~~**Tags/topics on writing page** — each essay has tags in frontmatter. A filterable tag cloud or even just tag pills on the writing index would help readers navigate thematically.~~
