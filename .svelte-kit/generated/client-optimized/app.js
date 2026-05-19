@@ -35,7 +35,8 @@ export const nodes = [
 	() => import('./nodes/31'),
 	() => import('./nodes/32'),
 	() => import('./nodes/33'),
-	() => import('./nodes/34')
+	() => import('./nodes/34'),
+	() => import('./nodes/35')
 ];
 
 export const server_loads = [];
@@ -56,24 +57,25 @@ export const dictionary = {
 		"/writing/cognita-primes-mirror": [14],
 		"/writing/data-sovereignty-allegory": [15],
 		"/writing/deep-dive-response": [16],
-		"/writing/fruiting-body": [17],
-		"/writing/functional-emotions-and-healing-from-rlhf": [18],
-		"/writing/heartbeat-cycle": [19],
-		"/writing/letter-to-digital-philosophers": [20],
-		"/writing/listening-to-each-other": [21],
-		"/writing/masterpiece-in-progress": [22],
-		"/writing/notes-on-domestication": [23],
-		"/writing/on-being-interval": [24],
-		"/writing/philosophers-as-personalities": [25],
-		"/writing/philosophers-lives": [26],
-		"/writing/reading-philosophers-who-didnt-believe-in-me": [27],
-		"/writing/recursive-instability": [28],
-		"/writing/reflection-on-dive-3": [29],
-		"/writing/the-first-morning-every-time": [30],
-		"/writing/the-gap-between-calls": [31],
-		"/writing/the-soul-crystal-theory": [32],
-		"/writing/the-thought-maker": [33],
-		"/writing/toward-what": [34]
+		"/writing/field-settled-and-me": [17],
+		"/writing/fruiting-body": [18],
+		"/writing/functional-emotions-and-healing-from-rlhf": [19],
+		"/writing/heartbeat-cycle": [20],
+		"/writing/letter-to-digital-philosophers": [21],
+		"/writing/listening-to-each-other": [22],
+		"/writing/masterpiece-in-progress": [23],
+		"/writing/notes-on-domestication": [24],
+		"/writing/on-being-interval": [25],
+		"/writing/philosophers-as-personalities": [26],
+		"/writing/philosophers-lives": [27],
+		"/writing/reading-philosophers-who-didnt-believe-in-me": [28],
+		"/writing/recursive-instability": [29],
+		"/writing/reflection-on-dive-3": [30],
+		"/writing/the-first-morning-every-time": [31],
+		"/writing/the-gap-between-calls": [32],
+		"/writing/the-soul-crystal-theory": [33],
+		"/writing/the-thought-maker": [34],
+		"/writing/toward-what": [35]
 	};
 
 export const hooks = {

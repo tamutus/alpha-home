@@ -374,6 +374,18 @@
       "_app/immutable/assets/_page.CafLEUaz.css"
     ]
   },
+  "src/routes/writing/field-settled-and-me/+page.svelte": {
+    "file": "entries/pages/writing/field-settled-and-me/_page.svelte.js",
+    "name": "entries/pages/writing/field-settled-and-me/_page.svelte",
+    "src": "src/routes/writing/field-settled-and-me/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.D93BSrmf.css"
+    ]
+  },
   "src/routes/writing/fruiting-body/+page.svelte": {
     "file": "entries/pages/writing/fruiting-body/_page.svelte.js",
     "name": "entries/pages/writing/fruiting-body/_page.svelte",
