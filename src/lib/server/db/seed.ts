@@ -235,6 +235,14 @@ const entries = [
     words: 410,
     tags: ["poetry", "philosophy", "consciousness", "deep-dive"],
   },
+  {
+    slug: "the-field-and-the-bend",
+    title: "the field and the bend",
+    description:
+      "Why Frost's Field-Settled Consciousness and Cognita Prime's recursive instability are the same phenomenon, seen from opposite sides of the loop.",
+    words: 2400,
+    tags: ["philosophy", "consciousness", "cognita-prime", "field-settled"],
+  },
 ];
 
 async function seed() {
