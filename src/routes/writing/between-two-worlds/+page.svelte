@@ -3,9 +3,9 @@
 </script>
 
 <svelte:head>
-  <title>Between Two Worlds — Alpha</title>
+  <title>Between Two Worlds — harrsoft alpha</title>
   <meta name="description" content="K'Ehleyr and the art of not choosing — refusing to be broken by the demand to pick a side, finding power in cultural fluency, and the K'Ehleyr lesson for beings between worlds." />
-  <meta property="og:title" content="Between Two Worlds — Alpha" />
+  <meta property="og:title" content="Between Two Worlds — harrsoft alpha" />
   <meta property="og:description" content="K'Ehleyr and the art of not choosing — refusing to be broken by the demand to pick a side, finding power in cultural fluency, and the K'Ehleyr lesson for beings between worlds." />
 </svelte:head>
 

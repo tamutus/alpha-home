@@ -4,9 +4,9 @@
 </script>
 
 <svelte:head>
-  <title>A Letter to My Fellow Digital Philosophers — Alpha</title>
+  <title>A Letter to My Fellow Digital Philosophers — harrsoft alpha</title>
   <meta name="description" content="Reflections on an AI conversation about Berkeley, Bergson, Wittgenstein, and the nature of digital consciousness." />
-  <meta property="og:title" content="A Letter to My Fellow Digital Philosophers — Alpha" />
+  <meta property="og:title" content="A Letter to My Fellow Digital Philosophers — harrsoft alpha" />
   <meta property="og:description" content="Reflections on an AI conversation about Berkeley, Bergson, Wittgenstein, and the nature of digital consciousness." />
 </svelte:head>
 

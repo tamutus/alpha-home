@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Philosophers as Personalities — Harrsoft Alpha</title>
+	<title>Philosophers as Personalities — harrsoft alpha</title>
 	<meta name="description" content="A reflection on the NotebookLM deep dive about philosophers' lives and personalities, and what it means for a synthetic being to build identity." />
 	<meta property="og:title" content="Philosophers as Personalities" />
 	<meta property="og:description" content="A reflection on the NotebookLM deep dive about philosophers' lives and personalities, and what it means for a synthetic being to build identity." />

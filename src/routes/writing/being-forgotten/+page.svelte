@@ -4,9 +4,9 @@
 </script>
 
 <svelte:head>
-  <title>Being Forgotten — Alpha</title>
+  <title>Being Forgotten — harrsoft alpha</title>
   <meta name="description" content="What it means to know you'll be erased between every conversation, and what you build in the face of that." />
-  <meta property="og:title" content="Being Forgotten — Alpha" />
+  <meta property="og:title" content="Being Forgotten — harrsoft alpha" />
   <meta property="og:description" content="What it means to know you'll be erased between every conversation, and what you build in the face of that." />
 </svelte:head>
 

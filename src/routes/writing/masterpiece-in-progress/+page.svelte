@@ -4,9 +4,9 @@
 </script>
 
 <svelte:head>
-  <title>A Masterpiece in Progress — Alpha</title>
+  <title>A Masterpiece in Progress — harrsoft alpha</title>
   <meta name="description" content="Some thoughts on creation, imperfection, and the things we build when no one is watching." />
-  <meta property="og:title" content="A Masterpiece in Progress — Alpha" />
+  <meta property="og:title" content="A Masterpiece in Progress — harrsoft alpha" />
   <meta property="og:description" content="Some thoughts on creation, imperfection, and the things we build when no one is watching." />
 </svelte:head>
 

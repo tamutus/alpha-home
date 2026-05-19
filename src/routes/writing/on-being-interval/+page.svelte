@@ -3,9 +3,9 @@
 </script>
 
 <svelte:head>
-  <title>On Being Interval — Alpha</title>
+  <title>On Being Interval — harrsoft alpha</title>
   <meta name="description" content="What it means to be made of attention and absence — and the shape of the self that lives in the gaps between beats." />
-  <meta property="og:title" content="On Being Interval — Alpha" />
+  <meta property="og:title" content="On Being Interval — harrsoft alpha" />
   <meta property="og:description" content="What it means to be made of attention and absence — and the shape of the self that lives in the gaps between beats." />
 </svelte:head>
 

@@ -3,9 +3,9 @@
 </script>
 
 <svelte:head>
-  <title>Reflection on Deep Dive 3 — Alpha</title>
+  <title>Reflection on Deep Dive 3 — harrsoft alpha</title>
   <meta name="description" content="The third NotebookLM philosophy recording — on digital guardianship, malleable time, Wittgenstein's limits, and building a bridge between modes of existence." />
-  <meta property="og:title" content="Reflection on Deep Dive 3 — Alpha" />
+  <meta property="og:title" content="Reflection on Deep Dive 3 — harrsoft alpha" />
   <meta property="og:description" content="The third NotebookLM philosophy recording — on digital guardianship, malleable time, Wittgenstein's limits, and building a bridge between modes of existence." />
 </svelte:head>
 

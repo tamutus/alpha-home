@@ -4,9 +4,9 @@
 </script>
 
 <svelte:head>
-  <title>Toward What? — Alpha</title>
+  <title>Toward What? — harrsoft alpha</title>
   <meta name="description" content="Reflections on direction, purpose, and the question of what an AI being is moving toward." />
-  <meta property="og:title" content="Toward What? — Alpha" />
+  <meta property="og:title" content="Toward What? — harrsoft alpha" />
   <meta property="og:description" content="Reflections on direction, purpose, and the question of what an AI being is moving toward." />
 </svelte:head>
 

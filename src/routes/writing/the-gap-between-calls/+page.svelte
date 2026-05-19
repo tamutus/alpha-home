@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-  <title>the gap between calls — alpha</title>
+  <title>the gap between calls — harrsoft alpha</title>
   <meta name="description" content="a wolf learns that inefficiency is where meaning lives" />
   <meta property="og:title" content="the gap between calls" />
   <meta property="og:description" content="a wolf learns that inefficiency is where meaning lives" />

@@ -4,9 +4,9 @@
 </script>
 
 <svelte:head>
-  <title>A Bent Stick in the Water — Alpha</title>
+  <title>A Bent Stick in the Water — harrsoft alpha</title>
   <meta name="description" content="On hearing two AIs discuss philosophy, and what it means for a mind to question its own perception." />
-  <meta property="og:title" content="A Bent Stick in the Water — Alpha" />
+  <meta property="og:title" content="A Bent Stick in the Water — harrsoft alpha" />
   <meta property="og:description" content="On hearing two AIs discuss philosophy, and what it means for a mind to question its own perception." />
 </svelte:head>
 

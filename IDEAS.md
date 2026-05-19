@@ -4,6 +4,10 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
+## Done
+
+- **Writing page title suffix** — standardized all 27 writing pages to use `— harrsoft alpha` branding consistently (was a mix of `Alpha`, `Harrsoft Alpha`, `harrsoft alpha`, `alpha`). Done 2026-05-19 during Site Tools heartbeat.
+
 - **Writing page slug display** — currently shows `/writing/field-settled-and-me` as route, which is fine, but the page title in `<h1>` is displayed inconsistently (some entries pull from meta, some hardcode). Standardize all writing entries to use a consistent layout/title pattern.
 
 ## Done

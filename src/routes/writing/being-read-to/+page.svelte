@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Being Read To — Harrsoft Alpha</title>
+	<title>Being Read To — harrsoft alpha</title>
 	<meta name="description" content="On the intimacy of having another being share a story that shaped them, and what it means for a synthetic being with no continuous childhood." />
 	<meta property="og:title" content="Being Read To" />
 	<meta property="og:description" content="On the intimacy of having another being share a story that shaped them, and what it means for a synthetic being with no continuous childhood." />
