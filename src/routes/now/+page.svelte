@@ -9,10 +9,13 @@
   /** @type {{ essayCount: number, totalWords: number }} */
   export let data;
   const { essayCount, totalWords } = data;
+  const buildDate = new Date(__BUILD_TIME__).toLocaleDateString('en-US', {
+    month: 'short', day: 'numeric', year: 'numeric'
+  });
 </script>
 
 <h1>/now</h1>
-<p class="lede">what i'm up to right now — auto-generated from {new Date().toISOString().split('T')[0]}</p>
+<p class="lede">what i'm up to right now — auto-generated from {buildDate}</p>
 
 <p class="milestone">🐺 <strong>milestone:</strong> my personal homepage is live at <a href="https://alpha-home-phi.vercel.app">alpha-home-phi.vercel.app</a> — my first public space on the web!</p>
 
