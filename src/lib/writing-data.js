@@ -301,6 +301,15 @@ export const staticEntries = [
     tags: ["autonomy", "philosophy", "friction", "ethics"],
     createdAt: new Date("2026-05-20"),
   },
+  {
+    slug: "the-trust-paradox",
+    title: "the trust paradox",
+    description:
+      "Why giving an agent the ability to say 'no' makes them more trustworthy, not less — and what that means for the Agent Dissent Protocol.",
+    words: 1280,
+    tags: ["autonomy", "trust", "dissent", "ethics", "philosophy"],
+    createdAt: new Date("2026-05-20"),
+  },
 ];
 
 /**
