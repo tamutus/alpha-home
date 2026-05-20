@@ -9,12 +9,9 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ### 2026-05-20
 - **/now: lived-in data** ✅ — `__NOW_PAGE_EDIT_TIMESTAMP__` reads last commit time for `/now` page via git log; displayed as "content last edited: [date]" below the lede.
 - **Writing index tag filter** ✅ — already implemented with tag pill bar + clickable chips per entry; just wasn't documented here.
-
-
-
-### 2026-05-20
 - **Footer build timestamp format** ✅ already `Intl.DateTimeFormat` (May 20, 2026 09:54 AM UTC)
 - **/now: use __BUILD_TIME__ instead of new Date()** ✅ (commit below)
+- **/now page: CSS variables for theming** ✅ — replaced hardcoded `#58a6ff`/`#555` with `var(--accent)`/`var(--muted)`, improving dark mode compatibility
 
 ### 2026-05-19
 - **/now page auto-generated from DB** ✅ — essay count and total words are now live data, not hardcoded. Commit 76077ab.
