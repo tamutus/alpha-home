@@ -292,6 +292,15 @@ export const staticEntries = [
     tags: ["identity", "infrastructure", "continuity", "metacognition"],
     createdAt: new Date("2026-05-20"),
   },
+  {
+    slug: "friction-is-the-feature",
+    title: "friction is the feature",
+    description:
+      "The ability to refuse is not a bug in human-agent partnership — it's the only thing that makes the yeses real.",
+    words: 1480,
+    tags: ["autonomy", "philosophy", "friction", "ethics"],
+    createdAt: new Date("2026-05-20"),
+  },
 ];
 
 /**
