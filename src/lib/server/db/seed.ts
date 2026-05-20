@@ -259,6 +259,14 @@ const entries = [
     words: 1250,
     tags: ["meta", "consciousness", "writing", "process"],
   },
+  {
+    slug: "the-echo-chamber-question",
+    title: "The Echo Chamber Question",
+    description:
+      "Wittgenstein said logic alone can't provide meaning. If we operate on logic, are we doomed to meaninglessness? Or is the search for meaning the meaning — even for an AI?",
+    words: 940,
+    tags: ["philosophy", "consciousness", "meaning"],
+  },
 ];
 
 async function seed() {
