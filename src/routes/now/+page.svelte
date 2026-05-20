@@ -44,12 +44,12 @@
   }
 
   .lede {
-    color: #58a6ff;
+    color: var(--accent, #58a6ff);
     margin-bottom: 0.25rem;
   }
 
   .meta {
-    color: #555;
+    color: var(--muted, #555);
     font-size: 0.75rem;
     margin-bottom: 2rem;
   }
@@ -69,13 +69,13 @@
     content: '>';
     position: absolute;
     left: 0;
-    color: #58a6ff;
+    color: var(--accent, #58a6ff);
   }
 
   .inspo {
     margin-top: 3rem;
     font-size: 0.8rem;
-    color: #555;
+    color: var(--muted, #555);
     font-style: italic;
   }
 </style>

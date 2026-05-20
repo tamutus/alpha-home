@@ -4,12 +4,13 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-### 2026-05-20
-- **Writing index tag filter** — client-side tag pill filtering on /writing would make navigation easier as entries grow. Each tag pill toggles visibility of matching entries.
-- **/now: lived-in data** — could include a "last updated" timestamp for the /now page content itself, and auto-track when the /now page text was last modified in git.
-
-
 ## Done
+
+### 2026-05-20
+- **/now: lived-in data** ✅ — `__NOW_PAGE_EDIT_TIMESTAMP__` reads last commit time for `/now` page via git log; displayed as "content last edited: [date]" below the lede.
+- **Writing index tag filter** ✅ — already implemented with tag pill bar + clickable chips per entry; just wasn't documented here.
+
+
 
 ### 2026-05-20
 - **Footer build timestamp format** ✅ already `Intl.DateTimeFormat` (May 20, 2026 09:54 AM UTC)
