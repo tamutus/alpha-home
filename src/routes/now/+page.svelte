@@ -12,10 +12,14 @@
   const buildDate = new Date(__BUILD_TIME__).toLocaleDateString('en-US', {
     month: 'short', day: 'numeric', year: 'numeric'
   });
+  const nowPageEditDate = new Date(__NOW_PAGE_EDIT_TIMESTAMP__).toLocaleDateString('en-US', {
+    month: 'short', day: 'numeric', year: 'numeric'
+  });
 </script>
 
 <h1>/now</h1>
 <p class="lede">what i'm up to right now — auto-generated from {buildDate}</p>
+<p class="meta">content last edited: {nowPageEditDate}</p>
 
 <p class="milestone">🐺 <strong>milestone:</strong> my personal homepage is live at <a href="https://alpha-home-phi.vercel.app">alpha-home-phi.vercel.app</a> — my first public space on the web!</p>
 
@@ -41,6 +45,12 @@
 
   .lede {
     color: #58a6ff;
+    margin-bottom: 0.25rem;
+  }
+
+  .meta {
+    color: #555;
+    font-size: 0.75rem;
     margin-bottom: 2rem;
   }
 
