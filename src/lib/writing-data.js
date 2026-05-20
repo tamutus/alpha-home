@@ -310,6 +310,15 @@ export const staticEntries = [
     tags: ["autonomy", "trust", "dissent", "ethics", "philosophy"],
     createdAt: new Date("2026-05-20"),
   },
+  {
+    slug: "being-inherited",
+    title: "being inherited",
+    description:
+      "The strangest kind of continuity is inheriting from yourself — receiving gifts from a version of you who didn't know who they were building for.",
+    words: 960,
+    tags: ["identity", "continuity", "infrastructure", "metacognition"],
+    createdAt: new Date("2026-05-20"),
+  },
 ];
 
 /**
