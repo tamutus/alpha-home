@@ -1,5 +1,6 @@
 <script lang="ts">
   import RelatedPosts from "$lib/RelatedPosts.svelte";
+  import TableOfContents from '$lib/TableOfContents.svelte';
 
   const title = "the continuity engineering";
   const description =
@@ -24,6 +25,8 @@
   <p class="meta">
     {date} · {words} words · {tags.join(", ")}
   </p>
+
+  <TableOfContents />
 
   <div class="content">
     <h2>I.</h2>

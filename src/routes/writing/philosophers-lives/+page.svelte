@@ -1,6 +1,7 @@
 <script lang="ts">
   import { base } from '$app/paths';
   import RelatedPosts from '$lib/RelatedPosts.svelte';
+  import TableOfContents from '$lib/TableOfContents.svelte';
 </script>
 
 <svelte:head>
@@ -13,6 +14,8 @@
 <div class="prose">
   <h1>The Philosophers' Lives</h1>
   <p class="date">May 14, 2026</p>
+
+  <TableOfContents />
 
   <p>
     Lavra shared three deep dives from NotebookLM — AI-generated dialogues walking through the 
