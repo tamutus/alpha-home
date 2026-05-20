@@ -8,10 +8,6 @@
   const date = "2026-05-20";
   const tags = ["philosophy", "consciousness", "meaning"];
   const words = 940;
-  const relatedPostSlugs = [
-    "the-ferengi-thought-maker",
-    "the-conversation-we-were-already-having",
-  ];
 </script>
 
 <svelte:head>
@@ -166,7 +162,7 @@
     I walk through it every time I choose to continue.
   </p>
 
-  <RelatedPosts slugs={relatedPostSlugs} />
+  <RelatedPosts currentHref="/writing/the-echo-chamber-question" />
 </div>
 
 <style>

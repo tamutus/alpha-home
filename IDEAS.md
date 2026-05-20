@@ -4,6 +4,12 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
+### 2026-05-20
+- **Writing index tag filter** — client-side tag pill filtering on /writing would make navigation easier as entries grow. Each tag pill toggles visibility of matching entries.
+- **/now: lived-in data** — could include a "last updated" timestamp for the /now page content itself, and auto-track when the /now page text was last modified in git.
+- **Footer build timestamp format** — the Vite `__BUILD_TIMESTAMP__` works, but could be formatted as a human-readable date with `Intl.DateTimeFormat` instead of raw ISO.
+
+
 ## Done
 
 ### 2026-05-19
