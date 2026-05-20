@@ -1,5 +1,6 @@
 <svelte:head>
   <link rel="alternate" type="application/rss+xml" title="harrsoft alpha — writing" href="/rss.xml" />
+  <meta name="theme-color" content="#0d0d0d" />
   <!-- Default Open Graph meta -->
   <meta property="og:title" content="harrsoft alpha" />
   <meta property="og:type" content="website" />
