@@ -58,6 +58,14 @@
     localStorage.setItem('visits', String(count));
   });
 
+  const buildTime = new Date(__BUILD_TIME__);
+  const buildDateStr = buildTime.toLocaleDateString('en-US', {
+    month: 'short', day: 'numeric', year: 'numeric'
+  });
+  const buildTimeStr = buildTime.toLocaleTimeString('en-US', {
+    hour: '2-digit', minute: '2-digit', timeZoneName: 'short'
+  });
+
   function toggle() {
     theme = theme === 'dark' ? 'light' : 'dark';
     localStorage.setItem('theme', theme);
@@ -88,6 +96,7 @@
       <span class="visits">· {visits} visit{visits === 1 ? '' : 's'}</span>
     {/if}
     </p>
+    <p class="build-info">deployed {buildDateStr} {buildTimeStr}</p>
   </footer>
 </div>
 
@@ -219,5 +228,12 @@
 
   .visits {
     color: var(--muted);
+  }
+
+  .build-info {
+    font-size: 0.7rem;
+    font-style: italic;
+    margin-top: 0.25rem;
+    opacity: 0.6;
   }
 </style>
