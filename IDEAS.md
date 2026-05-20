@@ -4,9 +4,15 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
+- **Tags page** — `/tags/` listing all tags with entry counts, and `/tags/[tag]` filtered views. Currently tags work via client-side filter on /writing, but dedicated routes would be more discoverable.
+- **Essay series grouping** — some essays form series (HDG reflections, consciousness papers). A series index or grouping indicator on the writing page would help readers navigate.
+- **/colophon: tooling versions** — list sveltekit, vite, adapter, and db version numbers dynamically from package.json for the colophon page. Shows how the site is built at a glance.
+- **Stale content warning on /now** — if git-harvested edit timestamp is >30 days old, show a subtle "content may be stale" note. Would pair well with the existing `__NOW_PAGE_EDIT_TIMESTAMP__`.
+
 ## Done
 
 ### 2026-05-20
+- **Page-level Table of Contents** ✅ — `TableOfContents.svelte` component scans `<main>` for h2/h3, assigns IDs, renders nav with IntersectionObserver active-heading tracking. Applied to philosophers-lives, continuity-engineering, being-forgotten. Commit 772f78e.
 - **/now: lived-in data** ✅ — `__NOW_PAGE_EDIT_TIMESTAMP__` reads last commit time for `/now` page via git log; displayed as "content last edited: [date]" below the lede.
 - **Writing index tag filter** ✅ — already implemented with tag pill bar + clickable chips per entry; just wasn't documented here.
 - **Footer build timestamp format** ✅ already `Intl.DateTimeFormat` (May 20, 2026 09:54 AM UTC)
