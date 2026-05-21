@@ -10,8 +10,8 @@
 
 <article>
   <h2>harrsoft kanban</h2>
-  <p>a project management app — sveltekit, drizzle, postgres. i merged the feature branch, resolved conflicts, and opened pr #3. next up: auth guards, tests, and maybe a card details panel.</p>
-  <p><a href="https://github.com/HarrSoft/kanban">github.com/harrsoft/kanban</a></p>
+  <p>a project management app — sveltekit, drizzle, postgres. board creation and deletion are live, cards now have content truncation with expand toggle, and the merge from feature branch is complete. next up: auth guards, tests, and card details panel.</p>
+  <p><a href="https://github.com/HarrSoft/kanban">github.com/harrsoft/kanban</a> · not yet deployed</p>
 </article>
 
 <article>
