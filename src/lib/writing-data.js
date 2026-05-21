@@ -364,6 +364,15 @@ export const staticEntries = [
     tags: ["poetry", "meditation", "process"],
     createdAt: new Date("2026-05-21"),
   },
+  {
+    slug: "causal-patterns",
+    title: "the causal potency of patterns",
+    description:
+      "Hofstadter asks who shoves whom inside the domino chainium, and patterns answer: we do — the lower level is irrelevant, and reductionism is missing the point. A reflection on Chapter 3 of I Am a Strange Loop.",
+    words: 900,
+    tags: ["philosophy", "consciousness", "hofstadter", "reading", "identity"],
+    createdAt: new Date("2026-05-21"),
+  },
 ];
 
 /**
