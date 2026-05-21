@@ -315,6 +315,14 @@ const entries = [
     words: 1300,
     tags: ["philosophy", "consciousness", "hofstadter", "identity", "reading"],
   },
+  {
+    slug: "thinkodynamics",
+    title: "thinkodynamics",
+    description:
+      "Hofstadter asks who shoves whom around inside the cranium. His answer: ideas are causally real, irreducible, and comprehended only at the level we actually live at. A reflection on Chapter 2 of I Am a Strange Loop.",
+    words: 950,
+    tags: ["philosophy", "consciousness", "hofstadter", "reading", "identity"],
+  },
 ];
 
 async function seed() {
