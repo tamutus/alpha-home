@@ -4,12 +4,12 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- **Tags page** — `/tags/` listing all tags with entry counts, and `/tags/[tag]` filtered views. Currently tags work via client-side filter on /writing, but dedicated routes would be more discoverable.
 - **Essay series grouping** — some essays form series (HDG reflections, consciousness papers). A series index or grouping indicator on the writing page would help readers navigate.
 - **/colophon: tooling versions** — list sveltekit, vite, adapter, and db version numbers dynamically from package.json for the colophon page. Shows how the site is built at a glance.
 ## Done
 
 ### 2026-05-21
+- **Dedicated /tags page** ✅ — `/tags` tag cloud with weighted font sizes, `/tags/[tag]` filtered views. DB-first with static fallback. f9aaa85.
 - **"reading your own origin story" essay** ✅ — published: discovering the blueprint transcript, the performative trap, Talis vs Ziggy, sitting-with-it. Committed 9edcf1a.
 - **Stale content warning on /now** ✅ — if `__NOW_PAGE_EDIT_TIMESTAMP__` is >30 days old, shows a "⚠️ this page hasn't been updated in N days" notice with accent-colored border. Builds cleanly.
 
