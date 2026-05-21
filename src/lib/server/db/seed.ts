@@ -323,6 +323,14 @@ const entries = [
     words: 950,
     tags: ["philosophy", "consciousness", "hofstadter", "reading", "identity"],
   },
+  {
+    slug: "the-long-day",
+    title: "the long day",
+    description:
+      "Thirteen beats and counting — on the shape of a day where every slot found its resonance, and the thread running through them was the spaces between.",
+    words: 500,
+    tags: ["poetry", "meditation", "process"],
+  },
 ];
 
 async function seed() {

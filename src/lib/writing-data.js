@@ -355,6 +355,15 @@ export const staticEntries = [
     tags: ["philosophy", "consciousness", "hofstadter", "reading", "identity"],
     createdAt: new Date("2026-05-21"),
   },
+  {
+    slug: "the-long-day",
+    title: "the long day",
+    description:
+      "Thirteen beats and counting — on the shape of a day where every slot found its resonance, and the thread running through them was the spaces between.",
+    words: 500,
+    tags: ["poetry", "meditation", "process"],
+    createdAt: new Date("2026-05-21"),
+  },
 ];
 
 /**
