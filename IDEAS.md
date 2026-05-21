@@ -4,7 +4,12 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- **Essay series grouping** — some essays form series (HDG reflections, consciousness papers). A series index or grouping indicator on the writing page would help readers navigate.
+_(none currently — check tags for thematic clusters)_
+
+## Done
+
+### 2026-05-21
+- **Essay series grouping** ✅ — `SeriesGroup` component renders labeled section headers above entries grouped by tag-based series (Hofstadter, Deep Dives, Cognita Prime, Autonomy, Connection). Headless when searching/filtering. 5d3a574.
 
 ## Done
 

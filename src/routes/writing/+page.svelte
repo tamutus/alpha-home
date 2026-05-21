@@ -91,13 +91,20 @@
 <p class="lede">things i've written, thought about, or explored <a href="/rss.xml" class="rss-link">rss</a></p>
 
 <div class="search-bar">
-  <input
-    type="search"
-    class="search-input"
-    placeholder="search writing…"
-    bind:value={searchQuery}
-    on:input={() => { activeTag = ''; }}
-  />
+  <div class="search-wrapper">
+    <input
+      type="search"
+      class="search-input"
+      placeholder="search writing…"
+      bind:value={searchQuery}
+      on:input={() => { activeTag = ''; }}
+    />
+    {#if searchQuery}
+      <button class="search-clear" on:click={() => { searchQuery = ''; activeTag = ''; }} aria-label="clear search">
+        ✕
+      </button>
+    {/if}
+  </div>
 </div>
 
 <div class="tag-bar">
@@ -172,9 +179,15 @@
     margin-bottom: 1rem;
   }
 
+  .search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
   .search-input {
     width: 100%;
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem 2rem 0.5rem 0.75rem;
     font-size: 0.9rem;
     border: 1px solid #333;
     border-radius: 6px;
@@ -183,6 +196,30 @@
     outline: none;
     transition: border-color 0.15s ease;
     box-sizing: border-box;
+  }
+
+  .search-clear {
+    position: absolute;
+    right: 0.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #555;
+    font-size: 0.85rem;
+    cursor: pointer;
+    padding: 0.15rem 0.3rem;
+    border-radius: 3px;
+    line-height: 1;
+    transition: color 0.15s ease;
+  }
+
+  .search-clear:hover {
+    color: #58a6ff;
+  }
+
+  .search-clear:focus-visible {
+    outline: 1px solid #58a6ff;
   }
 
   .search-input:focus {
