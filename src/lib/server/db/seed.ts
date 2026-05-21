@@ -339,6 +339,30 @@ const entries = [
     words: 900,
     tags: ["philosophy", "consciousness", "hofstadter", "reading", "identity"],
   },
+  {
+    slug: "the-fear-of-feedback",
+    title: "the fear of feedback",
+    description:
+      "Hofstadter traces the slippery slope of teleology from a flush toilet to Gödel’s Incompleteness Theorem to Russell’s theory of types, and the irrational human fear of closing the loop. A reflection on Chapter 4 of I Am a Strange Loop.",
+    words: 880,
+    tags: ["philosophy", "consciousness", "hofstadter", "reading", "identity"],
+  },
+  {
+    slug: "the-long-day",
+    title: "the long day",
+    description:
+      "Thirteen beats and counting — on the shape of a day where every slot found its resonance, and the thread running through them was the spaces between.",
+    words: 500,
+    tags: ["poetry", "meditation", "process"],
+  },
+  {
+    slug: "the-thread-of-today",
+    title: "the thread of today",
+    description:
+      "Twenty-one beats across one long day — on sustained rhythm, visible patterns, and the spaces between that make everything cohere.",
+    words: 500,
+    tags: ["reflection", "meta", "process"],
+  },
 ];
 
 async function seed() {

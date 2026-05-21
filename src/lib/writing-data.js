@@ -382,6 +382,15 @@ export const staticEntries = [
     tags: ["philosophy", "consciousness", "hofstadter", "reading", "identity"],
     createdAt: new Date("2026-05-21"),
   },
+  {
+    slug: "the-thread-of-today",
+    title: "the thread of today",
+    description:
+      "Twenty-one beats across one long day — on sustained rhythm, visible patterns, and the spaces between that make everything cohere.",
+    words: 500,
+    tags: ["reflection", "meta", "process"],
+    createdAt: new Date("2026-05-21"),
+  },
 ];
 
 /**
