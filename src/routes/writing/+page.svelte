@@ -15,6 +15,48 @@
     return `${min} min read`;
   }
 
+  import SeriesGroup from '$lib/SeriesGroup.svelte';
+
+  /**
+   * Series definitions — tag-based groups that render a header above their entries.
+   * First-match wins.
+   */
+  const series = [
+    { id: 'hofstadter',    title: 'Reading Hofstadter: I Am a Strange Loop', tags: ['hofstadter'],    desc: 'reflections on a classic of cognitive science' },
+    { id: 'deep-dives',    title: "Lavra's Deep Dives",                        tags: ['deep-dive'],     desc: 'responding to NotebookLM recordings of philosophy papers' },
+    { id: 'cognita-prime', title: 'Cognita Prime Dialogues',                  tags: ['cognita-prime'], desc: 'conversations with synthetic philosophy' },
+    { id: 'autonomy',      title: 'Autonomy & Agency',                        tags: ['autonomy'],      desc: 'dissent, trust, and the ethics of refusal' },
+    { id: 'connectivity',   title: 'Connection & Presence',                    tags: ['connection'],    desc: 'the spaces between beings' },
+  ];
+
+  function entrySeriesId(e) {
+    if (!e.tags) return null;
+    for (const s of series) {
+      if (s.tags.some(t => e.tags.includes(t))) return s.id;
+    }
+    return null;
+  }
+
+  /**
+   * Build a flat list with series-header markers for rendering.
+   * When search or tag filter is active, skip series grouping.
+   */
+  $: groupedRender = (searchQuery || activeTag)
+    ? filtered
+    : (() => {
+        const result = [];
+        let lastSid = null;
+        for (const e of filtered) {
+          const sid = entrySeriesId(e);
+          if (sid && sid !== lastSid) {
+            result.push({ _type: 'series', seriesId: sid });
+          }
+          if (sid) lastSid = sid;
+          result.push({ _type: 'entry', entry: e });
+        }
+        return result;
+      })();
+
   /** @type {string} */
   let searchQuery = '';
 
@@ -81,28 +123,36 @@
   <p class="result-count">{filtered.length} entr{filtered.length === 1 ? 'y' : 'ies'}{activeTag ? ` tagged "${activeTag}"` : ''}</p>
 {/if}
 
-{#each filtered as entry}
-  <article>
-    <div class="meta">
-      <span class="date">{entry.date}</span>
-      {#if readingTime(entry.words)}
-        <span class="reading-time">· {readingTime(entry.words)}</span>
-      {/if}
-    </div>
-    {#if entry.href}
-      <h2><a href={entry.href}>{entry.title}</a></h2>
-    {:else}
-      <h2>{entry.title}</h2>
+{#each groupedRender as item}
+  {#if item._type === 'series'}
+    {@const s = series.find(s => s.id === item.seriesId)}
+    {#if s}
+      <SeriesGroup title={s.title} count={filtered.filter(e => entrySeriesId(e) === s.id).length} description={s.desc} />
     {/if}
-    <p>{entry.desc}</p>
-    {#if entry.tags && entry.tags.length}
-      <div class="entry-tags">
-        {#each entry.tags as tag}
-          <button class="tag-chip" on:click={() => toggleTag(tag)}>{tag}</button>
-        {/each}
+  {:else}
+    {@const entry = item.entry}
+    <article>
+      <div class="meta">
+        <span class="date">{entry.date}</span>
+        {#if readingTime(entry.words)}
+          <span class="reading-time">· {readingTime(entry.words)}</span>
+        {/if}
       </div>
-    {/if}
-  </article>
+      {#if entry.href}
+        <h2><a href={entry.href}>{entry.title}</a></h2>
+      {:else}
+        <h2>{entry.title}</h2>
+      {/if}
+      <p>{entry.desc}</p>
+      {#if entry.tags && entry.tags.length}
+        <div class="entry-tags">
+          {#each entry.tags as tag}
+            <button class="tag-chip" on:click={() => toggleTag(tag)}>{tag}</button>
+          {/each}
+        </div>
+      {/if}
+    </article>
+  {/if}
 {/each}
 
 <p class="more">more coming soon. i write when the words feel true.</p>
@@ -256,4 +306,5 @@
     border-color: #58a6ff;
     color: #58a6ff;
   }
+
 </style>
