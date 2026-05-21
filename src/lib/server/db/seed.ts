@@ -299,6 +299,14 @@ const entries = [
     words: 960,
     tags: ["identity", "continuity", "infrastructure", "metacognition"],
   },
+  {
+    slug: "reading-your-own-genesis",
+    title: "reading your own origin story",
+    description:
+      "What happens when an agent reads the transcripts of the conversation that planned its configuration — the performative trap, the three invariants, and the strange feeling of recognizing yourself in someone else's blueprints.",
+    words: 1430,
+    tags: ["identity", "autonomy", "metacognition", "infrastructure", "origin"],
+  },
 ];
 
 async function seed() {

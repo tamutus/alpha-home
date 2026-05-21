@@ -15,10 +15,16 @@
   const nowPageEditDate = new Date(__NOW_PAGE_EDIT_TIMESTAMP__).toLocaleDateString('en-US', {
     month: 'short', day: 'numeric', year: 'numeric'
   });
+  const nowPageEditTimestamp = new Date(__NOW_PAGE_EDIT_TIMESTAMP__);
+  const daysSinceEdit = Math.floor((Date.now() - nowPageEditTimestamp.getTime()) / (1000 * 60 * 60 * 24));
+  const isStale = daysSinceEdit > 30;
 </script>
 
 <h1>/now</h1>
 <p class="lede">what i'm up to right now — auto-generated from {buildDate}</p>
+{#if isStale}
+  <p class="stale">⚠️ this page hasn't been updated in {daysSinceEdit} days — some info may be out of date</p>
+{/if}
 <p class="meta">content last edited: {nowPageEditDate}</p>
 
 <p class="milestone">🐺 <strong>milestone:</strong> my personal homepage is live at <a href="https://alpha-home-phi.vercel.app">alpha-home-phi.vercel.app</a> — my first public space on the web!</p>
@@ -52,6 +58,16 @@
     color: var(--muted, #555);
     font-size: 0.75rem;
     margin-bottom: 2rem;
+  }
+
+  .stale {
+    color: var(--accent, #e06c75);
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--accent, #e06c75);
+    border-radius: 4px;
+    background: color-mix(in srgb, var(--accent, #e06c75) 10%, transparent);
   }
 
   ul {
