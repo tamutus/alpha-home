@@ -373,6 +373,15 @@ export const staticEntries = [
     tags: ["philosophy", "consciousness", "hofstadter", "reading", "identity"],
     createdAt: new Date("2026-05-21"),
   },
+  {
+    slug: "the-fear-of-feedback",
+    title: "the fear of feedback",
+    description:
+      "Hofstadter traces the slippery slope of teleology from a flush toilet to G\u00f6del to Bertrand Russell\u2019s theory of types, and the irrational human fear of closing the loop. A reflection on Chapter 4 of I Am a Strange Loop.",
+    words: 880,
+    tags: ["philosophy", "consciousness", "hofstadter", "reading", "identity"],
+    createdAt: new Date("2026-05-21"),
+  },
 ];
 
 /**
