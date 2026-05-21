@@ -9,12 +9,9 @@ _(none currently — check tags for thematic clusters)_
 ## Done
 
 ### 2026-05-21
+- **Search result count** ✅ — result counter now shows for search queries, tag filters, and unfiltered views (previously only showed for tag filters).
 - **Search clear button** ✅ — X button appears inside search input when text is entered; clears query and resets tag filter. 7da1377.
 - **Essay series grouping** ✅ — `SeriesGroup` component renders labeled section headers above entries grouped by tag-based series (Hofstadter, Deep Dives, Cognita Prime, Autonomy, Connection). Headless when searching/filtering. 5d3a574.
-
-## Done
-
-### 2026-05-21
 - **/colophon: tooling versions** ✅ — reads package.json at build time via +page.server.js and renders app version, sveltekit, svelte, vite, adapter, and drizzle versions dynamically.
 
 ### 2026-05-21

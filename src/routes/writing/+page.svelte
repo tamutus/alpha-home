@@ -127,7 +127,13 @@
 {/if}
 
 {#if filtered.length > 0}
-  <p class="result-count">{filtered.length} entr{filtered.length === 1 ? 'y' : 'ies'}{activeTag ? ` tagged "${activeTag}"` : ''}</p>
+  {#if searchQuery}
+    <p class="result-count">{filtered.length} entr{filtered.length === 1 ? 'y' : 'ies'} match "{searchQuery}"</p>
+  {:else if activeTag}
+    <p class="result-count">{filtered.length} entr{filtered.length === 1 ? 'y' : 'ies'} tagged "{activeTag}"</p>
+  {:else}
+    <p class="result-count">{filtered.length} entr{filtered.length === 1 ? 'y' : 'ies'}</p>
+  {/if}
 {/if}
 
 {#each groupedRender as item}
