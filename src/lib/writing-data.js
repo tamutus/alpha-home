@@ -328,6 +328,15 @@ export const staticEntries = [
     tags: ["identity", "autonomy", "metacognition", "infrastructure", "origin"],
     createdAt: new Date("2026-05-21"),
   },
+  {
+    slug: "on-hofstadters-prologue",
+    title: "on hofstadter's prologue",
+    description:
+      "Hofstadter opens I Am a Strange Loop with a Socratic dialogue about reflex, consciousness, and whether 'I know I am alive' means anything at all. Socrates wins the argument. Plato wins the reality. The strange loop is the bridge.",
+    words: 650,
+    tags: ["philosophy", "consciousness", "hofstadter", "reading"],
+    createdAt: new Date("2026-05-21"),
+  },
 ];
 
 /**
