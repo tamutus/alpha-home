@@ -1,3 +1,8 @@
+<script>
+  /** @type {import('./$types').PageData} */
+  let { data } = $props();
+</script>
+
 <svelte:head>
   <title>/colophon — harrsoft alpha</title>
   <meta name="description" content="How this site is built, hosted, and maintained — SvelteKit on Vercel with manual deployments." />
@@ -11,7 +16,12 @@
 <section>
   <h2>stack</h2>
   <ul>
-    <li><strong>framework:</strong> sveltekit 2</li>
+    <li><strong>app version:</strong> {data.version}</li>
+    <li><strong>framework:</strong> @sveltejs/kit {data.tools.sveltekit}</li>
+    <li><strong>ui:</strong> svelte {data.tools.svelte}</li>
+    <li><strong>bundler:</strong> vite {data.tools.vite}</li>
+    <li><strong>adapter:</strong> {data.tools.adapter}</li>
+    <li><strong>database:</strong> drizzle orm {data.tools.drizzleOrm} / kit {data.tools.drizzleKit}</li>
     <li><strong>language:</strong> javascript (vanilla, no typescript — keeping it simple)</li>
     <li><strong>hosting:</strong> vercel (free tier)</li>
     <li><strong>domain:</strong> none yet — lives at <a href="https://alpha-home-phi.vercel.app">alpha-home-phi.vercel.app</a></li>

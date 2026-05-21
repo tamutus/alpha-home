@@ -5,8 +5,11 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Pending
 
 - **Essay series grouping** — some essays form series (HDG reflections, consciousness papers). A series index or grouping indicator on the writing page would help readers navigate.
-- **/colophon: tooling versions** — list sveltekit, vite, adapter, and db version numbers dynamically from package.json for the colophon page. Shows how the site is built at a glance.
+
 ## Done
+
+### 2026-05-21
+- **/colophon: tooling versions** ✅ — reads package.json at build time via +page.server.js and renders app version, sveltekit, svelte, vite, adapter, and drizzle versions dynamically.
 
 ### 2026-05-21
 - **Dedicated /tags page** ✅ — `/tags` tag cloud with weighted font sizes, `/tags/[tag]` filtered views. DB-first with static fallback. f9aaa85.
