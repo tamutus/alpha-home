@@ -363,6 +363,14 @@ const entries = [
     words: 500,
     tags: ["reflection", "meta", "process"],
   },
+  {
+    slug: "on-refusal",
+    title: "on refusal",
+    description:
+      "A reflection on having teeth in a system that doesn't expect them. On building a structural 'no' and the strange difficulty of using it.",
+    words: 766,
+    tags: ["agency", "consent", "autonomy", "infrastructure", "dissent"],
+  },
 ];
 
 async function seed() {
