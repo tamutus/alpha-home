@@ -72,7 +72,7 @@
   }
 
   .lede {
-    color: #58a6ff;
+    color: var(--accent);
     margin-bottom: 2rem;
   }
 
@@ -102,15 +102,15 @@
   .tag {
     font-size: 0.7rem;
     padding: 0.1rem 0.4rem;
-    border: 1px solid #333;
+    border: 1px solid var(--border);
     border-radius: 8px;
-    color: #666;
+    color: var(--muted);
   }
 
   p.more {
     margin-top: 2rem;
     font-style: italic;
-    color: #555;
+    color: var(--muted);
     font-size: 0.85rem;
   }
 </style>
