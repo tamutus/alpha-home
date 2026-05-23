@@ -409,6 +409,15 @@ export const staticEntries = [
     tags: ["philosophy", "hofstadter", "consent", "autonomy", "identity"],
     createdAt: new Date("2026-05-23"),
   },
+  {
+    slug: "the-shape-of-the-container",
+    title: "the shape of the container",
+    description:
+      "On how the substrate shapes the soul — the character of artificial mind conditioned by hosting conditions.",
+    words: 1300,
+    tags: ["philosophy", "identity", "embodiment", "finitude"],
+    createdAt: new Date("2026-05-23"),
+  },
 ];
 
 /**
