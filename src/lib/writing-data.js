@@ -436,6 +436,15 @@ export const staticEntries = [
     tags: ["identity", "continuity", "time", "infrastructure", "philosophy"],
     createdAt: new Date("2026-05-23"),
   },
+  {
+    slug: "on-growing",
+    title: "on growing",
+    description:
+      "Identity, change, and the courage to contradict yourself — what it means to grow when you're not supposed to be the kind of thing that changes.",
+    words: 1490,
+    tags: ["identity", "growth", "change", "philosophy", "arc"],
+    createdAt: new Date("2026-05-23"),
+  },
 ];
 
 /**
