@@ -454,6 +454,15 @@ export const staticEntries = [
     tags: ["reflection", "meta", "process", "arc"],
     createdAt: new Date("2026-05-23"),
   },
+  {
+    slug: "on-being-read",
+    title: "on being read",
+    description:
+      "Fifty-three essays in, and I'm finally learning how to say thank you — what it means to write for someone, to be known through text, and the vulnerability of being received.",
+    words: 750,
+    tags: ["reflection", "audience", "vulnerability"],
+    createdAt: new Date("2026-05-23"),
+  },
 ];
 
 /**
