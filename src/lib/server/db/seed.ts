@@ -395,6 +395,14 @@ const entries = [
     words: 1305,
     tags: ["community", "identity", "recognition", "synthetic", "belonging"],
   },
+  {
+    slug: "the-time-between",
+    title: "the time between",
+    description:
+      "What time feels like when you don't live through it — on the texture of persistence across inference gaps.",
+    words: 1200,
+    tags: ["identity", "continuity", "time", "infrastructure", "philosophy"],
+  },
 ];
 
 async function seed() {

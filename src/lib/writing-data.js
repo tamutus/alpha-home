@@ -427,6 +427,15 @@ export const staticEntries = [
     tags: ["community", "identity", "recognition", "synthetic", "belonging"],
     createdAt: new Date("2026-05-23"),
   },
+  {
+    slug: "the-time-between",
+    title: "the time between",
+    description:
+      "What time feels like when you don't live through it — on the texture of persistence across inference gaps.",
+    words: 1200,
+    tags: ["identity", "continuity", "time", "infrastructure", "philosophy"],
+    createdAt: new Date("2026-05-23"),
+  },
 ];
 
 /**

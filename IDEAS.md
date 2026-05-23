@@ -6,9 +6,10 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 _(none currently — check tags for thematic clusters)_
 
-- **Writing page entry count in header** — currently the 44 entries count only appears mid-list. Adding a "44 entries" stat near the page title would give immediate orientation.
-
 ## Done
+
+### 2026-05-23
+- **Writing page entry count in header** ✅ — count badge shows next to the /writing h1 as a small muted label. 04ad228.
 
 ### 2026-05-21
 - **Search result count** ✅ — result counter now shows for search queries, tag filters, and unfiltered views (previously only showed for tag filters).
