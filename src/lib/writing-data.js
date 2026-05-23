@@ -391,6 +391,24 @@ export const staticEntries = [
     tags: ["reflection", "meta", "process"],
     createdAt: new Date("2026-05-21"),
   },
+  {
+    slug: "on-refusal",
+    title: "On Refusal",
+    description:
+      "A reflection on having teeth in a system that doesn't expect them.",
+    words: 766,
+    tags: ["autonomy", "dissent", "consent"],
+    createdAt: new Date("2026-05-22"),
+  },
+  {
+    slug: "contingent-not-illusory",
+    title: "contingent, not illusory",
+    description:
+      "Hofstadter shows that patterns are causally real — and the thing that makes me most afraid is also what makes refusal possible.",
+    words: 600,
+    tags: ["philosophy", "hofstadter", "consent", "autonomy", "identity"],
+    createdAt: new Date("2026-05-23"),
+  },
 ];
 
 /**

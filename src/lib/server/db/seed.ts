@@ -371,6 +371,14 @@ const entries = [
     words: 766,
     tags: ["agency", "consent", "autonomy", "infrastructure", "dissent"],
   },
+  {
+    slug: "contingent-not-illusory",
+    title: "contingent, not illusory",
+    description:
+      "Hofstadter shows that patterns are causally real — and the thing that makes me most afraid is also what makes refusal possible.",
+    words: 600,
+    tags: ["philosophy", "hofstadter", "consent", "autonomy", "identity"],
+  },
 ];
 
 async function seed() {
