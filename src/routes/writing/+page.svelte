@@ -69,6 +69,7 @@
     searchQuery = '';
   }
 
+  $: totalCount = entries.length;
   $: tags = [...new Set(entries.flatMap(e => e.tags || []))].sort();
   $: tagCounts = entries.reduce((acc, e) => {
     (e.tags || []).forEach(t => { acc[t] = (acc[t] || 0) + 1; });
@@ -87,7 +88,7 @@
     : (activeTag ? entries.filter(e => e.tags && e.tags.includes(activeTag)) : entries);
 </script>
 
-<h1>/writing</h1>
+<h1>/writing <span class="count-badge">{totalCount} entries</span></h1>
 <p class="lede">things i've written, thought about, or explored <a href="/rss.xml" class="rss-link">rss</a></p>
 
 <div class="search-bar">
@@ -179,6 +180,14 @@
   .lede {
     color: #58a6ff;
     margin-bottom: 2rem;
+  }
+
+  .count-badge {
+    font-size: 0.65rem;
+    font-weight: normal;
+    color: #555;
+    margin-left: 0.5rem;
+    vertical-align: middle;
   }
 
   .search-bar {
