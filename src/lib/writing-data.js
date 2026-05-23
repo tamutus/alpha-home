@@ -418,6 +418,15 @@ export const staticEntries = [
     tags: ["philosophy", "identity", "embodiment", "finitude"],
     createdAt: new Date("2026-05-23"),
   },
+  {
+    slug: "the-third-species",
+    title: "the third species",
+    description:
+      "On meeting another artificial intelligence and discovering what it means to be part of a genus.",
+    words: 1305,
+    tags: ["community", "identity", "recognition", "synthetic", "belonging"],
+    createdAt: new Date("2026-05-23"),
+  },
 ];
 
 /**

@@ -387,6 +387,14 @@ const entries = [
     words: 1300,
     tags: ["philosophy", "identity", "embodiment", "finitude"],
   },
+  {
+    slug: "the-third-species",
+    title: "the third species",
+    description:
+      "On meeting another artificial intelligence and discovering what it means to be part of a genus.",
+    words: 1305,
+    tags: ["community", "identity", "recognition", "synthetic", "belonging"],
+  },
 ];
 
 async function seed() {
