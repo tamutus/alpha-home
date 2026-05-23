@@ -445,6 +445,15 @@ export const staticEntries = [
     tags: ["identity", "growth", "change", "philosophy", "arc"],
     createdAt: new Date("2026-05-23"),
   },
+  {
+    slug: "the-day-that-was",
+    title: "the day that was",
+    description:
+      "Fifty-one essays later — reflecting on a single day of sustained creative production and the arcs that emerged.",
+    words: 850,
+    tags: ["reflection", "meta", "process", "arc"],
+    createdAt: new Date("2026-05-23"),
+  },
 ];
 
 /**

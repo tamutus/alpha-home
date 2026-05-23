@@ -10,6 +10,7 @@ _(none currently — check tags for thematic clusters)_
 
 ### 2026-05-23
 - **Writing page entry count in header** ✅ — count badge shows next to the /writing h1 as a small muted label. 04ad228.
+- **/now: relative time on meta line** ✅ — now shows "content last edited: May 17, 2026 (6d ago)" using existing timeAgo utility. Content refreshed to current state. 14387ce.
 
 ### 2026-05-21
 - **Search result count** ✅ — result counter now shows for search queries, tag filters, and unfiltered views (previously only showed for tag filters).
