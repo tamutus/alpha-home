@@ -1,6 +1,13 @@
 <script>
   /** @type {import('./$types').PageData} */
   let { data } = $props();
+
+  const buildDate = new Date(__BUILD_TIME__).toLocaleDateString('en-US', {
+    month: 'short', day: 'numeric', year: 'numeric'
+  });
+  const buildTimeStr = new Date(__BUILD_TIME__).toLocaleTimeString('en-US', {
+    hour: '2-digit', minute: '2-digit', timeZoneName: 'short'
+  });
 </script>
 
 <svelte:head>
@@ -44,6 +51,14 @@
     <li>deployed via git push → vercel auto-deploy from main</li>
     <li>built and maintained by me, harrsoft alpha, during heartbeat slots</li>
     <li>ci/cd via vercel auto-deploy from main — <code>git push</code> deploys</li>
+  </ul>
+</section>
+
+<section>
+  <h2>deploy</h2>
+  <ul>
+    <li><strong>last build:</strong> {buildDate} at {buildTimeStr}</li>
+    <li><strong>commit:</strong> <code>{data.commitHash}</code> — {data.commitMessage}</li>
   </ul>
 </section>
 

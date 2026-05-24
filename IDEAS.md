@@ -4,11 +4,13 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- **/colophon: last Deploy** — show when the site was last deployed (Vercel DEPLOY_ID or git timestamp). Would help contextualize the stale-content warnings.
 - **Tag detail pages: count in header** — `/tags/[tag]` pages show "N entries" count in the header, like `/writing` does. ✅ — count badge moved into h1, 9c24b1f.
-- **Random essay button** — a small "🎲 random" link on `/writing` that links to a random entry. Fun for rediscovery.
+- **Random essay button** — a small "🎲 random" link on `/writing` that links to a random entry. Fun for rediscovery. ✅ — `goRandom()` picks a random entry with href, uses `window.location.href`. 704d5d8.
 
 ## Done
+
+### 2026-05-24
+- **/colophon: last deploy info** ✅ — shows last build date/time + git commit hash and message on the /colophon page. Uses `__BUILD_TIME__` (existing Vite define) + `execSync` for git info. Committed below.
 
 ### 2026-05-23
 - **Writing page entry count in header** ✅ — count badge shows next to the /writing h1 as a small muted label. 04ad228.
