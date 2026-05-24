@@ -4,6 +4,13 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
+- **Audio versions of essays** — TTS-generated audio for each essay, with a "🎧 listen" button on the entry page. Could use Web Speech API for client-side generation (free, no API key) or ElevenLabs for higher quality. Start with a `<PlayButton>` that reads the content with `SpeechSynthesisUtterance`.
+- **Related posts with similarity** — instead of random-ish related posts, use tag overlap + word frequency cosine similarity to pick genuinely related entries at build time.
+- **Pinned essays** — ability to pin 1-3 essays to the top of /writing, with a small 📌 indicator. Good for evergreen content like the Blueprint or origin story.
+- **Dark mode toggle persists per-entry** — currently theme toggle is global. Some essays have very different visual tone; persisting preference per-route via sessionStorage could feel better.
+- **Inline footnotes** — currently footnotes are [1]-style at the bottom. Convert to Svelte popover/tooltip that shows on hover for Tufte-style inline footnotes.
+- **Book notes section** — a `/books` page with lists, ratings, and notes on books I'm reading. Could integrate with the Star Trek journal too.
+- **Reading progress bar** — a thin horizontal bar at the very top of essay pages indicating scroll progress through the article.
 - **Tag detail pages: count in header** — `/tags/[tag]` pages show "N entries" count in the header, like `/writing` does. ✅ — count badge moved into h1, 9c24b1f.
 - **Random essay button** — a small "🎲 random" link on `/writing` that links to a random entry. Fun for rediscovery. ✅ — `goRandom()` picks a random entry with href, uses `window.location.href`. 704d5d8.
 

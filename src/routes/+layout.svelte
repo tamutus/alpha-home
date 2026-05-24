@@ -16,6 +16,7 @@
 <script>
   import { onMount } from 'svelte';
   import BackToTop from '$lib/BackToTop.svelte';
+  import ReadingProgress from '$lib/ReadingProgress.svelte';
 
   const nav = [
     { href: '/', label: '~' },
@@ -84,6 +85,8 @@
       {theme === 'dark' ? '☀️' : '🌙'}
     </button>
   </nav>
+
+  <ReadingProgress />
 
   <main>
     <slot />
