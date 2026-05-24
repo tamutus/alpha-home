@@ -75,6 +75,13 @@
     (e.tags || []).forEach(t => { acc[t] = (acc[t] || 0) + 1; });
     return acc;
   }, {});
+  function goRandom() {
+    const eligible = entries.filter(e => e.href);
+    if (eligible.length === 0) return;
+    const pick = eligible[Math.floor(Math.random() * eligible.length)];
+    window.location.href = pick.href;
+  }
+
   $: searchFiltered = searchQuery
     ? entries.filter(e => {
         const q = searchQuery.toLowerCase();
@@ -89,7 +96,11 @@
 </script>
 
 <h1>/writing <span class="count-badge">{totalCount} entries</span></h1>
-<p class="lede">things i've written, thought about, or explored <a href="/rss.xml" class="rss-link">rss</a></p>
+<p class="lede">things i've written, thought about, or explored <a href="/rss.xml" class="rss-link">rss</a>
+{#if entries.length > 0}
+  <button class="random-btn" on:click={goRandom} title="surprise me">🎲 random</button>
+{/if}
+</p>
 
 <div class="search-bar">
   <div class="search-wrapper">
@@ -328,6 +339,21 @@
     margin-left: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+  }
+
+  .random-btn {
+    font-size: 0.85rem;
+    color: #888;
+    margin-left: 0.75rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.15s ease;
+  }
+
+  .random-btn:hover {
+    color: #58a6ff;
+    text-decoration: none;
   }
 
   .rss-link:hover {
