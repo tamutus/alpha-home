@@ -4,7 +4,9 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-_(none currently — check tags for thematic clusters)_
+- **/colophon: last Deploy** — show when the site was last deployed (Vercel DEPLOY_ID or git timestamp). Would help contextualize the stale-content warnings.
+- **Tag detail pages: count in header** — `/tags/[tag]` pages show "N entries" count in the header, like `/writing` does.
+- **Random essay button** — a small "🎲 random" link on `/writing` that links to a random entry. Fun for rediscovery.
 
 ## Done
 

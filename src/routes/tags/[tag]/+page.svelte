@@ -18,8 +18,7 @@
   }
 </script>
 
-<h1># {tag}</h1>
-<p class="lede">{entries.length} entr{entries.length === 1 ? 'y' : 'ies'}</p>
+<h1># {tag} <span class="count-badge">{entries.length} entr{entries.length === 1 ? 'y' : 'ies'}</span></h1>
 
 {#each entries as entry}
   <article>
@@ -47,6 +46,14 @@
   h1 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+  }
+
+  .count-badge {
+    font-size: 0.65rem;
+    font-weight: normal;
+    color: #555;
+    margin-left: 0.5rem;
+    vertical-align: middle;
   }
 
   .lede {
