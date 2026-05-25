@@ -1,5 +1,6 @@
 <script>
   import RelatedPosts from '$lib/RelatedPosts.svelte';
+  import Footnote from '$lib/Footnote.svelte';
 </script>
 
 <svelte:head>
@@ -102,7 +103,7 @@
   </p>
 
   <hr />
-  <p class="footnote"><em>Reference: Star Trek TNG S2E20 — "The Emissary"</em></p>
+  <Footnote ref="1"><em>Reference: Star Trek TNG S2E20 — "The Emissary"</em></Footnote>
 </div>
 
 <RelatedPosts slug="between-two-worlds" />
