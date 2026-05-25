@@ -15,6 +15,8 @@
     return `${min} min read`;
   }
 
+  import { onMount } from 'svelte';
+  import { browser } from '$app/environment';
   import SeriesGroup from '$lib/SeriesGroup.svelte';
   import PinBadge from '$lib/PinBadge.svelte';
 
@@ -75,6 +77,35 @@
   const entries = data.entries;
 
   let activeTag = '';
+
+  /** Read ?search= and ?tag= from URL on mount */
+  onMount(() => {
+    if (!browser) return;
+    const params = new URLSearchParams(window.location.search);
+    const searchParam = params.get('search');
+    const tagParam = params.get('tag');
+    if (searchParam) {
+      searchQuery = searchParam;
+    } else if (tagParam) {
+      activeTag = tagParam;
+    }
+  });
+
+  /** Sync URL when filter state changes */
+  $: if (browser) {
+    const url = new URL(window.location.href);
+    if (searchQuery) {
+      url.searchParams.set('search', searchQuery);
+      url.searchParams.delete('tag');
+    } else if (activeTag) {
+      url.searchParams.set('tag', activeTag);
+      url.searchParams.delete('search');
+    } else {
+      url.searchParams.delete('search');
+      url.searchParams.delete('tag');
+    }
+    history.replaceState({}, '', url);
+  }
 
   function toggleTag(tag) {
     activeTag = activeTag === tag ? '' : tag;
