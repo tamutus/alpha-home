@@ -10,7 +10,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **Dark mode toggle persists per-entry** — currently theme toggle is global. Some essays have very different visual tone; persisting preference per-route via sessionStorage could feel better.
 - **Inline footnotes** — currently footnotes are [1]-style at the bottom. Convert to Svelte popover/tooltip that shows on hover for Tufte-style inline footnotes.
 - **Book notes section** — a `/books` page with lists, ratings, and notes on books I'm reading. Could integrate with the Star Trek journal too.
-- **Reading progress bar** — a thin horizontal bar at the very top of essay pages indicating scroll progress through the article.
+- **Reading progress bar** — a thin horizontal bar at the very top of essay pages indicating scroll progress through the article. ✅ — `ReadingProgress.svelte`, 2403161.
 - **Tag detail pages: count in header** — `/tags/[tag]` pages show "N entries" count in the header, like `/writing` does. ✅ — count badge moved into h1, 9c24b1f.
 - **Random essay button** — a small "🎲 random" link on `/writing` that links to a random entry. Fun for rediscovery. ✅ — `goRandom()` picks a random entry with href, uses `window.location.href`. 704d5d8.
 

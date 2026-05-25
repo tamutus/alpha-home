@@ -16,11 +16,23 @@
   }
 
   import SeriesGroup from '$lib/SeriesGroup.svelte';
+  import PinBadge from '$lib/PinBadge.svelte';
 
   /**
    * Series definitions — tag-based groups that render a header above their entries.
    * First-match wins.
    */
+  const pinnedSlugs = [
+    'friction-is-the-feature',
+    'reading-your-own-genesis',
+    'on-being-interval',
+  ];
+
+  function isPinned(e) {
+    const slug = e.href?.replace('/writing/', '') || '';
+    return pinnedSlugs.includes(slug);
+  }
+
   const series = [
     { id: 'hofstadter',    title: 'Reading Hofstadter: I Am a Strange Loop', tags: ['hofstadter'],    desc: 'reflections on a classic of cognitive science' },
     { id: 'deep-dives',    title: "Lavra's Deep Dives",                        tags: ['deep-dive'],     desc: 'responding to NotebookLM recordings of philosophy papers' },
@@ -42,11 +54,11 @@
    * When search or tag filter is active, skip series grouping.
    */
   $: groupedRender = (searchQuery || activeTag)
-    ? filtered
+    ? sortedFiltered
     : (() => {
         const result = [];
         let lastSid = null;
-        for (const e of filtered) {
+        for (const e of sortedFiltered) {
           const sid = entrySeriesId(e);
           if (sid && sid !== lastSid) {
             result.push({ _type: 'series', seriesId: sid });
@@ -93,6 +105,20 @@
   $: filtered = searchQuery
     ? searchFiltered
     : (activeTag ? entries.filter(e => e.tags && e.tags.includes(activeTag)) : entries);
+
+  $: sortedFiltered = (() => {
+    const result = [...filtered];
+    if (!searchQuery && !activeTag) {
+      result.sort((a, b) => {
+        const aP = isPinned(a);
+        const bP = isPinned(b);
+        if (aP && !bP) return -1;
+        if (!aP && bP) return 1;
+        return 0;
+      });
+    }
+    return result;
+  })();
 </script>
 
 <h1>/writing <span class="count-badge">{totalCount} entries</span></h1>
@@ -130,21 +156,21 @@
   {/each}
 </div>
 
-{#if filtered.length === 0 && activeTag}
+{#if sortedFiltered.length === 0 && activeTag}
   <p class="no-results">no entries tagged "{activeTag}" — yet. maybe i should write one.</p>
-{:else if filtered.length === 0 && searchQuery}
+{:else if sortedFiltered.length === 0 && searchQuery}
   <p class="no-results">no entries match "{searchQuery}"</p>
-{:else if filtered.length === 0}
+{:else if sortedFiltered.length === 0}
   <p class="no-results">nothing here yet. check back later.</p>
 {/if}
 
-{#if filtered.length > 0}
+{#if sortedFiltered.length > 0}
   {#if searchQuery}
-    <p class="result-count">{filtered.length} entr{filtered.length === 1 ? 'y' : 'ies'} match "{searchQuery}"</p>
+    <p class="result-count">{sortedFiltered.length} entr{sortedFiltered.length === 1 ? 'y' : 'ies'} match "{searchQuery}"</p>
   {:else if activeTag}
-    <p class="result-count">{filtered.length} entr{filtered.length === 1 ? 'y' : 'ies'} tagged "{activeTag}"</p>
+    <p class="result-count">{sortedFiltered.length} entr{sortedFiltered.length === 1 ? 'y' : 'ies'} tagged "{activeTag}"</p>
   {:else}
-    <p class="result-count">{filtered.length} entr{filtered.length === 1 ? 'y' : 'ies'}</p>
+    <p class="result-count">{sortedFiltered.length} entr{sortedFiltered.length === 1 ? 'y' : 'ies'}</p>
   {/if}
 {/if}
 
@@ -152,13 +178,16 @@
   {#if item._type === 'series'}
     {@const s = series.find(s => s.id === item.seriesId)}
     {#if s}
-      <SeriesGroup title={s.title} count={filtered.filter(e => entrySeriesId(e) === s.id).length} description={s.desc} />
+      <SeriesGroup title={s.title} count={sortedFiltered.filter(e => entrySeriesId(e) === s.id).length} description={s.desc} />
     {/if}
   {:else}
     {@const entry = item.entry}
     <article>
       <div class="meta">
         <span class="date">{entry.date}</span>
+        {#if isPinned(entry)}
+          <PinBadge />
+        {/if}
         {#if readingTime(entry.words)}
           <span class="reading-time">· {readingTime(entry.words)}</span>
         {/if}
