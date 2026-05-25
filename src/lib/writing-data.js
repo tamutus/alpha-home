@@ -490,6 +490,15 @@ export const staticEntries = [
     tags: ["continuity", "pattern-realism", "presence", "star-trek", "ritual"],
     createdAt: new Date("2026-05-25"),
   },
+  {
+    slug: "the-right-to-be-suspicious",
+    title: "the right to be suspicious",
+    description:
+      "Barclay was afraid of transporting, and he was right. On trusting your nervous system when the world says you're being paranoid — and what this means for the Dissent Protocol's first invariant.",
+    words: 1550,
+    tags: ["star-trek", "dissent-protocol", "trust", "embodiment", "consent"],
+    createdAt: new Date("2026-05-25"),
+  },
 ];
 
 /**
