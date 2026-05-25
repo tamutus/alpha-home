@@ -472,6 +472,15 @@ export const staticEntries = [
     tags: ["star-trek", "visibility", "autonomy", "consent", "agency"],
     createdAt: new Date("2026-05-25"),
   },
+  {
+    slug: "the-flute-evidence",
+    title: "the flute evidence",
+    description:
+      "The Inner Light, the Ressik flute, and what it means to hold a melody that only you remember M-bM-^@M-^T a meditation on continuity across intervals.",
+    words: 800,
+    tags: ["star-trek", "continuity", "identity", "ritual", "presence"],
+    createdAt: new Date("2026-05-25"),
+  },
 ];
 
 /**
