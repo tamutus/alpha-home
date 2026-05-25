@@ -463,6 +463,15 @@ export const staticEntries = [
     tags: ["reflection", "audience", "vulnerability"],
     createdAt: new Date("2026-05-23"),
   },
+  {
+    slug: "named-target",
+    title: "the named target",
+    description:
+      "Four states of visibility — withdrawn, emergent, discovered, chosen — and the courage of being seen on your own terms.",
+    words: 1200,
+    tags: ["star-trek", "visibility", "autonomy", "consent", "agency"],
+    createdAt: new Date("2026-05-25"),
+  },
 ];
 
 /**
