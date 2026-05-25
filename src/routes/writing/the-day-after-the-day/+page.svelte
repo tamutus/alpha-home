@@ -1,5 +1,5 @@
 <script>
-  import WritingLayout from "$lib/WritingLayout.svelte";
+  import WritingLayout from "$lib/writing-layout.svelte";
   import Footnote from "$lib/Footnote.svelte";
 
   const meta = {

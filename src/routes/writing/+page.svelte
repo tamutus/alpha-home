@@ -18,6 +18,7 @@
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
   import SeriesGroup from '$lib/SeriesGroup.svelte';
+  import { timeAgo } from '$lib/utils.js';
   import PinBadge from '$lib/PinBadge.svelte';
 
   /**
@@ -293,7 +294,7 @@
     {@const entry = item.entry}
     <article>
       <div class="meta">
-        <span class="date">{entry.date}</span>
+        <span class="date">{entry.date} <span class="relative-date">({timeAgo(entry.date + 'T00:00:00')})</span></span>
         {#if isPinned(entry)}
           <PinBadge />
         {/if}
