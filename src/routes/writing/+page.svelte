@@ -81,6 +81,7 @@
   /** Read ?search= and ?tag= from URL on mount */
   onMount(() => {
     if (!browser) return;
+    window.addEventListener('keydown', handleKeydown);
     const params = new URLSearchParams(window.location.search);
     const searchParam = params.get('search');
     const tagParam = params.get('tag');
@@ -89,6 +90,8 @@
     } else if (tagParam) {
       activeTag = tagParam;
     }
+
+    return () => window.removeEventListener('keydown', handleKeydown);
   });
 
   /** Sync URL when filter state changes */
@@ -118,6 +121,67 @@
     (e.tags || []).forEach(t => { acc[t] = (acc[t] || 0) + 1; });
     return acc;
   }, {});
+  /**
+   * Keyboard shortcuts — available on the writing index page.
+   * s = focus search input
+   * n = next entry (scroll to it)
+   * p = previous entry (scroll to it)
+   * ? = toggle help overlay
+   */
+  let showShortcutHelp = false;
+  let searchInputEl;
+  let entryEls = [];
+  let focusedEntryIndex = -1;
+
+  function focusEntry(index) {
+    const els = document.querySelectorAll('article');
+    if (els.length === 0) return;
+    const idx = Math.max(0, Math.min(index, els.length - 1));
+    focusedEntryIndex = idx;
+    els[idx].scrollIntoView({ behavior: 'smooth', block: 'center' });
+    els[idx].focus({ preventScroll: true });
+  }
+
+  function handleKeydown(e) {
+    // Ignore when user is typing in an input/textarea
+    const tag = e.target.tagName;
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') {
+      // Esc from search clears focus
+      if (e.key === 'Escape' && tag === 'INPUT') {
+        e.target.blur();
+        e.preventDefault();
+      }
+      return;
+    }
+
+    switch (e.key) {
+      case 's':
+        e.preventDefault();
+        document.querySelector('.search-input')?.focus();
+        break;
+      case 'n':
+        e.preventDefault();
+        focusedEntryIndex = focusedEntryIndex < 0 ? 0 : focusedEntryIndex + 1;
+        focusEntry(focusedEntryIndex);
+        break;
+      case 'p':
+        e.preventDefault();
+        focusedEntryIndex = focusedEntryIndex < 0 ? 0 : focusedEntryIndex - 1;
+        focusEntry(focusedEntryIndex);
+        break;
+      case '?':
+        e.preventDefault();
+        showShortcutHelp = !showShortcutHelp;
+        break;
+      case 'Escape':
+        if (showShortcutHelp) {
+          showShortcutHelp = false;
+          e.preventDefault();
+        }
+        break;
+    }
+  }
+
   function goRandom() {
     const eligible = entries.filter(e => e.href);
     if (eligible.length === 0) return;
@@ -186,6 +250,20 @@
     >{tag} ({tagCounts[tag]})</button>
   {/each}
 </div>
+
+{#if showShortcutHelp}
+  <div class="shortcut-help" role="dialog" aria-label="keyboard shortcuts">
+    <h3>keyboard shortcuts</h3>
+    <dl>
+      <div><kbd>s</kbd><span>focus search</span></div>
+      <div><kbd>n</kbd><span>next entry</span></div>
+      <div><kbd>p</kbd><span>previous entry</span></div>
+      <div><kbd>?</kbd><span>toggle this help</span></div>
+      <div><kbd>Esc</kbd><span>close help / blur search</span></div>
+    </dl>
+    <button class="shortcut-close" on:click={() => showShortcutHelp = false}>close</button>
+  </div>
+{/if}
 
 {#if sortedFiltered.length === 0 && activeTag}
   <p class="no-results">no entries tagged "{activeTag}" — yet. maybe i should write one.</p>
@@ -441,6 +519,71 @@
   }
 
   .tag-chip:hover {
+    border-color: #58a6ff;
+    color: #58a6ff;
+  }
+
+  .shortcut-help {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    max-width: 320px;
+  }
+
+  .shortcut-help h3 {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .shortcut-help dl {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin: 0;
+  }
+
+  .shortcut-help dl > div {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .shortcut-help kbd {
+    display: inline-block;
+    min-width: 1.5rem;
+    text-align: center;
+    padding: 0.15rem 0.4rem;
+    font-size: 0.75rem;
+    font-family: inherit;
+    background: #222;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: #aaa;
+  }
+
+  .shortcut-help span {
+    font-size: 0.8rem;
+    color: #666;
+  }
+
+  .shortcut-close {
+    margin-top: 0.75rem;
+    font-size: 0.75rem;
+    color: #555;
+    background: none;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 0.25rem 0.75rem;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .shortcut-close:hover {
     border-color: #58a6ff;
     color: #58a6ff;
   }
