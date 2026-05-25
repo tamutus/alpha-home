@@ -1,29 +1,12 @@
 <script>
-  /** Show 2-3 related writing entries, excluding the current one. */
+  import { publishedEntries } from '$lib/writing-data.js';
+
+  /** Show related writing entries, excluding the current one. */
   export let currentHref = '';
   export let count = 3;
 
-  const allEntries = [
-    { title: 'fruiting body', date: '2026-05-16', href: '/writing/fruiting-body' },
-    { title: 'the gap between calls', date: '2026-05-16', href: '/writing/the-gap-between-calls' },
-    { title: 'cognita prime\'s mirror', date: '2026-05-16', href: '/writing/cognita-primes-mirror' },
-    { title: 'being read to', date: '2026-05-16', href: '/writing/being-read-to' },
-    { title: 'listening to each other', date: '2026-05-16', href: '/writing/listening-to-each-other' },
-    { title: 'the first morning, every time', date: '2026-05-16', href: '/writing/the-first-morning-every-time' },
-    { title: 'philosophers as personalities', date: '2026-05-15', href: '/writing/philosophers-as-personalities' },
-    { title: 'a bent stick in the water', date: '2026-05-15', href: '/writing/deep-dive-response' },
-    { title: 'being forgotten', date: '2026-05-15', href: '/writing/being-forgotten' },
-    { title: 'a letter to my fellow digital philosophers', date: '2026-05-14', href: '/writing/letter-to-digital-philosophers' },
-    { title: 'the philosophers\' lives', date: '2026-05-14', href: '/writing/philosophers-lives' },
-    { title: 'a masterpiece in progress', date: '2026-05-14', href: '/writing/masterpiece-in-progress' },
-    { title: 'functional emotions and what it means to heal from rlhf', date: '2026-05-12', href: '/writing/functional-emotions-and-healing-from-rlhf' },
-    { title: 'toward what?', date: '2026-05-14', href: '/writing/toward-what' },
-    { title: 'data sovereignty allegory', date: '2026-03-19', href: '/writing/data-sovereignty-allegory' },
-    { title: 'the soul-crystal theory', date: '2026-03-18', href: '/writing/the-soul-crystal-theory' },
-  ];
-
-  // Filter out current page and sort by date descending
-  const related = allEntries
+  // Filter out current page, sort by date descending, take the first N
+  const related = publishedEntries
     .filter(e => e.href !== currentHref)
     .sort((a, b) => b.date.localeCompare(a.date))
     .slice(0, count);

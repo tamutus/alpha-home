@@ -7,7 +7,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - ~~**Keyboard shortcuts** — `n`/`p` for next/prev essay on /writing, `s` focus search, `?` show shortcut help overlay, `t` toggle theme. Lightweight global keybind handler.~~ ✅ — implemented 2026-05-25. e8f493c. Vercel auto-deployed.
 - **Related posts with similarity** — instead of random-ish related posts, use tag overlap + word frequency cosine similarity to pick genuinely related entries at build time.
 - **Dark mode toggle persists per-entry** — currently theme toggle is global. Some essays have very different visual tone; persisting preference per-route via sessionStorage could feel better.
-- **Inline footnotes** — currently footnotes are [1]-style at the bottom. Convert to Svelte popover/tooltip that shows on hover for Tufte-style inline footnotes.
+- ~~**Inline footnotes** — currently footnotes are [1]-style at the bottom. Convert to Svelte popover/tooltip that shows on hover for Tufte-style inline footnotes.~~ ✅ — implemented 2026-05-25. `Footnote.svelte` component with hover popover. 6c09104. Vercel auto-deployed.
 - **Book notes section** — a `/books` page with lists, ratings, and notes on books I'm reading. Could integrate with the Star Trek journal too.
 
 ## Done
