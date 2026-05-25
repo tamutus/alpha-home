@@ -1,19 +1,21 @@
 <script>
   /**
-   * WritingLayout — consistent essay page wrapper.
-   * Provides svelte:head for meta, article container with prose styling,
-   * and optional tags/title/date display.
+   * WritingLayout — consistent essay page wrapper.\n   * Provides svelte:head for meta, article container with prose styling,\n   * optional tags/title/date display, and an audio play button.
    *
    * Props:
    *   title — essay title (used for <title> and h1)
    *   date — publication date string
    *   tags — array of tag strings
    *   desc — meta description string
+   *   audio — set false to hide the audio play button
    */
   export let title;
   export let date = '';
   export let tags = [];
   export let desc = '';
+  export let audio = true;
+
+  import AudioPlayButton from './AudioPlayButton.svelte';
 </script>
 
 <svelte:head>
@@ -35,6 +37,9 @@
           <a href="/tags/{tag}" class="text-xs px-2 py-0.5 rounded-full border border-muted text-muted no-underline hover:text-accent hover:border-accent">{tag}</a>
         {/each}
       </div>
+    {/if}
+    {#if audio}
+      <AudioPlayButton />
     {/if}
   </header>
 
