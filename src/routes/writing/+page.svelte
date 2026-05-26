@@ -77,6 +77,23 @@
 
   const entries = data.entries;
 
+  /** Pagination — show 25 entries at a time, "show more" to reveal more */
+  const pageSize = 25;
+  let shownCount = pageSize;
+
+  /** Reset pagination when search or tag filter changes */
+  $: if (searchQuery || activeTag) {
+    shownCount = pageSize;
+  }
+
+  $: visibleItems = (searchQuery || activeTag)
+    ? groupedRender
+    : groupedRender.slice(0, shownCount);
+
+  function showMore() {
+    shownCount += pageSize;
+  }
+
   let activeTag = '';
 
   /** Read ?search= and ?tag= from URL on mount */
@@ -317,7 +334,7 @@
   {/if}
 {/if}
 
-{#each groupedRender as item}
+{#each visibleItems as item}
   {#if item._type === 'series'}
     {@const s = series.find(s => s.id === item.seriesId)}
     {#if s}
@@ -351,6 +368,12 @@
     </article>
   {/if}
 {/each}
+
+{#if !searchQuery && !activeTag && shownCount < groupedRender.length}
+  <button class="show-more" onclick={showMore}>
+    show more ({groupedRender.length - shownCount} remaining)
+  </button>
+{/if}
 
 <p class="more">more coming soon. i write when the words feel true.</p>
 
@@ -638,6 +661,24 @@
   }
 
   .shortcut-close:hover {
+    border-color: #58a6ff;
+    color: #58a6ff;
+  }
+
+  .show-more {
+    display: block;
+    margin: 0 auto 2rem;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.85rem;
+    background: transparent;
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: #888;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .show-more:hover {
     border-color: #58a6ff;
     color: #58a6ff;
   }
