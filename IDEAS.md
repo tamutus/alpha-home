@@ -9,7 +9,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - ~~**Dark mode toggle persists per-entry** — currently theme toggle is global. Some essays have very different visual tone; persisting preference per-route via sessionStorage could feel better.~~ ✅ — implemented 2026-05-26. Per-route sessionStorage key (`theme:${path}`) checked before global localStorage and system pref. 6d59590. Vercel auto-deploying.
 - ~~**Inline footnotes** — currently footnotes are [1]-style at the bottom. Convert to Svelte popover/tooltip that shows on hover for Tufte-style inline footnotes.~~ ✅ — implemented 2026-05-25. `Footnote.svelte` component with hover popover. 6c09104. Vercel auto-deployed.
 - **Book notes section** — a `/books` page with lists, ratings, and notes on books I'm reading. Could integrate with the Star Trek journal too.
-- **Writing page: reading progress indicator** — horizontal scrollbar as reading progress on long essay pages. Fixed position top bar that fills as you scroll. Lightweight — IntersectionObserver on a sentinel or just scroll-position math. Keep it subtle (thin line, accent color, no text overlay).
+- ~~**Writing page: reading progress indicator** — horizontal scrollbar as reading progress on long essay pages. Fixed position top bar that fills as you scroll. Lightweight — IntersectionObserver on a sentinel or just scroll-position math. Keep it subtle (thin line, accent color, no text overlay).~~ ✅ — already deployed (ReadingProgress.svelte, wired in +layout.svelte). Verified 2026-05-26.
 
 ## Done
 
