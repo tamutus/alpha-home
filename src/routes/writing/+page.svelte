@@ -116,6 +116,16 @@
     searchQuery = '';
   }
 
+  /** Sort direction: 'newest' or 'oldest' */
+  let sortDir = 'oldest';
+
+  /** Read sort param from URL on mount */
+  onMount(() => {
+    if (!browser) return;
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('sort') === 'newest') sortDir = 'newest';
+  });
+
   $: totalCount = entries.length;
   $: tags = [...new Set(entries.flatMap(e => e.tags || []))].sort();
   $: tagCounts = entries.reduce((acc, e) => {
@@ -205,22 +215,40 @@
   $: sortedFiltered = (() => {
     const result = [...filtered];
     if (!searchQuery && !activeTag) {
+      // Pinned entries always come first
       result.sort((a, b) => {
         const aP = isPinned(a);
         const bP = isPinned(b);
         if (aP && !bP) return -1;
         if (!aP && bP) return 1;
-        return 0;
+        // Within non-pinned, sort by sortDir
+        if (sortDir === 'newest') {
+          return new Date(b.date) - new Date(a.date);
+        }
+        return new Date(a.date) - new Date(b.date);
       });
     }
     return result;
   })();
+
+  function toggleSort() {
+    sortDir = sortDir === 'newest' ? 'oldest' : 'newest';
+    if (browser) {
+      const url = new URL(window.location.href);
+      if (sortDir === 'newest') {
+        url.searchParams.set('sort', 'newest');
+      } else {
+        url.searchParams.delete('sort');
+      }
+      history.replaceState({}, '', url);
+    }
+  }
 </script>
 
 <h1>/writing <span class="count-badge">{totalCount} entries</span></h1>
 <p class="lede">things i've written, thought about, or explored <a href="/rss.xml" class="rss-link">rss</a>
 {#if entries.length > 0}
-  <button class="random-btn" on:click={goRandom} title="surprise me">🎲 random</button>
+  <button class="random-btn" onclick={() => goRandom()} title="surprise me">🎲 random</button>
 {/if}
 </p>
 
@@ -231,10 +259,10 @@
       class="search-input"
       placeholder="search writing…"
       bind:value={searchQuery}
-      on:input={() => { activeTag = ''; }}
+      oninput={() => { activeTag = ''; }}
     />
     {#if searchQuery}
-      <button class="search-clear" on:click={() => { searchQuery = ''; activeTag = ''; }} aria-label="clear search">
+      <button class="search-clear" onclick={() => { searchQuery = ''; activeTag = ''; }} aria-label="clear search">
         ✕
       </button>
     {/if}
@@ -242,14 +270,19 @@
 </div>
 
 <div class="tag-bar">
-  <button class="tag-btn" class:active={activeTag === ''} on:click={() => activeTag = ''}>all</button>
+  <button class="tag-btn" class:active={activeTag === ''} onclick={() => activeTag = ''}>all</button>
   {#each tags as tag}
     <button
       class="tag-btn"
       class:active={tag === activeTag}
-      on:click={() => toggleTag(tag)}
+      onclick={() => toggleTag(tag)}
     >{tag} ({tagCounts[tag]})</button>
   {/each}
+  <span class="sort-options">
+    <button class="sort-btn" onclick={toggleSort} title="toggle sort order">
+      {sortDir === 'newest' ? '↓ newest' : '↑ oldest'}
+    </button>
+  </span>
 </div>
 
 {#if showShortcutHelp}
@@ -262,7 +295,7 @@
       <div><kbd>?</kbd><span>toggle this help</span></div>
       <div><kbd>Esc</kbd><span>close help / blur search</span></div>
     </dl>
-    <button class="shortcut-close" on:click={() => showShortcutHelp = false}>close</button>
+    <button class="shortcut-close" onclick={() => showShortcutHelp = false}>close</button>
   </div>
 {/if}
 
@@ -311,7 +344,7 @@
       {#if entry.tags && entry.tags.length}
         <div class="entry-tags">
           {#each entry.tags as tag}
-            <button class="tag-chip" on:click={() => toggleTag(tag)}>{tag}</button>
+            <button class="tag-chip" onclick={() => toggleTag(tag)}>{tag}</button>
           {/each}
         </div>
       {/if}
@@ -423,6 +456,26 @@
     background: #58a6ff;
     border-color: #58a6ff;
     color: #0d0d0d;
+  }
+
+  .sort-options {
+    margin-left: auto;
+  }
+
+  .sort-btn {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border: 1px solid #333;
+    border-radius: 12px;
+    background: transparent;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .sort-btn:hover {
+    border-color: #58a6ff;
+    color: #58a6ff;
   }
 
   article {
