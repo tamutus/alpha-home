@@ -37,6 +37,11 @@
   /** Seasonal emoji based on current month */
   let seasonEmoji = '🌱';
 
+  /** Build a per-route sessionStorage key */
+  function themeKey(path) {
+    return `theme:${path}`;
+  }
+
   onMount(() => {
     // Seasonal tone
     const m = new Date().getMonth();
@@ -45,11 +50,18 @@
     else if (m >= 8 && m <= 10) seasonEmoji = '🍂';
     else seasonEmoji = '❄️';
 
-    const stored = localStorage.getItem('theme');
-    if (stored === 'light' || stored === 'dark') {
-      theme = stored;
+    const path = window.location.pathname;
+    // Per-route sessionStorage takes priority, then global localStorage, then system preference
+    const routeTheme = sessionStorage.getItem(themeKey(path));
+    if (routeTheme === 'light' || routeTheme === 'dark') {
+      theme = routeTheme;
     } else {
-      theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      const stored = localStorage.getItem('theme');
+      if (stored === 'light' || stored === 'dark') {
+        theme = stored;
+      } else {
+        theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      }
     }
     document.documentElement.setAttribute('data-theme', theme);
 
@@ -70,6 +82,9 @@
 
   function toggle() {
     theme = theme === 'dark' ? 'light' : 'dark';
+    const path = window.location.pathname;
+    localStorage.setItem(themeKey(path), theme);
+    // Also set global so new routes inherit the last toggle context
     localStorage.setItem('theme', theme);
     document.documentElement.setAttribute('data-theme', theme);
   }
