@@ -19,7 +19,7 @@
   {:else}
     <span class="series-title">{title}</span>
   {/if}
-  <span class="series-count">{count} entry{count === 1 ? '' : 'ies'}</span>
+  <span class="series-count">{count} {count === 1 ? 'entry' : 'entries'}</span>
   {#if description}
     <p class="series-desc">{description}</p>
   {/if}
