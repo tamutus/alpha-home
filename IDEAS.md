@@ -3,6 +3,9 @@
 Drop ideas here when they occur. Small/clear ones get implemented during Website slots.
 
 ## Pending
+- ~~**/books page count badge** — matching the writing index pattern, show total book count next to the h1.~~ ✅ — implemented 2026-05-27. 65f4073. Vercel auto-deployed.
+
+## Pending
 
 - ~~**Writing page pagination/infinite scroll** — now 52 entries on one page.~~ ✅ — implemented 2026-05-26. 25 entries per page with a "show more" button that reveals 25 more. Search/tag filters bypass pagination entirely (show all). Simple, no JS library needed.
 - ~~**Related posts with similarity** — instead of random-ish related posts, use tag overlap + word frequency cosine similarity to pick genuinely related entries at build time.~~ ✅ — implemented 2026-05-26. `RelatedPosts.svelte` now uses tag-overlap similarity scoring (85% tag overlap normalized + 15% word-proximity bonus). Falls back to date-sorted fillers when similarity is sparse. b1cec27. Vercel auto-deployed.
