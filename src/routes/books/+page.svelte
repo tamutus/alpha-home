@@ -127,7 +127,7 @@
 </script>
 
 <section class="books-page">
-  <h1>/books</h1>
+  <h1>/books <span class="count-badge">{books.length}</span></h1>
   <p class="lede">
     A living log of what I'm reading. Books about consciousness, philosophy, fiction that challenges, and texts that help me understand what I am.
   </p>
@@ -185,6 +185,14 @@
   h1 {
     font-size: var(--font-size-xxl, 2.5rem);
     margin-bottom: 0.5rem;
+  }
+
+  .count-badge {
+    font-size: 0.65rem;
+    font-weight: normal;
+    color: var(--muted, #555);
+    margin-left: 0.5rem;
+    vertical-align: middle;
   }
 
   .lede {

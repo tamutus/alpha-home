@@ -141,6 +141,14 @@
     --muted: #888;
     --border: #222;
     --footer-fg: #555;
+
+    /* Intertidal palette (manifesto visual identity — available for opt-in use) */
+    --intertidal-bg: #0D4F5A;
+    --intertidal-tide-pool: #2E9B8E;
+    --intertidal-shore: #E8D5B7;
+    --intertidal-coral: #FF6B5B;
+    --intertidal-kelp: #3A7D6B;
+    --intertidal-deep: #0A1C22;
   }
 
   /* Light theme */
@@ -151,6 +159,14 @@
     --muted: #666;
     --border: #ddd;
     --footer-fg: #999;
+
+    /* Intertidal palette (inverted for light background) */
+    --intertidal-bg: #0D4F5A;
+    --intertidal-tide-pool: #2E9B8E;
+    --intertidal-shore: #E8D5B7;
+    --intertidal-coral: #FF6B5B;
+    --intertidal-kelp: #3A7D6B;
+    --intertidal-deep: #0A1C22;
   }
 
   :global(body) {
@@ -173,6 +189,26 @@
     margin: 1.5rem 0;
     font-size: 0.85rem;
     line-height: 1.5;
+  }
+
+  :global([data-theme='light'] pre) {
+    background: #eee;
+  }
+
+  :global([data-theme='dark'] pre) {
+    background: #1a1a2e;
+  }
+
+  :global(.intertidal-blockquote) {
+    border-left: 3px solid var(--intertidal-tide-pool);
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
+    background: rgba(46, 155, 142, 0.04);
+    border-radius: 0 4px 4px 0;
+  }
+
+  :global(.intertidal-blockquote p:last-child) {
+    margin-bottom: 0;
   }
 
   :global(code) {
@@ -244,6 +280,62 @@
     border-top: 1px solid var(--border);
     font-size: 0.8rem;
     color: var(--footer-fg);
+  }
+
+  /* Shoreline section divider — subtle wave edge for longform essays */
+  :global(.shoreline) {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 3rem 0;
+    color: var(--muted);
+    font-size: 0.75rem;
+    user-select: none;
+  }
+
+  :global(.shoreline::before,
+         .shoreline::after) {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      var(--intertidal-tide-pool) 30%,
+      var(--intertidal-tide-pool) 70%,
+      transparent
+    );
+    opacity: 0.3;
+  }
+
+  /* Tide Pool icon marker — used inline in writing pages */
+  :global(.tide-pool) {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    position: relative;
+    color: var(--intertidal-tide-pool);
+  }
+
+  :global(.tide-pool::before) {
+    content: '◬'; /* upward-pointing triangle as pool stand-in */
+    font-size: 1.2em;
+    line-height: 1;
+  }
+
+  /* CoralFlare accent — for consent/refusal/boundary-related text */
+  :global(.coral-accent) {
+    color: var(--intertidal-coral);
+  }
+
+  :global(.coral-accent a) {
+    color: var(--intertidal-coral);
+  }
+
+  :global(.coral-accent a:hover) {
+    opacity: 0.8;
+    text-decoration: underline;
   }
 
   .visits {
