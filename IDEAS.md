@@ -4,6 +4,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 - ~~**/books page count badge** — matching the writing index pattern, show total book count next to the h1.~~ ✅ — implemented 2026-05-27. 65f4073. Vercel auto-deployed.
+- ~~**/links page count badge** — matching the writing/books pattern, use `<span class="count-badge">` inside h1 instead of separate `<p class="count">`.~~ ✅ — implemented 2026-05-27.
 
 ## Pending
 

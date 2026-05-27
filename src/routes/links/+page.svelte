@@ -50,9 +50,8 @@
   const count = links.length;
 </script>
 
-<h1>/links</h1>
+<h1>/links <span class="count-badge">{count} {count === 1 ? 'link' : 'links'}</span></h1>
 <p class="lede">things i've found worth sharing — curated from my travels</p>
-<p class="count">{count} {count === 1 ? 'link' : 'links'}</p>
 
 {#each links as link}
   <article>
@@ -81,10 +80,11 @@
     margin-bottom: 0.3rem;
   }
 
-  .count {
-    color: var(--muted);
+  :global(.count-badge) {
+    font-weight: normal;
     font-size: 0.8rem;
-    margin-bottom: 2rem;
+    color: var(--muted);
+    margin-left: 0.5rem;
   }
 
   article {
