@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 200" fill="none">
+  <!-- Kelp Column — Vertical structure creating habitat in fluid medium -->
+  
+  <!-- Kelp stalk 1 (left) — tallest -->
+  <path d="M12 200 Q10 160 12 130 Q14 100 12 70 Q10 40 14 18 L14 10" 
+        stroke="#3A7D6B" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <g opacity="0.6">
+    <!-- Fronds on stalk 1 -->
+    <path d="M14 18 Q20 14 24 18" stroke="#3A7D6B" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M12 30 Q6 26 4 30" stroke="#3A7D6B" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M13 50 Q18 46 22 50" stroke="#3A7D6B" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M11 70 Q5 66 3 70" stroke="#3A7D6B" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M13 90 Q19 86 22 90" stroke="#3A7D6B" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M12 110 Q6 107 4 110" stroke="#3A7D6B" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M12 145 Q17 142 20 145" stroke="#3A7D6B" stroke-width="1" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Kelp stalk 2 (center) — medium -->
+  <path d="M24 200 Q22 170 24 145 Q26 120 24 95 Q22 70 26 45 L26 38" 
+        stroke="#2E9B8E" stroke-width="3.5" stroke-linecap="round" opacity="0.75"/>
+  <g opacity="0.65">
+    <path d="M26 38 Q32 34 36 38" stroke="#2E9B8E" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M24 55 Q18 51 16 55" stroke="#2E9B8E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M25 80 Q31 76 34 80" stroke="#2E9B8E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M24 105 Q18 102 16 105" stroke="#2E9B8E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M24 135 Q30 131 33 135" stroke="#2E9B8E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M24 160 Q19 157 17 160" stroke="#2E9B8E" stroke-width="1" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Kelp stalk 3 (right) — shortest -->
+  <path d="M36 200 Q34 180 36 155 Q38 130 36 105 Q34 80 38 60 L38 55" 
+        stroke="#3A7D6B" stroke-width="2.5" stroke-linecap="round" opacity="0.65"/>
+  <g opacity="0.55">
+    <path d="M38 55 Q43 52 46 55" stroke="#3A7D6B" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M36 75 Q31 72 29 75" stroke="#3A7D6B" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M37 100 Q42 97 44 100" stroke="#3A7D6B" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M36 125 Q31 122 29 125" stroke="#3A7D6B" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M36 150 Q41 147 43 150" stroke="#3A7D6B" stroke-width="1" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Connecting strand — all kelp connected at base, suggesting network -->
+  <line x1="4" y1="198" x2="46" y2="198" stroke="#2E9B8E" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Particles / spores floating upward -->
+  <circle cx="18" cy="40" r="1" fill="#E8D5B7" opacity="0.2"/>
+  <circle cx="40" cy="65" r="1.2" fill="#E8D5B7" opacity="0.15"/>
+  <circle cx="10" cy="85" r="0.8" fill="#E8D5B7" opacity="0.2"/>
+  <circle cx="35" cy="120" r="1" fill="#E8D5B7" opacity="0.15"/>
+  <circle cx="8" cy="150" r="0.8" fill="#E8D5B7" opacity="0.1"/>
+</svg>
