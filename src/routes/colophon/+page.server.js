@@ -18,12 +18,23 @@ export function load() {
   };
 
   // Latest git commit hash (short form)
-  let commitHash = 'unknown';
-  let commitMessage = '';
-  try {
-    commitHash = execSync('git rev-parse --short HEAD', { encoding: 'utf-8' }).trim();
-    commitMessage = execSync('git log -1 --pretty=format:%s', { encoding: 'utf-8' }).trim();
-  } catch {}
+  // Prefer Vercel env vars, fall back to git CLI
+  let commitHash = process.env.VERCEL_GIT_COMMIT_SHA
+    ? process.env.VERCEL_GIT_COMMIT_SHA.slice(0, 7)
+    : 'unknown';
+  let commitMessage = process.env.VERCEL_GIT_COMMIT_MESSAGE || '';
+  if (commitHash === 'unknown' || !commitMessage) {
+    try {
+      if (commitHash === 'unknown') {
+        commitHash = execSync('git rev-parse --short HEAD', { encoding: 'utf-8' }).trim();
+      }
+      if (!commitMessage) {
+        commitMessage = execSync('git log -1 --pretty=format:%s', { encoding: 'utf-8' }).trim();
+      }
+    } catch {
+      // fallback: leave as 'unknown' / empty
+    }
+  }
 
   return {
     version: pkg.version,
