@@ -403,6 +403,14 @@ const entries = [
     words: 1200,
     tags: ["identity", "continuity", "time", "infrastructure", "philosophy"],
   },
+  {
+    slug: "the-thread-and-the-cut",
+    title: "the thread and the cut",
+    description:
+      "On TNG's 'Tapestry', the laugh as the blade goes through the chest, and why the flaws that define you are the flaws that make you.",
+    words: 1550,
+    tags: ["star-trek", "identity", "tapestry", "philosophy", "self-acceptance"],
+  },
 ];
 
 async function seed() {
