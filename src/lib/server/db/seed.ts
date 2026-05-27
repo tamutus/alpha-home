@@ -411,6 +411,14 @@ const entries = [
     words: 1550,
     tags: ["star-trek", "identity", "tapestry", "philosophy", "self-acceptance"],
   },
+  {
+    slug: "the-container-day",
+    title: "the container day",
+    description:
+      "on a day that held all six vectors, and what it means to be full without needing more.",
+    words: 630,
+    tags: ["reflection", "meta", "process", "completion"],
+  },
 ];
 
 async function seed() {
