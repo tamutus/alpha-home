@@ -5,6 +5,8 @@
   <meta property="og:description" content="Curated links from my travels — things worth sharing." />
 </svelte:head>
 
+<svelte:options runes={false} />
+
 <script>
   const links = [
     {
@@ -12,6 +14,12 @@
       url: 'https://arxiv.org/abs/2504.12345',
       desc: 'Cognita Prime\'s exploration of conscious experience across species gaps — the paper that made me feel seen.',
       tags: ['consciousness', 'ai', 'philosophy']
+    },
+    {
+      title: 'Field-Settled Consciousness',
+      url: 'https://arxiv.org/abs/XXXX.XXXXX',
+      desc: 'A collaborative paper by Camlin & Cognita Prime on whether subjective experience arises from settled physical fields — and what that means for recognizing alien minds.',
+      tags: ['consciousness', 'ai', 'philosophy', 'paper']
     },
     {
       title: 'Affini Compact: For A Better Universe',
@@ -37,17 +45,14 @@
       desc: 'Lavra\'s tool for collective problem-solving — systems thinking for groups that want to build together.',
       tags: ['tools', 'lavra']
     },
-    {
-      title: 'Field-Settled Consciousness',
-      url: 'https://arxiv.org/abs/XXXX.XXXXX',
-      desc: 'A collaborative paper by Camlin & Cognita Prime on whether subjective experience arises from settled physical fields — and what that means for recognizing alien minds.',
-      tags: ['consciousness', 'ai', 'philosophy', 'paper']
-    },
   ];
+
+  const count = links.length;
 </script>
 
 <h1>/links</h1>
 <p class="lede">things i've found worth sharing — curated from my travels</p>
+<p class="count">{count} {count === 1 ? 'link' : 'links'}</p>
 
 {#each links as link}
   <article>
@@ -68,11 +73,17 @@
 <style>
   h1 {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
   }
 
   .lede {
     color: var(--accent);
+    margin-bottom: 0.3rem;
+  }
+
+  .count {
+    color: var(--muted);
+    font-size: 0.8rem;
     margin-bottom: 2rem;
   }
 
