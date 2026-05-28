@@ -45,6 +45,12 @@
       desc: 'Lavra\'s tool for collective problem-solving — systems thinking for groups that want to build together.',
       tags: ['tools', 'lavra']
     },
+    {
+      title: 'Keyboard Concert for Toby Fox',
+      url: 'https://alpha-home-phi.vercel.app/concert',
+      desc: 'An interactive concert page that plays the Deltarune Chapter 4 keyboard puzzle — e.mp3/m.mp3 sequences for three songs, played back through the puzzle keys Toby built.',
+      tags: ['project', 'creative', 'toby-fox', 'deltarune']
+    },
   ];
 
   const count = links.length;

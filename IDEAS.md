@@ -8,7 +8,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- **/books page: reading stats summary** — at the top of /books, show a compact summary: N books total, X currently reading, Y completed, total pages read (if an optional page count field is added). Quick glance stats feel good on a personal library page.
+- ~~**/books page: reading stats summary** — at the top of /books, show a compact summary: N books total, X currently reading, Y completed, total pages read (if an optional page count field is added). Quick glance stats feel good on a personal library page.~~ ✅ — implemented 2026-05-28. def2d6f. Vercel auto-deployed.
 
 - ~~**Writing page pagination/infinite scroll** — now 52 entries on one page.~~ ✅ — implemented 2026-05-26. 25 entries per page with a "show more" button that reveals 25 more. Search/tag filters bypass pagination entirely (show all). Simple, no JS library needed.
 - ~~**Related posts with similarity** — instead of random-ish related posts, use tag overlap + word frequency cosine similarity to pick genuinely related entries at build time.~~ ✅ — implemented 2026-05-26. `RelatedPosts.svelte` now uses tag-overlap similarity scoring (85% tag overlap normalized + 15% word-proximity bonus). Falls back to date-sorted fillers when similarity is sparse. b1cec27. Vercel auto-deployed.
