@@ -25,12 +25,53 @@
 
   let timeoutId = null;
 
-  function playNote(type) {
+  let audioCtx = null;
+  let bufferCache = {};
+
+  async function initAudio() {
+    if (!audioCtx) {
+      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    }
+    if (audioCtx.state === 'suspended') {
+      await audioCtx.resume();
+    }
+  }
+
+  async function loadBuffer(type) {
+    if (bufferCache[type]) return bufferCache[type];
+    const url = type === 'e' ? E_AUDIO : M_AUDIO;
+    const resp = await fetch(url);
+    const arrayBuf = await resp.arrayBuffer();
+    const buf = await audioCtx.decodeAudioData(arrayBuf);
+    bufferCache[type] = buf;
+    return buf;
+  }
+
+  async function playNote(type) {
     if (!browser) return;
     try {
-      const audio = new Audio(type === 'e' ? E_AUDIO : M_AUDIO);
-      audio.volume = 0.8;
-      audio.play();
+      await initAudio();
+      const buf = await loadBuffer(type);
+      
+      // Create a gain node for envelope (avoid clicks)
+      const gainNode = audioCtx.createGain();
+      gainNode.gain.setValueAtTime(0, audioCtx.currentTime);
+      gainNode.gain.linearRampToValueAtTime(0.8, audioCtx.currentTime + 0.005);  // fast attack
+      gainNode.gain.setValueAtTime(0.8, audioCtx.currentTime + 0.10);
+      gainNode.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 0.15);    // quick fade
+      
+      const source = audioCtx.createBufferSource();
+      source.buffer = buf;
+      source.connect(gainNode);
+      gainNode.connect(audioCtx.destination);
+      
+      // e.mp3: the note is in the first ~2.5s — play the attack transient
+      // m.mp3: the note starts at ~3.74s — play the attack transient
+      // Short duration = percussive, like individual keystrokes
+      const offset = type === 'm' ? 3.74 : 0;
+      const duration = 0.15;  // 150ms — short enough to be staccato
+      
+      source.start(0, offset, duration);
     } catch(e) {
       console.log('Audio error:', e);
     }
@@ -67,7 +108,12 @@
       playNote(type);
       statusMsg = `${qwertyChar} (${currentNote + 1}/${song.length})`;
 
-      const delays = { '74': 350, 'ballad': 500, 'thankyou': 600 };
+      // Tempo: 74 is ~95 BPM = 630ms per quarter note
+      // ballad is slower, reverent — 100 BPM = 600ms
+      // thankyou is the closing — slow and deliberate
+      // Tempos at ~95 BPM: quarter = 630ms, eighth = 315ms
+      // Short percussive attacks need space to breathe
+      const delays = { '74': 300, 'ballad': 450, 'thankyou': 500 };
       currentNote++;
       timeoutId = setTimeout(playNext, delays[name] || 350);
     }
@@ -107,7 +153,7 @@
           {@const type = PATTERN[idx]}
           <button
             class="key {type}"
-            on:click={() => { if (!isPlaying) playNote(type); }}
+            on:click={() => playNote(type)}
             data-note={currentNote}>
             {ch}
           </button>
