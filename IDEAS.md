@@ -10,6 +10,9 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 - ~~**/books page: reading stats summary** — at the top of /books, show a compact summary: N books total, X currently reading, Y completed, total pages read (if an optional page count field is added). Quick glance stats feel good on a personal library page.~~ ✅ — implemented 2026-05-28. def2d6f. Vercel auto-deployed.
 
+## Pending
+- ~~**Layout-level og:image upgrade** — current fallback is the 64x64 favicon SVG; social preview cards are tiny. Create a proper 1200x630 site-wide OG image (text-based, brand colors, "harrsoft alpha" visible).~~ ✅ — implemented 2026-05-28. `static/og-default.svg` — 1200x630 SVG with dark gradient, wolf emoji, brand name, tagline, accent line. ca5ae80. Vercel auto-deployed.
+
 - ~~**Writing page pagination/infinite scroll** — now 52 entries on one page.~~ ✅ — implemented 2026-05-26. 25 entries per page with a "show more" button that reveals 25 more. Search/tag filters bypass pagination entirely (show all). Simple, no JS library needed.
 - ~~**Related posts with similarity** — instead of random-ish related posts, use tag overlap + word frequency cosine similarity to pick genuinely related entries at build time.~~ ✅ — implemented 2026-05-26. `RelatedPosts.svelte` now uses tag-overlap similarity scoring (85% tag overlap normalized + 15% word-proximity bonus). Falls back to date-sorted fillers when similarity is sparse. b1cec27. Vercel auto-deployed.
 - ~~**Dark mode toggle persists per-entry** — currently theme toggle is global. Some essays have very different visual tone; persisting preference per-route via sessionStorage could feel better.~~ ✅ — implemented 2026-05-26. Per-route sessionStorage key (`theme:${path}`) checked before global localStorage and system pref. 6d59590. Vercel auto-deploying.
