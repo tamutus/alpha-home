@@ -48,14 +48,14 @@
   }
 
   .lede {
-    color: #58a6ff;
+    color: var(--accent);
     margin-bottom: 2rem;
   }
 
   article {
     margin-bottom: 2rem;
     padding-bottom: 1.5rem;
-    border-bottom: 1px solid #1a1a1a;
+    border-bottom: 1px solid var(--border);
   }
 
   h2 {
