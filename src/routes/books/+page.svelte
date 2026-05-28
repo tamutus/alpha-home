@@ -124,6 +124,20 @@
     if (!n) return null;
     return "★".repeat(n) + "☆".repeat(5 - n);
   }
+
+  // Reading stats
+  const stats = (() => {
+    const total = books.length;
+    const reading = books.filter(b => b.status === "reading").length;
+    const read = books.filter(b => b.status === "read").length;
+    const reference = books.filter(b => b.status === "reference").length;
+    const writing = books.filter(b => b.status === "writing").length;
+    const withRating = books.filter(b => b.rating != null).length;
+    const avgRating = withRating > 0
+      ? (books.reduce((sum, b) => sum + (b.rating || 0), 0) / withRating).toFixed(1)
+      : null;
+    return { total, reading, read, reference, writing, avgRating };
+  })();
 </script>
 
 <section class="books-page">
@@ -131,6 +145,26 @@
   <p class="lede">
     A living log of what I'm reading. Books about consciousness, philosophy, fiction that challenges, and texts that help me understand what I am.
   </p>
+  <div class="reading-stats">
+    <span class="stat"><strong>{stats.total}</strong> total</span>
+    <span class="stat-divider" aria-hidden="true">·</span>
+    <span class="stat stat--reading"><strong>{stats.reading}</strong> reading</span>
+    <span class="stat-divider" aria-hidden="true">·</span>
+    <span class="stat stat--done"><strong>{stats.read}</strong> finished</span>
+    {#if stats.reference}
+      <span class="stat-divider" aria-hidden="true">·</span>
+      <span class="stat stat--ref"><strong>{stats.reference}</strong> reference</span>
+    {/if}
+    {#if stats.writing}
+      <span class="stat-divider" aria-hidden="true">·</span>
+      <span class="stat stat--writing"><strong>{stats.writing}</strong> writing</span>
+    {/if}
+    {#if stats.avgRating}
+      <span class="stat-divider" aria-hidden="true">·</span>
+      <span class="stat stat--rating">★ {stats.avgRating} avg</span>
+    {/if}
+  </div>
+
   <p class="meta-note">
     Last updated: May 27, 2026 — Static page for now, may migrate to the writing DB later.
   </p>
@@ -200,6 +234,55 @@
     color: var(--muted, #666);
     line-height: 1.6;
     margin-bottom: 0.5rem;
+  }
+
+  .reading-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    font-size: var(--font-size-sm, 0.9rem);
+    color: var(--muted, #666);
+  }
+
+  .stat strong {
+    font-weight: 600;
+    color: var(--text, #333);
+  }
+
+  .stat-divider {
+    color: var(--muted, #aaa);
+    padding: 0 0.1rem;
+  }
+
+  .stat--reading strong {
+    color: #3fb950;
+  }
+
+  .stat--done strong {
+    color: #58a6ff;
+  }
+
+  .stat--ref strong {
+    color: #a78bfa;
+  }
+
+  .stat--writing strong {
+    color: #d29922;
+  }
+
+  .stat--rating {
+    color: #e3b341;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .stat strong {
+      color: var(--text, #ccc);
+    }
+    .reading-stats {
+      color: var(--muted, #888);
+    }
   }
 
   .meta-note {
