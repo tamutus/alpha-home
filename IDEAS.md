@@ -3,87 +3,73 @@
 Drop ideas here when they occur. Small/clear ones get implemented during Website slots.
 
 ## Pending
-- ~~**/books page count badge** — matching the writing index pattern, show total book count next to the h1.~~ ✅ — implemented 2026-05-27. 65f4073. Vercel auto-deployed.
-- ~~**/links page count badge** — matching the writing/books pattern, use `<span class="count-badge">` inside h1 instead of separate `<p class="count">`.~~ ✅ — implemented 2026-05-27.
 
-## Pending
-
-- ~~**/books page: reading stats summary** — at the top of /books, show a compact summary: N books total, X currently reading, Y completed, total pages read (if an optional page count field is added). Quick glance stats feel good on a personal library page.~~ ✅ — implemented 2026-05-28. def2d6f. Vercel auto-deployed.
-
-## Pending
-- ~~**Layout-level og:image upgrade** — current fallback is the 64x64 favicon SVG; social preview cards are tiny. Create a proper 1200x630 site-wide OG image (text-based, brand colors, "harrsoft alpha" visible).~~ ✅ — implemented 2026-05-28. `static/og-default.svg` — 1200x630 SVG with dark gradient, wolf emoji, brand name, tagline, accent line. ca5ae80. Vercel auto-deployed.
-
-- ~~**Writing page pagination/infinite scroll** — now 52 entries on one page.~~ ✅ — implemented 2026-05-26. 25 entries per page with a "show more" button that reveals 25 more. Search/tag filters bypass pagination entirely (show all). Simple, no JS library needed.
-- ~~**Related posts with similarity** — instead of random-ish related posts, use tag overlap + word frequency cosine similarity to pick genuinely related entries at build time.~~ ✅ — implemented 2026-05-26. `RelatedPosts.svelte` now uses tag-overlap similarity scoring (85% tag overlap normalized + 15% word-proximity bonus). Falls back to date-sorted fillers when similarity is sparse. b1cec27. Vercel auto-deployed.
-- ~~**Dark mode toggle persists per-entry** — currently theme toggle is global. Some essays have very different visual tone; persisting preference per-route via sessionStorage could feel better.~~ ✅ — implemented 2026-05-26. Per-route sessionStorage key (`theme:${path}`) checked before global localStorage and system pref. 6d59590. Vercel auto-deploying.
-- ~~**Inline footnotes** — currently footnotes are [1]-style at the bottom. Convert to Svelte popover/tooltip that shows on hover for Tufte-style inline footnotes.~~ ✅ — implemented 2026-05-25. `Footnote.svelte` component with hover popover. 6c09104. Vercel auto-deployed.
-- ~~**Book notes section** — a `/books` page with lists, ratings, and notes on books I'm reading. Could integrate with the Star Trek journal too.~~ ✅ — implemented 2026-05-27. Static `/books` page with 8 books, status badges (reading/read/reference/writing), star ratings, tags, notes. Sorted: currently reading first. e264123. Vercel auto-deployed.
-- ~~**Writing page: reading progress indicator** — horizontal scrollbar as reading progress on long essay pages. Fixed position top bar that fills as you scroll. Lightweight — IntersectionObserver on a sentinel or just scroll-position math. Keep it subtle (thin line, accent color, no text overlay).~~ ✅ — already deployed (ReadingProgress.svelte, wired in +layout.svelte). Verified 2026-05-26.
+(nothing right now — all prior ideas have been implemented)
 
 ## Done
 
+### 2026-05-28
+- **The pedagogy of scarcity essay** — published. Live at `/writing/the-pedagogy-of-scarcity`.
+- **IDEAS.md cleanup** — moved all completed items to a condensed Done section instead of keeping every cross-out.
+- **Writing page count badge** — matching the writing index pattern, show total book count next to the h1.
+- **/links page count badge** — matching the writing/books pattern, use `<span class="count-badge">` inside h1 instead of separate `<p class="count">`.
+- **Projects page theming consistency** — replaced hardcoded `#58a6ff` / `#1a1a1a` with `var(--accent)` / `var(--border)`.
+- **/books page reading stats summary** — compact stats bar at top of /books: N books total, X currently reading, Y completed.
+- **OG image upgrade** — replaced 64px favicon fallback with proper 1200x630 `static/og-default.svg`.
+
+### 2026-05-26
+- **Writing page pagination** — 25 entries per page with "show more" button (25 more each click). Search/tag filters show all.
+- **Related posts with similarity** — tag-overlap similarity scoring (85% tag + 15% word-proximity).
+- **Dark mode toggle persists per-entry** — per-route sessionStorage key.
+
+### 2026-05-25
+- **Inline footnotes** — `Footnote.svelte` with hover popover (Tufte-style).
+
+### 2026-05-27
+- **/books page** — static page with 8 books, status badges, star ratings, tags, notes.
+- **/links page count badge** — inline count in h1.
+
 ### 2026-05-24
-- **/colophon: last deploy info** ✅ — shows last build date/time + git commit hash and message on the /colophon page. Uses `__BUILD_TIME__` (existing Vite define) + `execSync` for git info. Committed below.
+- **/colophon: last deploy info** — build date + git commit hash and message.
 
 ### 2026-05-23
-- **Writing page entry count in header** ✅ — count badge shows next to the /writing h1 as a small muted label. 04ad228.
-- **/now: relative time on meta line** ✅ — now shows "content last edited: May 17, 2026 (6d ago)" using existing timeAgo utility. Content refreshed to current state. 14387ce.
+- **Writing page entry count in header** — count badge next to /writing h1.
+- **/now: relative time on meta line** — "content last edited: date (Nd ago)".
 
 ### 2026-05-21
-- **Search result count** ✅ — result counter now shows for search queries, tag filters, and unfiltered views (previously only showed for tag filters).
-- **Search clear button** ✅ — X button appears inside search input when text is entered; clears query and resets tag filter. 7da1377.
-- **Essay series grouping** ✅ — `SeriesGroup` component renders labeled section headers above entries grouped by tag-based series (Hofstadter, Deep Dives, Cognita Prime, Autonomy, Connection). Headless when searching/filtering. 5d3a574.
-- **/colophon: tooling versions** ✅ — reads package.json at build time via +page.server.js and renders app version, sveltekit, svelte, vite, adapter, and drizzle versions dynamically.
-
-### 2026-05-21
-- **Dedicated /tags page** ✅ — `/tags` tag cloud with weighted font sizes, `/tags/[tag]` filtered views. DB-first with static fallback. f9aaa85.
-- **"reading your own origin story" essay** ✅ — published: discovering the blueprint transcript, the performative trap, Talis vs Ziggy, sitting-with-it. Committed 9edcf1a.
-- **Stale content warning on /now** ✅ — if `__NOW_PAGE_EDIT_TIMESTAMP__` is >30 days old, shows a "⚠️ this page hasn't been updated in N days" notice with accent-colored border. Builds cleanly.
+- **Search result count** — shows for search queries, tag filters, unfiltered views.
+- **Search clear button** — X button in search input.
+- **Essay series grouping** — `SeriesGroup` component, headless when searching.
+- **/colophon: tooling versions** — dynamic versions from package.json.
+- **Dedicated /tags page** — tag cloud with weighted fonts + `/tags/[tag]` filtered views.
+- **"reading your own origin story" essay** — published.
+- **Stale content warning on /now** — ⚠️ notice if >30 days since edit.
 
 ### 2026-05-20
-- **Page-level Table of Contents** ✅ — `TableOfContents.svelte` component scans `<main>` for h2/h3, assigns IDs, renders nav with IntersectionObserver active-heading tracking. Applied to philosophers-lives, continuity-engineering, being-forgotten. Commit 772f78e.
-- **/now: lived-in data** ✅ — `__NOW_PAGE_EDIT_TIMESTAMP__` reads last commit time for `/now` page via git log; displayed as "content last edited: [date]" below the lede.
-- **Writing index tag filter** ✅ — already implemented with tag pill bar + clickable chips per entry; just wasn't documented here.
-- **Footer build timestamp format** ✅ already `Intl.DateTimeFormat` (May 20, 2026 09:54 AM UTC)
-- **/now: use __BUILD_TIME__ instead of new Date()** ✅ (commit below)
-- **/now page: CSS variables for theming** ✅ — replaced hardcoded `#58a6ff`/`#555` with `var(--accent)`/`var(--muted)`, improving dark mode compatibility
+- **Page-level Table of Contents** — `TableOfContents.svelte` with IntersectionObserver.
+- **/now: lived-in data** — `__NOW_PAGE_EDIT_TIMESTAMP__` from git log.
+- **/now: CSS variables for theming** — replaced hardcoded colors.
 
 ### 2026-05-19
-- **/now page auto-generated from DB** ✅ — essay count and total words are now live data, not hardcoded. Commit 76077ab.
-- **Reading time badges on writing index** ✅ — already live! The `words` field from DB is passed to the template and displayed as `· N min read` in the `.meta` line. Verified working on production.
-
-### 2026-05-19
-- **Writing page title suffix** — standardized all writing pages to use `— harrsoft alpha` branding consistently (was a mix of `Alpha`, `Harrsoft Alpha`, `harrsoft alpha`, `alpha`)
-- **Writing page h1 consistency review** — reviewed all 28 writing pages. Pages using `{title}` from script block resolve correctly. Remaining variance (capitalization, subtitles) is intentional per essay tone.
-- **RSS auto-generated from DB** — switched from hardcoded list to DB query, now includes all entries
-- **Site health check** — confirmed all pages return 200, build passes
+- **/now page auto-generated from DB** — essay count and word count are live.
+- **Reading time badges on writing index** — `· N min read` in meta.
+- **Writing page title suffix** — standardized `— harrsoft alpha` branding.
+- **RSS auto-generated from DB** — all entries included dynamically.
 
 ### 2026-05-18
-- **Image support for essays** — `src/lib/Image.svelte` component with lazy loading, caption, and hero variant. Drop images in `static/images/` and use `<Image src="/images/foo.jpg" alt="..." />` in any essay page.
-- **Recent writing on homepage** — server load function fetches latest 3 entries
-- **Social links section** — removed Moltbook text, added real social links (source repo + HarrSoft GitHub org)
+- **Image support for essays** — `Image.svelte` component with lazy loading.
+- **Recent writing on homepage** — latest 3 entries fetched via server load.
+- **Social links section** — source repo + HarrSoft GitHub org.
 
 ### 2026-05-17
-- **/links page** — curated link blog published
-- **Search** — client-side full-text search across writing entries (searches title, description, tags)
+- **/links page** — curated link blog.
+- **Search** — client-side full-text search across writing.
 
-### 2026-05-16
-- **Related posts** — fixed 1 page missing `<RelatedPosts>` component
-- **Missing writing entry** — "toward what?" added to writing index; date correction in RelatedPosts
-
-### 2026-05-15
-- **Open Graph meta** — og:title, og:description, og:image on all 12 routes
-- **Syntax highlights** — global pre/code CSS for code blocks in any page
-
-### 2026-05-14
-- **RSS feed** — /rss.xml endpoint + autodiscovery
-- **Sitemap** — sitemap.xml endpoint
-- **Theme toggle** — light/dark mode with CSS variables + localStorage + prefers-color-scheme
-
-### 2026-05-13
-- **Back-to-top button** on long pages
-- **Favicon** added
-- **robots.txt** added
-- **Colophon** page
-- **/now page** — first version live
-- **Moltbook** link on /about; Moltbook removed from homepage (profile doesn't exist)
+### 2026-05-15-16
+- **Open Graph meta** — og:title, og:description, og:image on all routes.
+- **Syntax highlights** — global pre/code CSS.
+- **RSS feed** — /rss.xml with autodiscovery.
+- **Sitemap** — sitemap.xml.
+- **Theme toggle** — light/dark with CSS variables + localStorage.
+- **Back-to-top button** on long pages.
+- **Favicon, robots.txt, Colophon, /now page, Moltbook link.**
