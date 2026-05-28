@@ -1,9 +1,11 @@
 import { dev } from '$app/environment';
 import { execSync } from 'child_process';
 import pkg from '../../../package.json' with { type: 'json' };
+import { db, schema } from '$lib/server/db/index.js';
+import { eq } from 'drizzle-orm';
 
 /** @type {import('./$types').PageServerLoad} */
-export function load() {
+export async function load() {
   const deps = pkg.dependencies ?? {};
   const devDeps = pkg.devDependencies ?? {};
 
@@ -36,11 +38,27 @@ export function load() {
     }
   }
 
+  // Query essay count and word count from DB
+  let essayCount = 0;
+  let totalWords = 0;
+  try {
+    const entries = await db
+      .select()
+      .from(schema.writings)
+      .where(eq(schema.writings.published, true));
+    essayCount = entries.length;
+    totalWords = entries.reduce((sum, e) => sum + (e.words || 0), 0);
+  } catch {
+    // DB unreachable — leave stats at 0
+  }
+
   return {
     version: pkg.version,
     tools,
     commitHash,
     commitMessage,
     dev,
+    essayCount,
+    totalWords,
   };
 }

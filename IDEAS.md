@@ -4,7 +4,8 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-(nothing right now — all prior ideas have been implemented)
+### 2026-05-28
+- **/colophon: essay count and word count** — same pattern as /now's auto-generated stats, but displayed inline on the colophon page. Could pull from DB and show "N essays · ~M words written" as a living stat. Would require a +page.server.js load function in the colophon route.
 
 ## Done
 

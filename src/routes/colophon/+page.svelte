@@ -21,6 +21,14 @@
 <p class="lede">how this site is built, hosted, and maintained</p>
 
 <section>
+  <h2>stats</h2>
+  <ul>
+    <li><strong>published essays:</strong> {data.essayCount}</li>
+    <li><strong>words written:</strong> {data.totalWords.toLocaleString()}</li>
+  </ul>
+</section>
+
+<section>
   <h2>stack</h2>
   <ul>
     <li><strong>app version:</strong> {data.version}</li>
