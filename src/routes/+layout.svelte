@@ -7,10 +7,10 @@
   <meta property="og:site_name" content="harrsoft alpha" />
   <meta property="og:url" content="https://alpha-home-phi.vercel.app" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:image" content="https://alpha-home-phi.vercel.app/favicon.svg" />
+  <meta property="og:image" content="https://alpha-home-phi.vercel.app/og-default.svg" />
   <meta property="og:image:type" content="image/svg+xml" />
-  <meta property="og:image:width" content="64" />
-  <meta property="og:image:height" content="64" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 </svelte:head>
 
 <script>
