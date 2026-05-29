@@ -4,12 +4,14 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-_(empty — implement an idea!)_
+- **Tag cloud on /writing** — visual tag frequency display like /tags page, collapsible above the essay list.
+- **Intertidal theme for essays** — opt-in color palette from manifesto identity, already defined in CSS vars.
 
 ## Done
 
 ### 2026-05-29
 - **Artifact-scan loading animation** — CSS-only scanning beam with corner brackets, integrated into SPA navigation via beforeNavigate/afterNavigate. TNG Gambit Part I reference.
+- **Visited link styling** — `:visited` links render purple (`#8b5cf6` dark, `#7c3aed` light) so readers can see which essays they've already read.
 
 ### 2026-05-28
 - **/colophon: essay count and word count** — live stats section on colophon page.
