@@ -46,7 +46,7 @@
     opacity: 1;
   }
   .ascii {
-    color: #58a6ff;
+    color: var(--accent);
     font-size: 0.7rem;
     line-height: 1.2;
     margin-bottom: 1rem;
@@ -54,7 +54,7 @@
   h1 {
     font-size: 4rem;
     font-weight: 700;
-    color: #f0f6fc;
+    color: var(--text-primary);
     margin: 0;
   }
   .lead {
@@ -70,7 +70,7 @@
     margin-top: 1.5rem;
   }
   a {
-    color: #58a6ff;
+    color: var(--accent);
     text-decoration: none;
   }
   a:hover {
