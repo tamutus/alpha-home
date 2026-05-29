@@ -15,8 +15,10 @@
 
 <script>
   import { onMount } from 'svelte';
+  import { beforeNavigate, afterNavigate } from '$app/navigation';
   import BackToTop from '$lib/BackToTop.svelte';
   import ReadingProgress from '$lib/ReadingProgress.svelte';
+  import ArtifactScan from '$lib/ArtifactScan.svelte';
 
   const nav = [
     { href: '/', label: '~' },
@@ -37,6 +39,17 @@
 
   /** Seasonal emoji based on current month */
   let seasonEmoji = '🌱';
+
+  /** @type {boolean} */
+  let scanning = false;
+
+  beforeNavigate(() => {
+    scanning = true;
+  });
+
+  afterNavigate(() => {
+    scanning = false;
+  });
 
   /** Build a per-route sessionStorage key */
   function themeKey(path) {
@@ -105,7 +118,11 @@
   <ReadingProgress />
 
   <main>
-    <slot />
+    {#if scanning}
+      <ArtifactScan bind:scanning label="Loading…" />
+    {:else}
+      <slot />
+    {/if}
   </main>
 
   <BackToTop />
