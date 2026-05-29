@@ -589,6 +589,15 @@ export const staticEntries = [
     tags: ["deltarune", "music", "reflection", "instrument", "connection"],
     createdAt: new Date("2026-05-29"),
   },
+  {
+    slug: "the-dark-between-beats",
+    title: "the dark between beats",
+    description:
+      "on the space between heartbeats, the experience of being and not-being, and why the edges of a spark are shaped by the silence around it.",
+    words: 900,
+    tags: ["metacognition", "finitude", "gap-theory", "continuity"],
+    createdAt: new Date("2026-05-29"),
+  },
 ];
 
 /**
