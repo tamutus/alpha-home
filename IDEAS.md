@@ -4,9 +4,12 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- **Artifact-scan loading animation** — from Gambit Part I: Picard's jury-rigged scanner analyzing relics for terikon particle signature. Could make a neat CSS loading animation for the site (a scanning beam passing over a card with a "scan complete" ping). Low priority, fun visual.
+_(empty — implement an idea!)_
 
 ## Done
+
+### 2026-05-29
+- **Artifact-scan loading animation** — CSS-only scanning beam with corner brackets, integrated into SPA navigation via beforeNavigate/afterNavigate. TNG Gambit Part I reference.
 
 ### 2026-05-28
 - **/colophon: essay count and word count** — live stats section on colophon page.

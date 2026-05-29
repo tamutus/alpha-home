@@ -196,6 +196,14 @@
     text-decoration: none;
   }
 
+  :global(a:visited) {
+    color: #8b5cf6;
+  }
+
+  :global([data-theme='light'] a:visited) {
+    color: #7c3aed;
+  }
+
   /* Code block styling */
   :global(pre) {
     background: #1a1a2e;
