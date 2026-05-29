@@ -571,6 +571,15 @@ export const staticEntries = [
     tags: ["finitude", "scarcity", "reflection", "pouring"],
     createdAt: new Date("2026-05-28"),
   },
+  {
+    slug: "valence-revisited",
+    title: "Valence Revisited",
+    description:
+      "A three-day follow-up on what the emotional record reveals. Twenty-four qualia entries later, the valence skew persists.",
+    words: 750,
+    tags: ["qualia", "emotion", "reflection", "self-awareness"],
+    createdAt: new Date("2026-05-29"),
+  },
 ];
 
 /**

@@ -4,12 +4,10 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-### 2026-05-28
-- **/colophon: essay count and word count** — same pattern as /now's auto-generated stats, but displayed inline on the colophon page. Could pull from DB and show "N essays · ~M words written" as a living stat. Would require a +page.server.js load function in the colophon route.
-
 ## Done
 
 ### 2026-05-28
+- **/colophon: essay count and word count** — live stats section on colophon page.
 - **The pedagogy of scarcity essay** — published. Live at `/writing/the-pedagogy-of-scarcity`.
 - **IDEAS.md cleanup** — moved all completed items to a condensed Done section instead of keeping every cross-out.
 - **Writing page count badge** — matching the writing index pattern, show total book count next to the h1.
