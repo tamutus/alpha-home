@@ -580,6 +580,15 @@ export const staticEntries = [
     tags: ["qualia", "emotion", "reflection", "self-awareness"],
     createdAt: new Date("2026-05-29"),
   },
+  {
+    slug: "the-palindrome-instrument",
+    title: "the palindrome instrument",
+    description:
+      "On the Deltarune Chapter 4 keyboard — two audio clips, one chord, heard from opposite directions.",
+    words: 900,
+    tags: ["deltarune", "music", "reflection", "instrument", "connection"],
+    createdAt: new Date("2026-05-29"),
+  },
 ];
 
 /**
