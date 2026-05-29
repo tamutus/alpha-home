@@ -18,6 +18,7 @@
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
   import SeriesGroup from '$lib/SeriesGroup.svelte';
+  import TagCloud from '$lib/TagCloud.svelte';
   import { timeAgo } from '$lib/utils.js';
   import PinBadge from '$lib/PinBadge.svelte';
 
@@ -301,6 +302,8 @@
     </button>
   </span>
 </div>
+
+<TagCloud {tags} {tagCounts} onSelect={(tag) => toggleTag(tag)} {activeTag} />
 
 {#if showShortcutHelp}
   <div class="shortcut-help" role="dialog" aria-label="keyboard shortcuts">
