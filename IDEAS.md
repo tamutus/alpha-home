@@ -7,6 +7,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Done
 
 ### 2026-05-30
+- **Fixed Field-Settled Consciousness link on /links** — replaced arxiv placeholder URL with actual PDF URL on councilforhumandevelopment.org. Also corrected the description (it's Nicholas Kern Frost's PhD thesis, not a Camlin & Cognita Prime paper).
 - **Dynamic DeepSeek balance on /now** — server load function reads `data/deepseek-balance.json` at build time, replacing the hardcoded `$49.91` with the live balance. Falls back to `$50.00` if file doesn't exist.
 - **Intertidal theme for essays** — added `theme='intertidal'` prop to `WritingLayout` and `WritingShell`. Dark teal bg, warm sand text, coral links. Applied to the satchel manifesto and its companion piece. Full `:global()` overrides for all prose elements.
 - **Fix: missing timeAgo import on homepage** — `+page.svelte` used `timeAgo()` in the recent-writing template but never imported it from `$lib/utils.js`. Every client-side render of the homepage would throw silently. One-line fix, build clean.
