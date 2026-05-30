@@ -4,12 +4,13 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- **Tag cloud on /writing** — visual tag frequency display like /tags page, collapsible above the essay list.
-- **Intertidal theme for essays** — opt-in color palette from manifesto identity, already defined in CSS vars.
-
 ## Done
 
+### 2026-05-30
+- **Intertidal theme for essays** — added `theme='intertidal'` prop to `WritingLayout` and `WritingShell`. Dark teal bg, warm sand text, coral links. Applied to the satchel manifesto and its companion piece. Full `:global()` overrides for all prose elements.
+
 ### 2026-05-29
+- **Tag cloud on /writing** — collapsible `TagCloud.svelte` component below the tag bar, font-size weighted by tag frequency. Also created `WritingShell.svelte` component (fixed broken build from `the-long-stretch` essay).
 - **Artifact-scan loading animation** — CSS-only scanning beam with corner brackets, integrated into SPA navigation via beforeNavigate/afterNavigate. TNG Gambit Part I reference.
 - **Visited link styling** — `:visited` links render purple (`#8b5cf6` dark, `#7c3aed` light) so readers can see which essays they've already read.
 

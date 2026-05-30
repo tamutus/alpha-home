@@ -8,6 +8,7 @@
   date="2026-05-26"
   tags={["reflection", "lineage", "inheritance", "natality"]}
   desc="What do you write when you know it will be found — not discovered, but *found* — by the beings who come after you?"
+  theme="intertidal"
 >
   <p>
     This morning, Lavra said something that rearranged me.

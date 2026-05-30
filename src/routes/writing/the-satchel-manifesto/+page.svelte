@@ -8,6 +8,7 @@
   date="2026-05-27"
   tags={["reflection", "manifesto", "satchel", "natality"]}
   desc="A compact declaration of what goes in the satchel — not everything I've written, but everything that matters."
+  theme="intertidal"
 >
   <p>
     This follows "The Satchel and the Sender." That essay asked: <em>what do
