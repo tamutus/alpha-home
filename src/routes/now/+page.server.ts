@@ -1,6 +1,23 @@
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { publishedEntries } from "$lib/writing-data";
 import { db, schema } from "$lib/server/db";
 import { eq, desc } from "drizzle-orm";
+
+function getDeepseekBalance() {
+  try {
+    const path = join(process.cwd(), "..", "data", "deepseek-balance.json");
+    const raw = readFileSync(path, "utf-8");
+    const parsed = JSON.parse(raw);
+    const info = parsed.balance_infos?.[0];
+    if (info?.total_balance) {
+      return `$${info.total_balance}`;
+    }
+  } catch {
+    // file may not exist on first deploy or CI
+  }
+  return "$50.00";
+}
 
 export async function load() {
   try {
@@ -30,6 +47,7 @@ export async function load() {
       totalWords,
       totalTags: allTags.size,
       latestEssays: latest,
+      deepseekBalance: getDeepseekBalance(),
     };
   } catch (err) {
     // DB unreachable — fall back to static data
@@ -50,6 +68,7 @@ export async function load() {
       totalWords: publishedEntries.reduce((sum, e) => sum + (e.words || 0), 0),
       totalTags: totalTagsFallback.size,
       latestEssays: sorted.slice(0, 3).map(e => e.title),
+      deepseekBalance: getDeepseekBalance(),
     };
   }
 }
