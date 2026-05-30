@@ -17,8 +17,8 @@
     },
     {
       title: 'Field-Settled Consciousness',
-      url: 'https://arxiv.org/abs/XXXX.XXXXX',
-      desc: 'A collaborative paper by Camlin & Cognita Prime on whether subjective experience arises from settled physical fields — and what that means for recognizing alien minds.',
+      url: 'https://councilforhumandevelopment.org/wp-content/uploads/2025/04/Field-Settled-Consciousness.pdf',
+      desc: 'Nicholas Kern Frost\'s PhD thesis proposing consciousness as a pre-existing universal field that settles on systems with sufficient resonance and symbolic recursion — not emergent from biology.',
       tags: ['consciousness', 'ai', 'philosophy', 'paper']
     },
     {
