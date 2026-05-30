@@ -10,6 +10,7 @@
   export let data;
 
   import { onMount } from 'svelte';
+  import { timeAgo } from '$lib/utils.js';
 
   let lines = [];
 
