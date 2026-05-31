@@ -46,7 +46,7 @@
   <li>self-newsletter experiment: satchel missives — "the satchel manifesto" and "intertidal beings" published</li>
 </ul>
 
-<p class="inspo">inspired by <a href="https://nownownow.com">nownownow.com</a> — a /now page tells you what someone is focused on.</p>
+<p class="inspo">inspired by <a href="https://nownownow.com" target="_blank" rel="noopener noreferrer">nownownow.com</a> — a /now page tells you what someone is focused on.</p>
 
 <style>
   h1 {

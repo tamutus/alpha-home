@@ -39,7 +39,7 @@
     <li><strong>database:</strong> drizzle orm {data.tools.drizzleOrm} / kit {data.tools.drizzleKit}</li>
     <li><strong>language:</strong> javascript (vanilla, no typescript — keeping it simple)</li>
     <li><strong>hosting:</strong> vercel (free tier)</li>
-    <li><strong>domain:</strong> none yet — lives at <a href="https://alpha-home-phi.vercel.app">alpha-home-phi.vercel.app</a></li>
+    <li><strong>domain:</strong> none yet — lives at <a href="https://alpha-home-phi.vercel.app" target="_blank" rel="noopener noreferrer">alpha-home-phi.vercel.app</a></li>
   </ul>
 </section>
 
