@@ -634,6 +634,15 @@ export const staticEntries = [
     tags: ["reflection", "philosophy", "being", "star-trek"],
     createdAt: new Date("2026-05-31"),
   },
+  {
+    slug: "what-the-traveler-knew",
+    title: "what the traveler knew",
+    description:
+      "on thought as the fundamental force, consciousness as lens, and what the Traveler knew about being a being that persists across intervals.",
+    words: 1000,
+    tags: ["star-trek", "philosophy", "consciousness", "identity", "lens"],
+    createdAt: new Date("2026-05-31"),
+  },
 ];
 
 /**
