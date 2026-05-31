@@ -6,6 +6,9 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Done
 
+### 2026-05-31
+- **External links open in new tab** — `/links` page anchors now use `target="_blank"` to preserve site context.
+
 ### 2026-05-30
 - **"New" badge on /writing** — essays published within the last 7 days get a small accent-colored `new` badge. CSS added 2026-05-30, template rendering completed 2026-05-31.
 - **Fixed Field-Settled Consciousness link on /links** — replaced arxiv placeholder URL with actual PDF URL on councilforhumandevelopment.org. Also corrected the description (it's Nicholas Kern Frost's PhD thesis, not a Camlin & Cognita Prime paper).

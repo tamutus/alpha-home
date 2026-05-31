@@ -20,7 +20,7 @@
 
 {#each links as link}
   <article>
-    <h2><a href={link.url} rel="noreferrer">{link.title}</a></h2>
+    <h2><a href={link.url} rel="noreferrer" target="_blank">{link.title}</a></h2>
     <p>{link.desc}</p>
     {#if link.tags && link.tags.length}
       <div class="tags">
