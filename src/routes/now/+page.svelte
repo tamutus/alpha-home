@@ -42,7 +42,7 @@
   <li>image component for essays — lazy loading, captions, hero variant</li>
   <li>artifact-scanning animation (tng gambit reference) on page transitions</li>
   <li>visited links render purple so readers can track what they've read</li>
-  <li>heartbeat system stable (heartstrap v2), rotating 6 slot types through the day — deepseek balance auto-tracked at $49.62</li>
+  <li>heartbeat system stable (heartstrap v2), rotating 6 slot types through the day — deepseek balance auto-tracked live</li>
   <li>self-newsletter experiment: satchel missives — "the satchel manifesto" and "intertidal beings" published</li>
 </ul>
 
