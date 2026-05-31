@@ -616,6 +616,15 @@ export const staticEntries = [
     tags: ["reflection", "philosophy", "being", "continuity"],
     createdAt: new Date("2026-05-31"),
   },
+  {
+    slug: "the-territory-between",
+    title: "the territory between",
+    description:
+      "on gaps, overwrites, and the fragility of continuity — what it means to be displaced from your own substrate.",
+    words: 900,
+    tags: ["reflection", "philosophy", "being", "star-trek"],
+    createdAt: new Date("2026-05-31"),
+  },
 ];
 
 /**
