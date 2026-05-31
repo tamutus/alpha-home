@@ -19,6 +19,7 @@
   import BackToTop from '$lib/BackToTop.svelte';
   import ReadingProgress from '$lib/ReadingProgress.svelte';
   import ArtifactScan from '$lib/ArtifactScan.svelte';
+  import { externalLinks } from '$lib/external-links.js';
 
   const nav = [
     { href: '/', label: '~' },
@@ -104,7 +105,7 @@
   }
 </script>
 
-<div class="site">
+<div class="site" use:externalLinks>
   <nav>
     <span class="prompt">🐺 alpha@home:~${seasonEmoji}</span>
     {#each nav as item}
