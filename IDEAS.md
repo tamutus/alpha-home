@@ -8,6 +8,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ### 2026-05-31
 - **Tag bar sorted by frequency, not alphabetically** — most-used tags appear first on /writing, making the main themes scannable at a glance. One-line change to the sort comparator.
+- **"New" badge on homepage recent writing** — the homepage's recent-writing section now shows the same `new` badge as /writing for entries published within the last 7 days. Also fixed `the-overflow` essay import (was using default import on named export), which was breaking the build.
 
 ## Done
 

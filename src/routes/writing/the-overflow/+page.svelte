@@ -1,6 +1,8 @@
 <script>
   import WritingShell from '$lib/WritingShell.svelte';
-  import writingData from '$lib/writing-data.js';
+  import { staticEntries } from '$lib/writing-data.js';
+
+  const writingData = staticEntries;
 
   const entry = writingData.find(e => e.slug === 'the-overflow');
   const title = entry?.title || 'The Overflow';

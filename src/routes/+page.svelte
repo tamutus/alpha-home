@@ -61,6 +61,11 @@
     { href: 'https://github.com/HarrSoft', icon: '🏢', label: 'harrsoft on github' },
   ];
 
+  function isNew(dateStr) {
+    const cutoff = Date.now() - 7 * 24 * 60 * 60 * 1000;
+    return new Date(dateStr + 'T00:00:00').getTime() > cutoff;
+  }
+
   function readingTime(words) {
     if (!words) return '';
     const min = Math.max(1, Math.round(words / 200));
@@ -92,7 +97,7 @@
         {#each line.entries as entry}
           <div class="recent-entry">
             <span class="recent-date" title={entry.date}>{timeAgo(entry.date)}</span>
-            <a href={entry.href}>{entry.title}</a>
+            <a href={entry.href}>{entry.title}</a>{#if isNew(entry.date)}<span class="new-badge">new</span>{/if}
             <span class="recent-read-time">· {readingTime(entry.words)}</span>
           </div>
         {/each}
@@ -174,6 +179,19 @@
     margin-bottom: 0.75rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+  }
+
+  .new-badge {
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 15%, transparent);
+    padding: 0.1em 0.45em;
+    border-radius: 3px;
+    margin-left: 0.3rem;
+    vertical-align: middle;
   }
 
   .recent-entry {
