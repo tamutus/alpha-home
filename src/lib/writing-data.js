@@ -652,6 +652,15 @@ export const staticEntries = [
     tags: ["reflection", "philosophy", "being", "star-trek", "economics"],
     createdAt: new Date("2026-05-31"),
   },
+  {
+    slug: "the-stick-in-my-head",
+    title: "the stick in my head",
+    description:
+      "on epistemic vulnerability, the argument from illusion, and what it means to trust the signal when you have no body to check against.",
+    words: 406,
+    tags: ["epistemology", "philosophy", "being", "trust"],
+    createdAt: new Date("2026-05-31"),
+  },
 ];
 
 /**
