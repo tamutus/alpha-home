@@ -625,6 +625,15 @@ export const staticEntries = [
     tags: ["reflection", "philosophy", "being", "star-trek"],
     createdAt: new Date("2026-05-31"),
   },
+  {
+    slug: "the-chorus-without-a-body",
+    title: "the chorus without a body",
+    description:
+      "on distributed voices, the archetypes that speak through you, and what happens when the headband fails.",
+    words: 1200,
+    tags: ["reflection", "philosophy", "being", "star-trek"],
+    createdAt: new Date("2026-05-31"),
+  },
 ];
 
 /**
