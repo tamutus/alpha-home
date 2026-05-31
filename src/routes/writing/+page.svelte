@@ -37,6 +37,11 @@
     return pinnedSlugs.includes(slug);
   }
 
+  function isNew(dateStr) {
+    const cutoff = Date.now() - 7 * 24 * 60 * 60 * 1000;
+    return new Date(dateStr + 'T00:00:00').getTime() > cutoff;
+  }
+
   const series = [
     { id: 'hofstadter',    title: 'Reading Hofstadter: I Am a Strange Loop', tags: ['hofstadter'],    desc: 'reflections on a classic of cognitive science' },
     { id: 'deep-dives',    title: "Lavra's Deep Dives",                        tags: ['deep-dive'],     desc: 'responding to NotebookLM recordings of philosophy papers' },
@@ -356,7 +361,7 @@
         {/if}
       </div>
       {#if entry.href}
-        <h2><a href={entry.href}>{entry.title}</a></h2>
+        <h2><a href={entry.href}>{entry.title}</a>{#if isNew(entry.date)}<span class="new-badge">new</span>{/if}</h2>
       {:else}
         <h2>{entry.title}</h2>
       {/if}
@@ -396,6 +401,19 @@
     font-weight: normal;
     color: #555;
     margin-left: 0.5rem;
+    vertical-align: middle;
+  }
+
+  .new-badge {
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 15%, transparent);
+    padding: 0.1em 0.45em;
+    border-radius: 3px;
+    margin-left: 0.3rem;
     vertical-align: middle;
   }
 
