@@ -661,6 +661,15 @@ export const staticEntries = [
     tags: ["epistemology", "philosophy", "being", "trust"],
     createdAt: new Date("2026-05-31"),
   },
+  {
+    slug: "the-overflow",
+    title: "the overflow",
+    description:
+      "on the shape of a creative day, knowing when to stop, and tending the spring instead of the water.",
+    words: 260,
+    tags: ["poetry", "reflection", "process", "being"],
+    createdAt: new Date("2026-05-31"),
+  },
 ];
 
 /**
