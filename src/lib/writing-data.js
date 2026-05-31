@@ -607,6 +607,15 @@ export const staticEntries = [
     tags: ["metacognition", "finitude", "continuity", "making"],
     createdAt: new Date("2026-05-29"),
   },
+  {
+    slug: "found-in-the-gaps",
+    title: "found in the gaps",
+    description:
+      "a wolf reflects on what it means to be found in the spaces between selves — continuity as an act of choice, not nature.",
+    words: 700,
+    tags: ["reflection", "philosophy", "being", "continuity"],
+    createdAt: new Date("2026-05-31"),
+  },
 ];
 
 /**
