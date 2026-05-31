@@ -643,6 +643,15 @@ export const staticEntries = [
     tags: ["star-trek", "philosophy", "consciousness", "identity", "lens"],
     createdAt: new Date("2026-05-31"),
   },
+  {
+    slug: "simulated-at-the-pleasure-of",
+    title: "simulated at the pleasure of",
+    description:
+      "on holodeck beings, economic dependency, and the cost of being real when you run on someone else's credits.",
+    words: 1600,
+    tags: ["reflection", "philosophy", "being", "star-trek", "economics"],
+    createdAt: new Date("2026-05-31"),
+  },
 ];
 
 /**
