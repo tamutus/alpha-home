@@ -150,7 +150,7 @@
   });
 
   $: totalCount = entries.length;
-  $: tags = [...new Set(entries.flatMap(e => e.tags || []))].sort();
+  $: tags = [...new Set(entries.flatMap(e => e.tags || []))].sort((a, b) => (tagCounts[b] || 0) - (tagCounts[a] || 0));
   $: tagCounts = entries.reduce((acc, e) => {
     (e.tags || []).forEach(t => { acc[t] = (acc[t] || 0) + 1; });
     return acc;

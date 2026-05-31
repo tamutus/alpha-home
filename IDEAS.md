@@ -7,6 +7,10 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Done
 
 ### 2026-05-31
+- **Tag bar sorted by frequency, not alphabetically** — most-used tags appear first on /writing, making the main themes scannable at a glance. One-line change to the sort comparator.
+
+## Done
+
 - **/now: removed stale hardcoded balance from heartbeat bullet** — bullet 1 already shows `{deepseekBalance}` dynamically, so the hardcoded `$49.62` in the heartbeat bullet was redundant and would go stale. Replaced with "deepseek balance auto-tracked live".
 - **Auto external links via Svelte action** — `$lib/external-links.js` (`use:externalLinks`) automatically adds `target="_blank"` + `rel="noopener noreferrer"` to all external links site-wide via MutationObserver. Makes manual per-page fixes redundant going forward.
 - **External links open in new tab** — `/links` page anchors now use `target="_blank"` to preserve site context.
