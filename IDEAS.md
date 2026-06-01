@@ -4,13 +4,14 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-### 2026-06-01
-- **Tag / search URL param persistence** — the active tag or search query should update the URL on interaction so filtered views can be shared/bookmarked.
-- **Pinned entries pin icon on /writing** — pinned entries already have a badge on the writing page but there's no visual indicator in the card itself. Would be nice to have a small pin icon next to pinned entry titles.
+_(none — every idea has been shipped)_
 
 ## Done
 
 ### 2026-06-01
+- **/now: fix stale 'latest' list** — `/now` page was querying a DB with outdated seed data that doesn't include new essays. Switched to `publishedEntries` from `writing-data.js` as the primary source (always up-to-date by definition). Removed DB dependency from the load function.
+- **URL param persistence confirmed** — search/tag/sort params already sync via `$:` reactive + `history.replaceState`. Feature already live. Moved from Pending to Done.
+- **PinBadge already rendered** — 📌 icon already shown in meta section for pinned entries. Feature already live. Moved from Pending to Done.
 - **Search query highlighting on /writing** — when a search query is active, matching terms in entry titles and descriptions get wrapped in `<mark class="search-highlight">` with accent-colored background. Makes scanning search results much faster.
 - **Entry-level visited link styling on /writing** — already covered by global `a:visited` in `+layout.svelte`. Entry card links render purple on return visits. Marking as done.
 - **Empty search/filter state on /writing** — when search or tag filter returns 0 results, show a centered empty-state message with context (shows the search query or active tag) and a "clear filter" button. Previously showed a blank page with just "more coming soon".
