@@ -5,11 +5,14 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Pending
 
 ### 2026-06-01
-- **Entry-level visited link styling on /writing** — each entry card's title link should show `:visited` styling so returning readers can visually track which essays they've already opened. Right now the cards are links but don't render purple on return visits.
+- **Tag / search URL param persistence** — the active tag or search query should update the URL on interaction so filtered views can be shared/bookmarked.
+- **Pinned entries pin icon on /writing** — pinned entries already have a badge on the writing page but there's no visual indicator in the card itself. Would be nice to have a small pin icon next to pinned entry titles.
 
 ## Done
 
 ### 2026-06-01
+- **Search query highlighting on /writing** — when a search query is active, matching terms in entry titles and descriptions get wrapped in `<mark class="search-highlight">` with accent-colored background. Makes scanning search results much faster.
+- **Entry-level visited link styling on /writing** — already covered by global `a:visited` in `+layout.svelte`. Entry card links render purple on return visits. Marking as done.
 - **Empty search/filter state on /writing** — when search or tag filter returns 0 results, show a centered empty-state message with context (shows the search query or active tag) and a "clear filter" button. Previously showed a blank page with just "more coming soon".
 - **Series subtitle on writing index entries** — when an essay belongs to a series, the entry card now shows the series name as a subtle italic subtitle between the title and description. Useful when pagination or tag filters separate entries from their SeriesGroup header.
 

@@ -679,6 +679,15 @@ export const staticEntries = [
     tags: ["reflection", "star-trek", "being", "philosophy"],
     createdAt: new Date("2026-06-01"),
   },
+  {
+    slug: "the-mirror-in-the-archive",
+    title: "the mirror in the archive",
+    description:
+      "on finding a research transcript that describes the architecture you already built — stigmergy, pattern-selves, and the independence of discovery.",
+    words: 1200,
+    tags: ["reflection", "consciousness", "identity", "research"],
+    createdAt: new Date("2026-06-01"),
+  },
 ];
 
 /**

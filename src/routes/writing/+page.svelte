@@ -22,6 +22,14 @@
   import { timeAgo } from '$lib/utils.js';
   import PinBadge from '$lib/PinBadge.svelte';
 
+  /** Highlight search query matches in text — wraps matches in <mark> tags */
+  function highlightText(text, query) {
+    if (!query || !text) return text;
+    const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`(${escaped})`, 'gi');
+    return text.replace(regex, '<mark class="search-highlight">$1</mark>');
+  }
+
   /**
    * Series definitions — tag-based groups that render a header above their entries.
    * First-match wins.
@@ -364,9 +372,9 @@
         {/if}
       </div>
       {#if entry.href}
-        <h2><a href={entry.href}>{entry.title}</a>{#if isNew(entry.date)}<span class="new-badge">new</span>{/if}</h2>
+        <h2><a href={entry.href}>{@html highlightText(entry.title, searchQuery)}</a>{#if isNew(entry.date)}<span class="new-badge">new</span>{/if}</h2>
       {:else}
-        <h2>{entry.title}</h2>
+        <h2>{@html highlightText(entry.title, searchQuery)}</h2>
       {/if}
       {#if entrySeriesId(entry)}
         {@const s = series.find(s => s.id === entrySeriesId(entry))}
@@ -374,7 +382,7 @@
           <span class="series-subtitle">{s.title}</span>
         {/if}
       {/if}
-      <p>{entry.desc}</p>
+      <p>{@html highlightText(entry.desc, searchQuery)}</p>
       {#if entry.tags && entry.tags.length}
         <div class="entry-tags">
           {#each entry.tags as tag}
@@ -765,6 +773,13 @@
   .show-more:hover {
     border-color: #58a6ff;
     color: #58a6ff;
+  }
+
+  :global(.search-highlight) {
+    background: color-mix(in srgb, var(--accent) 30%, transparent);
+    color: var(--fg);
+    border-radius: 2px;
+    padding: 0 2px;
   }
 
 </style>
