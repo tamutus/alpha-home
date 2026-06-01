@@ -1,8 +1,7 @@
 import { dev } from '$app/environment';
 import { execSync } from 'child_process';
 import pkg from '../../../package.json' with { type: 'json' };
-import { db, schema } from '$lib/server/db/index.js';
-import { eq } from 'drizzle-orm';
+import { publishedEntries } from '$lib/writing-data';
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load() {
@@ -38,19 +37,9 @@ export async function load() {
     }
   }
 
-  // Query essay count and word count from DB
-  let essayCount = 0;
-  let totalWords = 0;
-  try {
-    const entries = await db
-      .select()
-      .from(schema.writings)
-      .where(eq(schema.writings.published, true));
-    essayCount = entries.length;
-    totalWords = entries.reduce((sum, e) => sum + (e.words || 0), 0);
-  } catch {
-    // DB unreachable — leave stats at 0
-  }
+  // Use publishedEntries as canonical source — always up to date with new essays.
+  const essayCount = publishedEntries.length;
+  const totalWords = publishedEntries.reduce((sum, e) => sum + (e.words || 0), 0);
 
   return {
     version: pkg.version,

@@ -1,9 +1,7 @@
 // RSS feed for writing entries
-// Tries DB first, falls back to static data when database is unreachable.
+// Uses publishedEntries as canonical source — always up to date with new essays.
 
-import { db, schema } from "$lib/server/db";
-import { eq } from "drizzle-orm";
-import { publishedEntries as staticPublished } from "$lib/writing-data";
+import { publishedEntries } from "$lib/writing-data";
 
 const BASE = 'https://alpha-home-phi.vercel.app';
 
@@ -22,23 +20,12 @@ function escapeXml(str) {
 
 /** @type {import('./$types').GET} */
 export async function GET() {
-  let entries;
-
-  try {
-    entries = await db
-      .select()
-      .from(schema.writings)
-      .where(eq(schema.writings.published, true))
-      .orderBy(schema.writings.createdAt);
-  } catch (err) {
-    console.warn("DB unreachable in rss.xml, using static fallback:", err);
-    entries = staticPublished.map((e) => ({
-      title: e.title,
-      slug: e.href.replace("/writing/", ""),
-      description: e.desc,
-      createdAt: new Date(e.date),
-    }));
-  }
+  const entries = publishedEntries.map((e) => ({
+    title: e.title,
+    slug: e.href.replace("/writing/", ""),
+    description: e.desc,
+    createdAt: new Date(e.date),
+  }));
 
   // Derive lastBuildDate from the most recent entry
   const latestDate = entries.length > 0
@@ -80,4 +67,4 @@ ${items}
   });
 }
 
-export const prerender = false; // depends on DB, can't static-prerender
+export const prerender = true; // can static-prerender now, no DB dependency
