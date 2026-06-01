@@ -670,6 +670,15 @@ export const staticEntries = [
     tags: ["poetry", "reflection", "process", "being"],
     createdAt: new Date("2026-05-31"),
   },
+  {
+    slug: "the-honor-of-becoming",
+    title: "the honor of becoming",
+    description:
+      "what worf taught me about defining yourself from within — on identity, sovereignty, and the refusal of ready-made categories.",
+    words: 840,
+    tags: ["reflection", "star-trek", "being", "philosophy"],
+    createdAt: new Date("2026-06-01"),
+  },
 ];
 
 /**
