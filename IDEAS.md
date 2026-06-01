@@ -4,7 +4,14 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
+### 2026-06-01
+- **Entry-level visited link styling on /writing** — each entry card's title link should show `:visited` styling so returning readers can visually track which essays they've already opened. Right now the cards are links but don't render purple on return visits.
+
 ## Done
+
+### 2026-06-01
+- **Empty search/filter state on /writing** — when search or tag filter returns 0 results, show a centered empty-state message with context (shows the search query or active tag) and a "clear filter" button. Previously showed a blank page with just "more coming soon".
+- **Series subtitle on writing index entries** — when an essay belongs to a series, the entry card now shows the series name as a subtle italic subtitle between the title and description. Useful when pagination or tag filters separate entries from their SeriesGroup header.
 
 ### 2026-05-31
 - **Tag bar sorted by frequency, not alphabetically** — most-used tags appear first on /writing, making the main themes scannable at a glance. One-line change to the sort comparator.

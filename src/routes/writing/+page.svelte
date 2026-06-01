@@ -96,6 +96,9 @@
     ? groupedRender
     : groupedRender.slice(0, shownCount);
 
+  /** Empty state when search or tag filter returns nothing */
+  $: noResults = (searchQuery || activeTag) && groupedRender.length === 0;
+
   function showMore() {
     shownCount += pageSize;
   }
@@ -365,6 +368,12 @@
       {:else}
         <h2>{entry.title}</h2>
       {/if}
+      {#if entrySeriesId(entry)}
+        {@const s = series.find(s => s.id === entrySeriesId(entry))}
+        {#if s}
+          <span class="series-subtitle">{s.title}</span>
+        {/if}
+      {/if}
       <p>{entry.desc}</p>
       {#if entry.tags && entry.tags.length}
         <div class="entry-tags">
@@ -376,6 +385,20 @@
     </article>
   {/if}
 {/each}
+
+{#if noResults}
+  <div class="empty-state">
+    <p class="empty-emoji">🔍</p>
+    <p class="empty-message">
+      {#if searchQuery}
+        no entries match &ldquo;{searchQuery}&rdquo;
+      {:else}
+        no entries tagged &ldquo;{activeTag}&rdquo;
+      {/if}
+    </p>
+    <button class="empty-clear" onclick={() => { searchQuery = ''; activeTag = ''; }}>clear filter</button>
+  </div>
+{/if}
 
 {#if !searchQuery && !activeTag && shownCount < groupedRender.length}
   <button class="show-more" onclick={showMore}>
@@ -438,6 +461,37 @@
     outline: none;
     transition: border-color 0.15s ease;
     box-sizing: border-box;
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--muted, #555);
+  }
+
+  .empty-emoji {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .empty-message {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .empty-clear {
+    background: none;
+    border: 1px solid var(--border, #333);
+    color: var(--accent, #58a6ff);
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background 0.15s ease;
+  }
+
+  .empty-clear:hover {
+    background: color-mix(in srgb, var(--accent, #58a6ff) 10%, transparent);
   }
 
   .search-clear {
@@ -537,6 +591,15 @@
   .reading-time {
     color: #666;
     font-size: 0.75rem;
+  }
+
+  .series-subtitle {
+    display: block;
+    font-size: 0.75rem;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    margin-top: -0.25rem;
   }
 
   h2 {
