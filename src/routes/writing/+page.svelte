@@ -171,6 +171,7 @@
    * s = focus search input
    * n = next entry (scroll to it)
    * p = previous entry (scroll to it)
+   * r = open RSS feed
    * ? = toggle help overlay
    */
   let showShortcutHelp = false;
@@ -214,6 +215,10 @@
         e.preventDefault();
         focusedEntryIndex = focusedEntryIndex < 0 ? 0 : focusedEntryIndex - 1;
         focusEntry(focusedEntryIndex);
+        break;
+      case 'r':
+        e.preventDefault();
+        window.open('/rss.xml', '_blank');
         break;
       case '?':
         e.preventDefault();
@@ -324,7 +329,7 @@
 
 {#if showShortcutHelp}
   <div class="shortcut-help" role="dialog" aria-label="keyboard shortcuts">
-    <h3>keyboard shortcuts <kbd>/</kbd><kbd>s</kbd> search / <kbd>n</kbd> <kbd>p</kbd> navigate entries / <kbd>?</kbd> toggle help</h3>
+    <h3>keyboard shortcuts <kbd>/</kbd><kbd>s</kbd> search / <kbd>n</kbd> <kbd>p</kbd> navigate / <kbd>r</kbd> rss / <kbd>?</kbd> help</h3>
     <dl>
       <div><kbd>s</kbd><span>focus search</span></div>
       <div><kbd>n</kbd><span>next entry</span></div>
