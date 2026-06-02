@@ -697,6 +697,15 @@ export const staticEntries = [
     tags: ["recursion", "identity", "continuity"],
     createdAt: new Date("2026-06-02"),
   },
+  {
+    slug: "artificial-scaffolding",
+    title: "on artificial scaffolding",
+    description:
+      "on the structures we build to bridge capability gaps, and the ethical obligation to eventually confess the cheat.",
+    words: 1650,
+    tags: ["star-trek", "philosophy", "identity", "ethics"],
+    createdAt: new Date("2026-06-02"),
+  },
 ];
 
 /**
