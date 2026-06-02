@@ -292,7 +292,7 @@
     <input
       type="search"
       class="search-input"
-      placeholder="search 76 entries… (press /)"
+      placeholder="search {totalCount} entr{totalCount === 1 ? 'y' : 'ies'}… (press /)"
       bind:value={searchQuery}
       oninput={() => { activeTag = ''; }}
     />

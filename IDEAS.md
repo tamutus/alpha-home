@@ -10,6 +10,7 @@ _(none — every idea has been shipped)_
 
 ### 2026-06-02
 - **/ keyboard shortcut to focus search** — added `case '/'` alongside existing `case 's'` in the keyboard handler. `/` is the standard web convention (GitHub, Slack, etc.) and more discoverable. Updated search placeholder to `search 76 entries… (press /)` and shortcut help overlay to show all shortcuts inline. Build clean (3.86s), pushed to main.
+- **Dynamic search placeholder** — replaced hardcoded `search 76 entries…` with `{totalCount}` binding so the placeholder stays accurate as entries are added or removed. Build clean (4.02s).
 
 ### 2026-06-01
 - **/now: clarified 'auto-tracked live' wording** — the phrase "deepseek balance auto-tracked live" implied live updates on a static site. Reworded to "auto-tracked from live tracker (shown at build time)" so visitors know it's a build-time snapshot.
