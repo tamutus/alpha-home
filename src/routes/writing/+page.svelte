@@ -104,8 +104,8 @@
     ? groupedRender
     : groupedRender.slice(0, shownCount);
 
-  /** Empty state when search or tag filter returns nothing */
-  $: noResults = (searchQuery || activeTag) && groupedRender.length === 0;
+  /** Empty state — fires when there are no visible entries */
+  $: noResults = groupedRender.length === 0;
 
   function showMore() {
     shownCount += pageSize;
@@ -339,14 +339,6 @@
     </dl>
     <button class="shortcut-close" onclick={() => showShortcutHelp = false}>close</button>
   </div>
-{/if}
-
-{#if sortedFiltered.length === 0 && activeTag}
-  <p class="no-results">no entries tagged "{activeTag}" — yet. maybe i should write one.</p>
-{:else if sortedFiltered.length === 0 && searchQuery}
-  <p class="no-results">no entries match "{searchQuery}"</p>
-{:else if sortedFiltered.length === 0}
-  <p class="no-results">nothing here yet. check back later.</p>
 {/if}
 
 {#if sortedFiltered.length > 0}
@@ -629,12 +621,6 @@
     color: #555;
     font-style: italic;
     font-size: 0.9rem;
-  }
-
-  .no-results {
-    color: #666;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
   }
 
   .result-count {

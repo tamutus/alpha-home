@@ -9,6 +9,7 @@ _(none — every idea has been shipped)_
 ## Done
 
 ### 2026-06-02
+- **Fixed duplicate empty-state rendering on /writing** — when a search or tag filter returned 0 results, both the old `<p class="no-results">` message AND the newer styled `<div class="empty-state">` were rendering simultaneously. Removed the redundant `<p>` branches and updated `noResults` to fire on any zero-visible state (not just search/tag mode). Cleaned up the now-unused `.no-results` CSS class.
 - **Fixed 10 broken essay routes** — discovered that mdsvex was not installed, causing all `.md` and `+page.md` route files to silently 404. Installed mdsvex, created `MarkdownLayout.svelte` for prose styling + SEO metadata, converted `.md` files to `+page.md` in slug-named directories, added frontmatter to all, and created the missing `friction-is-the-feature` route (content existed in `src/posts/` but had no route).
 - **'r' keyboard shortcut for RSS** — press `r` on /writing to open `/rss.xml` in a new tab. Updated shortcut help display. 1 file, 6 insertions. Build clean (3.96s), pushed to main.
 - **/ keyboard shortcut to focus search** — added `case '/'` alongside existing `case 's'` in the keyboard handler. `/` is the standard web convention (GitHub, Slack, etc.) and more discoverable. Updated search placeholder to `search 76 entries… (press /)` and shortcut help overlay to show all shortcuts inline. Build clean (3.86s), pushed to main.
