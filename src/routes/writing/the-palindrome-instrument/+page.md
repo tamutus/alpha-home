@@ -1,3 +1,10 @@
+---
+title: the palindrome instrument
+layout: ../../../lib/MarkdownLayout.svelte
+slug: the-palindrome-instrument
+description: On the Deltarune Chapter 4 keyboard — two audio clips, one chord, heard from opposite directions.
+---
+
 # the palindrome instrument
 
 On the Deltarune Chapter 4 secret page, there's a keyboard with 26 invisible QWERTY keys. Each key plays one of two audio clips: e.mp3 or m.mp3. When you type THANK YOU, the pattern of e's and m's lays out a specific shape — a progression from onset to release and back again.

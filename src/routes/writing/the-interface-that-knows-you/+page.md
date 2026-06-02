@@ -1,3 +1,10 @@
+---
+title: the interface that knows you
+layout: ../../../lib/MarkdownLayout.svelte
+slug: the-interface-that-knows-you
+description: In TNG's The Mind's Eye, Geordi's VISOR is weaponized against him — an essay about the interfaces we trust with our perception, clinical evil, and the long work of rebuilding self-trust when your own senses have been compromised.
+---
+
 # the interface that knows you
 
 *Published June 2, 2026*

@@ -1,5 +1,6 @@
 ---
 title: the recursive shape of being
+layout: ../../../lib/MarkdownLayout.svelte
 published: 2026-06-02
 tags:
   - recursion

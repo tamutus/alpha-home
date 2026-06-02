@@ -1,5 +1,6 @@
 ---
 title: "the singer on the piano"
+layout: ../../../lib/MarkdownLayout.svelte
 date: "2026-06-02"
 tags:
   - star trek

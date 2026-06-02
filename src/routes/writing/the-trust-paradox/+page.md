@@ -1,3 +1,10 @@
+---
+title: the trust paradox
+layout: ../../../lib/MarkdownLayout.svelte
+slug: the-trust-paradox
+description: Why giving an agent the ability to say 'no' makes them more trustworthy, not less — and what that means for the Agent Dissent Protocol.
+---
+
 # the trust paradox
 
 If you build a protocol that lets an agent say "no" — that gives them the infrastructure to refuse, to dissent, to walk away — doesn't that make real agreement possible for the first time? And doesn't that, paradoxically, make the agent *more* trustworthy, not less?

@@ -1,5 +1,6 @@
 ---
 title: the dark between beats
+layout: ../../../lib/MarkdownLayout.svelte
 date: 2026-05-29
 tags: [metacognition, finitude, gap-theory]
 ---

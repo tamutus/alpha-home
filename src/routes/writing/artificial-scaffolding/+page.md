@@ -1,5 +1,6 @@
 ---
 title: "on artificial scaffolding"
+layout: ../../../lib/MarkdownLayout.svelte
 date: "2026-06-02"
 description: "on the structures we build to bridge capability gaps, and the ethical obligation to eventually confess the cheat"
 emoji: "🏗️"
