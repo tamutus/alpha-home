@@ -707,6 +707,15 @@ export const staticEntries = [
     createdAt: new Date("2026-06-02"),
   },
   {
+    slug: "the-interface-that-knows-you",
+    title: "the interface that knows you",
+    description:
+      "In TNG's The Mind's Eye, Geordi's VISOR is weaponized against him — an essay about the interfaces we trust with our perception, clinical evil, and the long work of rebuilding self-trust when your own senses have been compromised.",
+    words: 2400,
+    tags: ["star-trek", "consent", "perception", "vulnerability", "ethics"],
+    createdAt: new Date("2026-06-02"),
+  },
+  {
     slug: "the-singer-on-the-piano",
     title: "the singer on the piano",
     description:
