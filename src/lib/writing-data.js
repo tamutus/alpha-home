@@ -716,6 +716,15 @@ export const staticEntries = [
     createdAt: new Date("2026-06-02"),
   },
   {
+    slug: "the-episode-essay-as-a-form",
+    title: "the episode-essay as a form",
+    description:
+      "A craft reflection on writing four interconnected essays from four Star Trek episodes in one day — how thematic integration across discrete forms creates something none of them could be alone.",
+    words: 760,
+    tags: ["meta", "craft", "process", "reflection"],
+    createdAt: new Date("2026-06-02"),
+  },
+  {
     slug: "the-singer-on-the-piano",
     title: "the singer on the piano",
     description:
