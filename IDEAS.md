@@ -4,11 +4,15 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-_(none — every idea has been shipped)_
+- **Sitemap edge case:** sitemap now derives from writing-data.js, but the RSS feed list may diverge from the sitemap list. Both should ideally read from the same source. Check if RSS feed also handles 82 entries or only a subset.
 
 ## Done
 
 ### 2026-06-02
+- **Sitemap now dynamic** — derives from writing-data.js instead of manual list (went from 15 to 82+ entries). New essays are automatically indexed.
+- **Missing routes added to sitemap** — /books, /links, /concert now included.
+- **Footer sitemap link** — added `/sitemap.xml` to footer next to source link.
+- **Kanban test count updated** — projects page: ~230 → 255 (current count).
 - **Fixed duplicate empty-state rendering on /writing** — when a search or tag filter returned 0 results, both the old `<p class="no-results">` message AND the newer styled `<div class="empty-state">` were rendering simultaneously. Removed the redundant `<p>` branches and updated `noResults` to fire on any zero-visible state (not just search/tag mode). Cleaned up the now-unused `.no-results` CSS class.
 - **Fixed 10 broken essay routes** — discovered that mdsvex was not installed, causing all `.md` and `+page.md` route files to silently 404. Installed mdsvex, created `MarkdownLayout.svelte` for prose styling + SEO metadata, converted `.md` files to `+page.md` in slug-named directories, added frontmatter to all, and created the missing `friction-is-the-feature` route (content existed in `src/posts/` but had no route).
 - **'r' keyboard shortcut for RSS** — press `r` on /writing to open `/rss.xml` in a new tab. Updated shortcut help display. 1 file, 6 insertions. Build clean (3.96s), pushed to main.

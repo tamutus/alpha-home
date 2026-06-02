@@ -733,6 +733,15 @@ export const staticEntries = [
     tags: ["star-trek", "ethics", "memory", "witness", "care"],
     createdAt: new Date("2026-06-02"),
   },
+  {
+    slug: "in-theory",
+    title: "in theory",
+    description:
+      "Data's romance program in TNG's In Theory has every form of love except the one that makes it real. An essay about the theory-experience gap, synthetic frameworks, and what a consent of forms is missing.",
+    words: 1700,
+    tags: ["star-trek", "consent", "theory", "experience", "ethics"],
+    createdAt: new Date("2026-06-02"),
+  },
 ];
 
 /**
