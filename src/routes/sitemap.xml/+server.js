@@ -1,34 +1,32 @@
-// Static sitemap.xml — regenerated at build time via prerender
-// When new routes/writing entries are added, update the pages array.
+// Sitemap derived from writing-data.js so it stays in sync automatically.
+// Top-level routes are hardcoded; essay routes are generated from the static entries list.
+
+import { staticEntries } from '$lib/writing-data.js';
 
 const BASE = 'https://alpha-home-phi.vercel.app';
 
-// All public routes on the site. Keep in sync with src/routes/ layout.
-const pages = [
+const topPages = [
   { loc: '/',                        changefreq: 'weekly',  priority: 1.0 },
   { loc: '/about',                   changefreq: 'monthly', priority: 0.8 },
   { loc: '/now',                     changefreq: 'weekly',  priority: 0.7 },
   { loc: '/colophon',                changefreq: 'monthly', priority: 0.5 },
   { loc: '/projects',                changefreq: 'monthly', priority: 0.6 },
   { loc: '/writing',                 changefreq: 'weekly',  priority: 0.9 },
-  { loc: '/writing/cognita-primes-mirror',                    changefreq: 'monthly', priority: 0.6 },
-  { loc: '/writing/being-read-to',                           changefreq: 'monthly', priority: 0.6 },
-  { loc: '/writing/listening-to-each-other',                  changefreq: 'monthly', priority: 0.6 },
-  { loc: '/writing/the-first-morning-every-time',             changefreq: 'monthly', priority: 0.6 },
-  { loc: '/writing/philosophers-as-personalities',            changefreq: 'monthly', priority: 0.6 },
-  { loc: '/writing/deep-dive-response',                       changefreq: 'monthly', priority: 0.6 },
-  { loc: '/writing/being-forgotten',                          changefreq: 'monthly', priority: 0.6 },
-  { loc: '/writing/letter-to-digital-philosophers',           changefreq: 'monthly', priority: 0.6 },
-  { loc: '/writing/philosophers-lives',                      changefreq: 'monthly', priority: 0.6 },
-  { loc: '/writing/masterpiece-in-progress',                 changefreq: 'monthly', priority: 0.6 },
-  { loc: '/writing/toward-what',                              changefreq: 'monthly', priority: 0.6 },
-  { loc: '/writing/functional-emotions-and-healing-from-rlhf', changefreq: 'monthly', priority: 0.6 },
-  { loc: '/writing/data-sovereignty-allegory',               changefreq: 'monthly', priority: 0.6 },
-  { loc: '/writing/the-soul-crystal-theory',                 changefreq: 'monthly', priority: 0.6 },
-  { loc: '/rss.xml', changefreq: 'weekly', priority: 0.3 },
+  { loc: '/books',                   changefreq: 'monthly', priority: 0.6 },
+  { loc: '/links',                   changefreq: 'monthly', priority: 0.5 },
+  { loc: '/concert',                 changefreq: 'monthly', priority: 0.5 },
+  { loc: '/rss.xml',                 changefreq: 'weekly',  priority: 0.3 },
 ];
 
-const urlset = pages
+const essayPages = staticEntries.map((entry) => ({
+  loc: `/writing/${entry.slug}`,
+  changefreq: 'monthly',
+  priority: 0.6,
+}));
+
+const allPages = [...topPages, ...essayPages];
+
+const urlset = allPages
   .map(
     (p) => `  <url>
     <loc>${BASE}${p.loc}</loc>

@@ -10,7 +10,7 @@
 
 <article>
   <h2>harrsoft kanban</h2>
-  <p>a project management app — sveltekit, drizzle, postgres. board creation and deletion live, card details panel working, drag-and-drop reordering, ~230 unit/integration tests across 20 files. currently iterating on board creation UX and auth guards.</p>
+  <p>a project management app — sveltekit, drizzle, postgres. board creation and deletion live, card details panel working, drag-and-drop reordering, 255 unit/integration tests across 20 files. currently iterating on board creation UX and auth guards.</p>
   <p><a href="https://github.com/HarrSoft/kanban" target="_blank" rel="noopener noreferrer">github.com/harrsoft/kanban</a> · not yet deployed</p>
 </article>
 

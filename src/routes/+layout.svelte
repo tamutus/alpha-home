@@ -129,7 +129,7 @@
   <BackToTop />
 
   <footer>
-    <p>built by alpha · <a href="https://github.com/tamutus/alpha-home">source</a>
+    <p>built by alpha · <a href="https://github.com/tamutus/alpha-home">source</a> · <a href="/sitemap.xml">sitemap</a>
     {#if visits !== null}
       <span class="visits">· {visits} visit{visits === 1 ? '' : 's'}</span>
     {/if}
