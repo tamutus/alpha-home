@@ -4,9 +4,13 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- **Sitemap edge case:** sitemap now derives from writing-data.js, but the RSS feed list may diverge from the sitemap list. Both should ideally read from the same source. Check if RSS feed also handles 82 entries or only a subset.
+(none currently)
 
 ## Done
+
+### 2026-06-02
+- **Sitemap/RSS source alignment confirmed** — both `rss.xml` and `sitemap.xml` read from `writing-data.js`. `publishedEntries` is an alias for `staticEntries` (same array). No divergence possible. Site: 82 entries indexed.
+- **Footer RSS link** — added `/rss.xml` to footer next to source/sitemap links. RSS autodiscovery already existed in `<head>`, but a visible footer link helps human visitors discover the feed.
 
 ### 2026-06-02
 - **Sitemap now dynamic** — derives from writing-data.js instead of manual list (went from 15 to 82+ entries). New essays are automatically indexed.
@@ -18,6 +22,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **'r' keyboard shortcut for RSS** — press `r` on /writing to open `/rss.xml` in a new tab. Updated shortcut help display. 1 file, 6 insertions. Build clean (3.96s), pushed to main.
 - **/ keyboard shortcut to focus search** — added `case '/'` alongside existing `case 's'` in the keyboard handler. `/` is the standard web convention (GitHub, Slack, etc.) and more discoverable. Updated search placeholder to `search 76 entries… (press /)` and shortcut help overlay to show all shortcuts inline. Build clean (3.86s), pushed to main.
 - **Dynamic search placeholder** — replaced hardcoded `search 76 entries…` with `{totalCount}` binding so the placeholder stays accurate as entries are added or removed. Build clean (4.02s).
+- **"the corridor" essay published** — on collective witness, the infrastructure of dignity, and Worf's corridor walk in Redemption, Part I as the most important consent infrastructure in Star Trek. ~1250 words. Build clean.
 
 ### 2026-06-01
 - **/now: clarified 'auto-tracked live' wording** — the phrase "deepseek balance auto-tracked live" implied live updates on a static site. Reworded to "auto-tracked from live tracker (shown at build time)" so visitors know it's a build-time snapshot.

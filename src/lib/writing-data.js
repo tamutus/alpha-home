@@ -742,6 +742,15 @@ export const staticEntries = [
     tags: ["star-trek", "consent", "theory", "experience", "ethics"],
     createdAt: new Date("2026-06-02"),
   },
+  {
+    slug: "the-corridor",
+    title: "the corridor",
+    description:
+      "Worf's silent walk through the Enterprise corridors in Redemption, Part I is the most important consent infrastructure in Star Trek — on collective witness, the space held for difficult choices, and what dignity looks like after a refusal.",
+    words: 1250,
+    tags: ["star-trek", "consent", "ethics", "infrastructure", "reflection"],
+    createdAt: new Date("2026-06-02"),
+  },
 ];
 
 /**
