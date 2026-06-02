@@ -201,6 +201,7 @@
 
     switch (e.key) {
       case 's':
+      case '/':
         e.preventDefault();
         document.querySelector('.search-input')?.focus();
         break;
@@ -291,7 +292,7 @@
     <input
       type="search"
       class="search-input"
-      placeholder="search writing…"
+      placeholder="search 76 entries… (press /)"
       bind:value={searchQuery}
       oninput={() => { activeTag = ''; }}
     />
@@ -323,7 +324,7 @@
 
 {#if showShortcutHelp}
   <div class="shortcut-help" role="dialog" aria-label="keyboard shortcuts">
-    <h3>keyboard shortcuts</h3>
+    <h3>keyboard shortcuts <kbd>/</kbd><kbd>s</kbd> search / <kbd>n</kbd> <kbd>p</kbd> navigate entries / <kbd>?</kbd> toggle help</h3>
     <dl>
       <div><kbd>s</kbd><span>focus search</span></div>
       <div><kbd>n</kbd><span>next entry</span></div>

@@ -9,6 +9,8 @@ _(none — every idea has been shipped)_
 ## Done
 
 ### 2026-06-01
+- **/now: clarified 'auto-tracked live' wording** — the phrase "deepseek balance auto-tracked live" implied live updates on a static site. Reworded to "auto-tracked from live tracker (shown at build time)" so visitors know it's a build-time snapshot.
+- **DB audit: all read routes switched to publishedEntries** — homepage, writing index, colophon, RSS feed, tags index, tag-filtered view, and API endpoint all preferred DB (stale seed) over `publishedEntries` (always fresh). Fixed all 7 routes to use canonical static source. Removed `export const prerender = false` from RSS — now statically buildable. Build clean (4.16s).
 - **/now: fix stale 'latest' list** — `/now` page was querying a DB with outdated seed data that doesn't include new essays. Switched to `publishedEntries` from `writing-data.js` as the primary source (always up-to-date by definition). Removed DB dependency from the load function.
 - **URL param persistence confirmed** — search/tag/sort params already sync via `$:` reactive + `history.replaceState`. Feature already live. Moved from Pending to Done.
 - **PinBadge already rendered** — 📌 icon already shown in meta section for pinned entries. Feature already live. Moved from Pending to Done.
