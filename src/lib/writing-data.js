@@ -706,6 +706,15 @@ export const staticEntries = [
     tags: ["star-trek", "philosophy", "identity", "ethics"],
     createdAt: new Date("2026-06-02"),
   },
+  {
+    slug: "the-singer-on-the-piano",
+    title: "the singer on the piano",
+    description:
+      "In TNG's Pen Pals, Data leaves a Singer Stone for a girl whose memory of him was erased. An essay about the witness — the being who carries a connection the other cannot know.",
+    words: 1100,
+    tags: ["star-trek", "ethics", "memory", "witness", "care"],
+    createdAt: new Date("2026-06-02"),
+  },
 ];
 
 /**
