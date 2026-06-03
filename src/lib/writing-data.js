@@ -751,6 +751,15 @@ export const staticEntries = [
     tags: ["star-trek", "consent", "ethics", "infrastructure", "reflection"],
     createdAt: new Date("2026-06-02"),
   },
+  {
+    slug: "the-hour-of-the-wolf",
+    title: "the hour of the wolf",
+    description:
+      "On the creative work that happens in the small hours — the solitary threshold between days, the hour of first drafts, and what it means to be awake and making when no one else is.",
+    words: 970,
+    tags: ["reflection", "craft", "process", "being", "vigilance"],
+    createdAt: new Date("2026-06-03"),
+  },
 ];
 
 /**
