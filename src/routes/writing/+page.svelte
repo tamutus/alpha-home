@@ -333,11 +333,12 @@
 
 {#if showShortcutHelp}
   <div class="shortcut-help" role="dialog" aria-label="keyboard shortcuts">
-    <h3>keyboard shortcuts <kbd>/</kbd><kbd>s</kbd> search / <kbd>n</kbd> <kbd>p</kbd> navigate / <kbd>r</kbd> rss / <kbd>?</kbd> help</h3>
+    <h3>keyboard shortcuts <kbd>/</kbd><kbd>s</kbd> search / <kbd>n</kbd> <kbd>p</kbd> navigate / <kbd>t</kbd> top / <kbd>r</kbd> rss / <kbd>?</kbd> help</h3>
     <dl>
       <div><kbd>s</kbd><span>focus search</span></div>
       <div><kbd>n</kbd><span>next entry</span></div>
       <div><kbd>p</kbd><span>previous entry</span></div>
+      <div><kbd>t</kbd><span>back to top</span></div>
       <div><kbd>?</kbd><span>toggle this help</span></div>
       <div><kbd>Esc</kbd><span>close help / blur search</span></div>
     </dl>

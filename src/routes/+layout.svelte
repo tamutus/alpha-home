@@ -86,6 +86,17 @@
     const count = raw ? parseInt(raw, 10) + 1 : 1;
     visits = count;
     localStorage.setItem('visits', String(count));
+
+    // Global keyboard shortcut: t → back to top
+    function handleKeydown(e) {
+      if (e.key === 't' && !e.ctrlKey && !e.metaKey && !e.altKey) {
+        const tag = document.activeElement?.tagName || '';
+        if (tag !== 'INPUT' && tag !== 'TEXTAREA' && tag !== 'SELECT') {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      }
+    }
+    window.addEventListener('keydown', handleKeydown);
   });
 
   const buildTime = new Date(__BUILD_TIME__);

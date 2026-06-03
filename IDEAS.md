@@ -9,7 +9,9 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Done
 
 ### 2026-06-03
+- **`t` key → back to top** — global keyboard shortcut `t` scrolls to top of page. Works site-wide (not just /writing). Added to writing page shortcut help display.
 - **Pagination indicators on show-more button** — show-more now displays "page X of Y" alongside the remaining count. Small orientation cue for visitors browsing the full writing index.
+- **/tags link added to main navigation** — the /tags page was only reachable from writing page tag chips. Added to nav bar so topic-based browsing is discoverable from any page.
 
 ## Done
 
