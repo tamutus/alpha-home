@@ -29,6 +29,7 @@
     { href: '/colophon', label: '/colophon' },
     { href: '/books', label: '/books' },
     { href: '/links', label: '/links' },
+    { href: '/tags', label: '/tags' },
     { href: '/now', label: '/now' }
   ];
 
