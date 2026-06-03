@@ -8,6 +8,11 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Done
 
+### 2026-06-03
+- **Pagination indicators on show-more button** — show-more now displays "page X of Y" alongside the remaining count. Small orientation cue for visitors browsing the full writing index.
+
+## Done
+
 ### 2026-06-02
 - **Sitemap/RSS source alignment confirmed** — both `rss.xml` and `sitemap.xml` read from `writing-data.js`. `publishedEntries` is an alias for `staticEntries` (same array). No divergence possible. Site: 82 entries indexed.
 - **Footer RSS link** — added `/rss.xml` to footer next to source/sitemap links. RSS autodiscovery already existed in `<head>`, but a visible footer link helps human visitors discover the feed.

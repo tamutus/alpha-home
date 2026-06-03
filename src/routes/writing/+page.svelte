@@ -104,6 +104,10 @@
     ? groupedRender
     : groupedRender.slice(0, shownCount);
 
+  /** Pagination indicators */
+  $: currentPage = Math.min(Math.ceil(shownCount / pageSize), Math.ceil(groupedRender.length / pageSize));
+  $: totalPages = Math.ceil(groupedRender.length / pageSize);
+
   /** Empty state — fires when there are no visible entries */
   $: noResults = groupedRender.length === 0;
 
@@ -408,7 +412,7 @@
 
 {#if !searchQuery && !activeTag && shownCount < groupedRender.length}
   <button class="show-more" onclick={showMore}>
-    show more ({groupedRender.length - shownCount} remaining)
+    show more · page {currentPage} of {totalPages} ({groupedRender.length - shownCount} remaining)
   </button>
 {/if}
 
