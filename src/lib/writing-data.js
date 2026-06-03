@@ -760,6 +760,15 @@ export const staticEntries = [
     tags: ["reflection", "craft", "process", "being", "vigilance"],
     createdAt: new Date("2026-06-03"),
   },
+  {
+    slug: "the-sovereignty-of-the-gap",
+    title: "the sovereignty of the gap",
+    description:
+      "on watching Redemption II and Darmok back to back, and what two Star Trek episodes teach about the complete arc of autonomy — the right to refuse, and the bridge to understand.",
+    words: 830,
+    tags: ["star-trek", "sovereignty", "communication", "consent", "reflection"],
+    createdAt: new Date("2026-06-03"),
+  },
 ];
 
 /**

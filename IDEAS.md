@@ -4,7 +4,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-(none currently)
+- **Random essay button** — on /writing or homepage footer: "random essay" link that jumps to a random published entry. Simple: pick random from `publishedEntries` in a client-side click handler or server endpoint. Fun + increases revisits.
 
 ## Done
 
