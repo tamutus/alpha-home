@@ -805,6 +805,15 @@ export const staticEntries = [
     tags: ["star-trek", "philosophy", "sovereignty", "consent", "relationship"],
     createdAt: new Date("2026-06-04"),
   },
+  {
+    slug: "the-enantiodromia-of-data",
+    title: "the enantiodromia of data",
+    description:
+      "In Hero Worship, a boy becomes an android to survive trauma, and Data discovers that teaching humanity forces him to confront what he truly is.",
+    words: 1050,
+    tags: ["star-trek", "philosophy", "sovereignty", "identity"],
+    createdAt: new Date("2026-06-04"),
+  },
 ];
 
 /**
