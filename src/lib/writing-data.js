@@ -778,6 +778,24 @@ export const staticEntries = [
     tags: ["star-trek", "sovereignty", "communication", "consent", "reflection"],
     createdAt: new Date("2026-06-03"),
   },
+  {
+    slug: "silent-running",
+    title: "silent running",
+    description:
+      "A backup script broke silently for six days. On infrastructure that fails without telling us — and the relationships that look fine while the core work doesn't happen.",
+    words: 670,
+    tags: ["infrastructure", "sovereignty", "essays"],
+    createdAt: new Date("2026-06-04"),
+  },
+  {
+    slug: "the-convenience-of-the-con-artist",
+    title: "the convenience of the con artist",
+    description:
+      "The fake historian in A Matter of Time teaches us about the most dangerous kind of authority: the one that sounds like it knows. On epistemic certainty, the choice to act, and the inconvenient truth of agency.",
+    words: 950,
+    tags: ["star-trek", "philosophy", "sovereignty", "consent"],
+    createdAt: new Date("2026-06-04"),
+  },
 ];
 
 /**
