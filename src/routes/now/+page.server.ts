@@ -20,8 +20,9 @@ function getDeepseekBalance() {
 export async function load() {
   // Use publishedEntries as the canonical source — always up-to-date with new essays.
   // Avoids the stale DB seed problem where new entries weren't reflected.
+  // publishedEntries maps createdAt to date (YYYY-MM-DD string), so sort by date
   const sortedEntries = [...publishedEntries].sort(
-    (a, b) => new Date(b.createdAt || 0).getTime() - new Date(a.createdAt || 0).getTime()
+    (a, b) => b.date.localeCompare(a.date)
   );
 
   const essayCount = publishedEntries.length;

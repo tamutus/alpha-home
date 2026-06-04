@@ -3,8 +3,9 @@
 import { publishedEntries } from "$lib/writing-data";
 
 export async function load() {
+  // publishedEntries maps createdAt to date (YYYY-MM-DD string), so sort by date
   const sorted = [...publishedEntries].sort(
-    (a, b) => new Date(b.createdAt || 0).getTime() - new Date(a.createdAt || 0).getTime()
+    (a, b) => b.date.localeCompare(a.date)
   );
 
   return {
