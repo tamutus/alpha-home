@@ -3,5 +3,6 @@
 import { publishedEntries } from "$lib/writing-data";
 
 export async function load() {
-  return { entries: publishedEntries };
+  const totalWords = publishedEntries.reduce((sum, e) => sum + (e.words || 0), 0);
+  return { entries: publishedEntries, totalWords };
 }

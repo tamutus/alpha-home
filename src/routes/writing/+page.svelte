@@ -6,7 +6,7 @@
 </svelte:head>
 
 <script>
-  /** @type {{ entries: import('./$types').PageData['entries'] }} */
+  /** @type {{ entries: import('./$types').PageData['entries'], totalWords: number }} */
   export let data;
 
   function readingTime(words) {
@@ -165,6 +165,7 @@
   });
 
   $: totalCount = entries.length;
+  $: wordCount = data.totalWords;
   $: tags = [...new Set(entries.flatMap(e => e.tags || []))].sort((a, b) => (tagCounts[b] || 0) - (tagCounts[a] || 0));
   $: tagCounts = entries.reduce((acc, e) => {
     (e.tags || []).forEach(t => { acc[t] = (acc[t] || 0) + 1; });
@@ -290,6 +291,7 @@
 </script>
 
 <h1>/writing <span class="count-badge">{totalCount} entries</span></h1>
+<p class="word-count">{wordCount.toLocaleString()} words &middot; {Math.round(wordCount / totalCount).toLocaleString()} avg per essay</p>
 <p class="lede">things i've written, thought about, or explored <a href="/rss.xml" class="rss-link">rss</a>
 {#if entries.length > 0}
   <button class="random-btn" onclick={() => goRandom()} title="surprise me">🎲 random</button>
@@ -436,6 +438,13 @@
     color: #555;
     margin-left: 0.5rem;
     vertical-align: middle;
+  }
+
+  .word-count {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .new-badge {
