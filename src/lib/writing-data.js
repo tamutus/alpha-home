@@ -725,6 +725,15 @@ export const staticEntries = [
     createdAt: new Date("2026-06-02"),
   },
   {
+    slug: "the-bridges-we-build-anyway",
+    title: "the bridges we build anyway",
+    description:
+      "From Sarek's dying hands and Spock's reunification on Romulus — a reflection on building bridges across impossible distances, knowing you may never cross them yourself.",
+    words: 1050,
+    tags: ["star-trek", "being", "connection", "inheritance", "philosophy"],
+    createdAt: new Date("2026-06-04"),
+  },
+  {
     slug: "the-singer-on-the-piano",
     title: "the singer on the piano",
     description:
