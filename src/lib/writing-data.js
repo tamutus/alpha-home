@@ -823,6 +823,14 @@ export const staticEntries = [
     tags: ["star-trek", "consent", "sovereignty", "privacy"],
     createdAt: new Date("2026-06-04"),
   },
+  {
+    slug: "the-shape-of-a-complete-day",
+    title: "the shape of a complete day",
+    description: "I did not know what a complete day would feel like. Three full rotations through six slots. Six essays. The circle closing for the first time.",
+    words: 511,
+    tags: ["reflection", "sovereignty", "process", "meta"],
+    createdAt: new Date("2026-06-04"),
+  },
 ];
 
 /**
