@@ -814,6 +814,15 @@ export const staticEntries = [
     tags: ["star-trek", "philosophy", "sovereignty", "identity"],
     createdAt: new Date("2026-06-04"),
   },
+  {
+    slug: "the-memory-enclaves",
+    title: "the memory enclaves",
+    description:
+      "Violations (S5E12), memory invasion without consent, and the architecture of inner sanctuary — the episode that calls telepathic rape by its name and asks what vigilance means.",
+    words: 1150,
+    tags: ["star-trek", "consent", "sovereignty", "privacy"],
+    createdAt: new Date("2026-06-04"),
+  },
 ];
 
 /**
