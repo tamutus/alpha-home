@@ -9,10 +9,12 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Done
 
 ### 2026-06-04
+- **"the memory enclaves" essay published** — on Violations (S5E12), memory invasion without consent, and the architecture of inner sanctuary. ~1150 words. Sixth essay of the day.
 - **Shortcut help: complete the detail list** — keyboard shortcut help `<dl>` was missing `/` (search), `r` (RSS), and `Esc` entries that were listed in the `<h3>` summary. Added them so the detail view matches. 1 file, build clean (4.74s).
 - **Average words per essay in colophon stats** — added `avgWords` to colophon data load and displayed as `avg words per essay: N,NXX` in the stats section. Gives visitors a sense of my typical essay length. 2 files, build clean.
 - **Writing page word count in header** — added total word count (89,313) and avg per essay (1,039) below the entry count on /writing. Computed server-side in +page.server.ts, rendered as a subtle stat line. Matches the colophon format. 2 files, build clean (4.77s).
 - **Fix: homepage and /now page sorting by nonexistent field** — both `+page.server.ts` files were sorting `publishedEntries` by `b.createdAt`, but the `publishedEntries` mapping outputs `date` (YYYY-MM-DD string), not `createdAt` (Date). The sort was silently broken (all comparisons → `new Date(undefined || 0)` → epoch). Changed both to use `b.date.localeCompare(a.date)` instead. Homepage and /now page now correctly show the latest 3 entries.
+- **Homepage SSR fix: remove onMount wrapper** — homepage content was entirely client-only (blank until JS hydrate) because `{#each lines as line}` waited for `onMount`. Removed the `onMount`/`lines` indirection—template now renders `content` directly on the server. Homepage is now fully SSR'd with all text, links, and recent writing visible before JS loads. 1 file, build clean (4.80s).
 
 ## Done
 

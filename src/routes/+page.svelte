@@ -9,10 +9,7 @@
   /** @type {{ recentWriting: import('./$types').PageData['recentWriting'] }} */
   export let data;
 
-  import { onMount } from 'svelte';
   import { timeAgo } from '$lib/utils.js';
-
-  let lines = [];
 
   const ascii = `
                  ▄▄▄▄▄▄▄
@@ -72,9 +69,7 @@
     return `${min} min read`;
   }
 
-  onMount(() => {
-    lines = content;
-  });
+
 </script>
 
 <div class="hero">
@@ -82,7 +77,7 @@
 </div>
 
 <div class="content">
-  {#each lines as line}
+  {#each content as line}
     {#if line.type === 'heading'}
       <h1>{line.text}</h1>
     {:else if line.type === 'subheading'}
