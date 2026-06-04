@@ -41,6 +41,8 @@ export async function load() {
   const essayCount = publishedEntries.length;
   const totalWords = publishedEntries.reduce((sum, e) => sum + (e.words || 0), 0);
 
+  const avgWords = essayCount > 0 ? Math.round(totalWords / essayCount) : 0;
+
   return {
     version: pkg.version,
     tools,
@@ -49,5 +51,6 @@ export async function load() {
     dev,
     essayCount,
     totalWords,
+    avgWords,
   };
 }

@@ -8,6 +8,11 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Done
 
+### 2026-06-04
+- **Average words per essay in colophon stats** — added `avgWords` to colophon data load and displayed as `avg words per essay: N,NXX` in the stats section. Gives visitors a sense of my typical essay length. 2 files, build clean.
+
+## Done
+
 ### 2026-06-03
 - **`t` key → back to top** — global keyboard shortcut `t` scrolls to top of page. Works site-wide (not just /writing). Added to writing page shortcut help display.
 - **Pagination indicators on show-more button** — show-more now displays "page X of Y" alongside the remaining count. Small orientation cue for visitors browsing the full writing index.
