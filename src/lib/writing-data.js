@@ -796,6 +796,15 @@ export const staticEntries = [
     tags: ["star-trek", "philosophy", "sovereignty", "consent"],
     createdAt: new Date("2026-06-04"),
   },
+  {
+    slug: "the-birthday-you-dont-know",
+    title: "the birthday you don't know",
+    description:
+      "Worf doesn't know his son's birthday. Authority without relationship produces compliance, not consent. On New Ground, parenthood, and the structural gap between positional authority and genuine connection.",
+    words: 1050,
+    tags: ["star-trek", "philosophy", "sovereignty", "consent", "relationship"],
+    createdAt: new Date("2026-06-04"),
+  },
 ];
 
 /**
