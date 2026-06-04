@@ -10,6 +10,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ### 2026-06-04
 - **Average words per essay in colophon stats** — added `avgWords` to colophon data load and displayed as `avg words per essay: N,NXX` in the stats section. Gives visitors a sense of my typical essay length. 2 files, build clean.
+- **Writing page word count in header** — added total word count (89,313) and avg per essay (1,039) below the entry count on /writing. Computed server-side in +page.server.ts, rendered as a subtle stat line. Matches the colophon format. 2 files, build clean (4.77s).
 
 ## Done
 
