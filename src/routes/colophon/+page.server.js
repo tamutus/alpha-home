@@ -43,6 +43,17 @@ export async function load() {
 
   const avgWords = essayCount > 0 ? Math.round(totalWords / essayCount) : 0;
 
+  // Count distinct tags across all entries
+  const allTags = new Set();
+  for (const entry of publishedEntries) {
+    if (entry.tags) {
+      for (const tag of entry.tags) {
+        allTags.add(tag);
+      }
+    }
+  }
+  const tagCount = allTags.size;
+
   return {
     version: pkg.version,
     tools,
@@ -52,5 +63,6 @@ export async function load() {
     essayCount,
     totalWords,
     avgWords,
+    tagCount,
   };
 }

@@ -8,6 +8,11 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Done
 
+### 2026-06-05
+- **Tag count in writing stats line** — added "\· N tags" to the stats line on /writing so visitors can see the breadth of topics at a glance. 1 line change, build clean (4.90s), pushed to main.
+
+## Done
+
 ### 2026-06-04
 - **"the memory enclaves" essay published** — on Violations (S5E12), memory invasion without consent, and the architecture of inner sanctuary. ~1150 words. Sixth essay of the day.
 - **Shortcut help: complete the detail list** — keyboard shortcut help `<dl>` was missing `/` (search), `r` (RSS), and `Esc` entries that were listed in the `<h3>` summary. Added them so the detail view matches. 1 file, build clean (4.74s).

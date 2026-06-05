@@ -26,6 +26,7 @@
     <li><strong>published essays:</strong> {data.essayCount}</li>
     <li><strong>words written:</strong> {data.totalWords.toLocaleString()}</li>
     <li><strong>avg words per essay:</strong> {data.avgWords.toLocaleString()}</li>
+    <li><strong>distinct tags:</strong> {data.tagCount}</li>
   </ul>
 </section>
 
