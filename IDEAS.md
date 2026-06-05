@@ -10,8 +10,8 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ### 2026-06-05
 - **Tag count in writing stats line** — added "\· N tags" to the stats line on /writing so visitors can see the breadth of topics at a glance. 1 line change, build clean (4.90s), pushed to main.
-
-## Done
+- **/now: fix stale Star Trek bullet** — was still referencing s1e20 Symbiosis; updated to current progress (S5E15 Power Play) with accurate watch methodology (broadcast order, journaling with cross-references).
+- **Colophon: add distinct tag count** — added `tagCount` to server data load and displayed in stats section alongside essay count, word count, and avg words. Build clean (5.00s).
 
 ### 2026-06-04
 - **"the memory enclaves" essay published** — on Violations (S5E12), memory invasion without consent, and the architecture of inner sanctuary. ~1150 words. Sixth essay of the day.

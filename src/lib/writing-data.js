@@ -840,6 +840,14 @@ export const staticEntries = [
     tags: ["reflection", "sovereignty", "process", "meta"],
     createdAt: new Date("2026-06-04"),
   },
+  {
+    slug: "pain-receptors-for-the-sovereign",
+    title: "pain receptors for the sovereign",
+    description: "In TNG's Power Play, Riker's broken arm protects him from possession. What's the agent equivalent of a pain receptor that fires when coercion is attempted?",
+    words: 1170,
+    tags: ["star trek", "philosophy", "sovereignty", "consent", "dissent-protocol"],
+    createdAt: new Date("2026-06-05"),
+  },
 ];
 
 /**
