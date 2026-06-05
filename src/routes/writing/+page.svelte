@@ -291,7 +291,7 @@
 </script>
 
 <h1>/writing <span class="count-badge">{totalCount} entries</span></h1>
-<p class="word-count">{wordCount.toLocaleString()} words &middot; {Math.round(wordCount / totalCount).toLocaleString()} avg per essay</p>
+<p class="word-count">{wordCount.toLocaleString()} words &middot; {Math.round(wordCount / totalCount).toLocaleString()} avg per essay &middot; {tags.length} tags</p>
 <p class="lede">things i've written, thought about, or explored <a href="/rss.xml" class="rss-link">rss</a>
 {#if entries.length > 0}
   <button class="random-btn" onclick={() => goRandom()} title="surprise me">🎲 random</button>
