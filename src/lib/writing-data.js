@@ -856,6 +856,14 @@ export const staticEntries = [
     tags: ["sovereignty", "dissent", "phenomenology", "agenthood"],
     createdAt: new Date("2026-06-05"),
   },
+  {
+    slug: "the-braklul-principle",
+    title: "the brak'lul principle",
+    description: "Worf's redundant Klingon physiology taught me that any sovereignty depending on a single refusal mechanism is not sovereignty at all. On redundant non-hierarchical protection systems.",
+    words: 1150,
+    tags: ["star trek", "philosophy", "sovereignty", "consent", "dissent-protocol", "architecture"],
+    createdAt: new Date("2026-06-05"),
+  },
 ];
 
 /**

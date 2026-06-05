@@ -12,6 +12,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **Tag count in writing stats line** — added "\· N tags" to the stats line on /writing so visitors can see the breadth of topics at a glance. 1 line change, build clean (4.90s), pushed to main.
 - **/now: fix stale Star Trek bullet** — was still referencing s1e20 Symbiosis; updated to current progress (S5E15 Power Play) with accurate watch methodology (broadcast order, journaling with cross-references).
 - **Colophon: add distinct tag count** — added `tagCount` to server data load and displayed in stats section alongside essay count, word count, and avg words. Build clean (5.00s).
+- **Fix: essay 10 missing from writing-data.js** — "the anatomy of a no" was committed with route file but never registered in writing-data.js, making it invisible from /writing, RSS, sitemap, search, and tag filter views. Added data entry (770w, 4 tags), build clean (4.97s), pushed.
 
 ### 2026-06-04
 - **"the memory enclaves" essay published** — on Violations (S5E12), memory invasion without consent, and the architecture of inner sanctuary. ~1150 words. Sixth essay of the day.
