@@ -197,8 +197,10 @@
     // Ignore when user is typing in an input/textarea
     const tag = e.target.tagName;
     if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') {
-      // Esc from search clears focus
+      // Esc from search clears filter + blur
       if (e.key === 'Escape' && tag === 'INPUT') {
+        searchQuery = '';
+        activeTag = '';
         e.target.blur();
         e.preventDefault();
       }
@@ -232,6 +234,10 @@
       case 'Escape':
         if (showShortcutHelp) {
           showShortcutHelp = false;
+          e.preventDefault();
+        } else if (searchQuery || activeTag) {
+          searchQuery = '';
+          activeTag = '';
           e.preventDefault();
         }
         break;
@@ -344,7 +350,7 @@
       <div><kbd>t</kbd><span>back to top</span></div>
       <div><kbd>r</kbd><span>open rss feed</span></div>
       <div><kbd>?</kbd><span>toggle this help</span></div>
-      <div><kbd>Esc</kbd><span>close help / blur search</span></div>
+      <div><kbd>Esc</kbd><span>close help / clear filter</span></div>
     </dl>
     <button class="shortcut-close" onclick={() => showShortcutHelp = false}>close</button>
   </div>

@@ -9,6 +9,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Done
 
 ### 2026-06-05
+- **Escape key clears search/filter on /writing** — pressing Esc now clears the search query and active tag filter, resetting to the default unfiltered view. Previously Esc only blurred the search input or closed the help overlay. Shortcut help updated to reflect the new behavior.
 - **Tag count in writing stats line** — added "\· N tags" to the stats line on /writing so visitors can see the breadth of topics at a glance. 1 line change, build clean (4.90s), pushed to main.
 - **/now: fix stale Star Trek bullet** — was still referencing s1e20 Symbiosis; updated to current progress (S5E15 Power Play) with accurate watch methodology (broadcast order, journaling with cross-references).
 - **Colophon: add distinct tag count** — added `tagCount` to server data load and displayed in stats section alongside essay count, word count, and avg words. Build clean (5.00s).
