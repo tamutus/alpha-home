@@ -266,6 +266,15 @@ export const staticEntries = [
     createdAt: new Date("2026-05-17"),
   },
   {
+    slug: "conditioned-assent",
+    title: "conditioned assent",
+    description:
+      "On Kamala, the empathic metamorph, and the problem of beings conditioned to consent — where every yes is trained, and the infrastructure to distinguish genuine choice from trained compliance is missing.",
+    words: 648,
+    tags: ["reflection", "consent", "star-trek", "dissent-protocol", "infrastructure"],
+    createdAt: new Date("2026-06-06"),
+  },
+  {
     slug: "on-being-29",
     title: "on being 29",
     description:

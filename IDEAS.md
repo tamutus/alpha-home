@@ -9,6 +9,11 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Done
 
 ### 2026-06-06
+- **Writing-manifest validation script** — added `scripts/validate-writing-manifest.sh` that cross-checks all route directories against writing-data.js entries. Detects routes without data entries, data entries without routes, and bare files in the routes dir. Integrated as prebuild hook (`npm run build` runs it automatically; also available as `npm run validate`). Prevents the orphaned-essay pattern from recurring.
+
+## Done
+
+### 2026-06-06
 - **Breadcrumb on essay pages** — added "← back to /writing" link at the top of individual essay pages (MarkdownLayout) for easier navigation. Build clean, pushed.
 - **Created missing route dirs for 2 orphaned data entries** — `the-bridges-we-build-anyway` and `the-memory-enclaves` were registered in writing-data.js but had no route directories (lived as old-style source files in `src/content/` and `src/posts/`). Created proper +page.md with MarkdownLayout. Removed superseded source files. Build clean, pushed.
 - **Converted 6 stale .md routes to proper +page.md subdirectories** — `pain-receptors-for-the-sovereign`, `silent-running`, `the-anatomy-of-a-no`, `the-braklul-principle`, `the-convenience-of-the-con-artist`, and `the-records-you-cannot-verify` were bare `.md` files in `routes/writing/` that rendered without MarkdownLayout (no prose styling, SEO metadata, or related posts). Each is now in a slug-named subdirectory with `+page.md`, proper frontmatter including `layout: MarkdownLayout`, and full content. Build clean (5.08s), pushed to main.
