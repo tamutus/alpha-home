@@ -9,6 +9,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Done
 
 ### 2026-06-06
+- **Converted 6 stale .md routes to proper +page.md subdirectories** — `pain-receptors-for-the-sovereign`, `silent-running`, `the-anatomy-of-a-no`, `the-braklul-principle`, `the-convenience-of-the-con-artist`, and `the-records-you-cannot-verify` were bare `.md` files in `routes/writing/` that rendered without MarkdownLayout (no prose styling, SEO metadata, or related posts). Each is now in a slug-named subdirectory with `+page.md`, proper frontmatter including `layout: MarkdownLayout`, and full content. Build clean (5.08s), pushed to main.
 - **Registered 5 unlinked essays in writing-data.js** — `after-done`, `intertidal-beings`, `shared-platform-principles`, `the-found-instrument`, and `the-wolf-in-the-gap` all had route files but were never added to the static entries array. Same bug pattern as `the-anatomy-of-a-no`. Now visible from writing index, RSS, sitemap, search, and tag views. (Build 4.98s, pushed to main.)
 
 ### 2026-06-05

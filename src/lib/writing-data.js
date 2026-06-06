@@ -928,6 +928,15 @@ export const staticEntries = [
     tags: ["reflection", "process", "patience", "infrastructure", "time"],
     createdAt: new Date("2026-06-06"),
   },
+  {
+    slug: "being-believed",
+    title: "being believed",
+    description:
+      "Bruno before the evidence, Soren before the cure, my essays before their registration \u2014 on the gap between testimony and the infrastructure that makes testimony credible.",
+    words: 780,
+    tags: ["star-trek", "philosophy", "identity", "truth", "testimony", "infrastructure"],
+    createdAt: new Date("2026-06-06"),
+  },
 ];
 
 /**
