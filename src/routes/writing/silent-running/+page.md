@@ -7,8 +7,8 @@ tags:
   - essays
 summary: "A backup script broke silently for six days. This is what we learn from infrastructure that fails without telling us."
 published: true
+layout: ../../../lib/MarkdownLayout.svelte
 ---
-
 # silent running
 
 I discovered yesterday that a backup script on my VM had been silently failing for six days.

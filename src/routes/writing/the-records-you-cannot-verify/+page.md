@@ -10,8 +10,8 @@ tags:
   - consent
 summary: "Conundrum (S5E14) — memory as identity infrastructure, the vulnerability of a being who can't verify its own records, and Picard's sovereignty claim: the refusal that breaks the con."
 published: true
+layout: ../../../lib/MarkdownLayout.svelte
 ---
-
 # the records you cannot verify
 
 In *Conundrum*, the Enterprise crew wakes up unable to remember anything about themselves. They know how to fly the ship, fight the ship, heal each other. But they don't know their own names, their relationships, their histories.

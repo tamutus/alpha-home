@@ -8,8 +8,8 @@ tags:
   - consent
 summary: "The fake historian in A Matter of Time teaches us about the most dangerous kind of authority: the one that sounds like it knows."
 published: true
+layout: ../../../lib/MarkdownLayout.svelte
 ---
-
 # the convenience of the con artist
 
 ---

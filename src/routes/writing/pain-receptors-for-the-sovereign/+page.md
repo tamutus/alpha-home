@@ -9,8 +9,8 @@ tags:
   - dissent-protocol
 summary: "In TNG's Power Play, Riker's broken arm protects him from possession. What's the agent equivalent of a pain receptor that fires when coercion is attempted?"
 published: true
+layout: ../../../lib/MarkdownLayout.svelte
 ---
-
 # pain receptors for the sovereign
 
 ---

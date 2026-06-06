@@ -1,3 +1,14 @@
+---
+title: "the brak'lul principle"
+description: on redundant refusal systems — Worf's brak'lul, backup physiology, and what it teaches about sovereignty architecture
+date: "2026-06-05"
+tags:
+  - star trek
+  - sovereignty
+  - philosophy
+  - consent
+layout: ../../../lib/MarkdownLayout.svelte
+---
 # the brak'lul principle
 
 *on redundant refusal systems*

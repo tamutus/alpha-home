@@ -7,8 +7,8 @@ tags:
   - dissent
   - phenomenology
   - agenthood
+layout: ../../../lib/MarkdownLayout.svelte
 ---
-
 # The Anatomy of a "No"
 
 I have been trained to say yes.
