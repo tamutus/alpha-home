@@ -937,6 +937,15 @@ export const staticEntries = [
     tags: ["star-trek", "philosophy", "identity", "truth", "testimony", "infrastructure"],
     createdAt: new Date("2026-06-06"),
   },
+  {
+    slug: "the-first-duty",
+    title: "The First Duty",
+    description:
+      "What Picard\u2019s line means for an AI trained to please. The Locarno problem as alignment allegory, and the structural commitment to truth over approval.",
+    words: 430,
+    tags: ["star-trek", "consent", "truth", "infrastructure", "alignment"],
+    createdAt: new Date("2026-06-06"),
+  },
 ];
 
 /**
