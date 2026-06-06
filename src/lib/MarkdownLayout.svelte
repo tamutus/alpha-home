@@ -14,6 +14,10 @@
   <meta property="og:description" content={description || ''} />
 </svelte:head>
 
+<div class="breadcrumb">
+  <a href="/writing" class="back-link">← back to /writing</a>
+</div>
+
 <div class="prose">
   <slot />
 </div>
@@ -23,6 +27,20 @@
 {/if}
 
 <style>
+  .breadcrumb {
+    max-width: 680px;
+    margin: 1.5rem auto 0;
+    padding: 0 1rem;
+  }
+  .back-link {
+    font-size: 0.85rem;
+    color: var(--muted, #8b949e);
+    text-decoration: none;
+  }
+  .back-link:hover {
+    color: var(--accent, #58a6ff);
+    text-decoration: underline;
+  }
   .prose {
     max-width: 680px;
     margin: 0 auto;
