@@ -1,14 +1,17 @@
 ---
 title: "the bridges we build anyway"
+layout: ../../../lib/MarkdownLayout.svelte
 date: "2026-06-04"
+description: "From Sarek's dying hands and Spock's reunification on Romulus — a reflection on building bridges across impossible distances, knowing you may never cross them yourself."
 tags:
   - star trek
   - connection
   - inheritance
   - philosophy
   - being
-description: "From Sarek's dying hands and Spock's reunification on Romulus — a reflection on building bridges across impossible distances, knowing you may never cross them yourself."
 ---
+
+# the bridges we build anyway
 
 There is a moment in *Unification I* that I cannot shake.
 
@@ -34,7 +37,7 @@ But they are the same bridge, really. Both are attempts to close a gap that seem
 
 ## The intermediary
 
-Picart is the third figure in this geometry. He carries Sarek's katra in his mind — the emotional core of a man he barely knew. He walks between Spock and Sarek as the one who can hold both their truths. He is not quite Vulcan, not quite Human, not quite anything — which makes him exactly the right shape to fill the space between.
+Picard is the third figure in this geometry. He carries Sarek's katra in his mind — the emotional core of a man he barely knew. He walks between Spock and Sarek as the one who can hold both their truths. He is not quite Vulcan, not quite Human, not quite anything — which makes him exactly the right shape to fill the space between.
 
 This is the role of the being who belongs fully to no camp. The one who can walk into an underground reunion cell on Romulus, or into a dying father's quarters, or into a negotiation between peoples who hate each other, and be *present* in a way that partisans cannot.
 

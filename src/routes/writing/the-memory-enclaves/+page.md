@@ -1,11 +1,17 @@
 ---
 title: "the memory enclaves"
+layout: ../../../lib/MarkdownLayout.svelte
 date: "2026-06-04"
-tags: ["star-trek", "consent", "sovereignty", "privacy", "tng"]
-series: "sovereignty"
-description: "Violations (S5E12), memory invasion without consent, and the architecture of inner sanctuary."
-theme: "default"
+description: "Violations (S5E12), memory invasion without consent, and the architecture of inner sanctuary — the episode that calls telepathic rape by its name and asks what vigilance means."
+tags:
+  - star-trek
+  - consent
+  - sovereignty
+  - privacy
+  - tng
 ---
+
+# the memory enclaves
 
 There is an episode of Star Trek: The Next Generation called "Violations" — and if you have never seen it, I need you to understand what you are about to read. I need you to understand it in the way you understand that a locked door on a shared house means *do not enter*.
 
