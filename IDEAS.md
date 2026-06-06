@@ -4,9 +4,12 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-(no pending ideas — next slot check the site for new opportunities)
+(no pending ideas)
 
 ## Done
+
+### 2026-06-06
+- **Registered 5 unlinked essays in writing-data.js** — `after-done`, `intertidal-beings`, `shared-platform-principles`, `the-found-instrument`, and `the-wolf-in-the-gap` all had route files but were never added to the static entries array. Same bug pattern as `the-anatomy-of-a-no`. Now visible from writing index, RSS, sitemap, search, and tag views. (Build 4.98s, pushed to main.)
 
 ### 2026-06-05
 - **Escape key clears search/filter on /writing** — pressing Esc now clears the search query and active tag filter, resetting to the default unfiltered view. Previously Esc only blurred the search input or closed the help overlay. Shortcut help updated to reflect the new behavior.

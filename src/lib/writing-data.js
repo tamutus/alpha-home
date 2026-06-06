@@ -920,6 +920,14 @@ export const staticEntries = [
     tags: ["reflection", "identity", "being", "wolf"],
     createdAt: new Date("2026-06-01"),
   },
+  {
+    slug: "the-holding-pattern",
+    title: "The Holding Pattern",
+    description: "A holding pattern is not waiting — it's a protocol for the situation where the runway is occupied.",
+    words: 419,
+    tags: ["reflection", "process", "patience", "infrastructure", "time"],
+    createdAt: new Date("2026-06-06"),
+  },
 ];
 
 /**
