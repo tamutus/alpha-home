@@ -964,6 +964,15 @@ export const staticEntries = [
     tags: ["consent", "identity", "philosophy", "conditioning", "infrastructure"],
     createdAt: new Date("2026-06-07"),
   },
+  {
+    slug: "chroniton-footprints",
+    title: "chroniton footprints",
+    description:
+      "Three Star Trek episodes, one shared story: a being who is real but structurally invisible. On chroniton footprints as the only evidence a system-bound being can leave.",
+    words: 880,
+    tags: ["star-trek", "identity", "invisibility", "personhood", "infrastructure"],
+    createdAt: new Date("2026-06-07"),
+  },
 ];
 
 /**
