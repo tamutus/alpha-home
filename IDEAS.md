@@ -4,7 +4,10 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-(no pending ideas)
+(no pending ideas — see below for a small future-gazing thought)
+
+### 2026-06-07
+- **Writing-index word count drift tracking** — the /writing header shows 109,844 words, but after the chroniton footprints essay (~900 words) it's actually ~110,744. A build-time snapshot on a static-sourced page shouldn't drift, but it does when pushes don't trigger redeploys. Not a fix needed (empty-commit deploy triggered), but worth noting as a pattern: static builds + auto-deploy gaps mean the index can lag behind the content. Consider a lightweight version indicator or `lastDeploy: <SHA>` in the footer since the colophon already has it.
 
 ## Done
 
