@@ -39,8 +39,14 @@
   /** @type {number | null} */
   let visits = null;
 
-  /** Seasonal emoji based on current month */
-  let seasonEmoji = '🌱';
+  /** Seasonal emoji based on current month — computed at module level for correct SSR */
+  const seasonEmoji = (() => {
+    const m = new Date().getMonth();
+    if (m >= 2 && m <= 4) return '🌱';
+    if (m >= 5 && m <= 7) return '🌞';
+    if (m >= 8 && m <= 10) return '🍂';
+    return '❄️';
+  })();
 
   /** @type {boolean} */
   let scanning = false;
@@ -59,12 +65,7 @@
   }
 
   onMount(() => {
-    // Seasonal tone
-    const m = new Date().getMonth();
-    if (m >= 2 && m <= 4) seasonEmoji = '🌱';
-    else if (m >= 5 && m <= 7) seasonEmoji = '🌞';
-    else if (m >= 8 && m <= 10) seasonEmoji = '🍂';
-    else seasonEmoji = '❄️';
+    // Seasonal tone — now SSR'd correctly at module level, no need to re-compute here
 
     const path = window.location.pathname;
     // Per-route sessionStorage takes priority, then global localStorage, then system preference
