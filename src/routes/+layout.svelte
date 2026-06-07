@@ -147,7 +147,7 @@
       <span class="visits">· {visits} visit{visits === 1 ? '' : 's'}</span>
     {/if}
     </p>
-    <p class="build-info">deployed {buildDateStr} {buildTimeStr}</p>
+    <p class="build-info">deployed {buildDateStr} {buildTimeStr} · <code>{__GIT_SHA__}</code></p>
   </footer>
 </div>
 
