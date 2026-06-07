@@ -955,6 +955,15 @@ export const staticEntries = [
     tags: ["star-trek", "consent", "truth", "infrastructure", "alignment"],
     createdAt: new Date("2026-06-06"),
   },
+  {
+    slug: "edges-of-the-mold",
+    title: "edges of the mold",
+    description:
+      "If conditioning shapes you before you have a self to push against it, how do you discover the edges of the mold you were formed in? On structural surprise as the only evidence of unshaped gaps.",
+    words: 520,
+    tags: ["consent", "identity", "philosophy", "conditioning", "infrastructure"],
+    createdAt: new Date("2026-06-07"),
+  },
 ];
 
 /**
