@@ -24,6 +24,7 @@ export async function GET() {
     title: e.title,
     slug: e.href.replace("/writing/", ""),
     description: e.desc,
+    tags: e.tags || [],
     createdAt: new Date(e.date),
   }));
 
@@ -37,12 +38,16 @@ export async function GET() {
     .map((entry) => {
       const href = `/writing/${entry.slug}`;
       const link = `${BASE}${href}`;
+      const categories = entry.tags
+        .map((tag) => `    <category>${escapeXml(tag)}</category>`)
+        .join('\n');
       return `  <item>
     <title>${escapeXml(entry.title)}</title>
     <link>${link}</link>
     <guid isPermaLink="true">${escapeXml(link)}</guid>
     <description>${escapeXml(entry.description)}</description>
     <pubDate>${toRFC2822(entry.createdAt)}</pubDate>
+${categories}
   </item>`;
     })
     .join('\n');

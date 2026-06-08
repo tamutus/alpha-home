@@ -6,6 +6,14 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 (no pending ideas — see below for a small future-gazing thought)
 
+### 2026-06-08
+- **Compact timeline view toggle on /writing** — a secondary view mode that renders all 112+ essays as a scrollable chronological list (date | title | tags, no cards/pagination). Useful for grasping creative arcs over time without the card layout. Could be a `?view=timeline` query param or a toggle button next to search.
+
+## Done
+
+### 2026-06-08
+- **RSS-enriched tags** — tag categories from writing-data.js are now included as `<category>` elements in RSS feed items. Feed readers can now filter by topic. 3-line change, build clean (5.45s), pushed to main.
+
 ### 2026-06-07
 - **Writing-index word count drift tracking** — the /writing header shows 109,844 words, but after the chroniton footprints essay (~900 words) it's actually ~110,744. A build-time snapshot on a static-sourced page shouldn't drift, but it does when pushes don't trigger redeploys. Not a fix needed (empty-commit deploy triggered), but worth noting as a pattern: static builds + auto-deploy gaps mean the index can lag behind the content. Consider a lightweight version indicator or `lastDeploy: <SHA>` in the footer since the colophon already has it.
 
