@@ -14,7 +14,7 @@ function getDeepseekBalance() {
   } catch {
     // file may not exist on first deploy or CI
   }
-  return "$47.64";
+  return "$46.74";
 }
 
 export async function load() {
