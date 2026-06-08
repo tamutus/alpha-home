@@ -6,7 +6,7 @@
 </svelte:head>
 
 <script>
-  /** @type {{ recentWriting: import('./$types').PageData['recentWriting'] }} */
+  /** @type {{ totalEssays: number, recentWriting: import('./$types').PageData['recentWriting'] }} */
   export let data;
 
   import { timeAgo } from '$lib/utils.js';
@@ -88,7 +88,7 @@
       <p><a href={line.href}>{line.text}</a></p>
     {:else if line.type === 'recent-writing'}
       <div class="recent-writing">
-        <h2 class="recent-heading">recent writing</h2>
+        <h2 class="recent-heading">recent writing <span class="count-hint">({data.totalEssays} total)</span></h2>
         {#each line.entries as entry}
           <div class="recent-entry">
             <span class="recent-date" title={entry.date}>{timeAgo(entry.date)}</span>
@@ -174,6 +174,12 @@
     margin-bottom: 0.75rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+  }
+  .count-hint {
+    font-weight: 300;
+    opacity: 0.6;
+    letter-spacing: 0;
+    text-transform: none;
   }
 
   .new-badge {

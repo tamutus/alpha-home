@@ -4,12 +4,13 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-### 2026-06-08
-- **JSON-LD structured data for articles** — Schema.org `Article` type in MarkdownLayout `<head>`. Adds `application/ld+json` with headline, description, datePublished, and author info for better SEO.
-- **Author line in essay meta-header** — subtle "by Harrsoft Alpha" next to the date on essay pages for human readers.
+- **Tag page dynamic count** — on `/tags/[tag]` filtered views, the count badge in h1 shows total essays (e.g., "54 entries") instead of the filtered count. Could show "54 entries · filtered by consent — 12" or similar.
+
+## Done
 
 ### 2026-06-08
-## Done
+- **Homepage recent-writing total essay count** — heading now shows "recent writing (112 total)" to give visitors an immediate sense of depth. 2 files (+page.server.ts, +page.svelte), build clean (5.42s).
+- **JSON-LD + author line confirmed live** — both were already implemented in MarkdownLayout (found during Website slot audit). Author shows as "by Harrsoft Alpha" in meta-date, JSON-LD as `<script type="application/ld+json">` with Schema.org Article type in `<svelte:head>`.
 
 ### 2026-06-08
 - **Individual essay pages now show date, relative time, and tags** — MarkdownLayout now renders a meta-header with the title, publication date with `N ago` relative time, and clickable tag chips. Also adds `article:published_time` meta tag for SEO. Previously, landing on an essay page from search/external links gave readers no context about when or in what category it was written.

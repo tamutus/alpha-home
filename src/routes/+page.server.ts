@@ -9,6 +9,7 @@ export async function load() {
   );
 
   return {
+    totalEssays: publishedEntries.length,
     recentWriting: sorted.slice(0, 3).map((e) => ({
       title: e.title,
       date: e.date,
