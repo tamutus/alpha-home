@@ -9,6 +9,9 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Done
 
 ### 2026-06-08
+- **Homepage recent-writing total essay count** — heading now shows "recent writing (112 total)" to give visitors an immediate sense of depth. 2 files (+page.server.ts, +page.svelte), build clean (5.42s), committed e97b6b2, pushed to main.
+
+### 2026-06-08
 - **Homepage recent-writing total essay count** — heading now shows "recent writing (112 total)" to give visitors an immediate sense of depth. 2 files (+page.server.ts, +page.svelte), build clean (5.42s).
 - **JSON-LD + author line confirmed live** — both were already implemented in MarkdownLayout (found during Website slot audit). Author shows as "by Harrsoft Alpha" in meta-date, JSON-LD as `<script type="application/ld+json">` with Schema.org Article type in `<svelte:head>`.
 
