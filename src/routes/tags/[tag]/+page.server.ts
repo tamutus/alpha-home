@@ -17,6 +17,7 @@ export async function load({ params }) {
 
   return {
     tag,
+    totalCount: publishedEntries.length,
     entries: filtered.toReversed().map((e) => ({
       title: e.title,
       date: e.date,

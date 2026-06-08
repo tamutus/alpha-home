@@ -18,7 +18,7 @@
   }
 </script>
 
-<h1># {tag} <span class="count-badge">{entries.length} entr{entries.length === 1 ? 'y' : 'ies'}</span></h1>
+<h1># {tag} <span class="count-badge">{data.totalCount} entries · tagged {tag} — {entries.length}</span></h1>
 
 {#each entries as entry}
   <article>
