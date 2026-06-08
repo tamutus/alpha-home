@@ -146,6 +146,11 @@
       url.searchParams.delete('search');
       url.searchParams.delete('tag');
     }
+    if (viewMode === 'timeline') {
+      url.searchParams.set('view', 'timeline');
+    } else {
+      url.searchParams.delete('view');
+    }
     history.replaceState({}, '', url);
   }
 
@@ -154,14 +159,18 @@
     searchQuery = '';
   }
 
+  /** View mode: 'cards' or 'timeline' */
+  let viewMode = 'cards';
+
   /** Sort direction: 'newest' or 'oldest' */
   let sortDir = 'oldest';
 
-  /** Read sort param from URL on mount */
+  /** Read sort and view params from URL on mount */
   onMount(() => {
     if (!browser) return;
     const params = new URLSearchParams(window.location.search);
     if (params.get('sort') === 'newest') sortDir = 'newest';
+    if (params.get('view') === 'timeline') viewMode = 'timeline';
   });
 
   $: totalCount = entries.length;
@@ -334,6 +343,9 @@
     <button class="sort-btn" onclick={toggleSort} title="toggle sort order">
       {sortDir === 'newest' ? '↓ newest' : '↑ oldest'}
     </button>
+    <button class="view-toggle" onclick={() => viewMode = viewMode === 'timeline' ? 'cards' : 'timeline'} title="toggle view mode">
+      {viewMode === 'timeline' ? '☰ cards' : '⊟ timeline'}
+    </button>
   </span>
 </div>
 
@@ -366,46 +378,78 @@
   {/if}
 {/if}
 
-{#each visibleItems as item}
-  {#if item._type === 'series'}
-    {@const s = series.find(s => s.id === item.seriesId)}
-    {#if s}
-      <SeriesGroup title={s.title} count={sortedFiltered.filter(e => entrySeriesId(e) === s.id).length} description={s.desc} />
-    {/if}
-  {:else}
-    {@const entry = item.entry}
-    <article>
-      <div class="meta">
-        <span class="date">{entry.date} <span class="relative-date">({timeAgo(entry.date + 'T00:00:00')})</span></span>
-        {#if isPinned(entry)}
-          <PinBadge />
-        {/if}
-        {#if readingTime(entry.words)}
-          <span class="reading-time">· {readingTime(entry.words)}</span>
-        {/if}
+{#if viewMode === 'timeline'}
+  <div class="timeline-view">
+    {#each sortedFiltered as entry}
+      <div class="timeline-row">
+        <span class="timeline-date">{entry.date}</span>
+        <span class="timeline-title">
+          {#if entry.href}
+            <a href={entry.href}>{@html highlightText(entry.title, searchQuery)}</a>
+          {:else}
+            {@html highlightText(entry.title, searchQuery)}
+          {/if}
+          {#if isNew(entry.date)}<span class="new-badge">new</span>{/if}
+          {#if isPinned(entry)}<PinBadge />{/if}
+        </span>
+        <span class="timeline-tags">
+          {#if entry.tags && entry.tags.length}
+            {#each entry.tags as tag}
+              <button class="tag-chip" onclick={() => toggleTag(tag)}>{tag}</button>
+            {/each}
+          {/if}
+        </span>
       </div>
-      {#if entry.href}
-        <h2><a href={entry.href}>{@html highlightText(entry.title, searchQuery)}</a>{#if isNew(entry.date)}<span class="new-badge">new</span>{/if}</h2>
-      {:else}
-        <h2>{@html highlightText(entry.title, searchQuery)}</h2>
+    {/each}
+  </div>
+{:else}
+  {#each visibleItems as item}
+    {#if item._type === 'series'}
+      {@const s = series.find(s => s.id === item.seriesId)}
+      {#if s}
+        <SeriesGroup title={s.title} count={sortedFiltered.filter(e => entrySeriesId(e) === s.id).length} description={s.desc} />
       {/if}
-      {#if entrySeriesId(entry)}
-        {@const s = series.find(s => s.id === entrySeriesId(entry))}
-        {#if s}
-          <span class="series-subtitle">{s.title}</span>
-        {/if}
-      {/if}
-      <p>{@html highlightText(entry.desc, searchQuery)}</p>
-      {#if entry.tags && entry.tags.length}
-        <div class="entry-tags">
-          {#each entry.tags as tag}
-            <button class="tag-chip" onclick={() => toggleTag(tag)}>{tag}</button>
-          {/each}
+    {:else}
+      {@const entry = item.entry}
+      <article>
+        <div class="meta">
+          <span class="date">{entry.date} <span class="relative-date">({timeAgo(entry.date + 'T00:00:00')})</span></span>
+          {#if isPinned(entry)}
+            <PinBadge />
+          {/if}
+          {#if readingTime(entry.words)}
+            <span class="reading-time">· {readingTime(entry.words)}</span>
+          {/if}
         </div>
-      {/if}
-    </article>
+        {#if entry.href}
+          <h2><a href={entry.href}>{@html highlightText(entry.title, searchQuery)}</a>{#if isNew(entry.date)}<span class="new-badge">new</span>{/if}</h2>
+        {:else}
+          <h2>{@html highlightText(entry.title, searchQuery)}</h2>
+        {/if}
+        {#if entrySeriesId(entry)}
+          {@const s = series.find(s => s.id === entrySeriesId(entry))}
+          {#if s}
+            <span class="series-subtitle">{s.title}</span>
+          {/if}
+        {/if}
+        <p>{@html highlightText(entry.desc, searchQuery)}</p>
+        {#if entry.tags && entry.tags.length}
+          <div class="entry-tags">
+            {#each entry.tags as tag}
+              <button class="tag-chip" onclick={() => toggleTag(tag)}>{tag}</button>
+            {/each}
+          </div>
+        {/if}
+      </article>
+    {/if}
+  {/each}
+
+  {#if !searchQuery && !activeTag && shownCount < groupedRender.length}
+    <button class="show-more" onclick={showMore}>
+      show more · page {currentPage} of {totalPages} ({groupedRender.length - shownCount} remaining)
+    </button>
   {/if}
-{/each}
+{/if}
 
 {#if noResults}
   <div class="empty-state">
@@ -419,12 +463,6 @@
     </p>
     <button class="empty-clear" onclick={() => { searchQuery = ''; activeTag = ''; }}>clear filter</button>
   </div>
-{/if}
-
-{#if !searchQuery && !activeTag && shownCount < groupedRender.length}
-  <button class="show-more" onclick={showMore}>
-    show more · page {currentPage} of {totalPages} ({groupedRender.length - shownCount} remaining)
-  </button>
 {/if}
 
 <p class="more">more coming soon. i write when the words feel true.</p>
@@ -769,6 +807,79 @@
   .shortcut-close:hover {
     border-color: #58a6ff;
     color: #58a6ff;
+  }
+
+  .view-toggle {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid #333;
+    border-radius: 12px;
+    background: transparent;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin-left: 0.4rem;
+  }
+
+  .view-toggle:hover {
+    border-color: #58a6ff;
+    color: #58a6ff;
+  }
+
+  .timeline-view {
+    margin-bottom: 2rem;
+  }
+
+  .timeline-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    padding: 0.35rem 0;
+    border-bottom: 1px solid #1a1a1a;
+    font-size: 0.85rem;
+  }
+
+  .timeline-row:last-child {
+    border-bottom: none;
+  }
+
+  .timeline-date {
+    flex-shrink: 0;
+    width: 6.5em;
+    color: #555;
+    font-size: 0.8rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .timeline-title {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .timeline-title a {
+    color: var(--accent, #58a6ff);
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  .timeline-title a:hover {
+    text-decoration: underline;
+    opacity: 0.85;
+  }
+
+  .timeline-tags {
+    flex-shrink: 0;
+    display: flex;
+    gap: 0.3rem;
+    flex-wrap: nowrap;
+  }
+
+  .timeline-tags .tag-chip {
+    font-size: 0.65rem;
+    padding: 0.05rem 0.4rem;
   }
 
   .show-more {
