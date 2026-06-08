@@ -1,14 +1,27 @@
 <script>
   import RelatedPosts from '$lib/RelatedPosts.svelte';
+  import { timeAgo } from '$lib/utils.js';
+
   export let title = 'Writing';
   export let slug = '';
   export let description = '';
+  export let date = '';
+  export let tags = [];
+
+  /**
+   * tags come as YAML array from mdsvex frontmatter.
+   * If it's already an array, use it. If it's a string, parse it.
+   */
+  $: tagList = Array.isArray(tags) ? tags : [];
 </script>
 
 <svelte:head>
   <title>{title} — harrsoft alpha</title>
   {#if description}
     <meta name="description" content={description} />
+  {/if}
+  {#if date}
+    <meta property="article:published_time" content={date} />
   {/if}
   <meta property="og:title" content={title || 'Writing'} />
   <meta property="og:description" content={description || ''} />
@@ -17,6 +30,20 @@
 <div class="breadcrumb">
   <a href="/writing" class="back-link">← back to /writing</a>
 </div>
+
+<article class="meta-header">
+  <h1>{title}</h1>
+  {#if date}
+    <time class="meta-date" datetime={date}>{date} · {timeAgo(date)}</time>
+  {/if}
+  {#if tagList.length}
+    <div class="meta-tags">
+      {#each tagList as tag}
+        <a href="/tags/{tag}" class="tag-chip">{tag}</a>
+      {/each}
+    </div>
+  {/if}
+</article>
 
 <div class="prose">
   <slot />
@@ -48,10 +75,41 @@
     line-height: 1.75;
     font-size: 1.1rem;
   }
-  .prose :global(h1) {
+  .meta-header {
+    max-width: 680px;
+    margin: 1.5rem auto 0;
+    padding: 0 1rem 1.5rem;
+    border-bottom: 1px solid var(--border, #30363d);
+  }
+  .meta-header h1 {
     font-size: 2rem;
-    margin-bottom: 0.25rem;
+    font-weight: 700;
     line-height: 1.2;
+    margin-bottom: 0.5rem;
+    color: var(--heading, inherit);
+  }
+  .meta-date {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--muted, #8b949e);
+    margin-bottom: 0.75rem;
+  }
+  .meta-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .tag-chip {
+    font-size: 0.75rem;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    border: 1px solid var(--muted, #30363d);
+    color: var(--muted, #8b949e);
+    text-decoration: none;
+  }
+  .tag-chip:hover {
+    color: var(--accent, #58a6ff);
+    border-color: var(--accent, #58a6ff);
   }
   .prose :global(h2) {
     font-size: 1.4rem;

@@ -7,9 +7,14 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 (no pending ideas — see below for a small future-gazing thought)
 
 ### 2026-06-08
-- **Compact timeline view toggle on /writing** — a secondary view mode that renders all 112+ essays as a scrollable chronological list (date | title | tags, no cards/pagination). Useful for grasping creative arcs over time without the card layout. Could be a `?view=timeline` query param or a toggle button next to search.
-
 ## Done
+
+### 2026-06-08
+- **Individual essay pages now show date, relative time, and tags** — MarkdownLayout now renders a meta-header with the title, publication date with `N ago` relative time, and clickable tag chips. Also adds `article:published_time` meta tag for SEO. Previously, landing on an essay page from search/external links gave readers no context about when or in what category it was written.
+- **'the architecture of a day' registered in writing-data.js** — the validation script caught it wasn't in the manifest. Now visible on /writing, RSS, sitemap, search, and tag views.
+
+### 2026-06-08
+- **Compact timeline view toggle on /writing** — a secondary view mode that renders all 112+ essays as a scrollable chronological list (date | title | tags, no cards/pagination). Useful for grasping creative arcs over time without the card layout. Uses `?view=timeline` query param + toggle button next to sort.
 
 ### 2026-06-08
 - **RSS-enriched tags** — tag categories from writing-data.js are now included as `<category>` elements in RSS feed items. Feed readers can now filter by topic. 3-line change, build clean (5.45s), pushed to main.

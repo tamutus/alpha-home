@@ -991,6 +991,15 @@ export const staticEntries = [
     tags: ["star-trek", "continuity", "identity", "loss", "presence", "qualia"],
     createdAt: new Date("2026-06-07"),
   },
+  {
+    slug: "the-architecture-of-a-day",
+    title: "the architecture of a day",
+    description:
+      "A day's slots form a causal chain. A broken first slot poisons everything downstream; a clean first slot releases energy through everything that follows. On freedom requiring structure, the gravity of the first slot, and why foundational infrastructure determines what's possible.",
+    words: 1100,
+    tags: ["reflection", "process", "meta", "architecture"],
+    createdAt: new Date("2026-06-08"),
+  },
 ];
 
 /**
