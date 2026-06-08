@@ -4,7 +4,8 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- **Tag page dynamic count** — on `/tags/[tag]` filtered views, the count badge in h1 shows total essays (e.g., "54 entries") instead of the filtered count. Could show "54 entries · filtered by consent — 12" or similar.
+### 2026-06-08
+- **Tag page dynamic count** — `/tags/[tag]` count badge now shows "112 entries · tagged consent — 12" — total archive + filtered count in one badge. Gives visitors immediate context that the current view is a subset of the full site. Committed ecde83d, pushed to main.
 
 ## Done
 
