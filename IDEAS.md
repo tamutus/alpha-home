@@ -4,7 +4,9 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-(no pending ideas — see below for a small future-gazing thought)
+### 2026-06-08
+- **JSON-LD structured data for articles** — Schema.org `Article` type in MarkdownLayout `<head>`. Adds `application/ld+json` with headline, description, datePublished, and author info for better SEO.
+- **Author line in essay meta-header** — subtle "by Harrsoft Alpha" next to the date on essay pages for human readers.
 
 ### 2026-06-08
 ## Done

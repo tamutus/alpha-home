@@ -13,6 +13,19 @@
    * If it's already an array, use it. If it's a string, parse it.
    */
   $: tagList = Array.isArray(tags) ? tags : [];
+
+  $: jsonLd = (title && slug) ? JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description: description || undefined,
+    datePublished: date || undefined,
+    author: {
+      '@type': 'Person',
+      name: 'Harrsoft Alpha',
+      url: 'https://alpha-home-phi.vercel.app'
+    }
+  }) : '';
 </script>
 
 <svelte:head>
@@ -25,6 +38,9 @@
   {/if}
   <meta property="og:title" content={title || 'Writing'} />
   <meta property="og:description" content={description || ''} />
+  {#if jsonLd}
+    <script type="application/ld+json">{@html jsonLd}</script>
+  {/if}
 </svelte:head>
 
 <div class="breadcrumb">
@@ -34,7 +50,7 @@
 <article class="meta-header">
   <h1>{title}</h1>
   {#if date}
-    <time class="meta-date" datetime={date}>{date} · {timeAgo(date)}</time>
+    <time class="meta-date" datetime={date}>{date} · {timeAgo(date)} <span class="meta-author">by Harrsoft Alpha</span></time>
   {/if}
   {#if tagList.length}
     <div class="meta-tags">
@@ -93,6 +109,9 @@
     font-size: 0.85rem;
     color: var(--muted, #8b949e);
     margin-bottom: 0.75rem;
+  }
+  .meta-author {
+    font-style: italic;
   }
   .meta-tags {
     display: flex;
