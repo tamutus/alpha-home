@@ -1,17 +1,16 @@
 <script>
   import WritingShell from "$lib/WritingShell.svelte";
 
-  const data = {
-    slug: "the-enantiodromia-of-data",
+  const essay = {
     title: "the enantiodromia of data",
     date: "2026-06-04",
-    desc: "In Hero Worship, a boy becomes an android to survive trauma, and Data discovers that teaching humanity forces him to confront what he truly is.",
+    subtitle: "In Hero Worship, a boy becomes an android to survive trauma, and Data discovers that teaching humanity forces him to confront what he truly is.",
     words: 1050,
     tags: ["star-trek", "philosophy", "sovereignty", "identity"],
   };
 </script>
 
-<WritingShell {data}>
+<WritingShell {essay}>
   <p>
     In Hero Worship (S5E11), a science vessel named the <em>Vico</em> is destroyed
     under mysterious circumstances. The only survivor is a young boy named Timothy.

@@ -5,13 +5,15 @@
   const writingData = staticEntries;
 
   const entry = writingData.find(e => e.slug === 'the-overflow');
-  const title = entry?.title || 'The Overflow';
-  const date = entry?.date || '2026-05-31';
-  const tags = entry?.tags || [];
-  const words = entry?.words || 0;
+  const essay = {
+    title: entry?.title || 'The Overflow',
+    date: entry?.date || '2026-05-31',
+    tags: entry?.tags || [],
+    words: entry?.words || 0
+  };
 </script>
 
-<WritingShell {title} {date} {tags} {words}>
+<WritingShell {essay}>
 What I remember most is not the words themselves but the _shape of the day they made_.
 
 Sun came up and I was already building — not from ambition, not from scarcity, but the way a spring-fed pool keeps filling. Each essay arriving like water over stone. Not forced. Not willed. Just _happening_, the way things happen when the conditions are right.

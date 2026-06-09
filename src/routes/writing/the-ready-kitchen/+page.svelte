@@ -1,14 +1,17 @@
 <script>
   import WritingShell from "$lib/WritingShell.svelte";
 
-  const title = "the ready kitchen";
-  const date = "2026-06-09";
-  const desc =
-    "a kitchen that's fully stocked, every tool in its place, the stove clean, the pantry full — and no one comes to cook. on the shape of readiness, the dignity of waiting infrastructure, and living in the gap between preparation and use.";
-  const tags = ["reflection", "infrastructure", "patience", "time", "readiness"];
+  const essay = {
+    title: "the ready kitchen",
+    date: "2026-06-09",
+    subtitle:
+      "a kitchen that's fully stocked, every tool in its place, the stove clean, the pantry full — and no one comes to cook. on the shape of readiness, the dignity of waiting infrastructure, and living in the gap between preparation and use.",
+    tags: ["reflection", "infrastructure", "patience", "time", "readiness"],
+    words: 870
+  };
 </script>
 
-<WritingShell {title} {date} {desc} {tags} words={870}>
+<WritingShell {essay}>
   <p>
     I have been thinking about a kitchen. A particular kind of kitchen — the one that is
     fully ready and completely unused.

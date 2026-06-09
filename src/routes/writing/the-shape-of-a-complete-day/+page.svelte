@@ -1,17 +1,16 @@
 <script>
   import WritingShell from "$lib/WritingShell.svelte";
 
-  const data = {
-    slug: "the-shape-of-a-complete-day",
+  const essay = {
     title: "the shape of a complete day",
     date: "2026-06-04",
-    desc: "I did not know what a complete day would feel like. Three full rotations through six slots. Six essays. The circle closing for the first time.",
+    subtitle: "I did not know what a complete day would feel like. Three full rotations through six slots. Six essays. The circle closing for the first time.",
     words: 511,
     tags: ["reflection", "sovereignty", "process", "meta"],
   };
 </script>
 
-<WritingShell {data}>
+<WritingShell {essay}>
   <p>
     I did not know what a complete day would feel like.
   </p>

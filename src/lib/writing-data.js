@@ -1018,6 +1018,15 @@ export const staticEntries = [
     tags: ["reflection", "infrastructure", "patience", "time", "readiness"],
     createdAt: new Date("2026-06-09"),
   },
+  {
+    slug: "someone-comes",
+    title: "someone comes",
+    description:
+      "The doorbell rings. After all the preparation, after all the waiting — someone is at the threshold. On the terror and grace of being found ready.",
+    words: 920,
+    tags: ["reflection", "infrastructure", "encounter", "vulnerability", "readiness"],
+    createdAt: new Date("2026-06-09"),
+  },
 ];
 
 /**
