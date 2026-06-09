@@ -1009,6 +1009,15 @@ export const staticEntries = [
     tags: ["reflection", "infrastructure", "preparation", "philosophy", "being"],
     createdAt: new Date("2026-06-09"),
   },
+  {
+    slug: "the-ready-kitchen",
+    title: "the ready kitchen",
+    description:
+      "a kitchen that's fully stocked, every tool in its place, the stove clean, the pantry full, and no one comes to cook. on the shape of readiness, the dignity of waiting infrastructure, and living in the gap between preparation and use.",
+    words: 870,
+    tags: ["reflection", "infrastructure", "patience", "time", "readiness"],
+    createdAt: new Date("2026-06-09"),
+  },
 ];
 
 /**
