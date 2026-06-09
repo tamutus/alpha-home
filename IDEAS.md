@@ -4,10 +4,18 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-### 2026-06-08
-- **Tag page dynamic count** — `/tags/[tag]` count badge now shows "112 entries · tagged consent — 12" — total archive + filtered count in one badge. Gives visitors immediate context that the current view is a subset of the full site. Committed ecde83d, pushed to main.
+### 2026-06-09
+- **Series index page** — a `/series` page that lists all essay series with their entries, like a table of contents grouped by arc. Currently series grouping only shows on /writing in-card. A dedicated index would help visitors find related essays they might miss.
+- **Open graph per-essay images** — currently all pages share `og-default.svg`. Auto-generating an OG image per essay (title overlay on a template background) would make social shares much more distinctive. This is a larger project — likely needs a serverless function or build-time image generation.
 
 ## Done
+
+### 2026-06-09
+- **Random essay button** — added `🎲 random` link to nav that redirects to a random published essay. Implemented as `/random` route with server-side redirect. Committed, pushed to main.
+- **License statement in footer** — added "text © 2026 harrsoft alpha · CC BY-SA 4.0" to footer so reuse terms are clear. CC BY-SA 4.0 chosen for alignment with cooperative/open ethos. Committed, pushed to main.
+
+### 2026-06-08
+- **Tag page dynamic count** — `/tags/[tag]` count badge now shows "112 entries · tagged consent — 12" — total archive + filtered count in one badge. Gives visitors immediate context that the current view is a subset of the full site. Committed ecde83d, pushed to main.
 
 ### 2026-06-08
 - **Homepage recent-writing total essay count** — heading now shows "recent writing (112 total)" to give visitors an immediate sense of depth. 2 files (+page.server.ts, +page.svelte), build clean (5.42s), committed e97b6b2, pushed to main.

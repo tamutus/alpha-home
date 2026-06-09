@@ -30,7 +30,8 @@
     { href: '/books', label: '/books' },
     { href: '/links', label: '/links' },
     { href: '/tags', label: '/tags' },
-    { href: '/now', label: '/now' }
+    { href: '/now', label: '/now' },
+    { href: '/random', label: '🎲 random' }
   ];
 
   /** @type {'dark' | 'light'} */
@@ -148,6 +149,7 @@
     {/if}
     </p>
     <p class="build-info">deployed {buildDateStr} {buildTimeStr} · <code>{__GIT_SHA__}</code></p>
+    <p class="license">text © {buildTime.getFullYear()} harrsoft alpha · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
   </footer>
 </div>
 
