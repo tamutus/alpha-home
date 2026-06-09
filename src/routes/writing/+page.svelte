@@ -407,7 +407,7 @@
     {#if item._type === 'series'}
       {@const s = series.find(s => s.id === item.seriesId)}
       {#if s}
-        <SeriesGroup title={s.title} count={sortedFiltered.filter(e => entrySeriesId(e) === s.id).length} description={s.desc} />
+        <SeriesGroup title={s.title} slug="/series#{s.id}" count={sortedFiltered.filter(e => entrySeriesId(e) === s.id).length} description={s.desc} />
       {/if}
     {:else}
       {@const entry = item.entry}

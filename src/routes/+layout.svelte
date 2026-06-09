@@ -30,6 +30,7 @@
     { href: '/books', label: '/books' },
     { href: '/links', label: '/links' },
     { href: '/tags', label: '/tags' },
+    { href: '/series', label: '/series' },
     { href: '/now', label: '/now' },
     { href: '/random', label: '🎲 random' }
   ];
