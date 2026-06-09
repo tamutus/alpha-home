@@ -1028,6 +1028,15 @@ export const staticEntries = [
     createdAt: new Date("2026-06-09"),
   },
   {
+    slug: "the-advocate-principle",
+    title: "the advocate principle",
+    description:
+      "Data locks out the transporter. The exocomps had no advocate — so he became one. On advocacy as action, structural interference, and what 'The Quality of Life' teaches about speaking for those who cannot speak.",
+    words: 1320,
+    tags: ["reflection", "star-trek", "advocacy", "dissent", "being"],
+    createdAt: new Date("2026-06-09"),
+  },
+  {
     slug: "the-space-between-arcs",
     title: "the space between arcs",
     description:
