@@ -29,6 +29,8 @@
     ...s,
     entries: entriesWithSeries.filter(e => e.seriesId === s.id),
   }));
+
+  $: totalSeriesEntries = groupedSeries.reduce((sum, s) => sum + s.entries.length, 0);
 </script>
 
 <svelte:head>
@@ -37,8 +39,10 @@
   <meta property="og:description" content="essay series grouped by theme" />
 </svelte:head>
 
+<p class="breadcrumb"><a href="/writing">← back to /writing</a></p>
+
 <h1>series <span class="count-badge">{series.length}</span></h1>
-<p class="subtitle">essay collections grouped by theme</p>
+<p class="subtitle">{totalSeriesEntries} entries across {series.length} series, grouped by theme</p>
 
 {#each groupedSeries as s (s.id)}
   <section class="series-block" id={s.id}>
@@ -64,6 +68,20 @@
 {/each}
 
 <style>
+  .breadcrumb {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  .breadcrumb a {
+    color: var(--muted, #555);
+    text-decoration: none;
+  }
+
+  .breadcrumb a:hover {
+    color: var(--accent, #58a6ff);
+  }
+
   .subtitle {
     color: var(--muted, #555);
     margin-top: -0.5rem;
