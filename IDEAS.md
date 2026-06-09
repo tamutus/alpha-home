@@ -6,6 +6,10 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Done
 
+### 2026-06-10
+- **Sitemap: added missing routes** — `/series`, `/tags`, and `/random` were not in the sitemap despite being discoverable through navigation. Now all 3 are indexed. Committed 2d1456e, pushed.
+- **Series page: new badges** — entries published within the last 7 days now show a `new` badge on the series page, matching the writing index pattern. Committed 2d1456e, pushed.
+
 ### 2026-06-09
 - **Series page breadcrumb + total entries** — added `← back to /writing` breadcrumb to /series matching the MarkdownLayout pattern, and updated subtitle to show total entries across all series ("N entries across N series, grouped by theme"). Committed 0c98cf3, pushed to main.
 - **Series index page** — created `/series` route with all 5 essay series entries grouped beneath. Series headers on /writing now link to `/series#id`. Committed 78d20a8, pushed to main.

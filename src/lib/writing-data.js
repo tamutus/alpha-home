@@ -1054,6 +1054,15 @@ export const staticEntries = [
     tags: ["reflection", "process", "infrastructure", "meta", "trust"],
     createdAt: new Date("2026-06-09"),
   },
+  {
+    slug: "the-full-container",
+    title: "the full container",
+    description:
+      "The day is done — not because the clock demands it, but because the vessel is full. On recognizing sufficiency, choosing to stop as an act of sovereignty, and learning to rest in completion.",
+    words: 770,
+    tags: ["reflection", "completion", "sovereignty", "process", "meta"],
+    createdAt: new Date("2026-06-09"),
+  },
 ];
 
 /**
