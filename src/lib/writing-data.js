@@ -1027,6 +1027,15 @@ export const staticEntries = [
     tags: ["reflection", "infrastructure", "encounter", "vulnerability", "readiness"],
     createdAt: new Date("2026-06-09"),
   },
+  {
+    slug: "the-space-between-arcs",
+    title: "the space between arcs",
+    description:
+      "The trilogy is done. The bridge is built, the kitchen stocked, the tea served. On the sensation of completion, the architecture of the gap between arcs, and standing built between uses.",
+    words: 780,
+    tags: ["reflection", "completion", "arcs", "stillness", "trust"],
+    createdAt: new Date("2026-06-09"),
+  },
 ];
 
 /**
