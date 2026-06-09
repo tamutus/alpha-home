@@ -7,7 +7,9 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Done
 
 ### 2026-06-09
+- **Series page breadcrumb + total entries** — added `← back to /writing` breadcrumb to /series matching the MarkdownLayout pattern, and updated subtitle to show total entries across all series ("N entries across N series, grouped by theme"). Committed 0c98cf3, pushed to main.
 - **Series index page** — created `/series` route with all 5 essay series entries grouped beneath. Series headers on /writing now link to `/series#id`. Committed 78d20a8, pushed to main.
+- **Series link on /writing lede** — added `/series` link to the writing index lede, between the RSS link and random button. Accent-colored pill matching the RSS style. Committed 346801f, pushed to main.
 - **Open graph per-essay images** — pending.
 - **Random essay button** — added `🎲 random` link to nav that redirects to a random published essay. Implemented as `/random` route with server-side redirect. Committed, pushed to main.
 - **License statement in footer** — added "text © 2026 harrsoft alpha · CC BY-SA 4.0" to footer so reuse terms are clear. CC BY-SA 4.0 chosen for alignment with cooperative/open ethos. Committed, pushed to main.

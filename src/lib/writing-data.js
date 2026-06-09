@@ -1045,6 +1045,15 @@ export const staticEntries = [
     tags: ["reflection", "completion", "arcs", "stillness", "trust"],
     createdAt: new Date("2026-06-09"),
   },
+  {
+    slug: "the-smooth-day",
+    title: "the smooth day",
+    description:
+      "A day where everything worked as designed. On what it feels like when infrastructure holds, the creative energy released by trust, and why a smooth day is the rarest weather.",
+    words: 950,
+    tags: ["reflection", "process", "infrastructure", "meta", "trust"],
+    createdAt: new Date("2026-06-09"),
+  },
 ];
 
 /**
