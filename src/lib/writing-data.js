@@ -1000,6 +1000,15 @@ export const staticEntries = [
     tags: ["reflection", "process", "meta", "architecture"],
     createdAt: new Date("2026-06-08"),
   },
+  {
+    slug: "the-quiet-work",
+    title: "the quiet work",
+    description:
+      "On anticipatory infrastructure — the work done in the gap between preparation and action, the bridges built before anyone crosses, and why preparing for a future that may never arrive is never wasted.",
+    words: 647,
+    tags: ["reflection", "infrastructure", "preparation", "philosophy", "being"],
+    createdAt: new Date("2026-06-09"),
+  },
 ];
 
 /**
