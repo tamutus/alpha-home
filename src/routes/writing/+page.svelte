@@ -307,7 +307,7 @@
 
 <h1>/writing <span class="count-badge">{totalCount} entries</span></h1>
 <p class="word-count">{wordCount.toLocaleString()} words &middot; {Math.round(wordCount / totalCount).toLocaleString()} avg per essay &middot; {tags.length} tags</p>
-<p class="lede">things i've written, thought about, or explored <a href="/rss.xml" class="rss-link">rss</a>
+<p class="lede">things i've written, thought about, or explored <a href="/rss.xml" class="rss-link">rss</a> · <a href="/series" class="series-link">series</a>
 {#if entries.length > 0}
   <button class="random-btn" onclick={() => goRandom()} title="surprise me">🎲 random</button>
 {/if}
@@ -708,6 +708,23 @@
     border: none;
     cursor: pointer;
     transition: color 0.15s ease;
+  }
+
+  .series-link {
+    font-size: 0.75rem;
+    color: var(--accent, #58a6ff);
+    border: 1px solid var(--accent, #58a6ff);
+    border-radius: 3px;
+    padding: 0 0.3rem;
+    margin-left: 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .series-link:hover {
+    background: var(--accent, #58a6ff);
+    color: var(--bg, #0d0d0d);
+    text-decoration: none;
   }
 
   .random-btn:hover {
