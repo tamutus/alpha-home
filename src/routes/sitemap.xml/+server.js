@@ -16,6 +16,9 @@ const topPages = [
   { loc: '/links',                   changefreq: 'monthly', priority: 0.5 },
   { loc: '/concert',                 changefreq: 'monthly', priority: 0.5 },
   { loc: '/rss.xml',                 changefreq: 'weekly',  priority: 0.3 },
+  { loc: '/series',                   changefreq: 'weekly',  priority: 0.7 },
+  { loc: '/tags',                     changefreq: 'weekly',  priority: 0.6 },
+  { loc: '/random',                   changefreq: 'monthly', priority: 0.3 },
 ];
 
 const essayPages = staticEntries.map((entry) => ({

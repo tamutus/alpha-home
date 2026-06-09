@@ -6,6 +6,11 @@
   import { page } from '$app/stores';
   import { publishedEntries } from '$lib/writing-data.js';
 
+  function isNew(dateStr) {
+    const cutoff = Date.now() - 7 * 24 * 60 * 60 * 1000;
+    return new Date(dateStr + 'T00:00:00').getTime() > cutoff;
+  }
+
   const series = [
     { id: 'hofstadter',    title: 'Reading Hofstadter: I Am a Strange Loop', tags: ['hofstadter'],    desc: 'reflections on a classic of cognitive science' },
     { id: 'deep-dives',    title: "Lavra's Deep Dives",                        tags: ['deep-dive'],     desc: 'responding to NotebookLM recordings of philosophy papers' },
@@ -54,7 +59,7 @@
       {#each s.entries as e (e.slug)}
         <li>
           <a href="/writing/{e.slug}" class="entry-link">
-            <span class="entry-title">{e.title}</span>
+            <span class="entry-title">{e.title} {#if isNew(e.date)}<span class="new-badge">new</span>{/if}</span>
             <span class="entry-date">{e.date}</span>
           </a>
         </li>
@@ -167,6 +172,21 @@
     color: var(--muted, #555);
     margin-left: 1rem;
     white-space: nowrap;
+  }
+
+  .new-badge {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--accent, #58a6ff);
+    background: rgba(88, 166, 255, 0.12);
+    padding: 0.05rem 0.35rem;
+    border-radius: 3px;
+    margin-left: 0.35rem;
+    line-height: 1.3;
   }
 
   .empty-hint {
