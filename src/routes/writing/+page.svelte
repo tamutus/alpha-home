@@ -313,6 +313,8 @@
 {/if}
 </p>
 
+<p class="shortcut-hint">keyboard: <kbd>/</kbd> search · <kbd>n</kbd> <kbd>p</kbd> navigate · <kbd>t</kbd> top · <kbd>r</kbd> rss · <kbd>?</kbd> shortcuts</p>
+
 <div class="search-bar">
   <div class="search-wrapper">
     <input
@@ -353,7 +355,7 @@
 
 {#if showShortcutHelp}
   <div class="shortcut-help" role="dialog" aria-label="keyboard shortcuts">
-    <h3>keyboard shortcuts <kbd>/</kbd><kbd>s</kbd> search / <kbd>n</kbd> <kbd>p</kbd> navigate / <kbd>t</kbd> top / <kbd>r</kbd> rss / <kbd>?</kbd> help</h3>
+    <h3>keyboard shortcuts</h3>
     <dl>
       <div><kbd>/</kbd><span>focus search</span></div>
       <div><kbd>s</kbd><span>focus search (alt)</span></div>
@@ -776,6 +778,21 @@
     margin-bottom: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+  }
+  .shortcut-hint {
+    font-size: 0.8rem;
+    color: var(--text-muted, #8b949e);
+    margin: 0 0 0.75rem;
+    line-height: 1.6;
+  }
+  .shortcut-hint kbd {
+    display: inline;
+    padding: 0.1rem 0.3rem;
+    font-size: 0.75rem;
+    border-radius: 3px;
+    background: var(--bg-subtle, #21262d);
+    border: 1px solid var(--border, #30363d);
+    font-family: var(--font-mono, monospace);
   }
 
   .shortcut-help dl {

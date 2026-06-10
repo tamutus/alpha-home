@@ -3,14 +3,14 @@
 Drop ideas here when they occur. Small/clear ones get implemented during Website slots.
 
 ## Pending
-- **Heading anchor links on essay pages** — when hovering over an h2/h3 in prose, show a clickable `#` link that scrolls to that section. Readers share specific sections, not just the top of an essay.
 - **Series prev/next navigation on essay pages** — on individual essay pages, if the essay belongs to a series, show "← previous in series" and "next in series →" links below the content. Requires adding series metadata to writing-data.js entries.
 - **Keyboard shortcut help / discoverability** — the /writing page has keyboard shortcuts (`s` search, `t` top, `r` RSS, `/` focus search, `Esc` clear) but they're only visible via a help button. Consider a small persistent hint line showing active shortcuts.
-- **Estimated reading time on essay pages** — the writing index shows "N min read" but individual essay pages don't. Simple: compute from word count and render in meta line.
 
 ## Done
 
 ### 2026-06-10
+- **Heading anchor links on essay pages** — h2/h3 elements now get slugified IDs and a hover-reveal `§` anchor link. Implemented as a Svelte `use:action` (heading-anchors.js), wired into MarkdownLayout. Committed 0787d49, pushed.
+- **Estimated reading time on essay pages** — MarkdownLayout now counts words in rendered prose via a Svelte `use:action` (200 WPM) and shows `<n> min read` in the meta-date line. Committed b6001f4, pushed.
 - **Copy permalink button on essay pages** — a 🔗 button in the meta-header that copies the essay URL to clipboard via `navigator.clipboard.writeText()`, with a "copied!" confirmation. Added to MarkdownLayout. Committed, pushed.
 - **Sitemap: added missing routes** — `/series`, `/tags`, and `/random` were not in the sitemap despite being discoverable through navigation. Now all 3 are indexed. Committed 2d1456e, pushed.
 - **Series page: new badges** — entries published within the last 7 days now show a `new` badge on the series page, matching the writing index pattern. Committed 2d1456e, pushed.
