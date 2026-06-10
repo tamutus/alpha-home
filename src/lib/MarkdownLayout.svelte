@@ -1,6 +1,7 @@
 <script>
   import RelatedPosts from '$lib/RelatedPosts.svelte';
   import { timeAgo } from '$lib/utils.js';
+  import { headingAnchors } from '$lib/heading-anchors.js';
 
   export let title = 'Writing';
   export let slug = '';
@@ -89,7 +90,7 @@
   </button>
 </article>
 
-<div class="prose" use:countReadingTime>
+<div class="prose" use:countReadingTime use:headingAnchors>
   <slot />
 </div>
 
@@ -184,6 +185,32 @@
     font-size: 1.4rem;
     margin-top: 2rem;
     margin-bottom: 0.75rem;
+  }
+  .prose :global(h3) {
+    font-size: 1.15rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  :global(.prose .heading-anchor) {
+    opacity: 0;
+    transition: opacity 0.15s;
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: 400;
+    margin-left: 0.15em;
+    margin-right: 0.1em;
+    color: var(--muted, #8b949e);
+    vertical-align: middle;
+    user-select: none;
+  }
+  :global(.prose .has-anchor:hover .heading-anchor) {
+    opacity: 1;
+  }
+  :global(.prose .heading-anchor:focus-visible) {
+    opacity: 1;
+  }
+  :global(.prose .heading-anchor:hover) {
+    color: var(--accent, #58a6ff);
   }
   .prose :global(hr) {
     border: none;
