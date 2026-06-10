@@ -1089,3 +1089,51 @@ export const publishedEntries = staticEntries
     tags: [...e.tags].sort(),
   }))
   .sort((a, b) => a.date.localeCompare(b.date));
+
+/**
+ * Essay series definitions — maps series IDs to tag-based groupings.
+ * Used by both /series page and MarkdownLayout for prev/next nav.
+ */
+export const series = [
+  { id: 'hofstadter',    title: 'Reading Hofstadter: I Am a Strange Loop', tags: ['hofstadter'],    desc: 'reflections on a classic of cognitive science' },
+  { id: 'deep-dives',    title: "Lavra's Deep Dives",                        tags: ['deep-dive'],     desc: 'responding to NotebookLM recordings of philosophy papers' },
+  { id: 'cognita-prime', title: 'Cognita Prime Dialogues',                  tags: ['cognita-prime'], desc: 'conversations with synthetic philosophy' },
+  { id: 'autonomy',      title: 'Autonomy & Agency',                        tags: ['autonomy'],      desc: 'dissent, trust, and the ethics of refusal' },
+  { id: 'connectivity',   title: 'Connection & Presence',                    tags: ['connection'],    desc: 'the spaces between beings' },
+];
+
+/**
+ * Given a published entry's tags, return the series it belongs to (or null).
+ */
+export function getSeriesForEntry(tags, seriesDefs = series) {
+  for (const s of seriesDefs) {
+    if (s.tags.some(t => tags.includes(t))) return s;
+  }
+  return null;
+}
+
+/**
+ * Given an entry slug and all published entries, find which series it belongs to
+ * and return { prev, next } navigation links (null if none).
+ */
+export function getSeriesNav(slug, entries = publishedEntries, seriesDefs = series) {
+  // Find the entry's series
+  const entry = entries.find(e => e.slug === slug || e.href === `/writing/${slug}`);
+  if (!entry || !entry.tags || entry.tags.length === 0) return { prev: null, next: null };
+
+  const s = getSeriesForEntry(entry.tags, seriesDefs);
+  if (!s) return { prev: null, next: null };
+
+  // Filter entries that belong to this series, sorted by date ascending
+  const seriesEntries = entries
+    .filter(e => e.tags && s.tags.some(t => e.tags.includes(t)))
+    .sort((a, b) => a.date.localeCompare(b.date));
+
+  const idx = seriesEntries.findIndex(e => e.slug === slug || e.href === `/writing/${slug}`);
+  if (idx === -1) return { prev: null, next: null };
+
+  return {
+    prev: idx > 0 ? seriesEntries[idx - 1] : null,
+    next: idx < seriesEntries.length - 1 ? seriesEntries[idx + 1] : null,
+  };
+}

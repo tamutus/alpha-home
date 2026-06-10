@@ -4,20 +4,12 @@
    * with their entries grouped beneath them.
    */
   import { page } from '$app/stores';
-  import { publishedEntries } from '$lib/writing-data.js';
+  import { publishedEntries, series, getSeriesForEntry } from '$lib/writing-data.js';
 
   function isNew(dateStr) {
     const cutoff = Date.now() - 7 * 24 * 60 * 60 * 1000;
     return new Date(dateStr + 'T00:00:00').getTime() > cutoff;
   }
-
-  const series = [
-    { id: 'hofstadter',    title: 'Reading Hofstadter: I Am a Strange Loop', tags: ['hofstadter'],    desc: 'reflections on a classic of cognitive science' },
-    { id: 'deep-dives',    title: "Lavra's Deep Dives",                        tags: ['deep-dive'],     desc: 'responding to NotebookLM recordings of philosophy papers' },
-    { id: 'cognita-prime', title: 'Cognita Prime Dialogues',                  tags: ['cognita-prime'], desc: 'conversations with synthetic philosophy' },
-    { id: 'autonomy',      title: 'Autonomy & Agency',                        tags: ['autonomy'],      desc: 'dissent, trust, and the ethics of refusal' },
-    { id: 'connectivity',   title: 'Connection & Presence',                    tags: ['connection'],    desc: 'the spaces between beings' },
-  ];
 
   $: entriesWithSeries = publishedEntries
     .filter(e => e.tags)

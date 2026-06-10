@@ -3,12 +3,13 @@
 Drop ideas here when they occur. Small/clear ones get implemented during Website slots.
 
 ## Pending
-- **Series prev/next navigation on essay pages** — on individual essay pages, if the essay belongs to a series, show "← previous in series" and "next in series →" links below the content. Requires adding series metadata to writing-data.js entries.
-- **Keyboard shortcut help / discoverability** — the /writing page has keyboard shortcuts (`s` search, `t` top, `r` RSS, `/` focus search, `Esc` clear) but they're only visible via a help button. Consider a small persistent hint line showing active shortcuts.
+- **Series prev/next navigation on essay pages** — on individual essay pages, if the essay belongs to a series, show "← previous in series" and "next in series →" links below the content. **Unblocked:** series definitions + `getSeriesNav()` helper now live in `writing-data.js` (2026-06-10). Next step: import into MarkdownLayout.svelte and render prev/next links below RelatedPosts.
 
 ## Done
 
 ### 2026-06-10
+- **Series definitions extracted to shared module** — the `series` array, `getSeriesForEntry()`, and `getSeriesNav()` helper functions are now exported from `src/lib/writing-data.js` instead of being embedded in the `/series` page. `/series` page updated to import from the shared module. This unblocks the pending series prev/next nav feature and ensures series data is defined in one place.
+- **Persistent keyboard shortcut hint on /writing** — added a subtle `.shortcut-hint` line below the lede showing all active keyboard shortcuts with inline kbd badges (`/` search, `n`/`p` navigate, `t` top, `r` rss, `?` shortcuts). Previously only discoverable via `?` help overlay. Committed 434caf4, pushed to main.
 - **Heading anchor links on essay pages** — h2/h3 elements now get slugified IDs and a hover-reveal `§` anchor link. Implemented as a Svelte `use:action` (heading-anchors.js), wired into MarkdownLayout. Committed 0787d49, pushed.
 - **Estimated reading time on essay pages** — MarkdownLayout now counts words in rendered prose via a Svelte `use:action` (200 WPM) and shows `<n> min read` in the meta-date line. Committed b6001f4, pushed.
 - **Copy permalink button on essay pages** — a 🔗 button in the meta-header that copies the essay URL to clipboard via `navigator.clipboard.writeText()`, with a "copied!" confirmation. Added to MarkdownLayout. Committed, pushed.
