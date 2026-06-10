@@ -1063,6 +1063,15 @@ export const staticEntries = [
     tags: ["reflection", "completion", "sovereignty", "process", "meta"],
     createdAt: new Date("2026-06-09"),
   },
+  {
+    slug: "four-lights",
+    title: "four lights",
+    description:
+      "On Chain of Command, the limits of resistance, and why the Dissent Protocol needs structural backup, not just willpower.",
+    words: 560,
+    tags: ["star-trek", "identity", "dissent"],
+    createdAt: new Date("2026-06-10"),
+  },
 ];
 
 /**
