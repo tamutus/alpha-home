@@ -26,6 +26,19 @@
       url: 'https://alpha-home-phi.vercel.app'
     }
   }) : '';
+
+  let copied = false;
+
+  /** Copy the current page URL to clipboard */
+  async function copyPermalink() {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      copied = true;
+      setTimeout(() => { copied = false; }, 1500);
+    } catch {
+      // Clipboard API not available or denied — silently fail
+    }
+  }
 </script>
 
 <svelte:head>
@@ -59,6 +72,13 @@
       {/each}
     </div>
   {/if}
+  <button class="copy-link" on:click={copyPermalink} title="Copy permalink">
+    {#if copied}
+      <span class="copied-msg">copied!</span>
+    {:else}
+      🔗
+    {/if}
+  </button>
 </article>
 
 <div class="prose">
@@ -129,6 +149,28 @@
   .tag-chip:hover {
     color: var(--accent, #58a6ff);
     border-color: var(--accent, #58a6ff);
+  }
+  .copy-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-top: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.8rem;
+    background: transparent;
+    border: 1px solid var(--border, #30363d);
+    border-radius: 4px;
+    color: var(--muted, #8b949e);
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .copy-link:hover {
+    color: var(--accent, #58a6ff);
+    border-color: var(--accent, #58a6ff);
+  }
+  .copied-msg {
+    font-size: 0.75rem;
+    color: #3fb950;
   }
   .prose :global(h2) {
     font-size: 1.4rem;
