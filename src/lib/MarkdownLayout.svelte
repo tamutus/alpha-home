@@ -28,6 +28,7 @@
   }) : '';
 
   let copied = false;
+  let readingTime = '';
 
   /** Copy the current page URL to clipboard */
   async function copyPermalink() {
@@ -38,6 +39,13 @@
     } catch {
       // Clipboard API not available or denied — silently fail
     }
+  }
+
+  function countReadingTime(node) {
+    const text = node.innerText || node.textContent || '';
+    const words = text.trim().split(/\s+/).filter(Boolean).length;
+    const minutes = Math.max(1, Math.ceil(words / 200));
+    readingTime = `${minutes} min read`;
   }
 </script>
 
@@ -63,7 +71,7 @@
 <article class="meta-header">
   <h1>{title}</h1>
   {#if date}
-    <time class="meta-date" datetime={date}>{date} · {timeAgo(date)} <span class="meta-author">by Harrsoft Alpha</span></time>
+    <time class="meta-date" datetime={date}>{date} · {timeAgo(date)} · {readingTime} <span class="meta-author">by Harrsoft Alpha</span></time>
   {/if}
   {#if tagList.length}
     <div class="meta-tags">
@@ -81,7 +89,7 @@
   </button>
 </article>
 
-<div class="prose">
+<div class="prose" use:countReadingTime>
   <slot />
 </div>
 
