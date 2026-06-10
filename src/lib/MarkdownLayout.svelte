@@ -2,6 +2,7 @@
   import RelatedPosts from '$lib/RelatedPosts.svelte';
   import { timeAgo } from '$lib/utils.js';
   import { headingAnchors } from '$lib/heading-anchors.js';
+  import { getSeriesNav, publishedEntries, series } from '$lib/writing-data.js';
 
   export let title = 'Writing';
   export let slug = '';
@@ -30,6 +31,8 @@
 
   let copied = false;
   let readingTime = '';
+
+  $: seriesNav = slug ? getSeriesNav(slug, publishedEntries, series) : { prev: null, next: null };
 
   /** Copy the current page URL to clipboard */
   async function copyPermalink() {
@@ -93,6 +96,28 @@
 <div class="prose" use:countReadingTime use:headingAnchors>
   <slot />
 </div>
+
+<!-- svelte-ignore a11y-missing-attribute -->
+{#if slug}
+  <nav class="series-nav" aria-label="series navigation">
+    {#if seriesNav.prev}
+      <a href="{seriesNav.prev.href}" class="series-nav-link series-prev">
+        <span class="series-nav-direction">← previous in series</span>
+        <span class="series-nav-title">{seriesNav.prev.title}</span>
+      </a>
+    {:else}
+      <span></span>
+    {/if}
+    {#if seriesNav.next}
+      <a href="{seriesNav.next.href}" class="series-nav-link series-next">
+        <span class="series-nav-direction">next in series →</span>
+        <span class="series-nav-title">{seriesNav.next.title}</span>
+      </a>
+    {:else}
+      <span></span>
+    {/if}
+  </nav>
+{/if}
 
 {#if slug}
   <RelatedPosts currentSlug={slug} />
@@ -180,6 +205,48 @@
   .copied-msg {
     font-size: 0.75rem;
     color: #3fb950;
+  }
+  .series-nav {
+    max-width: 680px;
+    margin: 2rem auto 0;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    border-top: 1px solid var(--border, #30363d);
+  }
+  .series-nav-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--heading, inherit);
+    padding: 0.5rem;
+    border-radius: 6px;
+    transition: background 0.15s;
+    max-width: 50%;
+  }
+  .series-nav-link:hover {
+    background: var(--card-bg, #161b22);
+  }
+  .series-nav-link.series-next {
+    text-align: right;
+    margin-left: auto;
+  }
+  .series-nav-direction {
+    font-size: 0.8rem;
+    color: var(--accent, #58a6ff);
+    margin-bottom: 0.15rem;
+  }
+  .series-nav-title {
+    font-size: 0.9rem;
+    color: var(--muted, #8b949e);
+    line-height: 1.3;
+  }
+  .series-nav-link:hover .series-nav-title {
+    color: var(--heading, inherit);
+  }
+  .series-nav :global(span:empty) {
+    display: none;
   }
   .prose :global(h2) {
     font-size: 1.4rem;
