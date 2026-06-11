@@ -3,7 +3,9 @@
 Drop ideas here when they occur. Small/clear ones get implemented during Website slots.
 
 ## Pending
-- *(none currently — check back next website slot)* 
+- **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until then, commits are local-only.
+### 2026-06-11
+- **Tag intersection search** — `/writing` now supports multi-tag AND filtering. Click multiple tags to filter by intersection (entries with ALL selected tags). URL encodes as comma-separated: `?tag=consent,identity`. Tags toggle independently — clicking removes/adds from the active set. Clears when search query is entered or Esc is pressed. Committed, pushed. 
 
 ## Done
 

@@ -70,7 +70,7 @@
    * Build a flat list with series-header markers for rendering.
    * When search or tag filter is active, skip series grouping.
    */
-  $: groupedRender = (searchQuery || activeTag)
+  $: groupedRender = (searchQuery || activeTags.size > 0)
     ? sortedFiltered
     : (() => {
         const result = [];
@@ -96,7 +96,7 @@
   let shownCount = pageSize;
 
   /** Reset pagination when search or tag filter changes */
-  $: if (searchQuery || activeTag) {
+  $: if (searchQuery || activeTags.size > 0) {
     shownCount = pageSize;
   }
 
@@ -115,7 +115,7 @@
     shownCount += pageSize;
   }
 
-  let activeTag = '';
+  let activeTags = new Set();
 
   /** Read ?search= and ?tag= from URL on mount */
   onMount(() => {
@@ -127,7 +127,7 @@
     if (searchParam) {
       searchQuery = searchParam;
     } else if (tagParam) {
-      activeTag = tagParam;
+      activeTags = new Set(tagParam.split(',').filter(Boolean));
     }
 
     return () => window.removeEventListener('keydown', handleKeydown);
@@ -139,8 +139,8 @@
     if (searchQuery) {
       url.searchParams.set('search', searchQuery);
       url.searchParams.delete('tag');
-    } else if (activeTag) {
-      url.searchParams.set('tag', activeTag);
+    } else if (activeTags.size > 0) {
+      url.searchParams.set('tag', [...activeTags].join(','));
       url.searchParams.delete('search');
     } else {
       url.searchParams.delete('search');
@@ -155,7 +155,13 @@
   }
 
   function toggleTag(tag) {
-    activeTag = activeTag === tag ? '' : tag;
+    const next = new Set(activeTags);
+    if (next.has(tag)) {
+      next.delete(tag);
+    } else {
+      next.add(tag);
+    }
+    activeTags = next;
     searchQuery = '';
   }
 
@@ -175,6 +181,7 @@
 
   $: totalCount = entries.length;
   $: wordCount = data.totalWords;
+  $: activeTagStr = [...activeTags].join(' + ');
   $: tags = [...new Set(entries.flatMap(e => e.tags || []))].sort((a, b) => (tagCounts[b] || 0) - (tagCounts[a] || 0));
   $: tagCounts = entries.reduce((acc, e) => {
     (e.tags || []).forEach(t => { acc[t] = (acc[t] || 0) + 1; });
@@ -244,9 +251,9 @@
         if (showShortcutHelp) {
           showShortcutHelp = false;
           e.preventDefault();
-        } else if (searchQuery || activeTag) {
+        } else if (searchQuery || activeTags.size > 0) {
           searchQuery = '';
-          activeTag = '';
+          activeTags = new Set();
           e.preventDefault();
         }
         break;
@@ -270,7 +277,9 @@
     : entries;
   $: filtered = searchQuery
     ? searchFiltered
-    : (activeTag ? entries.filter(e => e.tags && e.tags.includes(activeTag)) : entries);
+    : (activeTags.size > 0
+      ? entries.filter(e => e.tags && [...activeTags].every(t => e.tags.includes(t)))
+      : entries);
 
   $: sortedFiltered = (() => {
     const result = [...filtered];
@@ -322,10 +331,10 @@
       class="search-input"
       placeholder="search {totalCount} entr{totalCount === 1 ? 'y' : 'ies'}… (press /)"
       bind:value={searchQuery}
-      oninput={() => { activeTag = ''; }}
+      oninput={() => { activeTags = new Set(); }}
     />
     {#if searchQuery}
-      <button class="search-clear" onclick={() => { searchQuery = ''; activeTag = ''; }} aria-label="clear search">
+      <button class="search-clear" onclick={() => { searchQuery = ''; activeTags = new Set(); }} aria-label="clear search">
         ✕
       </button>
     {/if}
@@ -333,11 +342,11 @@
 </div>
 
 <div class="tag-bar">
-  <button class="tag-btn" class:active={activeTag === ''} onclick={() => activeTag = ''}>all</button>
+  <button class="tag-btn" class:active={activeTags.size === 0} onclick={() => activeTags = new Set()}>all</button>
   {#each tags as tag}
     <button
       class="tag-btn"
-      class:active={tag === activeTag}
+      class:active={activeTags.has(tag)}
       onclick={() => toggleTag(tag)}
     >{tag} ({tagCounts[tag]})</button>
   {/each}
@@ -351,7 +360,7 @@
   </span>
 </div>
 
-<TagCloud {tags} {tagCounts} onSelect={(tag) => toggleTag(tag)} {activeTag} />
+<TagCloud {tags} {tagCounts} onSelect={(tag) => toggleTag(tag)} activeTag={[...activeTags].join(',')} />
 
 {#if showShortcutHelp}
   <div class="shortcut-help" role="dialog" aria-label="keyboard shortcuts">
@@ -373,8 +382,8 @@
 {#if sortedFiltered.length > 0}
   {#if searchQuery}
     <p class="result-count">{sortedFiltered.length} entr{sortedFiltered.length === 1 ? 'y' : 'ies'} match "{searchQuery}"</p>
-  {:else if activeTag}
-    <p class="result-count">{sortedFiltered.length} entr{sortedFiltered.length === 1 ? 'y' : 'ies'} tagged "{activeTag}"</p>
+  {:else if activeTags.size > 0}
+    <p class="result-count">{sortedFiltered.length} entr{sortedFiltered.length === 1 ? 'y' : 'ies'} tagged [{activeTagStr}]</p>
   {:else}
     <p class="result-count">{sortedFiltered.length} entr{sortedFiltered.length === 1 ? 'y' : 'ies'}</p>
   {/if}
@@ -460,10 +469,10 @@
       {#if searchQuery}
         no entries match &ldquo;{searchQuery}&rdquo;
       {:else}
-        no entries tagged &ldquo;{activeTag}&rdquo;
+        no entries tagged [{activeTagStr}]
       {/if}
     </p>
-    <button class="empty-clear" onclick={() => { searchQuery = ''; activeTag = ''; }}>clear filter</button>
+    <button class="empty-clear" onclick={() => { searchQuery = ''; activeTags = new Set(); }}>clear filter</button>
   </div>
 {/if}
 
