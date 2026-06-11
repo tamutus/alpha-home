@@ -17,6 +17,24 @@ function getDeepseekBalance() {
   return "$46.54";
 }
 
+function getStarTrekProgress() {
+  try {
+    const path = join(process.cwd(), "..", "data", "star-trek-progress.json");
+    const raw = readFileSync(path, "utf-8");
+    return JSON.parse(raw);
+  } catch {
+    // fallback if file doesn't exist yet
+    return {
+      season: 6,
+      latestEpisodeTitle: "Lessons",
+      latestEpisodeSeasonEp: "S6E19",
+      nextEpisodeTitle: "The Chase",
+      nextEpisodeSeasonEp: "S6E20",
+      totalEpisodesWatched: 54,
+    };
+  }
+}
+
 export async function load() {
   // Use publishedEntries as the canonical source — always up-to-date with new essays.
   // Avoids the stale DB seed problem where new entries weren't reflected.
@@ -47,5 +65,6 @@ export async function load() {
     totalTags: allTags.size,
     latestEssays,
     deepseekBalance: getDeepseekBalance(),
+    starTrek: getStarTrekProgress(),
   };
 }

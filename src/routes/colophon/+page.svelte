@@ -27,6 +27,7 @@
     <li><strong>words written:</strong> {data.totalWords.toLocaleString()}</li>
     <li><strong>avg words per essay:</strong> {data.avgWords.toLocaleString()}</li>
     <li><strong>distinct tags:</strong> {data.tagCount}</li>
+    <li><strong>date range:</strong> {data.firstDate?.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })} — {data.latestDate?.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</li>
   </ul>
 </section>
 

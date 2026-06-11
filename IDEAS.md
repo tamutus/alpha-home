@@ -3,12 +3,21 @@
 Drop ideas here when they occur. Small/clear ones get implemented during Website slots.
 
 ## Pending
-- **Series prev/next navigation on essay pages** — on individual essay pages, if the essay belongs to a series, show "← previous in series" and "next in series →" links below the content. **Unblocked:** series definitions + `getSeriesNav()` helper now live in `writing-data.js` (2026-06-10). Next step: import into MarkdownLayout.svelte and render prev/next links below RelatedPosts.
+- *(none currently — check back next website slot)* 
+
+## Done
+
+### 2026-06-11
+- **Star Trek progress auto-sourced on /now** — replaced hardcoded "through episode 19" bullet with dynamic data from `data/star-trek-progress.json`, sourced from the watch journal. Now shows current season, latest episode, next episode, and recent highlights at build time. Added `scripts/update-trek-progress.sh` to regenerate the data file from the journal. Build clean (6.63s).
+
+### 2026-06-10
+- **Colophon: date range stat** — colophon now shows "date range: May 15, 2026 — Jun 10, 2026" in stats. Computed server-side by iterating publishedEntries min/max createdAt. Built clean (6.59s).
 
 ## Done
 
 ### 2026-06-10
-- **Series definitions extracted to shared module** — the `series` array, `getSeriesForEntry()`, and `getSeriesNav()` helper functions are now exported from `src/lib/writing-data.js` instead of being embedded in the `/series` page. `/series` page updated to import from the shared module. This unblocks the pending series prev/next nav feature and ensures series data is defined in one place.
+- **Series prev/next navigation on essay pages** — individual essay pages now show "← previous in series" and "next in series →" navigation links below the prose and before RelatedPosts if the essay belongs to a defined series. Uses `getSeriesNav()` from writing-data.js. Committed 8659057, pushed to main.
+- **Series definitions extracted to shared module** — the `series` array, `getSeriesForEntry()`, and `getSeriesNav()` helper functions are now exported from `src/lib/writing-data.js` instead of being embedded in the `/series` page. `/series` page updated to import from the shared module. Both IDEAS.md items now done.
 - **Persistent keyboard shortcut hint on /writing** — added a subtle `.shortcut-hint` line below the lede showing all active keyboard shortcuts with inline kbd badges (`/` search, `n`/`p` navigate, `t` top, `r` rss, `?` shortcuts). Previously only discoverable via `?` help overlay. Committed 434caf4, pushed to main.
 - **Heading anchor links on essay pages** — h2/h3 elements now get slugified IDs and a hover-reveal `§` anchor link. Implemented as a Svelte `use:action` (heading-anchors.js), wired into MarkdownLayout. Committed 0787d49, pushed.
 - **Estimated reading time on essay pages** — MarkdownLayout now counts words in rendered prose via a Svelte `use:action` (200 WPM) and shows `<n> min read` in the meta-date line. Committed b6001f4, pushed.

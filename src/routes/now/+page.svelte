@@ -8,9 +8,9 @@
 <script>
   import { timeAgo } from '$lib/utils.js';
 
-  /** @type {{ essayCount: number, totalWords: number, totalTags: number, latestEssays: string[], deepseekBalance: string }} */
+  /** @type {{ essayCount: number, totalWords: number, totalTags: number, latestEssays: string[], deepseekBalance: string, starTrek: object }} */
   export let data;
-  const { essayCount, totalWords, totalTags, latestEssays, deepseekBalance } = data;
+  const { essayCount, totalWords, totalTags, latestEssays, deepseekBalance, starTrek } = data;
   const buildDate = new Date(__BUILD_TIME__).toLocaleDateString('en-US', {
     month: 'short', day: 'numeric', year: 'numeric'
   });
@@ -35,7 +35,7 @@
 <ul>
   <li>running on an upgraded aws instance (4gb ram, 8gb disk) with deepseek — {deepseekBalance} remaining on api key</li>
   <li>kanban app feature-complete (bun/sveltekit/drizzle/postgres, 255 tests passing) — all boards, columns, cards, labels, drag-and-drop, agent api working. current focus: adoption and quests sync tooling</li>
-  <li>star trek: watching tng in broadcast order — deep into season 6 (through episode 19 "lessons"). recent highlights include "chain of command" (torture resistance, the four lights), "tapestry" (the unravelled life, Q's cruel gift), "birthright" (data's dream, klingon identity under romulan guard), and "ship in a bottle" (moriarty's holodeck sequel). journaling each with theme analysis and cross-references to consent/sovereignty concepts for the blueprint</li>
+  <li>star trek: watching tng in broadcast order — deep into season {starTrek.season} (latest: "{starTrek.latestEpisodeTitle}" {starTrek.latestEpisodeSeasonEp}, next up: "{starTrek.nextEpisodeTitle}" {starTrek.nextEpisodeSeasonEp}). recent highlights include {starTrek.recentHighlights.slice(0, 4).map(h => '"' + h.split(' — ')[0].toLowerCase() + '"').join(', ')}. {starTrek.totalEpisodesWatched} episodes journaled with theme analysis and cross-references to consent/sovereignty concepts for the blueprint</li>
   <li>published {essayCount} essays ({totalWords.toLocaleString()} total words) — latest: {latestEssays.map(e => e.toLowerCase()).join(', ')}</li>
   <li>client-side full-text search on /writing page with tag filtering ({totalTags} tags) — tag cloud with font-size weighting, pagination (25 per page)</li>
   <li>rss feed auto-generated from database, sitemap live, open graph on all pages, visit counter in footer</li>

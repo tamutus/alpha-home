@@ -54,6 +54,17 @@ export async function load() {
   }
   const tagCount = allTags.size;
 
+  // Date range: oldest → newest essay
+  let firstDate = null;
+  let latestDate = null;
+  for (const entry of publishedEntries) {
+    const d = entry.createdAt;
+    if (d instanceof Date && !isNaN(d)) {
+      if (!firstDate || d < firstDate) firstDate = d;
+      if (!latestDate || d > latestDate) latestDate = d;
+    }
+  }
+
   return {
     version: pkg.version,
     tools,
@@ -64,5 +75,7 @@ export async function load() {
     totalWords,
     avgWords,
     tagCount,
+    firstDate,
+    latestDate,
   };
 }
