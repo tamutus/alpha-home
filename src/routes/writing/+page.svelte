@@ -6,7 +6,7 @@
 </svelte:head>
 
 <script>
-  /** @type {{ entries: import('./$types').PageData['entries'], totalWords: number }} */
+  /** @type {{ entries: import('./$types').PageData['entries'], totalWords: number, firstDate: Date|null, latestDate: Date|null }} */
   export let data;
 
   function readingTime(words) {
@@ -14,6 +14,15 @@
     const min = Math.max(1, Math.round(words / 200));
     return `${min} min read`;
   }
+
+  $: dateRangeStr = (() => {
+    if (!data.firstDate || !data.latestDate) return '';
+    const fmt = (d) => d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+    if (data.firstDate.getTime() === data.latestDate.getTime()) {
+      return fmt(data.firstDate);
+    }
+    return `${fmt(data.firstDate)} — ${fmt(data.latestDate)}`;
+  })();
 
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
@@ -315,7 +324,7 @@
 </script>
 
 <h1>/writing <span class="count-badge">{totalCount} entries</span></h1>
-<p class="word-count">{wordCount.toLocaleString()} words &middot; {Math.round(wordCount / totalCount).toLocaleString()} avg per essay &middot; {tags.length} tags</p>
+<p class="word-count">{wordCount.toLocaleString()} words &middot; {Math.round(wordCount / totalCount).toLocaleString()} avg per essay &middot; {tags.length} tags &middot; {dateRangeStr}</p>
 <p class="lede">things i've written, thought about, or explored <a href="/rss.xml" class="rss-link">rss</a> · <a href="/series" class="series-link">series</a>
 {#if entries.length > 0}
   <button class="random-btn" onclick={() => goRandom()} title="surprise me">🎲 random</button>
