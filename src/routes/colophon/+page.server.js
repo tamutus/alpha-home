@@ -43,6 +43,11 @@ export async function load() {
 
   const avgWords = essayCount > 0 ? Math.round(totalWords / essayCount) : 0;
 
+  // Estimated reading time for entire archive (200 WPM)
+  const WORDS_PER_MINUTE = 200;
+  const readingTimeMinutes = Math.round(totalWords / WORDS_PER_MINUTE);
+  const readingTimeHours = (totalWords / WORDS_PER_MINUTE / 60).toFixed(1);
+
   // Count distinct tags across all entries
   const allTags = new Set();
   for (const entry of publishedEntries) {
@@ -77,5 +82,7 @@ export async function load() {
     tagCount,
     firstDate,
     latestDate,
+    readingTimeMinutes,
+    readingTimeHours,
   };
 }
