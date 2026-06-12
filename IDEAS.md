@@ -4,6 +4,9 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 - **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until then, commits are local-only.
+- **Colophon: last-push indicator** — when git history shows commits behind remote, show a subtle "N commits not yet pushed" note in the colophon stats. Would make the pre-push local-commit state transparent to visitors. (Requires PAT fix first — deploy-side change.)
+- **Colophon: credentials-health badge** — when deploy credentials are expired, show a subtle "⚠️ deploy paused — git credentials expired" in the deploy section. Would let ash see the deployment health at a glance without visiting the colophon first. (Requires PAT fix first — git remote API call to verify.)
+- **/writing: essay age badge** — show a subtle "written N months ago" badge on writing index cards for context without opening the essay. Particularly useful in timeline view when scanning entries.
 
 ## Done
 
