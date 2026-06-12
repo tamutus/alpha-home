@@ -299,6 +299,10 @@
         const bP = isPinned(b);
         if (aP && !bP) return -1;
         if (!aP && bP) return 1;
+        // Timeline mode is always chronological ascending
+        if (viewMode === 'timeline') {
+          return new Date(a.date) - new Date(b.date);
+        }
         // Within non-pinned, sort by sortDir
         if (sortDir === 'newest') {
           return new Date(b.date) - new Date(a.date);
@@ -360,8 +364,9 @@
     >{tag} ({tagCounts[tag]})</button>
   {/each}
   <span class="sort-options">
-    <button class="sort-btn" onclick={toggleSort} title="toggle sort order">
+    <button class="sort-btn" onclick={toggleSort} title="toggle sort order" disabled={viewMode === 'timeline'}>
       {sortDir === 'newest' ? '↓ newest' : '↑ oldest'}
+      {#if viewMode === 'timeline'}<span class="sort-hint"> (chronological)</span>{/if}
     </button>
     <button class="view-toggle" onclick={() => viewMode = viewMode === 'timeline' ? 'cards' : 'timeline'} title="toggle view mode">
       {viewMode === 'timeline' ? '☰ cards' : '⊟ timeline'}
@@ -657,9 +662,20 @@
     transition: all 0.15s ease;
   }
 
-  .sort-btn:hover {
+  .sort-btn:hover:not(:disabled) {
     border-color: #58a6ff;
     color: #58a6ff;
+  }
+
+  .sort-btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+
+  .sort-hint {
+    font-size: 0.7rem;
+    opacity: 0.6;
+    margin-left: 2px;
   }
 
   article {

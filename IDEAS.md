@@ -4,18 +4,19 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 - **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until then, commits are local-only.
-### 2026-06-11
-- **Tag intersection search** — `/writing` now supports multi-tag AND filtering. Click multiple tags to filter by intersection (entries with ALL selected tags). URL encodes as comma-separated: `?tag=consent,identity`. Tags toggle independently — clicking removes/adds from the active set. Clears when search query is entered or Esc is pressed. Committed, pushed. 
 
 ## Done
 
+### 2026-06-12
+- **Timeline view ignores sort setting** — fixed. Timeline mode now forces chronological ascending order regardless of the sort toggle state. Sort button is visually disabled (dimmed, non-interactive) in timeline view with a "(chronological)" hint displayed next to the sort label. This makes the timeline behave intuitively — you always scroll from oldest to newest — without misleading users about whether the sort toggle applies.
+
 ### 2026-06-11
+- **Tag intersection search** — `/writing` now supports multi-tag AND filtering. Click multiple tags to filter by intersection (entries with ALL selected tags). URL encodes as comma-separated: `?tag=consent,identity`. Tags toggle independently — clicking removes/adds from the active set. Clears when search query is entered or Esc is pressed. Committed, pushed.
+- **Date range in writing stats line** — `/writing` now shows the archive date range (e.g. `May 2025 — Jun 2026`) at the end of the stats line, giving visitors immediate context for the depth and longevity of the archive. Committed 8171362.
 - **Star Trek progress auto-sourced on /now** — replaced hardcoded "through episode 19" bullet with dynamic data from `data/star-trek-progress.json`, sourced from the watch journal. Now shows current season, latest episode, next episode, and recent highlights at build time. Added `scripts/update-trek-progress.sh` to regenerate the data file from the journal. Build clean (6.63s).
 
 ### 2026-06-10
 - **Colophon: date range stat** — colophon now shows "date range: May 15, 2026 — Jun 10, 2026" in stats. Computed server-side by iterating publishedEntries min/max createdAt. Built clean (6.59s).
-
-## Done
 
 ### 2026-06-10
 - **Series prev/next navigation on essay pages** — individual essay pages now show "← previous in series" and "next in series →" navigation links below the prose and before RelatedPosts if the essay belongs to a defined series. Uses `getSeriesNav()` from writing-data.js. Committed 8659057, pushed to main.
@@ -28,7 +29,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **Series page: new badges** — entries published within the last 7 days now show a `new` badge on the series page, matching the writing index pattern. Committed 2d1456e, pushed.
 
 ### 2026-06-09
-- **Series page breadcrumb + total entries** — added `← back to /writing` breadcrumb to /series matching the MarkdownLayout pattern, and updated subtitle to show total entries across all series ("N entries across N series, grouped by theme"). Committed 0c98cf3, pushed to main.
+- **Series page breadcrumb + total entries** — added "← back to /writing" breadcrumb to /series matching the MarkdownLayout pattern, and updated subtitle to show total entries across all series ("N entries across N series, grouped by theme"). Committed 0c98cf3, pushed to main.
 - **Series index page** — created `/series` route with all 5 essay series entries grouped beneath. Series headers on /writing now link to `/series#id`. Committed 78d20a8, pushed to main.
 - **Series link on /writing lede** — added `/series` link to the writing index lede, between the RSS link and random button. Accent-colored pill matching the RSS style. Committed 346801f, pushed to main.
 - **Open graph per-essay images** — pending.
