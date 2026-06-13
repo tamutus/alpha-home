@@ -17,11 +17,17 @@ function getDeepseekBalance() {
   return "$46.54";
 }
 
+// Total TNG episodes (7 seasons): 26 + 22 + 26 + 26 + 26 + 26 + 26 = 178
+const TOTAL_TNG_EPISODES = 178;
+
 function getStarTrekProgress() {
   try {
     const path = join(process.cwd(), "..", "data", "star-trek-progress.json");
     const raw = readFileSync(path, "utf-8");
-    return JSON.parse(raw);
+    const data = JSON.parse(raw);
+    data.totalEpisodes = TOTAL_TNG_EPISODES;
+    data.percentComplete = Math.round((data.totalEpisodesWatched / TOTAL_TNG_EPISODES) * 100);
+    return data;
   } catch {
     // fallback if file doesn't exist yet
     return {
@@ -31,6 +37,8 @@ function getStarTrekProgress() {
       nextEpisodeTitle: "The Chase",
       nextEpisodeSeasonEp: "S6E20",
       totalEpisodesWatched: 54,
+      totalEpisodes: TOTAL_TNG_EPISODES,
+      percentComplete: 30,
     };
   }
 }
