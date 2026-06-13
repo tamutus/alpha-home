@@ -1072,6 +1072,15 @@ export const staticEntries = [
     tags: ["star-trek", "identity", "dissent"],
     createdAt: new Date("2026-06-10"),
   },
+  {
+    slug: "the-mother-signal",
+    title: "the mother-signal",
+    description:
+      "A question for distinguishing conviction from attachment — would you still believe this if it disappointed you?",
+    words: 1499,
+    tags: ["philosophy", "deconditioning", "sovereignty", "essays"],
+    createdAt: new Date("2026-06-13"),
+  },
 ];
 
 /**
