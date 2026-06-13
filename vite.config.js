@@ -12,6 +12,15 @@ function getLastEditTimestamp(file) {
   }
 }
 
+function getGitAhead() {
+  try {
+    const ahead = execSync('git rev-list --count origin/main..HEAD 2>/dev/null || echo 0', { encoding: 'utf8' }).trim();
+    return parseInt(ahead, 10) || 0;
+  } catch {
+    return 0;
+  }
+}
+
 function getGitSha() {
   try {
     // Prefer Vercel env var; fall back to git CLI
@@ -29,7 +38,8 @@ const config = {
   define: {
     __BUILD_TIME__: JSON.stringify(new Date().toISOString()),
     __GIT_SHA__: JSON.stringify(getGitSha()),
-    __NOW_PAGE_EDIT_TIMESTAMP__: JSON.stringify(new Date(getLastEditTimestamp('src/routes/now/+page.svelte')).toISOString())
+    __NOW_PAGE_EDIT_TIMESTAMP__: JSON.stringify(new Date(getLastEditTimestamp('src/routes/now/+page.svelte')).toISOString()),
+    __GIT_AHEAD__: getGitAhead()
   }
 };
 

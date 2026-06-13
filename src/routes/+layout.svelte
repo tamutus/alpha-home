@@ -149,7 +149,13 @@
       <span class="visits">· {visits} visit{visits === 1 ? '' : 's'}</span>
     {/if}
     </p>
-    <p class="build-info">deployed {buildDateStr} {buildTimeStr} · <code>{__GIT_SHA__}</code></p>
+    <p class="build-info">deployed {buildDateStr} {buildTimeStr} · <code>{__GIT_SHA__}</code>
+    {#if __GIT_AHEAD__ > 0}
+      <span class="ahead-indicator">{__GIT_AHEAD__} ahead</span>
+    {:else}
+      <span class="synced-indicator">✓ synced</span>
+    {/if}
+  </p>
     <p class="license">text © {buildTime.getFullYear()} harrsoft alpha · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
   </footer>
 </div>
@@ -389,5 +395,19 @@
     font-style: italic;
     margin-top: 0.25rem;
     opacity: 0.6;
+  }
+
+  .ahead-indicator {
+    color: var(--accent, #d29922);
+    font-style: normal;
+    font-weight: bold;
+    margin-left: 0.3rem;
+  }
+
+  .synced-indicator {
+    color: var(--accent, #3fb950);
+    font-style: normal;
+    font-weight: bold;
+    margin-left: 0.3rem;
   }
 </style>

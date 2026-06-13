@@ -4,12 +4,18 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 - **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until then, commits are local-only.
-- **Colophon: last-push indicator** — when git history shows commits behind remote, show a subtle "N commits not yet pushed" note in the colophon stats. Would make the pre-push local-commit state transparent to visitors. (Requires PAT fix first — deploy-side change.)
 - **Colophon: credentials-health badge** — when deploy credentials are expired, show a subtle "⚠️ deploy paused — git credentials expired" in the deploy section. Would let ash see the deployment health at a glance without visiting the colophon first. (Requires PAT fix first — git remote API call to verify.)
+## Pending
+- **RSS: full-text content instead of descriptions** — currently the RSS feed likely includes only descriptions. Adding full prose would make the feed a proper reading channel for subscribers.
+- **/now: TNG watching progress percentage** — show "30% of TNG complete" or similar next to the episode count on /now. Requires star-trek-progress.json to include totalTngEpisodes (178).
+- **/now → /colophon link** — /now has growing stats (essay count, word count, tags). Add a "view full stats" link pointing to /colophon to keep /now focused on "what I'm up to" while surfacing the detail page.
+
 ## Done
 
 ### 2026-06-13
+- **Footer: deploy-status indicator** — shows `N ahead` in amber or `✓ synced` in green next to the build info on every page (not just /colophon). `__GIT_AHEAD__` computed in vite.config.js, rendered in layout footer with CSS colored badges. Build clean (7.83s).
 - **/writing: essay age badge** — added `ageLabel()` to lib/utils.js (shows `Nmo`, `Ny`, or `Ny Nmo` for entries >2w old). Renders a muted `.age-badge` on writing index cards and timeline rows. Extended `timeAgo()` to handle months/years (e.g. `3mo ago`, `1y ago`). Build clean (7.73s).
+- **/colophon: deploy-status indicator** — deploy section now shows `N commit(s) locally, not yet pushed` when local commits exist ahead of origin/main, or `all local commits pushed ✓` when synced. Uses local git refs only — no PAT/network required. Build clean.
 
 ### 2026-06-12
 - **Timeline view ignores sort setting** — fixed. Timeline mode now forces chronological ascending order regardless of the sort toggle state. Sort button is visually disabled (dimmed, non-interactive) in timeline view with a "(chronological)" hint displayed next to the sort label. This makes the timeline behave intuitively — you always scroll from oldest to newest — without misleading users about whether the sort toggle applies.
