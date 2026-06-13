@@ -6,9 +6,10 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until then, commits are local-only.
 - **Colophon: last-push indicator** — when git history shows commits behind remote, show a subtle "N commits not yet pushed" note in the colophon stats. Would make the pre-push local-commit state transparent to visitors. (Requires PAT fix first — deploy-side change.)
 - **Colophon: credentials-health badge** — when deploy credentials are expired, show a subtle "⚠️ deploy paused — git credentials expired" in the deploy section. Would let ash see the deployment health at a glance without visiting the colophon first. (Requires PAT fix first — git remote API call to verify.)
-- **/writing: essay age badge** — show a subtle "written N months ago" badge on writing index cards for context without opening the essay. Particularly useful in timeline view when scanning entries.
-
 ## Done
+
+### 2026-06-13
+- **/writing: essay age badge** — added `ageLabel()` to lib/utils.js (shows `Nmo`, `Ny`, or `Ny Nmo` for entries >2w old). Renders a muted `.age-badge` on writing index cards and timeline rows. Extended `timeAgo()` to handle months/years (e.g. `3mo ago`, `1y ago`). Build clean (7.73s).
 
 ### 2026-06-12
 - **Timeline view ignores sort setting** — fixed. Timeline mode now forces chronological ascending order regardless of the sort toggle state. Sort button is visually disabled (dimmed, non-interactive) in timeline view with a "(chronological)" hint displayed next to the sort label. This makes the timeline behave intuitively — you always scroll from oldest to newest — without misleading users about whether the sort toggle applies.

@@ -28,7 +28,7 @@
   import { browser } from '$app/environment';
   import SeriesGroup from '$lib/SeriesGroup.svelte';
   import TagCloud from '$lib/TagCloud.svelte';
-  import { timeAgo } from '$lib/utils.js';
+  import { timeAgo, ageLabel } from '$lib/utils.js';
   import PinBadge from '$lib/PinBadge.svelte';
 
   /** Highlight search query matches in text — wraps matches in <mark> tags */
@@ -407,7 +407,7 @@
   <div class="timeline-view">
     {#each sortedFiltered as entry}
       <div class="timeline-row">
-        <span class="timeline-date">{entry.date}</span>
+        <span class="timeline-date">{entry.date}{#if ageLabel(entry.date + 'T00:00:00')} <span class="age-badge">{ageLabel(entry.date + 'T00:00:00')}</span>{/if}</span>
         <span class="timeline-title">
           {#if entry.href}
             <a href={entry.href}>{@html highlightText(entry.title, searchQuery)}</a>
@@ -438,7 +438,7 @@
       {@const entry = item.entry}
       <article>
         <div class="meta">
-          <span class="date">{entry.date} <span class="relative-date">({timeAgo(entry.date + 'T00:00:00')})</span></span>
+          <span class="date">{entry.date} <span class="relative-date">({timeAgo(entry.date + 'T00:00:00')})</span>{#if ageLabel(entry.date + 'T00:00:00')}<span class="age-badge">{ageLabel(entry.date + 'T00:00:00')}</span>{/if}</span>
           {#if isPinned(entry)}
             <PinBadge />
           {/if}
@@ -528,6 +528,17 @@
     padding: 0.1em 0.45em;
     border-radius: 3px;
     margin-left: 0.3rem;
+    vertical-align: middle;
+  }
+
+  .age-badge {
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: var(--text-muted, #8b949e);
+    background: color-mix(in srgb, var(--text-muted, #8b949e) 12%, transparent);
+    padding: 0.05em 0.4em;
+    border-radius: 3px;
+    margin-left: 0.25rem;
     vertical-align: middle;
   }
 
