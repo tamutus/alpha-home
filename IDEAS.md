@@ -5,11 +5,11 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Pending
 - **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until now, commits are local-only.
 - **Colophon: credentials-health badge** — when deploy credentials are expired, show a subtle "⚠️ deploy paused — git credentials expired" in the deploy section. Would let ash see the deployment health at a glance without visiting the colophon first. (Requires PAT fix first — git remote API call to verify.)
-- **RSS: full-text content instead of descriptions** — currently the RSS feed includes only descriptions. Adding full prose would make the feed a proper reading channel for subscribers.
 
 ## Done
 
 ### 2026-06-13
+- **RSS: full-text content** — RSS feed now includes full essay body text (plain text extraction from +page.md and +page.svelte files) instead of just descriptions. 329KB output, 121 entries. Makes the feed a proper reading channel. Build clean (7.47s).
 - **/now: TNG watching progress percentage** — shows "92% of TNG complete" next to the episode count on /now (164/178). Computed server-side: totalEpisodesWatched / 178 (TNG total). Build clean.
 - **/now → /colophon link** — /now stats bullet now includes a "view full stats" link to /colophon, keeping /now focused while surfacing the detail page.
 - **the mother-signal essay registered** — added to writing-data.js (1499 words, 4 tags) so it appears on /writing, RSS, sitemap, and tag views.
