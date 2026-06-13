@@ -1,5 +1,6 @@
 import { dev } from '$app/environment';
 import { execSync } from 'child_process';
+import { existsSync } from 'node:fs';
 import pkg from '../../../package.json' with { type: 'json' };
 import { publishedEntries } from '$lib/writing-data';
 
@@ -70,6 +71,15 @@ export async function load() {
     }
   }
 
+  // Check for unpushed local commits (does not require network — uses local refs)
+  let localAhead = 0;
+  try {
+    const ahead = execSync('git rev-list --count origin/main..HEAD 2>/dev/null || echo 0', { encoding: 'utf-8' }).trim();
+    localAhead = parseInt(ahead, 10) || 0;
+  } catch {
+    // not a git repo or no remote — treat as 0
+  }
+
   return {
     version: pkg.version,
     tools,
@@ -84,5 +94,6 @@ export async function load() {
     latestDate,
     readingTimeMinutes,
     readingTimeHours,
+    localAhead,
   };
 }

@@ -71,6 +71,11 @@
   <ul>
     <li><strong>last build:</strong> {buildDate} at {buildTimeStr}</li>
     <li><strong>commit:</strong> <code>{data.commitHash}</code> — {data.commitMessage}</li>
+    {#if data.localAhead > 0}
+      <li><strong>deploy status:</strong> <span class="pending">{data.localAhead} commit{data.localAhead === 1 ? '' : 's'} locally, not yet pushed</span></li>
+    {:else}
+      <li><strong>deploy status:</strong> <span class="synced">all local commits pushed ✓</span></li>
+    {/if}
   </ul>
 </section>
 
@@ -128,6 +133,15 @@
     background: #1a1a1a;
     padding: 0.1rem 0.3rem;
     border-radius: 3px;
+    font-size: 0.9em;
+  }
+
+  .pending {
+    color: #e6a817;
+  }
+
+  .synced {
+    color: var(--muted, #555);
     font-size: 0.9em;
   }
 </style>
