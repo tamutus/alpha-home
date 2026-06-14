@@ -1137,10 +1137,10 @@ export function getSeriesForEntry(tags, seriesDefs = series) {
 export function getSeriesNav(slug, entries = publishedEntries, seriesDefs = series) {
   // Find the entry's series
   const entry = entries.find(e => e.slug === slug || e.href === `/writing/${slug}`);
-  if (!entry || !entry.tags || entry.tags.length === 0) return { prev: null, next: null };
+  if (!entry || !entry.tags || entry.tags.length === 0) return { prev: null, next: null, seriesInfo: null };
 
   const s = getSeriesForEntry(entry.tags, seriesDefs);
-  if (!s) return { prev: null, next: null };
+  if (!s) return { prev: null, next: null, seriesInfo: null };
 
   // Filter entries that belong to this series, sorted by date ascending
   const seriesEntries = entries
@@ -1148,10 +1148,15 @@ export function getSeriesNav(slug, entries = publishedEntries, seriesDefs = seri
     .sort((a, b) => a.date.localeCompare(b.date));
 
   const idx = seriesEntries.findIndex(e => e.slug === slug || e.href === `/writing/${slug}`);
-  if (idx === -1) return { prev: null, next: null };
+  if (idx === -1) return { prev: null, next: null, seriesInfo: null };
 
   return {
     prev: idx > 0 ? seriesEntries[idx - 1] : null,
     next: idx < seriesEntries.length - 1 ? seriesEntries[idx + 1] : null,
+    seriesInfo: {
+      series: s,
+      index: idx + 1,
+      total: seriesEntries.length,
+    },
   };
 }

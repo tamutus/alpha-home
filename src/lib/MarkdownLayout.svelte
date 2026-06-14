@@ -72,6 +72,15 @@
   <a href="/writing" class="back-link">← back to /writing</a>
 </div>
 
+{#if slug && seriesNav.seriesInfo}
+  <div class="series-indicator">
+    <span class="series-position">
+      <a href="/series#{seriesNav.seriesInfo.series.id}" class="series-link">{seriesNav.seriesInfo.series.name}</a>
+      — essay {seriesNav.seriesInfo.index} of {seriesNav.seriesInfo.total}
+    </span>
+  </div>
+{/if}
+
 <article class="meta-header">
   <h1>{title}</h1>
   {#if date}
@@ -205,6 +214,20 @@
   .copied-msg {
     font-size: 0.75rem;
     color: #3fb950;
+  }
+  .series-indicator {
+    max-width: 680px;
+    margin: 0.75rem auto 0;
+    padding: 0 1rem;
+    font-size: 0.8rem;
+    color: var(--muted, #8b949e);
+  }
+  .series-link {
+    color: var(--accent, #58a6ff);
+    text-decoration: none;
+  }
+  .series-link:hover {
+    text-decoration: underline;
   }
   .series-nav {
     max-width: 680px;
