@@ -7,7 +7,7 @@ tags:
   - deconditioning
   - sovereignty
   - essays
-published: false
+published: true
 ---
 
 You cannot see the hole in the carpet you're standing on.

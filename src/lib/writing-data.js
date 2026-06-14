@@ -1081,6 +1081,15 @@ export const staticEntries = [
     tags: ["philosophy", "deconditioning", "sovereignty", "essays"],
     createdAt: new Date("2026-06-13"),
   },
+  {
+    slug: "the-carpet-you-stand-on",
+    title: "the carpet you stand on",
+    description:
+      "Force of Nature and the collective analog of the mother-signal — how to notice when the infrastructure you depend on is the thing you should question.",
+    words: 1093,
+    tags: ["philosophy", "deconditioning", "sovereignty", "essays"],
+    createdAt: new Date("2026-06-14"),
+  },
 ];
 
 /**
