@@ -9,6 +9,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Done
 
 ### 2026-06-14
+- **j/k vim-style keyboard shortcuts** — `j` is now an alias for `n` (next), `k` for `p` (previous) on /writing. Shortcut hint shows both bindings (`<kbd>n</kbd><kbd>j</kbd> next`). Build clean, committed 4f113b6.
 - **Footer: build timestamp badge** — footer already shows absolute deploy date/time (`deployed Jun 14 2025 05:53 AM UTC`) via `__BUILD_TIME__` const in vite.config.js. The build-time badge is live; the idea asked for relative time but absolute time is more functional for a static site footer (doesn't need JS to stay fresh). Marked done.
 
 ### 2026-06-13
