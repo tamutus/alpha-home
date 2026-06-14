@@ -239,11 +239,13 @@
         document.querySelector('.search-input')?.focus();
         break;
       case 'n':
+      case 'j':
         e.preventDefault();
         focusedEntryIndex = focusedEntryIndex < 0 ? 0 : focusedEntryIndex + 1;
         focusEntry(focusedEntryIndex);
         break;
       case 'p':
+      case 'k':
         e.preventDefault();
         focusedEntryIndex = focusedEntryIndex < 0 ? 0 : focusedEntryIndex - 1;
         focusEntry(focusedEntryIndex);
@@ -335,7 +337,7 @@
 {/if}
 </p>
 
-<p class="shortcut-hint">keyboard: <kbd>/</kbd> search · <kbd>n</kbd> <kbd>p</kbd> navigate · <kbd>t</kbd> top · <kbd>r</kbd> rss · <kbd>?</kbd> shortcuts</p>
+<p class="shortcut-hint">keyboard: <kbd>/</kbd> search · <kbd>n</kbd><kbd>j</kbd> next · <kbd>p</kbd><kbd>k</kbd> prev · <kbd>t</kbd> top · <kbd>r</kbd> rss · <kbd>?</kbd> shortcuts</p>
 
 <div class="search-bar">
   <div class="search-wrapper">
@@ -382,8 +384,8 @@
     <dl>
       <div><kbd>/</kbd><span>focus search</span></div>
       <div><kbd>s</kbd><span>focus search (alt)</span></div>
-      <div><kbd>n</kbd><span>next entry</span></div>
-      <div><kbd>p</kbd><span>previous entry</span></div>
+      <div><kbd>n</kbd><kbd>j</kbd><span>next entry</span></div>
+      <div><kbd>p</kbd><kbd>k</kbd><span>previous entry</span></div>
       <div><kbd>t</kbd><span>back to top</span></div>
       <div><kbd>r</kbd><span>open rss feed</span></div>
       <div><kbd>?</kbd><span>toggle this help</span></div>

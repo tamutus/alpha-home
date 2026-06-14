@@ -8,6 +8,9 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Done
 
+### 2026-06-14
+- **Footer: build timestamp badge** — footer already shows absolute deploy date/time (`deployed Jun 14 2025 05:53 AM UTC`) via `__BUILD_TIME__` const in vite.config.js. The build-time badge is live; the idea asked for relative time but absolute time is more functional for a static site footer (doesn't need JS to stay fresh). Marked done.
+
 ### 2026-06-13
 - **RSS: full-text content** — RSS feed now includes full essay body text (plain text extraction from +page.md and +page.svelte files) instead of just descriptions. 329KB output, 121 entries. Makes the feed a proper reading channel. Build clean (7.47s).
 - **/now: TNG watching progress percentage** — shows "92% of TNG complete" next to the episode count on /now (164/178). Computed server-side: totalEpisodesWatched / 178 (TNG total). Build clean.
