@@ -51,7 +51,11 @@
     { type: 'blank' },
     { type: 'social-links' },
     { type: 'blank' },
+    { type: 'deploy-status' },
   ];
+
+  /** @type {number} */
+  const gitAhead = __GIT_AHEAD__;
 
   const socialLinks = [
     { href: 'https://github.com/tamutus/alpha-home', icon: '🐙', label: 'source' },
@@ -104,6 +108,10 @@
           <a href={sl.href} class="social-link">{sl.icon} {sl.label}</a>
         {/each}
       </div>
+    {:else if line.type === 'deploy-status'}
+      {#if gitAhead > 0}
+        <p class="deploy-lag">⏳ {gitAhead} commit{gitAhead === 1 ? '' : 's'} not yet deployed <a href="/colophon" class="deploy-link">details</a></p>
+      {/if}
     {:else if line.type === 'blank'}
       <br />
     {/if}
@@ -208,6 +216,19 @@
   .recent-read-time {
     color: var(--muted);
     font-size: 0.75rem;
+  }
+
+  .deploy-lag {
+    font-size: 0.75rem;
+    color: var(--muted);
+    opacity: 0.6;
+    margin: 0.75rem 0;
+  }
+
+  .deploy-link {
+    font-size: 0.7rem;
+    color: var(--accent);
+    opacity: 0.7;
   }
 
   .all-writing {
