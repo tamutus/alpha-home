@@ -88,7 +88,7 @@
       <p><a href={line.href}>{line.text}</a></p>
     {:else if line.type === 'recent-writing'}
       <div class="recent-writing">
-        <h2 class="recent-heading">recent writing <span class="count-hint">({data.totalEssays} total)</span></h2>
+        <h2 class="recent-heading">recent writing <span class="count-hint"><a href="/writing">{data.totalEssays} total</a></span></h2>
         {#each line.entries as entry}
           <div class="recent-entry">
             <span class="recent-date" title={entry.date}>{timeAgo(entry.date)}</span>
