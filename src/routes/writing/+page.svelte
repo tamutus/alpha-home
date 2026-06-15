@@ -191,6 +191,22 @@
   $: totalCount = entries.length;
   $: wordCount = data.totalWords;
   $: activeTagStr = [...activeTags].join(' + ');
+
+  /** Update page title reactively when search or tag filter is active */
+  $: if (browser) {
+    const inSearch = searchQuery || activeTags.size > 0;
+    if (inSearch) {
+      const count = sortedFiltered.length;
+      if (searchQuery) {
+        document.title = `"${searchQuery}" (${count}) — /writing — harrsoft alpha`;
+      } else {
+        document.title = `${activeTagStr} (${count}) — /writing — harrsoft alpha`;
+      }
+    } else {
+      document.title = '/writing — harrsoft alpha';
+    }
+  }
+
   $: tags = [...new Set(entries.flatMap(e => e.tags || []))].sort((a, b) => (tagCounts[b] || 0) - (tagCounts[a] || 0));
   $: tagCounts = entries.reduce((acc, e) => {
     (e.tags || []).forEach(t => { acc[t] = (acc[t] || 0) + 1; });

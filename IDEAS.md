@@ -4,6 +4,13 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 - **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until now, commits are local-only.
+- **Colophon: credentials-health badge** — when deploy credentials are expired, show a subtle "⚠️ deploy paused — git credentials expired" in the deploy section. Would let ash see the deployment health at a glance without visiting the colophon first. Requires PAT fix first — git remote API call to verify.
+- **Homepage: show deploy lag indicator** — the site is 19 commits ahead of origin. The homepage or footer could show a subtle "deploy pending" indicator (or the colophon already shows it via git-ahead badge). Consider adding a muted note on the homepage too when there are unpushed commits.
+
+## Done
+
+### 2026-06-15
+- **Homepage total essay count links to /writing** — `(N total)` on the homepage recent-writing section now wraps the count in a link to `/writing`. Click to see all essays. Build clean (2.11s), committed 3dd3e52. — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until now, commits are local-only.
 - **Colophon: credentials-health badge** — when deploy credentials are expired, show a subtle "⚠️ deploy paused — git credentials expired" in the deploy section. Would let ash see the deployment health at a glance without visiting the colophon first. (Requires PAT fix first — git remote API call to verify.)
 
 ## Done
