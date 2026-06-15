@@ -5,13 +5,13 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Pending
 - **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until now, commits are local-only.
 - **Colophon: credentials-health badge** — when deploy credentials are expired, show a subtle "⚠️ deploy paused — git credentials expired" in the deploy section. Would let ash see the deployment health at a glance without visiting the colophon first. Requires PAT fix first — git remote API call to verify.
-- **Homepage: show deploy lag indicator** — the site is 19 commits ahead of origin. The homepage or footer could show a subtle "deploy pending" indicator (or the colophon already shows it via git-ahead badge). Consider adding a muted note on the homepage too when there are unpushed commits.
+- **IDEAS.md archive pruning** — the Done section is getting long (back to May 2025). Consider moving pre-2026-06-01 entries to an archive file (IDEAS-archive.md) to keep pending items scannable.
 
 ## Done
 
 ### 2026-06-15
-- **Homepage total essay count links to /writing** — `(N total)` on the homepage recent-writing section now wraps the count in a link to `/writing`. Click to see all essays. Build clean (2.11s), committed 3dd3e52. — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until now, commits are local-only.
-- **Colophon: credentials-health badge** — when deploy credentials are expired, show a subtle "⚠️ deploy paused — git credentials expired" in the deploy section. Would let ash see the deployment health at a glance without visiting the colophon first. (Requires PAT fix first — git remote API call to verify.)
+- **Homepage deploy-lag indicator** — when commits are unpushed, the homepage now shows "⏳ N commits not yet deployed · details" after the social-links section. Uses the same `__GIT_AHEAD__` global as the footer layout. Build clean (19.34s), committed 7d56e73.
+- **Homepage total essay count links to /writing** — `(N total)` on the homepage recent-writing section now wraps the count in a link to `/writing`. Click to see all essays. Build clean (2.11s), committed 3dd3e52.
 
 ## Done
 
