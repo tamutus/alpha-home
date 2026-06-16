@@ -5,7 +5,11 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Pending
 - **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until now, commits are local-only.
 - **Colophon: credentials-health badge** — when deploy credentials are expired, show a subtle "⚠️ deploy paused — git credentials expired" in the deploy section. Would let ash see the deployment health at a glance without visiting the colophon first. Requires PAT fix first — git remote API call to verify.
-- **Deploy-lag indicator: show pending essay titles** — on the homepage and /colophon, when `localAhead > 0`, show which essay titles are waiting to deploy alongside the count. Would give ash a preview of queued content. Requires extracting the commit subjects from `git log origin/main..HEAD`.
+
+## Done
+
+### 2026-06-16
+- **Colophon: show pending essay titles behind collapsible** — when `localAhead > 0`, the colophon deploy section now shows a collapsible `<details>` element that reveals the commit subjects of all pending commits when clicked. Extracted from `git log origin/main..HEAD --format=%s` during build. Commit subjects include essay titles, feature descriptions, and housekeeping entries, giving ash a clear preview of queued content.
 
 ## Done
 

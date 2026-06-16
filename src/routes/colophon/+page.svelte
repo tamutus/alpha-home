@@ -73,7 +73,16 @@
     <li><strong>last build:</strong> {buildDate} at {buildTimeStr}</li>
     <li><strong>commit:</strong> <code>{data.commitHash}</code> — {data.commitMessage}</li>
     {#if data.localAhead > 0}
-      <li><strong>deploy status:</strong> <span class="pending">{data.localAhead} commit{data.localAhead === 1 ? '' : 's'} locally, not yet pushed</span></li>
+      <li><strong>deploy status:</strong> <span class="pending">{data.localAhead} commit{data.localAhead === 1 ? '' : 's'} locally, not yet pushed</span>
+        <details class="pending-detail">
+          <summary>show pending</summary>
+          <ol class="pending-list">
+            {#each data.pendingTitles as title}
+              <li>{title}</li>
+            {/each}
+          </ol>
+        </details>
+      </li>
     {:else}
       <li><strong>deploy status:</strong> <span class="synced">all local commits pushed ✓</span></li>
     {/if}
@@ -138,6 +147,38 @@
   }
 
   .pending {
+    color: #e6a817;
+  }
+
+  .pending-detail {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+  }
+
+  .pending-detail summary {
+    cursor: pointer;
+    color: #58a6ff;
+    opacity: 0.8;
+  }
+
+  .pending-detail summary:hover {
+    opacity: 1;
+  }
+
+  .pending-list {
+    margin-top: 0.25rem;
+    padding-left: 0.5rem;
+  }
+
+  .pending-list li {
+    padding-left: 0.5rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.8rem;
+    color: var(--muted, #888);
+  }
+
+  .pending-list li::before {
+    content: '-';
     color: #e6a817;
   }
 

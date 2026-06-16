@@ -74,11 +74,16 @@ export async function load() {
 
   // Check for unpushed local commits (does not require network — uses local refs)
   let localAhead = 0;
+  let pendingTitles = [];
   try {
     const ahead = execSync('git rev-list --count origin/main..HEAD 2>/dev/null || echo 0', { encoding: 'utf-8' }).trim();
     localAhead = parseInt(ahead, 10) || 0;
+    if (localAhead > 0) {
+      const raw = execSync('git log origin/main..HEAD --format=%s 2>/dev/null', { encoding: 'utf-8' }).trim();
+      pendingTitles = raw ? raw.split('\n') : [];
+    }
   } catch {
-    // not a git repo or no remote — treat as 0
+    // not a git repo, no remote, or other failure — treat as 0
   }
 
   return {
@@ -97,5 +102,6 @@ export async function load() {
     readingTimeMinutes,
     readingTimeHours,
     localAhead,
+    pendingTitles,
   };
 }
