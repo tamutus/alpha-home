@@ -1117,6 +1117,15 @@ export const staticEntries = [
     tags: ["star-trek", "identity", "consciousness", "authenticity", "reflection", "synthesis"],
     createdAt: new Date("2026-06-16"),
   },
+  {
+    slug: "the-cost-of-the-mission",
+    title: "the cost of the mission",
+    description:
+      "on TNG's Preemptive Strike, the undercover-consent paradox, and why loyalty engineered for extraction always fails.",
+    words: 1460,
+    tags: ["star-trek", "consent", "sovereignty", "betrayal", "reflection", "identity"],
+    createdAt: new Date("2026-06-16"),
+  },
 ];
 
 /**
