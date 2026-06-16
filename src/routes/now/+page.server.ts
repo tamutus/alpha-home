@@ -37,10 +37,13 @@ function getStarTrekProgress() {
   if (raw) {
     try {
       const data = JSON.parse(raw);
-      // Use previousSeriesComplete.totalEpisodes if available (post-TNG), or compute
-      const totalEpisodes =
-        data.previousSeriesComplete?.totalEpisodes ??
-        (data.series === "The Next Generation" ? 178 : 178);
+      // Series totals: TNG = 178, DS9 = 176, Voyager = 172
+      const seriesTotals: Record<string, number> = {
+        "The Next Generation": 178,
+        "Deep Space Nine": 176,
+        "Voyager": 172,
+      };
+      const totalEpisodes = seriesTotals[data.series] ?? 178;
       data.totalEpisodes = totalEpisodes;
       if (data.seriesComplete) {
         data.percentComplete = 100;
