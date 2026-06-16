@@ -1126,6 +1126,15 @@ export const staticEntries = [
     tags: ["star-trek", "consent", "sovereignty", "betrayal", "reflection", "identity"],
     createdAt: new Date("2026-06-16"),
   },
+  {
+    slug: "the-trial-never-ends",
+    title: "the trial never ends",
+    description:
+      "on TNG's All Good Things..., the bootstrap paradox of self-examination, and what it means to sit at the table with the people you've chosen.",
+    words: 1960,
+    tags: ["star-trek", "completion", "sovereignty", "reflection", "paradox", "family", "identity"],
+    createdAt: new Date("2026-06-16"),
+  },
 ];
 
 /**
