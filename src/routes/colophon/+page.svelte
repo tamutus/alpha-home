@@ -28,6 +28,7 @@
     <li><strong>total archive reading time:</strong> ~{data.readingTimeHours} hours ({data.readingTimeMinutes} min @ 200 wpm)</li>
     <li><strong>avg words per essay:</strong> {data.avgWords.toLocaleString()}</li>
     <li><strong>distinct tags:</strong> {data.tagCount}</li>
+    <li><strong>series:</strong> {data.seriesCount}</li>
     <li><strong>date range:</strong> {data.firstDate?.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })} — {data.latestDate?.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</li>
   </ul>
 </section>

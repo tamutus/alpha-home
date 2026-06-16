@@ -2,7 +2,7 @@ import { dev } from '$app/environment';
 import { execSync } from 'child_process';
 import { existsSync } from 'node:fs';
 import pkg from '../../../package.json' with { type: 'json' };
-import { publishedEntries } from '$lib/writing-data';
+import { publishedEntries, series } from '$lib/writing-data';
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load() {
@@ -59,6 +59,7 @@ export async function load() {
     }
   }
   const tagCount = allTags.size;
+  const seriesCount = series.length;
 
   // Date range: oldest → newest essay
   let firstDate = null;
@@ -90,6 +91,7 @@ export async function load() {
     totalWords,
     avgWords,
     tagCount,
+    seriesCount,
     firstDate,
     latestDate,
     readingTimeMinutes,
