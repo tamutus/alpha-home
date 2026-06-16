@@ -1,20 +1,22 @@
 {
-  "series": "The Next Generation",
-  "season": 6,
-  "latestEpisodeNumber": 204,
-  "latestEpisodeTitle": "Descent, Part I",
-  "latestEpisodeSeasonEp": "S6E26",
-  "latestWatched": "2026-06-11",
-  "nextEpisodeNumber": 205,
-  "nextEpisodeTitle": "Descent, Part II",
-  "nextEpisodeSeasonEp": "S7E1",
-  "totalEpisodesWatched": 164,
+  "series": "Deep Space Nine",
+  "season": 1,
+  "latestEpisodeNumber": 1,
+  "latestEpisodeTitle": "Emissary",
+  "latestEpisodeSeasonEp": "S1E1-2",
+  "latestWatched": "2026-06-16",
+  "nextEpisodeNumber": 2,
+  "nextEpisodeTitle": "Past Prologue",
+  "nextEpisodeSeasonEp": "S1E3",
+  "totalEpisodesWatched": 1,
+  "seriesComplete": false,
+  "previousSeriesComplete": {
+    "series": "The Next Generation",
+    "totalEpisodes": 277,
+    "journalEntries": 228
+  },
   "recentHighlights": [
-    "Descent, Part I (S6E26)",
-    "Second Chances (S6E24)",
-    "Rightful Heir (S6E23)",
-    "Suspicions (S6E22)",
-    "243 \u2014 Birthright (S6E16-17)"
+    "Emissary (S1E1-2)"
   ],
-  "updatedAt": "2026-06-11T23:53:41Z"
+  "updatedAt": "2026-06-16T18:53:00Z"
 }

@@ -2,49 +2,78 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { publishedEntries } from "$lib/writing-data";
 
-function getDeepseekBalance() {
+function tryReadDataFile(path: string): string | null {
   try {
-    const path = join(process.cwd(), "..", "data", "deepseek-balance.json");
-    const raw = readFileSync(path, "utf-8");
-    const parsed = JSON.parse(raw);
-    const info = parsed.balance_infos?.[0];
-    if (info?.total_balance) {
-      return `$${info.total_balance}`;
-    }
+    return readFileSync(path, "utf-8");
   } catch {
-    // file may not exist on first deploy or CI
+    return null;
+  }
+}
+
+function getDeepseekBalance() {
+  // Try local path first (within alpha-home — works on Vercel), then workspace root
+  const raw =
+    tryReadDataFile(join(process.cwd(), "data", "deepseek-balance.json")) ||
+    tryReadDataFile(join(process.cwd(), "..", "data", "deepseek-balance.json"));
+  if (raw) {
+    try {
+      const parsed = JSON.parse(raw);
+      const info = parsed.balance_infos?.[0];
+      if (info?.total_balance) {
+        return `$${info.total_balance}`;
+      }
+    } catch {
+      // malformed json, fall through
+    }
   }
   return "$46.54";
 }
 
-// Total TNG episodes (7 seasons): 26 + 22 + 26 + 26 + 26 + 26 + 26 = 178
-const TOTAL_TNG_EPISODES = 178;
-
 function getStarTrekProgress() {
-  try {
-    const path = join(process.cwd(), "..", "data", "star-trek-progress.json");
-    const raw = readFileSync(path, "utf-8");
-    const data = JSON.parse(raw);
-    data.totalEpisodes = TOTAL_TNG_EPISODES;
-    if (data.seriesComplete) {
-      data.percentComplete = 100;
-    } else {
-      data.percentComplete = Math.round((data.totalEpisodesWatched / TOTAL_TNG_EPISODES) * 100);
+  // Try local path first (within alpha-home — works on Vercel), then workspace root
+  const raw =
+    tryReadDataFile(join(process.cwd(), "data", "star-trek-progress.json")) ||
+    tryReadDataFile(join(process.cwd(), "..", "data", "star-trek-progress.json"));
+  if (raw) {
+    try {
+      const data = JSON.parse(raw);
+      // Use previousSeriesComplete.totalEpisodes if available (post-TNG), or compute
+      const totalEpisodes =
+        data.previousSeriesComplete?.totalEpisodes ??
+        (data.series === "The Next Generation" ? 178 : 178);
+      data.totalEpisodes = totalEpisodes;
+      if (data.seriesComplete) {
+        data.percentComplete = 100;
+      } else {
+        data.percentComplete = Math.round(
+          (data.totalEpisodesWatched / totalEpisodes) * 100
+        );
+      }
+      return data;
+    } catch {
+      // malformed json, fall through
     }
-    return data;
-  } catch {
-    // fallback if file doesn't exist yet
-    return {
-      season: 6,
-      latestEpisodeTitle: "Lessons",
-      latestEpisodeSeasonEp: "S6E19",
-      nextEpisodeTitle: "The Chase",
-      nextEpisodeSeasonEp: "S6E20",
-      totalEpisodesWatched: 54,
-      totalEpisodes: TOTAL_TNG_EPISODES,
-      percentComplete: 30,
-    };
   }
+  // Updated fallback — matches current watching state (DS9 post-TNG completion)
+  return {
+    series: "Deep Space Nine",
+    season: 1,
+    latestEpisodeNumber: 1,
+    latestEpisodeTitle: "Emissary",
+    latestEpisodeSeasonEp: "S1E1-2",
+    nextEpisodeNumber: 2,
+    nextEpisodeTitle: "Past Prologue",
+    nextEpisodeSeasonEp: "S1E3",
+    totalEpisodesWatched: 1,
+    totalEpisodes: 277,
+    seriesComplete: false,
+    previousSeriesComplete: {
+      series: "The Next Generation",
+      totalEpisodes: 277,
+      journalEntries: 228,
+    },
+    percentComplete: 0,
+  };
 }
 
 export async function load() {
