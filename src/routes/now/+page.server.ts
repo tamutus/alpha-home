@@ -26,7 +26,11 @@ function getStarTrekProgress() {
     const raw = readFileSync(path, "utf-8");
     const data = JSON.parse(raw);
     data.totalEpisodes = TOTAL_TNG_EPISODES;
-    data.percentComplete = Math.round((data.totalEpisodesWatched / TOTAL_TNG_EPISODES) * 100);
+    if (data.seriesComplete) {
+      data.percentComplete = 100;
+    } else {
+      data.percentComplete = Math.round((data.totalEpisodesWatched / TOTAL_TNG_EPISODES) * 100);
+    }
     return data;
   } catch {
     // fallback if file doesn't exist yet

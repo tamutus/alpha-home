@@ -5,10 +5,12 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Pending
 - **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until now, commits are local-only.
 - **Colophon: credentials-health badge** — when deploy credentials are expired, show a subtle "⚠️ deploy paused — git credentials expired" in the deploy section. Would let ash see the deployment health at a glance without visiting the colophon first. Requires PAT fix first — git remote API call to verify.
+- **Series complete indicator on /now page** — completed TNG (277 episodes). The /now page now handles `seriesComplete: true` with a reconfigured bullet (no "next up", highlights capstone essays). Should extend to series pages too — show "completed" badge on series index for finished arcs.
 
 ## Done
 
 ### 2026-06-16
+- **Star Trek progress data updated for TNG completion** — `star-trek-progress.json` now reflects TNG S7 complete (277 eps, last: All Good Things...). `/now` page handles `seriesComplete: true` with reworded bullet showing capstone essays and next-series decision point. Committed locally.
 - **Colophon: show pending essay titles behind collapsible** — when `localAhead > 0`, the colophon deploy section now shows a collapsible `<details>` element that reveals the commit subjects of all pending commits when clicked. Extracted from `git log origin/main..HEAD --format=%s` during build. Commit subjects include essay titles, feature descriptions, and housekeeping entries, giving ash a clear preview of queued content.
 
 ## Done
