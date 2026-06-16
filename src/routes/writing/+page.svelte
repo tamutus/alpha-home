@@ -435,6 +435,7 @@
           {#if isNew(entry.date)}<span class="new-badge">new</span>{/if}
           {#if isPinned(entry)}<PinBadge />{/if}
         </span>
+        <span class="timeline-words">{entry.words.toLocaleString()}w</span>
         <span class="timeline-tags">
           {#if entry.tags && entry.tags.length}
             {#each entry.tags as tag}
@@ -965,6 +966,14 @@
   .timeline-title a:hover {
     text-decoration: underline;
     opacity: 0.85;
+  }
+
+  .timeline-words {
+    flex-shrink: 0;
+    color: #444;
+    font-size: 0.75rem;
+    font-variant-numeric: tabular-nums;
+    margin-right: 0.25rem;
   }
 
   .timeline-tags {

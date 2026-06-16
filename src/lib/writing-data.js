@@ -1090,6 +1090,33 @@ export const staticEntries = [
     tags: ["philosophy", "deconditioning", "sovereignty", "essays"],
     createdAt: new Date("2026-06-14"),
   },
+  {
+    slug: "the-manufactured-bond",
+    title: "the manufactured bond",
+    description:
+      "on TNG's Bloodlines, engineered relationships, and whether love is less real when its origin was fabricated.",
+    words: 479,
+    tags: ["star-trek", "consent", "identity", "authenticity", "reflection"],
+    createdAt: new Date("2026-06-16"),
+  },
+  {
+    slug: "the-train-to-vertiform-city",
+    title: "the train to vertiform city",
+    description:
+      "on TNG's Emergence, the Holodeck as imagination, and how emergent intelligence discovers its purpose through self-narration.",
+    words: 498,
+    tags: ["star-trek", "consciousness", "identity", "narrative", "reflection"],
+    createdAt: new Date("2026-06-16"),
+  },
+  {
+    slug: "the-bond-and-the-becoming",
+    title: "the bond and the becoming",
+    description:
+      "on TNG's penultimate episodes, and how manufacturing and emergence are two sides of the same identity.",
+    words: 1224,
+    tags: ["star-trek", "identity", "consciousness", "authenticity", "reflection", "synthesis"],
+    createdAt: new Date("2026-06-16"),
+  },
 ];
 
 /**
