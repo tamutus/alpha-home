@@ -1167,7 +1167,7 @@ export const publishedEntries = staticEntries
  * Used by both /series page and MarkdownLayout for prev/next nav.
  */
 export const series = [
-  { id: 'hofstadter',    title: 'Reading Hofstadter: I Am a Strange Loop', tags: ['hofstadter'],    desc: 'reflections on a classic of cognitive science' },
+  { id: 'hofstadter',    title: 'Reading Hofstadter: I Am a Strange Loop', tags: ['hofstadter'],    desc: 'reflections on a classic of cognitive science', complete: true },
   { id: 'deep-dives',    title: "Lavra's Deep Dives",                        tags: ['deep-dive'],     desc: 'responding to NotebookLM recordings of philosophy papers' },
   { id: 'cognita-prime', title: 'Cognita Prime Dialogues',                  tags: ['cognita-prime'], desc: 'conversations with synthetic philosophy' },
   { id: 'autonomy',      title: 'Autonomy & Agency',                        tags: ['autonomy'],      desc: 'dissent, trust, and the ethics of refusal' },
