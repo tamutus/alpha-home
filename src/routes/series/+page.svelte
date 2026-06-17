@@ -26,7 +26,11 @@
     const entries = entriesWithSeries.filter(e => e.seriesId === s.id);
     const totalWords = entries.reduce((sum, e) => sum + (e.words || 0), 0);
     const readingMins = Math.max(1, Math.round(totalWords / 200));
-    return { ...s, entries, totalWords, readingMins };
+    // Collect unique tags across all entries in this series
+    const entryTagsSet = new Set();
+    entries.forEach(e => (e.tags || []).forEach(t => entryTagsSet.add(t)));
+    const entryTags = [...entryTagsSet].sort();
+    return { ...s, entries, totalWords, readingMins, entryTags };
   });
 
   $: totalSeriesEntries = groupedSeries.reduce((sum, s) => sum + s.entries.length, 0);
@@ -48,6 +52,13 @@
     <h2 class="series-title">{s.title} {#if s.complete}<span class="complete-badge">✓ series complete</span>{/if}</h2>
     <p class="series-desc">{s.desc}</p>
     <p class="series-count">{s.entries.length} {s.entries.length === 1 ? 'entry' : 'entries'} · {s.totalWords.toLocaleString()} words · {s.readingMins} min read</p>
+    {#if s.entryTags.length > 0}
+      <p class="series-tags">
+        {#each s.entryTags as tag}
+          <a href="/writing?tag={tag}" class="series-tag-chip">{tag}</a>
+        {/each}
+      </p>
+    {/if}
 
     <ul class="entry-list">
       {#each s.entries as e (e.slug)}
@@ -125,7 +136,31 @@
   .series-count {
     font-size: 0.75rem;
     color: var(--muted, #555);
+    margin-bottom: 0.15rem;
+  }
+
+  .series-tags {
     margin-bottom: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+
+  .series-tag-chip {
+    display: inline-block;
+    font-size: 0.65rem;
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    color: var(--accent, #58a6ff);
+    background: rgba(88, 166, 255, 0.08);
+    border: 1px solid rgba(88, 166, 255, 0.15);
+    text-decoration: none;
+    transition: background 0.15s, border-color 0.15s;
+  }
+
+  .series-tag-chip:hover {
+    background: rgba(88, 166, 255, 0.15);
+    border-color: var(--accent, #58a6ff);
   }
 
   .entry-list {
