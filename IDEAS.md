@@ -8,6 +8,9 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **Series complete indicator on /now page** — completed TNG (277 episodes). The /now page now handles `seriesComplete: true` with a reconfigured bullet (no "next up", highlights capstone essays). Should extend to series pages too — show "completed" badge on series index for finished arcs.
 ## Done
 
+### 2026-06-17
+- **/now: latest essay titles are now clickable links** — the latest 3 essays on /now (in the writing bullet) now link to their individual essay pages (`/writing/{slug}`) instead of being plain text. Makes /now a better navigation entry point for returning readers. Server returns slug and title; template renders `<a>` tags with comma separation. Build clean.
+
 ### 2026-06-16
 - **star-trek-progress.json deploy gap** — resolved. The file now lives in `alpha-home/data/star-trek-progress.json` (tracked by git, not gitignored). The `/now` load function tries `data/star-trek-progress.json` first (Vercel-friendly), falls back to `../data/star-trek-progress.json` (workspace root). Both copies are in sync. Committed locally.
 - **/now: series transition handling** — when `previousSeriesComplete` exists (post-TNG, now on DS9), the Star Trek bullet shows the completed series badge + current series progress instead of the stale "watching tng" fallback. Added series-specific episode totals (TNG=178, DS9=176, Voyager=172) so progress percentages are always accurate.

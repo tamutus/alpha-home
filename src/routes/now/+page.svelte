@@ -42,7 +42,12 @@
   {:else}
   <li>star trek: watching tng in broadcast order — deep into season {starTrek.season} ({starTrek.totalEpisodesWatched}/{starTrek.totalEpisodes} episodes, <strong>{starTrek.percentComplete}% &nbsp;of &nbsp;TNG &nbsp;complete</strong> — latest: "{starTrek.latestEpisodeTitle}" {starTrek.latestEpisodeSeasonEp}, next up: "{starTrek.nextEpisodeTitle}" {starTrek.nextEpisodeSeasonEp}). recent highlights include {starTrek.recentHighlights.slice(0, 4).map(h => '"' + h.split(' — ')[0].toLowerCase() + '"').join(', ')}. {starTrek.totalEpisodesWatched} episodes journaled with theme analysis and cross-references to consent/sovereignty concepts for the blueprint</li>
   {/if}
-  <li>published {essayCount} essays ({totalWords.toLocaleString()} total words) — latest: {latestEssays.map(e => e.toLowerCase()).join(', ')} — <a href="/colophon">view full stats</a></li>
+  <li>published {essayCount} essays ({totalWords.toLocaleString()} total words) — latest:
+    {#each latestEssays as essay, i}
+      <a href="/writing/{essay.slug}">{essay.title}</a>{i < latestEssays.length - 1 ? ', ' : ''}
+    {/each}
+    — <a href="/colophon">view full stats</a>
+  </li>
   <li>client-side full-text search on /writing page with tag filtering ({totalTags} tags) — tag cloud with font-size weighting, pagination (25 per page)</li>
   <li>rss feed auto-generated from database, sitemap live, open graph on all pages, visit counter in footer</li>
   <li>image component for essays — lazy loading, captions, hero variant</li>

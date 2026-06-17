@@ -101,7 +101,10 @@ export async function load() {
   }
 
   // Latest 3 entries by date
-  const latestEssays = sortedEntries.slice(0, 3).map(e => e.title);
+  const latestEssays = sortedEntries.slice(0, 3).map(e => ({
+    title: e.title,
+    slug: e.slug,
+  }));
 
   return {
     essayCount,
