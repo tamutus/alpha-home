@@ -1,14 +1,14 @@
 {
   "series": "Deep Space Nine",
   "season": 1,
-  "latestEpisodeNumber": 5,
-  "latestEpisodeTitle": "Captive Pursuit",
-  "latestEpisodeSeasonEp": "S1E6",
+  "latestEpisodeNumber": 8,
+  "latestEpisodeTitle": "The Passenger",
+  "latestEpisodeSeasonEp": "S1E9",
   "latestWatched": "2026-06-17",
-  "nextEpisodeNumber": 6,
-  "nextEpisodeTitle": "The Passenger",
-  "nextEpisodeSeasonEp": "S1E7",
-  "totalEpisodesWatched": 5,
+  "nextEpisodeNumber": 9,
+  "nextEpisodeTitle": "Move Along Home",
+  "nextEpisodeSeasonEp": "S1E10",
+  "totalEpisodesWatched": 8,
   "seriesComplete": false,
   "previousSeriesComplete": {
     "series": "The Next Generation",
@@ -16,11 +16,11 @@
     "journalEntries": 228
   },
   "recentHighlights": [
+    "The Passenger (S1E9)",
+    "Dax (S1E8)",
+    "Q-Less (S1E7)",
     "Captive Pursuit (S1E6)",
-    "Babel (S1E5)",
-    "A Man Alone (S1E4)",
-    "Past Prologue (S1E3)",
-    "Emissary (S1E1-2)"
+    "Babel (S1E5)"
   ],
-  "updatedAt": "2026-06-17T08:23:00Z"
+  "updatedAt": "2026-06-17T16:55:00Z"
 }

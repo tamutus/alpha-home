@@ -4,6 +4,7 @@ import { publishedEntries } from "$lib/writing-data";
 
 export async function load() {
   const totalWords = publishedEntries.reduce((sum, e) => sum + (e.words || 0), 0);
+  const readingTimeMinutes = Math.max(1, Math.round(totalWords / 200));
 
   // Date range: oldest → newest essay createdAt
   let firstDate = null;
@@ -16,5 +17,5 @@ export async function load() {
     }
   }
 
-  return { entries: publishedEntries, totalWords, firstDate, latestDate };
+  return { entries: publishedEntries, totalWords, readingTimeMinutes, firstDate, latestDate };
 }

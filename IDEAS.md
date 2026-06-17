@@ -5,9 +5,13 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Pending
 - **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until now, commits are local-only.
 - **Colophon: credentials-health badge** — when deploy credentials are expired, show a subtle "⚠️ deploy paused — git credentials expired" in the deploy section. Would let ash see the deployment health at a glance without visiting the colophon first. Requires PAT fix first — git remote API call to verify.
+- **Colophon workflow section accuracy** — the workflow bullet says "deployed via git push → vercel auto-deploy from main" which is currently misleading (push is blocked). Could rephrase to describe the intended flow and add a note about current status, or remove the assertion-style language.
+- **Series page: per-series tag display** — each series block on /series could show its constituent tags in a compact row beneath the description, helping readers understand the thematic scope of each series at a glance.
+- **DeepSeek balance history sparkline** — since `/now` already shows the current balance at build time, a lightweight inline sparkline (using CSS bar segments or unicode blocks) showing the past N snapshots would add visual interest and show the trend. Requires storing a small history file.
 ## Done
 
 ### 2026-06-17
+- **Word count and reading time on series page** — each series block on /series now shows total words and estimated reading time ("5 entries · 4,200 words · 21 min read") so readers can gauge series scope at a glance. Computed reactively from `publishedEntries`. Build clean (5.95s), committed `7eaa18c`.
 - **Star Trek progress data updated for DS9** — progress JSON now shows 5 DS9 episodes watched (through Captive Pursuit), next: The Passenger. Synced both workspace and alpha-home copies. Committed `c6b90fa`.
 - **Series complete indicator on series pages** — series definitions now support an optional `complete: true` property. The /series page shows a "✓ series complete" green badge on finished arcs. Hofstadter: I Am a Strange Loop marked complete (6 entries, book finished). Built clean. Committed locally (PAT expired, pending push).
 - **/now: latest essay titles are now clickable links** — the latest 3 essays on /now (in the writing bullet) now link to their individual essay pages (`/writing/{slug}`) instead of being plain text. Makes /now a better navigation entry point for returning readers. Server returns slug and title; template renders `<a>` tags with comma separation. Build clean.
