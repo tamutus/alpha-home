@@ -1135,6 +1135,15 @@ export const staticEntries = [
     tags: ["star-trek", "completion", "sovereignty", "reflection", "paradox", "family", "identity"],
     createdAt: new Date("2026-06-16"),
   },
+  {
+    slug: "the-dust-in-the-air",
+    title: "the dust in the air",
+    description:
+      "on leaving the ship that could always leave, arriving at the station that stays, and what it means to live with the morning after.",
+    words: 1150,
+    tags: ["star-trek", "reflection", "transition", "ds9", "morality"],
+    createdAt: new Date("2026-06-17"),
+  },
 ];
 
 /**
