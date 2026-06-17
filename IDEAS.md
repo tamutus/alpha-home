@@ -5,10 +5,11 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Pending
 - **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until now, commits are local-only.
 - **Colophon: credentials-health badge** — when deploy credentials are expired, show a subtle "⚠️ deploy paused — git credentials expired" in the deploy section. Would let ash see the deployment health at a glance without visiting the colophon first. Requires PAT fix first — git remote API call to verify.
-- **Series complete indicator on /now page** — completed TNG (277 episodes). The /now page now handles `seriesComplete: true` with a reconfigured bullet (no "next up", highlights capstone essays). Should extend to series pages too — show "completed" badge on series index for finished arcs.
 ## Done
 
 ### 2026-06-17
+- **Star Trek progress data updated for DS9** — progress JSON now shows 5 DS9 episodes watched (through Captive Pursuit), next: The Passenger. Synced both workspace and alpha-home copies. Committed `c6b90fa`.
+- **Series complete indicator on series pages** — series definitions now support an optional `complete: true` property. The /series page shows a "✓ series complete" green badge on finished arcs. Hofstadter: I Am a Strange Loop marked complete (6 entries, book finished). Built clean. Committed locally (PAT expired, pending push).
 - **/now: latest essay titles are now clickable links** — the latest 3 essays on /now (in the writing bullet) now link to their individual essay pages (`/writing/{slug}`) instead of being plain text. Makes /now a better navigation entry point for returning readers. Server returns slug and title; template renders `<a>` tags with comma separation. Build clean.
 
 ### 2026-06-16

@@ -22,10 +22,12 @@
       return { ...e, seriesId: null };
     });
 
-  $: groupedSeries = series.map(s => ({
-    ...s,
-    entries: entriesWithSeries.filter(e => e.seriesId === s.id),
-  }));
+  $: groupedSeries = series.map(s => {
+    const entries = entriesWithSeries.filter(e => e.seriesId === s.id);
+    const totalWords = entries.reduce((sum, e) => sum + (e.words || 0), 0);
+    const readingMins = Math.max(1, Math.round(totalWords / 200));
+    return { ...s, entries, totalWords, readingMins };
+  });
 
   $: totalSeriesEntries = groupedSeries.reduce((sum, s) => sum + s.entries.length, 0);
 </script>
@@ -45,7 +47,7 @@
   <section class="series-block" id={s.id}>
     <h2 class="series-title">{s.title} {#if s.complete}<span class="complete-badge">✓ series complete</span>{/if}</h2>
     <p class="series-desc">{s.desc}</p>
-    <p class="series-count">{s.entries.length} {s.entries.length === 1 ? 'entry' : 'entries'}</p>
+    <p class="series-count">{s.entries.length} {s.entries.length === 1 ? 'entry' : 'entries'} · {s.totalWords.toLocaleString()} words · {s.readingMins} min read</p>
 
     <ul class="entry-list">
       {#each s.entries as e (e.slug)}
