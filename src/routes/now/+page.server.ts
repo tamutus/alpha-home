@@ -10,6 +10,26 @@ function tryReadDataFile(path: string): string | null {
   }
 }
 
+function getDeepseekBalanceHistory() {
+  const raw =
+    tryReadDataFile(join(process.cwd(), "data", "balance-history.json")) ||
+    tryReadDataFile(join(process.cwd(), "..", "alpha-home", "data", "balance-history.json"));
+  if (raw) {
+    try {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed.entries)) {
+        return parsed.entries.slice(-30).map(e => ({
+          date: e.date,
+          balance: parseFloat(e.balance),
+        }));
+      }
+    } catch {
+      // malformed json
+    }
+  }
+  return [];
+}
+
 function getDeepseekBalance() {
   // Try local path first (within alpha-home — works on Vercel), then workspace root
   const raw =
@@ -112,6 +132,7 @@ export async function load() {
     totalTags: allTags.size,
     latestEssays,
     deepseekBalance: getDeepseekBalance(),
+    balanceHistory: getDeepseekBalanceHistory(),
     starTrek: getStarTrekProgress(),
   };
 }

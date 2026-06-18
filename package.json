@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "bash scripts/validate-writing-manifest.sh && vite build",
+    "build": "bash scripts/validate-writing-manifest.sh && bash scripts/update-balance-history.sh && vite build",
     "validate": "bash scripts/validate-writing-manifest.sh",
     "preview": "vite preview",
     "db:generate": "drizzle-kit generate",
