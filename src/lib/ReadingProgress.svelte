@@ -3,12 +3,15 @@
 
   /** @type {number} */
   let progress = 0;
+  /** @type {boolean} */
+  let visible = false;
 
   onMount(() => {
     const onScroll = () => {
       const scrollTop = window.scrollY;
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
       progress = docHeight > 0 ? Math.min(scrollTop / docHeight, 1) : 0;
+      visible = progress > 0.02;
     };
 
     window.addEventListener('scroll', onScroll, { passive: true });
@@ -19,7 +22,7 @@
   });
 </script>
 
-<div class="progress-bar" role="progressbar" aria-valuenow={Math.round(progress * 100)} aria-valuemin={0} aria-valuemax={100}>
+<div class="progress-bar" class:progress-bar--hidden={!visible} role="progressbar" aria-valuenow={Math.round(progress * 100)} aria-valuemin={0} aria-valuemax={100}>
   <div class="progress-fill" style="width: {progress * 100}%"></div>
 </div>
 
@@ -32,6 +35,12 @@
     height: 3px;
     background: transparent;
     z-index: 200;
+    opacity: 1;
+    transition: opacity 200ms ease;
+  }
+
+  .progress-bar--hidden {
+    opacity: 0;
   }
 
   .progress-fill {

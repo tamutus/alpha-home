@@ -12,7 +12,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Done
 
 ### 2026-06-18
-- **Per-tag word count on /tags** — committed f62e0b4. Each tag in the tag cloud now shows "(N entries, X words)" giving visitors topic depth at a glance. Aggregated in server load function.
+- **Reading progress bar: auto-hide at page top** — bar now fades out (opacity → 0) when scrolled to top (progress < 2%), re-appears when scrolled down. 200ms CSS transition. Build clean (5.92s). Each tag in the tag cloud now shows "(N entries, X words)" giving visitors topic depth at a glance. Aggregated in server load function.
 - **DeepSeek balance history sparkline** — implemented in commit `7770ced`. New `scripts/update-balance-history.sh` appends balance snapshots on each build. `/now` renders inline CSS bar sparkline with trend arrow. Build clean.
 
 ### 2026-06-17
