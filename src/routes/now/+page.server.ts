@@ -124,6 +124,7 @@ export async function load() {
   const latestEssays = sortedEntries.slice(0, 3).map(e => ({
     title: e.title,
     slug: e.slug,
+    date: e.date,
   }));
 
   return {

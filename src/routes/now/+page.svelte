@@ -66,7 +66,7 @@
   {/if}
   <li>published {essayCount} essays ({totalWords.toLocaleString()} total words) — latest:
     {#each latestEssays as essay, i}
-      <a href="/writing/{essay.slug}">{essay.title}</a>{i < latestEssays.length - 1 ? ', ' : ''}
+      <a href="/writing/{essay.slug}">{essay.title}</a> <span class="essay-date">({essay.date})</span>{i < latestEssays.length - 1 ? ', ' : ''}
     {/each}
     — <a href="/colophon">view full stats</a>
   </li>
@@ -152,6 +152,11 @@
     transition: opacity 0.2s;
   }
   .bar:hover { opacity: 1; }
+
+  .essay-date {
+    color: var(--muted, #555);
+    font-size: 0.8rem;
+  }
 
   .inspo {
     margin-top: 3rem;

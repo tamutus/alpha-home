@@ -1,14 +1,14 @@
 {
   "series": "Deep Space Nine",
   "season": 1,
-  "latestEpisodeNumber": 13,
-  "latestEpisodeTitle": "Battle Lines",
-  "latestEpisodeSeasonEp": "S1E13",
+  "latestEpisodeNumber": 14,
+  "latestEpisodeTitle": "The Storyteller",
+  "latestEpisodeSeasonEp": "S1E14",
   "latestWatched": "2026-06-18",
-  "nextEpisodeNumber": 14,
-  "nextEpisodeTitle": "The Storyteller",
-  "nextEpisodeSeasonEp": "S1E14",
-  "totalEpisodesWatched": 12,
+  "nextEpisodeNumber": 15,
+  "nextEpisodeTitle": "Progress",
+  "nextEpisodeSeasonEp": "S1E15",
+  "totalEpisodesWatched": 13,
   "seriesComplete": false,
   "previousSeriesComplete": {
     "series": "The Next Generation",
@@ -16,11 +16,11 @@
     "journalEntries": 228
   },
   "recentHighlights": [
+    "The Storyteller (S1E14)",
     "Battle Lines (S1E13)",
     "The Vortex (S1E12)",
     "The Nagus (S1E11)",
-    "Dax (S1E8)",
-    "Move Along Home (S1E10)"
+    "Dax (S1E8)"
   ],
-  "updatedAt": "2026-06-18T07:53:00Z"
+  "updatedAt": "2026-06-18T11:23:00Z"
 }

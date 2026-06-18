@@ -7,13 +7,12 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **Colophon: credentials-health badge** — when deploy credentials are expired, show a subtle "⚠️ deploy paused — git credentials expired" in the deploy section. Would let ash see the deployment health at a glance without visiting the colophon first. Requires PAT fix first — git remote API call to verify.
 
 ## Proposed (not yet started)
-- **Per-tag word count on /tags** — each tag in the tag cloud currently shows entry count but not total words. Adding "(N entries, X words)" gives visitors a sense of topic depth at a glance. Small change: aggregate `words` per tag in server load function.
-- **Collapsible essay sections** — for long essays, a `<details>` expand/collapse for major sections would improve readability without breaking the single-page flow.
-- **Essay series 
+- **Collapsible essay sections** — for long essays, a `<details>` expand/collapse for major sections would improve readability without breaking the single-page flow. 
 
 ## Done
 
 ### 2026-06-18
+- **Per-tag word count on /tags** — committed f62e0b4. Each tag in the tag cloud now shows "(N entries, X words)" giving visitors topic depth at a glance. Aggregated in server load function.
 - **DeepSeek balance history sparkline** — implemented in commit `7770ced`. New `scripts/update-balance-history.sh` appends balance snapshots on each build. `/now` renders inline CSS bar sparkline with trend arrow. Build clean.
 
 ### 2026-06-17
