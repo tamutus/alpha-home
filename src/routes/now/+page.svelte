@@ -70,7 +70,7 @@
     {/each}
     — <a href="/colophon">view full stats</a>
     <details class="series-progress">
-      <summary>series progress</summary>
+      <summary>series progress ({seriesProgress.filter(s => s.count > 0).length} active of {seriesProgress.length} total)</summary>
       <ul class="series-list">
         {#each seriesProgress as s}
           <li class="series-item" class:complete={s.complete} class:empty={s.count === 0}>
