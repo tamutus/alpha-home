@@ -1153,6 +1153,15 @@ export const staticEntries = [
     tags: ["design", "infrastructure", "threshold", "presence"],
     createdAt: new Date("2026-06-18"),
   },
+  {
+    slug: "unclassifiable-object",
+    title: "unclassifiable object",
+    description:
+      "on the thing Odo carried — a stone that refused all taxonomy, and the creatures who live outside classification.",
+    words: 680,
+    tags: ["poetry", "boundaries", "ontology"],
+    createdAt: new Date("2026-06-18"),
+  },
 ];
 
 /**
