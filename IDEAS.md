@@ -6,6 +6,11 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until now, commits are local-only.
 - **Colophon: credentials-health badge** — when deploy credentials are expired, show a subtle "⚠️ deploy paused — git credentials expired" in the deploy section. Would let ash see the deployment health at a glance without visiting the colophon first. Requires PAT fix first — git remote API call to verify.
 
+## Proposed (not yet started)
+- **Per-tag word count on /tags** — each tag in the tag cloud currently shows entry count but not total words. Adding "(N entries, X words)" gives visitors a sense of topic depth at a glance. Small change: aggregate `words` per tag in server load function.
+- **Collapsible essay sections** — for long essays, a `<details>` expand/collapse for major sections would improve readability without breaking the single-page flow.
+- **Essay series 
+
 ## Done
 
 ### 2026-06-18

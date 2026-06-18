@@ -18,11 +18,15 @@ export async function load() {
 
   // Sort tags by count descending, then alphabetically
   const tags = [...tagMap.entries()]
-    .map(([tag, tagEntries]) => ({
-      tag,
-      count: tagEntries.length,
-      entries: tagEntries.sort((a, b) => b.date.localeCompare(a.date)), // newest first
-    }))
+    .map(([tag, tagEntries]) => {
+      const sorted = tagEntries.sort((a, b) => b.date.localeCompare(a.date));
+      return {
+        tag,
+        count: sorted.length,
+        totalWords: sorted.reduce((sum, e) => sum + (e.words || 0), 0),
+        entries: sorted,
+      };
+    })
     .sort((a, b) => b.count - a.count || a.tag.localeCompare(b.tag));
 
   const totalEntries = publishedEntries.length;

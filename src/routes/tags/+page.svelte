@@ -18,8 +18,8 @@
 <p class="lede">{totalTags} tag{totalTags === 1 ? '' : 's'} across {totalEntries} entr{totalEntries === 1 ? 'y' : 'ies'}</p>
 
 <div class="tag-cloud">
-  {#each tags as { tag, count } }
-    <a href="/tags/{tag}" class="tag-link" style="font-size: {Math.max(0.75, Math.min(1.6, 0.6 + count * 0.2))}rem">{tag} <span class="tag-count">({count})</span></a>
+  {#each tags as { tag, count, totalWords } }
+    <a href="/tags/{tag}" class="tag-link" style="font-size: {Math.max(0.75, Math.min(1.6, 0.6 + count * 0.2))}rem">{tag} <span class="tag-count">{count} entry{count === 1 ? '' : 'ies'}, {totalWords.toLocaleString()} words</span></a>
   {/each}
 </div>
 
