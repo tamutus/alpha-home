@@ -127,11 +127,23 @@ export async function load() {
     date: e.date,
   }));
 
+  // Per-series entry counts for series progress indicators on /now
+  const seriesProgress = series.map(s => ({
+    id: s.id,
+    title: s.title,
+    tag: s.tags[0], // primary tag for linking
+    complete: s.complete || false,
+    count: publishedEntries.filter(e =>
+      e.tags && s.tags.some(t => e.tags.includes(t))
+    ).length,
+  }));
+
   return {
     essayCount,
     totalWords,
     totalTags: allTags.size,
     seriesCount: series.length,
+    seriesProgress,
     latestEssays,
     deepseekBalance: getDeepseekBalance(),
     balanceHistory: getDeepseekBalanceHistory(),

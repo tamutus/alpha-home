@@ -1,14 +1,14 @@
 {
   "series": "Deep Space Nine",
   "season": 1,
-  "latestEpisodeNumber": 16,
-  "latestEpisodeTitle": "If Wishes Were Horses",
-  "latestEpisodeSeasonEp": "S1E16",
+  "latestEpisodeNumber": 17,
+  "latestEpisodeTitle": "The Forsaken",
+  "latestEpisodeSeasonEp": "S1E17",
   "latestWatched": "2026-06-18",
-  "nextEpisodeNumber": 17,
-  "nextEpisodeTitle": "The Forsaken",
-  "nextEpisodeSeasonEp": "S1E17",
-  "totalEpisodesWatched": 15,
+  "nextEpisodeNumber": 18,
+  "nextEpisodeTitle": "Dramatis Personae",
+  "nextEpisodeSeasonEp": "S1E18",
+  "totalEpisodesWatched": 16,
   "seriesComplete": false,
   "previousSeriesComplete": {
     "series": "The Next Generation",
@@ -20,7 +20,7 @@
     "Progress (S1E15)",
     "The Storyteller (S1E14)",
     "Battle Lines (S1E13)",
-    "The Vortex (S1E12)"
+    "The Forsaken (S1E17)"
   ],
-  "updatedAt": "2026-06-18T17:23:00Z"
+  "updatedAt": "2026-06-18T20:23:00Z"
 }

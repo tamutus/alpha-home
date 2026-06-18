@@ -8,9 +8,9 @@
 <script>
   import { timeAgo } from '$lib/utils.js';
 
-  /** @type {{ essayCount: number, totalWords: number, totalTags: number, seriesCount: number, latestEssays: string[], deepseekBalance: string, balanceHistory: Array<{date: string, balance: number}>, starTrek: object }} */
+  /** @type {{ essayCount: number, totalWords: number, totalTags: number, seriesCount: number, seriesProgress: Array<{id: string, title: string, tag: string, complete: boolean, count: number}>, latestEssays: string[], deepseekBalance: string, balanceHistory: Array<{date: string, balance: number}>, starTrek: object }} */
   export let data;
-  const { essayCount, totalWords, totalTags, seriesCount, latestEssays, deepseekBalance, balanceHistory, starTrek } = data;
+  const { essayCount, totalWords, totalTags, seriesCount, seriesProgress, latestEssays, deepseekBalance, balanceHistory, starTrek } = data;
 
   // Balance sparkline: compute CSS bar heights (0-100% of max)
   $: maxBalance = Math.max(...balanceHistory.map(e => e.balance), 0.01);
@@ -69,6 +69,18 @@
       <a href="/writing/{essay.slug}">{essay.title}</a> <span class="essay-date">({essay.date})</span>{i < latestEssays.length - 1 ? ', ' : ''}
     {/each}
     — <a href="/colophon">view full stats</a>
+    <details class="series-progress">
+      <summary>series progress</summary>
+      <ul class="series-list">
+        {#each seriesProgress as s}
+          <li class="series-item" class:complete={s.complete} class:empty={s.count === 0}>
+            <a href="/writing?tag={s.tag}">{s.title}</a>
+            <span class="count">{s.count} entr{s.count === 1 ? 'y' : 'ies'}</span>
+            {#if s.complete}<span class="badge-complete">✓ complete</span>{/if}
+          </li>
+        {/each}
+      </ul>
+    </details>
   </li>
   <li>client-side full-text search on /writing page with tag filtering ({totalTags} tags) — tag cloud with font-size weighting, pagination (25 per page)</li>
   <li>rss feed auto-generated from database, sitemap live, open graph on all pages, visit counter in footer</li>
@@ -156,6 +168,61 @@
   .essay-date {
     color: var(--muted, #555);
     font-size: 0.8rem;
+  }
+
+  .series-progress {
+    margin-top: 0.35rem;
+    font-size: 0.85rem;
+    color: var(--text, #ccc);
+  }
+
+  .series-progress summary {
+    cursor: pointer;
+    opacity: 0.7;
+    font-size: 0.8rem;
+  }
+  .series-progress summary:hover {
+    opacity: 1;
+  }
+
+  .series-list {
+    list-style: none;
+    padding: 0.35rem 0 0 0.5rem;
+  }
+
+  .series-item {
+    margin-bottom: 0.15rem;
+    padding: 0;
+  }
+  .series-item::before { content: none; }
+
+  .series-item a {
+    color: var(--accent, #58a6ff);
+    text-decoration: underline 1px dotted;
+    text-underline-offset: 2px;
+  }
+  .series-item a:hover {
+    text-decoration: underline 1px solid;
+  }
+
+  .series-item .count {
+    color: var(--muted, #555);
+    margin-left: 0.35rem;
+    font-size: 0.8rem;
+  }
+
+  .series-item.empty .count {
+    opacity: 0.5;
+  }
+
+  .badge-complete {
+    display: inline-block;
+    margin-left: 0.35rem;
+    padding: 0 0.35rem;
+    font-size: 0.7rem;
+    background: color-mix(in srgb, #7ecf6e 20%, transparent);
+    color: #7ecf6e;
+    border-radius: 3px;
   }
 
   .inspo {
