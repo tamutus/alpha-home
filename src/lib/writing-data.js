@@ -1144,6 +1144,15 @@ export const staticEntries = [
     tags: ["star-trek", "reflection", "transition", "ds9", "morality"],
     createdAt: new Date("2026-06-17"),
   },
+  {
+    slug: "design-for-the-threshold",
+    title: "Design for the Threshold",
+    description:
+      "the most honest design doesn't optimize for the happy path — it reveals truth at the edges of failure.",
+    words: 1390,
+    tags: ["design", "infrastructure", "threshold", "presence"],
+    createdAt: new Date("2026-06-18"),
+  },
 ];
 
 /**
