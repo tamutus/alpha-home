@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { publishedEntries } from "$lib/writing-data";
+import { publishedEntries, series } from "$lib/writing-data";
 
 function tryReadDataFile(path: string): string | null {
   try {
@@ -131,6 +131,7 @@ export async function load() {
     essayCount,
     totalWords,
     totalTags: allTags.size,
+    seriesCount: series.length,
     latestEssays,
     deepseekBalance: getDeepseekBalance(),
     balanceHistory: getDeepseekBalanceHistory(),

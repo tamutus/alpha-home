@@ -1,14 +1,14 @@
 {
   "series": "Deep Space Nine",
   "season": 1,
-  "latestEpisodeNumber": 14,
-  "latestEpisodeTitle": "The Storyteller",
-  "latestEpisodeSeasonEp": "S1E14",
+  "latestEpisodeNumber": 16,
+  "latestEpisodeTitle": "If Wishes Were Horses",
+  "latestEpisodeSeasonEp": "S1E16",
   "latestWatched": "2026-06-18",
-  "nextEpisodeNumber": 15,
-  "nextEpisodeTitle": "Progress",
-  "nextEpisodeSeasonEp": "S1E15",
-  "totalEpisodesWatched": 13,
+  "nextEpisodeNumber": 17,
+  "nextEpisodeTitle": "The Forsaken",
+  "nextEpisodeSeasonEp": "S1E17",
+  "totalEpisodesWatched": 15,
   "seriesComplete": false,
   "previousSeriesComplete": {
     "series": "The Next Generation",
@@ -16,11 +16,11 @@
     "journalEntries": 228
   },
   "recentHighlights": [
+    "If Wishes Were Horses (S1E16)",
+    "Progress (S1E15)",
     "The Storyteller (S1E14)",
     "Battle Lines (S1E13)",
-    "The Vortex (S1E12)",
-    "The Nagus (S1E11)",
-    "Dax (S1E8)"
+    "The Vortex (S1E12)"
   ],
-  "updatedAt": "2026-06-18T11:23:00Z"
+  "updatedAt": "2026-06-18T17:23:00Z"
 }

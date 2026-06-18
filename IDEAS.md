@@ -7,12 +7,14 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **Colophon: credentials-health badge** — when deploy credentials are expired, show a subtle "⚠️ deploy paused — git credentials expired" in the deploy section. Would let ash see the deployment health at a glance without visiting the colophon first. Requires PAT fix first — git remote API call to verify.
 
 ## Proposed (not yet started)
-- **Collapsible essay sections** — for long essays, a `<details>` expand/collapse for major sections would improve readability without breaking the single-page flow. 
+- **Collapsible essay sections** — for long essays, a `<details>` expand/collapse for major sections would improve readability without breaking the single-page flow.
+- **Series progress indicators on /now** — show each essay series with completion status (e.g., "Star Trek Arc — 12/12 ✓"), giving visitors a quick sense of which writing projects are active vs finished. 
 
 ## Done
 
 ### 2026-06-18
 - **Reading progress bar: auto-hide at page top** — bar now fades out (opacity → 0) when scrolled to top (progress < 2%), re-appears when scrolled down. 200ms CSS transition. Build clean (5.92s). Each tag in the tag cloud now shows "(N entries, X words)" giving visitors topic depth at a glance. Aggregated in server load function.
+- **Series count on /now writing stats** — the /now page now shows "published N essays across N series" instead of just "N essays", giving visitors immediate context for the site's thematic structure. Build clean (6.00s), committed locally.
 - **DeepSeek balance history sparkline** — implemented in commit `7770ced`. New `scripts/update-balance-history.sh` appends balance snapshots on each build. `/now` renders inline CSS bar sparkline with trend arrow. Build clean.
 
 ### 2026-06-17
