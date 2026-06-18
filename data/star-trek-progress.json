@@ -1,14 +1,14 @@
 {
   "series": "Deep Space Nine",
   "season": 1,
-  "latestEpisodeNumber": 10,
-  "latestEpisodeTitle": "The Nagus",
-  "latestEpisodeSeasonEp": "S1E11",
-  "latestWatched": "2026-06-17",
-  "nextEpisodeNumber": 11,
-  "nextEpisodeTitle": "The Vortex",
-  "nextEpisodeSeasonEp": "S1E12",
-  "totalEpisodesWatched": 10,
+  "latestEpisodeNumber": 12,
+  "latestEpisodeTitle": "The Vortex",
+  "latestEpisodeSeasonEp": "S1E12",
+  "latestWatched": "2026-06-18",
+  "nextEpisodeNumber": 13,
+  "nextEpisodeTitle": "Battle Lines",
+  "nextEpisodeSeasonEp": "S1E13",
+  "totalEpisodesWatched": 11,
   "seriesComplete": false,
   "previousSeriesComplete": {
     "series": "The Next Generation",
@@ -17,10 +17,10 @@
   },
   "recentHighlights": [
     "The Nagus (S1E11)",
+    "The Vortex (S1E12)",
     "Move Along Home (S1E10)",
-    "The Passenger (S1E9)",
     "Dax (S1E8)",
-    "Q-Less (S1E7)"
+    "The Passenger (S1E9)"
   ],
-  "updatedAt": "2026-06-17T22:53:00Z"
+  "updatedAt": "2026-06-18T04:53:00Z"
 }
