@@ -5,9 +5,11 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Pending
 - **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until now, commits are local-only.
 - **Colophon: credentials-health badge** — when deploy credentials are expired, show a subtle "⚠️ deploy paused — git credentials expired" in the deploy section. Would let ash see the deployment health at a glance without visiting the colophon first. Requires PAT fix first — git remote API call to verify.
-- **Colophon workflow section accuracy** — fixed 2026-06-17. Workflow bullets now note '(push currently blocked — expired git credentials)' instead of asserting active deployment. Build clean.
-- **DeepSeek balance history sparkline** — since `/now` already shows the current balance at build time, a lightweight inline sparkline (using CSS bar segments or unicode blocks) showing the past N snapshots would add visual interest and show the trend. Requires storing a small history file.
+
 ## Done
+
+### 2026-06-18
+- **DeepSeek balance history sparkline** — implemented in commit `7770ced`. New `scripts/update-balance-history.sh` appends balance snapshots on each build. `/now` renders inline CSS bar sparkline with trend arrow. Build clean.
 
 ### 2026-06-17
 - **Per-series tag display** — each series block on /series now shows compact tag chips beneath the description, displaying all unique tags found across the series' entries. Each chip links to `/writing?tag={tag}` for filtered browsing. Build clean (6.04s), committed `3d0af64`.
