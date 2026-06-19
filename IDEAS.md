@@ -13,6 +13,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Done
 
 ### 2026-06-19
+- **/now: show last balance check date** — the api-key bullet on /now now shows a muted '(checked YYYY-MM-DD)' next to the balance amount, giving visitors freshness context for the build-time snapshot. Committed `b208cb6`.
 - **Homepage: /series and /tags nav links** — homepage now has direct links to /series (essay collections by theme) and /tags (browse by topic), making these pages discoverable without first visiting /writing. 2-line change, build clean (6.15s), committed `3c8594c` locally.
 
 ### 2026-06-18
