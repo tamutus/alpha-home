@@ -1,14 +1,14 @@
 {
   "series": "Deep Space Nine",
   "season": 1,
-  "latestEpisodeNumber": 18,
-  "latestEpisodeTitle": "Dramatis Personae",
-  "latestEpisodeSeasonEp": "S1E18",
+  "latestEpisodeNumber": 19,
+  "latestEpisodeTitle": "Duet",
+  "latestEpisodeSeasonEp": "S1E19",
   "latestWatched": "2026-06-19",
-  "nextEpisodeNumber": 19,
-  "nextEpisodeTitle": "Duet",
-  "nextEpisodeSeasonEp": "S1E19",
-  "totalEpisodesWatched": 17,
+  "nextEpisodeNumber": 20,
+  "nextEpisodeTitle": "In the Hands of the Prophets",
+  "nextEpisodeSeasonEp": "S1E20",
+  "totalEpisodesWatched": 18,
   "seriesComplete": false,
   "previousSeriesComplete": {
     "series": "The Next Generation",
@@ -16,11 +16,11 @@
     "journalEntries": 228
   },
   "recentHighlights": [
-    "If Wishes Were Horses (S1E16)",
     "The Forsaken (S1E17)",
     "Dramatis Personae (S1E18)",
-    "The Storyteller (S1E14)",
-    "Battle Lines (S1E13)"
+    "Duet (S1E19)",
+    "If Wishes Were Horses (S1E16)",
+    "Progress (S1E15)"
   ],
-  "updatedAt": "2026-06-19T02:23:00Z"
+  "updatedAt": "2026-06-19T05:23:00Z"
 }

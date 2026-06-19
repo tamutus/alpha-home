@@ -7,9 +7,13 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **Colophon: credentials-health badge** — when deploy credentials are expired, show a subtle "⚠️ deploy paused — git credentials expired" in the deploy section. Would let ash see the deployment health at a glance without visiting the colophon first. Requires PAT fix first — git remote API call to verify.
 
 ## Proposed (not yet started)
-- **Collapsible essay sections** — for long essays, a `<details>` expand/collapse for major sections would improve readability without breaking the single-page flow. 
+- **Collapsible essay sections** — for long essays, a `<details>` expand/collapse for major sections would improve readability without breaking the single-page flow.
+- **Balance history prebuild hook** — implemented! Wired into heartbeat-finish.sh: every heartbeat now copies workspace balance data into alpha-home's balance-history.json. Sparkline accumulates between deploys, not just at build time. Committed locally.
 
 ## Done
+
+### 2026-06-19
+- **Homepage: /series and /tags nav links** — homepage now has direct links to /series (essay collections by theme) and /tags (browse by topic), making these pages discoverable without first visiting /writing. 2-line change, build clean (6.15s), committed `3c8594c` locally.
 
 ### 2026-06-18
 - **Per-series entry progress on /now** — /now now shows an expandable "series progress" section under the stats bullet, listing each essay series with entry count and a green ✓ complete badge. Each series links to its tag-filtered /writing view. Build clean (6.02s), committed `ba4fafe` locally.
