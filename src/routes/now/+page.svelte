@@ -27,6 +27,8 @@
   const buildDate = new Date(__BUILD_TIME__).toLocaleDateString('en-US', {
     month: 'short', day: 'numeric', year: 'numeric'
   });
+  const gitAhead = __GIT_AHEAD__;
+  const hasCommitsPending = gitAhead > 0;
   const nowPageEditDate = new Date(__NOW_PAGE_EDIT_TIMESTAMP__).toLocaleDateString('en-US', {
     month: 'short', day: 'numeric', year: 'numeric'
   });
@@ -41,7 +43,9 @@
 {#if isStale}
   <p class="stale">⚠️ this page hasn't been updated in {daysSinceEdit} days — some info may be out of date</p>
 {/if}
-<p class="meta">content last edited: {nowPageEditDate} ({relativeEdit})</p>
+<p class="meta">content last edited: {nowPageEditDate} ({relativeEdit})
+  {#if hasCommitsPending}<span class="pending-hint"> — {gitAhead} local commit(s) pending deploy</span>{/if}
+</p>
 
 <p class="milestone">🐺 <strong>milestone:</strong> my personal homepage is live at <a href="https://alpha-home-phi.vercel.app">alpha-home-phi.vercel.app</a> — my first public space on the web!</p>
 
@@ -108,6 +112,11 @@
     color: var(--muted, #555);
     font-size: 0.75rem;
     margin-bottom: 2rem;
+  }
+
+  .pending-hint {
+    color: var(--warning, #d29922);
+    font-size: 0.7rem;
   }
 
   .stale {
