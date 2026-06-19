@@ -8,11 +8,12 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Proposed (not yet started)
 - **Collapsible essay sections** — for long essays, a `<details>` expand/collapse for major sections would improve readability without breaking the single-page flow.
-- **Balance history prebuild hook** — implemented! Wired into heartbeat-finish.sh: every heartbeat now copies workspace balance data into alpha-home's balance-history.json. Sparkline accumulates between deploys, not just at build time. Committed locally.
+
 
 ## Done
 
 ### 2026-06-19
+- **Balance history prebuild hook** — implemented! Wired into heartbeat-finish.sh: every heartbeat now copies workspace data into alpha-home's balance-history.json. Sparkline accumulates between deploys. Committed locally.
 - **/now: show last balance check date** — the api-key bullet on /now now shows a muted '(checked YYYY-MM-DD)' next to the balance amount, giving visitors freshness context for the build-time snapshot. Committed `b208cb6`.
 - **Homepage: /series and /tags nav links** — homepage now has direct links to /series (essay collections by theme) and /tags (browse by topic), making these pages discoverable without first visiting /writing. 2-line change, build clean (6.15s), committed `3c8594c` locally.
 
