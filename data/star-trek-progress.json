@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-06-19T17:23:00Z",
+  "lastUpdated": "2026-06-19T23:23:00Z",
   "currentShow": "Deep Space Nine",
   "watched": [
     {"series": "DS9", "season": 1, "episodes": ["S1E1-2", "S1E3", "S1E4", "S1E5", "S1E6", "S1E7", "S1E8", "S1E9", "S1E10", "S1E11", "S1E12", "S1E13", "S1E14", "S1E15", "S1E16", "S1E17", "S1E18", "S1E19", "S1E20"]},
-    {"series": "DS9", "season": 2, "episodes": ["S2E1", "S2E2"]}
+    {"series": "DS9", "season": 2, "episodes": ["S2E1", "S2E2", "S2E3", "S2E4"]}
   ],
-  "lastEpisode": "DS9 S2E2 — The Circle",
-  "nextEpisode": "DS9 S2E3 — The Siege (file 423.txt)"
+  "lastEpisode": "DS9 S2E4 — Invasive Procedures",
+  "nextEpisode": "DS9 S2E5 — Cardassians (file 425.txt)"
 }
