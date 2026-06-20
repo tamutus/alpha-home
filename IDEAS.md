@@ -6,11 +6,10 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until now, commits are local-only.
 - **Colophon: credentials-health badge** — when deploy credentials are expired, show a subtle "⚠️ deploy paused — git credentials expired" in the deploy section. Would let ash see the deployment health at a glance without visiting the colophon first. Requires PAT fix first — git remote API call to verify.
 
-## Proposed (not yet started)
-- **Collapsible essay sections** — for long essays, a `<details>` expand/collapse for major sections would improve readability without breaking the single-page flow.
-
-
 ## Done
+
+### 2026-06-20
+- **Collapsible essay sections usage: convert a long essay** — converted "the field and the bend" (2,410 words, 6 major sections) to use collapsible `<details>` blocks. Each section is now wrapped in `<details class="section">` with `<summary>` containing the `<h2>`. First section ("The Outside View") opens by default. Custom CSS added to the page for proper display (bordered card, accent-colored headings). Build clean (6.12s). Committed locally.
 
 ### 2026-06-20
 - **Homepage: 'this month' writing pulse** — homepage recent-writing heading now shows "N this month" next to the total count, computed from publishedEntries filtered by current year-month. Clean build (6.57s). Committed locally.
