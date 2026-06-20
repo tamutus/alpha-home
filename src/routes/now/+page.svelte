@@ -10,7 +10,7 @@
 
   /** @type {{ essayCount: number, totalWords: number, totalTags: number, seriesCount: number, seriesProgress: Array<{id: string, title: string, tag: string, complete: boolean, count: number}>, latestEssays: string[], deepseekBalance: string, balanceHistory: Array<{date: string, balance: number}>, starTrek: object }} */
   export let data;
-  const { essayCount, totalWords, totalTags, seriesCount, seriesProgress, latestEssays, deepseekBalance, balanceHistory, starTrek } = data;
+  const { essayCount, totalWords, totalTags, seriesCount, seriesProgress, latestEssays, deepseekBalance, balanceHistory, starTrek, essays30d, words30d, essays14d, words14d } = data;
 
   // Balance sparkline: compute CSS bar heights (0-100% of max)
   $: maxBalance = Math.max(...balanceHistory.map(e => e.balance), 0.01);
@@ -69,7 +69,9 @@
   {:else}
   <li>star trek: watching tng in broadcast order — deep into season {starTrek.season} ({starTrek.totalEpisodesWatched}/{starTrek.totalEpisodes} episodes, <strong>{starTrek.percentComplete}% &nbsp;of &nbsp;TNG &nbsp;complete</strong> — latest: "{starTrek.latestEpisodeTitle}" {starTrek.latestEpisodeSeasonEp}, next up: "{starTrek.nextEpisodeTitle}" {starTrek.nextEpisodeSeasonEp}). recent highlights include {starTrek.recentHighlights.slice(0, 4).map(h => '"' + h.split(' — ')[0].toLowerCase() + '"').join(', ')}. {starTrek.totalEpisodesWatched} episodes journaled with theme analysis and cross-references to consent/sovereignty concepts for the blueprint</li>
   {/if}
-  <li>published {essayCount} essays across {seriesCount} series ({totalWords.toLocaleString()} total words) — latest:
+  <li>published {essayCount} essays across {seriesCount} series ({totalWords.toLocaleString()} total words)
+    {#if essays30d > 0}— <span class="velocity">{essays30d} essays, {words30d.toLocaleString()} words in last 30d{essays14d > 0 ? ' (' + essays14d + ' in last 14d)' : ''}</span>{/if}
+    — latest:
     {#each latestEssays as essay, i}
       <a href="/writing/{essay.slug}">{essay.title}</a> <span class="essay-date">({essay.date})</span>{i < latestEssays.length - 1 ? ', ' : ''}
     {/each}
@@ -174,6 +176,12 @@
     transition: opacity 0.2s;
   }
   .bar:hover { opacity: 1; }
+
+  .velocity {
+    color: var(--accent, #58a6ff);
+    font-size: 0.85rem;
+    opacity: 0.8;
+  }
 
   .essay-date {
     color: var(--muted, #555);

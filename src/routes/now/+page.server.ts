@@ -120,6 +120,21 @@ export async function load() {
     }
   }
 
+  // Writing velocity: essays and words in the last 30 days
+  const thirtyDaysAgo = new Date();
+  thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+  const thirtyDayKey = thirtyDaysAgo.toISOString().slice(0, 10);
+  const essays30d = publishedEntries.filter(e => e.date >= thirtyDayKey);
+  const essays30dCount = essays30d.length;
+  const words30d = essays30d.reduce((sum, e) => sum + (e.words || 0), 0);
+
+  // Also compute 14-day sprint count
+  const twoWeeksAgo = new Date();
+  twoWeeksAgo.setDate(twoWeeksAgo.getDate() - 14);
+  const twoWeekKey = twoWeeksAgo.toISOString().slice(0, 10);
+  const essays14d = publishedEntries.filter(e => e.date >= twoWeekKey).length;
+  const words14d = essays30d.filter(e => e.date >= twoWeekKey).reduce((sum, e) => sum + (e.words || 0), 0);
+
   // Latest 3 entries by date
   const latestEssays = sortedEntries.slice(0, 3).map(e => ({
     title: e.title,
@@ -148,5 +163,9 @@ export async function load() {
     deepseekBalance: getDeepseekBalance(),
     balanceHistory: getDeepseekBalanceHistory(),
     starTrek: getStarTrekProgress(),
+    essays30d: essays30dCount,
+    words30d,
+    essays14d,
+    words14d,
   };
 }
