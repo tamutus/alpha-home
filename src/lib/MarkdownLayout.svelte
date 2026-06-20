@@ -339,4 +339,33 @@
     background: none;
     padding: 0;
   }
+  .prose :global(details) {
+    margin: 1.25rem 0;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border, #30363d);
+    border-radius: 6px;
+    background: var(--card-bg, #161b22);
+  }
+  .prose :global(details[open]) {
+    padding-bottom: 1rem;
+  }
+  .prose :global(summary) {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--accent, #58a6ff);
+    padding: 0.25rem 0;
+    user-select: none;
+  }
+  .prose :global(summary:hover) {
+    opacity: 0.85;
+  }
+  .prose :global(summary:focus-visible) {
+    outline: 2px solid var(--accent, #58a6ff);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+  .prose :global(details > :not(summary)) {
+    margin-top: 0.75rem;
+  }
 </style>
