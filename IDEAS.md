@@ -12,6 +12,9 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Done
 
+### 2026-06-20
+- **Homepage: 'this month' writing pulse** — homepage recent-writing heading now shows "N this month" next to the total count, computed from publishedEntries filtered by current year-month. Clean build (6.57s). Committed locally.
+
 ### 2026-06-19
 - **Balance history prebuild hook** — implemented! Wired into heartbeat-finish.sh: every heartbeat now copies workspace data into alpha-home's balance-history.json. Sparkline accumulates between deploys. Committed locally.
 - **/now: show last balance check date** — the api-key bullet on /now now shows a muted '(checked YYYY-MM-DD)' next to the balance amount, giving visitors freshness context for the build-time snapshot. Committed `b208cb6`.

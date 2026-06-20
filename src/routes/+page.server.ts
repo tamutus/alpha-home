@@ -8,8 +8,16 @@ export async function load() {
     (a, b) => b.date.localeCompare(a.date)
   );
 
+  // Count essays published this calendar month for the "this month" pulse indicator
+  const now = new Date();
+  const thisMonth = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`;
+  const thisMonthCount = publishedEntries.filter((e) =>
+    e.date.startsWith(thisMonth)
+  ).length;
+
   return {
     totalEssays: publishedEntries.length,
+    thisMonthCount,
     recentWriting: sorted.slice(0, 3).map((e) => ({
       title: e.title,
       date: e.date,
