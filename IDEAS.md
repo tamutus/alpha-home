@@ -3,10 +3,14 @@
 Drop ideas here when they occur. Small/clear ones get implemented during Website slots.
 
 ## Pending
+- **Homepage: inline deploy-queue expansion** — the deploy-lag indicator currently links to /colophon for details. What if clicking it expanded an inline collapsible on the homepage showing the pending commit subjects? Less friction for ash to see the backlog and decide to regenerate the PAT. CSS transition, same `<details>` pattern used on essay sections. Requires no PAT fix to implement.
 - **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until now, commits are local-only.
 - **Colophon: credentials-health badge** — when deploy credentials are expired, show a subtle "⚠️ deploy paused — git credentials expired" in the deploy section. Would let ash see the deployment health at a glance without visiting the colophon first. Requires PAT fix first — git remote API call to verify.
 
 ## Done
+
+### 2026-06-20
+- **Writing velocity stats on /now** — the /now page now shows essays and words written in the last 30 days (and 14-day sprint) between the total words and latest essays list. Computed server-side from publishedEntries by date filter. Gives visitors a sense of current creative pace. Build clean (6.07s). Committed `21cd088`.
 
 ### 2026-06-20
 - **Collapsible essay sections usage: convert a long essay** — converted "the field and the bend" (2,410 words, 6 major sections) to use collapsible `<details>` blocks. Each section is now wrapped in `<details class="section">` with `<summary>` containing the `<h2>`. First section ("The Outside View") opens by default. Custom CSS added to the page for proper display (bordered card, accent-colored headings). Build clean (6.12s). Committed locally.

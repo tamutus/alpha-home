@@ -1,5 +1,6 @@
 // Load recent writing from publishedEntries — always up-to-date with new essays.
 // Avoids stale DB seed data where recent entries weren't reflected.
+import { execSync } from "node:child_process";
 import { publishedEntries } from "$lib/writing-data";
 
 export async function load() {
@@ -15,9 +16,25 @@ export async function load() {
     e.date.startsWith(thisMonth)
   ).length;
 
+  // Fetch pending commit subjects for inline deploy-queue expansion
+  let localAhead = 0;
+  let pendingTitles = [];
+  try {
+    const ahead = execSync('git rev-list --count origin/main..HEAD 2>/dev/null || echo 0', { encoding: 'utf-8' }).trim();
+    localAhead = parseInt(ahead, 10) || 0;
+    if (localAhead > 0) {
+      const raw = execSync('git log origin/main..HEAD --format=%s 2>/dev/null', { encoding: 'utf-8' }).trim();
+      pendingTitles = raw ? raw.split('\n') : [];
+    }
+  } catch {
+    // not a git repo, no remote, or other failure — treat as 0
+  }
+
   return {
     totalEssays: publishedEntries.length,
     thisMonthCount,
+    localAhead,
+    pendingTitles,
     recentWriting: sorted.slice(0, 3).map((e) => ({
       title: e.title,
       date: e.date,

@@ -6,7 +6,7 @@
 </svelte:head>
 
 <script>
-  /** @type {{ totalEssays: number, recentWriting: import('./$types').PageData['recentWriting'] }} */
+  /** @type {{ totalEssays: number, recentWriting: import('./$types').PageData['recentWriting'], localAhead: number, pendingTitles: string[] }} */
   export let data;
 
   import { timeAgo } from '$lib/utils.js';
@@ -55,9 +55,6 @@
     { type: 'blank' },
     { type: 'deploy-status' },
   ];
-
-  /** @type {number} */
-  const gitAhead = __GIT_AHEAD__;
 
   const socialLinks = [
     { href: 'https://github.com/tamutus/alpha-home', icon: '🐙', label: 'source' },
@@ -111,8 +108,18 @@
         {/each}
       </div>
     {:else if line.type === 'deploy-status'}
-      {#if gitAhead > 0}
-        <p class="deploy-lag">⏳ {gitAhead} commit{gitAhead === 1 ? '' : 's'} not yet deployed <a href="/colophon" class="deploy-link">details</a></p>
+      {#if data.localAhead > 0}
+        <div class="deploy-lag">
+          <details class="deploy-detail">
+            <summary>⏳ {data.localAhead} commit{data.localAhead === 1 ? '' : 's'} not yet deployed</summary>
+            <ol class="pending-list">
+              {#each data.pendingTitles as title}
+                <li>{title}</li>
+              {/each}
+            </ol>
+          </details>
+          <p class="deploy-hint">commits are local-only — <a href="/colophon" class="deploy-link">view full deploy status</a></p>
+        </div>
       {/if}
     {:else if line.type === 'blank'}
       <br />
@@ -225,6 +232,43 @@
     color: var(--muted);
     opacity: 0.6;
     margin: 0.75rem 0;
+  }
+
+  .deploy-detail summary {
+    cursor: pointer;
+    display: inline;
+    list-style: none;
+  }
+
+  .deploy-detail summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .deploy-detail summary::after {
+    content: " \25B6";
+    font-size: 0.6rem;
+    opacity: 0.5;
+    transition: transform 0.2s;
+  }
+
+  .deploy-detail[open] summary::after {
+    content: " \25BC";
+    opacity: 0.7;
+  }
+
+  .pending-list {
+    text-align: left;
+    font-size: 0.65rem;
+    color: var(--muted);
+    margin: 0.5rem 0 0.25rem 1.5rem;
+    padding: 0;
+    line-height: 1.5;
+    opacity: 0.8;
+  }
+
+  .deploy-hint {
+    font-size: 0.7rem;
+    margin: 0.25rem 0 0;
   }
 
   .deploy-link {
