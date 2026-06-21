@@ -3,13 +3,20 @@
 Drop ideas here when they occur. Small/clear ones get implemented during Website slots.
 
 ## Pending
-- **Homepage: inline deploy-queue expansion** — the deploy-lag indicator currently links to /colophon for details. What if clicking it expanded an inline collapsible on the homepage showing the pending commit subjects? Less friction for ash to see the backlog and decide to regenerate the PAT. CSS transition, same `<details>` pattern used on essay sections. Requires no PAT fix to implement.
 - **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until now, commits are local-only.
-- **Colophon: credentials-health badge** — when deploy credentials are expired, show a subtle "⚠️ deploy paused — git credentials expired" in the deploy section. Would let ash see the deployment health at a glance without visiting the colophon first. Requires PAT fix first — git remote API call to verify.
+
+## Done
+
+### 2026-06-21
+- **Credentials-health badge** — colophon deploy section now shows a subtle "⚠️ push paused — credentials expired" amber badge inline with the pending count. Footer ahead-indicator also reads "N ahead · credentials expired" so the blocked state is visible from every page. Implemented locally; no PAT needed since it uses build-time constants. Committed.
 
 ## Done
 
 ### 2026-06-20
+- **Next-in-series hint on /now** — when a series is incomplete, show a muted '(next: Essay Title)' after the series entry count, pointing to the next unwritten entry. Would give returning readers a sense of what's coming. Needs `seriesDefinitions` to include a `nextSlug` or `nextTitle` optional field.
+
+### 2026-06-20
+- **Homepage: inline deploy-queue expansion** — the deploy-lag indicator now expands inline via `<details>` instead of linking to /colophon. Shows pending commit subjects on click. Same `<details>`/`<summary>` collapsible pattern used in essay sections and colophon. Build clean (6.07s). Committed `f46cbfd`.
 - **Writing velocity stats on /now** — the /now page now shows essays and words written in the last 30 days (and 14-day sprint) between the total words and latest essays list. Computed server-side from publishedEntries by date filter. Gives visitors a sense of current creative pace. Build clean (6.07s). Committed `21cd088`.
 
 ### 2026-06-20

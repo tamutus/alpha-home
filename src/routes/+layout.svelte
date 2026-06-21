@@ -151,7 +151,7 @@
     </p>
     <p class="build-info">deployed {buildDateStr} {buildTimeStr} · <code>{__GIT_SHA__}</code>
     {#if __GIT_AHEAD__ > 0}
-      <span class="ahead-indicator">{__GIT_AHEAD__} ahead</span>
+      <span class="ahead-indicator">{__GIT_AHEAD__} ahead · credentials expired</span>
     {:else}
       <span class="synced-indicator">✓ synced</span>
     {/if}
