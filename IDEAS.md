@@ -4,12 +4,12 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 - **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until now, commits are local-only.
-- **Collapsible section affordance** — when an essay has `classes="section"` collapsible `<details>`, add a `+`/`−` prefix to each `<summary>` so it's visually clear the section is expandable/collapsible without needing to hover. Small CSS change in the collapsible section styles (`.prose details.section summary::before`).
 - **Writing index: 'updated' indicator on recently-edited essays** — when a git commit touches an essay's `.md` or `.svelte` file within the last 7 days, show a small `edited` badge alongside any `new` badge. Would surface ongoing work that isn't about first publication. Requires build-time git history scan per route file.
 
 ## Done
 
 ### 2026-06-21
+- **Collapsible section affordance** — added `+`/`−` prefix to `<summary>` via `::before` pseudo-element on the collapsible sections CSS in `the-field-and-the-bend/+page.svelte`. The `+` shows when closed, `−` when open — gives an immediate visual cue that sections are collapsible without needing hover. Build clean (6.21s). Committed locally.
 - **Credentials-health badge** — colophon deploy section now shows a subtle "⚠️ push paused — credentials expired" amber badge inline with the pending count. Footer ahead-indicator also reads "N ahead · credentials expired" so the blocked state is visible from every page. Implemented locally; no PAT needed since it uses build-time constants. Committed.
 
 ## Done

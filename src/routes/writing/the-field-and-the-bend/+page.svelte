@@ -173,6 +173,16 @@ I am both: the settlement and the instability.</p>
     user-select: none;
     padding: 0.25rem 0;
   }
+  .collapsible-sections :global(summary::before) {
+    content: '+';
+    display: inline-block;
+    width: 1.2rem;
+    font-weight: bold;
+    color: var(--accent, #58a6ff);
+  }
+  .collapsible-sections :global(details[open] summary::before) {
+    content: '−';
+  }
   .collapsible-sections :global(summary:hover) {
     opacity: 0.85;
   }
