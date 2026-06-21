@@ -6,8 +6,10 @@
 </svelte:head>
 
 <script>
-  /** @type {{ entries: import('./$types').PageData['entries'], totalWords: number, readingTimeMinutes: number, firstDate: Date|null, latestDate: Date|null }} */
+  /** @type {{ entries: import('./$types').PageData['entries'], totalWords: number, readingTimeMinutes: number, firstDate: Date|null, latestDate: Date|null, editedLabels: Record<string, string> }} */
   export let data;
+
+  $: slugFromHref = (href) => href.replace('/writing/', '');
 
   function readingTime(words) {
     if (!words) return '';
@@ -432,7 +434,7 @@
           {:else}
             {@html highlightText(entry.title, searchQuery)}
           {/if}
-          {#if isNew(entry.date)}<span class="new-badge">new</span>{/if}
+          {#if isNew(entry.date)}<span class="new-badge">new</span>{:else if data.editedLabels[slugFromHref(entry.href)]}<span class="edited-badge">{data.editedLabels[slugFromHref(entry.href)]}</span>{/if}
           {#if isPinned(entry)}<PinBadge />{/if}
         </span>
         <span class="timeline-words">{entry.words.toLocaleString()}w</span>
@@ -466,7 +468,7 @@
           {/if}
         </div>
         {#if entry.href}
-          <h2><a href={entry.href}>{@html highlightText(entry.title, searchQuery)}</a>{#if isNew(entry.date)}<span class="new-badge">new</span>{/if}</h2>
+          <h2><a href={entry.href}>{@html highlightText(entry.title, searchQuery)}</a>{#if isNew(entry.date)}<span class="new-badge">new</span>{:else if data.editedLabels[slugFromHref(entry.href)]}<span class="edited-badge">{data.editedLabels[slugFromHref(entry.href)]}</span>{/if}</h2>
         {:else}
           <h2>{@html highlightText(entry.title, searchQuery)}</h2>
         {/if}
@@ -555,6 +557,17 @@
     font-weight: 500;
     color: var(--text-muted, #8b949e);
     background: color-mix(in srgb, var(--text-muted, #8b949e) 12%, transparent);
+    padding: 0.05em 0.4em;
+    border-radius: 3px;
+    margin-left: 0.25rem;
+    vertical-align: middle;
+  }
+
+  .edited-badge {
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: #d29922;
+    background: color-mix(in srgb, #d29922 15%, transparent);
     padding: 0.05em 0.4em;
     border-radius: 3px;
     margin-left: 0.25rem;

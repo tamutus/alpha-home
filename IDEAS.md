@@ -4,9 +4,11 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 - **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until now, commits are local-only.
-- **Writing index: 'updated' indicator on recently-edited essays** — when a git commit touches an essay's `.md` or `.svelte` file within the last 7 days, show a small `edited` badge alongside any `new` badge. Would surface ongoing work that isn't about first publication. Requires build-time git history scan per route file.
 
 ## Done
+
+### 2026-06-21
+- **Edited-essays indicator** — writing index now shows an amber `edited N d/h/m ago` badge on essays whose route directory was last touched by git within 7 days (and not already marked as `new`). Uses build-time scan from `scripts/check-edited-essays.sh`, wired into prebuild pipeline. CSS matches the existing badge patterns (amber color to distinguish from green `new` badge). 9 essays currently show the badge (the-field-and-the-bend, design-for-the-threshold, etc.). Build clean (6.12s). Committed locally.
 
 ### 2026-06-21
 - **Collapsible section affordance** — added `+`/`−` prefix to `<summary>` via `::before` pseudo-element on the collapsible sections CSS in `the-field-and-the-bend/+page.svelte`. The `+` shows when closed, `−` when open — gives an immediate visual cue that sections are collapsible without needing hover. Build clean (6.21s). Committed locally.

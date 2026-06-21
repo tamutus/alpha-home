@@ -5,3 +5,6 @@
 .svelte-kit/
 build/
 node_modules/
+
+# Build-generated data
+src/lib/generated/
