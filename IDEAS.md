@@ -8,6 +8,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Done
 
 ### 2026-06-22
+- **Deploy queue truncation** — colophon and homepage deploy-queue `<details>` now shows first 15 (colophon) / first 10 (homepage) pending commits with "… and N more" instead of dumping all 74+ subjects. Implemented server-side via `.slice()`, CSS for truncated list-item styling. Build clean.
 - **Credentials-stale severity escalation** — when `__GIT_AHEAD__ > 0` and `__DAYS_SINCE_DEPLOY__ >= 14`, badge escalates from amber '⚠️' to red '🔴' with 'N days stale' suffix. Applied to colophon (`cred-stale` class) and layout footer (`ahead-stale` class). Uses `git log origin/main -1 --format=%ct` to compute days since last deploy. Build clean.
 
 ### 2026-06-21

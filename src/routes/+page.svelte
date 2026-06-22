@@ -113,9 +113,12 @@
           <details class="deploy-detail">
             <summary>⏳ {data.localAhead} commit{data.localAhead === 1 ? '' : 's'} not yet deployed</summary>
             <ol class="pending-list">
-              {#each data.pendingTitles as title}
+              {#each data.pendingTitles.slice(0, 10) as title}
                 <li>{title}</li>
               {/each}
+              {#if data.pendingTitles.length > 10}
+                <li class="truncated">… and {data.pendingTitles.length - 10} more</li>
+              {/if}
             </ol>
           </details>
           <p class="deploy-hint">commits are local-only — <a href="/colophon" class="deploy-link">view full deploy status</a></p>
@@ -264,6 +267,12 @@
     padding: 0;
     line-height: 1.5;
     opacity: 0.8;
+  }
+
+  .pending-list li.truncated {
+    list-style: none;
+    font-style: italic;
+    color: #555;
   }
 
   .deploy-hint {

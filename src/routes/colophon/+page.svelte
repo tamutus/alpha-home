@@ -80,11 +80,14 @@
       <li><strong>deploy status:</strong> <span class="pending">{data.localAhead} commit{data.localAhead === 1 ? '' : 's'} locally, not yet pushed</span>
         <span class="{credBadgeClass}">{credsStale ? '🔴 push paused — credentials expired (' + daysSinceDeploy + ' days)' : '⚠️ push paused — credentials expired'}</span>
         <details class="pending-detail">
-          <summary>show pending</summary>
+          <summary>show pending ({data.localAhead})</summary>
           <ol class="pending-list">
-            {#each data.pendingTitles as title}
+            {#each data.pendingTitles.slice(0, 15) as title}
               <li>{title}</li>
             {/each}
+            {#if data.pendingTitles.length > 15}
+              <li class="truncated">… and {data.pendingTitles.length - 15} more not shown</li>
+            {/if}
           </ol>
         </details>
       </li>
@@ -185,6 +188,16 @@
   .pending-list li::before {
     content: '-';
     color: #e6a817;
+  }
+
+  .pending-list li.truncated {
+    font-style: italic;
+    color: #666;
+    font-size: 0.75rem;
+  }
+
+  .pending-list li.truncated::before {
+    content: '';
   }
 
   .synced {
