@@ -1,1 +1,9 @@
-{"is_available":true,"balance_infos":[{"currency":"USD","total_balance":"43.47","granted_balance":"0.00","topped_up_balance":"43.47"}]}
+{
+  "entries": [
+    {
+      "date": "2026-06-22",
+      "balance": "42.77",
+      "updatedAt": "2026-06-22T06:54:11Z"
+    }
+  ]
+}
