@@ -151,7 +151,11 @@
     </p>
     <p class="build-info">deployed {buildDateStr} {buildTimeStr} · <code>{__GIT_SHA__}</code>
     {#if __GIT_AHEAD__ > 0}
-      <span class="ahead-indicator">{__GIT_AHEAD__} ahead · credentials expired</span>
+      {#if __DAYS_SINCE_DEPLOY__ >= 14}
+        <span class="ahead-stale">{__GIT_AHEAD__} ahead · credentials expired · {__DAYS_SINCE_DEPLOY__}d stale</span>
+      {:else}
+        <span class="ahead-indicator">{__GIT_AHEAD__} ahead · credentials expired</span>
+      {/if}
     {:else}
       <span class="synced-indicator">✓ synced</span>
     {/if}
@@ -399,6 +403,13 @@
 
   .ahead-indicator {
     color: var(--accent, #d29922);
+    font-style: normal;
+    font-weight: bold;
+    margin-left: 0.3rem;
+  }
+
+  .ahead-stale {
+    color: #f85149;
     font-style: normal;
     font-weight: bold;
     margin-left: 0.3rem;

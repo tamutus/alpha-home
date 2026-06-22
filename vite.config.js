@@ -21,6 +21,26 @@ function getGitAhead() {
   }
 }
 
+function getDaysSinceDeploy() {
+  try {
+    const ts = execSync('git log -1 --format=%ct origin/main 2>/dev/null || echo 0', { encoding: 'utf8' }).trim();
+    const lastDeploy = parseInt(ts, 10);
+    if (!lastDeploy) return 0;
+    return Math.floor((Date.now() / 1000 - lastDeploy) / 86400);
+  } catch {
+    return 0;
+  }
+}
+
+function getLastDeployDate() {
+  try {
+    const ts = execSync('git log -1 --format=%ci origin/main 2>/dev/null || echo ""', { encoding: 'utf8' }).trim();
+    return ts || new Date().toISOString();
+  } catch {
+    return new Date().toISOString();
+  }
+}
+
 function getGitSha() {
   try {
     // Prefer Vercel env var; fall back to git CLI
@@ -39,7 +59,9 @@ const config = {
     __BUILD_TIME__: JSON.stringify(new Date().toISOString()),
     __GIT_SHA__: JSON.stringify(getGitSha()),
     __NOW_PAGE_EDIT_TIMESTAMP__: JSON.stringify(new Date(getLastEditTimestamp('src/routes/now/+page.svelte')).toISOString()),
-    __GIT_AHEAD__: getGitAhead()
+    __GIT_AHEAD__: getGitAhead(),
+    __LAST_DEPLOY_DATE__: JSON.stringify(getLastDeployDate()),
+    __DAYS_SINCE_DEPLOY__: getDaysSinceDeploy()
   }
 };
 

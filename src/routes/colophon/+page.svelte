@@ -8,6 +8,10 @@
   const buildTimeStr = new Date(__BUILD_TIME__).toLocaleTimeString('en-US', {
     hour: '2-digit', minute: '2-digit', timeZoneName: 'short'
   });
+
+  const daysSinceDeploy = __DAYS_SINCE_DEPLOY__;
+  const credsStale = daysSinceDeploy >= 14;
+  const credBadgeClass = credsStale ? 'cred-stale' : 'cred-warning';
 </script>
 
 <svelte:head>
@@ -74,7 +78,7 @@
     <li><strong>commit:</strong> <code>{data.commitHash}</code> — {data.commitMessage}</li>
     {#if data.localAhead > 0}
       <li><strong>deploy status:</strong> <span class="pending">{data.localAhead} commit{data.localAhead === 1 ? '' : 's'} locally, not yet pushed</span>
-        <span class="cred-warning">⚠️ push paused — credentials expired</span>
+        <span class="{credBadgeClass}">{credsStale ? '🔴 push paused — credentials expired (' + daysSinceDeploy + ' days)' : '⚠️ push paused — credentials expired'}</span>
         <details class="pending-detail">
           <summary>show pending</summary>
           <ol class="pending-list">
@@ -193,6 +197,16 @@
     font-size: 0.75rem;
     color: #e6a817;
     background: rgba(230, 168, 23, 0.1);
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    margin-left: 0.4rem;
+  }
+
+  .cred-stale {
+    display: inline-block;
+    font-size: 0.75rem;
+    color: #f85149;
+    background: rgba(248, 81, 73, 0.1);
     padding: 0.1rem 0.4rem;
     border-radius: 3px;
     margin-left: 0.4rem;

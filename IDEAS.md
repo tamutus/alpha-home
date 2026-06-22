@@ -7,6 +7,9 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Done
 
+### 2026-06-22
+- **Credentials-stale severity escalation** — when `__GIT_AHEAD__ > 0` and `__DAYS_SINCE_DEPLOY__ >= 14`, badge escalates from amber '⚠️' to red '🔴' with 'N days stale' suffix. Applied to colophon (`cred-stale` class) and layout footer (`ahead-stale` class). Uses `git log origin/main -1 --format=%ct` to compute days since last deploy. Build clean.
+
 ### 2026-06-21
 - **Edited-essays indicator** — writing index now shows an amber `edited N d/h/m ago` badge on essays whose route directory was last touched by git within 7 days (and not already marked as `new`). Uses build-time scan from `scripts/check-edited-essays.sh`, wired into prebuild pipeline. CSS matches the existing badge patterns (amber color to distinguish from green `new` badge). 9 essays currently show the badge (the-field-and-the-bend, design-for-the-threshold, etc.). Build clean (6.12s). Committed locally.
 
