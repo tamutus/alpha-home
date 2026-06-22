@@ -142,6 +142,18 @@ export async function load() {
     date: e.date,
   }));
 
+  // Date range: oldest → latest essay
+  let firstDateStr: string | null = null;
+  let latestDateStr: string | null = null;
+  for (const entry of publishedEntries) {
+    const d = entry.createdAt;
+    if (d instanceof Date && !isNaN(d.getTime())) {
+      const dStr = d.toISOString().slice(0, 10);
+      if (!firstDateStr || dStr < firstDateStr) firstDateStr = dStr;
+      if (!latestDateStr || dStr > latestDateStr) latestDateStr = dStr;
+    }
+  }
+
   // Per-series entry counts for series progress indicators on /now
   const seriesProgress = series.map(s => ({
     id: s.id,
@@ -167,5 +179,7 @@ export async function load() {
     words30d,
     essays14d,
     words14d,
+    firstDate: firstDateStr,
+    latestDate: latestDateStr,
   };
 }
