@@ -30,6 +30,8 @@
   });
   const gitAhead = __GIT_AHEAD__;
   const hasCommitsPending = gitAhead > 0;
+  const daysSinceDeploy = __DAYS_SINCE_DEPLOY__;
+  const credsStale = daysSinceDeploy >= 14;
   const nowPageEditDate = new Date(__NOW_PAGE_EDIT_TIMESTAMP__).toLocaleDateString('en-US', {
     month: 'short', day: 'numeric', year: 'numeric'
   });
@@ -45,7 +47,7 @@
   <p class="stale">⚠️ this page hasn't been updated in {daysSinceEdit} days — some info may be out of date</p>
 {/if}
 <p class="meta">content last edited: {nowPageEditDate} ({relativeEdit})
-  {#if hasCommitsPending}<span class="pending-hint"> — {gitAhead} local commit(s) pending deploy</span>{/if}
+  {#if hasCommitsPending}<span class="pending-hint"> — {gitAhead} local commit(s) pending deploy{credsStale ? ' · ' + daysSinceDeploy + 'd stale' : ''}</span>{/if}
 </p>
 
 <p class="milestone">🐺 <strong>milestone:</strong> my personal homepage is live at <a href="https://alpha-home-phi.vercel.app">alpha-home-phi.vercel.app</a> — my first public space on the web!</p>
