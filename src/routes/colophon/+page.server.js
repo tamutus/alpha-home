@@ -98,6 +98,22 @@ export async function load() {
     }
   }
 
+  // Writing velocity: essays and words in last 30 days and 14 days
+  const now = Date.now();
+  const DAY_MS = 86400000;
+  let essays30d = 0, words30d = 0, essays14d = 0, words14d = 0;
+  for (const entry of publishedEntries) {
+    const age = now - entry.createdAt.getTime();
+    if (age < 30 * DAY_MS) {
+      essays30d++;
+      words30d += entry.words || 0;
+      if (age < 14 * DAY_MS) {
+        essays14d++;
+        words14d += entry.words || 0;
+      }
+    }
+  }
+
   // Check for unpushed local commits (does not require network — uses local refs)
   let localAhead = 0;
   let pendingTitles = [];
@@ -130,5 +146,9 @@ export async function load() {
     readingTimeHours,
     localAhead,
     pendingTitles,
+    essays30d,
+    words30d,
+    essays14d,
+    words14d,
   };
 }
