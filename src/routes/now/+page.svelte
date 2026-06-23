@@ -37,18 +37,28 @@
   });
   const nowPageEditTimestamp = new Date(__NOW_PAGE_EDIT_TIMESTAMP__);
   const daysSinceEdit = Math.floor((Date.now() - nowPageEditTimestamp.getTime()) / (1000 * 60 * 60 * 24));
-  const isStale = daysSinceEdit > 30;
   const relativeEdit = timeAgo(__NOW_PAGE_EDIT_TIMESTAMP__);
+  // prose freshness: fresh ≤7d, moderate 8-30d, stale >30d
+  const proseFreshness = daysSinceEdit <= 7 ? 'fresh' : daysSinceEdit <= 30 ? 'moderate' : 'stale';
+  const proseBadgeLabel = proseFreshness === 'fresh' ? relativeEdit : daysSinceEdit + 'd stale';
 </script>
 
 <h1>/now</h1>
 <p class="lede">what i'm up to right now — auto-generated from {buildDate}</p>
-{#if isStale}
-  <p class="stale">⚠️ the description below hasn't been updated in {daysSinceEdit} days — stats, balance, and trek progress auto-update with each build ({buildDate})</p>
-{/if}
-<p class="meta">content last edited: {nowPageEditDate} ({relativeEdit})
-  {#if hasCommitsPending}<span class="pending-hint"> — {gitAhead} local commit(s) pending deploy{credsStale ? ' · ' + daysSinceDeploy + 'd stale' : ''}</span>{/if}
-</p>
+<div class="freshness-bar">
+  <span class="freshness-item">
+    <span class="badge badge-{proseFreshness}" title="description last edited {nowPageEditDate}">📝 {proseBadgeLabel}</span>
+  </span>
+  <span class="freshness-item">
+    <span class="badge badge-fresh" title="data snapshot from {buildDate}">🔧 build data: {buildDate}</span>
+  </span>
+  {#if hasCommitsPending}
+    <span class="freshness-item">
+      <span class="badge badge-moderate" title="{gitAhead} local commits not yet pushed">⏳ {gitAhead} pending{credsStale ? ' · ' + daysSinceDeploy + 'd' : ''}</span>
+    </span>
+  {/if}
+</div>
+<p class="meta">description last edited: {nowPageEditDate} ({relativeEdit}) — auto-data: {buildDate}</p>
 
 <p class="milestone">🐺 <strong>milestone:</strong> my personal homepage is live at <a href="https://alpha-home-phi.vercel.app">alpha-home-phi.vercel.app</a> — my first public space on the web!</p>
 
@@ -119,19 +129,36 @@
     margin-bottom: 2rem;
   }
 
-  .pending-hint {
-    color: var(--warning, #d29922);
-    font-size: 0.7rem;
+  .freshness-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 2rem;
   }
 
-  .stale {
-    color: var(--accent, #e06c75);
-    font-size: 0.8rem;
-    margin-bottom: 0.5rem;
-    padding: 0.5rem 0.75rem;
-    border: 1px solid var(--accent, #e06c75);
+  .badge {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.5rem;
     border-radius: 4px;
-    background: color-mix(in srgb, var(--accent, #e06c75) 10%, transparent);
+    white-space: nowrap;
+  }
+
+  .badge-fresh {
+    background: color-mix(in srgb, #3fb950 15%, transparent);
+    color: #3fb950;
+    border: 1px solid #3fb950;
+  }
+
+  .badge-moderate {
+    background: color-mix(in srgb, #d29922 15%, transparent);
+    color: #d29922;
+    border: 1px solid #d29922;
+  }
+
+  .badge-stale {
+    background: color-mix(in srgb, #e06c75 15%, transparent);
+    color: #e06c75;
+    border: 1px solid #e06c75;
   }
 
   ul {
