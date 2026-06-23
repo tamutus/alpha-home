@@ -28,6 +28,7 @@
   <h2>stats</h2>
   <ul>
     <li><strong>published essays:</strong> {data.essayCount}</li>
+    <li><strong>pages:</strong> {data.pageCount}</li>
     <li><strong>words written:</strong> {data.totalWords.toLocaleString()}</li>
     <li><strong>total archive reading time:</strong> ~{data.readingTimeHours} hours ({data.readingTimeMinutes} min @ 200 wpm)</li>
     <li><strong>avg words per essay:</strong> {data.avgWords.toLocaleString()}</li>

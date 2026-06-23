@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T08:23:00Z",
+  "lastUpdated": "2026-06-23T13:23:00Z",
   "currentShow": "Deep Space Nine",
   "watched": [
     {
@@ -31,24 +31,20 @@
       "series": "DS9",
       "season": 2,
       "episodes": [
-        "S2E1",
-        "S2E2",
-        "S2E3",
-        "S2E4",
-        "S2E5",
-        "S2E6",
-        "S2E7",
-        "S2E8",
-        "S2E9",
-        "S2E10",
-        "S2E11",
-        "S2E12",
-        "S2E13",
-        "S2E14",
-        "S2E15"
+        "S2E1", "S2E2", "S2E3", "S2E4", "S2E5", "S2E6", "S2E7",
+        "S2E8", "S2E9", "S2E10", "S2E11", "S2E12", "S2E13",
+        "S2E14", "S2E15", "S2E16"
+      ]
+    },
+    {
+      "series": "DS9",
+      "season": 3,
+      "episodes": [
+        "S3E1-2", "S3E3", "S3E4", "S3E5", "S3E6"
       ]
     }
   ],
-  "lastEpisode": "DS9 S2E15 — Paradise",
-  "nextEpisode": "DS9 S2E16 — Shadowplay (file 436.txt)"
+  "lastEpisode": "DS9 S3E06 — The Abandoned (file 452)",
+  "nextEpisode": "DS9 S3E07 — Civil Defense (file 453)",
+  "journalEntries": 244
 }

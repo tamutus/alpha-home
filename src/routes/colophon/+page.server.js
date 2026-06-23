@@ -1,6 +1,8 @@
 import { dev } from '$app/environment';
 import { execSync } from 'child_process';
-import { existsSync } from 'node:fs';
+import { existsSync, readdirSync, statSync } from 'node:fs';
+import { resolve, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import pkg from '../../../package.json' with { type: 'json' };
 import { publishedEntries, series } from '$lib/writing-data';
 
@@ -61,6 +63,30 @@ export async function load() {
   const tagCount = allTags.size;
   const seriesCount = series.length;
 
+  // Count routes pages (non-layout +page.svelte files under src/routes)
+  let pageCount = 0;
+  try {
+    const routesDir = resolve(fileURLToPath(import.meta.url), '../../../../src/routes');
+    function countPages(dir) {
+      let count = 0;
+      let entries;
+      try { entries = readdirSync(dir, { withFileTypes: true }); } catch { return 0; }
+      for (const entry of entries) {
+        const fullPath = join(dir, entry.name);
+        if (entry.isDirectory()) {
+          // skip node_modules, __tests__, etc.
+          if (!entry.name.startsWith('.')) count += countPages(fullPath);
+        } else if (entry.name === '+page.svelte') {
+          count++;
+        }
+      }
+      return count;
+    }
+    pageCount = countPages(routesDir);
+  } catch {
+    pageCount = 0;
+  }
+
   // Date range: oldest → newest essay
   let firstDate = null;
   let latestDate = null;
@@ -93,6 +119,7 @@ export async function load() {
     commitMessage,
     dev,
     essayCount,
+    pageCount,
     totalWords,
     avgWords,
     tagCount,
