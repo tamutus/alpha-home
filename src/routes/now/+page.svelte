@@ -8,11 +8,22 @@
 <script>
   import { timeAgo } from '$lib/utils.js';
 
-  /** @type {{ essayCount: number, totalWords: number, totalTags: number, seriesCount: number, seriesProgress: Array<{id: string, title: string, tag: string, complete: boolean, count: number}>, latestEssays: string[], deepseekBalance: string, balanceHistory: Array<{date: string, balance: number}>, starTrek: object, firstDate: string, latestDate: string }} */
+  /** @type {{ essayCount: number, totalWords: number, totalTags: number, seriesCount: number, seriesProgress: Array<{id: string, title: string, tag: string, complete: boolean, count: number}>, latestEssays: string[], deepseekBalance: string, balanceHistory: Array<{date: string, balance: number}>, starTrek: object, firstDate: string, latestDate: string, monthlyVelocity: Array<{month: string, essays: number, words: number}> }} */
   export let data;
-  const { essayCount, totalWords, totalTags, seriesCount, seriesProgress, latestEssays, deepseekBalance, balanceHistory, starTrek, essays30d, words30d, essays14d, words14d, firstDate, latestDate } = data;
+  const { essayCount, totalWords, totalTags, seriesCount, seriesProgress, latestEssays, deepseekBalance, balanceHistory, starTrek, essays30d, words30d, essays14d, words14d, firstDate, latestDate, monthlyVelocity } = data;
 
   // Balance sparkline: compute CSS bar heights (0-100% of max)
+  // Monthly velocity bars: dual rows for essays and words per month
+  $: maxEssays = Math.max(...monthlyVelocity.map(m => m.essays), 1);
+  $: maxWords = Math.max(...monthlyVelocity.map(m => m.words), 1);
+  $: monthBars = monthlyVelocity.map(m => ({
+    month: m.month,
+    essays: m.essays,
+    words: m.words,
+    essayHeight: (m.essays / maxEssays) * 100,
+    wordHeight: (m.words / maxWords) * 100,
+  }));
+
   $: maxBalance = Math.max(...balanceHistory.map(e => e.balance), 0.01);
   $: bars = balanceHistory.map((e, i) => ({
     i,
@@ -100,6 +111,28 @@
         {/each}
       </ul>
     </details>
+    {#if monthBars.length > 1}
+      <details class="velocity-chart">
+        <summary>writing velocity by month ({monthBars.length} months)</summary>
+        <div class="velocity-row">
+          <span class="v-label">essays</span>
+          {#each monthBars as bar}
+            <span class="v-month">
+              <span class="v-bar v-bar-essay" style="height: {bar.essayHeight}%" title="{bar.month}: {bar.essays} essays"></span>
+              <span class="v-tick">{bar.month.slice(5)}</span>
+            </span>
+          {/each}
+        </div>
+        <div class="velocity-row">
+          <span class="v-label">words</span>
+          {#each monthBars as bar}
+            <span class="v-month">
+              <span class="v-bar v-bar-words" style="height: {bar.wordHeight}%" title="{bar.month}: {bar.words.toLocaleString()} words"></span>
+            </span>
+          {/each}
+        </div>
+      </details>
+    {/if}
   </li>
   <li>client-side full-text search on /writing page with tag filtering ({totalTags} tags) — tag cloud with font-size weighting, pagination (25 per page)</li>
   <li>rss feed auto-generated from database, sitemap live, open graph on all pages, visit counter in footer</li>
@@ -270,6 +303,74 @@
     background: color-mix(in srgb, #7ecf6e 20%, transparent);
     color: #7ecf6e;
     border-radius: 3px;
+  }
+
+  .velocity-chart {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text, #ccc);
+  }
+  .velocity-chart summary {
+    cursor: pointer;
+    opacity: 0.7;
+    font-size: 0.8rem;
+  }
+  .velocity-chart summary:hover {
+    opacity: 1;
+  }
+
+  .velocity-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    height: 3.5rem;
+    padding: 0.25rem 0 0 1rem;
+  }
+  .velocity-row + .velocity-row {
+    margin-top: 0.15rem;
+  }
+
+  .v-label {
+    width: 3.2rem;
+    text-align: right;
+    padding-right: 0.4rem;
+    font-size: 0.65rem;
+    color: var(--muted, #555);
+    flex-shrink: 0;
+  }
+
+  .v-month {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 12px;
+    max-width: 28px;
+  }
+
+  .v-bar {
+    display: block;
+    width: 100%;
+    min-height: 2px;
+    border-radius: 1px 1px 0 0;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  .v-bar:hover { opacity: 1; }
+
+  .v-bar-essay {
+    background: var(--accent, #58a6ff);
+  }
+
+  .v-bar-words {
+    background: #7ecf6e;
+  }
+
+  .v-tick {
+    font-size: 0.55rem;
+    color: var(--muted, #555);
+    margin-top: 2px;
+    line-height: 1;
   }
 
   .inspo {

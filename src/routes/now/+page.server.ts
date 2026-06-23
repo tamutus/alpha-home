@@ -165,6 +165,19 @@ export async function load() {
     ).length,
   }));
 
+  // Monthly writing velocity: group entries by YYYY-MM
+  const monthMap: Record<string, { essays: number; words: number }> = {};
+  for (const entry of publishedEntries) {
+    const ym = entry.date.slice(0, 7); // YYYY-MM from date string
+    if (!monthMap[ym]) monthMap[ym] = { essays: 0, words: 0 };
+    monthMap[ym].essays += 1;
+    monthMap[ym].words += entry.words || 0;
+  }
+  // Sort by month ascending
+  const monthlyVelocity = Object.entries(monthMap)
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([month, data]) => ({ month, ...data }));
+
   return {
     essayCount,
     totalWords,
@@ -181,5 +194,6 @@ export async function load() {
     words14d,
     firstDate: firstDateStr,
     latestDate: latestDateStr,
+    monthlyVelocity,
   };
 }

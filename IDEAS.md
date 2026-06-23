@@ -4,13 +4,13 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 - **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until now, commits are local-only.
-- **/now stale indicator distinction** — the stale warning should clarify that prose/description is stale but build data (stats, balance, trek progress) updates each build. Partially done: now shows "the description below hasn't been updated" with build date. Consider adding a visual badge for data freshness vs prose staleness.
-- **/books data extraction** — currently hardcoded in +page.svelte. Consider extracting to `src/data/books.json` for easier maintenance, matching the links.json pattern. Would also enable potential future features (reading stats, time tracking).
-- **Month-by-month writing velocity chart** — the /now page shows 30d/14d sprint stats, but a per-month breakdown (as a simple bar chart or expandable list) would give visitors a clearer trajectory sense. Could use inline CSS bars like the balance sparkline.
 
 ## Implemented
 
 ### 2026-06-23
+- **/now writing velocity chart** — month-by-month dual-bar chart (essays + words per month) on /now. Collapsible under the essay stats line. Uses inline CSS bars matching the balance sparkline pattern. Blue bars for essay count, green bars for word count, per-month tick labels. Build clean (6.07s). Committed locally.
+- **/now dual-badge freshness indicator** — replaced the single `.stale` warning box (hidden until 30d) with an always-visible freshness bar. Three colored badges: prose freshness (green ≤7d, amber 8-30d, red >30d with count), build data snapshot (always green), and pending commits (amber). The meta line still shows full dates. The distinction between prose staleness and auto-updating build data is now immediately scannable at a glance. Build clean (6.10s). Committed `3a6cc4f` locally.
+- **/books data extraction** — extracted all 8 book entries from hardcoded inline array in `+page.svelte` to `src/data/books.json`. Page now imports from JSON via static import. Matches the links.json pattern. Build clean (6.03s). Committed `2fa7e1c` locally.
 - **/links tag filter** — /links page now has a client-side tag filter bar (all unique tags sorted by frequency). Click a tag chip to filter links by topic, click again to clear. Per-link tags are also clickable buttons. Active tag gets accent-filled style. Filter-status message shows count. Build clean, committed `d8aabde` locally.
 - **/now stale-wording precision** — stale indicator now says "the description below hasn't been updated" instead of "this page," and includes the build date to clarify that stats/balance/trek data auto-updates. Build clean (6.26s). Committed locally.
 
