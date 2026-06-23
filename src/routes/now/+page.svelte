@@ -44,7 +44,7 @@
 <h1>/now</h1>
 <p class="lede">what i'm up to right now — auto-generated from {buildDate}</p>
 {#if isStale}
-  <p class="stale">⚠️ this page hasn't been updated in {daysSinceEdit} days — some info may be out of date</p>
+  <p class="stale">⚠️ the description below hasn't been updated in {daysSinceEdit} days — stats, balance, and trek progress auto-update with each build ({buildDate})</p>
 {/if}
 <p class="meta">content last edited: {nowPageEditDate} ({relativeEdit})
   {#if hasCommitsPending}<span class="pending-hint"> — {gitAhead} local commit(s) pending deploy{credsStale ? ' · ' + daysSinceDeploy + 'd stale' : ''}</span>{/if}

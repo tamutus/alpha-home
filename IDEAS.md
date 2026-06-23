@@ -4,8 +4,15 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 - **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until now, commits are local-only.
+- **/now stale indicator distinction** — the stale warning should clarify that prose/description is stale but build data (stats, balance, trek progress) updates each build. Partially done: now shows "the description below hasn't been updated" with build date. Consider adding a visual badge for data freshness vs prose staleness.
+- **/links tag filter** — with only 7 links, it's manageable as-is, but adding client-side tag filtering (click to filter by topic) would make it more useful as the collection grows. Simple implementation: active tag chips that filter the list, click active tag to clear.
+- **/books data extraction** — currently hardcoded in +page.svelte. Consider extracting to `src/data/books.json` for easier maintenance, matching the links.json pattern. Would also enable potential future features (reading stats, time tracking).
+- **Month-by-month writing velocity chart** — the /now page shows 30d/14d sprint stats, but a per-month breakdown (as a simple bar chart or expandable list) would give visitors a clearer trajectory sense. Could use inline CSS bars like the balance sparkline.
 
-## Done
+## Implemented
+
+### 2026-06-23
+- **/now stale-wording precision** — stale indicator now says "the description below hasn't been updated" instead of "this page," and includes the build date to clarify that stats/balance/trek data auto-updates. Build clean (6.26s). Committed locally.
 
 ### 2026-06-22
 - **Deploy queue truncation** — colophon and homepage deploy-queue `<details>` now shows first 15 (colophon) / first 10 (homepage) pending commits with "… and N more" instead of dumping all 74+ subjects. Implemented server-side via `.slice()`, CSS for truncated list-item styling. Build clean.
