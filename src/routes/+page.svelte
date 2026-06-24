@@ -6,7 +6,7 @@
 </svelte:head>
 
 <script>
-  /** @type {{ totalEssays: number, recentWriting: import('./$types').PageData['recentWriting'], localAhead: number, pendingTitles: string[] }} */
+  /** @type {{ totalEssays: number, recentWriting: import('./$types').PageData['recentWriting'], localAhead: number, daysSinceDeploy: number, pendingTitles: string[] }} */
   export let data;
 
   import { timeAgo } from '$lib/utils.js';
@@ -121,7 +121,7 @@
               {/if}
             </ol>
           </details>
-          <p class="deploy-hint">commits are local-only — <a href="/colophon" class="deploy-link">view full deploy status</a></p>
+          <p class="deploy-hint">commits are local-only — credentials expired {data.daysSinceDeploy}d ago — <a href="/colophon" class="deploy-link">view full deploy status</a></p>
         </div>
       {/if}
     {:else if line.type === 'blank'}

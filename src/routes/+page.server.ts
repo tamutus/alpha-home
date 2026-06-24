@@ -30,10 +30,22 @@ export async function load() {
     // not a git repo, no remote, or other failure — treat as 0
   }
 
+  // Compute days since last deploy from git
+  let daysSinceDeploy = 0;
+  try {
+    const lastDeploy = execSync('git log origin/main -1 --format=%ct 2>/dev/null || echo 0', { encoding: 'utf-8' }).trim();
+    if (lastDeploy && lastDeploy !== '0') {
+      daysSinceDeploy = Math.floor((Date.now() / 1000 - parseInt(lastDeploy, 10)) / 86400);
+    }
+  } catch {
+    // not a repo or no remote — treat as 0
+  }
+
   return {
     totalEssays: publishedEntries.length,
     thisMonthCount,
     localAhead,
+    daysSinceDeploy,
     pendingTitles,
     recentWriting: sorted.slice(0, 3).map((e) => ({
       title: e.title,
