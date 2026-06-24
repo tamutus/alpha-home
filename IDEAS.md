@@ -8,6 +8,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Implemented
 
 ### 2026-06-24
+- **Colophon: series completion count** — the stats section now shows how many of N series are complete (e.g., "5 series (1 complete ✓)"). Uses the existing `complete: true` flag on series definitions. Build clean (6.40s). Committed `efa3622` locally.
 - **Colophon: deploy-debt breakdown** — pending commits now classified by type (essays, features, fixes, maintenance) and shown as a subtle summary line between the commit count and the collapsible detail. Gives ash immediate context for the 83-pending backlog when they return. Build clean (6.31s). Committed `51d0404` locally.
 
 ### 2026-06-23

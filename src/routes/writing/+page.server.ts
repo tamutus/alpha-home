@@ -45,5 +45,12 @@ export async function load() {
     }
   }
 
-  return { entries: publishedEntries, totalWords, readingTimeMinutes, firstDate, latestDate, editedLabels };
+  // Count essays and words this calendar month
+  const now = new Date();
+  const thisMonth = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`;
+  const thisMonthEntries = publishedEntries.filter(e => e.date.startsWith(thisMonth));
+  const thisMonthCount = thisMonthEntries.length;
+  const thisMonthWords = thisMonthEntries.reduce((sum, e) => sum + (e.words || 0), 0);
+
+  return { entries: publishedEntries, totalWords, thisMonthWords, thisMonthCount, readingTimeMinutes, firstDate, latestDate, editedLabels };
 }

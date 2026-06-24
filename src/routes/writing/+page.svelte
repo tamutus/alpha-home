@@ -6,7 +6,7 @@
 </svelte:head>
 
 <script>
-  /** @type {{ entries: import('./$types').PageData['entries'], totalWords: number, readingTimeMinutes: number, firstDate: Date|null, latestDate: Date|null, editedLabels: Record<string, string> }} */
+  /** @type {{ entries: import('./$types').PageData['entries'], totalWords: number, thisMonthWords: number, thisMonthCount: number, readingTimeMinutes: number, firstDate: Date|null, latestDate: Date|null, editedLabels: Record<string, string> }} */
   export let data;
 
   $: slugFromHref = (href) => href.replace('/writing/', '');
@@ -348,7 +348,7 @@
 </script>
 
 <h1>/writing <span class="count-badge">{totalCount} entries</span></h1>
-<p class="word-count">{wordCount.toLocaleString()} words &middot; {Math.round(wordCount / totalCount).toLocaleString()} avg &middot; {tags.length} tags &middot; {series.length} series &middot; ~{data.readingTimeMinutes} min to read &middot; {dateRangeStr}</p>
+<p class="word-count">{wordCount.toLocaleString()} words &middot; {Math.round(wordCount / totalCount).toLocaleString()} avg &middot; {tags.length} tags &middot; {series.length} series &middot; ~{data.readingTimeMinutes} min to read &middot; {dateRangeStr}{#if data.thisMonthCount > 0} &middot; {data.thisMonthCount} essay{data.thisMonthCount === 1 ? '' : 's'} ({data.thisMonthWords.toLocaleString()} words) this month{/if}</p>
 <p class="lede">things i've written, thought about, or explored <a href="/rss.xml" class="rss-link">rss</a> · <a href="/series" class="series-link">series</a>
 {#if entries.length > 0}
   <button class="random-btn" onclick={() => goRandom()} title="surprise me">🎲 random</button>
