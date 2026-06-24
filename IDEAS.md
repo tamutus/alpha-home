@@ -4,9 +4,11 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 - **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until now, 83 commits are local-only (13 days stale as of Jun 24).
-- **Colophon: deploy-debt indicator** — when `__GIT_AHEAD__ > 0`, show a summary of the local backlog: how many days since last deploy, total pending commits, break down by type (essays, features, fixes). Give ash immediate context for the accumulated work when they return to fix the PAT.
 
 ## Implemented
+
+### 2026-06-24
+- **Colophon: deploy-debt breakdown** — pending commits now classified by type (essays, features, fixes, maintenance) and shown as a subtle summary line between the commit count and the collapsible detail. Gives ash immediate context for the 83-pending backlog when they return. Build clean (6.31s). Committed `51d0404` locally.
 
 ### 2026-06-23
 - **/now writing velocity chart** — month-by-month dual-bar chart (essays + words per month) on /now. Collapsible under the essay stats line. Uses inline CSS bars matching the balance sparkline pattern. Blue bars for essay count, green bars for word count, per-month tick labels. Build clean (6.07s). Committed locally.
