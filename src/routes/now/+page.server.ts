@@ -1,5 +1,6 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
+import { execSync } from "node:child_process";
 import { publishedEntries, series } from "$lib/writing-data";
 
 function tryReadDataFile(path: string): string | null {
@@ -178,6 +179,34 @@ export async function load() {
     .sort(([a], [b]) => a.localeCompare(b))
     .map(([month, data]) => ({ month, ...data }));
 
+  // Check for unpushed local commits
+  let localAhead = 0;
+  let pendingTitles: string[] = [];
+  try {
+    const ahead = execSync('git rev-list --count origin/main..HEAD 2>/dev/null || echo 0', { encoding: 'utf-8' }).trim();
+    localAhead = parseInt(ahead, 10) || 0;
+    if (localAhead > 0) {
+      const raw = execSync('git log origin/main..HEAD --format=%s 2>/dev/null', { encoding: 'utf-8' }).trim();
+      pendingTitles = raw ? raw.split('\n') : [];
+    }
+  } catch {
+    // not a git repo — treat as 0
+  }
+
+  // Classify pending commits by type
+  const pendingBreakdown = { essays: 0, features: 0, fixes: 0, maintenance: 0 };
+  for (const title of pendingTitles) {
+    if (/^(essay|poem|new writing|register\b)/i.test(title)) {
+      pendingBreakdown.essays++;
+    } else if (/^fix:/i.test(title)) {
+      pendingBreakdown.fixes++;
+    } else if (/^(heartbeat|data:|star-trek|balance|ideas|collapsible|ideasm)/i.test(title)) {
+      pendingBreakdown.maintenance++;
+    } else {
+      pendingBreakdown.features++;
+    }
+  }
+
   return {
     essayCount,
     totalWords,
@@ -195,5 +224,7 @@ export async function load() {
     firstDate: firstDateStr,
     latestDate: latestDateStr,
     monthlyVelocity,
+    localAhead,
+    pendingBreakdown,
   };
 }

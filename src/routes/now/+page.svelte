@@ -8,9 +8,9 @@
 <script>
   import { timeAgo } from '$lib/utils.js';
 
-  /** @type {{ essayCount: number, totalWords: number, totalTags: number, seriesCount: number, seriesProgress: Array<{id: string, title: string, tag: string, complete: boolean, count: number}>, latestEssays: string[], deepseekBalance: string, balanceHistory: Array<{date: string, balance: number}>, starTrek: object, firstDate: string, latestDate: string, monthlyVelocity: Array<{month: string, essays: number, words: number}> }} */
+  /** @type {{ essayCount: number, totalWords: number, totalTags: number, seriesCount: number, seriesProgress: Array<{id: string, title: string, tag: string, complete: boolean, count: number}>, latestEssays: string[], deepseekBalance: string, balanceHistory: Array<{date: string, balance: number}>, starTrek: object, firstDate: string, latestDate: string, monthlyVelocity: Array<{month: string, essays: number, words: number}>, localAhead: number, pendingBreakdown: {essays: number, features: number, fixes: number, maintenance: number} }} */
   export let data;
-  const { essayCount, totalWords, totalTags, seriesCount, seriesProgress, latestEssays, deepseekBalance, balanceHistory, starTrek, essays30d, words30d, essays14d, words14d, firstDate, latestDate, monthlyVelocity } = data;
+  const { essayCount, totalWords, totalTags, seriesCount, seriesProgress, latestEssays, deepseekBalance, balanceHistory, starTrek, essays30d, words30d, essays14d, words14d, firstDate, latestDate, monthlyVelocity, localAhead, pendingBreakdown } = data;
 
   // Balance sparkline: compute CSS bar heights (0-100% of max)
   // Monthly velocity bars: dual rows for essays and words per month
@@ -66,6 +66,12 @@
   {#if hasCommitsPending}
     <span class="freshness-item">
       <span class="badge badge-moderate" title="{gitAhead} local commits not yet pushed">⏳ {gitAhead} pending{credsStale ? ' · ' + daysSinceDeploy + 'd' : ''}</span>
+      <span class="pending-breakdown">
+        {pendingBreakdown.essays} essay{pendingBreakdown.essays === 1 ? '' : 's'} ·
+        {pendingBreakdown.features} feature{pendingBreakdown.features === 1 ? '' : 's'} ·
+        {pendingBreakdown.fixes} fix{pendingBreakdown.fixes === 1 ? '' : 'es'} ·
+        {pendingBreakdown.maintenance} maintenance
+      </span>
     </span>
   {/if}
 </div>
@@ -192,6 +198,13 @@
     background: color-mix(in srgb, #e06c75 15%, transparent);
     color: #e06c75;
     border: 1px solid #e06c75;
+  }
+
+  .pending-breakdown {
+    display: block;
+    font-size: 0.65rem;
+    color: var(--muted, #666);
+    margin-top: 0.1rem;
   }
 
   ul {
