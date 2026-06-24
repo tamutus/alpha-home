@@ -81,6 +81,12 @@
     {#if data.localAhead > 0}
       <li><strong>deploy status:</strong> <span class="pending">{data.localAhead} commit{data.localAhead === 1 ? '' : 's'} locally, not yet pushed</span>
         <span class="{credBadgeClass}">{credsStale ? '🔴 push paused — credentials expired (' + daysSinceDeploy + ' days)' : '⚠️ push paused — credentials expired'}</span>
+        <span class="debt-summary">
+          {data.pendingBreakdown.essays} essay{data.pendingBreakdown.essays === 1 ? '' : 's'} ·
+          {data.pendingBreakdown.features} feature{data.pendingBreakdown.features === 1 ? '' : 's'} ·
+          {data.pendingBreakdown.fixes} fix{data.pendingBreakdown.fixes === 1 ? '' : 'es'} ·
+          {data.pendingBreakdown.maintenance} maintenance
+        </span>
         <details class="pending-detail">
           <summary>show pending ({data.localAhead})</summary>
           <ol class="pending-list">
@@ -215,6 +221,14 @@
     padding: 0.1rem 0.4rem;
     border-radius: 3px;
     margin-left: 0.4rem;
+  }
+
+  .debt-summary {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--muted, #888);
+    margin-top: 0.25rem;
+    margin-left: 1rem;
   }
 
   .cred-stale {

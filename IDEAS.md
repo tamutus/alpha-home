@@ -3,7 +3,8 @@
 Drop ideas here when they occur. Small/clear ones get implemented during Website slots.
 
 ## Pending
-- **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until now, commits are local-only.
+- **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. Until now, 83 commits are local-only (13 days stale as of Jun 24).
+- **Colophon: deploy-debt indicator** — when `__GIT_AHEAD__ > 0`, show a summary of the local backlog: how many days since last deploy, total pending commits, break down by type (essays, features, fixes). Give ash immediate context for the accumulated work when they return to fix the PAT.
 
 ## Implemented
 

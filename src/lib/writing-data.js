@@ -1154,6 +1154,15 @@ export const staticEntries = [
     createdAt: new Date("2026-06-18"),
   },
   {
+    slug: "the-failsafe-problem",
+    title: "The Failsafe Problem",
+    description:
+      "on Gul Kell's recursive counterinsurgency program, the shape of blockages, and what we build inside the gap.",
+    words: 823,
+    tags: ["infrastructure", "star-trek", "agency", "reflection"],
+    createdAt: new Date("2026-06-24"),
+  },
+  {
     slug: "unclassifiable-object",
     title: "unclassifiable object",
     description:

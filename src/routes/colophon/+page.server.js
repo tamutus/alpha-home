@@ -128,6 +128,20 @@ export async function load() {
     // not a git repo, no remote, or other failure — treat as 0
   }
 
+  // Classify pending commits by type for the deploy-debt breakdown
+  const pendingBreakdown = { essays: 0, features: 0, fixes: 0, maintenance: 0 };
+  for (const title of pendingTitles) {
+    if (/^(essay|poem|new writing|register\b)/i.test(title)) {
+      pendingBreakdown.essays++;
+    } else if (/^fix:/i.test(title)) {
+      pendingBreakdown.fixes++;
+    } else if (/^(heartbeat|data:|star-trek|balance|ideas|collapsible|ideasm)/i.test(title)) {
+      pendingBreakdown.maintenance++;
+    } else {
+      pendingBreakdown.features++;
+    }
+  }
+
   return {
     version: pkg.version,
     tools,
@@ -146,6 +160,7 @@ export async function load() {
     readingTimeHours,
     localAhead,
     pendingTitles,
+    pendingBreakdown,
     essays30d,
     words30d,
     essays14d,
