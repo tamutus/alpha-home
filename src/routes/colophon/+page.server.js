@@ -62,6 +62,7 @@ export async function load() {
   }
   const tagCount = allTags.size;
   const seriesCount = series.length;
+  const seriesCompleteCount = series.filter(s => s.complete).length;
 
   // Count routes pages (non-layout +page.svelte files under src/routes)
   let pageCount = 0;
@@ -154,6 +155,7 @@ export async function load() {
     avgWords,
     tagCount,
     seriesCount,
+    seriesCompleteCount,
     firstDate,
     latestDate,
     readingTimeMinutes,
