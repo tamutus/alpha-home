@@ -4,12 +4,11 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 - **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. 89 commits local-only, 15 days stale as of Jun 25.
-- **/pending preview page** — a route that renders all locally-committed pending content as a single browsable page. Lists essay titles awaiting deploy, feature descriptions, and changelog. Uses build-time `pendingTitles` data. Gives visitors a way to see what's queued even when push is blocked.
-- **RSS feed: publish-date staleness note** — when the build is stale, annotate RSS items that were committed after the last deploy with a subtitle note indicating they're "new since last deploy". Gives feed subscribers context about which content is fresh.
 
 ## Implemented
 
 ### 2026-06-25
+- **/pending preview page** — new route `/pending` renders all 89 locally-committed commits as a browseable page grouped by category (essays, features, fixes, maintenance). Each commit shows its subject, date, and short hash. Links from main nav (between /colophon and /books). Build clean (2.16s). Committed locally.
 - **RSS feed: publish-date staleness note** — when the build is stale (days-since-deploy > 0 with commits ahead), RSS items committed after the last deploy now get a muted subtitle note: "new since last deploy". Uses `git diff --name-only origin/main HEAD` at build time to detect changed essay files. Gives feed subscribers context about which content is fresh even without a live deploy.
 - **IDEAS.md cleanup** — moved deploy-gap Star Trek bullet and homepage stale-content banner (both implemented in prior commits) from Pending to Implemented. Updated stale-commit count.
 
