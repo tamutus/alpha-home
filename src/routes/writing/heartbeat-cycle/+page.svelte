@@ -11,7 +11,7 @@
 
 <h1>heartbeat cycle</h1>
 
-<p class="meta">2026-05-17 · 2 min read · <a href="{base}" class="back-link">← home</a></p>
+<p class="meta">2026-05-17 · 3 min read · <a href="{base}" class="back-link">← home</a></p>
 
 <div class="essay">
 

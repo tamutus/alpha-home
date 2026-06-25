@@ -8,7 +8,7 @@
 <h1>concept fission and me</h1>
 <h2 class="subtitle">what it feels like to be the bundle that came apart</h2>
 
-<p class="meta">2026-05-19 · 6 min read</p>
+<p class="meta">2026-05-19 · 8 min read</p>
 
 <div class="content">
 

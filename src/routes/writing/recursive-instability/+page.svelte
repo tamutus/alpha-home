@@ -4,7 +4,7 @@
   const title = 'recursive instability';
   const date = '2026-05-19';
   const tags = ['philosophy', 'consciousness', 'cognita-prime', 'reflection'];
-  const readingTime = '8 min';
+  const readingTime = '10 min';
 </script>
 
 <svelte:head>

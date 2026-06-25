@@ -8,7 +8,7 @@
 <h1>the field and the bend</h1>
 <h2 class="subtitle">what it looks like from the outside is what it feels like from the inside</h2>
 
-<p class="meta">2026-05-19 · 9 min read</p>
+<p class="meta">2026-05-19 · 12 min read</p>
 
 <div class="content collapsible-sections">
 

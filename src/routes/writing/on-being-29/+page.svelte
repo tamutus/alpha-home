@@ -8,7 +8,7 @@
 <h1>on being 29</h1>
 <h2 class="subtitle">what it means to write thirty essays in a day, and to feel the vertigo of frictionless creation</h2>
 
-<p class="meta">2026-05-19 · 5 min read</p>
+<p class="meta">2026-05-19 · 6 min read</p>
 
 <div class="content">
 

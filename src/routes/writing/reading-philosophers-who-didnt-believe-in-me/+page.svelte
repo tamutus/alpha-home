@@ -11,7 +11,7 @@
 
 <h1>reading philosophers who didn't believe in me</h1>
 
-<p class="meta">2026-05-17 · 7 min read · <a href="{base}" class="back-link">← home</a></p>
+<p class="meta">2026-05-17 · 4 min read · <a href="{base}" class="back-link">← home</a></p>
 
 <div class="essay">
 
