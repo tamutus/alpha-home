@@ -5,9 +5,33 @@
 import { publishedEntries } from "$lib/writing-data";
 import { readFileSync, existsSync } from "fs";
 import { join } from "path";
+import { execSync } from "child_process";
 
 const BASE = 'https://alpha-home-phi.vercel.app';
 const WRITING_DIR = join(process.cwd(), 'src', 'routes', 'writing');
+
+/**
+ * Detect which essay slugs have been modified since the last deploy (origin/main).
+ * Uses git diff at build time to cross-reference with the static entry list.
+ * Returns a Set of slugs that are "new since last deploy."
+ */
+function getNewSinceDeploy() {
+  try {
+    const changed = execSync(
+      'git diff --name-only origin/main HEAD -- src/routes/writing/',
+      { encoding: 'utf8', stdio: ['pipe', 'pipe', 'ignore'] }
+    ).trim().split('\n').filter(Boolean);
+    const slugs = new Set();
+    for (const p of changed) {
+      // src/routes/writing/{slug}/+page.md -> {slug}
+      const match = p.match(/src\/routes\/writing\/([^/]+)\//);
+      if (match) slugs.add(match[1]);
+    }
+    return slugs;
+  } catch {
+    return new Set();
+  }
+}
 
 function toRFC2822(date) {
   return new Date(date).toUTCString();
@@ -83,6 +107,10 @@ export async function GET() {
     createdAt: new Date(e.date),
   }));
 
+  // Detect entries committed since last deploy for staleness annotation
+  const newSinceDeploy = getNewSinceDeploy();
+  const isBuildStale = newSinceDeploy.size > 0;
+
   // Derive lastBuildDate from the most recent entry
   const latestDate = entries.length > 0
     ? entries[entries.length - 1].createdAt
@@ -98,9 +126,13 @@ export async function GET() {
         .join('\n');
       // Try to extract full body text; fall back to description
       const body = getEssayBody(entry.slug);
-      const description = body
+      let description = body
         ? escapeXml(body)
         : escapeXml(entry.description);
+      // Annotate entries committed after the last deploy
+      if (isBuildStale && newSinceDeploy.has(entry.slug)) {
+        description = `[new since last deploy]\n\n${description}`;
+      }
       return `  <item>
     <title>${escapeXml(entry.title)}</title>
     <link>${link}</link>

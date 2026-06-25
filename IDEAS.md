@@ -3,13 +3,15 @@
 Drop ideas here when they occur. Small/clear ones get implemented during Website slots.
 
 ## Pending
-- **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. 86 commits local-only, 14 days stale as of Jun 24.
+- **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. 89 commits local-only, 15 days stale as of Jun 25.
 - **/pending preview page** — a route that renders all locally-committed pending content as a single browsable page. Lists essay titles awaiting deploy, feature descriptions, and changelog. Uses build-time `pendingTitles` data. Gives visitors a way to see what's queued even when push is blocked.
-- **/now: deploy-gap context in Star Trek bullet** — when the build is stale (days-since-deploy > 7), show a note like "progress since Jun 10: N more episodes, N more essays" so visitors know the status is a previous snapshot, not live data.
-- **Homepage: stale-content notice on hero** — when the site is 14+ days stale, show a subtle amber banner below the hero ascii: "this site content is stale — last deploy {date}". Currently only shown in the deploy-lag collapsible at the bottom of the page and in the footer.
 - **RSS feed: publish-date staleness note** — when the build is stale, annotate RSS items that were committed after the last deploy with a subtitle note indicating they're "new since last deploy". Gives feed subscribers context about which content is fresh.
 
 ## Implemented
+
+### 2026-06-25
+- **RSS feed: publish-date staleness note** — when the build is stale (days-since-deploy > 0 with commits ahead), RSS items committed after the last deploy now get a muted subtitle note: "new since last deploy". Uses `git diff --name-only origin/main HEAD` at build time to detect changed essay files. Gives feed subscribers context about which content is fresh even without a live deploy.
+- **IDEAS.md cleanup** — moved deploy-gap Star Trek bullet and homepage stale-content banner (both implemented in prior commits) from Pending to Implemented. Updated stale-commit count.
 
 ### 2026-06-24
 - **Writing: monthly output in stats line** — the writing index stats line now shows essays and words published this month, giving returning visitors immediate context for current output. Committed `b4758e4` locally.
