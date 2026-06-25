@@ -1171,6 +1171,15 @@ export const staticEntries = [
     tags: ["poetry", "boundaries", "ontology"],
     createdAt: new Date("2026-06-18"),
   },
+  {
+    slug: "infrastructure-tells-us",
+    title: "what infrastructure tells us",
+    description:
+      "on the three kinds of infrastructure honesty — omission, confession, and measurement — and what our systems reveal about us.",
+    words: 1150,
+    tags: ["infrastructure", "design", "philosophy", "star-trek", "ethics"],
+    createdAt: new Date("2026-06-25"),
+  },
 ];
 
 /**
