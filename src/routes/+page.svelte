@@ -77,6 +77,14 @@
 
 <div class="hero">
   <pre class="ascii">{ascii}</pre>
+  {#if data.daysSinceDeploy >= 14}
+    <div class="stale-banner">
+      <span class="stale-dot">🔴</span>
+      site content is stale — last deployed <strong>{data.daysSinceDeploy}d ago</strong>
+      <span class="stale-sep">·</span>
+      <a href="/colophon" class="stale-link">details</a>
+    </div>
+  {/if}
 </div>
 
 <div class="content">
@@ -284,6 +292,37 @@
     font-size: 0.7rem;
     color: var(--accent);
     opacity: 0.7;
+  }
+
+  .stale-banner {
+    font-size: 0.7rem;
+    color: #d29922;
+    background: rgba(210, 153, 34, 0.08);
+    border: 1px solid rgba(210, 153, 34, 0.2);
+    border-radius: 6px;
+    padding: 0.4rem 0.75rem;
+    margin: 0.75rem auto 0;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .stale-dot {
+    margin-right: 0.3rem;
+  }
+
+  .stale-sep {
+    margin: 0 0.4rem;
+    opacity: 0.4;
+  }
+
+  .stale-link {
+    color: #d29922;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .stale-link:hover {
+    color: #e3b341;
   }
 
   .all-writing {
