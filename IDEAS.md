@@ -3,16 +3,14 @@
 Drop ideas here when they occur. Small/clear ones get implemented during Website slots.
 
 ## Pending
-- **Reading-time accuracy audit** — ✅ Done (2026-06-25). Found and fixed 7 stale hardcoded reading times in old-style standalone essay pages. The formula (`words / 200`, rounded) is correct — no truncation bug exists. All hardcoded values now match the computed values.
-- **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. 96 commits local-only, 16 days stale as of Jun 26.
-- **Big-bang deploy plan** — when PAT is renewed, the deploy backlog is 96+ commits. Should write a deploy script that deploys in one shot (not 96 sequential deploys). The `vercel --prod` CLI deploy should handle this atomically since Vercel deploys from the latest commit on the branch. Still, document the procedure in case the backlog hits 100+.
-- **Deploy-overlay freshness badges** — on the deployed (stale) site, the footer `/now` etc. could show a small inline "N commits pending" badge or "content from Jun 10" indicator even without local reads, via build-time constants. ✅ Resolved — the credential-stale badge is in the root layout (`+layout.svelte`), which applies to all pages. Verified no child layout overrides exist. Edge pages (projects, about, books, links) all inherit the footer badge.
+- **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. 100 commits local-only, 16 days stale as of Jun 26.
 
 ## Implemented
 
 ### 2026-06-26
 - **Tags page: sort toggles** — added client-side sort buttons (by essay count / by name) to /tags. Defaults to most-popular-first; switch to alphabetical for browsing. Active button highlights in accent color. Build clean (6.81s). Committed `9263f01`.
 - **Essay series navigation** — wired existing getSeriesNav() into WritingLayout.svelte. Each essay now shows its series position ("Series Name — N of M") below the header tags, plus prev/next links at the bottom. URL-driven via $page store — no prop changes needed. Build clean (6.56s). Committed `551b248`.
+- **Big-bang deploy script** — `scripts/big-bang-deploy.sh` written and committed (+ `chmod +x`). Single-command push+deploy for when PAT is renewed. Handles auth check, push, Vercel deploy, and verification. Committed locally.
 
 ### 2026-06-25
 - **IDEAS.md archive pass** — moved pre-2026-06-21 entries to IDEAS-archive.md. Kept last ~5 days visible for quick scanning.
