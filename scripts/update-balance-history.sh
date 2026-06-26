@@ -15,12 +15,12 @@ HISTORY_FILE="data/balance-history.json"
 BALANCE_FILE="data/deepseek-balance.json"
 WORKSPACE_BALANCE="../data/deepseek-balance.json"
 
-# Read current balance
+# Read current balance — workspace copy first (updated hourly by bootstrap), then local
 RAW=""
-if [ -f "$BALANCE_FILE" ]; then
-  RAW=$(cat "$BALANCE_FILE")
-elif [ -f "$WORKSPACE_BALANCE" ]; then
+if [ -f "$WORKSPACE_BALANCE" ]; then
   RAW=$(cat "$WORKSPACE_BALANCE")
+elif [ -f "$BALANCE_FILE" ]; then
+  RAW=$(cat "$BALANCE_FILE")
 fi
 
 if [ -z "$RAW" ]; then

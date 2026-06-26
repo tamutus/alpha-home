@@ -20,7 +20,7 @@
 <p class="lede">content queued for the next deploy</p>
 
 <div class="status">
-  <span class="status-badge count">{data.count} uncommitted commit{data.count === 1 ? '' : 's'}</span>
+  <span class="status-badge count">{data.count} unpushed commit{data.count === 1 ? '' : 's'}</span>
   {#if data.firstDate && data.lastDate}
     <span class="status-badge range">{data.firstDate} → {data.lastDate}</span>
   {/if}
