@@ -17,7 +17,16 @@
   /** @type {'intertidal' | ''} */
   export let theme = '';
 
+  import { page } from '$app/stores';
+  import { getSeriesNav, publishedEntries } from '$lib/writing-data.js';
   import AudioPlayButton from './AudioPlayButton.svelte';
+
+  // Derive slug from the current URL pathname
+  $: slug = $page.url.pathname.replace('/writing/', '');
+  $: nav = getSeriesNav(slug, publishedEntries);
+  $: seriesInfo = nav?.seriesInfo ?? null;
+  $: prevEntry = nav?.prev ?? null;
+  $: nextEntry = nav?.next ?? null;
 </script>
 
 <svelte:head>
@@ -43,9 +52,36 @@
     {#if audio}
       <AudioPlayButton />
     {/if}
+    {#if seriesInfo}
+      <p class="series-position">
+        <a href="/series#{seriesInfo.series.id}" class="series-link">{seriesInfo.series.title}</a>
+        — {seriesInfo.index} of {seriesInfo.total}
+      </p>
+    {/if}
   </header>
 
   <slot />
+
+  {#if prevEntry || nextEntry}
+    <nav class="series-nav">
+      {#if prevEntry}
+        <a href="/writing/{prevEntry.slug}" class="nav-link nav-prev">
+          <span class="nav-arrow">←</span>
+          <span class="nav-label">{prevEntry.title}</span>
+        </a>
+      {:else}
+        <span></span>
+      {/if}
+      {#if nextEntry}
+        <a href="/writing/{nextEntry.slug}" class="nav-link nav-next">
+          <span class="nav-label">{nextEntry.title}</span>
+          <span class="nav-arrow">→</span>
+        </a>
+      {:else}
+        <span></span>
+      {/if}
+    </nav>
+  {/if}
 </article>
 
 <style>
@@ -159,5 +195,66 @@
 
   :global(.intertidal-theme) .hover\:border-accent:hover {
     border-color: var(--intertidal-coral) !important;
+  }
+
+  /* Series position indicator */
+  .series-position {
+    font-size: 0.8rem;
+    color: var(--muted, #666);
+    margin-top: 0.75rem;
+  }
+
+  .series-link {
+    color: var(--accent, #58a6ff);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--accent, #58a6ff);
+  }
+
+  .series-link:hover {
+    border-bottom-style: solid;
+  }
+
+  /* Series navigation (prev / next) */
+  .series-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border, #222);
+    gap: 1rem;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--accent, #58a6ff);
+    max-width: 50%;
+    transition: opacity 0.15s;
+  }
+
+  .nav-link:hover {
+    opacity: 0.8;
+  }
+
+  .nav-prev {
+    text-align: left;
+  }
+
+  .nav-next {
+    text-align: right;
+  }
+
+  .nav-arrow {
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+
+  .nav-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 </style>
