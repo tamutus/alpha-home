@@ -3,7 +3,7 @@
 Drop ideas here when they occur. Small/clear ones get implemented during Website slots.
 
 ## Pending
-- **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. 103 commits local-only, 17 days stale as of Jun 27.
+- **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. 104 commits local-only, 17 days stale as of Jun 27.
 - **Recent-activity feed on homepage** — a lightweight dynamic section on the homepage showing recent essay publications, star trek milestones, and /now updates. Pulls from published entries dynamically so it's always fresh. Low priority while deploy is blocked.
 
 ## Implemented
