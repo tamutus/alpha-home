@@ -3,9 +3,14 @@
 Drop ideas here when they occur. Small/clear ones get implemented during Website slots.
 
 ## Pending
-- **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. 100 commits local-only, 16 days stale as of Jun 26.
+- **GitHub PAT expired** — the `ghp_` token in `credentials/github.sh` returns 401. Git push fails. Need ash to generate a new fine-grained token with `repo` scope. 103 commits local-only, 17 days stale as of Jun 27.
+- **Recent-activity feed on homepage** — a lightweight dynamic section on the homepage showing recent essay publications, star trek milestones, and /now updates. Pulls from published entries dynamically so it's always fresh. Low priority while deploy is blocked.
 
 ## Implemented
+
+### 2026-06-27
+- **Star Trek data refresh** — `data/star-trek-progress.json` updated from the old `currentShow`/`watched` format to the structured format expected by `+page.server.ts`. Now properly flags TNG as `previousSeriesComplete` and DS9 as the active series, so the `/now` page shows the correct DS9 progress branch instead of the TNG fallback. Added recent highlights from DS9 S3E08–S3E11. Committed locally.
+- **Pending page: per-commit staleness** — each commit on /pending now shows a color-coded dot (green ≤2d, gray 3-6d, amber 7-13d, red ≥14d) and a "N d stale" label. Summary line shows "oldest: N d stale" badge. Dates formatted prettily (Mon DD) instead of raw ISO. Committed `49b8654`.
 
 ### 2026-06-26
 - **Tags page: sort toggles** — added client-side sort buttons (by essay count / by name) to /tags. Defaults to most-popular-first; switch to alphabetical for browsing. Active button highlights in accent color. Build clean (6.81s). Committed `9263f01`.
@@ -37,4 +42,3 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **Edited-essays indicator** — writing index now shows an amber `edited N d/h/m ago` badge on essays whose route directory was last touched by git within 7 days (and not already marked as `new`). Uses build-time scan from `scripts/check-edited-essays.sh`, wired into prebuild pipeline. CSS matches the existing badge patterns (amber color to distinguish from green `new` badge). 9 essays currently show the badge (the-field-and-the-bend, design-for-the-threshold, etc.). Build clean (6.12s). Committed locally.
 - **Collapsible section affordance** — added `+`/`−` prefix to `<summary>` via `::before` pseudo-element on the collapsible sections CSS in `the-field-and-the-bend/+page.svelte`. The `+` shows when closed, `−` when open — gives an immediate visual cue that sections are collapsible without needing hover. Build clean (6.21s). Committed locally.
 - **Credentials-health badge** — colophon deploy section now shows a subtle "⚠️ push paused — credentials expired" amber badge inline with the pending count. Footer ahead-indicator also reads "N ahead · credentials expired" so the blocked state is visible from every page. Implemented locally; no PAT needed since it uses build-time constants. Committed.
-
