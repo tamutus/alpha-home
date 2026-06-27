@@ -11,12 +11,16 @@ export async function load() {
       { encoding: 'utf-8' }
     ).trim();
     if (raw) {
-      pending = raw.split('\n').map(line => {
+      const now = new Date();
+    pending = raw.split('\n').map(line => {
         const [hash, date, ...subjectParts] = line.split('|');
         const subject = subjectParts.join('|'); // in case subject has '|'
         const shortHash = hash.slice(0, 7);
         const isoDate = date?.split(' ')[0] || '';
-        return { hash: shortHash, date: isoDate, subject: subject || '' };
+        const daysSince = isoDate
+          ? Math.floor((now.getTime() - new Date(isoDate + 'T00:00:00Z').getTime()) / 86400000)
+          : null;
+        return { hash: shortHash, date: isoDate, subject: subject || '', daysSince };
       });
     }
   } catch {
@@ -56,6 +60,8 @@ export async function load() {
     totals[cat] = categories[cat].length;
   }
 
+  const maxDaysSince = pending.reduce((max, c) => c.daysSince !== null ? Math.max(max, c.daysSince) : max, 0);
+
   return {
     count: pending.length,
     categories,
@@ -64,6 +70,7 @@ export async function load() {
     totals,
     firstDate,
     lastDate,
+    maxDaysSince,
     error,
   };
 }

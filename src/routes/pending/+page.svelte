@@ -14,6 +14,20 @@
   });
 
   let nonEmptyCats = $derived(data.categoryOrder.filter(c => data.categories[c].length > 0));
+
+  function stalenessClass(daysSince) {
+    if (daysSince === null) return '';
+    if (daysSince >= 14) return 'stale-severe';
+    if (daysSince >= 7) return 'stale-warning';
+    if (daysSince >= 3) return 'stale-mild';
+    return 'stale-fresh';
+  }
+
+  function formatDate(isoDate) {
+    if (!isoDate) return '';
+    const d = new Date(isoDate + 'T00:00:00Z');
+    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+  }
 </script>
 
 <h1>/pending</h1>
@@ -22,14 +36,17 @@
 <div class="status">
   <span class="status-badge count">{data.count} unpushed commit{data.count === 1 ? '' : 's'}</span>
   {#if data.firstDate && data.lastDate}
-    <span class="status-badge range">{data.firstDate} → {data.lastDate}</span>
+    <span class="status-badge range">{formatDate(data.firstDate)} → {formatDate(data.lastDate)}</span>
+  {/if}
+  {#if data.maxDaysSince > 0}
+    <span class="status-badge stalest">oldest: {data.maxDaysSince}d stale</span>
   {/if}
 </div>
 
 <p class="meta">
   <a href="/colophon#deploy">deploy status → /colophon</a>
   {#if data.firstDate}
-    · earliest pending: {data.firstDate}
+    · earliest pending: {formatDate(data.firstDate)}
   {/if}
 </p>
 
@@ -56,7 +73,13 @@
           <li class="commit-item">
             <span class="commit-subject">{commit.subject}</span>
             {#if commit.date}
-              <span class="commit-date">{commit.date}</span>
+              <span class="commit-date">
+                <span class="stale-dot {stalenessClass(commit.daysSince)}"></span>
+                {formatDate(commit.date)}
+                {#if commit.daysSince !== null && commit.daysSince > 0}
+                  <span class="stale-label {stalenessClass(commit.daysSince)}">{commit.daysSince}d stale</span>
+                {/if}
+              </span>
             {/if}
             <code class="commit-hash">{commit.hash}</code>
           </li>
@@ -104,6 +127,11 @@
     background: rgba(136, 136, 136, 0.08);
   }
 
+  .status-badge.stalest {
+    color: #f85149;
+    background: rgba(248, 81, 73, 0.1);
+  }
+
   .meta {
     font-size: 0.8rem;
     color: var(--muted, #888);
@@ -125,6 +153,20 @@
   .empty {
     border-color: rgba(46, 160, 67, 0.2);
     background: rgba(46, 160, 67, 0.05);
+  }
+
+  .stale-severe { color: #f85149; }
+  .stale-warning { color: #e6a817; }
+  .stale-mild { color: #8b949e; }
+  .stale-fresh { color: #3fb950; }
+
+  .stale-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 0.3rem;
+    flex-shrink: 0;
   }
 
   .summary-line {
@@ -190,6 +232,33 @@
     color: var(--muted, #888);
     font-size: 0.76rem;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .stale-label {
+    font-size: 0.7rem;
+    padding: 0.05rem 0.3rem;
+    border-radius: 2px;
+    background: rgba(136, 136, 136, 0.08);
+  }
+
+  .stale-severe .stale-label,
+  .stale-label.stale-severe {
+    background: rgba(248, 81, 73, 0.12);
+  }
+
+  .stale-label.stale-warning {
+    background: rgba(230, 168, 23, 0.12);
+  }
+
+  .stale-label.stale-mild {
+    background: rgba(139, 148, 158, 0.1);
+  }
+
+  .stale-label.stale-fresh {
+    background: rgba(63, 185, 80, 0.1);
   }
 
   .commit-hash {
