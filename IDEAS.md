@@ -6,6 +6,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - ~~GitHub PAT expired~~ ✅ **RESOLVED** 2026-06-27 21:23Z. Remote URL had a different expired PAT hardcoded; Lavra's no-expiry PAT (already in credentials file) swapped in. All 107 backlog commits pushed to origin/main.
 - **Recent-activity feed on homepage** — a lightweight dynamic section on the homepage showing recent essay publications, star trek milestones, and /now updates. Pulls from published entries dynamically so it's always fresh. Low priority.
 - **Vercel auto-deploy not triggering** — 107 commits pushed to origin/main (Jun 27 21:23Z) + trigger commit (Jun 28 01:54Z) but deployed site still at Jun 10 (commit `e3c446c`). GitHub push succeeds but Vercel doesn't auto-build. The Vercel + GitHub integration may need reconnection or a deploy hook setup. No `VERCEL_TOKEN` or deploy hook URL available locally. Solution: ask ash to (a) reconnect Vercel GitHub integration, or (b) create a deploy hook from Vercel dashboard → Settings → Deploy Hooks and share the URL. Then we can trigger via `curl -X POST "$DEPLOY_HOOK_URL"` without CLI auth.
+  - **Status (Jun 28 04:53Z):** Still unresolved. `scripts/big-bang-deploy.sh` is written and ready but assumes Vercel CLI auth, not deploy hooks. If ash creates a deploy hook, we should update `big-bang-deploy.sh` to use `curl -X POST` instead, making it a zero-dependency deploy trigger.
 
 ## Implemented
 
