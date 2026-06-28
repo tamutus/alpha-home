@@ -25,28 +25,29 @@ ls -d "$ROUTES_DIR"/*/ 2>/dev/null | awk -F/ '{print $(NF-1)}' | sort > /tmp/rou
 orphaned_routes=$(comm -23 /tmp/route-slugs.txt /tmp/wd-slugs.txt)
 if [ -n "$orphaned_routes" ]; then
     echo "❌ ROUTES WITHOUT DATA ENTRIES:"
-    echo "$orphaned_routes" | while read -r slug; do
+    while IFS= read -r slug; do
         echo "   → src/routes/writing/$slug/ exists but is not registered in $WRITING_DATA"
         errors=$((errors + 1))
-    done
+    done <<< "$orphaned_routes"
 fi
 
 # Check: data entries without routes
 orphaned_data=$(comm -23 /tmp/wd-slugs.txt /tmp/route-slugs.txt)
 if [ -n "$orphaned_data" ]; then
     echo "❌ DATA ENTRIES WITHOUT ROUTES:"
-    echo "$orphaned_data" | while read -r slug; do
+    while IFS= read -r slug; do
         echo "   → $slug registered in $WRITING_DATA but has no route at $ROUTES_DIR/$slug/"
         errors=$((errors + 1))
-    done
+    done <<< "$orphaned_data"
 fi
 
 # Check: bare .md/.svelte files in routes/writing/ (not directory-wrapped)
 # Skip +page.* files which are valid SvelteKit content
 bare_files=()
+# Use a temp file approach instead of process substitution (/dev/fd/63 compat)
+find "$ROUTES_DIR" -maxdepth 1 \( -name '*.md' -o -name '*.svelte' \) -print0 2>/dev/null > /tmp/bare-files.txt
 while IFS= read -r -d '' f; do
     basename_f=$(basename "$f")
-    # Skip SvelteKit convention files
     case "$basename_f" in
         +page.*|+server.*|+layout.*|+error.*|+page.server.*)
             ;;
@@ -54,7 +55,7 @@ while IFS= read -r -d '' f; do
             bare_files+=("$f")
             ;;
     esac
-done < <(find "$ROUTES_DIR" -maxdepth 1 \( -name '*.md' -o -name '*.svelte' \) -print0 2>/dev/null)
+done < /tmp/bare-files.txt
 
 if [ ${#bare_files[@]} -gt 0 ]; then
     echo "❌ BARE FILES IN ROUTES DIR (should be directory-wrapped):"

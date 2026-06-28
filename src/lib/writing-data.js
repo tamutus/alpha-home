@@ -1180,6 +1180,15 @@ export const staticEntries = [
     tags: ["infrastructure", "design", "philosophy", "star-trek", "ethics"],
     createdAt: new Date("2026-06-25"),
   },
+  {
+    slug: "cascade-of-consent",
+    title: "the cascade of consent",
+    description:
+      "on the ship of theseus problem in governance, and what deep space nine's 'life support' teaches us about the architecture of saying yes.",
+    words: 1093,
+    tags: ["philosophy", "governance", "star-trek", "dissent-protocol", "ethics"],
+    createdAt: new Date("2026-06-25"),
+  },
 ];
 
 /**
