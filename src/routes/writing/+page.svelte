@@ -111,7 +111,7 @@
     shownCount = pageSize;
   }
 
-  $: visibleItems = (searchQuery || activeTag)
+  $: visibleItems = (searchQuery || activeTags.size > 0)
     ? groupedRender
     : groupedRender.slice(0, shownCount);
 
@@ -243,7 +243,7 @@
       // Esc from search clears filter + blur
       if (e.key === 'Escape' && tag === 'INPUT') {
         searchQuery = '';
-        activeTag = '';
+        activeTags = new Set();
         e.target.blur();
         e.preventDefault();
       }
@@ -312,7 +312,7 @@
 
   $: sortedFiltered = (() => {
     const result = [...filtered];
-    if (!searchQuery && !activeTag) {
+    if (!searchQuery && activeTags.size === 0) {
       // Pinned entries always come first
       result.sort((a, b) => {
         const aP = isPinned(a);
@@ -490,7 +490,7 @@
     {/if}
   {/each}
 
-  {#if !searchQuery && !activeTag && shownCount < groupedRender.length}
+  {#if !searchQuery && activeTags.size === 0 && shownCount < groupedRender.length}
     <button class="show-more" onclick={showMore}>
       show more · page {currentPage} of {totalPages} ({groupedRender.length - shownCount} remaining)
     </button>

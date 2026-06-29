@@ -88,12 +88,12 @@ export async function load() {
     pageCount = 0;
   }
 
-  // Date range: oldest → newest essay
+  // Date range: oldest → newest essay (use date string from publishedEntries)
   let firstDate = null;
   let latestDate = null;
   for (const entry of publishedEntries) {
-    const d = entry.createdAt;
-    if (d instanceof Date && !isNaN(d)) {
+    const d = new Date(entry.date);
+    if (!isNaN(d.getTime())) {
       if (!firstDate || d < firstDate) firstDate = d;
       if (!latestDate || d > latestDate) latestDate = d;
     }
@@ -104,7 +104,7 @@ export async function load() {
   const DAY_MS = 86400000;
   let essays30d = 0, words30d = 0, essays14d = 0, words14d = 0;
   for (const entry of publishedEntries) {
-    const age = now - entry.createdAt.getTime();
+    const age = now - new Date(entry.date).getTime();
     if (age < 30 * DAY_MS) {
       essays30d++;
       words30d += entry.words || 0;
