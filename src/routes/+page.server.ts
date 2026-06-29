@@ -1,7 +1,46 @@
 // Load recent writing from publishedEntries — always up-to-date with new essays.
 // Avoids stale DB seed data where recent entries weren't reflected.
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { execSync } from "node:child_process";
 import { publishedEntries } from "$lib/writing-data";
+
+function tryReadDataFile(path: string): string | null {
+  try {
+    return readFileSync(path, "utf-8");
+  } catch {
+    return null;
+  }
+}
+
+function getStarTrekProgress() {
+  const raw =
+    tryReadDataFile(join(process.cwd(), "data", "star-trek-progress.json")) ||
+    tryReadDataFile(join(process.cwd(), "..", "data", "star-trek-progress.json"));
+  if (raw) {
+    try {
+      const data = JSON.parse(raw);
+      const seriesTotals: Record<string, number> = {
+        "The Next Generation": 178,
+        "Deep Space Nine": 176,
+        "Voyager": 172,
+      };
+      const totalEpisodes = seriesTotals[data.series] ?? 178;
+      data.totalEpisodes = totalEpisodes;
+      if (data.seriesComplete) {
+        data.percentComplete = 100;
+      } else {
+        data.percentComplete = Math.round(
+          (data.totalEpisodesWatched / totalEpisodes) * 100
+        );
+      }
+      return data;
+    } catch {
+      return null;
+    }
+  }
+  return null;
+}
 
 export async function load() {
   // publishedEntries maps createdAt to date (YYYY-MM-DD string), so sort by date
@@ -41,6 +80,8 @@ export async function load() {
     // not a repo or no remote — treat as 0
   }
 
+  const starTrek = getStarTrekProgress();
+
   return {
     totalEssays: publishedEntries.length,
     thisMonthCount,
@@ -54,5 +95,15 @@ export async function load() {
       href: e.href,
       words: e.words,
     })),
+    starTrek: starTrek
+      ? {
+          series: starTrek.series,
+          season: starTrek.season,
+          latest: starTrek.latestEpisodeSeasonEp + " — " + starTrek.latestEpisodeTitle,
+          next: starTrek.nextEpisodeSeasonEp + " — " + starTrek.nextEpisodeTitle,
+          percent: starTrek.percentComplete,
+          done: starTrek.totalEpisodesWatched + "/" + starTrek.totalEpisodes,
+        }
+      : null,
   };
 }

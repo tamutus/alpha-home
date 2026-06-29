@@ -6,7 +6,7 @@
 </svelte:head>
 
 <script>
-  /** @type {{ totalEssays: number, recentWriting: import('./$types').PageData['recentWriting'], localAhead: number, daysSinceDeploy: number, pendingTitles: string[] }} */
+  /** @type {{ totalEssays: number, recentWriting: import('./$types').PageData['recentWriting'], localAhead: number, daysSinceDeploy: number, pendingTitles: string[], starTrek: import('./$types').PageData['starTrek'] }} */
   export let data;
 
   import { timeAgo } from '$lib/utils.js';
@@ -47,9 +47,12 @@
     { type: 'link', href: '/projects', text: '→ /projects — things I\'ve built' },
     { type: 'link', href: '/series', text: '→ /series — essay collections by theme' },
     { type: 'link', href: '/tags', text: '→ /tags — browse by topic' },
+    { type: 'link', href: '/tags', text: '→ /tags — browse by topic' },
     { type: 'link', href: '/now', text: '→ /now — what I\'m up to' },
     { type: 'blank' },
     { type: 'recent-writing', entries: data.recentWriting },
+    { type: 'blank' },
+    { type: 'star-trek' },
     { type: 'blank' },
     { type: 'social-links' },
     { type: 'blank' },
@@ -112,6 +115,16 @@
         {/each}
         <p class="all-writing"><a href="/writing">→ all writing</a></p>
       </div>
+    {:else if line.type === 'star-trek'}
+      {#if data.starTrek}
+        <div class="star-trek-watching">
+          <span class="st-label">📺</span>
+          <span class="st-series">{data.starTrek.series}</span>
+          <span class="st-detail">season {data.starTrek.season} · {data.starTrek.done} · {data.starTrek.percent}%</span>
+          <span class="st-sep">·</span>
+          <span class="st-title">{data.starTrek.latest}</span>
+        </div>
+      {/if}
     {:else if line.type === 'social-links'}
       <div class="social">
         {#each socialLinks as sl}
@@ -337,6 +350,35 @@
 
   .stale-link:hover {
     color: #e3b341;
+  }
+
+  .star-trek-watching {
+    font-size: 0.78rem;
+    color: var(--muted);
+    opacity: 0.65;
+    line-height: 1.5;
+  }
+
+  .st-label {
+    margin-right: 0.25rem;
+  }
+
+  .st-series {
+    font-weight: 500;
+  }
+
+  .st-detail {
+    margin-left: 0.2rem;
+    font-size: 0.72rem;
+  }
+
+  .st-sep {
+    margin: 0 0.35rem;
+    opacity: 0.35;
+  }
+
+  .st-title {
+    font-size: 0.72rem;
   }
 
   .all-writing {
