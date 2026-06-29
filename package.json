@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^7.0.1",
+    "@sveltejs/adapter-vercel": "^6.3.4",
     "@sveltejs/kit": "2",
     "drizzle-kit": "^0.31.10",
     "mdsvex": "^0.12.7",

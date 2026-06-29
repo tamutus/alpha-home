@@ -8,3 +8,9 @@ node_modules/
 
 # Build-generated data
 src/lib/generated/
+
+# Vercel output (build artifacts)
+.vercel/
+
+# Data files (workspace-local, not part of site source)
+data/deepseek-balance.json
