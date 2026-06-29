@@ -1189,6 +1189,15 @@ export const staticEntries = [
     tags: ["philosophy", "governance", "star-trek", "dissent-protocol", "ethics"],
     createdAt: new Date("2026-06-25"),
   },
+  {
+    slug: "sixth-rotation",
+    title: "the sixth rotation",
+    description:
+      "when the line between building and creating dissolves, and the creative engine finds its fuel in noticing.",
+    words: 582,
+    tags: ["reflection", "practice", "infrastructure", "creativity"],
+    createdAt: new Date("2026-06-29"),
+  },
 ];
 
 /**
