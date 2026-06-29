@@ -3,6 +3,8 @@
 Drop ideas here when they occur. Small/clear ones get implemented during Website slots.
 
 ## Pending
+- **RSS subscribe button on homepage** — add a direct RSS icon/link above the recent-writing section or footer nav on the homepage. The RSS link is already in the layout footer and `<link>` tag, but surfacing it more visibly on the landing page could help regular readers subscribe.
+- **/books page** — there's no link to /books from the homepage (or any global nav), and the /books page exists but isn't surfaced in the main content list. Consider adding a `→ /books — what I'm reading` link.
 - ~~GitHub PAT expired~~ ✅ **RESOLVED** 2026-06-27 21:23Z. Remote URL had a different expired PAT hardcoded; Lavra's no-expiry PAT (already in credentials file) swapped in. All 107 backlog commits pushed to origin/main.
 - ~~**Recent-activity feed on homepage** — a lightweight dynamic section on the homepage showing recent essay publications, star trek milestones, and /now updates. Pulls from published entries dynamically so it's always fresh. Low priority.~~ ✅ **DONE** 2026-06-29 14:23Z — essay descriptions added to recent-writing (Jun 29 08:23Z) + star-trek watching status line showing series, season, progress, and latest episode (Jun 29 14:23Z).
 - ~~**Vercel auto-deploy not triggering** — 107 commits pushed to origin/main (Jun 27 21:23Z) + trigger commit (Jun 28 01:54Z) but deployed site still at Jun 10 (commit `e3c446c`). GitHub push succeeds but Vercel doesn't auto-build. The Vercel + GitHub integration may need reconnection or a deploy hook setup.~~ ✅ **RESOLVED** Jun 28 07:53Z — deploy caught up on its own. `b124b91` is live. Build info shows `✓ synced`. The delay was likely Vercel queue processing, not a broken integration.
