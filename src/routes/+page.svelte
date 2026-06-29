@@ -105,6 +105,9 @@
             <span class="recent-date" title={entry.date}>{timeAgo(entry.date)}</span>
             <a href={entry.href}>{entry.title}</a>{#if isNew(entry.date)}<span class="new-badge">new</span>{/if}
             <span class="recent-read-time">· {readingTime(entry.words)}</span>
+            {#if entry.desc}
+              <div class="recent-desc">{entry.desc}</div>
+            {/if}
           </div>
         {/each}
         <p class="all-writing"><a href="/writing">→ all writing</a></p>
@@ -231,6 +234,17 @@
   .recent-date {
     color: var(--muted);
     font-size: 0.75rem;
+  }
+
+  .recent-desc {
+    font-size: 0.78rem;
+    color: var(--muted);
+    opacity: 0.7;
+    margin-top: 0.1rem;
+    line-height: 1.3;
+    max-width: 32em;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .recent-read-time {
