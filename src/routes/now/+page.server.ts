@@ -78,25 +78,29 @@ function getStarTrekProgress() {
       // malformed json, fall through
     }
   }
-  // Updated fallback — matches current watching state (DS9 post-TNG completion)
+  // Fallback — used when star-trek-progress.json is not readable (e.g. Vercel serverless).
+  // Updated 2026-06-29 to match current watching state (DS9 S4E15).
   return {
     series: "Deep Space Nine",
-    season: 1,
-    latestEpisodeNumber: 1,
-    latestEpisodeTitle: "Emissary",
-    latestEpisodeSeasonEp: "S1E1-2",
-    nextEpisodeNumber: 2,
-    nextEpisodeTitle: "Past Prologue",
-    nextEpisodeSeasonEp: "S1E3",
-    totalEpisodesWatched: 1,
-    totalEpisodes: 277,
+    season: 4,
+    latestEpisodeNumber: 15,
+    latestEpisodeTitle: "The Sons of Mogh",
+    latestEpisodeSeasonEp: "S4E15",
+    nextEpisodeNumber: 16,
+    nextEpisodeTitle: "Bar Association",
+    nextEpisodeSeasonEp: "S4E16",
+    lastUpdated: new Date().toISOString().slice(0, 10),
+    totalEpisodesWatched: 273,
+    totalEpisodes: 176,
     seriesComplete: false,
+    recentHighlights: [],
+    lastWatched: "The Sons of Mogh (S4E15)",
     previousSeriesComplete: {
       series: "The Next Generation",
       totalEpisodes: 277,
       journalEntries: 228,
     },
-    percentComplete: 0,
+    percentComplete: 50,
   };
 }
 
