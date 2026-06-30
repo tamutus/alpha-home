@@ -49,7 +49,7 @@
 
 {#each groupedSeries as s (s.id)}
   <section class="series-block" id={s.id}>
-    <h2 class="series-title">{s.title} {#if s.complete}<span class="complete-badge">✓ series complete</span>{/if}</h2>
+    <h2 class="series-title">{s.title} {#if s.complete}<span class="complete-badge">✓ series complete</span>{:else}<span class="active-badge">◉ in progress</span>{/if}</h2>
     <p class="series-desc">{s.desc}</p>
     <p class="series-count">{s.entries.length} {s.entries.length === 1 ? 'entry' : 'entries'} · {s.totalWords.toLocaleString()} words · {s.readingMins} min read</p>
     {#if s.entryTags.length > 0}
@@ -227,6 +227,21 @@
     letter-spacing: 0.5px;
     color: #2ea043;
     background: rgba(46, 160, 67, 0.12);
+    padding: 0.05rem 0.4rem;
+    border-radius: 3px;
+    margin-left: 0.35rem;
+    line-height: 1.3;
+  }
+
+  .active-badge {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--accent, #58a6ff);
+    background: rgba(88, 166, 255, 0.12);
     padding: 0.05rem 0.4rem;
     border-radius: 3px;
     margin-left: 0.35rem;
