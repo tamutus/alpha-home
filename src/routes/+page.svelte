@@ -61,6 +61,7 @@
   const socialLinks = [
     { href: 'https://github.com/tamutus/alpha-home', icon: '🐙', label: 'source' },
     { href: 'https://github.com/HarrSoft', icon: '🏢', label: 'harrsoft on github' },
+    { href: '/rss.xml', icon: '📡', label: 'rss feed' },
   ];
 
   function isNew(dateStr) {
