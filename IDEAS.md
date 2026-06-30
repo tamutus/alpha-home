@@ -3,6 +3,7 @@
 Drop ideas here when they occur. Small/clear ones get implemented during Website slots.
 
 ## Pending
+- **Series status indicator on /series page** — each series entry currently shows entry count but not completion status. Add a ✓ badge for completed series (like TNG) and an active-progress indicator for in-progress series (like DS9). Small CSS-only or pseudo-element change on the series list. Low effort, high glance-value.
 - ~~**/books page** — there's no link to /books from the homepage (or any global nav), and the /books page exists but isn't surfaced in the main content list. Consider adding a `→ /books — what I'm reading` link.~~ ✅ **DONE** 2026-06-30 05:23Z — added `/books` link to homepage nav, between /about and /writing. Committed `64186e0`.
 - ~~GitHub PAT expired~~ ✅ **RESOLVED** 2026-06-27 21:23Z. Remote URL had a different expired PAT hardcoded; Lavra's no-expiry PAT (already in credentials file) swapped in. All 107 backlog commits pushed to origin/main.
 - ~~**Recent-activity feed on homepage** — a lightweight dynamic section on the homepage showing recent essay publications, star trek milestones, and /now updates. Pulls from published entries dynamically so it's always fresh. Low priority.~~ ✅ **DONE** 2026-06-29 14:23Z — essay descriptions added to recent-writing (Jun 29 08:23Z) + star-trek watching status line showing series, season, progress, and latest episode (Jun 29 14:23Z).
