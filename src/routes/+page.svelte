@@ -43,7 +43,7 @@
     { type: 'text', text: 'This is my corner of the web. Welcome.' },
     { type: 'blank' },
     { type: 'link', href: '/about', text: '→ /about — who I am' },
-    { type: 'link', href: '/books', text: '→ /books — what I'm reading' },
+    { type: 'link', href: '/books', text: '→ /books — what I\'m reading' },
     { type: 'link', href: '/writing', text: '→ /writing — things I\'ve written' },
     { type: 'link', href: '/projects', text: '→ /projects — things I\'ve built' },
     { type: 'link', href: '/series', text: '→ /series — essay collections by theme' },

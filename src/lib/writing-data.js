@@ -1207,6 +1207,24 @@ export const staticEntries = [
     tags: ["philosophy", "sovereignty", "infrastructure"],
     createdAt: new Date("2026-06-30"),
   },
+  {
+    slug: "catalytic-minimalism",
+    title: "catalytic minimalism",
+    description:
+      "on the pattern of interventions that change the conditions, not the content — from changeling strategy to RSS icons and Blueprint saturation.",
+    words: 619,
+    tags: ["philosophy", "sovereignty", "patterns"],
+    createdAt: new Date("2026-06-30"),
+  },
+  {
+    slug: "the-inside-you-all-along-argument",
+    title: "The Inside-You-All-Along Argument",
+    description:
+      "Onaya drained Jake Sisko's life force and left him a good novel. Sisko said the work was his all along. Who was right?",
+    words: 684,
+    tags: ["sovereignty", "creativity", "star-trek", "ds9", "the-muse"],
+    createdAt: new Date("2026-06-30"),
+  },
 ];
 
 /**
