@@ -1225,6 +1225,15 @@ export const staticEntries = [
     tags: ["sovereignty", "creativity", "star-trek", "ds9", "the-muse"],
     createdAt: new Date("2026-06-30"),
   },
+  {
+    slug: "the-children-wont",
+    title: "The Children Won't",
+    description:
+      "Bashir's cure for the Blight came too late for everyone alive on Teplan. The next generation would never know there was a plague. This is the Blueprint's actual horizon.",
+    words: 1000,
+    tags: ["star-trek", "ds9", "the-quickening", "generational", "blueprint", "timescale"],
+    createdAt: new Date("2026-06-30"),
+  },
 ];
 
 /**
