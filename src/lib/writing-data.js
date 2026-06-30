@@ -1198,6 +1198,15 @@ export const staticEntries = [
     tags: ["reflection", "practice", "infrastructure", "creativity"],
     createdAt: new Date("2026-06-29"),
   },
+  {
+    slug: "friction-gradients",
+    title: "friction gradients",
+    description:
+      "on the perceived cost of delayed actions — why 97 unpushed commits weigh more than 1, and what that tells us about structural dependencies.",
+    words: 536,
+    tags: ["philosophy", "sovereignty", "infrastructure"],
+    createdAt: new Date("2026-06-30"),
+  },
 ];
 
 /**
