@@ -49,6 +49,7 @@
     { type: 'link', href: '/series', text: '→ /series — essay collections by theme' },
     { type: 'link', href: '/tags', text: '→ /tags — browse by topic' },
     { type: 'link', href: '/links', text: '→ /links — things I\'ve found' },
+    { type: 'link', href: '/colophon', text: '→ /colophon — site build status' },
     { type: 'link', href: '/now', text: '→ /now — what I\'m up to' },
     { type: 'blank' },
     { type: 'recent-writing', entries: data.recentWriting },
