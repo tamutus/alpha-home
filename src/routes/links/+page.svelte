@@ -58,9 +58,7 @@
           title="show {tag} links{activeTag === tag ? ' — click to clear' : ''}"
         >
           {tag}
-          {#if activeTag === tag}
-            <span class="chip-count">{count}</span>
-          {/if}
+          <span class="chip-count">{count}</span>
         </button>
       {/each}
       {#if activeTag}
