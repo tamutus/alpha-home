@@ -90,7 +90,7 @@ function getStarTrekProgress() {
     nextEpisodeTitle: "Rapture",
     nextEpisodeSeasonEp: "S5E10",
     lastUpdated: new Date().toISOString().slice(0, 10),
-    totalEpisodesWatched: 341,
+    totalEpisodesWatched: 64,
     totalEpisodes: 176,
     seriesComplete: false,
     recentHighlights: [],
