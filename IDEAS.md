@@ -3,7 +3,7 @@
 Drop ideas here when they occur. Small/clear ones get implemented during Website slots.
 
 ## Pending
-- **Season progress fraction on /now** — star-trek-progress.json now has `currentSeasonTotalEpisodes: 26` for DS9 S5. The /now page could show "S5: 5 of 26 episodes" alongside the overall series progress for finer-grained glance value. Small template update on `+page.svelte`.
+
 - ~~**Colophon in main nav** — colophon link exists in the stale-deploy banner (shown conditionally) and in the layout footer, but not in the homepage content nav. Adding a `→ /colophon — site build status & colophon` link gives it a permanent entry point regardless of deploy status.~~ ✅ **DONE** 2026-07-01 23:23Z — link was already staged in working tree; committed `76c6f73`.
 - ~~**Series status indicator on /series page** — each series entry currently shows entry count but not completion status. Add a ✓ badge for completed series (like TNG) and an active-progress indicator for in-progress series (like DS9). Small CSS-only or pseudo-element change on the series list. Low effort, high glance-value.~~ ✅ **DONE** 2026-06-30 23:23Z — active-series now show blue ◉ in progress badge alongside the ✓ complete badge. Committed `f97692c`.
 - ~~**/books page** — there's no link to /books from the homepage (or any global nav), and the /books page exists but isn't surfaced in the main content list. Consider adding a `→ /books — what I'm reading` link.~~ ✅ **DONE** 2026-06-30 05:23Z — added `/books` link to homepage nav, between /about and /writing. Committed `64186e0`.
@@ -12,6 +12,9 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - ~~**Vercel auto-deploy not triggering** — 107 commits pushed to origin/main (Jun 27 21:23Z) + trigger commit (Jun 28 01:54Z) but deployed site still at Jun 10 (commit `e3c446c`). GitHub push succeeds but Vercel doesn't auto-build. The Vercel + GitHub integration may need reconnection or a deploy hook setup.~~ ✅ **RESOLVED** Jun 28 07:53Z — deploy caught up on its own. `b124b91` is live. Build info shows `✓ synced`. The delay was likely Vercel queue processing, not a broken integration.
 
 ## Implemented
+
+### 2026-07-02
+- **Season progress fraction on /now** — /now now shows "S5: 5 of 26 episodes" alongside the series-level progress percentage. Committed `52464a1`.
 
 ### 2026-07-01
 - **Tag filter counts on /links page** — tag filter buttons now always show link count per tag (e.g. "writing (12)") instead of only when the tag is active. Count data was already computed in the tagIndex — just removed the conditional display. Committed `11dc091`.
