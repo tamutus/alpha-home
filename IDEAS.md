@@ -15,6 +15,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ### 2026-07-02
 - **Season progress fraction on /now** — /now now shows "S5: 5 of 26 episodes" alongside the series-level progress percentage. Committed `52464a1`.
+- **Balance daily burn rate on /now** — the balance line on /now now shows a `$X.XX/day` label alongside the trend arrow, giving visitors context on API key longevity. Committed.
 
 ### 2026-07-01
 - **Tag filter counts on /links page** — tag filter buttons now always show link count per tag (e.g. "writing (12)") instead of only when the tag is active. Count data was already computed in the tagIndex — just removed the conditional display. Committed `11dc091`.

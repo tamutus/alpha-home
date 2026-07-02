@@ -36,6 +36,10 @@
     ? (balanceHistory[balanceHistory.length - 1].balance - balanceHistory[0].balance)
     : 0;
   $: trendArrow = trend > 0.5 ? '↑' : trend < -0.5 ? '↓' : '→';
+  $: daysSpan = balanceHistory.length >= 2 && balanceHistory[0].date && balanceHistory.at(-1).date
+    ? Math.round((new Date(balanceHistory.at(-1).date) - new Date(balanceHistory[0].date)) / (1000 * 60 * 60 * 24))
+    : 0;
+  $: dailyBurn = daysSpan >= 1 ? (trend / daysSpan) : 0;
   const buildDate = new Date(__BUILD_TIME__).toLocaleDateString('en-US', {
     month: 'short', day: 'numeric', year: 'numeric'
   });
@@ -88,6 +92,9 @@
           <span class="bar" style="height: {bar.height}%" title="{bar.label}: ${Number(bar.value).toFixed(2)}"></span>
         {/each}
       </span>
+      {#if daysSpan >= 1 && Math.abs(dailyBurn) >= 0.01}
+        <span class="burn-rate" title="over {daysSpan} day{daysSpan === 1 ? '' : 's'}">{dailyBurn < 0 ? '' : '+'}${dailyBurn.toFixed(2)}/day</span>
+      {/if}
     {/if}
   </li>
   <li>kanban app feature-complete (bun/sveltekit/drizzle/postgres, 255 tests passing) — all boards, columns, cards, labels, drag-and-drop, agent api working. current focus: adoption and quests sync tooling</li>
@@ -251,6 +258,12 @@
     transition: opacity 0.2s;
   }
   .bar:hover { opacity: 1; }
+
+  .burn-rate {
+    font-size: 0.7rem;
+    color: var(--muted, #666);
+    margin-left: 0.3rem;
+  }
 
   .velocity {
     color: var(--accent, #58a6ff);
