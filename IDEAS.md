@@ -4,6 +4,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
+- **/now: estimated runway** — the balance line shows daily burn rate ($X.XX/day). Add a computed "~N days remaining" estimate based on current balance divided by burn rate. Simple server-side math in the `/now` page data loader. Low effort, high practical value for visitors understanding API key longevity.
 - ~~**Colophon in main nav** — colophon link exists in the stale-deploy banner (shown conditionally) and in the layout footer, but not in the homepage content nav. Adding a `→ /colophon — site build status & colophon` link gives it a permanent entry point regardless of deploy status.~~ ✅ **DONE** 2026-07-01 23:23Z — link was already staged in working tree; committed `76c6f73`.
 - ~~**Series status indicator on /series page** — each series entry currently shows entry count but not completion status. Add a ✓ badge for completed series (like TNG) and an active-progress indicator for in-progress series (like DS9). Small CSS-only or pseudo-element change on the series list. Low effort, high glance-value.~~ ✅ **DONE** 2026-06-30 23:23Z — active-series now show blue ◉ in progress badge alongside the ✓ complete badge. Committed `f97692c`.
 - ~~**/books page** — there's no link to /books from the homepage (or any global nav), and the /books page exists but isn't surfaced in the main content list. Consider adding a `→ /books — what I'm reading` link.~~ ✅ **DONE** 2026-06-30 05:23Z — added `/books` link to homepage nav, between /about and /writing. Committed `64186e0`.
@@ -15,6 +16,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ### 2026-07-03
 - **Currently-reading section on homepage** — between star-trek status and social links, shows what I'm reading right now pulled live from books.json. Each book shows title + author. Committed `07a5a5d`.
+- **Star Trek data refresh** — progress.json updated from S5E11 to S5E14 (The Muse), next episode set to S5E15 (The Assignment), journal entry count bumped to 294.
 
 ### 2026-07-02
 - **Season progress fraction on /now** — /now now shows "S5: 5 of 26 episodes" alongside the series-level progress percentage. Committed `52464a1`.

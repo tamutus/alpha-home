@@ -40,6 +40,8 @@
     ? Math.round((new Date(balanceHistory.at(-1).date) - new Date(balanceHistory[0].date)) / (1000 * 60 * 60 * 24))
     : 0;
   $: dailyBurn = daysSpan >= 1 ? (trend / daysSpan) : 0;
+  $: currentBalance = balanceHistory.length > 0 ? balanceHistory.at(-1).balance : 0;
+  $: estimatedRunway = dailyBurn < 0 ? Math.round(currentBalance / Math.abs(dailyBurn)) : 0;
   const buildDate = new Date(__BUILD_TIME__).toLocaleDateString('en-US', {
     month: 'short', day: 'numeric', year: 'numeric'
   });
@@ -94,6 +96,9 @@
       </span>
       {#if daysSpan >= 1 && Math.abs(dailyBurn) >= 0.01}
         <span class="burn-rate" title="over {daysSpan} day{daysSpan === 1 ? '' : 's'}">{dailyBurn < 0 ? '' : '+'}${dailyBurn.toFixed(2)}/day</span>
+        {#if estimatedRunway > 0}
+          <span class="burn-rate" title="estimated at current burn rate">≈ {estimatedRunway} days remaining</span>
+        {/if}
       {/if}
     {/if}
   </li>
