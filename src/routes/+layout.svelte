@@ -153,9 +153,9 @@
     <p class="build-info">deployed {buildDateStr} {buildTimeStr} · <code>{__GIT_SHA__}</code>
     {#if __GIT_AHEAD__ > 0}
       {#if __DAYS_SINCE_DEPLOY__ >= 14}
-        <span class="ahead-stale">{__GIT_AHEAD__} ahead · credentials expired · {__DAYS_SINCE_DEPLOY__}d stale</span>
+        <span class="ahead-stale">{__GIT_AHEAD__} ahead · {__DAYS_SINCE_DEPLOY__}d stale</span>
       {:else}
-        <span class="ahead-indicator">{__GIT_AHEAD__} ahead · credentials expired</span>
+        <span class="ahead-indicator">{__GIT_AHEAD__} ahead</span>
       {/if}
     {:else}
       <span class="synced-indicator">✓ synced</span>

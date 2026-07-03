@@ -163,7 +163,7 @@
               {/if}
             </ol>
           </details>
-          <p class="deploy-hint">commits are local-only — credentials expired {data.daysSinceDeploy}d ago — <a href="/colophon" class="deploy-link">view full deploy status</a></p>
+          <p class="deploy-hint">commits are local-only — <a href="/colophon" class="deploy-link">view full deploy status</a></p>
         </div>
       {/if}
     {:else if line.type === 'blank'}
