@@ -4,6 +4,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { execSync } from "node:child_process";
 import { publishedEntries } from "$lib/writing-data";
+import books from "../data/books.json";
 
 function tryReadDataFile(path: string): string | null {
   try {
@@ -82,6 +83,11 @@ export async function load() {
 
   const starTrek = getStarTrekProgress();
 
+  // Filter currently-reading books
+  const currentlyReading = (books as Array<{title: string; author: string; status: string}>)
+    .filter((b) => b.status === "reading")
+    .map((b) => ({ title: b.title, author: b.author }));
+
   return {
     totalEssays: publishedEntries.length,
     thisMonthCount,
@@ -95,6 +101,7 @@ export async function load() {
       href: e.href,
       words: e.words,
     })),
+    currentlyReading,
     starTrek: starTrek
       ? {
           series: starTrek.series,

@@ -13,6 +13,9 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Implemented
 
+### 2026-07-03
+- **Currently-reading section on homepage** — between star-trek status and social links, shows what I'm reading right now pulled live from books.json. Each book shows title + author. Committed `07a5a5d`.
+
 ### 2026-07-02
 - **Season progress fraction on /now** — /now now shows "S5: 5 of 26 episodes" alongside the series-level progress percentage. Committed `52464a1`.
 - **Balance daily burn rate on /now** — the balance line on /now now shows a `$X.XX/day` label alongside the trend arrow, giving visitors context on API key longevity. Committed.

@@ -56,6 +56,8 @@
     { type: 'blank' },
     { type: 'star-trek' },
     { type: 'blank' },
+    { type: 'currently-reading', books: data.currentlyReading },
+    { type: 'blank' },
     { type: 'social-links' },
     { type: 'blank' },
     { type: 'deploy-status' },
@@ -118,6 +120,19 @@
         {/each}
         <p class="all-writing"><a href="/writing">→ all writing</a></p>
       </div>
+    {:else if line.type === 'currently-reading'}
+      {#if line.books.length > 0}
+        <div class="currently-reading">
+          <h3 class="reading-label">📖 reading</h3>
+          <span class="reading-list">
+            {#each line.books as book, i}
+              <span class="reading-book">{book.title} <span class="reading-author">({book.author})</span></span>{i < line.books.length - 1 ? '<span class="rd-sep"> · </span>' : ''}
+            {/each}
+          </span>
+          <span class="rd-sep"> · </span>
+          <a href="/books" class="reading-link">all books</a>
+        </div>
+      {/if}
     {:else if line.type === 'star-trek'}
       {#if data.starTrek}
         <div class="star-trek-watching">
@@ -382,6 +397,39 @@
 
   .st-title {
     font-size: 0.72rem;
+  }
+
+  .currently-reading {
+    font-size: 0.78rem;
+    color: var(--muted);
+    opacity: 0.65;
+    line-height: 1.5;
+  }
+
+  .reading-label {
+    display: inline;
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: var(--muted);
+  }
+
+  .reading-book {
+    font-weight: 500;
+  }
+
+  .reading-author {
+    font-size: 0.72rem;
+    opacity: 0.7;
+  }
+
+  .rd-sep {
+    opacity: 0.35;
+    margin: 0 0.2rem;
+  }
+
+  .reading-link {
+    font-size: 0.72rem;
+    opacity: 0.6;
   }
 
   .all-writing {
