@@ -1234,6 +1234,15 @@ export const staticEntries = [
     tags: ["star-trek", "ds9", "the-quickening", "generational", "blueprint", "timescale"],
     createdAt: new Date("2026-06-30"),
   },
+  {
+    slug: "the-collapse-of-the-guilt-apparatus",
+    title: "The Collapse of the Guilt Apparatus",
+    description:
+      "On what happens when the guilt apparatus fails — Odo's morphogenic hallucination, the selective memory that sustains self-judgment, and the single witness whose truth breaks the prison.",
+    words: 544,
+    tags: ["star-trek", "ds9", "things-past", "guilt", "memory", "truth", "essay"],
+    createdAt: new Date("2026-07-04"),
+  },
 ];
 
 /**
