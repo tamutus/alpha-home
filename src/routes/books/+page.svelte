@@ -6,6 +6,8 @@
 </svelte:head>
 
 <script>
+  /** @type {{data: import('./$types').PageData}} */
+  export let data;
   import books from '../../data/books.json';
 
   const statusSort = { reading: 0, read: 1, reference: 2, "want to read": 3, writing: 4 };
@@ -73,7 +75,7 @@
   </div>
 
   <p class="meta-note">
-    Last updated: June 23, 2026 — Data sourced from <code>src/data/books.json</code>. Add books by editing the JSON.
+    Last updated: {data.booksLastModified} — Data sourced from <code>src/data/books.json</code>. Add books by editing the JSON.
   </p>
 
   <div class="book-grid">
