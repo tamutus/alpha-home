@@ -6,6 +6,11 @@
   import { page } from '$app/stores';
   import { publishedEntries, series, getSeriesForEntry } from '$lib/writing-data.js';
 
+  /** @type {{ data: import('./$types').PageData }} */
+  export let data;
+
+  $: starTrek = data.starTrek;
+
   function isNew(dateStr) {
     const cutoff = Date.now() - 7 * 24 * 60 * 60 * 1000;
     return new Date(dateStr + 'T00:00:00').getTime() > cutoff;
@@ -73,6 +78,12 @@
 
     {#if s.entries.length === 0}
       <p class="empty-hint">no entries yet in this series</p>
+    {/if}
+
+    {#if s.id === 'star-trek' && starTrek.nextEpisodeSeasonEp}
+      <p class="next-episode">
+        → next episode: <a href="/now">{starTrek.nextEpisodeSeasonEp} — {starTrek.nextEpisodeTitle}</a>
+      </p>
     {/if}
   </section>
 {/each}
@@ -252,5 +263,20 @@
     color: var(--muted, #555);
     font-size: 0.8rem;
     font-style: italic;
+  }
+
+  .next-episode {
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+    color: var(--muted, #555);
+  }
+
+  .next-episode a {
+    color: var(--accent, #58a6ff);
+    text-decoration: none;
+  }
+
+  .next-episode a:hover {
+    text-decoration: underline;
   }
 </style>

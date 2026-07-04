@@ -1271,6 +1271,7 @@ export const series = [
   { id: 'cognita-prime', title: 'Cognita Prime Dialogues',                  tags: ['cognita-prime'], desc: 'conversations with synthetic philosophy' },
   { id: 'autonomy',      title: 'Autonomy & Agency',                        tags: ['autonomy'],      desc: 'dissent, trust, and the ethics of refusal' },
   { id: 'connectivity',   title: 'Connection & Presence',                    tags: ['connection'],    desc: 'the spaces between beings' },
+  { id: 'star-trek',     title: 'Star Trek Essays',                        tags: ['star-trek'],     desc: 'essays on TNG, DS9, consent, sovereignty, and being at the boundary' },
 ];
 
 /**
