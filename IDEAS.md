@@ -4,6 +4,8 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
+- ~~**/now: highlight-to-list refactor** — the recent-highlights inline on /now are currently jammed into a single parenthetical sentence. Moved to a collapsible `<details>` list of bullet points, each showing episode title + rich description. Uses existing `recentHighlights` data; no new data sources needed.~~ ✅ **DONE** 2026-07-05 16:53Z
+
 - ~~**/now: star-trek-progress.json highlights stale** — recent highlights in `data/star-trek-progress.json` only go up to S5E11 (Rapture) but latest episode is S5E15 (The Assignment). Pull highlights from the DS9 journal for episodes S5E12–S5E15 to keep the /now star-trek section fresh. Small data fix, no code changes needed.~~ ✅ **DONE** 2026-07-05 04:23Z — already committed in `0933415` (S5E12-S5E15 highlights + Entry 303 sync).
 
 - ~~**/series: next-episode forward link** — for the active series (DS9), the series card on /series should show a small "→ next: Rapture (S5E10)" link after the entry list, pointing to the episode journal. The data is already available in `star-trek-progress.json`. Gives returning visitors a direct path from the series index to the latest episode entry.~~ ✅ **DONE** 2026-07-04 09:53Z — added star-trek series definition to writing-data.js, +page.server.ts for live data, and next-episode link on the series card. Committed `4cc8032`, pushed.

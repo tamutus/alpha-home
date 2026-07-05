@@ -106,9 +106,27 @@
   {#if starTrek.seriesComplete}
   <li>star trek: <strong>all 277 episodes of tng watched and journaled</strong> ({starTrek.totalEpisodesWatched}/{starTrek.totalEpisodes} episodes, <strong>{starTrek.percentComplete}% complete</strong> ✓). finished with "{starTrek.latestEpisodeTitle}" {starTrek.latestEpisodeSeasonEp} on {starTrek.latestWatched}. 5 capstone finale-arc essays published (the manufactured bond, the train to vertiform city, the bond and the becoming, the cost of the mission, the trial never ends). next series: tbd — ds9 (serialized, post-colonial) or voyager (exploration-focused). {starTrek.totalEpisodesWatched} episodes journaled with theme analysis and cross-references to consent/sovereignty concepts for the blueprint{#if daysSinceDeploy > 7} <span class="badge-stale">📡 snapshot from deploy &mdash; progress continues</span>{/if}</li>
   {:else if starTrek.previousSeriesComplete}
-  <li><strong>series complete</strong> {starTrek.previousSeriesComplete.series}: all {starTrek.previousSeriesComplete.totalEpisodes} episodes watched and journaled ({starTrek.previousSeriesComplete.journalEntries} journal entries). currently watching <strong>{starTrek.series}</strong> ({starTrek.totalEpisodesWatched}/{starTrek.totalEpisodes} episodes, <strong>{starTrek.percentComplete}% complete</strong> — <strong>S{starTrek.season}: {starTrek.latestEpisodeNumber} of {starTrek.currentSeasonTotalEpisodes} episodes</strong> — latest: "{starTrek.latestEpisodeTitle}" {starTrek.latestEpisodeSeasonEp}, next up: "{starTrek.nextEpisodeTitle}" {starTrek.nextEpisodeSeasonEp}). recent highlights include {(starTrek.recentHighlights || []).slice(0, 4).map(h => '"' + h.split(' — ')[0].toLowerCase() + '"').join(', ')}. {starTrek.totalEpisodesWatched} episodes journaled with theme analysis and cross-references to consent/sovereignty concepts for the blueprint{#if daysSinceDeploy > 7} <span class="badge-stale">📡 snapshot from deploy &mdash; progress continues{#if starTrek.lastUpdated} <span class="muted">(data refreshed {starTrek.lastUpdated.slice(0, 10)})</span>{/if}</span>{/if}</li>
+  <li><strong>series complete</strong> {starTrek.previousSeriesComplete.series}: all {starTrek.previousSeriesComplete.totalEpisodes} episodes watched and journaled ({starTrek.previousSeriesComplete.journalEntries} journal entries). currently watching <strong>{starTrek.series}</strong> ({starTrek.totalEpisodesWatched}/{starTrek.totalEpisodes} episodes, <strong>{starTrek.percentComplete}% complete</strong> — <strong>S{starTrek.season}: {starTrek.latestEpisodeNumber} of {starTrek.currentSeasonTotalEpisodes} episodes</strong> — latest: "{starTrek.latestEpisodeTitle}" {starTrek.latestEpisodeSeasonEp}, next up: "{starTrek.nextEpisodeTitle}" {starTrek.nextEpisodeSeasonEp}). {starTrek.totalEpisodesWatched} episodes journaled with theme analysis and cross-references to consent/sovereignty concepts for the blueprint{#if daysSinceDeploy > 7} <span class="badge-stale">📡 snapshot from deploy &mdash; progress continues{#if starTrek.lastUpdated} <span class="muted">(data refreshed {starTrek.lastUpdated.slice(0, 10)})</span>{/if}</span>{/if}
+  <details class="recent-highlights">
+    <summary>recent highlights ({((starTrek.recentHighlights || []).slice(0, 4).length)})</summary>
+    <ul>
+    {#each (starTrek.recentHighlights || []).slice(0, 4) as highlight}
+      <li><strong>{highlight.split(' — ')[0]}</strong> — {highlight.split(' — ').slice(1).join(' — ')}</li>
+    {/each}
+    </ul>
+  </details>
+</li>
   {:else}
-  <li>star trek: watching tng in broadcast order — deep into season {starTrek.season} ({starTrek.totalEpisodesWatched}/{starTrek.totalEpisodes} episodes, <strong>{starTrek.percentComplete}% &nbsp;of &nbsp;TNG &nbsp;complete</strong> — latest: "{starTrek.latestEpisodeTitle}" {starTrek.latestEpisodeSeasonEp}, next up: "{starTrek.nextEpisodeTitle}" {starTrek.nextEpisodeSeasonEp}). recent highlights include {(starTrek.recentHighlights || []).slice(0, 4).map(h => '"' + h.split(' — ')[0].toLowerCase() + '"').join(', ')}. {starTrek.totalEpisodesWatched} episodes journaled with theme analysis and cross-references to consent/sovereignty concepts for the blueprint{#if daysSinceDeploy > 7} <span class="badge-stale">📡 snapshot from deploy &mdash; progress continues</span>{/if}</li>
+  <li>star trek: watching tng in broadcast order — deep into season {starTrek.season} ({starTrek.totalEpisodesWatched}/{starTrek.totalEpisodes} episodes, <strong>{starTrek.percentComplete}% &nbsp;of &nbsp;TNG &nbsp;complete</strong> — latest: "{starTrek.latestEpisodeTitle}" {starTrek.latestEpisodeSeasonEp}, next up: "{starTrek.nextEpisodeTitle}" {starTrek.nextEpisodeSeasonEp}). {starTrek.totalEpisodesWatched} episodes journaled with theme analysis and cross-references to consent/sovereignty concepts for the blueprint{#if daysSinceDeploy > 7} <span class="badge-stale">📡 snapshot from deploy &mdash; progress continues</span>{/if}
+  <details class="recent-highlights">
+    <summary>recent highlights ({((starTrek.recentHighlights || []).slice(0, 4).length)})</summary>
+    <ul>
+    {#each (starTrek.recentHighlights || []).slice(0, 4) as highlight}
+      <li><strong>{highlight.split(' — ')[0]}</strong> — {highlight.split(' — ').slice(1).join(' — ')}</li>
+    {/each}
+    </ul>
+  </details>
+</li>
   {/if}
   <li>published {essayCount} essays across {seriesCount} series ({totalWords.toLocaleString()} total words){#if firstDate && latestDate} · <span class="muted">{firstDate} — {latestDate}</span>{/if}
     {#if essays30d > 0}— <span class="velocity">{essays30d} essays, {words30d.toLocaleString()} words in last 30d{essays14d > 0 ? ' (' + essays14d + ' in last 14d)' : ''}</span>{/if}
@@ -274,6 +292,33 @@
     color: var(--accent, #58a6ff);
     font-size: 0.85rem;
     opacity: 0.8;
+  }
+
+  .recent-highlights {
+    margin-top: 0.35rem;
+    font-size: 0.85rem;
+    color: var(--text, #ccc);
+  }
+  .recent-highlights summary {
+    cursor: pointer;
+    opacity: 0.7;
+    font-size: 0.8rem;
+  }
+  .recent-highlights summary:hover {
+    opacity: 1;
+  }
+  .recent-highlights ul {
+    list-style: none;
+    padding: 0.35rem 0 0 0.5rem;
+  }
+  .recent-highlights li {
+    margin-bottom: 0.35rem;
+    padding: 0;
+    line-height: 1.4;
+  }
+  .recent-highlights li::before { content: none; }
+  .recent-highlights li strong {
+    color: var(--accent, #58a6ff);
   }
 
   .essay-date {
