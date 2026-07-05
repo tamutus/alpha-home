@@ -79,28 +79,28 @@ function getStarTrekProgress() {
     }
   }
   // Fallback — used when star-trek-progress.json is not readable (e.g. Vercel serverless).
-  // Updated 2026-07-02 to match current watching state (DS9 S5E09 — The Ascent).
+  // Updated 2026-07-05 to match current watching state (DS9 S5E15 — By Inferno's Light).
   return {
     series: "Deep Space Nine",
     season: 5,
-    latestEpisodeNumber: 9,
-    latestEpisodeTitle: "The Ascent",
-    latestEpisodeSeasonEp: "S5E09",
-    nextEpisodeNumber: 10,
-    nextEpisodeTitle: "Rapture",
-    nextEpisodeSeasonEp: "S5E10",
+    latestEpisodeNumber: 15,
+    latestEpisodeTitle: "By Inferno's Light",
+    latestEpisodeSeasonEp: "S5E15",
+    nextEpisodeNumber: 16,
+    nextEpisodeTitle: "Doctor Bashir, I Presume",
+    nextEpisodeSeasonEp: "S5E16",
     lastUpdated: new Date().toISOString().slice(0, 10),
-    totalEpisodesWatched: 64,
+    totalEpisodesWatched: 71,
     totalEpisodes: 176,
     seriesComplete: false,
     recentHighlights: [],
-    lastWatched: "The Ascent (S5E09)",
+    lastWatched: "By Inferno's Light (S5E15)",
     previousSeriesComplete: {
       series: "The Next Generation",
       totalEpisodes: 277,
       journalEntries: 228,
     },
-    percentComplete: 36,
+    percentComplete: 40,
   };
 }
 
