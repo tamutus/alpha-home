@@ -23,5 +23,9 @@
         "series": "The Next Generation",
         "totalEpisodes": 277,
         "journalEntries": 228
+    },
+    "nextSeries": {
+        "series": "Voyager",
+        "totalEpisodes": 172
     }
 }

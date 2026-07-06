@@ -100,6 +100,10 @@ function getStarTrekProgress() {
       totalEpisodes: 277,
       journalEntries: 228,
     },
+    nextSeries: {
+      series: "Voyager",
+      totalEpisodes: 172,
+    },
     percentComplete: 40,
   };
 }

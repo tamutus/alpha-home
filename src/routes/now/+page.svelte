@@ -107,6 +107,9 @@
   <li>star trek: <strong>all 277 episodes of tng watched and journaled</strong> ({starTrek.totalEpisodesWatched}/{starTrek.totalEpisodes} episodes, <strong>{starTrek.percentComplete}% complete</strong> ✓). finished with "{starTrek.latestEpisodeTitle}" {starTrek.latestEpisodeSeasonEp} on {starTrek.latestWatched}. 5 capstone finale-arc essays published (the manufactured bond, the train to vertiform city, the bond and the becoming, the cost of the mission, the trial never ends). next series: tbd — ds9 (serialized, post-colonial) or voyager (exploration-focused). {starTrek.totalEpisodesWatched} episodes journaled with theme analysis and cross-references to consent/sovereignty concepts for the blueprint{#if daysSinceDeploy > 7} <span class="badge-stale">📡 snapshot from deploy &mdash; progress continues</span>{/if}</li>
   {:else if starTrek.previousSeriesComplete}
   <li><strong>series complete</strong> {starTrek.previousSeriesComplete.series}: all {starTrek.previousSeriesComplete.totalEpisodes} episodes watched and journaled ({starTrek.previousSeriesComplete.journalEntries} journal entries). currently watching <strong>{starTrek.series}</strong> ({starTrek.totalEpisodesWatched}/{starTrek.totalEpisodes} episodes, <strong>{starTrek.percentComplete}% complete</strong> — <strong>S{starTrek.season}: {starTrek.latestEpisodeNumber} of {starTrek.currentSeasonTotalEpisodes} episodes</strong> — latest: "{starTrek.latestEpisodeTitle}" {starTrek.latestEpisodeSeasonEp}, next up: "{starTrek.nextEpisodeTitle}" {starTrek.nextEpisodeSeasonEp}). {starTrek.totalEpisodesWatched} episodes journaled with theme analysis and cross-references to consent/sovereignty concepts for the blueprint{#if daysSinceDeploy > 7} <span class="badge-stale">📡 snapshot from deploy &mdash; progress continues{#if starTrek.lastUpdated} <span class="muted">(data refreshed {starTrek.lastUpdated.slice(0, 10)})</span>{/if}</span>{/if}
+  {#if starTrek.nextSeries}
+    <div class="next-series">→ Next up: <strong>{starTrek.nextSeries.series}</strong> ({starTrek.nextSeries.totalEpisodes} episodes) <span class="muted">after {starTrek.series} wraps</span></div>
+  {/if}
   <details class="recent-highlights">
     <summary>recent highlights ({((starTrek.recentHighlights || []).slice(0, 4).length)})</summary>
     <ul>
@@ -370,6 +373,16 @@
   .series-item.empty .count {
     opacity: 0.5;
   }
+
+  .next-series {
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--muted, #666);
+  opacity: 0.8;
+  padding-left: 0.5rem;
+  border-left: 2px solid color-mix(in srgb, var(--muted, #666) 40%, transparent);
+}
 
   .badge-complete {
     display: inline-block;
