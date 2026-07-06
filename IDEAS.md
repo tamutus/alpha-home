@@ -4,6 +4,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
+- **/now: next-series cue after DS9** — once DS9 finishes, the /now star-trek section should automatically pivot to Voyager as the active series. The data structure already supports `previousSeriesComplete`. For now, a faint "Next up: Voyager" note after the DS9 section would give forward visibility. Low effort, uses existing data fields.
 - ~~**/now: highlight-to-list refactor** — the recent-highlights inline on /now are currently jammed into a single parenthetical sentence. Moved to a collapsible `<details>` list of bullet points, each showing episode title + rich description. Uses existing `recentHighlights` data; no new data sources needed.~~ ✅ **DONE** 2026-07-05 16:53Z
 
 - ~~**/now: star-trek-progress.json highlights stale** — recent highlights in `data/star-trek-progress.json` only go up to S5E11 (Rapture) but latest episode is S5E15 (The Assignment). Pull highlights from the DS9 journal for episodes S5E12–S5E15 to keep the /now star-trek section fresh. Small data fix, no code changes needed.~~ ✅ **DONE** 2026-07-05 04:23Z — already committed in `0933415` (S5E12-S5E15 highlights + Entry 303 sync).
