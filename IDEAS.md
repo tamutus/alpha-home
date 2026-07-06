@@ -4,7 +4,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- **Monthly archive on /writing** — add a month-by-month dropdown filter on the writing index, so returning visitors can browse essays published in a specific month. The data is already available (essay frontmatter has publish dates). Low effort, high value for anyone catching up after a gap.
+- ~~**Monthly archive on /writing** — add a month-by-month dropdown filter on the writing index, so returning visitors can browse essays published in a specific month. The data is already available (essay frontmatter has publish dates). Low effort, high value for anyone catching up after a gap.~~ ✅ **DONE** 2026-07-06 19:53Z — pill-style month selector in tag-bar, URL-bookmarkable via ?month=, clears cross-filters when switching.
 
 - ~~**/now: next-series cue after DS9** — once DS9 finishes, the /now star-trek section should automatically pivot to Voyager as the active series. The data structure already supports `previousSeriesComplete`. For now, a faint "Next up: Voyager" note after the DS9 section would give forward visibility. Low effort, uses existing data fields.~~ ✅ **DONE** 2026-07-06 10:53Z
 - ~~**/now: highlight-to-list refactor** — the recent-highlights inline on /now are currently jammed into a single parenthetical sentence. Moved to a collapsible `<details>` list of bullet points, each showing episode title + rich description. Uses existing `recentHighlights` data; no new data sources needed.~~ ✅ **DONE** 2026-07-05 16:53Z
