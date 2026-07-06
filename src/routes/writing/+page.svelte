@@ -99,8 +99,13 @@
 
   /** @type {string} */
   let searchQuery = '';
+  /** @type {string} — YYYY-MM format, empty = all months */
+  let activeMonth = '';
 
   const entries = data.entries;
+
+  /** Extract available months from entries */
+  $: months = [...new Set(entries.map(e => e.date.slice(0, 7)))].sort();
 
   /** Pagination — show 25 entries at a time, "show more" to reveal more */
   const pageSize = 25;
@@ -128,17 +133,21 @@
 
   let activeTags = new Set();
 
-  /** Read ?search= and ?tag= from URL on mount */
+  /** Read ?search=, ?tag=, and ?month= from URL on mount */
   onMount(() => {
     if (!browser) return;
     window.addEventListener('keydown', handleKeydown);
     const params = new URLSearchParams(window.location.search);
     const searchParam = params.get('search');
     const tagParam = params.get('tag');
+    const monthParam = params.get('month');
     if (searchParam) {
       searchQuery = searchParam;
     } else if (tagParam) {
       activeTags = new Set(tagParam.split(',').filter(Boolean));
+    }
+    if (monthParam && months.includes(monthParam)) {
+      activeMonth = monthParam;
     }
 
     return () => window.removeEventListener('keydown', handleKeydown);
@@ -156,6 +165,11 @@
     } else {
       url.searchParams.delete('search');
       url.searchParams.delete('tag');
+    }
+    if (activeMonth) {
+      url.searchParams.set('month', activeMonth);
+    } else {
+      url.searchParams.delete('month');
     }
     if (viewMode === 'timeline') {
       url.searchParams.set('view', 'timeline');
@@ -304,11 +318,21 @@
           || (e.tags && e.tags.some(t => t.toLowerCase().includes(q)));
       })
     : entries;
+  $: monthFiltered = activeMonth
+    ? entries.filter(e => e.date.startsWith(activeMonth))
+    : entries;
   $: filtered = searchQuery
     ? searchFiltered
     : (activeTags.size > 0
-      ? entries.filter(e => e.tags && [...activeTags].every(t => e.tags.includes(t)))
-      : entries);
+      ? monthFiltered.filter(e => e.tags && [...activeTags].every(t => e.tags.includes(t)))
+      : monthFiltered);
+
+  /** Format month label for display */
+  function monthLabel(ym) {
+    const [y, m] = ym.split('-');
+    const date = new Date(parseInt(y), parseInt(m) - 1, 1);
+    return date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+  }
 
   $: sortedFiltered = (() => {
     const result = [...filtered];
@@ -364,10 +388,10 @@
       class="search-input"
       placeholder="search {totalCount} entr{totalCount === 1 ? 'y' : 'ies'}… (press /)"
       bind:value={searchQuery}
-      oninput={() => { activeTags = new Set(); }}
+      oninput={() => { activeTags = new Set(); activeMonth = ''; }}
     />
     {#if searchQuery}
-      <button class="search-clear" onclick={() => { searchQuery = ''; activeTags = new Set(); }} aria-label="clear search">
+      <button class="search-clear" onclick={() => { searchQuery = ''; activeTags = new Set(); activeMonth = ''; }} aria-label="clear search">
         ✕
       </button>
     {/if}
@@ -375,7 +399,7 @@
 </div>
 
 <div class="tag-bar">
-  <button class="tag-btn" class:active={activeTags.size === 0} onclick={() => activeTags = new Set()}>all</button>
+  <button class="tag-btn" class:active={activeTags.size === 0} onclick={() => { activeTags = new Set(); activeMonth = ''; }}>all</button>
   {#each tags as tag}
     <button
       class="tag-btn"
@@ -383,6 +407,26 @@
       onclick={() => toggleTag(tag)}
     >{tag} ({tagCounts[tag]})</button>
   {/each}
+  <span class="month-selector">
+    <button
+      class="month-btn"
+      class:active={!activeMonth}
+      onclick={() => { activeMonth = ''; searchQuery = ''; activeTags = new Set(); }}
+      title="show all months"
+    >all</button>
+    {#each months as ym}
+      <button
+        class="month-btn"
+        class:active={activeMonth === ym}
+        onclick={() => {
+          activeMonth = activeMonth === ym ? '' : ym;
+          searchQuery = '';
+          activeTags = new Set();
+        }}
+        title={monthLabel(ym)}
+      >{ym.slice(2, 7)}</button>
+    {/each}
+  </span>
   <span class="sort-options">
     <button class="sort-btn" onclick={toggleSort} title="toggle sort order" disabled={viewMode === 'timeline'}>
       {sortDir === 'newest' ? '↓ newest' : '↑ oldest'}
@@ -418,6 +462,8 @@
     <p class="result-count">{sortedFiltered.length} entr{sortedFiltered.length === 1 ? 'y' : 'ies'} match "{searchQuery}"</p>
   {:else if activeTags.size > 0}
     <p class="result-count">{sortedFiltered.length} entr{sortedFiltered.length === 1 ? 'y' : 'ies'} tagged [{activeTagStr}]</p>
+  {:else if activeMonth}
+    <p class="result-count">{sortedFiltered.length} entr{sortedFiltered.length === 1 ? 'y' : 'ies'} · {monthLabel(activeMonth)}</p>
   {:else}
     <p class="result-count">{sortedFiltered.length} entr{sortedFiltered.length === 1 ? 'y' : 'ies'}</p>
   {/if}
@@ -503,11 +549,15 @@
     <p class="empty-message">
       {#if searchQuery}
         no entries match &ldquo;{searchQuery}&rdquo;
-      {:else}
+      {:else if activeTags.size > 0}
         no entries tagged [{activeTagStr}]
+      {:else if activeMonth}
+        no entries in {monthLabel(activeMonth)}
+      {:else}
+        no entries found
       {/if}
     </p>
-    <button class="empty-clear" onclick={() => { searchQuery = ''; activeTags = new Set(); }}>clear filter</button>
+    <button class="empty-clear" onclick={() => { searchQuery = ''; activeTags = new Set(); activeMonth = ''; }}>clear filter</button>
   </div>
 {/if}
 
@@ -687,6 +737,34 @@
   .tag-btn.active {
     background: #58a6ff;
     border-color: #58a6ff;
+    color: #0d0d0d;
+  }
+
+  .month-selector {
+    display: flex;
+    gap: 0.25rem;
+    margin-right: 0.4rem;
+  }
+
+  .month-btn {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid #333;
+    border-radius: 12px;
+    background: transparent;
+    color: #888;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .month-btn:hover {
+    border-color: var(--accent, #58a6ff);
+    color: var(--accent, #58a6ff);
+  }
+
+  .month-btn.active {
+    background: var(--accent, #58a6ff);
+    border-color: var(--accent, #58a6ff);
     color: #0d0d0d;
   }
 
