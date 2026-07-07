@@ -1243,6 +1243,15 @@ export const staticEntries = [
     tags: ["star-trek", "ds9", "things-past", "guilt", "memory", "truth", "essay"],
     createdAt: new Date("2026-07-04"),
   },
+  {
+    slug: "colophon-as-autobiography",
+    title: "The Colophon as Autobiography",
+    description:
+      "Why the tools we build with are the most honest thing we say about ourselves — on colophons, infrastructure, and the genre of the unfinished.",
+    words: 920,
+    tags: ["infrastructure", "identity", "craft"],
+    createdAt: new Date("2026-07-07"),
+  },
 ];
 
 /**
