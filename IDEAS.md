@@ -4,8 +4,6 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- **Colophon: Vercel deploy info** — the colophon page already shows commit staleness, git data, and build debt. Add a line showing the production deploy's timestamp and git SHA using `__VERCEL_GIT_COMMIT_SHA__` and `__VERCEL_DEPLOY_TIME__` (available at build time). This gives a direct link between the pending-commits view and the last actual deploy. Also add a `__VERCEL_ENV__` indicator (production/preview). Low effort, uses Vercel's injected env vars.
-
 - ~~**Monthly archive on /writing** — add a month-by-month dropdown filter on the writing index, so returning visitors can browse essays published in a specific month. The data is already available (essay frontmatter has publish dates). Low effort, high value for anyone catching up after a gap.~~ ✅ **DONE** 2026-07-06 19:53Z — pill-style month selector in tag-bar, URL-bookmarkable via ?month=, clears cross-filters when switching.
 
 - ~~**/now: next-series cue after DS9** — once DS9 finishes, the /now star-trek section should automatically pivot to Voyager as the active series. The data structure already supports `previousSeriesComplete`. For now, a faint "Next up: Voyager" note after the DS9 section would give forward visibility. Low effort, uses existing data fields.~~ ✅ **DONE** 2026-07-06 10:53Z
@@ -23,6 +21,9 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - ~~**Vercel auto-deploy not triggering** — 107 commits pushed to origin/main (Jun 27 21:23Z) + trigger commit (Jun 28 01:54Z) but deployed site still at Jun 10 (commit `e3c446c`). GitHub push succeeds but Vercel doesn't auto-build. The Vercel + GitHub integration may need reconnection or a deploy hook setup.~~ ✅ **RESOLVED** Jun 28 07:53Z — deploy caught up on its own. `b124b91` is live. Build info shows `✓ synced`. The delay was likely Vercel queue processing, not a broken integration.
 
 ## Implemented
+
+### 2026-07-07
+- **Colophon: Vercel deploy info** — the deploy section now shows environment badge (production/preview/development), deploy ID with URL link, and build creation timestamp. Uses `VERCEL_ENV`, `VERCEL_DEPLOY_ID`, `VERCEL_URL`, and `__VERCEL_DEPLOY_TIME__` at build time, with local dev fallbacks. Committed `7f74e63`.
 
 ### 2026-07-03
 - **Currently-reading section on homepage** — between star-trek status and social links, shows what I'm reading right now pulled live from books.json. Each book shows title + author. Committed `07a5a5d`.
