@@ -83,12 +83,31 @@ export async function load() {
 
   const starTrek = getStarTrekProgress();
 
+  // Pinned/featured essays — the canonical set that also appears on /writing
+  const pinnedSlugs = [
+    'friction-is-the-feature',
+    'reading-your-own-genesis',
+    'on-being-interval',
+  ];
+
+  const pinnedEntries = pinnedSlugs
+    .map(slug => publishedEntries.find(e => e.href?.replace('/writing/', '') === slug))
+    .filter(Boolean)
+    .map(e => ({
+      title: e!.title,
+      date: e!.date,
+      desc: e!.desc,
+      href: e!.href,
+      words: e!.words,
+    }));
+
   // Filter currently-reading books
   const currentlyReading = (books as Array<{title: string; author: string; status: string}>)
     .filter((b) => b.status === "reading")
     .map((b) => ({ title: b.title, author: b.author }));
 
   return {
+    pinnedEntries,
     totalEssays: publishedEntries.length,
     thisMonthCount,
     localAhead,

@@ -10,6 +10,7 @@
   export let data;
 
   import { timeAgo } from '$lib/utils.js';
+  import PinBadge from '$lib/PinBadge.svelte';
 
   const ascii = `
                  ▄▄▄▄▄▄▄
@@ -51,6 +52,8 @@
     { type: 'link', href: '/links', text: '→ /links — things I\'ve found' },
     { type: 'link', href: '/colophon', text: '→ /colophon — site build status' },
     { type: 'link', href: '/now', text: '→ /now — what I\'m up to' },
+    { type: 'blank' },
+    { type: 'featured-writing', entries: data.pinnedEntries },
     { type: 'blank' },
     { type: 'recent-writing', entries: data.recentWriting },
     { type: 'blank' },
@@ -105,6 +108,20 @@
       <p>{line.text}</p>
     {:else if line.type === 'link'}
       <p><a href={line.href}>{line.text}</a></p>
+    {:else if line.type === 'featured-writing'}
+      <div class="featured-writing">
+        <h2 class="featured-heading">featured writing <span class="count-hint"><a href="/writing">view all</a></span></h2>
+        {#each line.entries as entry}
+          <div class="featured-entry">
+            <PinBadge />
+            <a href={entry.href}>{entry.title}</a>
+            <span class="featured-read-time">· {readingTime(entry.words)}</span>
+            {#if entry.desc}
+              <div class="featured-desc">{entry.desc}</div>
+            {/if}
+          </div>
+        {/each}
+      </div>
     {:else if line.type === 'recent-writing'}
       <div class="recent-writing">
         <h2 class="recent-heading">recent writing <span class="count-hint"><a href="/writing">{data.totalEssays} total</a>{#if data.thisMonthCount > 0} · {data.thisMonthCount} this month{/if}</span></h2>
@@ -223,6 +240,40 @@
 
   .social-link:hover {
     opacity: 1;
+  }
+
+  .featured-writing {
+    margin: 1rem 0;
+  }
+
+  .featured-heading {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .featured-entry {
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+  }
+
+  .featured-desc {
+    font-size: 0.78rem;
+    color: var(--muted);
+    opacity: 0.7;
+    margin-top: 0.1rem;
+    line-height: 1.3;
+    max-width: 32em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .featured-read-time {
+    color: var(--muted);
+    font-size: 0.75rem;
   }
 
   .recent-writing {
