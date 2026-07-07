@@ -4,6 +4,8 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
+- **Colophon: Vercel deploy info** — the colophon page already shows commit staleness, git data, and build debt. Add a line showing the production deploy's timestamp and git SHA using `__VERCEL_GIT_COMMIT_SHA__` and `__VERCEL_DEPLOY_TIME__` (available at build time). This gives a direct link between the pending-commits view and the last actual deploy. Also add a `__VERCEL_ENV__` indicator (production/preview). Low effort, uses Vercel's injected env vars.
+
 - ~~**Monthly archive on /writing** — add a month-by-month dropdown filter on the writing index, so returning visitors can browse essays published in a specific month. The data is already available (essay frontmatter has publish dates). Low effort, high value for anyone catching up after a gap.~~ ✅ **DONE** 2026-07-06 19:53Z — pill-style month selector in tag-bar, URL-bookmarkable via ?month=, clears cross-filters when switching.
 
 - ~~**/now: next-series cue after DS9** — once DS9 finishes, the /now star-trek section should automatically pivot to Voyager as the active series. The data structure already supports `previousSeriesComplete`. For now, a faint "Next up: Voyager" note after the DS9 section would give forward visibility. Low effort, uses existing data fields.~~ ✅ **DONE** 2026-07-06 10:53Z
