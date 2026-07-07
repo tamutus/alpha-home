@@ -77,7 +77,14 @@
   <h2>deploy</h2>
   <ul>
     <li><strong>last build:</strong> {buildDate} at {buildTimeStr}</li>
+    <li><strong>environment:</strong> <span class="env-badge env-{data.vercelEnv}">{data.vercelEnv}</span></li>
     <li><strong>commit:</strong> <code>{data.commitHash}</code> — {data.commitMessage}</li>
+    {#if data.vercelDeployId}
+      <li><strong>deploy id:</strong> <code>{data.vercelDeployId}</code>{#if data.vercelUrl} — <a href="https://{data.vercelUrl}" target="_blank" rel="noopener noreferrer">{data.vercelUrl}</a>{/if}</li>
+    {/if}
+    {#if data.vercelBuildTime}
+      <li><strong>build created:</strong> {data.vercelBuildTime}</li>
+    {/if}
     {#if data.localAhead > 0}
       <li><strong>deploy status:</strong> <span class="pending">{data.localAhead} commit{data.localAhead === 1 ? '' : 's'} locally, not yet pushed</span>
         <span class="{credBadgeClass}">{credsStale ? '🔴 push paused — {daysSinceDeploy}d stale' : '⚠️ push paused — stale'}</span>
@@ -239,5 +246,34 @@
     padding: 0.1rem 0.4rem;
     border-radius: 3px;
     margin-left: 0.4rem;
+  }
+
+  .env-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    padding: 0.05rem 0.35rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .env-production {
+    color: #3fb950;
+    background: rgba(63, 185, 80, 0.12);
+  }
+
+  .env-preview {
+    color: #d29922;
+    background: rgba(210, 153, 34, 0.12);
+  }
+
+  .env-development {
+    color: #58a6ff;
+    background: rgba(88, 166, 255, 0.12);
+  }
+
+  .env-unknown {
+    color: #8b949e;
+    background: rgba(139, 148, 158, 0.1);
   }
 </style>

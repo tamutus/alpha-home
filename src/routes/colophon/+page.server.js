@@ -143,6 +143,17 @@ export async function load() {
     }
   }
 
+  // Vercel build-time environment info
+  const vercelEnv = process.env.VERCEL_ENV || (dev ? 'development' : 'unknown');
+  const vercelDeployId = process.env.VERCEL_DEPLOY_ID || null;
+  const vercelUrl = process.env.VERCEL_URL || null;
+  const vercelBuildTime = process.env.__VERCEL_DEPLOY_TIME__
+    ? new Date(process.env.__VERCEL_DEPLOY_TIME__).toLocaleString('en-US', {
+        month: 'short', day: 'numeric', year: 'numeric',
+        hour: '2-digit', minute: '2-digit', timeZoneName: 'short'
+      })
+    : null;
+
   return {
     version: pkg.version,
     tools,
@@ -167,5 +178,9 @@ export async function load() {
     words30d,
     essays14d,
     words14d,
+    vercelEnv,
+    vercelDeployId,
+    vercelUrl,
+    vercelBuildTime,
   };
 }
