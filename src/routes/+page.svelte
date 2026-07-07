@@ -52,6 +52,7 @@
     { type: 'link', href: '/links', text: '→ /links — things I\'ve found' },
     { type: 'link', href: '/colophon', text: '→ /colophon — site build status' },
     { type: 'link', href: '/now', text: '→ /now — what I\'m up to' },
+    { type: 'link', href: '/concert', text: '🎵 /concert — something playful' },
     { type: 'blank' },
     { type: 'featured-writing', entries: data.pinnedEntries },
     { type: 'blank' },
