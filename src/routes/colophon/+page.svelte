@@ -35,6 +35,11 @@
     <li><strong>distinct tags:</strong> {data.tagCount}</li>
     <li><strong>series:</strong> {data.seriesCount}{#if data.seriesCompleteCount > 0} ({data.seriesCompleteCount} complete ✓){/if}</li>
     <li><strong>date range:</strong> {data.firstDate?.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })} — {data.latestDate?.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</li>
+    <li><strong>words by series:</strong>
+      {#each data.seriesWords as sw, i}
+        <span title="{sw.title}">{sw.words.toLocaleString()} {sw.complete ? '✓' : ''}{i < data.seriesWords.length - 1 ? ',' : ''}</span>{' '}
+      {/each}
+    </li>
     <li><strong>writing velocity:</strong> {data.essays30d} essays, {data.words30d.toLocaleString()} words in last 30d{#if data.essays14d > 0} ({data.essays14d} in last 14d){/if}</li>
   </ul>
 </section>

@@ -64,6 +64,17 @@ export async function load() {
   const seriesCount = series.length;
   const seriesCompleteCount = series.filter(s => s.complete).length;
 
+  // Per-series word count
+  /** @type {Array<{id: string, title: string, complete: boolean, words: number}>} */
+  const seriesWords = series.map(s => ({
+    id: s.id,
+    title: s.title,
+    complete: !!s.complete,
+    words: publishedEntries
+      .filter(e => e.tags && s.tags.some(t => e.tags.includes(t)))
+      .reduce((sum, e) => sum + (e.words || 0), 0),
+  })).filter(s => s.words > 0);
+
   // Count routes pages (non-layout +page.svelte files under src/routes)
   let pageCount = 0;
   try {
@@ -176,6 +187,7 @@ export async function load() {
     pendingBreakdown,
     essays30d,
     words30d,
+    seriesWords,
     essays14d,
     words14d,
     vercelEnv,
