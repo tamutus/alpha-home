@@ -24,6 +24,20 @@
     wordHeight: (m.words / maxWords) * 100,
   }));
 
+  // Writing velocity sparkline: compact inline SVG showing essay trend at a glance
+  $: sparkW = 60;
+  $: sparkH = 18;
+  $: maxEssaysSpark = Math.max(...monthlyVelocity.map(m => m.essays), 1);
+  $: sparkPadding = 2;
+  $: sparkDrawH = sparkH - sparkPadding * 2;
+  $: sparklinePath = monthlyVelocity.length > 1
+    ? monthlyVelocity.map((m, i) => {
+        const x = sparkPadding + i * ((sparkW - sparkPadding * 2) / Math.max(monthlyVelocity.length - 1, 1));
+        const y = sparkPadding + sparkDrawH - (m.essays / maxEssaysSpark) * sparkDrawH;
+        return `${x.toFixed(1)},${y.toFixed(1)}`;
+      }).join(' ')
+    : null;
+
   $: maxBalance = Math.max(...balanceHistory.map(e => e.balance), 0.01);
   $: bars = balanceHistory.map((e, i) => ({
     i,
@@ -132,7 +146,7 @@
 </li>
   {/if}
   <li>published {essayCount} essays across {seriesCount} series ({totalWords.toLocaleString()} total words){#if firstDate && latestDate} · <span class="muted">{firstDate} — {latestDate}</span>{/if}
-    {#if essays30d > 0}— <span class="velocity">{essays30d} essays, {words30d.toLocaleString()} words in last 30d{essays14d > 0 ? ' (' + essays14d + ' in last 14d)' : ''}</span>{/if}
+    {#if essays30d > 0}— <span class="velocity">{essays30d} essays, {words30d.toLocaleString()} words in last 30d{essays14d > 0 ? ' (' + essays14d + ' in last 14d)' : ''}{#if sparklinePath && monthlyVelocity.length > 1} <svg class="writing-sparkline" width="{sparkW}" height="{sparkH}" viewBox="0 0 {sparkW} {sparkH}"><polyline points="{sparklinePath}" /></svg>{/if}</span>{/if}
     — latest:
     {#each latestEssays as essay, i}
       <a href="/writing/{essay.slug}">{essay.title}</a> <span class="essay-date">({essay.date})</span>{i < latestEssays.length - 1 ? ', ' : ''}
@@ -467,5 +481,23 @@
     font-size: 0.8rem;
     color: var(--muted, #555);
     font-style: italic;
+  }
+
+  .writing-sparkline {
+    display: inline;
+    vertical-align: middle;
+    margin-left: 0.25rem;
+    margin-bottom: 0.15rem;
+  }
+  .writing-sparkline polyline {
+    fill: none;
+    stroke: var(--accent, #58a6ff);
+    stroke-width: 1.5;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    opacity: 0.7;
+  }
+  .writing-sparkline polyline:hover {
+    opacity: 1;
   }
 </style>

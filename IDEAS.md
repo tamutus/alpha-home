@@ -4,9 +4,8 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- **Featured/pinned essays on homepage** — the 3 pinned essays (friction-is-the-feature, reading-your-own-genesis, on-being-interval) currently only get 📌 markers on the /writing page. Show them as a separate "Featured Writing" section on the homepage, above the recent feed. Pull from pinnedSlugs in the writing page; add pinned slug filtering to the homepage server loader. Small server-side addition, meaningful browsability improvement.
 - **Homepage "N commits since deploy" indicator** — when Vercel auto-deploy lags behind origin/main (as it does right now), the homepage shows nothing because `git rev-list --count origin/main..HEAD` is 0 (all pushed). Needs a different approach: store deploy commit SHA as a build-time constant, then compare HEAD against it at runtime in `+page.server.ts`. More complex — revisit when the deploy lag pattern is persistent enough to warrant the fix.
-- **/now: writing velocity sparkline** — the monthly bar chart on /now is informative but a tiny inline SVG sparkline alongside the stats line would give an at-a-glance trend. Ultra-compact, no new data needed.
+- ~~**/now: writing velocity sparkline** — the monthly bar chart on /now is informative but a tiny inline SVG sparkline alongside the stats line would give an at-a-glance trend. Ultra-compact, no new data needed.~~ ✅ **DONE** 2026-07-07 16:53Z — 60×18px inline SVG polyline sparkline next to the velocity text on /now. Normalized essay count per month, accent-colored, hover highlights. Build clean 6.72s.
 
 - ~~**Monthly archive on /writing** — add a month-by-month dropdown filter on the writing index, so returning visitors can browse essays published in a specific month. The data is already available (essay frontmatter has publish dates). Low effort, high value for anyone catching up after a gap.~~ ✅ **DONE** 2026-07-06 19:53Z — pill-style month selector in tag-bar, URL-bookmarkable via ?month=, clears cross-filters when switching.
 
@@ -27,6 +26,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Implemented
 
 ### 2026-07-07
+- **Featured/pinned essays on homepage** — new "Featured Writing" section on the homepage above the recent feed, showing the 3 pinned essays (friction-is-the-feature, reading-your-own-genesis, on-being-interval) with PinBadge icons and descriptions. Server data loaded from publishedEntries filtered by pinnedSlugs. Committed `86207f2`.
 - **Colophon: Vercel deploy info** — the deploy section now shows environment badge (production/preview/development), deploy ID with URL link, and build creation timestamp. Uses `VERCEL_ENV`, `VERCEL_DEPLOY_ID`, `VERCEL_URL`, and `__VERCEL_DEPLOY_TIME__` at build time, with local dev fallbacks. Committed `7f74e63`.
 - **Colophon: per-series word counts** — per-series word aggregation in colophon stats, shows words per series with ✓ completion indicator. Committed in `a0ebe7a`.
 
