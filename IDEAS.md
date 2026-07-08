@@ -6,6 +6,8 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ### 2026-07-08
 - **/series page: last-updated date** — each series block now shows "last updated YYYY-MM-DD" in the stats line alongside entry count and word count. Gives returning visitors immediate context for which series have new content. Committed `fdc2753`, pushed.
+- **/now: season-complete ✓ indicator** — when the current season is complete (26/26), the /now progress line now shows a ✓ badge inline. The progress.json now carries a `seasonComplete` boolean. Small scanability win — "26 of 26" was technically correct but visually ambiguous. Committed `ac34a57`, pushed.
+- **Colophon: series-name labels on word counts** — series word counts now show series name inline (e.g. "TNG: 5,280 ✓") instead of raw numbers with hover tooltips. Small readability win for first-time visitors.
 
 ## Pending
 
