@@ -97,8 +97,13 @@
     },
     {
       "date": "2026-07-08",
-      "balance": "38.68",
-      "updatedAt": "2026-07-08T08:53:55Z"
+      "balance": "38.64",
+      "updatedAt": "2026-07-08T12:24:15Z"
+    },
+    {
+      "date": "2026-07-08",
+      "balance": 38.64,
+      "source": "air-monitor"
     }
   ]
 }
