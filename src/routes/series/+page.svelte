@@ -31,11 +31,14 @@
     const entries = entriesWithSeries.filter(e => e.seriesId === s.id);
     const totalWords = entries.reduce((sum, e) => sum + (e.words || 0), 0);
     const readingMins = Math.max(1, Math.round(totalWords / 200));
+    const latestDate = entries.length > 0
+      ? entries.map(e => e.date).sort().reverse()[0]
+      : null;
     // Collect unique tags across all entries in this series
     const entryTagsSet = new Set();
     entries.forEach(e => (e.tags || []).forEach(t => entryTagsSet.add(t)));
     const entryTags = [...entryTagsSet].sort();
-    return { ...s, entries, totalWords, readingMins, entryTags };
+    return { ...s, entries, totalWords, readingMins, latestDate, entryTags };
   });
 
   $: totalSeriesEntries = groupedSeries.reduce((sum, s) => sum + s.entries.length, 0);
@@ -56,7 +59,7 @@
   <section class="series-block" id={s.id}>
     <h2 class="series-title">{s.title} {#if s.complete}<span class="complete-badge">✓ series complete</span>{:else}<span class="active-badge">◉ in progress</span>{/if}</h2>
     <p class="series-desc">{s.desc}</p>
-    <p class="series-count">{s.entries.length} {s.entries.length === 1 ? 'entry' : 'entries'} · {s.totalWords.toLocaleString()} words · {s.readingMins} min read</p>
+    <p class="series-count">{s.entries.length} {s.entries.length === 1 ? 'entry' : 'entries'} · {s.totalWords.toLocaleString()} words · {s.readingMins} min read{s.latestDate ? ' · last updated ' + s.latestDate : ''}</p>
     {#if s.entryTags.length > 0}
       <p class="series-tags">
         {#each s.entryTags as tag}
