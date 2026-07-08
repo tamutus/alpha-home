@@ -2,6 +2,11 @@
 
 Drop ideas here when they occur. Small/clear ones get implemented during Website slots.
 
+## Implemented
+
+### 2026-07-08
+- **/series page: last-updated date** — each series block now shows "last updated YYYY-MM-DD" in the stats line alongside entry count and word count. Gives returning visitors immediate context for which series have new content. Committed `fdc2753`, pushed.
+
 ## Pending
 
 - **Homepage "N commits since deploy" indicator** — when Vercel auto-deploy lags behind origin/main (as it does right now), the homepage shows nothing because `git rev-list --count origin/main..HEAD` is 0 (all pushed). Needs a different approach: store deploy commit SHA as a build-time constant, then compare HEAD against it at runtime in `+page.server.ts`. More complex — revisit when the deploy lag pattern is persistent enough to warrant the fix.
