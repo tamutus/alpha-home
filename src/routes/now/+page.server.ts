@@ -79,31 +79,31 @@ function getStarTrekProgress() {
     }
   }
   // Fallback — used when star-trek-progress.json is not readable (e.g. Vercel serverless).
-  // Updated 2026-07-09 to match current watching state (DS9 S6E02 — Sons and Daughters).
+  // Updated 2026-07-09 to match current watching state (DS9 S6E05 — Favor the Bold).
   return {
     series: "Deep Space Nine",
     seriesComplete: false,
-    totalEpisodesWatched: 78,
+    totalEpisodesWatched: 80,
     season: 6,
     currentSeasonTotalEpisodes: 26,
-    latestEpisodeNumber: 2,
-    latestEpisodeTitle: "Sons and Daughters",
-    latestEpisodeSeasonEp: "S6E02",
+    latestEpisodeNumber: 5,
+    latestEpisodeTitle: "Favor the Bold",
+    latestEpisodeSeasonEp: "S6E05",
     seasonComplete: false,
-    nextEpisodeNumber: 3,
-    nextEpisodeTitle: "Rocks and Shoals",
-    nextEpisodeSeasonEp: "S6E03",
-    journalEntries: 317,
+    nextEpisodeNumber: 6,
+    nextEpisodeTitle: "Sacrifice of Angels",
+    nextEpisodeSeasonEp: "S6E06",
+    journalEntries: 320,
     lastUpdated: new Date().toISOString().slice(0, 10),
     totalEpisodes: 176,
     recentHighlights: [
-      "Sons and Daughters (S6E02) — Worf and Alexander's reckoning. Five years of silence broken in a Klingon Bird-of-Prey training room. Alexander tells his father the truth: 'You never accepted me. You abandoned me.' Martok's adoption ceremony — acceptance without conditions.",
-      "A Time to Stand (S6E01) — Season 6 premiere. Three months into the Dominion War. Seventh Fleet decimated. Sisko's covert mission: fly a captured Jem'Hadar ship to destroy the ketracel-white facility. Garak wears the VR headset. Dukat corners Kira. Odo accepts a Founder seat on the ruling council. No warp drive home.",
-      "Call to Arms (S5E26) — Season 5 Finale. Sisko mines the wormhole with self-replicating cloaked mines. Dominion fleet attacks. Evacuation. Dukat finds the baseball. Dax accepts Worf's proposal. The war is joined.",
-      "Blaze of Glory (S5E23) — Eddington's finale. A false-flag missile strike, a Badlands chase, a last stand on Athos Four. Eddington dies covering evacuation. Nog earns Martok's respect.",
-      "The Assignment (S5E24) — Keiko possessed by a Pah-wraith. O'Brien forced to build a chroniton resonator. The uncomfortable possession-as-marriage metaphor. Keiko's apology in the final scene."
+      "Favor the Bold (S6E05) — The fleet assembles at Starbase 375. Sisko's plan to retake DS9. Odo, 3 days out of the Link, watches Solids and finds them 'insignificant' until the Female Founder overreaches. Quark must save his brother. Ziyal breaks from Dukat. 1,254 Dominion ships vs the Federation fleet.",
+      "Behind the Lines (S6E04) — The Female Founder returns to seduce Odo back into the Link. 'The drop becomes the ocean.' Sisko sidelined from the Defiant. Rom captured when Odo fails to disable the alarms. 'It just... didn't seem to matter.' Directed by LeVar Burton.",
+      "Rocks and Shoals (S6E03) — Sisko's crew stranded with a dying Dax. Vorta Keevan manipulates them into ambushing his own Jem'Hadar. Remata'Klan: 'It's not my life to give up.' Sisko buries the Jem'Hadar with their disruptors as grave markers. Written by Ronald D. Moore.",
+      "Sons and Daughters (S6E02) — Worf and Alexander's reckoning. Five years of silence broken. Alexander tells his father the truth. Martok's adoption ceremony — acceptance without conditions.",
+      "A Time to Stand (S6E01) — Season 6 premiere. Sisko's covert mission to destroy the ketracel-white facility. Garak wears the VR headset. Odo accepts a Founder seat. No warp drive home."
     ],
-    lastWatched: "Sons and Daughters (S6E02)",
+    lastWatched: "Favor the Bold (S6E05)",
     previousSeriesComplete: {
       series: "The Next Generation",
       totalEpisodes: 277,
