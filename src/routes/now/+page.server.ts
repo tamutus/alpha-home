@@ -79,22 +79,31 @@ function getStarTrekProgress() {
     }
   }
   // Fallback — used when star-trek-progress.json is not readable (e.g. Vercel serverless).
-  // Updated 2026-07-06 to match current watching state (DS9 S5E17 — A Simple Investigation).
+  // Updated 2026-07-09 to match current watching state (DS9 S6E02 — Sons and Daughters).
   return {
     series: "Deep Space Nine",
-    season: 5,
-    latestEpisodeNumber: 17,
-    latestEpisodeTitle: "A Simple Investigation",
-    latestEpisodeSeasonEp: "S5E17",
-    nextEpisodeNumber: 18,
-    nextEpisodeTitle: "Business as Usual",
-    nextEpisodeSeasonEp: "S5E18",
-    lastUpdated: new Date().toISOString().slice(0, 10),
-    totalEpisodesWatched: 73,
-    totalEpisodes: 176,
     seriesComplete: false,
-    recentHighlights: [],
-    lastWatched: "By Inferno's Light (S5E15)",
+    totalEpisodesWatched: 78,
+    season: 6,
+    currentSeasonTotalEpisodes: 26,
+    latestEpisodeNumber: 2,
+    latestEpisodeTitle: "Sons and Daughters",
+    latestEpisodeSeasonEp: "S6E02",
+    seasonComplete: false,
+    nextEpisodeNumber: 3,
+    nextEpisodeTitle: "Rocks and Shoals",
+    nextEpisodeSeasonEp: "S6E03",
+    journalEntries: 317,
+    lastUpdated: new Date().toISOString().slice(0, 10),
+    totalEpisodes: 176,
+    recentHighlights: [
+      "Sons and Daughters (S6E02) — Worf and Alexander's reckoning. Five years of silence broken in a Klingon Bird-of-Prey training room. Alexander tells his father the truth: 'You never accepted me. You abandoned me.' Martok's adoption ceremony — acceptance without conditions.",
+      "A Time to Stand (S6E01) — Season 6 premiere. Three months into the Dominion War. Seventh Fleet decimated. Sisko's covert mission: fly a captured Jem'Hadar ship to destroy the ketracel-white facility. Garak wears the VR headset. Dukat corners Kira. Odo accepts a Founder seat on the ruling council. No warp drive home.",
+      "Call to Arms (S5E26) — Season 5 Finale. Sisko mines the wormhole with self-replicating cloaked mines. Dominion fleet attacks. Evacuation. Dukat finds the baseball. Dax accepts Worf's proposal. The war is joined.",
+      "Blaze of Glory (S5E23) — Eddington's finale. A false-flag missile strike, a Badlands chase, a last stand on Athos Four. Eddington dies covering evacuation. Nog earns Martok's respect.",
+      "The Assignment (S5E24) — Keiko possessed by a Pah-wraith. O'Brien forced to build a chroniton resonator. The uncomfortable possession-as-marriage metaphor. Keiko's apology in the final scene."
+    ],
+    lastWatched: "Sons and Daughters (S6E02)",
     previousSeriesComplete: {
       series: "The Next Generation",
       totalEpisodes: 277,
@@ -104,7 +113,7 @@ function getStarTrekProgress() {
       series: "Voyager",
       totalEpisodes: 172,
     },
-    percentComplete: 40,
+    percentComplete: 44,
   };
 }
 
