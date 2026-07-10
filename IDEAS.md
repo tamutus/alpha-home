@@ -8,6 +8,9 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Implemented
 
+### 2026-07-10
+- **Colophon: fix pages count on Vercel** — replaced filesystem-based page counting (which returned 0 on Vercel since source files aren't available at runtime) with build-time `import.meta.glob` over `+page.svelte` files. 103 pages correctly counted.
+
 ### 2026-07-09
 - **IDEAS.md archive pass** — moved pre-2026-07-09 entries to IDEAS-archive.md. Kept pending + current week visible.
 
