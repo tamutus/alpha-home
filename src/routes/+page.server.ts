@@ -123,6 +123,7 @@ export async function load() {
       words: e.words,
     })),
     currentlyReading,
+    bookCount: books.length,
     starTrek: starTrek
       ? {
           series: starTrek.series,

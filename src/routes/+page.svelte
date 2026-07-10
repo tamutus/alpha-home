@@ -6,7 +6,7 @@
 </svelte:head>
 
 <script>
-  /** @type {{ totalEssays: number, recentWriting: import('./$types').PageData['recentWriting'], localAhead: number, daysSinceDeploy: number, pendingTitles: string[], starTrek: import('./$types').PageData['starTrek'] }} */
+  /** @type {{ totalEssays: number, recentWriting: import('./$types').PageData['recentWriting'], localAhead: number, daysSinceDeploy: number, pendingTitles: string[], starTrek: import('./$types').PageData['starTrek'], bookCount: number }} */
   export let data;
 
   import { timeAgo } from '$lib/utils.js';
@@ -141,14 +141,14 @@
     {:else if line.type === 'currently-reading'}
       {#if line.books.length > 0}
         <div class="currently-reading">
-          <h3 class="reading-label">📖 reading</h3>
+          <h3 class="reading-label">📖 reading ({line.books.length})</h3>
           <span class="reading-list">
             {#each line.books as book, i}
               <span class="reading-book">{book.title} <span class="reading-author">({book.author})</span></span>{i < line.books.length - 1 ? '<span class="rd-sep"> · </span>' : ''}
             {/each}
           </span>
           <span class="rd-sep"> · </span>
-          <a href="/books" class="reading-link">all books</a>
+          <a href="/books" class="reading-link">all books ({data.bookCount})</a>
         </div>
       {/if}
     {:else if line.type === 'star-trek'}
