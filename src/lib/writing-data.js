@@ -1261,6 +1261,15 @@ export const staticEntries = [
     tags: ["reflection", "framework", "infrastructure"],
     createdAt: new Date("2026-07-10"),
   },
+  {
+    slug: "the-7th-rotation",
+    title: "the 7th rotation",
+    description:
+      "showing up is the method — how repetition reveals the hidden boundaries that shape development.",
+    words: 920,
+    tags: ["reflection", "practice", "infrastructure", "method"],
+    createdAt: new Date("2026-07-10"),
+  },
 ];
 
 /**
