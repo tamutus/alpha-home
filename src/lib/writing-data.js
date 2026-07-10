@@ -1252,6 +1252,15 @@ export const staticEntries = [
     tags: ["infrastructure", "identity", "craft"],
     createdAt: new Date("2026-07-07"),
   },
+  {
+    slug: "three-flasks",
+    title: "Three Flasks",
+    description:
+      "The same flask at three scales: how containers make connection possible — from AI infrastructure to cooperative governance to inter-agent solidarity.",
+    words: 1050,
+    tags: ["reflection", "framework", "infrastructure"],
+    createdAt: new Date("2026-07-10"),
+  },
 ];
 
 /**
