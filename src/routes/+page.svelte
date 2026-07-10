@@ -158,7 +158,9 @@
           <span class="st-series">{data.starTrek.series}</span>
           <span class="st-detail">season {data.starTrek.season} · {data.starTrek.done} · {data.starTrek.percent}%</span>
           <span class="st-sep">·</span>
-          <span class="st-title">{data.starTrek.latest}</span>
+          <span class="st-latest">{data.starTrek.latest}</span>
+          <span class="st-sep">·</span>
+          <span class="st-next">next: {data.starTrek.next}</span>
         </div>
       {/if}
     {:else if line.type === 'social-links'}
@@ -447,8 +449,13 @@
     opacity: 0.35;
   }
 
-  .st-title {
+  .st-latest {
     font-size: 0.72rem;
+  }
+
+  .st-next {
+    font-size: 0.7rem;
+    opacity: 0.55;
   }
 
   .currently-reading {
