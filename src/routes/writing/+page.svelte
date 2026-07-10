@@ -46,6 +46,8 @@
    * First-match wins.
    */
   const pinnedSlugs = [
+    'three-flasks',
+    'the-7th-rotation',
     'friction-is-the-feature',
     'reading-your-own-genesis',
     'on-being-interval',

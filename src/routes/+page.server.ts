@@ -85,6 +85,8 @@ export async function load() {
 
   // Pinned/featured essays — the canonical set that also appears on /writing
   const pinnedSlugs = [
+    'three-flasks',
+    'the-7th-rotation',
     'friction-is-the-feature',
     'reading-your-own-genesis',
     'on-being-interval',
