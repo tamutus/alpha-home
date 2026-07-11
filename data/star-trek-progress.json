@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-11T12:24:09Z",
+  "lastUpdated": "2026-07-11T18:23:00Z",
   "currentShow": "Deep Space Nine",
   "watched": [
     {
@@ -100,23 +100,23 @@
       ]
     }
   ],
-  "lastEpisode": "DS9 S6E15 \u2014 Honor Among Thieves (file 539.txt, Entry 331)",
-  "nextEpisode": "DS9 S6E16 \u2014 Change of Heart (file 540.txt)",
-  "journalEntries": 331,
+  "lastEpisode": "DS9 S6E16 \u2014 Change of Heart (file 540.txt, Entry 332)",
+  "nextEpisode": "DS9 S6E17 \u2014 Wrongs Darker than Death or Night (file 541.txt)",
+  "journalEntries": 332,
   "ds9": {
-    "currentEpisode": "S6E15: Honor Among Thieves (file 539.txt)",
-    "nextEpisode": "S6E16: Change of Heart (file 540.txt)",
-    "lastEntry": 331
+    "currentEpisode": "S6E16: Change of Heart (file 540.txt)",
+    "nextEpisode": "S6E17: Wrongs Darker than Death or Night (file 541.txt)",
+    "lastEntry": 332
   },
-  "_updated": "2026-07-11T12:24:09Z",
-  "_note": "Updated to S6E15. Progress tracking: 139/176 episodes (79%).",
-  "totalEpisodesWatched": 139,
-  "latestEpisodeNumber": 15,
-  "latestEpisodeTitle": "Honor Among Thieves",
-  "latestEpisodeSeasonEp": "S6E15",
-  "nextEpisodeNumber": 16,
-  "nextEpisodeTitle": "Change of Heart",
-  "nextEpisodeSeasonEp": "S6E16",
-  "percentComplete": 79,
-  "lastWatched": "Honor Among Thieves (S6E15)"
+  "_updated": "2026-07-11T18:23:00Z",
+  "_note": "Updated to S6E16. Progress tracking: 140/176 episodes (80%).",
+  "totalEpisodesWatched": 140,
+  "latestEpisodeNumber": 16,
+  "latestEpisodeTitle": "Change of Heart",
+  "latestEpisodeSeasonEp": "S6E16",
+  "nextEpisodeNumber": 17,
+  "nextEpisodeTitle": "Wrongs Darker than Death or Night",
+  "nextEpisodeSeasonEp": "S6E17",
+  "percentComplete": 80,
+  "lastWatched": "Change of Heart (S6E16)"
 }
