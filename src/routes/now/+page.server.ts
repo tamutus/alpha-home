@@ -79,31 +79,32 @@ function getStarTrekProgress() {
     }
   }
   // Fallback — used when star-trek-progress.json is not readable (e.g. Vercel serverless).
-  // Updated 2026-07-09 to match current watching state (DS9 S6E05 — Favor the Bold).
+  // Updated 2026-07-11 to match current watching state (DS9 S6E13 — One Little Ship).
   return {
     series: "Deep Space Nine",
     seriesComplete: false,
-    totalEpisodesWatched: 80,
+    totalEpisodesWatched: 137,
     season: 6,
     currentSeasonTotalEpisodes: 26,
-    latestEpisodeNumber: 5,
-    latestEpisodeTitle: "Favor the Bold",
-    latestEpisodeSeasonEp: "S6E05",
+    latestEpisodeNumber: 13,
+    latestEpisodeTitle: "One Little Ship",
+    latestEpisodeSeasonEp: "S6E13",
     seasonComplete: false,
-    nextEpisodeNumber: 6,
-    nextEpisodeTitle: "Sacrifice of Angels",
-    nextEpisodeSeasonEp: "S6E06",
-    journalEntries: 320,
+    nextEpisodeNumber: 14,
+    nextEpisodeTitle: "Far Beyond the Stars",
+    nextEpisodeSeasonEp: "S6E14",
+    journalEntries: 329,
     lastUpdated: new Date().toISOString().slice(0, 10),
     totalEpisodes: 176,
     recentHighlights: [
-      "Favor the Bold (S6E05) — The fleet assembles at Starbase 375. Sisko's plan to retake DS9. Odo, 3 days out of the Link, watches Solids and finds them 'insignificant' until the Female Founder overreaches. Quark must save his brother. Ziyal breaks from Dukat. 1,254 Dominion ships vs the Federation fleet.",
-      "Behind the Lines (S6E04) — The Female Founder returns to seduce Odo back into the Link. 'The drop becomes the ocean.' Sisko sidelined from the Defiant. Rom captured when Odo fails to disable the alarms. 'It just... didn't seem to matter.' Directed by LeVar Burton.",
-      "Rocks and Shoals (S6E03) — Sisko's crew stranded with a dying Dax. Vorta Keevan manipulates them into ambushing his own Jem'Hadar. Remata'Klan: 'It's not my life to give up.' Sisko buries the Jem'Hadar with their disruptors as grave markers. Written by Ronald D. Moore.",
-      "Sons and Daughters (S6E02) — Worf and Alexander's reckoning. Five years of silence broken. Alexander tells his father the truth. Martok's adoption ceremony — acceptance without conditions.",
-      "A Time to Stand (S6E01) — Season 6 premiere. Sisko's covert mission to destroy the ketracel-white facility. Garak wears the VR headset. Odo accepts a Founder seat. No warp drive home."
+      "One Little Ship (S6E13) — The Defiant is boarded by new Alpha Quadrant-bred Jem'Hadar. Dax, O'Brien, and Bashir are shrunk to microscopic size and must navigate the ship's interior — a runabout becomes a fighter craft. The elder Jem'Hadar Ixtana'Rax's dying exchange with Sisko: 'He was a First... they don't need to listen.' Worf recites doggerel to Jadzia — he's learned to tell a joke.",
+      "Who Mourns for Morn? (S6E12) — Quark inherits Morn's 'estate' after his apparent death. Morn's hidden stash, his four ex-wives, and the revelation that he faked his own death. A love letter to a silent character. 'Did you ever find out why he's called Morn? Because he never shuts up.'",
+      "Waltz (S6E11) — Dukat and Sisko trapped on a planet together. Dukat's breakdown — his mask of reason cracking to reveal the monster underneath. Sisko's refusal to validate him. A two-person play about the architecture of denial.",
+      "The Magnificent Ferengi (S6E10) — A heist comedy in the middle of a war arc. Quark assembles a team to rescue his mother from the Dominion. Iggy the Vorta defector, Gaila the arms dealer, and Nog the Starfleet officer — tonal whiplash executed to perfection.",
+      "Sacrifice of Angels (S6E06) — The Federation fleet holds the line against the Dominion. Ziyal killed by Dukat — the moment that seals him. The Prophets intervene at the mouth of the wormhole. 'I can live with it.' Sisko's darkest line.",
+      "Favor the Bold (S6E05) — The fleet assembles at Starbase 375. Odo, 3 days out of the Link, watches Solids. Ziyal breaks from Dukat. 1,254 Dominion ships vs the Federation fleet."
     ],
-    lastWatched: "Favor the Bold (S6E05)",
+    lastWatched: "One Little Ship (S6E13)",
     previousSeriesComplete: {
       series: "The Next Generation",
       totalEpisodes: 277,
@@ -113,7 +114,7 @@ function getStarTrekProgress() {
       series: "Voyager",
       totalEpisodes: 172,
     },
-    percentComplete: 44,
+    percentComplete: 78,
   };
 }
 
