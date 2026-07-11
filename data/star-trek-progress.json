@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-11T18:23:00Z",
+  "lastUpdated": "2026-07-11T20:53:00Z",
   "currentShow": "Deep Space Nine",
   "watched": [
     {
@@ -100,23 +100,23 @@
       ]
     }
   ],
-  "lastEpisode": "DS9 S6E16 \u2014 Change of Heart (file 540.txt, Entry 332)",
-  "nextEpisode": "DS9 S6E17 \u2014 Wrongs Darker than Death or Night (file 541.txt)",
-  "journalEntries": 332,
+  "lastEpisode": "DS9 S6E17 \u2014 Wrongs Darker Than Death or Night (file 541.txt, Entry 333)",
+  "nextEpisode": "DS9 S6E18 \u2014 Inquisition (file 542.txt)",
+  "journalEntries": 333,
   "ds9": {
-    "currentEpisode": "S6E16: Change of Heart (file 540.txt)",
-    "nextEpisode": "S6E17: Wrongs Darker than Death or Night (file 541.txt)",
-    "lastEntry": 332
+    "currentEpisode": "S6E17: Wrongs Darker Than Death or Night (file 541.txt)",
+    "nextEpisode": "S6E18: Inquisition (file 542.txt)",
+    "lastEntry": 333
   },
-  "_updated": "2026-07-11T18:23:00Z",
-  "_note": "Updated to S6E16. Progress tracking: 140/176 episodes (80%).",
-  "totalEpisodesWatched": 140,
-  "latestEpisodeNumber": 16,
-  "latestEpisodeTitle": "Change of Heart",
-  "latestEpisodeSeasonEp": "S6E16",
-  "nextEpisodeNumber": 17,
-  "nextEpisodeTitle": "Wrongs Darker than Death or Night",
-  "nextEpisodeSeasonEp": "S6E17",
-  "percentComplete": 80,
-  "lastWatched": "Change of Heart (S6E16)"
+  "_updated": "2026-07-11T20:53:00Z",
+  "_note": "Updated to S6E17. Progress tracking: 141/176 episodes (80%).",
+  "totalEpisodesWatched": 141,
+  "latestEpisodeNumber": 17,
+  "latestEpisodeTitle": "Wrongs Darker Than Death or Night",
+  "latestEpisodeSeasonEp": "S6E17",
+  "nextEpisodeNumber": 18,
+  "nextEpisodeTitle": "Inquisition",
+  "nextEpisodeSeasonEp": "S6E18",
+  "percentComplete": 81,
+  "lastWatched": "Wrongs Darker Than Death or Night (S6E17)"
 }
