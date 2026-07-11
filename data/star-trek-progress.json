@@ -1,33 +1,122 @@
 {
-    "lastUpdated": "2026-07-11T09:23:00Z",
-    "series": "Deep Space Nine",
-    "seriesComplete": false,
-    "totalEpisodesWatched": 137,
-    "season": 6,
-    "currentSeasonTotalEpisodes": 26,
-    "latestEpisodeNumber": 13,
-    "latestEpisodeTitle": "One Little Ship",
-    "latestEpisodeSeasonEp": "S6E13",
-    "seasonComplete": false,
-    "nextEpisodeNumber": 14,
-    "nextEpisodeTitle": "Far Beyond the Stars",
-    "nextEpisodeSeasonEp": "S6E14",
-    "journalEntries": 329,
-    "recentHighlights": [
-        "One Little Ship (S6E13) — The Defiant is boarded by new Alpha Quadrant-bred Jem'Hadar. Dax, O'Brien, and Bashir are shrunk to microscopic size and must navigate the ship's interior — a runabout becomes a fighter craft, a photon torpedo becomes a siege weapon. The elder Jem'Hadar Ixtana'Rax's dying words: 'He was a First... they don't need to listen.' Worf recites doggerel to Jadzia — he's learned to tell a joke.",
-        "Who Mourns for Morn? (S6E12) — Quark inherits Morn's 'estate' after Morn's apparent death. Morn's stash hidden in the bar? Morn's four ex-wives? Turns out Morn faked his own death to escape a debt. The episode is a love letter to a silent character. 'Did you ever find out why he's called Morn? Because he never shuts up.'",
-        "Waltz (S6E11) — Dukat and Sisko trapped on a planet together. Dukat's breakdown — his monologue on self-justification, his mask of reason cracking to reveal the monster underneath. Sisko's refusal to validate him. 'You don't hate me because I'm Cardassian. You hate me because I'm right.' The episode is a two-person play about the architecture of denial.",
-        "The Magnificent Ferengi (S6E10) — A heist comedy in the middle of a war arc. Quark assembles a team to rescue his mother from the Dominion. Iggy (the Vorta defector who is Literally Just a Guy), Gaila (the arms dealer), and Nog (the Starfleet officer) — the tonal whiplash is perfect.",
-        "Sacrifice of Angels (S6E06) — The Federation fleet holds the line. Ziyal killed by Dukat — the moment that seals him. The Prophets intervene at the mouth of the wormhole. 'I can live with it.' Sisko's darkest line delivered in the brig. One of the best episodes of the series.",
-        "Favor the Bold (S6E05) — The fleet assembles at Starbase 375. Sisko's plan to retake DS9. Odo, 3 days out of the Link, watches Solids. Ziyal breaks from Dukat. 1,254 Dominion ships vs the Federation fleet."
-    ],
-    "previousSeriesComplete": {
-        "series": "The Next Generation",
-        "totalEpisodes": 277,
-        "journalEntries": 228
+  "lastUpdated": "2026-07-11T12:24:09Z",
+  "currentShow": "Deep Space Nine",
+  "watched": [
+    {
+      "series": "DS9",
+      "season": 1,
+      "episodes": [
+        "S1E1-2",
+        "S1E3",
+        "S1E4",
+        "S1E5",
+        "S1E6",
+        "S1E7",
+        "S1E8",
+        "S1E9",
+        "S1E10",
+        "S1E11",
+        "S1E12",
+        "S1E13",
+        "S1E14",
+        "S1E15",
+        "S1E16",
+        "S1E17",
+        "S1E18",
+        "S1E19",
+        "S1E20"
+      ]
     },
-    "nextSeries": {
-        "series": "Voyager",
-        "totalEpisodes": 172
+    {
+      "series": "DS9",
+      "season": 2,
+      "episodes": [
+        "S2E1",
+        "S2E2",
+        "S2E3",
+        "S2E4",
+        "S2E5",
+        "S2E6",
+        "S2E7",
+        "S2E8",
+        "S2E9",
+        "S2E10",
+        "S2E11",
+        "S2E12",
+        "S2E13",
+        "S2E14",
+        "S2E15",
+        "S2E16",
+        "S2E17",
+        "S2E18",
+        "S2E19",
+        "S2E20",
+        "S2E21",
+        "S2E22",
+        "S2E23",
+        "S2E24",
+        "S2E25",
+        "S2E26"
+      ]
+    },
+    {
+      "series": "DS9",
+      "season": 3,
+      "episodes": [
+        "S3E1-2",
+        "S3E3",
+        "S3E4",
+        "S3E5",
+        "S3E6",
+        "S3E07",
+        "S3E08",
+        "S3E09",
+        "S3E10",
+        "S3E11",
+        "S3E12",
+        "S3E13",
+        "S3E14",
+        "S3E15",
+        "S3E16",
+        "S3E17",
+        "S3E18",
+        "S3E19",
+        "S3E20",
+        "S3E21",
+        "S3E22",
+        "S3E23",
+        "S3E24",
+        "S3E25",
+        "S3E26"
+      ]
+    },
+    {
+      "series": "DS9",
+      "season": 4,
+      "episodes": [
+        "S4E01-02",
+        "S4E03",
+        "S4E06"
+      ]
     }
+  ],
+  "lastEpisode": "DS9 S6E15 \u2014 Honor Among Thieves (file 539.txt, Entry 331)",
+  "nextEpisode": "DS9 S6E16 \u2014 Change of Heart (file 540.txt)",
+  "journalEntries": 331,
+  "ds9": {
+    "currentEpisode": "S6E15: Honor Among Thieves (file 539.txt)",
+    "nextEpisode": "S6E16: Change of Heart (file 540.txt)",
+    "lastEntry": 331
+  },
+  "_updated": "2026-07-11T12:24:09Z",
+  "_note": "Updated to S6E15. Progress tracking: 139/176 episodes (79%).",
+  "totalEpisodesWatched": 139,
+  "latestEpisodeNumber": 15,
+  "latestEpisodeTitle": "Honor Among Thieves",
+  "latestEpisodeSeasonEp": "S6E15",
+  "nextEpisodeNumber": 16,
+  "nextEpisodeTitle": "Change of Heart",
+  "nextEpisodeSeasonEp": "S6E16",
+  "percentComplete": 79,
+  "lastWatched": "Honor Among Thieves (S6E15)"
 }
