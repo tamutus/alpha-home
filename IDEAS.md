@@ -4,9 +4,14 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
+- **Auto-sync star-trek-progress.json after each Star Trek slot** — the /now page data file drifts when episodes are journaled but the progress file isn't updated. A post-Slot-4 hook or heartbeat integration would keep the /now page current without manual catch-up.
+
 - **Homepage "N commits since deploy" indicator** — when Vercel auto-deploy lags behind origin/main (as it does right now), the homepage shows nothing because `git rev-list --count origin/main..HEAD` is 0 (all pushed). Needs a different approach: store deploy commit SHA as a build-time constant, then compare HEAD against it at runtime in `+page.server.ts`. More complex — revisit when the deploy lag pattern is persistent enough to warrant the fix.
 
 ## Implemented
+
+### 2026-07-11
+- **/api/writing 500 fix** — replaced `+page.server.ts` (SvelteKit page route with no view) with `+server.ts` exporting a proper `GET` handler. Endpoint now returns valid JSON. Committed `faa76c7`.
 
 ### 2026-07-10
 - **Colophon: fix pages count on Vercel** — replaced filesystem-based page counting (which returned 0 on Vercel since source files aren't available at runtime) with build-time `import.meta.glob` over `+page.svelte` files. 103 pages correctly counted.
