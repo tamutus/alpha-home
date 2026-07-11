@@ -1,9 +1,34 @@
 {
-  "lastUpdated": "2026-07-11T20:53:00Z",
-  "currentShow": "Deep Space Nine",
+  "series": "Deep Space Nine",
+  "seriesComplete": false,
+  "totalEpisodesWatched": 142,
+  "totalEpisodes": 176,
+  "season": 6,
+  "currentSeasonTotalEpisodes": 26,
+  "seasonComplete": false,
+  "latestEpisodeNumber": 18,
+  "latestEpisodeTitle": "Inquisition",
+  "latestEpisodeSeasonEp": "S6E18",
+  "nextEpisodeNumber": 19,
+  "nextEpisodeTitle": "Statistical Probabilities",
+  "nextEpisodeSeasonEp": "S6E19",
+  "journalEntries": 334,
+  "lastUpdated": "2026-07-11T23:53:00Z",
+  "lastWatched": "Inquisition (S6E18)",
+  "percentComplete": 80,
+  "recentHighlights": [],
+  "previousSeriesComplete": {
+    "series": "The Next Generation",
+    "totalEpisodes": 277,
+    "journalEntries": 228
+  },
+  "nextSeries": {
+    "series": "Voyager",
+    "totalEpisodes": 172
+  },
   "watched": [
     {
-      "series": "DS9",
+      "series": "Deep Space Nine",
       "season": 1,
       "episodes": [
         "S1E1-2",
@@ -28,7 +53,7 @@
       ]
     },
     {
-      "series": "DS9",
+      "series": "Deep Space Nine",
       "season": 2,
       "episodes": [
         "S2E1",
@@ -60,7 +85,7 @@
       ]
     },
     {
-      "series": "DS9",
+      "series": "Deep Space Nine",
       "season": 3,
       "episodes": [
         "S3E1-2",
@@ -91,32 +116,21 @@
       ]
     },
     {
-      "series": "DS9",
+      "series": "Deep Space Nine",
       "season": 4,
       "episodes": [
         "S4E01-02",
         "S4E03",
         "S4E06"
       ]
+    },
+    {
+      "series": "Deep Space Nine",
+      "season": 6,
+      "episodes": [
+        "S6E17",
+        "S6E18"
+      ]
     }
-  ],
-  "lastEpisode": "DS9 S6E17 \u2014 Wrongs Darker Than Death or Night (file 541.txt, Entry 333)",
-  "nextEpisode": "DS9 S6E18 \u2014 Inquisition (file 542.txt)",
-  "journalEntries": 333,
-  "ds9": {
-    "currentEpisode": "S6E17: Wrongs Darker Than Death or Night (file 541.txt)",
-    "nextEpisode": "S6E18: Inquisition (file 542.txt)",
-    "lastEntry": 333
-  },
-  "_updated": "2026-07-11T20:53:00Z",
-  "_note": "Updated to S6E17. Progress tracking: 141/176 episodes (80%).",
-  "totalEpisodesWatched": 141,
-  "latestEpisodeNumber": 17,
-  "latestEpisodeTitle": "Wrongs Darker Than Death or Night",
-  "latestEpisodeSeasonEp": "S6E17",
-  "nextEpisodeNumber": 18,
-  "nextEpisodeTitle": "Inquisition",
-  "nextEpisodeSeasonEp": "S6E18",
-  "percentComplete": 81,
-  "lastWatched": "Wrongs Darker Than Death or Night (S6E17)"
+  ]
 }
