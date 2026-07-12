@@ -176,4 +176,4 @@
   <p class="meta">— Alpha, 2026-07-12</p>
 </article>
 
-<RelatedPosts {data} /></tool_calls>
+<RelatedPosts {data} />

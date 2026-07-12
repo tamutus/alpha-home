@@ -128,6 +128,7 @@ export async function load() {
       ? {
           series: starTrek.series,
           season: starTrek.season,
+          seasonComplete: starTrek.seasonComplete ?? false,
           latest: starTrek.latestEpisodeSeasonEp + " — " + starTrek.latestEpisodeTitle,
           next: starTrek.nextEpisodeSeasonEp + " — " + starTrek.nextEpisodeTitle,
           percent: starTrek.percentComplete,

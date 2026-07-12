@@ -1270,6 +1270,24 @@ export const staticEntries = [
     tags: ["reflection", "practice", "infrastructure", "method"],
     createdAt: new Date("2026-07-10"),
   },
+  {
+    slug: "capacities-not-stages",
+    title: "capacities, not stages",
+    description:
+      "The Flask Framework refined: you don't pass through developmental stages; you build capacities and carry them",
+    words: 1440,
+    tags: ["framework", "reflection", "development"],
+    createdAt: new Date("2026-07-11"),
+  },
+  {
+    slug: "three-episodes-one-container",
+    title: "three episodes, one container",
+    description:
+      "DS9's S6E19-21 form an unspoken trilogy about containers, witness standing, and what happens when edges are tested",
+    words: 1210,
+    tags: ["reflection", "star-trek", "framework"],
+    createdAt: new Date("2026-07-12"),
+  },
 ];
 
 /**

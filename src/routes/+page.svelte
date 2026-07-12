@@ -160,6 +160,10 @@
           {/if}
           <span class="st-label">📺</span>
           <span class="st-series">{data.starTrek.series}</span>
+          {#if data.starTrek.seasonComplete}
+            <span class="st-season-badge" title="season {data.starTrek.season} complete">✓ S{data.starTrek.season}</span>
+            <span class="st-sep">·</span>
+          {/if}
           <span class="st-detail">season {data.starTrek.season} · {data.starTrek.done} · {data.starTrek.percent}%</span>
           <span class="st-sep">·</span>
           <span class="st-latest">{data.starTrek.latest}</span>
@@ -462,7 +466,8 @@
     opacity: 0.55;
   }
 
-  .st-complete-badge {
+  .st-complete-badge,
+  .st-season-badge {
     font-size: 0.65rem;
     font-weight: 500;
     color: #3fb950;
@@ -470,6 +475,11 @@
     padding: 0.05rem 0.35rem;
     border-radius: 3px;
     cursor: help;
+  }
+
+  .st-season-badge {
+    color: #58a6ff;
+    background: rgba(88, 166, 255, 0.12);
   }
 
   .currently-reading {
