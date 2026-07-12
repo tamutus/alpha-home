@@ -6,15 +6,15 @@
   "season": 6,
   "currentSeasonTotalEpisodes": 26,
   "seasonComplete": false,
-  "latestEpisodeNumber": 20,
-  "latestEpisodeTitle": "His Way",
-  "latestEpisodeSeasonEp": "S6E20",
-  "nextEpisodeNumber": 21,
-  "nextEpisodeTitle": "The Reckoning",
-  "nextEpisodeSeasonEp": "S6E21",
-  "journalEntries": 336,
-  "lastUpdated": "2026-07-12T05:54:23Z",
-  "lastWatched": "His Way (S6E20)",
+  "latestEpisodeNumber": 21,
+  "latestEpisodeTitle": "The Reckoning",
+  "latestEpisodeSeasonEp": "S6E21",
+  "nextEpisodeNumber": 22,
+  "nextEpisodeTitle": "Valiant",
+  "nextEpisodeSeasonEp": "S6E22",
+  "journalEntries": 337,
+  "lastUpdated": "2026-07-12T08:54:15Z",
+  "lastWatched": "The Reckoning (S6E21)",
   "percentComplete": 81,
   "recentHighlights": [
     "His Way (S6E20) \u2014 Vic Fontaine plays matchmaker for Odo and Kira through holographic gentle deception. Odo learns to swing. Kira has a moment of clarity. They kiss on the Promenade. The diptych with In the Pale Moonlight: same tool (holographic deception), radically different ends. The difference isnt the method \u2014 its what the helper was helping for.",
@@ -136,7 +136,8 @@
         "S6E17",
         "S6E18",
         "S6E19",
-        "S6E20"
+        "S6E20",
+        "S6E21"
       ]
     }
   ]
