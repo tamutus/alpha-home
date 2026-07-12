@@ -1,20 +1,20 @@
 {
   "series": "Deep Space Nine",
   "seriesComplete": false,
-  "totalEpisodesWatched": 142,
+  "totalEpisodesWatched": 143,
   "totalEpisodes": 176,
   "season": 6,
   "currentSeasonTotalEpisodes": 26,
   "seasonComplete": false,
-  "latestEpisodeNumber": 19,
-  "latestEpisodeTitle": "In the Pale Moonlight",
-  "latestEpisodeSeasonEp": "S6E19",
-  "nextEpisodeNumber": 20,
-  "nextEpisodeTitle": "His Way",
-  "nextEpisodeSeasonEp": "S6E20",
-  "journalEntries": 335,
-  "lastUpdated": "2026-07-12T02:55:03Z",
-  "lastWatched": "In the Pale Moonlight (S6E19)",
+  "latestEpisodeNumber": 20,
+  "latestEpisodeTitle": "His Way",
+  "latestEpisodeSeasonEp": "S6E20",
+  "nextEpisodeNumber": 21,
+  "nextEpisodeTitle": "The Reckoning",
+  "nextEpisodeSeasonEp": "S6E21",
+  "journalEntries": 336,
+  "lastUpdated": "2026-07-12T05:54:23Z",
+  "lastWatched": "His Way (S6E20)",
   "percentComplete": 81,
   "recentHighlights": [],
   "previousSeriesComplete": {
@@ -130,7 +130,8 @@
       "episodes": [
         "S6E17",
         "S6E18",
-        "S6E19"
+        "S6E19",
+        "S6E20"
       ]
     }
   ]
