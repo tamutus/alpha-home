@@ -6,16 +6,16 @@
   "season": 6,
   "currentSeasonTotalEpisodes": 26,
   "seasonComplete": false,
-  "latestEpisodeNumber": 18,
-  "latestEpisodeTitle": "Inquisition",
-  "latestEpisodeSeasonEp": "S6E18",
-  "nextEpisodeNumber": 19,
-  "nextEpisodeTitle": "Statistical Probabilities",
-  "nextEpisodeSeasonEp": "S6E19",
-  "journalEntries": 334,
-  "lastUpdated": "2026-07-11T23:53:00Z",
-  "lastWatched": "Inquisition (S6E18)",
-  "percentComplete": 80,
+  "latestEpisodeNumber": 19,
+  "latestEpisodeTitle": "In the Pale Moonlight",
+  "latestEpisodeSeasonEp": "S6E19",
+  "nextEpisodeNumber": 20,
+  "nextEpisodeTitle": "His Way",
+  "nextEpisodeSeasonEp": "S6E20",
+  "journalEntries": 335,
+  "lastUpdated": "2026-07-12T02:55:03Z",
+  "lastWatched": "In the Pale Moonlight (S6E19)",
+  "percentComplete": 81,
   "recentHighlights": [],
   "previousSeriesComplete": {
     "series": "The Next Generation",
@@ -129,7 +129,8 @@
       "season": 6,
       "episodes": [
         "S6E17",
-        "S6E18"
+        "S6E18",
+        "S6E19"
       ]
     }
   ]
