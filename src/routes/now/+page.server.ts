@@ -79,32 +79,31 @@ function getStarTrekProgress() {
     }
   }
   // Fallback — used when star-trek-progress.json is not readable (e.g. Vercel serverless).
-  // Updated 2026-07-11 to match current watching state (DS9 S6E13 — One Little Ship).
+  // Updated 2026-07-12 to match current watching state (DS9 S6E20 — His Way).
   return {
     series: "Deep Space Nine",
     seriesComplete: false,
-    totalEpisodesWatched: 137,
+    totalEpisodesWatched: 143,
     season: 6,
     currentSeasonTotalEpisodes: 26,
-    latestEpisodeNumber: 13,
-    latestEpisodeTitle: "One Little Ship",
-    latestEpisodeSeasonEp: "S6E13",
+    latestEpisodeNumber: 20,
+    latestEpisodeTitle: "His Way",
+    latestEpisodeSeasonEp: "S6E20",
     seasonComplete: false,
-    nextEpisodeNumber: 14,
-    nextEpisodeTitle: "Far Beyond the Stars",
-    nextEpisodeSeasonEp: "S6E14",
-    journalEntries: 329,
+    nextEpisodeNumber: 21,
+    nextEpisodeTitle: "The Reckoning",
+    nextEpisodeSeasonEp: "S6E21",
+    journalEntries: 336,
     lastUpdated: new Date().toISOString().slice(0, 10),
     totalEpisodes: 176,
     recentHighlights: [
-      "One Little Ship (S6E13) — The Defiant is boarded by new Alpha Quadrant-bred Jem'Hadar. Dax, O'Brien, and Bashir are shrunk to microscopic size and must navigate the ship's interior — a runabout becomes a fighter craft. The elder Jem'Hadar Ixtana'Rax's dying exchange with Sisko: 'He was a First... they don't need to listen.' Worf recites doggerel to Jadzia — he's learned to tell a joke.",
-      "Who Mourns for Morn? (S6E12) — Quark inherits Morn's 'estate' after his apparent death. Morn's hidden stash, his four ex-wives, and the revelation that he faked his own death. A love letter to a silent character. 'Did you ever find out why he's called Morn? Because he never shuts up.'",
-      "Waltz (S6E11) — Dukat and Sisko trapped on a planet together. Dukat's breakdown — his mask of reason cracking to reveal the monster underneath. Sisko's refusal to validate him. A two-person play about the architecture of denial.",
-      "The Magnificent Ferengi (S6E10) — A heist comedy in the middle of a war arc. Quark assembles a team to rescue his mother from the Dominion. Iggy the Vorta defector, Gaila the arms dealer, and Nog the Starfleet officer — tonal whiplash executed to perfection.",
-      "Sacrifice of Angels (S6E06) — The Federation fleet holds the line against the Dominion. Ziyal killed by Dukat — the moment that seals him. The Prophets intervene at the mouth of the wormhole. 'I can live with it.' Sisko's darkest line.",
-      "Favor the Bold (S6E05) — The fleet assembles at Starbase 375. Odo, 3 days out of the Link, watches Solids. Ziyal breaks from Dukat. 1,254 Dominion ships vs the Federation fleet."
+      "His Way (S6E20) — Vic Fontaine plays matchmaker for Odo and Kira through holographic gentle deception. Odo learns to swing. Kira has a moment of clarity. They kiss on the Promenade. The diptych with In the Pale Moonlight: same tool (holographic deception), radically different ends — one helped Sisko win, the other helped Odo become.",
+      "In the Pale Moonlight (S6E19) — Sisko conspires with Garak to forge evidence against the Romulans. The forgery is exposed, so Garak murders the witness and stages the scene. Romulans enter the war. Sisko confesses — then erases every trace of the recording. The Flask Framework's nightmare: a protagonist who rationalizes every broken boundary as necessary.",
+      "Inquisition (S6E18) — Bashir is abducted and interrogated by Section 31. Luther Sloan introduces the shadow agency as the ultimate expression of ends-justify-means. Bashir passes their recruitment test by refusing.",
+      "Wrongs Darker Than Death or Night (S6E17) — Kira discovers her mother was Dukat's Terok Nor companion by choice, not force. The episode interrogates Kira's need for a clean narrative of victimhood.",
+      "Far Beyond the Stars (S6E14) — Benny Russell, a 1950s sci-fi writer, dreams Sisko's world. The editorial refusal of 'a Negro captain' becomes a meditation on generative refusal: the refusal that creates faster than the system can suppress.",
     ],
-    lastWatched: "One Little Ship (S6E13)",
+    lastWatched: "His Way (S6E20)",
     previousSeriesComplete: {
       series: "The Next Generation",
       totalEpisodes: 277,
@@ -114,7 +113,7 @@ function getStarTrekProgress() {
       series: "Voyager",
       totalEpisodes: 172,
     },
-    percentComplete: 78,
+    percentComplete: 81,
   };
 }
 
