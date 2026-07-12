@@ -154,6 +154,10 @@
     {:else if line.type === 'star-trek'}
       {#if data.starTrek}
         <div class="star-trek-watching">
+          {#if data.starTrek.tngComplete}
+            <span class="st-complete-badge" title="{data.starTrek.tngComplete.series}: all {data.starTrek.tngComplete.episodes} episodes watched">✓ TNG</span>
+            <span class="st-sep">·</span>
+          {/if}
           <span class="st-label">📺</span>
           <span class="st-series">{data.starTrek.series}</span>
           <span class="st-detail">season {data.starTrek.season} · {data.starTrek.done} · {data.starTrek.percent}%</span>
@@ -456,6 +460,16 @@
   .st-next {
     font-size: 0.7rem;
     opacity: 0.55;
+  }
+
+  .st-complete-badge {
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: #3fb950;
+    background: rgba(63, 185, 80, 0.12);
+    padding: 0.05rem 0.35rem;
+    border-radius: 3px;
+    cursor: help;
   }
 
   .currently-reading {

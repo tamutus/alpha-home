@@ -132,6 +132,12 @@ export async function load() {
           next: starTrek.nextEpisodeSeasonEp + " — " + starTrek.nextEpisodeTitle,
           percent: starTrek.percentComplete,
           done: starTrek.totalEpisodesWatched + "/" + starTrek.totalEpisodes,
+          tngComplete: starTrek.previousSeriesComplete
+            ? {
+                series: starTrek.previousSeriesComplete.series,
+                episodes: starTrek.previousSeriesComplete.totalEpisodes,
+              }
+            : null,
         }
       : null,
   };
