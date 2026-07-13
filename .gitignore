@@ -14,3 +14,4 @@ src/lib/generated/
 
 # Data files (workspace-local, not part of site source)
 data/deepseek-balance.json
+data/balance-history.json
