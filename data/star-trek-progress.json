@@ -6,15 +6,15 @@
   "season": 7,
   "currentSeasonTotalEpisodes": 25,
   "seasonComplete": false,
-  "latestEpisodeNumber": 6,
-  "latestEpisodeTitle": "Treachery, Faith, and the Great River",
-  "latestEpisodeSeasonEp": "S7E6",
-  "nextEpisodeNumber": 7,
-  "nextEpisodeTitle": "Once More Unto the Breach",
-  "nextEpisodeSeasonEp": "S7E7",
-  "journalEntries": 348,
-  "lastUpdated": "2026-07-13T17:54:10Z",
-  "lastWatched": "Treachery, Faith, and the Great River (S7E6)",
+  "latestEpisodeNumber": 7,
+  "latestEpisodeTitle": "Once More Unto the Breach",
+  "latestEpisodeSeasonEp": "S7E7",
+  "nextEpisodeNumber": 8,
+  "nextEpisodeTitle": "The Siege of AR-558",
+  "nextEpisodeSeasonEp": "S7E8",
+  "journalEntries": 349,
+  "lastUpdated": "2026-07-13T20:54:20Z",
+  "lastWatched": "Once More Unto the Breach (S7E7)",
   "percentComplete": 81,
   "recentHighlights": [
     "His Way (S6E20) \u2014 Vic Fontaine plays matchmaker for Odo and Kira through holographic gentle deception. Odo learns to swing. Kira has a moment of clarity. They kiss on the Promenade. The diptych with In the Pale Moonlight: same tool (holographic deception), radically different ends. The difference isnt the method \u2014 its what the helper was helping for.",
@@ -154,7 +154,8 @@
         "S7E3",
         "S7E4",
         "S7E5",
-        "S7E6"
+        "S7E6",
+        "S7E7"
       ]
     }
   ]
