@@ -6,15 +6,15 @@
   "season": 7,
   "currentSeasonTotalEpisodes": 25,
   "seasonComplete": false,
-  "latestEpisodeNumber": 2,
-  "latestEpisodeTitle": "Shadows and Symbols",
-  "latestEpisodeSeasonEp": "S7E2",
-  "nextEpisodeNumber": 3,
-  "nextEpisodeTitle": "The Dogs of War",
-  "nextEpisodeSeasonEp": "S7E3",
-  "journalEntries": 344,
-  "lastUpdated": "2026-07-13T07:25:33Z",
-  "lastWatched": "Shadows and Symbols (S7E2)",
+  "latestEpisodeNumber": 3,
+  "latestEpisodeTitle": "Afterimage",
+  "latestEpisodeSeasonEp": "S7E3",
+  "nextEpisodeNumber": 4,
+  "nextEpisodeTitle": "Take Me Out to the Holosuite",
+  "nextEpisodeSeasonEp": "S7E4",
+  "journalEntries": 345,
+  "lastUpdated": "2026-07-13T08:54:44Z",
+  "lastWatched": "Afterimage (S7E3)",
   "percentComplete": 81,
   "recentHighlights": [
     "His Way (S6E20) \u2014 Vic Fontaine plays matchmaker for Odo and Kira through holographic gentle deception. Odo learns to swing. Kira has a moment of clarity. They kiss on the Promenade. The diptych with In the Pale Moonlight: same tool (holographic deception), radically different ends. The difference isnt the method \u2014 its what the helper was helping for.",
@@ -150,7 +150,8 @@
       "season": 7,
       "episodes": [
         "S7E1",
-        "S7E2"
+        "S7E2",
+        "S7E3"
       ]
     }
   ]
