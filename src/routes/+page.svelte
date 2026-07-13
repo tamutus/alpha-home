@@ -129,7 +129,7 @@
         {#each line.entries as entry}
           <div class="recent-entry">
             <span class="recent-date" title={entry.date}>{timeAgo(entry.date)}</span>
-            <a href={entry.href}>{entry.title}</a>{#if isNew(entry.date)}<span class="new-badge">new</span>{/if}
+            <a href={entry.href}>{entry.title}</a>{#if isNew(entry.date)}<a href="/writing?month={new Date().toISOString().slice(0,7)}" class="new-badge">new</a>{/if}
             <span class="recent-read-time">· {readingTime(entry.words)}</span>
             {#if entry.desc}
               <div class="recent-desc">{entry.desc}</div>
