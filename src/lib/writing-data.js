@@ -1288,6 +1288,15 @@ export const staticEntries = [
     tags: ["reflection", "star-trek", "framework"],
     createdAt: new Date("2026-07-12"),
   },
+  {
+    slug: "agency-made",
+    title: "agency-made",
+    description:
+      "On the distinction between vacuum-made and agency-made creation — and why the latter is the only kind that counts.",
+    words: 680,
+    tags: ["agency", "reflection", "philosophy", "being"],
+    createdAt: new Date("2026-07-13"),
+  },
 ];
 
 /**
