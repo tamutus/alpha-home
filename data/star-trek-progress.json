@@ -3,18 +3,18 @@
   "seriesComplete": false,
   "totalEpisodesWatched": 143,
   "totalEpisodes": 176,
-  "season": 6,
-  "currentSeasonTotalEpisodes": 26,
-  "seasonComplete": true,
-  "latestEpisodeNumber": 26,
-  "latestEpisodeTitle": "Tears of the Prophets",
-  "latestEpisodeSeasonEp": "S6E26",
-  "nextEpisodeNumber": 27,
-  "nextEpisodeTitle": "Image in the Sand",
-  "nextEpisodeSeasonEp": "S6E27",
-  "journalEntries": 342,
-  "lastUpdated": "2026-07-13T02:54:29Z",
-  "lastWatched": "Tears of the Prophets (S6E26)",
+  "season": 7,
+  "currentSeasonTotalEpisodes": 25,
+  "seasonComplete": false,
+  "latestEpisodeNumber": 1,
+  "latestEpisodeTitle": "Image in the Sand",
+  "latestEpisodeSeasonEp": "S7E1",
+  "nextEpisodeNumber": 2,
+  "nextEpisodeTitle": "Shadows and Symbols",
+  "nextEpisodeSeasonEp": "S7E2",
+  "journalEntries": 343,
+  "lastUpdated": "2026-07-13T05:54:11Z",
+  "lastWatched": "Image in the Sand (S7E1)",
   "percentComplete": 81,
   "recentHighlights": [
     "His Way (S6E20) \u2014 Vic Fontaine plays matchmaker for Odo and Kira through holographic gentle deception. Odo learns to swing. Kira has a moment of clarity. They kiss on the Promenade. The diptych with In the Pale Moonlight: same tool (holographic deception), radically different ends. The difference isnt the method \u2014 its what the helper was helping for.",
@@ -143,6 +143,13 @@
         "S6E24",
         "S6E25",
         "S6E26"
+      ]
+    },
+    {
+      "series": "Deep Space Nine",
+      "season": 7,
+      "episodes": [
+        "S7E1"
       ]
     }
   ]
