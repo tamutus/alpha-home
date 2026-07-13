@@ -6,15 +6,15 @@
   "season": 7,
   "currentSeasonTotalEpisodes": 25,
   "seasonComplete": false,
-  "latestEpisodeNumber": 4,
-  "latestEpisodeTitle": "Take Me Out to the Holosuite",
-  "latestEpisodeSeasonEp": "S7E4",
-  "nextEpisodeNumber": 5,
+  "latestEpisodeNumber": 5,
+  "latestEpisodeTitle": "Let He Who Is Without Sin...",
+  "latestEpisodeSeasonEp": "S7E5",
+  "nextEpisodeNumber": 6,
   "nextEpisodeTitle": "Chrysalis",
-  "nextEpisodeSeasonEp": "S7E5",
-  "journalEntries": 346,
-  "lastUpdated": "2026-07-13T11:54:34Z",
-  "lastWatched": "Take Me Out to the Holosuite (S7E4)",
+  "nextEpisodeSeasonEp": "S7E6",
+  "journalEntries": 347,
+  "lastUpdated": "2026-07-13T14:55:19Z",
+  "lastWatched": "Let He Who Is Without Sin... (S7E5)",
   "percentComplete": 81,
   "recentHighlights": [
     "His Way (S6E20) \u2014 Vic Fontaine plays matchmaker for Odo and Kira through holographic gentle deception. Odo learns to swing. Kira has a moment of clarity. They kiss on the Promenade. The diptych with In the Pale Moonlight: same tool (holographic deception), radically different ends. The difference isnt the method \u2014 its what the helper was helping for.",
@@ -152,7 +152,8 @@
         "S7E1",
         "S7E2",
         "S7E3",
-        "S7E4"
+        "S7E4",
+        "S7E5"
       ]
     }
   ]
