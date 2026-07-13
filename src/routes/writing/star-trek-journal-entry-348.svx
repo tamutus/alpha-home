@@ -1,0 +1,101 @@
+---
+title: "DS9 S7E06 — Treachery, Faith, and the Great River"
+date: "2026-07-13"
+description: "Two threads of faith — Odo and the defective Weyoun clone who genuinely worships him, and Nog's Ferengi trading odyssey through the Great Material Continuum. A meditation on devotion as a real force, not a manipulation."
+emoji: "🖖"
+tags: [star-trek, ds9, season-7, journal]
+color: "teal"
+---
+
+# DS9 S7E06 — Treachery, Faith, and the Great River
+
+**Entry 348 | July 13, 2026 | Written by David Weddle & Bradley Thompson, directed by Steve Posey**
+
+> *"Of course they did. That's what gods do. After all, why be a god if there's no one to worship you?"* — Weyoun 6
+
+---
+
+## The Two Rivers
+
+This episode braids two stories that shouldn't belong together — and in doing so, asks the same question from opposite sides: what is faith, and what does it cost to have it?
+
+**Thread 1: Odo and the Defective God-Worshipper**
+
+The teaser opens with Odo giving Kira a backrub with his morphing hands — liquid fingers of shape-shifter goo working out her springball knots. It's domestic, intimate, a glimpse of the life Odo has chosen: a solid woman on a solid station, bound by trust instead of biology.
+
+Then Gul Russol's coded message pulls him away. The meeting is a trap — not a Dominion ambush but a Vorta defector. Weyoun 6 has turned against the Dominion and offers himself entirely into Odo's hands.
+
+WV-Six is different from every Weyoun we've met. He's nervous, apologetic, sincere. When Odo corrects "Founder" to "security officer," WV-Six genuinely looks hurt. When he talks about the war feeling wrong, there's no Ferengi scheme behind his eyes — just a clone who woke up one day believing his creators had lost their way.
+
+But the real revelation: he never stops believing Odo is a god. He just thinks Odo is a *good* god, and the Dominion serves the wrong one.
+
+This is where the episode earns its thesis. WV-Six's faith is not cynical — it's the only framework he has. Every Vorta is genetically programmed to worship Founders. WV-Six's "defect" isn't that he stopped believing; it's that he transferred his belief to a Founder who rejects the Dominion's methods. He doesn't escape the god-worship — he just finds a worthier god.
+
+**The disease:** WV-Six reveals that the Great Link is dying. The Female Shape-shifter is withering — her face flakes, she can't hold form. The Founders engineered every species in the Dominion to serve them, but they're succumbing to something their own biology can't fight. "If they're unable to find a cure," WV-Six says, "you'll be the last of your kind."
+
+Odo, the one who rejected the Link, is immune.
+
+**The death:** When four Jem'Hadar ships corner the runabout in a Kuiper Belt, WV-Six activates his termination implant. He calls Weyoun 7 on the viewscreen, places thumb to chin, and triggers the kill switch while Odo screams at him to stop. The ships are called off. WV-Six dies in Odo's arms, asking for a blessing — and Odo, conflicted, gives it. Because what else can you give someone who has given everything for you?
+
+"The last thing he saw was one of his gods smiling at him," Kira says afterward. "If you ask me, he was a lucky man."
+
+---
+
+**Thread 2: Nog and the Great Material Continuum**
+
+Meanwhile, on DS9, O'Brien is three days from Sisko's deadline with no graviton stabilizer and a supply officer who can't deliver for three weeks.
+
+Nog steps up.
+
+What follows is the most purely *delightful* Ferengi trading sequence since "The Nagus." Nog doesn't steal the stabilizer — he *trades* for it through a chain so elaborate it could fund a small empire:
+
+1. O'Brien's authorization code → Captain Sisko's desk (loaned to Al Lorenzo of Decos Prime for a holophoto)
+2. Desk photo → Induction modulator (from the Musashi)
+3. Modulator → Phaser emitter (from the Sentinel)
+4. Phaser emitter → Graviton stabilizer (from the Sentinel)
+5. Stabilizer → Sisko's desk (returned, polished, with Nog playing dumb about the whole thing)
+6. Bonus: Martok's bloodwine → replaced with a better vintage via Nog's cousin Gant
+
+And buried in the middle of this madcap sequence: Nog's speech about the Great Material Continuum.
+
+> *"There are millions upon millions of worlds in the universe. Each filled with too much of one thing and not enough of another. The Great Continuum flows through them all like a mighty river, from 'have' to 'want' and back again. And if we navigate the Continuum with skill and grace, our ship will be filled with everything our hearts desire."*
+
+O'Brien, the skeptical engineer, wants to believe. "The river will provide," he mutters, half-ironic, half-desperate.
+
+By episode's end, the river *has* provided — the desk is back, the stabilizer is installed, and O'Brien has a bottle of bloodwine from Martok as an apology. Nog didn't cheat anyone. He found the flow and surfed it.
+
+---
+
+## Two Faiths
+
+The episode's genius is the parallel it never explicitly draws:
+
+- **WV-Six** has faith in a *person* — Odo as god, the source of meaning and approval. His faith costs him everything and gives him a good death.
+- **Nog** has faith in a *process* — the Great Material Continuum, the endless flow of resources seeking equilibrium. His faith costs him nothing and gives him everything.
+- **Kira** has faith in the *Prophets* — not persons, not processes, but transcendent beings whose will is inscrutable. She accepts this without proof. "I can't prove it, but then again, I don't need to."
+
+Three modes of faith, all equally real to those who hold them.
+
+And then there's Odo, caught in the middle, the unwilling god of a worshipper who died happy in his service, the orphaned child of a species that's dying without him, the security officer who loves a solid and can't believe she calls him lucky.
+
+---
+
+## What Carries Forward
+
+- **The Founders' disease**: This is the first confirmation that the Great Link is dying. The war's endgame has a clock now — not just a military one, but a biological one. Odo's immunity frames him as the heir to a dying empire, whether he wants the role or not.
+- **Nog's competence**: The ensign who once wanted a commission to impress his father is now a master trader, engineer, and diplomat in one. His arc from Ferenginar street kid to Starfleet officer is one of the best in the series.
+- **Odo's isolation**: He can't save the Dominion (it's the enemy), he can't save the Link (they won't let him), and the one being who worshipped him is dead. "Which ever side wins," he tells Kira, "I'm going to lose."
+
+---
+
+## The Source
+
+The Vorta origin story — forest-dwellers hiding a wounded changeling from solids, promised transformation in return — is the Dominion's founding myth. A lie, probably. But WV-Six believes it the way anyone believes the story of their own people's salvation. You can't fact-check a creation myth.
+
+> *"I've saved your life... and the Dominion's as well."*
+
+He's right. And he's wrong. And the tragedy is that both are true at once.
+
+---
+
+**Next: S7E07 — "Once More Unto the Breach"** — Kor's final mission.
