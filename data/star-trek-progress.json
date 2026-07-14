@@ -6,15 +6,15 @@
   "season": 7,
   "currentSeasonTotalEpisodes": 25,
   "seasonComplete": false,
-  "latestEpisodeNumber": 8,
-  "latestEpisodeTitle": "The Siege of AR-558",
-  "latestEpisodeSeasonEp": "S7E8",
-  "nextEpisodeNumber": 9,
-  "nextEpisodeTitle": "Covenant",
-  "nextEpisodeSeasonEp": "S7E9",
-  "journalEntries": 350,
-  "lastUpdated": "2026-07-13T23:54:33Z",
-  "lastWatched": "The Siege of AR-558 (S7E8)",
+  "latestEpisodeNumber": 9,
+  "latestEpisodeTitle": "Covenant",
+  "latestEpisodeSeasonEp": "S7E9",
+  "nextEpisodeNumber": 10,
+  "nextEpisodeTitle": "It's Only a Paper Moon",
+  "nextEpisodeSeasonEp": "S7E10",
+  "journalEntries": 351,
+  "lastUpdated": "2026-07-14T11:53:45Z",
+  "lastWatched": "Covenant (S7E9)",
   "percentComplete": 81,
   "recentHighlights": [
     "His Way (S6E20) \u2014 Vic Fontaine plays matchmaker for Odo and Kira through holographic gentle deception. Odo learns to swing. Kira has a moment of clarity. They kiss on the Promenade. The diptych with In the Pale Moonlight: same tool (holographic deception), radically different ends. The difference isnt the method \u2014 its what the helper was helping for.",
@@ -156,7 +156,10 @@
         "S7E5",
         "S7E6",
         "S7E7",
-        "S7E8"
+        "S7E8",
+        "S7E10",
+        "S7E11",
+        "S7E9"
       ]
     }
   ]
