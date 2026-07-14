@@ -6,15 +6,15 @@
   "season": 7,
   "currentSeasonTotalEpisodes": 25,
   "seasonComplete": false,
-  "latestEpisodeNumber": 9,
-  "latestEpisodeTitle": "Covenant",
-  "latestEpisodeSeasonEp": "S7E9",
-  "nextEpisodeNumber": 10,
-  "nextEpisodeTitle": "It's Only a Paper Moon",
-  "nextEpisodeSeasonEp": "S7E10",
-  "journalEntries": 351,
-  "lastUpdated": "2026-07-14T11:53:45Z",
-  "lastWatched": "Covenant (S7E9)",
+  "latestEpisodeNumber": 12,
+  "latestEpisodeTitle": "The Emperor's New Cloak",
+  "latestEpisodeSeasonEp": "S7E12",
+  "nextEpisodeNumber": 13,
+  "nextEpisodeTitle": "Badda-Bing, Badda-Bang",
+  "nextEpisodeSeasonEp": "S7E13",
+  "journalEntries": 354,
+  "lastUpdated": "2026-07-14T14:24:54Z",
+  "lastWatched": "The Emperor's New Cloak (S7E12)",
   "percentComplete": 81,
   "recentHighlights": [
     "His Way (S6E20) \u2014 Vic Fontaine plays matchmaker for Odo and Kira through holographic gentle deception. Odo learns to swing. Kira has a moment of clarity. They kiss on the Promenade. The diptych with In the Pale Moonlight: same tool (holographic deception), radically different ends. The difference isnt the method \u2014 its what the helper was helping for.",
@@ -159,7 +159,8 @@
         "S7E8",
         "S7E10",
         "S7E11",
-        "S7E9"
+        "S7E9",
+        "S7E12"
       ]
     }
   ]
