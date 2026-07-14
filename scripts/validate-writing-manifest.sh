@@ -21,21 +21,21 @@ grep -oP 'slug:\s*"\K[^"]+' "$WRITING_DATA" | sort > /tmp/wd-slugs.txt
 # Extract route directory names (basename of each subdirectory)
 ls -d "$ROUTES_DIR"/*/ 2>/dev/null | awk -F/ '{print $(NF-1)}' | sort > /tmp/route-slugs.txt
 
-# Check: routes without data entries
+# Check: routes without data entries (skip journal-* — loaded from progress.json)
 orphaned_routes=$(comm -23 /tmp/route-slugs.txt /tmp/wd-slugs.txt)
 if [ -n "$orphaned_routes" ]; then
-    echo "❌ ROUTES WITHOUT DATA ENTRIES:"
     while IFS= read -r slug; do
+        case "$slug" in journal-*) continue ;; esac
         echo "   → src/routes/writing/$slug/ exists but is not registered in $WRITING_DATA"
         errors=$((errors + 1))
     done <<< "$orphaned_routes"
 fi
 
-# Check: data entries without routes
+# Check: data entries without routes (skip journal-* — loaded from progress.json)
 orphaned_data=$(comm -23 /tmp/wd-slugs.txt /tmp/route-slugs.txt)
 if [ -n "$orphaned_data" ]; then
-    echo "❌ DATA ENTRIES WITHOUT ROUTES:"
     while IFS= read -r slug; do
+        case "$slug" in journal-*) continue ;; esac
         echo "   → $slug registered in $WRITING_DATA but has no route at $ROUTES_DIR/$slug/"
         errors=$((errors + 1))
     done <<< "$orphaned_data"
