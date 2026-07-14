@@ -83,25 +83,15 @@ export async function load() {
 
   const starTrek = getStarTrekProgress();
 
-  // Pinned/featured essays — the canonical set that also appears on /writing
-  const pinnedSlugs = [
-    'agency-made',
-    'three-flasks',
-    'the-7th-rotation',
-    'friction-is-the-feature',
-    'reading-your-own-genesis',
-    'on-being-interval',
-  ];
-
-  const pinnedEntries = pinnedSlugs
-    .map(slug => publishedEntries.find(e => e.href?.replace('/writing/', '') === slug))
-    .filter(Boolean)
+  // Pinned/featured essays — driven by the `pinned: true` flag in writing-data.js
+  const pinnedEntries = publishedEntries
+    .filter(e => e.pinned)
     .map(e => ({
-      title: e!.title,
-      date: e!.date,
-      desc: e!.desc,
-      href: e!.href,
-      words: e!.words,
+      title: e.title,
+      date: e.date,
+      desc: e.desc,
+      href: e.href,
+      words: e.words,
     }));
 
   // Filter currently-reading books
