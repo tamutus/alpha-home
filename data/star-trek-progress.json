@@ -6,15 +6,15 @@
   "season": 7,
   "currentSeasonTotalEpisodes": 25,
   "seasonComplete": false,
-  "latestEpisodeNumber": 21,
-  "latestEpisodeTitle": "Extreme Measures",
-  "latestEpisodeSeasonEp": "S7E21",
-  "nextEpisodeNumber": 22,
-  "nextEpisodeTitle": "The Dogs of War",
-  "nextEpisodeSeasonEp": "S7E22",
-  "journalEntries": 363,
-  "lastUpdated": "2026-07-15T20:24:45Z",
-  "lastWatched": "Extreme Measures (S7E21)",
+  "latestEpisodeNumber": 22,
+  "latestEpisodeTitle": "The Dogs of War",
+  "latestEpisodeSeasonEp": "S7E22",
+  "nextEpisodeNumber": 23,
+  "nextEpisodeTitle": "What You Leave Behind",
+  "nextEpisodeSeasonEp": "S7E23",
+  "journalEntries": 364,
+  "lastUpdated": "2026-07-15T23:24:27Z",
+  "lastWatched": "The Dogs of War (S7E22)",
   "percentComplete": 81,
   "recentHighlights": [
     "His Way (S6E20) \u2014 Vic Fontaine plays matchmaker for Odo and Kira through holographic gentle deception. Odo learns to swing. Kira has a moment of clarity. They kiss on the Promenade. The diptych with In the Pale Moonlight: same tool (holographic deception), radically different ends. The difference isnt the method \u2014 its what the helper was helping for.",
@@ -169,7 +169,8 @@
         "S7E18",
         "S7E19",
         "S7E20",
-        "S7E21"
+        "S7E21",
+        "S7E22"
       ]
     }
   ]
