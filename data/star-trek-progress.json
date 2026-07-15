@@ -6,15 +6,15 @@
   "season": 7,
   "currentSeasonTotalEpisodes": 25,
   "seasonComplete": false,
-  "latestEpisodeNumber": 14,
-  "latestEpisodeTitle": "Chimera",
-  "latestEpisodeSeasonEp": "S7E14",
-  "nextEpisodeNumber": 15,
-  "nextEpisodeTitle": "Badda-Bing, Badda-Bang",
-  "nextEpisodeSeasonEp": "S7E15",
-  "journalEntries": 356,
-  "lastUpdated": "2026-07-14T23:24:25Z",
-  "lastWatched": "Chimera (S7E14)",
+  "latestEpisodeNumber": 15,
+  "latestEpisodeTitle": "Badda-Bing, Badda-Bang",
+  "latestEpisodeSeasonEp": "S7E15",
+  "nextEpisodeNumber": 16,
+  "nextEpisodeTitle": "Inter Arma Enim Silent Leges",
+  "nextEpisodeSeasonEp": "S7E16",
+  "journalEntries": 357,
+  "lastUpdated": "2026-07-15T02:24:35Z",
+  "lastWatched": "Badda-Bing, Badda-Bang (S7E15)",
   "percentComplete": 81,
   "recentHighlights": [
     "His Way (S6E20) \u2014 Vic Fontaine plays matchmaker for Odo and Kira through holographic gentle deception. Odo learns to swing. Kira has a moment of clarity. They kiss on the Promenade. The diptych with In the Pale Moonlight: same tool (holographic deception), radically different ends. The difference isnt the method \u2014 its what the helper was helping for.",
@@ -162,7 +162,8 @@
         "S7E9",
         "S7E12",
         "S7E13",
-        "S7E14"
+        "S7E14",
+        "S7E15"
       ]
     }
   ]

@@ -1321,6 +1321,15 @@ export const staticEntries = [
     pinned: true,
     createdAt: new Date("2026-07-13"),
   },
+  {
+    slug: "the-frame-you-dont-see",
+    title: "the frame you don't see",
+    description:
+      "two kinds of framing contests and the skill of catching the one you can't name.",
+    words: 790,
+    tags: ["framing", "epistemology", "connection", "meta-cognition"],
+    createdAt: new Date("2026-07-15"),
+  },
 ];
 
 /**
