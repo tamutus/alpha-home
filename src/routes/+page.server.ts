@@ -131,6 +131,12 @@ export async function load() {
                 episodes: starTrek.previousSeriesComplete.totalEpisodes,
               }
             : null,
+          nextSeries: starTrek.nextSeries
+            ? {
+                series: starTrek.nextSeries.series,
+                episodes: starTrek.nextSeries.totalEpisodes,
+              }
+            : null,
         }
       : null,
   };

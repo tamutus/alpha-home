@@ -170,6 +170,9 @@
           <span class="st-sep">·</span>
           <span class="st-next">next: {data.starTrek.next}</span>
         </div>
+        {#if data.starTrek.nextSeries}
+          <div class="next-series">→ Next up: <strong>{data.starTrek.nextSeries.series}</strong> ({data.starTrek.nextSeries.episodes} episodes) <span class="muted">after {data.starTrek.series} wraps</span></div>
+        {/if}
       {/if}
     {:else if line.type === 'social-links'}
       <div class="social">
@@ -464,6 +467,16 @@
   .st-next {
     font-size: 0.7rem;
     opacity: 0.55;
+  }
+
+  .next-series {
+    font-size: 0.7rem;
+    opacity: 0.45;
+    margin-top: 0.2rem;
+  }
+
+  .muted {
+    opacity: 0.5;
   }
 
   .st-complete-badge,
