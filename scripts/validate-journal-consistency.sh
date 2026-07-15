@@ -81,10 +81,10 @@ if [ ! -f "$LATEST_FILE" ]; then
     fi
 fi
 
-# Also spot-check the last 5 journal files for gaps
+# Also spot-check the last 5 journal files for gaps (directory-wrapped format)
 MISSING_GAPS=""
 for i in $(seq $((JOURNAL_ENTRIES - 4)) "$JOURNAL_ENTRIES"); do
-    if [ ! -f "$JOURNAL_DIR/journal-$i.md" ]; then
+    if [ ! -f "$JOURNAL_DIR/journal-$i/+page.md" ]; then
         MISSING_GAPS="$MISSING_GAPS journal-$i"
     fi
 done
