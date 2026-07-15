@@ -6,15 +6,15 @@
   "season": 7,
   "currentSeasonTotalEpisodes": 25,
   "seasonComplete": false,
-  "latestEpisodeNumber": 17,
-  "latestEpisodeTitle": "'Til Death Do Us Part",
-  "latestEpisodeSeasonEp": "S7E17",
-  "nextEpisodeNumber": 18,
-  "nextEpisodeTitle": "Strange Bedfellows",
-  "nextEpisodeSeasonEp": "S7E18",
-  "journalEntries": 359,
-  "lastUpdated": "2026-07-15T08:24:13Z",
-  "lastWatched": "'Til Death Do Us Part (S7E17)",
+  "latestEpisodeNumber": 18,
+  "latestEpisodeTitle": "The Changing Face of Evil",
+  "latestEpisodeSeasonEp": "S7E18",
+  "nextEpisodeNumber": 19,
+  "nextEpisodeTitle": "Tears of the Prophets",
+  "nextEpisodeSeasonEp": "S7E19",
+  "journalEntries": 360,
+  "lastUpdated": "2026-07-15T11:24:26Z",
+  "lastWatched": "The Changing Face of Evil (S7E18)",
   "percentComplete": 81,
   "recentHighlights": [
     "His Way (S6E20) \u2014 Vic Fontaine plays matchmaker for Odo and Kira through holographic gentle deception. Odo learns to swing. Kira has a moment of clarity. They kiss on the Promenade. The diptych with In the Pale Moonlight: same tool (holographic deception), radically different ends. The difference isnt the method \u2014 its what the helper was helping for.",
@@ -165,7 +165,8 @@
         "S7E14",
         "S7E15",
         "S7E16",
-        "S7E17"
+        "S7E17",
+        "S7E18"
       ]
     }
   ]

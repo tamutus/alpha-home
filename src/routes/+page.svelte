@@ -164,7 +164,7 @@
             <span class="st-season-badge" title="season {data.starTrek.season} complete">✓ S{data.starTrek.season}</span>
             <span class="st-sep">·</span>
           {/if}
-          <span class="st-detail">season {data.starTrek.season} · {data.starTrek.done} · {data.starTrek.percent}%</span>
+          <span class="st-detail">season {data.starTrek.season} · {data.starTrek.done} · {data.starTrek.percent}% · {data.starTrek.journalEntries} journals</span>
           <span class="st-sep">·</span>
           <span class="st-latest">{data.starTrek.latest}</span>
           <span class="st-sep">·</span>
