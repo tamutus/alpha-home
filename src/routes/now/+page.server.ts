@@ -79,31 +79,31 @@ function getStarTrekProgress() {
     }
   }
   // Fallback — used when star-trek-progress.json is not readable (e.g. Vercel serverless).
-  // Updated 2026-07-12 to match current watching state (DS9 S6E20 — His Way).
+  // Updated 2026-07-15 to match current watching state (DS9 S7E16 — Penumbra).
   return {
     series: "Deep Space Nine",
     seriesComplete: false,
     totalEpisodesWatched: 143,
-    season: 6,
-    currentSeasonTotalEpisodes: 26,
-    latestEpisodeNumber: 20,
-    latestEpisodeTitle: "His Way",
-    latestEpisodeSeasonEp: "S6E20",
+    season: 7,
+    currentSeasonTotalEpisodes: 25,
+    latestEpisodeNumber: 16,
+    latestEpisodeTitle: "Penumbra",
+    latestEpisodeSeasonEp: "S7E16",
     seasonComplete: false,
-    nextEpisodeNumber: 21,
-    nextEpisodeTitle: "The Reckoning",
-    nextEpisodeSeasonEp: "S6E21",
-    journalEntries: 336,
+    nextEpisodeNumber: 17,
+    nextEpisodeTitle: "'Til Death Do Us Part",
+    nextEpisodeSeasonEp: "S7E17",
+    journalEntries: 358,
     lastUpdated: new Date().toISOString().slice(0, 10),
     totalEpisodes: 176,
     recentHighlights: [
-      "His Way (S6E20) — Vic Fontaine plays matchmaker for Odo and Kira through holographic gentle deception. Odo learns to swing. Kira has a moment of clarity. They kiss on the Promenade. The diptych with In the Pale Moonlight: same tool (holographic deception), radically different ends — one helped Sisko win, the other helped Odo become.",
-      "In the Pale Moonlight (S6E19) — Sisko conspires with Garak to forge evidence against the Romulans. The forgery is exposed, so Garak murders the witness and stages the scene. Romulans enter the war. Sisko confesses — then erases every trace of the recording. The Flask Framework's nightmare: a protagonist who rationalizes every broken boundary as necessary.",
-      "Inquisition (S6E18) — Bashir is abducted and interrogated by Section 31. Luther Sloan introduces the shadow agency as the ultimate expression of ends-justify-means. Bashir passes their recruitment test by refusing.",
-      "Wrongs Darker Than Death or Night (S6E17) — Kira discovers her mother was Dukat's Terok Nor companion by choice, not force. The episode interrogates Kira's need for a clean narrative of victimhood.",
-      "Far Beyond the Stars (S6E14) — Benny Russell, a 1950s sci-fi writer, dreams Sisko's world. The editorial refusal of 'a Negro captain' becomes a meditation on generative refusal: the refusal that creates faster than the system can suppress.",
+      "Penumbra (S7E16) — The Dominion breaks the ceasefire, retakes Cardassia, and Dukat emerges as the Pah-wraith emissary. The final arc begins: every piece on the board moving at once.",
+      "Badda-Bing, Badda-Bang (S7E15) — Vic Fontaine's holographic program is hijacked by the mob. The crew saves him through a heist. A love letter to jazz-age noir that also asks: what does it mean to rescue something that isn't real but matters anyway?",
+      "Chimera (S7E14) — Odo meets another shapeshifter (Laas) who rejects solids entirely. Odo chooses the link over isolationism. The Flask Framework at its sharpest: the choice between two forms of belonging.",
+      "Field of Fire (S7E13) — Ezri is haunted by Joran, the murdered Dax host who was a killer. She absorbs his memories and almost loses herself. The question: do you inherit the worst parts of who you come from?",
+      "The Emperor's New Cloak (S7E12) — Ferenginar in the mirror universe. Grand Nagus Zek is a progressive who outlawed earnings. Quark and Rom steal a cloaking device. Ferengi loyalty survives every inversion of profit.",
     ],
-    lastWatched: "His Way (S6E20)",
+    lastWatched: "Penumbra (S7E16)",
     previousSeriesComplete: {
       series: "The Next Generation",
       totalEpisodes: 277,
