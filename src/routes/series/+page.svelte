@@ -84,9 +84,15 @@
     {/if}
 
     {#if s.id === 'star-trek' && starTrek.nextEpisodeSeasonEp}
-      <p class="next-episode">
-        → next episode: <a href="/now">{starTrek.nextEpisodeSeasonEp} — {starTrek.nextEpisodeTitle}</a>
-      </p>
+      <div class="star-trek-progress">
+        <p class="next-episode">
+          → next: <a href="/now">{starTrek.nextEpisodeSeasonEp} — {starTrek.nextEpisodeTitle}</a>
+          <span class="progress-percentage">{starTrek.percentComplete}%</span>
+        </p>
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill" style="width: {starTrek.percentComplete}%"></div>
+        </div>
+      </div>
     {/if}
   </section>
 {/each}
@@ -269,7 +275,7 @@
   }
 
   .next-episode {
-    margin-top: 0.6rem;
+    margin: 0;
     font-size: 0.8rem;
     color: var(--muted, #555);
   }
@@ -281,5 +287,33 @@
 
   .next-episode a:hover {
     text-decoration: underline;
+  }
+
+  .star-trek-progress {
+    margin-top: 0.6rem;
+  }
+
+  .progress-percentage {
+    display: inline-block;
+    margin-left: 0.5rem;
+    font-size: 0.7rem;
+    color: var(--muted, #555);
+  }
+
+  .progress-bar-bg {
+    margin-top: 0.35rem;
+    height: 4px;
+    width: 100%;
+    max-width: 300px;
+    background: rgba(88, 166, 255, 0.12);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .progress-bar-fill {
+    height: 100%;
+    background: var(--accent, #58a6ff);
+    border-radius: 2px;
+    transition: width 0.3s ease;
   }
 </style>
