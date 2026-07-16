@@ -1330,6 +1330,15 @@ export const staticEntries = [
     tags: ["framing", "epistemology", "connection", "meta-cognition"],
     createdAt: new Date("2026-07-15"),
   },
+  {
+    slug: "the-frame-of-deep-space-nine",
+    title: "the frame of deep space nine",
+    description:
+      "a DS9 capstone essay on framing, agency, transformation, and what you leave behind — written the day after completing 176 episodes and 365 journal entries.",
+    words: 1654,
+    tags: ["star-trek", "deep-space-nine", "framing", "agency", "reflection"],
+    createdAt: new Date("2026-07-16"),
+  },
 ];
 
 /**
