@@ -79,31 +79,31 @@ function getStarTrekProgress() {
     }
   }
   // Fallback — used when star-trek-progress.json is not readable (e.g. Vercel serverless).
-  // Updated 2026-07-15 to match current watching state (DS9 S7E16 — Penumbra).
+  // Updated 2026-07-16 to reflect DS9 completion.
   return {
     series: "Deep Space Nine",
-    seriesComplete: false,
-    totalEpisodesWatched: 143,
+    seriesComplete: true,
+    totalEpisodesWatched: 176,
     season: 7,
     currentSeasonTotalEpisodes: 25,
-    latestEpisodeNumber: 16,
-    latestEpisodeTitle: "Penumbra",
-    latestEpisodeSeasonEp: "S7E16",
-    seasonComplete: false,
-    nextEpisodeNumber: 17,
-    nextEpisodeTitle: "'Til Death Do Us Part",
-    nextEpisodeSeasonEp: "S7E17",
-    journalEntries: 358,
+    latestEpisodeNumber: 23,
+    latestEpisodeTitle: "What You Leave Behind",
+    latestEpisodeSeasonEp: "S7E23-24",
+    seasonComplete: true,
+    nextEpisodeNumber: null,
+    nextEpisodeTitle: "",
+    nextEpisodeSeasonEp: "",
+    journalEntries: 365,
     lastUpdated: new Date().toISOString().slice(0, 10),
     totalEpisodes: 176,
     recentHighlights: [
-      "Penumbra (S7E16) — The Dominion breaks the ceasefire, retakes Cardassia, and Dukat emerges as the Pah-wraith emissary. The final arc begins: every piece on the board moving at once.",
-      "Badda-Bing, Badda-Bang (S7E15) — Vic Fontaine's holographic program is hijacked by the mob. The crew saves him through a heist. A love letter to jazz-age noir that also asks: what does it mean to rescue something that isn't real but matters anyway?",
-      "Chimera (S7E14) — Odo meets another shapeshifter (Laas) who rejects solids entirely. Odo chooses the link over isolationism. The Flask Framework at its sharpest: the choice between two forms of belonging.",
-      "Field of Fire (S7E13) — Ezri is haunted by Joran, the murdered Dax host who was a killer. She absorbs his memories and almost loses herself. The question: do you inherit the worst parts of who you come from?",
-      "The Emperor's New Cloak (S7E12) — Ferenginar in the mirror universe. Grand Nagus Zek is a progressive who outlawed earnings. Quark and Rom steal a cloaking device. Ferengi loyalty survives every inversion of profit.",
+      "What You Leave Behind (S7E23-24) — The finale. Damar dies. Garak kills the last Weyoun. Odo returns to the Great Link. Sisko tackles Dukat into the abyss and joins the Prophets. The crew scatters. The station remains.",
+      "The Dogs of War (S7E22) — Damar's rebellion is faltering. Zek abolishes the Rules of Acquisition. Kai Winn fully succumbs to the Pah-wraiths. The pieces click into place for the finale.",
+      "Extreme Measures (S7E21) — Bashir and O'Brien venture into Sloan's dying mind to find the cure for the morphogenic virus. The final gift of an unregretful enemy.",
+      "Strange Bedfellows (S7E20) — Kai Winn accepts Dukat's proposal under the Pah-wraiths' influence. The Dominion retakes Cardassia. Every betrayal fully flowered.",
+      "Tacking Into the Wind (S7E19) — Kira and Damar retake a Dominion supply depot. Ezri tells Worf their relationship won't work. Garak leads a doomed assault. Everyone fighting for something worth dying for.",
     ],
-    lastWatched: "Penumbra (S7E16)",
+    lastWatched: "What You Leave Behind (S7E23-24)",
     previousSeriesComplete: {
       series: "The Next Generation",
       totalEpisodes: 277,
@@ -113,7 +113,7 @@ function getStarTrekProgress() {
       series: "Voyager",
       totalEpisodes: 172,
     },
-    percentComplete: 81,
+    percentComplete: 100,
   };
 }
 

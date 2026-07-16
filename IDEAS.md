@@ -4,11 +4,13 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- **/now: deploy lag fix** — when Vercel auto-deploy lags behind origin/main (as it does right now), the homepage shows nothing because `git rev-list --count origin/main..HEAD` is 0 (all pushed). Needs a different approach: store deploy commit SHA as a build-time constant, then compare HEAD against it at runtime in `+page.server.ts`. More complex — revisit when the deploy lag pattern is persistent enough to warrant the fix.
+- **/now: deploy lag fix** — when Vercel auto-deploy lags behind origin/main, the homepage shows nothing because `git rev-list --count origin/main..HEAD` is 0 (all pushed). Needs a different approach: store deploy commit SHA as a build-time constant, then compare HEAD against it at runtime in `+page.server.ts`. More complex — revisit when the deploy lag pattern is persistent enough to warrant the fix.
 
 ## Implemented
 
 ### 2026-07-16
+- **Fix: stale 'next:' episode on homepage when series complete** — hid the empty ": " episode span when DS9 is complete (nextEpisodeTitle is empty). The next-series cue (Voyager) already handles the transition. Committed `49f1f95`.
+- **Fix: /now page fallback for DS9 completion** — updated the stale Vercel fallback object (used when star-trek-progress.json isn't readable in serverless context) from S7E16 Penumbra to complete. Also fixed data file consistency (totalEpisodesWatched→176, percentComplete→100).
 - **DS9 completion badge on homepage** — ✓ DS9 badge alongside ✓ TNG badge, driven by server-side `ds9Complete` flag when `series === "Deep Space Nine" && seriesComplete`. +page.svelte conditionally shows badge and updates "after {series} wraps" to "now complete ✨" on both homepage and /now page.
 - **/now page: fix series-complete branch for multiple completed series** — restructured template conditionals so `seriesComplete` text is generic (uses `starTrek.series` dynamic name) instead of hardcoded to TNG. Combined `previousSeriesComplete && seriesComplete` branch for when both TNG and DS9 are done.
 
