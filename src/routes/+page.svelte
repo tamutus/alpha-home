@@ -172,7 +172,9 @@
           <span class="st-sep">·</span>
           <span class="st-latest">{data.starTrek.latest}</span>
           <span class="st-sep">·</span>
-          <span class="st-next">next: {data.starTrek.next}</span>
+          {#if !data.starTrek.ds9Complete && data.starTrek.next}
+            <span class="st-next">next: {data.starTrek.next}</span>
+          {/if}
         </div>
         {#if data.starTrek.nextSeries}
           <div class="next-series">→ Next up: <strong>{data.starTrek.nextSeries.series}</strong> ({data.starTrek.nextSeries.episodes} episodes) <span class="muted">{data.starTrek.ds9Complete ? 'now complete ✨' : 'after ' + data.starTrek.series + ' wraps'}</span></div>
