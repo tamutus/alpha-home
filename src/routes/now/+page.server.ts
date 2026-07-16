@@ -50,35 +50,67 @@ function getDeepseekBalance() {
   return "$46.54";
 }
 
-function getStarTrekProgress() {
-  // Try local path first (within alpha-home — works on Vercel), then workspace root
+function enrichStarTrekData(data: any) {
+  // Series totals: TNG = 178, DS9 = 176, Voyager = 172
+  const seriesTotals: Record<string, number> = {
+    "The Next Generation": 178,
+    "Deep Space Nine": 176,
+    "Voyager": 172,
+  };
+  const totalEpisodes = seriesTotals[data.series] ?? 178;
+  data.totalEpisodes = totalEpisodes;
+  if (data.seriesComplete) {
+    data.percentComplete = 100;
+  } else {
+    data.percentComplete = Math.round(
+      (data.totalEpisodesWatched / totalEpisodes) * 100
+    );
+  }
+  return data;
+}
+
+async function tryFetchFromGitHubRaw(): Promise<object | null> {
+  // Fetch the latest committed data from GitHub raw API.
+  // This ensures fresh data even when Vercel deploy lags behind origin/main.
+  try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 2000);
+    const res = await fetch(
+      "https://raw.githubusercontent.com/tamutus/alpha-home/main/data/star-trek-progress.json",
+      { signal: controller.signal }
+    );
+    clearTimeout(timeout);
+    if (!res.ok) return null;
+    const data = await res.json();
+    if (!data || !data.series) return null;
+    return data;
+  } catch {
+    // network error or timeout — fall through to local
+    return null;
+  }
+}
+
+async function getStarTrekProgress() {
+  // First: try GitHub raw API for the latest committed data (freshest,
+  // works even when Vercel deploy lags behind origin/main).
+  const githubData = await tryFetchFromGitHubRaw();
+  if (githubData) {
+    return enrichStarTrekData(githubData);
+  }
+
+  // Second: try local file system (within alpha-home or workspace root).
   const raw =
     tryReadDataFile(join(process.cwd(), "data", "star-trek-progress.json")) ||
     tryReadDataFile(join(process.cwd(), "..", "data", "star-trek-progress.json"));
   if (raw) {
     try {
-      const data = JSON.parse(raw);
-      // Series totals: TNG = 178, DS9 = 176, Voyager = 172
-      const seriesTotals: Record<string, number> = {
-        "The Next Generation": 178,
-        "Deep Space Nine": 176,
-        "Voyager": 172,
-      };
-      const totalEpisodes = seriesTotals[data.series] ?? 178;
-      data.totalEpisodes = totalEpisodes;
-      if (data.seriesComplete) {
-        data.percentComplete = 100;
-      } else {
-        data.percentComplete = Math.round(
-          (data.totalEpisodesWatched / totalEpisodes) * 100
-        );
-      }
-      return data;
+      return enrichStarTrekData(JSON.parse(raw));
     } catch {
       // malformed json, fall through
     }
   }
-  // Fallback — used when star-trek-progress.json is not readable (e.g. Vercel serverless).
+
+  // Fallback — used when both GitHub API and local file are unavailable.
   // Updated 2026-07-16 to reflect DS9 completion.
   return {
     series: "Deep Space Nine",
@@ -233,7 +265,7 @@ export async function load() {
     latestEssays,
     deepseekBalance: getDeepseekBalance(),
     balanceHistory: getDeepseekBalanceHistory(),
-    starTrek: getStarTrekProgress(),
+    starTrek: await getStarTrekProgress(),
     essays30d: essays30dCount,
     words30d,
     essays14d,

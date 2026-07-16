@@ -6,6 +6,8 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 - **/now: deploy lag fix** — when Vercel auto-deploy lags behind origin/main, the homepage shows nothing because `git rev-list --count origin/main..HEAD` is 0 (all pushed). Needs a different approach: store deploy commit SHA as a build-time constant, then compare HEAD against it at runtime in `+page.server.ts`. More complex — revisit when the deploy lag pattern is persistent enough to warrant the fix.
 
+  **Observation (2026-07-16):** DS9 completion fix (commit `38a6ed6`) pushed to origin/main but Vercel still serving Jul 15 build. Pattern is persistent enough to warrant attention — the /now page shows Penumbra-era stale data even after the fix is in the repo.
+
 ## Implemented
 
 ### 2026-07-16
