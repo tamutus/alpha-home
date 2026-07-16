@@ -131,6 +131,13 @@ export async function load() {
                 episodes: starTrek.previousSeriesComplete.totalEpisodes,
               }
             : null,
+          ds9Complete: starTrek.series === "Deep Space Nine" && starTrek.seriesComplete
+            ? {
+                series: starTrek.series,
+                episodes: starTrek.totalEpisodesWatched,
+                total: starTrek.totalEpisodes,
+              }
+            : null,
           nextSeries: starTrek.nextSeries
             ? {
                 series: starTrek.nextSeries.series,

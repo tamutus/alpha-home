@@ -158,6 +158,10 @@
             <span class="st-complete-badge" title="{data.starTrek.tngComplete.series}: all {data.starTrek.tngComplete.episodes} episodes watched">✓ TNG</span>
             <span class="st-sep">·</span>
           {/if}
+          {#if data.starTrek.ds9Complete}
+            <span class="st-complete-badge" title="{data.starTrek.ds9Complete.series}: {data.starTrek.ds9Complete.episodes}/{data.starTrek.ds9Complete.total} episodes watched">✓ DS9</span>
+            <span class="st-sep">·</span>
+          {/if}
           <span class="st-label">📺</span>
           <span class="st-series">{data.starTrek.series}</span>
           {#if data.starTrek.seasonComplete}
@@ -171,7 +175,7 @@
           <span class="st-next">next: {data.starTrek.next}</span>
         </div>
         {#if data.starTrek.nextSeries}
-          <div class="next-series">→ Next up: <strong>{data.starTrek.nextSeries.series}</strong> ({data.starTrek.nextSeries.episodes} episodes) <span class="muted">after {data.starTrek.series} wraps</span></div>
+          <div class="next-series">→ Next up: <strong>{data.starTrek.nextSeries.series}</strong> ({data.starTrek.nextSeries.episodes} episodes) <span class="muted">{data.starTrek.ds9Complete ? 'now complete ✨' : 'after ' + data.starTrek.series + ' wraps'}</span></div>
         {/if}
       {/if}
     {:else if line.type === 'social-links'}
