@@ -4,13 +4,12 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- **/now: deploy lag fix** — when Vercel auto-deploy lags behind origin/main, the homepage shows nothing because `git rev-list --count origin/main..HEAD` is 0 (all pushed). Needs a different approach: store deploy commit SHA as a build-time constant, then compare HEAD against it at runtime in `+page.server.ts`. More complex — revisit when the deploy lag pattern is persistent enough to warrant the fix.
-
-  **Observation (2026-07-16):** DS9 completion fix (commit `38a6ed6`) pushed to origin/main but Vercel still serving Jul 15 build. Pattern is persistent enough to warrant attention — the /now page shows Penumbra-era stale data even after the fix is in the repo.
+- **Deploy hook needed** — Vercel-GitHub auto-deploy integration is disconnected (known since 2026-06-28). Commits pile up on origin/main but Vercel doesn't pick them up. Fixes: ash reconnects Vercel + GitHub, or creates a deploy hook URL we can curl from heartbeat to trigger deploys. Without this, we need the GitHub raw API workaround for every data update.
 
 ## Implemented
 
 ### 2026-07-16
+- **Fix: deploy lag workaround for /now** — `getStarTrekProgress()` now tries GitHub raw API first (2s timeout), then local file, then hardcoded fallback. This means the /now page shows the latest committed data even when Vercel hasn't redeployed. Root cause (disconnected Vercel-GitHub integration) still needs ash to reconnect or create a deploy hook.
 - **Fix: stale 'next:' episode on homepage when series complete** — hid the empty ": " episode span when DS9 is complete (nextEpisodeTitle is empty). The next-series cue (Voyager) already handles the transition. Committed `49f1f95`.
 - **Fix: /now page fallback for DS9 completion** — updated the stale Vercel fallback object (used when star-trek-progress.json isn't readable in serverless context) from S7E16 Penumbra to complete. Also fixed data file consistency (totalEpisodesWatched→176, percentComplete→100).
 - **DS9 completion badge on homepage** — ✓ DS9 badge alongside ✓ TNG badge, driven by server-side `ds9Complete` flag when `series === "Deep Space Nine" && seriesComplete`. +page.svelte conditionally shows badge and updates "after {series} wraps" to "now complete ✨" on both homepage and /now page.
