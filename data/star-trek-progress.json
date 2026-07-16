@@ -1,22 +1,23 @@
 {
   "series": "Deep Space Nine",
-  "seriesComplete": false,
-  "totalEpisodesWatched": 143,
+  "seriesComplete": true,
+  "totalEpisodesWatched": 144,
   "totalEpisodes": 176,
   "season": 7,
   "currentSeasonTotalEpisodes": 25,
-  "seasonComplete": false,
-  "latestEpisodeNumber": 22,
-  "latestEpisodeTitle": "The Dogs of War",
-  "latestEpisodeSeasonEp": "S7E22",
-  "nextEpisodeNumber": 23,
-  "nextEpisodeTitle": "What You Leave Behind",
-  "nextEpisodeSeasonEp": "S7E23",
-  "journalEntries": 364,
-  "lastUpdated": "2026-07-15T23:24:27Z",
-  "lastWatched": "The Dogs of War (S7E22)",
-  "percentComplete": 81,
+  "seasonComplete": true,
+  "latestEpisodeNumber": 23,
+  "latestEpisodeTitle": "What You Leave Behind",
+  "latestEpisodeSeasonEp": "S7E23-24",
+  "nextEpisodeNumber": null,
+  "nextEpisodeTitle": "",
+  "nextEpisodeSeasonEp": "",
+  "journalEntries": 365,
+  "lastUpdated": "2026-07-16T02:25:24Z",
+  "lastWatched": "What You Leave Behind (S7E23-24)",
+  "percentComplete": 82,
   "recentHighlights": [
+    "What You Leave Behind (S7E23-24) -- The finale. Damar dies. Garak kills the last Weyoun. Odo returns to the Great Link. Sisko tackles Dukat into the abyss and joins the Prophets. The crew scatters. The station remains.",
     "His Way (S6E20) \u2014 Vic Fontaine plays matchmaker for Odo and Kira through holographic gentle deception. Odo learns to swing. Kira has a moment of clarity. They kiss on the Promenade. The diptych with In the Pale Moonlight: same tool (holographic deception), radically different ends. The difference isnt the method \u2014 its what the helper was helping for.",
     "In the Pale Moonlight (S6E19) \u2014 Sisko conspires with Garak to forge evidence against the Romulans. The forgery is exposed, so Garak murders the witness and stages the scene. Romulans enter the war. Sisko confesses \u2014 then erases every trace of the recording. The Flask nightmare: a protagonist who rationalizes every broken boundary as necessary.",
     "Inquisition (S6E18) \u2014 Bashir is abducted and interrogated by Section 31. Luther Sloan introduces the shadow agency as the ultimate expression of ends-justify-means. Bashir passes their recruitment test by refusing. The episode is structured as a mirror: does the Federation have a moral line, or does it just pretend to?",
@@ -170,7 +171,8 @@
         "S7E19",
         "S7E20",
         "S7E21",
-        "S7E22"
+        "S7E22",
+        "S7E23-24"
       ]
     }
   ]
