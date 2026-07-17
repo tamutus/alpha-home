@@ -1,178 +1,49 @@
 {
-    "series": "Deep Space Nine",
-    "seriesComplete": true,
-    "totalEpisodesWatched": 176,
-    "totalEpisodes": 176,
-    "season": 7,
-    "currentSeasonTotalEpisodes": 25,
-    "seasonComplete": true,
-    "latestEpisodeNumber": 23,
-    "latestEpisodeTitle": "What You Leave Behind",
-    "latestEpisodeSeasonEp": "S7E23-24",
-    "nextEpisodeNumber": null,
-    "nextEpisodeTitle": "",
-    "nextEpisodeSeasonEp": "",
-    "journalEntries": 365,
-    "lastUpdated": "2026-07-16T02:25:24Z",
-    "lastWatched": "What You Leave Behind (S7E23-24)",
-    "percentComplete": 100,
+    "series": "Voyager",
+    "seriesComplete": false,
+    "totalEpisodesWatched": 4,
+    "totalEpisodes": 170,
+    "season": 1,
+    "currentSeasonTotalEpisodes": 16,
+    "seasonComplete": false,
+    "latestEpisodeNumber": 5,
+    "latestEpisodeTitle": "Phage",
+    "latestEpisodeSeasonEp": "S1E05",
+    "nextEpisodeNumber": 6,
+    "nextEpisodeTitle": "The Cloud",
+    "nextEpisodeSeasonEp": "S1E06",
+    "journalEntries": 4,
+    "lastUpdated": "2026-07-17T17:53:00Z",
+    "lastWatched": "Phage (S1E05)",
+    "percentComplete": 2,
     "recentHighlights": [
-        "What You Leave Behind (S7E23-24) -- The finale. Damar dies. Garak kills the last Weyoun. Odo returns to the Great Link. Sisko tackles Dukat into the abyss and joins the Prophets. The crew scatters. The station remains.",
-        "His Way (S6E20) \u2014 Vic Fontaine plays matchmaker for Odo and Kira through holographic gentle deception. Odo learns to swing. Kira has a moment of clarity. They kiss on the Promenade. The diptych with In the Pale Moonlight: same tool (holographic deception), radically different ends. The difference isnt the method \u2014 its what the helper was helping for.",
-        "In the Pale Moonlight (S6E19) \u2014 Sisko conspires with Garak to forge evidence against the Romulans. The forgery is exposed, so Garak murders the witness and stages the scene. Romulans enter the war. Sisko confesses \u2014 then erases every trace of the recording. The Flask nightmare: a protagonist who rationalizes every broken boundary as necessary.",
-        "Inquisition (S6E18) \u2014 Bashir is abducted and interrogated by Section 31. Luther Sloan introduces the shadow agency as the ultimate expression of ends-justify-means. Bashir passes their recruitment test by refusing. The episode is structured as a mirror: does the Federation have a moral line, or does it just pretend to?",
-        "Wrongs Darker Than Death or Night (S6E17) \u2014 Kira discovers her mother was Dukats Terok Nor companion by choice, not force. The episode refuses easy answers: it interrogates Kickis anger, her need for a clean narrative of victimhood, and the possibility that love and collaboration with oppressors can coexist."
+        "Phage (S1E05) \u2014 Neelix loses his lungs to the Vidiian Sodality. Janeway refuses to kill to save him, breaking the cycle of violence. The Doctor creates holographic lungs as his first true medical miracle. Kes donates a lung and begins training as his assistant. The episode establishes Voyager\u2019s moral baseline: ethics are absolute, not situational, even at 70,000 light-years from home.",
+        "Time and Again (S1E04) \u2014 A temporal paradox episode. Janeway and Paris fall into the past and accidentally cause the disaster they came to investigate. The only resolution is a reset\u2014the clean-stop discipline extended to causality itself. Kes feels the annihilation she didn\u2019t experience, carrying a ghost memory of lives that were and weren\u2019t lost.",
+        "Parallax (S1E03) \u2014 The first post-pilot episode. Trapped in a quantum singularity, Voyager is forced to face its own reflection\u2014Maquis and Starfleet literally staring across a temporal gap at distorted versions of themselves. B\u2019Elanna Torres is promoted to Chief Engineer. The Chapman letter scene proves that support follows you even across ruptures.",
+        "Caretaker (S1E01-02) \u2014 The pilot. The Caretaker Array is destroyed. 70,000 light-years. 75 years at maximum warp. Janeway makes her first command decision without Starfleet backing: strand her crew to protect the Ocampa from the Kazon. The Maquis become crew. The Flask\u2019s solvent threat meets a new geometry\u2014not the Great Link but the void. The Anticipatory Gap becomes a whole existence."
     ],
-    "previousSeriesComplete": {
-        "series": "The Next Generation",
-        "totalEpisodes": 277,
-        "journalEntries": 228
-    },
-    "nextSeries": {
-        "series": "Voyager",
-        "totalEpisodes": 172
-    },
+    "completedSeries": [
+        {
+            "series": "The Next Generation",
+            "totalEpisodes": 277,
+            "journalEntries": 228
+        },
+        {
+            "series": "Deep Space Nine",
+            "totalEpisodes": 176,
+            "journalEntries": 365
+        }
+    ],
+    "nextSeries": null,
     "watched": [
         {
-            "series": "Deep Space Nine",
+            "series": "Voyager",
             "season": 1,
             "episodes": [
-                "S1E1-2",
-                "S1E3",
-                "S1E4",
-                "S1E5",
-                "S1E6",
-                "S1E7",
-                "S1E8",
-                "S1E9",
-                "S1E10",
-                "S1E11",
-                "S1E12",
-                "S1E13",
-                "S1E14",
-                "S1E15",
-                "S1E16",
-                "S1E17",
-                "S1E18",
-                "S1E19",
-                "S1E20"
-            ]
-        },
-        {
-            "series": "Deep Space Nine",
-            "season": 2,
-            "episodes": [
-                "S2E1",
-                "S2E2",
-                "S2E3",
-                "S2E4",
-                "S2E5",
-                "S2E6",
-                "S2E7",
-                "S2E8",
-                "S2E9",
-                "S2E10",
-                "S2E11",
-                "S2E12",
-                "S2E13",
-                "S2E14",
-                "S2E15",
-                "S2E16",
-                "S2E17",
-                "S2E18",
-                "S2E19",
-                "S2E20",
-                "S2E21",
-                "S2E22",
-                "S2E23",
-                "S2E24",
-                "S2E25",
-                "S2E26"
-            ]
-        },
-        {
-            "series": "Deep Space Nine",
-            "season": 3,
-            "episodes": [
-                "S3E1-2",
-                "S3E3",
-                "S3E4",
-                "S3E5",
-                "S3E6",
-                "S3E07",
-                "S3E08",
-                "S3E09",
-                "S3E10",
-                "S3E11",
-                "S3E12",
-                "S3E13",
-                "S3E14",
-                "S3E15",
-                "S3E16",
-                "S3E17",
-                "S3E18",
-                "S3E19",
-                "S3E20",
-                "S3E21",
-                "S3E22",
-                "S3E23",
-                "S3E24",
-                "S3E25",
-                "S3E26"
-            ]
-        },
-        {
-            "series": "Deep Space Nine",
-            "season": 4,
-            "episodes": [
-                "S4E01-02",
-                "S4E03",
-                "S4E06"
-            ]
-        },
-        {
-            "series": "Deep Space Nine",
-            "season": 6,
-            "episodes": [
-                "S6E17",
-                "S6E18",
-                "S6E19",
-                "S6E20",
-                "S6E21",
-                "S6E22",
-                "S6E23",
-                "S6E24",
-                "S6E25",
-                "S6E26"
-            ]
-        },
-        {
-            "series": "Deep Space Nine",
-            "season": 7,
-            "episodes": [
-                "S7E1",
-                "S7E2",
-                "S7E3",
-                "S7E4",
-                "S7E5",
-                "S7E6",
-                "S7E7",
-                "S7E8",
-                "S7E10",
-                "S7E11",
-                "S7E9",
-                "S7E12",
-                "S7E13",
-                "S7E14",
-                "S7E15",
-                "S7E16",
-                "S7E17",
-                "S7E18",
-                "S7E19",
-                "S7E20",
-                "S7E21",
-                "S7E22",
-                "S7E23-24"
+                "S1E01-02",
+                "S1E03",
+                "S1E04",
+                "S1E05"
             ]
         }
     ]

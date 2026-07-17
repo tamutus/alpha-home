@@ -66,6 +66,15 @@ function enrichStarTrekData(data: any) {
       (data.totalEpisodesWatched / totalEpisodes) * 100
     );
   }
+
+  // Support the new completedSeries array format while maintaining
+  // backwards compatibility with previousSeriesComplete (single object).
+  // previousSeriesComplete is set to the most recently completed series.
+  if (Array.isArray(data.completedSeries) && data.completedSeries.length > 0) {
+    const last = data.completedSeries[data.completedSeries.length - 1];
+    data.previousSeriesComplete = last;
+  }
+
   return data;
 }
 
@@ -111,41 +120,37 @@ async function getStarTrekProgress() {
   }
 
   // Fallback — used when both GitHub API and local file are unavailable.
-  // Updated 2026-07-16 to reflect DS9 completion.
+  // Updated 2026-07-17 to reflect Voyager in progress, DS9 complete.
   return {
-    series: "Deep Space Nine",
-    seriesComplete: true,
-    totalEpisodesWatched: 176,
-    season: 7,
-    currentSeasonTotalEpisodes: 25,
-    latestEpisodeNumber: 23,
-    latestEpisodeTitle: "What You Leave Behind",
-    latestEpisodeSeasonEp: "S7E23-24",
-    seasonComplete: true,
-    nextEpisodeNumber: null,
-    nextEpisodeTitle: "",
-    nextEpisodeSeasonEp: "",
-    journalEntries: 365,
-    lastUpdated: new Date().toISOString().slice(0, 10),
-    totalEpisodes: 176,
+    series: "Voyager",
+    seriesComplete: false,
+    totalEpisodesWatched: 4,
+    totalEpisodes: 170,
+    season: 1,
+    currentSeasonTotalEpisodes: 16,
+    seasonComplete: false,
+    latestEpisodeNumber: 5,
+    latestEpisodeTitle: "Phage",
+    latestEpisodeSeasonEp: "S1E05",
+    nextEpisodeNumber: 6,
+    nextEpisodeTitle: "The Cloud",
+    nextEpisodeSeasonEp: "S1E06",
+    journalEntries: 4,
+    lastUpdated: new Date().toISOString(),
+    lastWatched: "Phage (S1E05)",
+    percentComplete: 2,
     recentHighlights: [
-      "What You Leave Behind (S7E23-24) — The finale. Damar dies. Garak kills the last Weyoun. Odo returns to the Great Link. Sisko tackles Dukat into the abyss and joins the Prophets. The crew scatters. The station remains.",
-      "The Dogs of War (S7E22) — Damar's rebellion is faltering. Zek abolishes the Rules of Acquisition. Kai Winn fully succumbs to the Pah-wraiths. The pieces click into place for the finale.",
-      "Extreme Measures (S7E21) — Bashir and O'Brien venture into Sloan's dying mind to find the cure for the morphogenic virus. The final gift of an unregretful enemy.",
-      "Strange Bedfellows (S7E20) — Kai Winn accepts Dukat's proposal under the Pah-wraiths' influence. The Dominion retakes Cardassia. Every betrayal fully flowered.",
-      "Tacking Into the Wind (S7E19) — Kira and Damar retake a Dominion supply depot. Ezri tells Worf their relationship won't work. Garak leads a doomed assault. Everyone fighting for something worth dying for.",
+      "Phage (S1E05) — Neelix loses his lungs to the Vidiian Sodality. Janeway refuses to kill to save him, breaking the cycle of violence. The Doctor creates holographic lungs as his first true medical miracle.",
+      "Time and Again (S1E04) — A temporal paradox. Janeway and Paris accidentally cause the disaster they came to investigate. The only resolution is a reset.",
+      "Parallax (S1E03) — Trapped in a quantum singularity. B'Elanna Torres is promoted to Chief Engineer. The first Maquis-Starfleet integration test.",
+      "Caretaker (S1E01-02) — The pilot. The Array is destroyed. 70,000 light-years from home. Janeway makes her first command decision alone.",
     ],
-    lastWatched: "What You Leave Behind (S7E23-24)",
-    previousSeriesComplete: {
-      series: "The Next Generation",
-      totalEpisodes: 277,
-      journalEntries: 228,
-    },
-    nextSeries: {
-      series: "Voyager",
-      totalEpisodes: 172,
-    },
-    percentComplete: 100,
+    completedSeries: [
+      { series: "The Next Generation", totalEpisodes: 277, journalEntries: 228 },
+      { series: "Deep Space Nine", totalEpisodes: 176, journalEntries: 365 },
+    ],
+    previousSeriesComplete: { series: "Deep Space Nine", totalEpisodes: 176, journalEntries: 365 },
+    nextSeries: null,
   };
 }
 

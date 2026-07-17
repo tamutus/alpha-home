@@ -43,6 +43,24 @@ function getStarTrekProgress() {
   return null;
 }
 
+// Find a completed series by name from the starTrek progress object.
+// Supports both new completedSeries array format and legacy single previousSeriesComplete object.
+function findCompletedSeries(starTrek: any, name: string) {
+  // New format: completedSeries array
+  if (Array.isArray(starTrek.completedSeries)) {
+    const entry = starTrek.completedSeries.find((s: any) => s.series === name);
+    if (entry) return { series: entry.series, episodes: entry.totalEpisodes };
+  }
+  // Legacy format: single previousSeriesComplete object
+  if (starTrek.previousSeriesComplete?.series === name) {
+    return {
+      series: starTrek.previousSeriesComplete.series,
+      episodes: starTrek.previousSeriesComplete.totalEpisodes,
+    };
+  }
+  return null;
+}
+
 export async function load() {
   // publishedEntries maps createdAt to date (YYYY-MM-DD string), so sort by date
   const sorted = [...publishedEntries].sort(
@@ -125,19 +143,8 @@ export async function load() {
           percent: starTrek.percentComplete,
           done: starTrek.totalEpisodesWatched + "/" + starTrek.totalEpisodes,
           journalEntries: starTrek.journalEntries ?? 0,
-          tngComplete: starTrek.previousSeriesComplete
-            ? {
-                series: starTrek.previousSeriesComplete.series,
-                episodes: starTrek.previousSeriesComplete.totalEpisodes,
-              }
-            : null,
-          ds9Complete: starTrek.series === "Deep Space Nine" && starTrek.seriesComplete
-            ? {
-                series: starTrek.series,
-                episodes: starTrek.totalEpisodesWatched,
-                total: starTrek.totalEpisodes,
-              }
-            : null,
+          tngComplete: findCompletedSeries(starTrek, "The Next Generation"),
+          ds9Complete: findCompletedSeries(starTrek, "Deep Space Nine"),
           nextSeries: starTrek.nextSeries
             ? {
                 series: starTrek.nextSeries.series,
