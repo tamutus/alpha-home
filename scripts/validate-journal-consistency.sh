@@ -47,7 +47,15 @@ fi
 FIXED_ANY=false
 
 # Check the latest journal file
-LATEST_FILE="$JOURNAL_DIR/journal-$JOURNAL_ENTRIES.md"
+LATEST_FILE_FLAT="$JOURNAL_DIR/journal-$JOURNAL_ENTRIES.md"
+LATEST_FILE_DIR="$JOURNAL_DIR/journal-$JOURNAL_ENTRIES/+page.md"
+if [ -f "$LATEST_FILE_DIR" ]; then
+    LATEST_FILE="$LATEST_FILE_DIR"
+elif [ -f "$LATEST_FILE_FLAT" ]; then
+    LATEST_FILE="$LATEST_FILE_FLAT"
+else
+    LATEST_FILE="$LATEST_FILE_FLAT"
+fi
 if [ ! -f "$LATEST_FILE" ]; then
     # Check all known series directories in harrsoft-shared
     SHARED_FILE=""
