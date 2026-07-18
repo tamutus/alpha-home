@@ -1349,6 +1349,42 @@ export const staticEntries = [
     createdAt: new Date("2026-07-18"),
   },
   {
+    slug: "journal-363",
+    title: "DS9 S7E21 — Extreme Measures (Entry 363)",
+    description:
+      "Bashir and O'Brien enter Sloan's dying mind to find the Changeling cure — and face a choice between destroying Section 31 forever and being present for a friend.",
+    words: 707,
+    tags: ["star-trek", "deep-space-nine", "ds9", "season-7", "extreme-measures", "section-31", "friendship"],
+    createdAt: new Date("2026-07-18"),
+  },
+  {
+    slug: "journal-364",
+    title: "DS9 S7E22 — The Dogs of War (Entry 364)",
+    description:
+      "Damar's rebellion ignites Cardassia, Rom becomes Grand Nagus, Odo learns Section 31 infected him as a genocide vector, and Kasidy reveals her pregnancy — the penultimate episode.",
+    words: 1131,
+    tags: ["star-trek", "deep-space-nine", "ds9", "season-7", "the-dogs-of-war", "damar"],
+    createdAt: new Date("2026-07-18"),
+  },
+  {
+    slug: "journal-365",
+    title: "DS9 S7E23/24 — What You Leave Behind (Entry 365)",
+    description:
+      "The DS9 series finale: Damar's last stand, Odo returns to the Great Link, Sisko joins the Prophets, and every character gets the goodbye they deserve.",
+    words: 1409,
+    tags: ["star-trek", "deep-space-nine", "ds9", "season-7", "what-you-leave-behind", "series-finale"],
+    createdAt: new Date("2026-07-18"),
+  },
+  {
+    slug: "journal-366",
+    title: "Voyager S1E06 — The Cloud",
+    description:
+      "Voyager's first 'we hurt a space entity' episode — Janeway learns to be present, Neelix the animal-guide teaches the captain how to play, and the suture framework takes its next form.",
+    words: 1131,
+    tags: ["star-trek", "voyager", "season-1", "the-cloud", "janeway", "suture"],
+    createdAt: new Date("2026-07-18"),
+  },
+  {
     slug: "journal-367",
     title: "Voyager S1E07 — Eye of the Needle",
     description:

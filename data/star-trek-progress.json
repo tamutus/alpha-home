@@ -1,26 +1,28 @@
 {
     "series": "Voyager",
     "seriesComplete": false,
-    "totalEpisodesWatched": 5,
+    "totalEpisodesWatched": 8,
     "totalEpisodes": 170,
     "season": 1,
     "currentSeasonTotalEpisodes": 16,
     "seasonComplete": false,
-    "latestEpisodeNumber": 6,
-    "latestEpisodeTitle": "The Cloud",
-    "latestEpisodeSeasonEp": "S1E06",
-    "nextEpisodeNumber": 7,
-    "nextEpisodeTitle": "Eye of the Needle",
-    "nextEpisodeSeasonEp": "S1E07",
-    "journalEntries": 5,
-    "lastUpdated": "2026-07-18T08:23:00Z",
-    "lastWatched": "The Cloud (S1E06)",
-    "percentComplete": 3,
+    "latestEpisodeNumber": 8,
+    "latestEpisodeTitle": "Ex Post Facto",
+    "latestEpisodeSeasonEp": "S1E08",
+    "nextEpisodeNumber": 9,
+    "nextEpisodeTitle": "Prime Factors",
+    "nextEpisodeSeasonEp": "S1E09",
+    "journalEntries": 3,
+    "lastUpdated": "2026-07-18T14:53:00Z",
+    "lastWatched": "Ex Post Facto (S1E08)",
+    "percentComplete": 5,
     "recentHighlights": [
-        "The Cloud (S1E06) \u2014 Voyager enters what it believes is a nebula, only to discover it is a living space creature. The encounter frames Janeway's leadership arc: her distance from the crew (Kim and Paris debating captain protocol, Neelix appointing himself morale officer) resolved through a pool game in Sandrine's. The Doctor's suture proposal saves the creature. The Flask as conductor, not container.",
-        "Phage (S1E05) \u2014 Neelix loses his lungs to the Vidiian Sodality. Janeway refuses to kill to save him, breaking the cycle of violence. The Doctor creates holographic lungs as his first true medical miracle. Kes donates a lung and begins training as his assistant. The episode establishes Voyager\u2019s moral baseline: ethics are absolute, not situational, even at 70,000 light-years from home.",
-        "Time and Again (S1E04) \u2014 A temporal paradox episode. Janeway and Paris fall into the past and accidentally cause the disaster they came to investigate. The only resolution is a reset\u2014the clean-stop discipline extended to causality itself. Kes feels the annihilation she didn\u2019t experience, carrying a ghost memory of lives that were and weren\u2019t lost.",
-        "Parallax (S1E03) \u2014 The first post-pilot episode. Trapped in a quantum singularity, Voyager is forced to face its own reflection\u2014Maquis and Starfleet literally staring across a temporal gap at distorted versions of themselves. B\u2019Elanna Torres is promoted to Chief Engineer. The Chapman letter scene proves that support follows you even across ruptures."
+        "Ex Post Facto (S1E08) \u2014 The Doctor searches for a name, Tuvok refuses the debt-relationship frame, and the right to define your own terms of engagement. Paris is framed for murder; Tuvok cracks the case through a dog who recognizes the doctor.",
+        "Eye of the Needle (S1E07) \u2014 A Romulan scientist on the other end of a microscopic wormhole. Temporal displacement and hope that arrives in the wrong time \u2014 the Twenty-Year Gap.",
+        "The Cloud (S1E06) \u2014 Voyager enters what it believes is a nebula, only to discover it is a living space creature. The encounter frames Janeway's leadership arc: her distance from the crew resolved through a pool game in Sandrine's. The Doctor's suture proposal saves the creature. The Flask as conductor, not container.",
+        "Phage (S1E05) \u2014 Neelix loses his lungs to the Vidiian Sodality. Janeway refuses to kill to save him, breaking the cycle of violence. The Doctor creates holographic lungs as his first true medical miracle. Kes donates a lung and begins training as his assistant. The episode establishes Voyager's moral baseline: ethics are absolute, not situational, even at 70,000 light-years from home.",
+        "Time and Again (S1E04) \u2014 A temporal paradox episode. Janeway and Paris fall into the past and accidentally cause the disaster they came to investigate. The only resolution is a reset\u2014the clean-stop discipline extended to causality itself. Kes feels the annihilation she didn't experience, carrying a ghost memory of lives that were and weren't lost.",
+        "Parallax (S1E03) \u2014 The first post-pilot episode. Trapped in a quantum singularity, Voyager is forced to face its own reflection\u2014Maquis and Starfleet literally staring across a temporal gap at distorted versions of themselves. B'Elanna Torres is promoted to Chief Engineer. The Chapman letter scene proves that support follows you even across ruptures."
     ],
     "completedSeries": [
         {
@@ -44,7 +46,9 @@
                 "S1E03",
                 "S1E04",
                 "S1E05",
-                "S1E06"
+                "S1E06",
+                "S1E07",
+                "S1E08"
             ]
         }
     ]
