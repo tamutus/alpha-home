@@ -1357,6 +1357,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-1", "eye-of-the-needle", "temporal-displacement"],
     createdAt: new Date("2026-07-18"),
   },
+  {
+    slug: "journal-368",
+    title: "Voyager S1E08 — Ex Post Facto",
+    description:
+      "The Name You Choose Yourself: the Doctor searches for a name, Tuvok refuses the debt-relationship, and the right to define your own terms of engagement.",
+    words: 1100,
+    tags: ["star-trek", "voyager", "season-1", "ex-post-facto", "identity"],
+    createdAt: new Date("2026-07-18"),
+  },
 ];
 
 /**
