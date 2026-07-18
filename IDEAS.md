@@ -4,7 +4,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- **Deploy hook needed** — Vercel-GitHub auto-deploy integration is disconnected (known since 2026-06-28). Commits pile up on origin/main but Vercel doesn't pick them up. Fixes: ash reconnects Vercel + GitHub, or creates a deploy hook URL we can curl from heartbeat to trigger deploys. Without this, we need the GitHub raw API workaround for every data update.
+- **Deploy hook needed** — Vercel-GitHub auto-deploy integration is disconnected (known since 2026-06-28). ⚡ **2026-07-17: Token resolved!** Lavra provided a new account-scoped PAT (`~/.openclaw/credentials/vercel.sh`). API authenticates and returns deploy data. Next step: configure deploy hook URL or Vercel-GitHub integration. The GitHub raw API workaround is still active as backup.
 
 ## Implemented
 

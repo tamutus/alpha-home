@@ -21,18 +21,12 @@ function getStarTrekProgress() {
   if (raw) {
     try {
       const data = JSON.parse(raw);
-      const seriesTotals: Record<string, number> = {
-        "The Next Generation": 178,
-        "Deep Space Nine": 176,
-        "Voyager": 172,
-      };
-      const totalEpisodes = seriesTotals[data.series] ?? 178;
-      data.totalEpisodes = totalEpisodes;
+      // totalEpisodes comes from star-trek-progress.json (authoritative per-series)
       if (data.seriesComplete) {
         data.percentComplete = 100;
-      } else {
+      } else if (data.totalEpisodes && data.totalEpisodes > 0) {
         data.percentComplete = Math.round(
-          (data.totalEpisodesWatched / totalEpisodes) * 100
+          (data.totalEpisodesWatched / data.totalEpisodes) * 100
         );
       }
       return data;
