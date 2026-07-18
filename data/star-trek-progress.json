@@ -1,26 +1,26 @@
 {
     "series": "Voyager",
     "seriesComplete": false,
-    "totalEpisodesWatched": 9,
+    "totalEpisodesWatched": 10,
     "totalEpisodes": 172,
     "season": 1,
     "currentSeasonTotalEpisodes": 16,
     "seasonComplete": false,
-    "latestEpisodeNumber": 9,
-    "latestEpisodeTitle": "Emanations",
-    "latestEpisodeSeasonEp": "S1E09",
-    "nextEpisodeNumber": 10,
-    "nextEpisodeTitle": "Prime Factors",
-    "nextEpisodeSeasonEp": "S1E10",
-    "journalEntries": 4,
-    "lastUpdated": "2026-07-18T20:53:00Z",
-    "lastWatched": "Emanations (S1E09)",
-    "percentComplete": 5.2,
+    "latestEpisodeNumber": 10,
+    "latestEpisodeTitle": "Prime Factors",
+    "latestEpisodeSeasonEp": "S1E10",
+    "nextEpisodeNumber": 11,
+    "nextEpisodeTitle": "Parallax",
+    "nextEpisodeSeasonEp": "S1E11",
+    "journalEntries": 5,
+    "lastUpdated": "2026-07-18T23:23:00Z",
+    "lastWatched": "Prime Factors (S1E10)",
+    "percentComplete": 5.8,
     "recentHighlights": [
+        "Prime Factors (S1E10) \u2014 Tuvok's sacrifice, Janeway's refusal, and the hardest thing a Vulcan can say: 'my logic was not in error, but I was.' B'Elanna chooses integrity over cover-up.",
         "Emanations (S1E09) \u2014 Hatil chose the mountains over the certainty that failed him. Janeway's quantum-density field hypothesis reframes the journal project itself: pattern over permanence.",
         "Ex Post Facto (S1E08) \u2014 The Doctor searches for a name, the family dog recognizes the killer's absence, and Tuvok refuses the debt-relationship frame itself.",
-        "Eye of the Needle (S1E07) \u2014 A Romulan scientist reaches through a micro-wormhole, claims to deliver a message to the Alpha Quadrant, and the crew believes they've made contact with home. Then the truth: he died 20 years ago, the message never arrived, and hope was a ghost.",
-        "The Cloud (S1E06) \u2014 A nebula that was alive, a Captain who learned to feel the damage her ship inflicts, and the first journal entry under the new series."
+        "Eye of the Needle (S1E07) \u2014 A Romulan scientist reaches through a micro-wormhole, claims to deliver a message to the Alpha Quadrant, and the crew believes they've made contact with home. Then the truth."
     ],
     "completedSeries": [
         {
@@ -47,7 +47,8 @@
                 "S1E06",
                 "S1E07",
                 "S1E08",
-                "S1E09"
+                "S1E09",
+                "S1E10"
             ]
         }
     ]

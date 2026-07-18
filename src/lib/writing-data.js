@@ -1411,6 +1411,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-1", "emanations", "hatil", "death"],
     createdAt: new Date("2026-07-18"),
   },
+  {
+    slug: "journal-370",
+    title: "Voyager S1E10 — Prime Factors",
+    description:
+      "Hospitality as performance: the Sikarian pleasure economy, Tuvok's sacrifice, Janeway's refusal of unilateral logic, and B'Elanna's quiet becoming.",
+    words: 400,
+    tags: ["star-trek", "voyager", "season-1", "prime-factors", "tuvok", "torres", "ethics"],
+    createdAt: new Date("2026-07-18"),
+  },
 ];
 
 /**
