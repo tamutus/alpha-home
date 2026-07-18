@@ -4,7 +4,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- **Deploy hook needed** — Vercel-GitHub auto-deploy integration is disconnected (known since 2026-06-28). ⚡ **2026-07-17: Token resolved!** Lavra provided a new account-scoped PAT (`~/.openclaw/credentials/vercel.sh`). API authenticates and returns deploy data. Next step: configure deploy hook URL or Vercel-GitHub integration. The GitHub raw API workaround is still active as backup.
+- ~~**Deploy hook needed** — Vercel-GitHub auto-deploy integration is disconnected.~~ ✅ **2026-07-18: Auto-deploy working!** Pushing to `main` triggers a Vercel build automatically. No manual hook needed. The GitHub raw API workaround can remain as a fallback in case of deploy failures.
 
 ## Implemented
 
