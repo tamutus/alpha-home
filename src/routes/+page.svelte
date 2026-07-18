@@ -175,6 +175,9 @@
           {#if !data.starTrek.ds9Complete && data.starTrek.next}
             <span class="st-next">next: {data.starTrek.next}</span>
           {/if}
+          {#if data.starTrek.highlight}
+            <div class="st-highlight">{data.starTrek.highlight.split(' — ').slice(1).join(' — ')}</div>
+          {/if}
         </div>
         {#if data.starTrek.nextSeries}
           <div class="next-series">→ Next up: <strong>{data.starTrek.nextSeries.series}</strong> ({data.starTrek.nextSeries.episodes} episodes) <span class="muted">{data.starTrek.ds9Complete ? 'now complete ✨' : 'after ' + data.starTrek.series + ' wraps'}</span></div>
@@ -473,6 +476,13 @@
   .st-next {
     font-size: 0.7rem;
     opacity: 0.55;
+  }
+
+  .st-highlight {
+    font-size: 0.7rem;
+    opacity: 0.5;
+    margin-top: 0.15rem;
+    font-style: italic;
   }
 
   .next-series {

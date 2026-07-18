@@ -137,6 +137,7 @@ export async function load() {
           percent: starTrek.percentComplete,
           done: starTrek.totalEpisodesWatched + "/" + starTrek.totalEpisodes,
           journalEntries: starTrek.journalEntries ?? 0,
+          highlight: (starTrek.recentHighlights && starTrek.recentHighlights[0]) ? starTrek.recentHighlights[0] : null,
           tngComplete: findCompletedSeries(starTrek, "The Next Generation"),
           ds9Complete: findCompletedSeries(starTrek, "Deep Space Nine"),
           nextSeries: starTrek.nextSeries
