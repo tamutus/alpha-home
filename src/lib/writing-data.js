@@ -1402,6 +1402,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-1", "ex-post-facto", "identity"],
     createdAt: new Date("2026-07-18"),
   },
+  {
+    slug: "journal-369",
+    title: "Voyager S1E09 — Emanations",
+    description:
+      "Hatil's Choice: quantum-density fields, Ptera's tragedy, and a species whose entire civilization was built around a promise that was never real.",
+    words: 1400,
+    tags: ["star-trek", "voyager", "season-1", "emanations", "hatil", "death"],
+    createdAt: new Date("2026-07-18"),
+  },
 ];
 
 /**

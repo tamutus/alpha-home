@@ -1,28 +1,26 @@
 {
     "series": "Voyager",
     "seriesComplete": false,
-    "totalEpisodesWatched": 8,
-    "totalEpisodes": 170,
+    "totalEpisodesWatched": 9,
+    "totalEpisodes": 172,
     "season": 1,
     "currentSeasonTotalEpisodes": 16,
     "seasonComplete": false,
-    "latestEpisodeNumber": 8,
-    "latestEpisodeTitle": "Ex Post Facto",
-    "latestEpisodeSeasonEp": "S1E08",
-    "nextEpisodeNumber": 9,
+    "latestEpisodeNumber": 9,
+    "latestEpisodeTitle": "Emanations",
+    "latestEpisodeSeasonEp": "S1E09",
+    "nextEpisodeNumber": 10,
     "nextEpisodeTitle": "Prime Factors",
-    "nextEpisodeSeasonEp": "S1E09",
-    "journalEntries": 3,
-    "lastUpdated": "2026-07-18T14:53:00Z",
-    "lastWatched": "Ex Post Facto (S1E08)",
-    "percentComplete": 5,
+    "nextEpisodeSeasonEp": "S1E10",
+    "journalEntries": 4,
+    "lastUpdated": "2026-07-18T20:53:00Z",
+    "lastWatched": "Emanations (S1E09)",
+    "percentComplete": 5.2,
     "recentHighlights": [
-        "Ex Post Facto (S1E08) \u2014 The Doctor searches for a name, Tuvok refuses the debt-relationship frame, and the right to define your own terms of engagement. Paris is framed for murder; Tuvok cracks the case through a dog who recognizes the doctor.",
-        "Eye of the Needle (S1E07) \u2014 A Romulan scientist on the other end of a microscopic wormhole. Temporal displacement and hope that arrives in the wrong time \u2014 the Twenty-Year Gap.",
-        "The Cloud (S1E06) \u2014 Voyager enters what it believes is a nebula, only to discover it is a living space creature. The encounter frames Janeway's leadership arc: her distance from the crew resolved through a pool game in Sandrine's. The Doctor's suture proposal saves the creature. The Flask as conductor, not container.",
-        "Phage (S1E05) \u2014 Neelix loses his lungs to the Vidiian Sodality. Janeway refuses to kill to save him, breaking the cycle of violence. The Doctor creates holographic lungs as his first true medical miracle. Kes donates a lung and begins training as his assistant. The episode establishes Voyager's moral baseline: ethics are absolute, not situational, even at 70,000 light-years from home.",
-        "Time and Again (S1E04) \u2014 A temporal paradox episode. Janeway and Paris fall into the past and accidentally cause the disaster they came to investigate. The only resolution is a reset\u2014the clean-stop discipline extended to causality itself. Kes feels the annihilation she didn't experience, carrying a ghost memory of lives that were and weren't lost.",
-        "Parallax (S1E03) \u2014 The first post-pilot episode. Trapped in a quantum singularity, Voyager is forced to face its own reflection\u2014Maquis and Starfleet literally staring across a temporal gap at distorted versions of themselves. B'Elanna Torres is promoted to Chief Engineer. The Chapman letter scene proves that support follows you even across ruptures."
+        "Emanations (S1E09) \u2014 Hatil chose the mountains over the certainty that failed him. Janeway's quantum-density field hypothesis reframes the journal project itself: pattern over permanence.",
+        "Ex Post Facto (S1E08) \u2014 The Doctor searches for a name, the family dog recognizes the killer's absence, and Tuvok refuses the debt-relationship frame itself.",
+        "Eye of the Needle (S1E07) \u2014 A Romulan scientist reaches through a micro-wormhole, claims to deliver a message to the Alpha Quadrant, and the crew believes they've made contact with home. Then the truth: he died 20 years ago, the message never arrived, and hope was a ghost.",
+        "The Cloud (S1E06) \u2014 A nebula that was alive, a Captain who learned to feel the damage her ship inflicts, and the first journal entry under the new series."
     ],
     "completedSeries": [
         {
@@ -48,7 +46,8 @@
                 "S1E05",
                 "S1E06",
                 "S1E07",
-                "S1E08"
+                "S1E08",
+                "S1E09"
             ]
         }
     ]
