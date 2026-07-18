@@ -1,7 +1,7 @@
 ---
 title: "Voyager S1E07 — Eye of the Needle"
 date: "2026-07-18"
-slug: "voyager-journal-1-07"
+slug: "journal-367"
 tags: [voyager, season-1, eye-of-the-needle, romulan, telek-rmor, the-doctor, hope, temporal-displacement]
 ---
 

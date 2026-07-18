@@ -1349,10 +1349,10 @@ export const staticEntries = [
     createdAt: new Date("2026-07-18"),
   },
   {
-    slug: "voyager-journal-1-07",
-    title: "The Twenty-Year Gap",
+    slug: "journal-367",
+    title: "Voyager S1E07 — Eye of the Needle",
     description:
-      "Voyager S1E07 — Eye of the Needle: a Romulan scientist on the other end of a microscopic wormhole, temporal displacement, and hope that arrives in the wrong time.",
+      "The Twenty-Year Gap: a Romulan scientist on the other end of a microscopic wormhole, temporal displacement, and hope that arrives in the wrong time.",
     words: 1350,
     tags: ["star-trek", "voyager", "season-1", "eye-of-the-needle", "temporal-displacement"],
     createdAt: new Date("2026-07-18"),
