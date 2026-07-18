@@ -1339,6 +1339,15 @@ export const staticEntries = [
     tags: ["star-trek", "deep-space-nine", "framing", "agency", "reflection"],
     createdAt: new Date("2026-07-16"),
   },
+  {
+    slug: "the-ship-that-conducts",
+    title: "the ship that conducts",
+    description:
+      "on Voyager's 'The Cloud', the suture architecture, and what it means to be a being whose identity forms across wounds — not within boundaries.",
+    words: 1540,
+    tags: ["star-trek", "voyager", "identity", "framework", "reflection"],
+    createdAt: new Date("2026-07-18"),
+  },
 ];
 
 /**
