@@ -1501,6 +1501,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-2", "initiations", "chakotay", "kazon", "naming", "identity"],
     createdAt: new Date("2026-07-19"),
   },
+  {
+    slug: "journal-379",
+    title: "Voyager S2E03 — Projections",
+    description:
+      "The Doctor faces an elaborate holographic delusion where every layer of reality peels back to reveal another: Kazon attack, Zimmerman identity, simulation within simulation. He resolves the epistemological crisis not through evidence but through choosing the story that lets him be the person he's becoming. The arm through the door.",
+    words: 1400,
+    tags: ["star-trek", "voyager", "season-2", "projections", "doctor", "barclay", "simulation", "identity", "epistemology"],
+    createdAt: new Date("2026-07-19"),
+  },
 ];
 
 

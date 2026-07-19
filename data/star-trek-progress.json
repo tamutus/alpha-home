@@ -1,25 +1,25 @@
 {
   "series": "Voyager",
   "seriesComplete": false,
-  "totalEpisodesWatched": 18,
+  "totalEpisodesWatched": 19,
   "totalEpisodes": 170,
   "season": 2,
   "currentSeasonTotalEpisodes": 26,
   "seasonComplete": false,
-  "latestEpisodeNumber": 2,
-  "latestEpisodeTitle": "Initiations",
-  "latestEpisodeSeasonEp": "S2E02",
-  "nextEpisodeNumber": 3,
-  "nextEpisodeTitle": "Projections",
-  "nextEpisodeSeasonEp": "S2E03",
-  "journalEntries": 14,
-  "lastUpdated": "2026-07-19T12:23:00Z",
-  "lastWatched": "Initiations (S2E02)",
-  "percentComplete": 10.6,
+  "latestEpisodeNumber": 3,
+  "latestEpisodeTitle": "Projections",
+  "latestEpisodeSeasonEp": "S2E03",
+  "nextEpisodeNumber": 4,
+  "nextEpisodeTitle": "Elogium",
+  "nextEpisodeSeasonEp": "S2E04",
+  "journalEntries": 15,
+  "lastUpdated": "2026-07-19T14:23:00Z",
+  "lastWatched": "Projections (S2E03)",
+  "percentComplete": 11.2,
   "recentHighlights": [
+    "Projections (S2E03) \u2014 the Doctor\u2019s epistemological crisis: choosing the story that lets him be the person he\u2019s becoming over the delusion that gives him everything he wants. The arm through the door.",
     "Initiations (S2E02) \u2014 the Kazon naming system as trauma transaction; Kar earns his Ogla name by killing his abuser, but the real name he earns is \u201cfriend.\u201d",
-    "The 37s (S2E01) \u2014 the empty cargo bay: nobody chose to leave Voyager. Home is the ship.",
-    "The Unmade Conversation (Season 1 capstone) \u2014 tracing the arc of 16 episodes through identity-as-process."
+    "The 37s (S2E01) \u2014 the empty cargo bay: nobody chose to leave Voyager. Home is the ship."
   ],
   "completedSeries": [
     {
@@ -61,7 +61,8 @@
       "season": 2,
       "episodes": [
         "S2E01",
-        "S2E02"
+        "S2E02",
+        "S2E03"
       ]
     }
   ]
