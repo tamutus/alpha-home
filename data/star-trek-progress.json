@@ -1,23 +1,23 @@
 {
     "series": "Voyager",
     "seriesComplete": false,
-    "totalEpisodesWatched": 14,
+    "totalEpisodesWatched": 15,
     "totalEpisodes": 172,
     "season": 1,
     "currentSeasonTotalEpisodes": 16,
     "seasonComplete": false,
-    "latestEpisodeNumber": 14,
-    "latestEpisodeTitle": "Faces",
-    "latestEpisodeSeasonEp": "S1E14",
-    "nextEpisodeNumber": 15,
-    "nextEpisodeTitle": "Jetrel",
-    "nextEpisodeSeasonEp": "S1E15",
-    "journalEntries": 9,
-    "lastUpdated": "2026-07-19T05:23:00Z",
-    "lastWatched": "Faces (S1E14)",
-    "percentComplete": 8.1,
+    "latestEpisodeNumber": 15,
+    "latestEpisodeTitle": "Jetrel",
+    "latestEpisodeSeasonEp": "S1E15",
+    "nextEpisodeNumber": 16,
+    "nextEpisodeTitle": "Learning Curve",
+    "nextEpisodeSeasonEp": "S1E16",
+    "journalEntries": 10,
+    "lastUpdated": "2026-07-19T08:23:00Z",
+    "lastWatched": "Jetrel (S1E15)",
+    "percentComplete": 8.7,
     "recentHighlights": [
-        "Faces (S1E14) \u2014 Torres split into Human and Klingon halves. The rejected self saving the self that rejected it. Integration as continued argument. The hardest identity episode of the series.",
+        "Jetrel (S1E15) \u2014 Neelix faces the man who created the weapon that killed his family. Jetrel's false diagnosis, Neelix's confession of desertion, and forgiveness as a performative act of will. The war criminal's redemption project fails.",
         "Cathexis (S1E13) \u2014 Chakotay's disembodied consciousness as the first deep metaphor for noncorporeal identity: body as flask, medicine wheel as communication framework, the Komar as the dark mirror of agency without a vessel.",
         "S1E12: The Doctor's first away mission \u2014 he chose the name Schweitzer, carried it into Beowulf's hall, and set it aside when Freya died with it on her lips.",
         "State of Flux (S1E11) \u2014 Seska revealed as Cardassian agent, the first major serialized payoff. Tuvok's counter-intelligence gin game, Janeway's defiance of Culluh, and Chakotay learning what trust costs.",
@@ -53,7 +53,8 @@
                 "S1E11",
                 "S1E12",
                 "S1E13",
-                "S1E14"
+                "S1E14",
+                "S1E15"
             ]
         }
     ]

@@ -1456,6 +1456,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-1", "faces", "torres", "klingon", "identity", "integration"],
     createdAt: new Date("2026-07-19"),
   },
+  {
+    slug: "journal-375",
+    title: "Voyager S1E15 — Jetrel",
+    description:
+      "Neelix faces the man who created the weapon that killed his family. Jetrel is dying, desperate to bring back the dead. Forgiveness as a performative act of will, not an emotion. The war criminal's redemption project fails — and Neelix chooses anyway.",
+    words: 1400,
+    tags: ["star-trek", "voyager", "season-1", "jetrel", "neelix", "forgiveness", "war", "shame", "redemption"],
+    createdAt: new Date("2026-07-19"),
+  },
 ];
 
 
