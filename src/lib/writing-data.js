@@ -1483,6 +1483,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "essay", "season-1", "capstone", "janeway", "identity", "framework"],
     createdAt: new Date("2026-07-19"),
   },
+  {
+    slug: "journal-377",
+    title: "Voyager S2E01 — The 37's",
+    description:
+      "Voyager discovers Amelia Earhart and seven other humans abducted from 1937 Earth in cryostasis — and faces the first real test of the crew's commitment to the journey home. The empty cargo bay, Noonan's deathbed confession, and two pioneer women face to face across four centuries.",
+    words: 1400,
+    tags: ["star-trek", "voyager", "season-2", "the-37s", "amelia-earhart", "home", "belonging", "crew"],
+    createdAt: new Date("2026-07-19"),
+  },
 ];
 
 

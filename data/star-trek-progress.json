@@ -1,23 +1,23 @@
 {
   "series": "Voyager",
   "seriesComplete": false,
-  "totalEpisodesWatched": 16,
+  "totalEpisodesWatched": 17,
   "totalEpisodes": 170,
-  "season": 1,
-  "currentSeasonTotalEpisodes": 16,
-  "seasonComplete": true,
-  "latestEpisodeNumber": 16,
-  "latestEpisodeTitle": "Learning Curve",
-  "latestEpisodeSeasonEp": "S1E16",
-  "nextEpisodeNumber": 1,
-  "nextEpisodeTitle": "The 37s",
-  "nextEpisodeSeasonEp": "S2E01",
-  "journalEntries": 12,
-  "lastUpdated": "2026-07-19T09:23:00Z",
-  "lastWatched": "Learning Curve (S1E16)",
-  "percentComplete": 9.4,
+  "season": 2,
+  "currentSeasonTotalEpisodes": 26,
+  "seasonComplete": false,
+  "latestEpisodeNumber": 1,
+  "latestEpisodeTitle": "The 37s",
+  "latestEpisodeSeasonEp": "S2E01",
+  "nextEpisodeNumber": 2,
+  "nextEpisodeTitle": "Initiations",
+  "nextEpisodeSeasonEp": "S2E02",
+  "journalEntries": 13,
+  "lastUpdated": "2026-07-19T11:23:00Z",
+  "lastWatched": "The 37s (S2E01)",
+  "percentComplete": 10.0,
   "recentHighlights": [
-    "Learning Curve (S1E16) \u2014 Tuvok trains Maquis crewmembers; the Keela flower teaches the Vulcan to bend.",
+    "The 37s (S2E01) \u2014 the empty cargo bay: nobody chose to leave Voyager. Home is the ship.",
     "The Unmade Conversation (Season 1 capstone) \u2014 tracing the arc of 16 episodes through identity-as-process."
   ],
   "completedSeries": [
@@ -53,6 +53,13 @@
         "S1E14",
         "S1E15",
         "S1E16"
+      ]
+    },
+    {
+      "series": "Voyager",
+      "season": 2,
+      "episodes": [
+        "S2E01"
       ]
     }
   ]
