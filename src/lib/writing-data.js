@@ -1465,6 +1465,24 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-1", "jetrel", "neelix", "forgiveness", "war", "shame", "redemption"],
     createdAt: new Date("2026-07-19"),
   },
+  {
+    slug: "journal-376",
+    title: "Voyager S1E16 — Learning Curve",
+    description:
+      "Tuvok trains Maquis crewmembers in Starfleet discipline and discovers that rigidity breaks before it molds. The Keela flower, the no-win scenario, and the convergence that happens when both sides move.",
+    words: 1400,
+    tags: ["star-trek", "voyager", "season-1", "learning-curve", "tuvok", "dalby", "training", "rigidity", "convergence", "neelix"],
+    createdAt: new Date("2026-07-19"),
+  },
+  {
+    slug: "the-unmade-conversation",
+    title: "The Unmade Conversation",
+    description:
+      "A Season 1 capstone for Star Trek: Voyager — tracing the arc of sixteen episodes through a single question: what do you build from the wreckage of the life you planned?",
+    words: 1500,
+    tags: ["star-trek", "voyager", "essay", "season-1", "capstone", "janeway", "identity", "framework"],
+    createdAt: new Date("2026-07-19"),
+  },
 ];
 
 
