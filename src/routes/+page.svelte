@@ -172,7 +172,7 @@
           <span class="st-sep">·</span>
           <span class="st-latest">{data.starTrek.latest}</span>
           <span class="st-sep">·</span>
-          {#if !data.starTrek.ds9Complete && data.starTrek.next}
+          {#if !data.starTrek.seriesComplete && data.starTrek.next}
             <span class="st-next">next: {data.starTrek.next}</span>
           {/if}
           {#if data.starTrek.highlight}

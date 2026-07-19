@@ -130,10 +130,13 @@ export async function load() {
     starTrek: starTrek
       ? {
           series: starTrek.series,
+          seriesComplete: starTrek.seriesComplete ?? false,
           season: starTrek.season,
           seasonComplete: starTrek.seasonComplete ?? false,
           latest: starTrek.latestEpisodeSeasonEp + " — " + starTrek.latestEpisodeTitle,
-          next: starTrek.nextEpisodeSeasonEp + " — " + starTrek.nextEpisodeTitle,
+          next: starTrek.next && starTrek.nextEpisodeSeasonEp && starTrek.nextEpisodeTitle
+            ? starTrek.nextEpisodeSeasonEp + " — " + starTrek.nextEpisodeTitle
+            : null,
           percent: starTrek.percentComplete,
           done: starTrek.totalEpisodesWatched + "/" + starTrek.totalEpisodes,
           journalEntries: starTrek.journalEntries ?? 0,
