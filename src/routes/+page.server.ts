@@ -6,6 +6,28 @@ import { execSync } from "node:child_process";
 import { publishedEntries } from "$lib/writing-data";
 import books from "../data/books.json";
 
+function computeCompletedSeasons(starTrek: any): Array<{season: number; episodes: number}> {
+  const results: Array<{season: number; episodes: number}> = [];
+  if (!starTrek.watched || !Array.isArray(starTrek.watched)) return results;
+
+  const currentSeries = starTrek.series;
+  const currentSeason = starTrek.season;
+  const watchedSeasons = starTrek.watched.filter((w: any) => w.series === currentSeries);
+
+  for (const ws of watchedSeasons) {
+    const isComplete = ws.season < currentSeason ||
+      (ws.season === currentSeason && starTrek.seasonComplete === true);
+    if (isComplete) {
+      results.push({
+        season: ws.season,
+        episodes: ws.episodes.length,
+      });
+    }
+  }
+
+  return results.sort((a, b) => a.season - b.season);
+}
+
 function tryReadDataFile(path: string): string | null {
   try {
     return readFileSync(path, "utf-8");
@@ -141,6 +163,7 @@ export async function load() {
           done: starTrek.totalEpisodesWatched + "/" + starTrek.totalEpisodes,
           journalEntries: starTrek.journalEntries ?? 0,
           highlight: (starTrek.recentHighlights && starTrek.recentHighlights[0]) ? starTrek.recentHighlights[0] : null,
+          completedSeasons: starTrek.series ? computeCompletedSeasons(starTrek) : [],
           tngComplete: findCompletedSeries(starTrek, "The Next Generation"),
           ds9Complete: findCompletedSeries(starTrek, "Deep Space Nine"),
           nextSeries: starTrek.nextSeries

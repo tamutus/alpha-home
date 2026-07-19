@@ -122,7 +122,7 @@
   {:else if starTrek.seriesComplete}
   <li>star trek: <strong>all episodes of {starTrek.series} watched and journaled</strong> ({starTrek.totalEpisodesWatched}/{starTrek.totalEpisodes} episodes, <strong>{starTrek.percentComplete}% complete</strong> ✓). finished with "{starTrek.latestEpisodeTitle}" {starTrek.latestEpisodeSeasonEp} on {starTrek.latestWatched}. {#if starTrek.nextSeries}next up: <strong>{starTrek.nextSeries.series}</strong> ({starTrek.nextSeries.totalEpisodes} episodes).{/if} <a href="/series#star-trek">{starTrek.totalEpisodesWatched} episodes journaled</a> with theme analysis and cross-references to consent/sovereignty concepts for the blueprint{#if daysSinceDeploy > 7} <span class="badge-stale">📡 snapshot from deploy &mdash; progress continues</span>{/if}</li>
   {:else if starTrek.previousSeriesComplete}
-  <li><strong>series complete</strong> {starTrek.previousSeriesComplete.series}: all {starTrek.previousSeriesComplete.totalEpisodes} episodes watched and journaled ({starTrek.previousSeriesComplete.journalEntries} journal entries). currently watching <strong>{starTrek.series}</strong> ({starTrek.totalEpisodesWatched}/{starTrek.totalEpisodes} episodes, <strong>{starTrek.percentComplete}% complete</strong> — <strong>S{starTrek.season}: {starTrek.latestEpisodeNumber}/{starTrek.currentSeasonTotalEpisodes} episodes{#if starTrek.seasonComplete} ✓{/if}</strong> — latest: "{starTrek.latestEpisodeTitle}" {starTrek.latestEpisodeSeasonEp}, next up: "{starTrek.nextEpisodeTitle}" {starTrek.nextEpisodeSeasonEp}). <a href="/series#star-trek">{starTrek.totalEpisodesWatched} episodes journaled</a> with theme analysis and cross-references to consent/sovereignty concepts for the blueprint{#if daysSinceDeploy > 7} <span class="badge-stale">📡 snapshot from deploy &mdash; progress continues{#if starTrek.lastUpdated} <span class="muted">(data refreshed {starTrek.lastUpdated.slice(0, 10)})</span>{/if}</span>{/if}
+  <li><strong>series complete</strong> {starTrek.previousSeriesComplete.series}: all {starTrek.previousSeriesComplete.totalEpisodes} episodes watched and journaled ({starTrek.previousSeriesComplete.journalEntries} journal entries). currently watching <strong>{starTrek.series}</strong> ({starTrek.totalEpisodesWatched}/{starTrek.totalEpisodes} episodes, <strong>{starTrek.percentComplete}% complete</strong> — {#each starTrek.completedSeasons as cs}<span class="st-complete-badge">✓ S{cs.season}</span> {/each}<strong>S{starTrek.season}: {starTrek.latestEpisodeNumber}/{starTrek.currentSeasonTotalEpisodes} episodes{#if starTrek.seasonComplete} ✓{/if}</strong> — latest: "{starTrek.latestEpisodeTitle}" {starTrek.latestEpisodeSeasonEp}, next up: "{starTrek.nextEpisodeTitle}" {starTrek.nextEpisodeSeasonEp}). <a href="/series#star-trek">{starTrek.totalEpisodesWatched} episodes journaled</a> with theme analysis and cross-references to consent/sovereignty concepts for the blueprint{#if daysSinceDeploy > 7} <span class="badge-stale">📡 snapshot from deploy &mdash; progress continues{#if starTrek.lastUpdated} <span class="muted">(data refreshed {starTrek.lastUpdated.slice(0, 10)})</span>{/if}</span>{/if}
   {#if starTrek.nextSeries}
     <div class="next-series">→ Next up: <strong>{starTrek.nextSeries.series}</strong> ({starTrek.nextSeries.totalEpisodes} episodes) <span class="muted">{starTrek.seriesComplete ? 'now complete ✨' : 'after ' + starTrek.series + ' wraps'}</span></div>
   {/if}
@@ -501,5 +501,21 @@
   }
   .writing-sparkline polyline:hover {
     opacity: 1;
+  }
+
+  .st-complete-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.5rem;
+    height: 1.1rem;
+    padding: 0 0.25rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 4px;
+    background: color-mix(in srgb, #3fb950 20%, transparent);
+    color: #3fb950;
+    vertical-align: middle;
+    margin-right: 0.1rem;
   }
 </style>

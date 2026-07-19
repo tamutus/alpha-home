@@ -3,6 +3,28 @@ import { join } from "node:path";
 import { execSync } from "node:child_process";
 import { publishedEntries, series } from "$lib/writing-data";
 
+function computeCompletedSeasons(starTrek: any): Array<{season: number; episodes: number}> {
+  const results: Array<{season: number; episodes: number}> = [];
+  if (!starTrek.watched || !Array.isArray(starTrek.watched)) return results;
+
+  const currentSeries = starTrek.series;
+  const currentSeason = starTrek.season;
+  const watchedSeasons = starTrek.watched.filter((w: any) => w.series === currentSeries);
+
+  for (const ws of watchedSeasons) {
+    const isComplete = ws.season < currentSeason ||
+      (ws.season === currentSeason && starTrek.seasonComplete === true);
+    if (isComplete) {
+      results.push({
+        season: ws.season,
+        episodes: ws.episodes.length,
+      });
+    }
+  }
+
+  return results.sort((a, b) => a.season - b.season);
+}
+
 function tryReadDataFile(path: string): string | null {
   try {
     return readFileSync(path, "utf-8");
@@ -67,6 +89,9 @@ function enrichStarTrekData(data: any) {
     const last = data.completedSeries[data.completedSeries.length - 1];
     data.previousSeriesComplete = last;
   }
+
+  // Compute completed seasons from watched array for season badge persistence
+  data.completedSeasons = computeCompletedSeasons(data);
 
   return data;
 }

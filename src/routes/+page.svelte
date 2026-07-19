@@ -164,8 +164,10 @@
           {/if}
           <span class="st-label">📺</span>
           <span class="st-series">{data.starTrek.series}</span>
-          {#if data.starTrek.seasonComplete}
-            <span class="st-season-badge" title="season {data.starTrek.season} complete">✓ S{data.starTrek.season}</span>
+          {#each data.starTrek.completedSeasons as cs}
+            <span class="st-season-badge" title="season {cs.season} complete ({cs.episodes} episodes)">✓ S{cs.season}</span>
+          {/each}
+          {#if data.starTrek.completedSeasons.length > 0}
             <span class="st-sep">·</span>
           {/if}
           <span class="st-detail">season {data.starTrek.season} · {data.starTrek.done} · {data.starTrek.percent}% · {data.starTrek.journalEntries} journals</span>
