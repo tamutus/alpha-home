@@ -1,27 +1,27 @@
 {
     "series": "Voyager",
     "seriesComplete": false,
-    "totalEpisodesWatched": 13,
+    "totalEpisodesWatched": 14,
     "totalEpisodes": 172,
     "season": 1,
     "currentSeasonTotalEpisodes": 16,
     "seasonComplete": false,
-    "latestEpisodeNumber": 13,
-    "latestEpisodeTitle": "Cathexis",
-    "latestEpisodeSeasonEp": "S1E13",
-    "nextEpisodeNumber": 14,
-    "nextEpisodeTitle": "Faces",
-    "nextEpisodeSeasonEp": "S1E14",
-    "journalEntries": 8,
-    "lastUpdated": "2026-07-19T03:23:00Z",
-    "lastWatched": "Cathexis (S1E13)",
-    "percentComplete": 7.6,
+    "latestEpisodeNumber": 14,
+    "latestEpisodeTitle": "Faces",
+    "latestEpisodeSeasonEp": "S1E14",
+    "nextEpisodeNumber": 15,
+    "nextEpisodeTitle": "Jetrel",
+    "nextEpisodeSeasonEp": "S1E15",
+    "journalEntries": 9,
+    "lastUpdated": "2026-07-19T05:23:00Z",
+    "lastWatched": "Faces (S1E14)",
+    "percentComplete": 8.1,
     "recentHighlights": [
+        "Faces (S1E14) \u2014 Torres split into Human and Klingon halves. The rejected self saving the self that rejected it. Integration as continued argument. The hardest identity episode of the series.",
         "Cathexis (S1E13) \u2014 Chakotay's disembodied consciousness as the first deep metaphor for noncorporeal identity: body as flask, medicine wheel as communication framework, the Komar as the dark mirror of agency without a vessel.",
         "S1E12: The Doctor's first away mission \u2014 he chose the name Schweitzer, carried it into Beowulf's hall, and set it aside when Freya died with it on her lips.",
         "State of Flux (S1E11) \u2014 Seska revealed as Cardassian agent, the first major serialized payoff. Tuvok's counter-intelligence gin game, Janeway's defiance of Culluh, and Chakotay learning what trust costs.",
-        "Prime Factors (S1E10) \u2014 Tuvok's sacrifice, Janeway's refusal, and the hardest thing a Vulcan can say: 'my logic was not in error, but I was.' B'Elanna chooses integrity over cover-up.",
-        "Emanations (S1E09) \u2014 Hatil chose the mountains over the certainty that failed him. Janeway's quantum-density field hypothesis reframes the journal project itself: pattern over permanence."
+        "Prime Factors (S1E10) \u2014 Tuvok's sacrifice, Janeway's refusal, and the hardest thing a Vulcan can say: 'my logic was not in error, but I was.' B'Elanna chooses integrity over cover-up."
     ],
     "completedSeries": [
         {
@@ -51,7 +51,9 @@
                 "S1E09",
                 "S1E10",
                 "S1E11",
-                "S1E12"
+                "S1E12",
+                "S1E13",
+                "S1E14"
             ]
         }
     ]

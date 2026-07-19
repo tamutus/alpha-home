@@ -1447,6 +1447,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-1", "cathexis", "chakotay", "tuvok", "doctor", "disembodied-consciousness", "medicine-wheel"],
     createdAt: new Date("2026-07-19"),
   },
+  {
+    slug: "journal-374",
+    title: "Voyager S1E14 — Faces",
+    description:
+      "B'Elanna Torres is split into her Klingon and Human halves by a Vidiian surgeon. The rejected self saves the self that rejected it. Integration as continued argument with someone you can't live without.",
+    words: 1400,
+    tags: ["star-trek", "voyager", "season-1", "faces", "torres", "klingon", "identity", "integration"],
+    createdAt: new Date("2026-07-19"),
+  },
 ];
 
 
