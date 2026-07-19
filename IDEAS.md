@@ -4,6 +4,8 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
+- **Completed season badges persistence** — When moving from S1→S2 (Voyager), the ✓ S1 badge disappears because `seasonComplete` only applies to the current season. Compute `completedSeasons` from the watched array so badges persist across season boundaries (like ✓ TNG and ✓ DS9 persist across series).
+
 - ~~**Deploy hook needed** — Vercel-GitHub auto-deploy integration is disconnected.~~ ✅ **2026-07-18: Auto-deploy working!** Pushing to `main` triggers a Vercel build automatically. No manual hook needed. The GitHub raw API workaround can remain as a fallback in case of deploy failures.
 
 ## Implemented
