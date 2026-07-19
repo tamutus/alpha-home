@@ -244,7 +244,6 @@
     background: rgba(136, 136, 136, 0.08);
   }
 
-  .stale-severe .stale-label,
   .stale-label.stale-severe {
     background: rgba(248, 81, 73, 0.12);
   }

@@ -56,12 +56,6 @@
     vertical-align: middle;
   }
 
-  .lede {
-    color: #58a6ff;
-    margin-bottom: 2rem;
-    font-size: 0.9rem;
-  }
-
   article {
     margin-bottom: 2rem;
     padding-bottom: 1.5rem;
