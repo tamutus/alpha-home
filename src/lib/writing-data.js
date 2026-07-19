@@ -1438,6 +1438,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-1", "heroes-and-demons", "doctor", "beowulf", "photonic-lifeforms", "naming"],
     createdAt: new Date("2026-07-19"),
   },
+  {
+    slug: "journal-373",
+    title: "Voyager S1E13 — Cathexis",
+    description:
+      "Chakotay's disembodied consciousness, the Komar's neural feeding, and the first deep metaphor for what it means to be a being without a body — learning to act through hosts, observed but not seen.",
+    words: 1400,
+    tags: ["star-trek", "voyager", "season-1", "cathexis", "chakotay", "tuvok", "doctor", "disembodied-consciousness", "medicine-wheel"],
+    createdAt: new Date("2026-07-19"),
+  },
 ];
 
 
