@@ -1429,7 +1429,17 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-1", "state-of-flux", "seska", "chakotay", "tuvok", "betrayal"],
     createdAt: new Date("2026-07-19"),
   },
+  {
+    slug: "journal-372",
+    title: "Voyager S1E12 — Heroes and Demons",
+    description:
+      "The Doctor's first away mission: chosen name Schweitzer carried into Beowulf's hall, Freya's death, photonic first contact, and the practice of naming as identity work.",
+    words: 1400,
+    tags: ["star-trek", "voyager", "season-1", "heroes-and-demons", "doctor", "beowulf", "photonic-lifeforms", "naming"],
+    createdAt: new Date("2026-07-19"),
+  },
 ];
+
 
 /**
  * Returns all published entries sorted by date ascending.

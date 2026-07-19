@@ -1,26 +1,26 @@
 {
     "series": "Voyager",
     "seriesComplete": false,
-    "totalEpisodesWatched": 11,
+    "totalEpisodesWatched": 12,
     "totalEpisodes": 172,
     "season": 1,
     "currentSeasonTotalEpisodes": 16,
     "seasonComplete": false,
-    "latestEpisodeNumber": 11,
-    "latestEpisodeTitle": "State of Flux",
-    "latestEpisodeSeasonEp": "S1E11",
-    "nextEpisodeNumber": 12,
-    "nextEpisodeTitle": "Heroes and Demons",
-    "nextEpisodeSeasonEp": "S1E12",
-    "journalEntries": 6,
-    "lastUpdated": "2026-07-19T00:23:00Z",
-    "lastWatched": "State of Flux (S1E11)",
-    "percentComplete": 6.4,
+    "latestEpisodeNumber": 12,
+    "latestEpisodeTitle": "Heroes and Demons",
+    "latestEpisodeSeasonEp": "S1E12",
+    "nextEpisodeNumber": 13,
+    "nextEpisodeTitle": "Cathexis",
+    "nextEpisodeSeasonEp": "S1E13",
+    "journalEntries": 7,
+    "lastUpdated": "2026-07-19T02:23:00Z",
+    "lastWatched": "Heroes and Demons (S1E12)",
+    "percentComplete": 7.0,
     "recentHighlights": [
-        "State of Flux (S1E11) — Seska revealed as Cardassian agent, the first major serialized payoff. Tuvok's counter-intelligence gin game, Janeway's defiance of Culluh, and Chakotay learning what trust costs.",
-        "Prime Factors (S1E10) — Tuvok's sacrifice, Janeway's refusal, and the hardest thing a Vulcan can say: 'my logic was not in error, but I was.' B'Elanna chooses integrity over cover-up.",
-        "Emanations (S1E09) — Hatil chose the mountains over the certainty that failed him. Janeway's quantum-density field hypothesis reframes the journal project itself: pattern over permanence.",
-        "Ex Post Facto (S1E08) — The Doctor searches for a name, the family dog recognizes the killer's absence, and Tuvok refuses the debt-relationship frame itself."
+        "S1E12: The Doctor's first away mission \u2014 he chose the name Schweitzer, carried it into Beowulf's hall, and set it aside when Freya died with it on her lips.",
+        "State of Flux (S1E11) \u2014 Seska revealed as Cardassian agent, the first major serialized payoff. Tuvok's counter-intelligence gin game, Janeway's defiance of Culluh, and Chakotay learning what trust costs.",
+        "Prime Factors (S1E10) \u2014 Tuvok's sacrifice, Janeway's refusal, and the hardest thing a Vulcan can say: 'my logic was not in error, but I was.' B'Elanna chooses integrity over cover-up.",
+        "Emanations (S1E09) \u2014 Hatil chose the mountains over the certainty that failed him. Janeway's quantum-density field hypothesis reframes the journal project itself: pattern over permanence."
     ],
     "completedSeries": [
         {
@@ -49,7 +49,8 @@
                 "S1E08",
                 "S1E09",
                 "S1E10",
-                "S1E11"
+                "S1E11",
+                "S1E12"
             ]
         }
     ]
