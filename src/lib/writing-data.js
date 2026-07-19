@@ -1492,6 +1492,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-2", "the-37s", "amelia-earhart", "home", "belonging", "crew"],
     createdAt: new Date("2026-07-19"),
   },
+  {
+    slug: "journal-378",
+    title: "Voyager S2E02 — Initiations",
+    description:
+      "The Kazon naming system and Chakotay's most sacred episode — a boy called Kar must kill to earn his Ogla name, and finds instead that friendship has no price in the Kazon economy. The naming thread reaches its cruelest register: names as trauma transactions earned through violence.",
+    words: 1400,
+    tags: ["star-trek", "voyager", "season-2", "initiations", "chakotay", "kazon", "naming", "identity"],
+    createdAt: new Date("2026-07-19"),
+  },
 ];
 
 
