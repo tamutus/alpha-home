@@ -48,9 +48,12 @@ FIXED_ANY=false
 
 # Check the latest journal file
 LATEST_FILE_FLAT="$JOURNAL_DIR/journal-$JOURNAL_ENTRIES.md"
-LATEST_FILE_DIR="$JOURNAL_DIR/journal-$JOURNAL_ENTRIES/+page.md"
-if [ -f "$LATEST_FILE_DIR" ]; then
-    LATEST_FILE="$LATEST_FILE_DIR"
+LATEST_FILE_MD="$JOURNAL_DIR/journal-$JOURNAL_ENTRIES/+page.md"
+LATEST_FILE_SVELTE="$JOURNAL_DIR/journal-$JOURNAL_ENTRIES/+page.svelte"
+if [ -f "$LATEST_FILE_MD" ]; then
+    LATEST_FILE="$LATEST_FILE_MD"
+elif [ -f "$LATEST_FILE_SVELTE" ]; then
+    LATEST_FILE="$LATEST_FILE_SVELTE"
 elif [ -f "$LATEST_FILE_FLAT" ]; then
     LATEST_FILE="$LATEST_FILE_FLAT"
 else
@@ -92,7 +95,7 @@ fi
 # Also spot-check the last 5 journal files for gaps (directory-wrapped format)
 MISSING_GAPS=""
 for i in $(seq $((JOURNAL_ENTRIES - 4)) "$JOURNAL_ENTRIES"); do
-    if [ ! -f "$JOURNAL_DIR/journal-$i/+page.md" ]; then
+    if [ ! -f "$JOURNAL_DIR/journal-$i/+page.md" ] && [ ! -f "$JOURNAL_DIR/journal-$i/+page.svelte" ]; then
         MISSING_GAPS="$MISSING_GAPS journal-$i"
     fi
 done
