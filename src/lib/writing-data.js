@@ -1420,6 +1420,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-1", "prime-factors", "tuvok", "torres", "ethics"],
     createdAt: new Date("2026-07-18"),
   },
+  {
+    slug: "journal-371",
+    title: "Voyager S1E11 — State of Flux",
+    description:
+      "Seska's betrayal, the first major serialized payoff: Cardassian infiltration, Tuvok's counter-intelligence gin game, and the cost of trust in the Delta Quadrant.",
+    words: 1400,
+    tags: ["star-trek", "voyager", "season-1", "state-of-flux", "seska", "chakotay", "tuvok", "betrayal"],
+    createdAt: new Date("2026-07-19"),
+  },
 ];
 
 /**
