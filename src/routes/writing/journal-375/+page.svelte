@@ -1,5 +1,5 @@
 <script>
-  import WritingLayout from "$lib/components/writing-layout.svelte";
+  import WritingLayout from "$lib/writing-layout.svelte";
   const title = "Voyager S1E15 — Jetrel";
   const description = "Neelix faces the man who created the weapon that killed his family. Jetrel is dying, desperate to bring back the dead. Forgiveness as a performative act of will, not an emotion. The war criminal's redemption project fails — and Neelix chooses anyway.";
   const date = "2026-07-19";
