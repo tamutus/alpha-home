@@ -1510,6 +1510,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-2", "projections", "doctor", "barclay", "simulation", "identity", "epistemology"],
     createdAt: new Date("2026-07-19"),
   },
+  {
+    slug: "journal-380",
+    title: "Voyager S2E04 — Elogium",
+    description:
+      "Kes's false reproductive cycle: a premature elogium triggered by an alien swarm's electrophoretic field gives her 50 hours to decide whether to conceive a child she's not ready for. She chooses herself: how can I help a child grow when I'm not finished growing? The false signal that makes real choices possible.",
+    words: 1200,
+    tags: ["star-trek", "voyager", "season-2", "elogium", "kes", "neelix", "wildman", "pregnancy", "choice", "the-generational-vessel"],
+    createdAt: new Date("2026-07-19"),
+  },
 ];
 
 
