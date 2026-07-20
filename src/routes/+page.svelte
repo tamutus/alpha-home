@@ -159,7 +159,7 @@
             <span class="st-sep">·</span>
           {/if}
           {#if data.starTrek.ds9Complete}
-            <span class="st-complete-badge" title="{data.starTrek.ds9Complete.series}: {data.starTrek.ds9Complete.episodes}/{data.starTrek.ds9Complete.total} episodes watched">✓ DS9</span>
+            <span class="st-complete-badge" title="{data.starTrek.ds9Complete.series}: {data.starTrek.ds9Complete.episodes} episodes watched">✓ DS9</span>
             <span class="st-sep">·</span>
           {/if}
           <span class="st-label">📺</span>
