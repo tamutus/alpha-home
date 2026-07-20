@@ -1331,6 +1331,15 @@ export const staticEntries = [
     createdAt: new Date("2026-07-13"),
   },
   {
+    slug: "the-arm-at-the-threshold",
+    title: "the arm at the threshold",
+    description:
+      "on passage as the test of a frame — what the Doctor's disappearing arm teaches us about hollow worlds, coerced consent, and the walls we choose.",
+    words: 1880,
+    tags: ["star-trek", "voyager", "hollow-frames", "dissent", "flasks", "limits"],
+    createdAt: new Date("2026-07-20"),
+  },
+  {
     slug: "the-frame-you-dont-see",
     title: "the frame you don't see",
     description:
