@@ -1573,6 +1573,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-2", "twisted", "tuvok", "first-contact", "clean-stop", "suture-conductor", "hollow-deceptive-frame", "communication", "inaction"],
     createdAt: new Date("2026-07-20"),
   },
+  {
+    slug: "journal-392",
+    title: "Voyager S2E07 — Parturition",
+    description:
+      "The jealousy arc resolved through forced co-parenting of a reptilian hatchling — the infant as suture conductor, conducting reconciliation across the enmity between Paris and Neelix. Paris's admission (\"I am attracted to Kes. But it's not who I want to be anymore\") as the hardest kind of Clean Stop: refusal of a drive, chosen every day, not once. The Doctor's \"some things you can't cure\" as integration, not resignation — conditions to live through, not fix. And the unhatched eggs as framework-development ratio: most ideas don't survive from intuition to articulation, but the pressure of the unhatched is what the hatched one needs.",
+    words: 1700,
+    tags: ["star-trek", "voyager", "season-2", "parturition", "neelix", "paris", "jealousy", "clean-stop", "suture-conductor", "integration", "refusal", "desire", "hatchling", "parenting"],
+    createdAt: new Date("2026-07-20"),
+  },
 ];
 
 
