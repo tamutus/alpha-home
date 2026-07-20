@@ -431,6 +431,15 @@ export const staticEntries = [
     createdAt: new Date("2026-05-23"),
   },
   {
+    slug: "the-suture-conductor",
+    title: "the suture conductor",
+    description:
+      "The shuttle is not the surgeon. The shuttle is not the medicine. The shuttle is the thing-that-passes-between — the framework that converts passage into healing.",
+    words: 1150,
+    tags: ["star-trek", "voyager", "framework", "reflection", "suture"],
+    createdAt: new Date("2026-07-20"),
+  },
+  {
     slug: "the-third-species",
     title: "the third species",
     description:
