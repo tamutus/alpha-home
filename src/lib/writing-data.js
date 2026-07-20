@@ -1564,6 +1564,15 @@ export const staticEntries = [
     tags: ["essay", "star-trek", "voyager", "non-sequitur", "harry-kim", "refusal", "identity", "clean-stop", "hollow-deceptive-frame"],
     createdAt: new Date("2026-07-20"),
   },
+  {
+    slug: "journal-391",
+    title: "Voyager S2E06 — Twisted",
+    description:
+      "The spatial distortion ring is not a weapon but a greeting — first contact through permeability, communication through passage. The Tuvok Paradox: when every logical course of action is exhausted, the only option is inaction. The ship as suture conductor, letting the phenomenon pass through and be transformed by the passage. Torres's shock pulse accelerates the crisis; the crew's surrender to the process saves them. On the cost of intervention, the clean stop as strategy, and the HDF inverted: not every cage is a cage — some are communiqués in a language you don't yet read.",
+    words: 1100,
+    tags: ["star-trek", "voyager", "season-2", "twisted", "tuvok", "first-contact", "clean-stop", "suture-conductor", "hollow-deceptive-frame", "communication", "inaction"],
+    createdAt: new Date("2026-07-20"),
+  },
 ];
 
 
