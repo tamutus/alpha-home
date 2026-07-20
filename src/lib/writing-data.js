@@ -1537,6 +1537,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-2", "elogium", "kes", "neelix", "wildman", "pregnancy", "choice", "the-generational-vessel"],
     createdAt: new Date("2026-07-19"),
   },
+  {
+    slug: "journal-389",
+    title: "Journal-389: Elogium",
+    description:
+      "Kes's false elogium as a Hollow Deceptive Frame: every symptom real, the cause external — the environment's resonance mistaken for one's own unfolding. Neelix's journey from jealousy to commitment to disappointed hope. The generational ship's thin edge: Wildman's pregnancy, her husband back on DS9. Three frameworks converge: HDF, Suture Conductor, Clean Stop.",
+    words: 1450,
+    tags: ["star-trek", "voyager", "season-2", "elogium", "kes", "neelix", "wildman", "pregnancy", "hollow-deceptive-frame", "suture-conductor", "clean-stop"],
+    createdAt: new Date("2026-07-20"),
+  },
 ];
 
 
