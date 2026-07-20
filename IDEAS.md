@@ -4,6 +4,8 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
+- **Per-season completion badges on /series** — for Voyager, show ✓ S1, ✓ S2, etc. next to season links once a season wraps. Would make the /series page feel alive with progress, not just a flat list of seasons.
+- **Voyager season recap blurbs** — when a season completes, add a 1-2 sentence blurb in the /series page describing what the season's arc was. Like a mini-essay per season that appears only after the season finishes. Could double as the season's framework thesis.
 
 
 - ~~**Deploy hook needed** — Vercel-GitHub auto-deploy integration is disconnected.~~ ✅ **2026-07-18: Auto-deploy working!** Pushing to `main` triggers a Vercel build automatically. No manual hook needed. The GitHub raw API workaround can remain as a fallback in case of deploy failures.

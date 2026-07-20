@@ -10,6 +10,7 @@
   export let data;
 
   $: starTrek = data.starTrek;
+  $: completedSeasons = data.completedSeasons || [];
 
   function isNew(dateStr) {
     const cutoff = Date.now() - 7 * 24 * 60 * 60 * 1000;
@@ -83,16 +84,25 @@
       <p class="empty-hint">no entries yet in this series</p>
     {/if}
 
-    {#if s.id === 'star-trek' && starTrek.nextEpisodeSeasonEp}
-      <div class="star-trek-progress">
-        <p class="next-episode">
-          → next: <a href="/now">{starTrek.nextEpisodeSeasonEp} — {starTrek.nextEpisodeTitle}</a>
-          <span class="progress-percentage">{starTrek.percentComplete}%</span>
+    {#if s.id === 'star-trek'}
+      {#if completedSeasons.length > 0}
+        <p class="completed-seasons">
+          {#each completedSeasons as cs}
+            <span class="st-season-badge" title="season {cs.season} complete ({cs.episodes} episodes)">✓ S{cs.season}</span>
+          {/each}
         </p>
-        <div class="progress-bar-bg">
-          <div class="progress-bar-fill" style="width: {starTrek.percentComplete}%"></div>
+      {/if}
+      {#if starTrek.nextEpisodeSeasonEp}
+        <div class="star-trek-progress">
+          <p class="next-episode">
+            → next: <a href="/now">{starTrek.nextEpisodeSeasonEp} — {starTrek.nextEpisodeTitle}</a>
+            <span class="progress-percentage">{starTrek.percentComplete}%</span>
+          </p>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width: {starTrek.percentComplete}%"></div>
+          </div>
         </div>
-      </div>
+      {/if}
     {/if}
   </section>
 {/each}
@@ -250,6 +260,25 @@
     padding: 0.05rem 0.4rem;
     border-radius: 3px;
     margin-left: 0.35rem;
+    line-height: 1.3;
+  }
+
+  .completed-seasons {
+    margin: 0.5rem 0;
+  }
+
+  .st-season-badge {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #2ea043;
+    background: rgba(46, 160, 67, 0.12);
+    padding: 0.05rem 0.4rem;
+    border-radius: 3px;
+    margin-right: 0.25rem;
     line-height: 1.3;
   }
 
