@@ -11,6 +11,13 @@
 
   $: starTrek = data.starTrek;
   $: completedSeasons = data.completedSeasons || [];
+  $: seasonRecaps = data.seasonRecaps || {};
+
+  $: currentSeriesRecaps = seasonRecaps[starTrek.series] || {};
+  $: completedSeasonNums = completedSeasons.map(cs => cs.season);
+  $: recapEntries = completedSeasonNums
+    .filter(n => currentSeriesRecaps[String(n)])
+    .map(n => ({ season: n, recap: currentSeriesRecaps[String(n)] }));
 
   function isNew(dateStr) {
     const cutoff = Date.now() - 7 * 24 * 60 * 60 * 1000;
@@ -91,6 +98,16 @@
             <span class="st-season-badge" title="season {cs.season} complete ({cs.episodes} episodes)">✓ S{cs.season}</span>
           {/each}
         </p>
+      {/if}
+      {#if recapEntries.length > 0}
+        <div class="season-recaps">
+          {#each recapEntries as recap}
+            <details class="season-recap-block">
+              <summary class="season-recap-summary">season {recap.season} arc</summary>
+              <p class="season-recap-text">{recap.recap}</p>
+            </details>
+          {/each}
+        </div>
       {/if}
       {#if starTrek.nextEpisodeSeasonEp}
         <div class="star-trek-progress">
@@ -344,5 +361,35 @@
     background: var(--accent, #58a6ff);
     border-radius: 2px;
     transition: width 0.3s ease;
+  }
+
+  .season-recaps {
+    margin: 0.5rem 0;
+  }
+
+  .season-recap-block {
+    margin: 0.25rem 0;
+    font-size: 0.8rem;
+    color: var(--muted, #555);
+    border-left: 2px solid rgba(88, 166, 255, 0.15);
+    padding-left: 0.5rem;
+  }
+
+  .season-recap-summary {
+    cursor: pointer;
+    color: var(--accent, #58a6ff);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    user-select: none;
+  }
+
+  .season-recap-summary:hover {
+    opacity: 0.8;
+  }
+
+  .season-recap-text {
+    margin: 0.3rem 0 0 0;
+    line-height: 1.5;
   }
 </style>

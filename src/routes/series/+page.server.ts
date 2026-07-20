@@ -23,6 +23,18 @@ function tryReadDataFile(path: string): any | null {
   return null;
 }
 
+function loadSeasonRecaps(): Record<string, Record<string, string>> {
+  const path = join(process.cwd(), "data", "season-recaps.json");
+  try {
+    if (existsSync(path)) {
+      return JSON.parse(readFileSync(path, "utf-8"));
+    }
+  } catch {
+    // fall through
+  }
+  return {};
+}
+
 function computeCompletedSeasons(starTrek: any): CompletedSeason[] {
   const results: CompletedSeason[] = [];
   if (!starTrek.watched || !Array.isArray(starTrek.watched)) return results;
@@ -63,5 +75,6 @@ export function load() {
   return {
     starTrek,
     completedSeasons: computeCompletedSeasons(starTrek),
+    seasonRecaps: loadSeasonRecaps(),
   };
 }
