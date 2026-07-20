@@ -1546,6 +1546,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-2", "elogium", "kes", "neelix", "wildman", "pregnancy", "hollow-deceptive-frame", "suture-conductor", "clean-stop"],
     createdAt: new Date("2026-07-20"),
   },
+  {
+    slug: "journal-390",
+    title: "Voyager S2E05 — Non Sequitur",
+    description:
+      "Harry Kim wakes up on Earth with everything he ever wanted — a career, a fiancée, a future — and knows, with the certainty of someone forged in the Delta Quadrant, that it isn't his. The replaced-self: a timeline where Danny Byrd died in Harry's place and Harry got the life that doesn't belong to him. Cosimo as temporal flask. Paris as suture conductor, staying behind on an exploding runabout to conduct his friend home.",
+    words: 2000,
+    tags: ["star-trek", "voyager", "season-2", "non-sequitur", "harry-kim", "identity", "choice", "home", "paris", "the-replaced-self", "hollow-deceptive-frame", "clean-stop"],
+    createdAt: new Date("2026-07-20"),
+  },
 ];
 
 
