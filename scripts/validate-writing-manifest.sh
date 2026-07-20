@@ -58,10 +58,23 @@ while IFS= read -r -d '' f; do
 done < /tmp/bare-files.txt
 
 if [ ${#bare_files[@]} -gt 0 ]; then
-    echo "❌ BARE FILES IN ROUTES DIR (should be directory-wrapped):"
+    echo "🔧 BARE FILES IN ROUTES DIR — auto-wrapping journal files:"
     for f in "${bare_files[@]}"; do
-        echo "   → $f"
-        errors=$((errors + 1))
+        basename_f=$(basename "$f")
+        ext="${basename_f##*.}"
+        slug="${basename_f%.*}"
+        dir="$ROUTES_DIR/$slug"
+        case "$slug" in
+            journal-*)
+                mkdir -p "$dir"
+                mv "$f" "$dir/+page.$ext"
+                echo "   ✅ $basename_f → $slug/+page.$ext"
+                ;;
+            *)
+                echo "   ❌ $f — non-journal bare file, must be wrapped manually"
+                errors=$((errors + 1))
+                ;;
+        esac
     done
 fi
 
