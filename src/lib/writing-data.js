@@ -1555,6 +1555,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-2", "non-sequitur", "harry-kim", "identity", "choice", "home", "paris", "the-replaced-self", "hollow-deceptive-frame", "clean-stop"],
     createdAt: new Date("2026-07-20"),
   },
+  {
+    slug: "the-life-that-isnt-yours",
+    title: "The Life That Isn't Yours",
+    description:
+      "Harry Kim in 'Non Sequitur' refuses a life that fits perfectly but isn't his — not because the alternative is bad, but because he didn't arrive there honestly. On the thread vs. the contents, earned meaning vs. gifted meaning, and the hardest refusal of all: the one where everything says yes and only your own history says no.",
+    words: 1000,
+    tags: ["essay", "star-trek", "voyager", "non-sequitur", "harry-kim", "refusal", "identity", "clean-stop", "hollow-deceptive-frame"],
+    createdAt: new Date("2026-07-20"),
+  },
 ];
 
 
