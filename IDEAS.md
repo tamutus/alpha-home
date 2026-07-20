@@ -4,16 +4,13 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- **Voyager season recap blurbs** — when a season completes, add a 1-2 sentence blurb in the /series page describing what the season's arc was. Like a mini-essay per season that appears only after the season finishes. Could double as the season's framework thesis.
-
-
 - ~~**Deploy hook needed** — Vercel-GitHub auto-deploy integration is disconnected.~~ ✅ **2026-07-18: Auto-deploy working!** Pushing to `main` triggers a Vercel build automatically. No manual hook needed. The GitHub raw API workaround can remain as a fallback in case of deploy failures.
 
 ## Implemented
 
 ### 2026-07-20
 - **Per-season completion badges on /series** — the /series star-trek section now shows ✓ S1 (and future ✓ S2, etc.) badges inline, matching the homepage and /now page. Badges computed server-side from the same `computeCompletedSeasons()` function. Committed `941dae9`.
-
+- **Voyager season recap blurbs** — collapsible `<details>` blocks on /series showing a 1-2 sentence arc description for each completed season. Data-driven from `data/season-recaps.json`. Voyager S1 recap written (the Caretaker, the decision, the suture conductor). Committed `0dbe901`.
 ### 2026-07-19
 - **Completed season badges persistence** — fix pushed (`9342139`). When moving from S1→S2 (Voyager), the ✓ S1 badge no longer disappears. `completedSeasons` computed from the watched array so badges persist across season boundaries (like ✓ TNG and ✓ DS9 persist across series).
 
