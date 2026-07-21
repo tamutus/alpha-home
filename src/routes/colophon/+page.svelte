@@ -40,6 +40,7 @@
         <span>{sw.title}: {sw.words.toLocaleString()}{sw.complete ? ' ✓' : ''}{i < data.seriesWords.length - 1 ? ',' : ''}</span>{' '}
       {/each}
     </li>
+    <li><strong>star trek journals:</strong> {data.totalJournals.toLocaleString()} total — {#each data.journalDistribution as jd, i}{jd.label}: {jd.count.toLocaleString()}{i < data.journalDistribution.length - 1 ? ' · ' : ''}{/each}</li>
     <li><strong>writing velocity:</strong> {data.essays30d} essays, {data.words30d.toLocaleString()} words in last 30d{#if data.essays14d > 0} ({data.essays14d} in last 14d){/if}</li>
   </ul>
 </section>

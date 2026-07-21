@@ -2,6 +2,7 @@ import { dev } from '$app/environment';
 import { execSync } from 'child_process';
 import pkg from '../../../package.json' with { type: 'json' };
 import { publishedEntries, series } from '$lib/writing-data';
+import starTrekProgress from '../../../data/star-trek-progress.json' with { type: 'json' };
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load() {
@@ -142,6 +143,20 @@ export async function load() {
       })
     : null;
 
+  // Star Trek journal distribution for colophon note
+  const completedJournalEntries = starTrekProgress.completedSeries.reduce(
+    (sum, s) => sum + s.journalEntries, 0
+  );
+  const currentJournalEntries = starTrekProgress.journalEntries - completedJournalEntries;
+  const journalDistribution = [
+    ...starTrekProgress.completedSeries.map(s => ({
+      label: s.series === 'The Next Generation' ? 'TNG' : 'DS9',
+      count: s.journalEntries
+    })),
+    { label: 'Voyager', count: currentJournalEntries }
+  ];
+  const totalJournals = starTrekProgress.journalEntries;
+
   return {
     version: pkg.version,
     tools,
@@ -171,5 +186,7 @@ export async function load() {
     vercelDeployId,
     vercelUrl,
     vercelBuildTime,
+    journalDistribution,
+    totalJournals,
   };
 }
