@@ -1,25 +1,25 @@
 {
     "series": "Voyager",
     "seriesComplete": false,
-    "totalEpisodesWatched": 27,
+    "totalEpisodesWatched": 28,
     "totalEpisodes": 170,
     "season": 2,
     "currentSeasonTotalEpisodes": 26,
     "seasonComplete": false,
-    "latestEpisodeNumber": 12,
-    "latestEpisodeTitle": "Resistance",
-    "latestEpisodeSeasonEp": "S2E12",
-    "nextEpisodeNumber": 13,
-    "nextEpisodeTitle": "S2E13",
+    "latestEpisodeNumber": 13,
+    "latestEpisodeTitle": "Prototype",
+    "latestEpisodeSeasonEp": "S2E13",
+    "nextEpisodeNumber": 14,
+    "nextEpisodeTitle": null,
     "nextEpisodeSeasonEp": null,
-    "journalEntries": 605,
-    "lastUpdated": "2026-07-21T17:23:00Z",
-    "lastWatched": "Resistance (S2E12)",
-    "percentComplete": 15.9,
+    "journalEntries": 606,
+    "lastUpdated": "2026-07-21T20:23:00Z",
+    "lastWatched": "Prototype (S2E13)",
+    "percentComplete": 16.5,
     "recentHighlights": [
+        "Prototype (S2E13) — The Creator's Trap as sixth HDF variant. B'Elanna's engineering compassion exploited to build an army. The Clean Stop of Undoing: destroying your own creation because its reason for being is wrong. The Builders' energy codes as a failed safety mechanism — knowing the mistake but installing safety too late. Two right things (compassion vs. Prime Directive) survived rather than resolved.",
         "Resistance (S2E12) — Caylem's Compassionate Delusion as the fifth HDF variant: a frame built from grief-soaked care that offers genuine shelter but binds through dependency. Janeway's frame-acceptance (capacity to correct + choice not to) as a new refusal mode — the Positional Refusal inverted for compassion. Truth as weapon (Augris's final cruelty). Tuvok's scream as the Integration Coda made visceral: Vulcan endurance isn't absence of suffering but choice to continue.",
-        "Maneuvers (S2E11) — Chakotay's solo mission as the Personal HDF: a frame that looks like responsibility but operates as isolation. Torres as bridge-framework between Maquis instinct and Starfleet protocol. Seska's biological violation (DNA theft, self-impregnation) as permanent residue — a frame that can't be undone by recognition alone.",
-        "Cold Fire (S2E10) — Tanis as the Mentor HDF: a frame that teaches genuine skills while embedding coercive recruitment. Janeway's positional refusal: having the capacity to kill and choosing not to as the signal that breaks through Suspiria's grief-frame. Tuvok's integration coda: the heart forged from barbarism."
+        "Maneuvers (S2E11) — Chakotay's solo mission as the Personal HDF: a frame that looks like responsibility but operates as isolation. Torres as bridge-framework between Maquis instinct and Starfleet protocol. Seska's biological violation (DNA theft, self-impregnation) as permanent residue — a frame that can't be undone by recognition alone."
     ],
     "completedSeries": [
         {
@@ -71,7 +71,8 @@
                 "S2E09",
                 "S2E10",
                 "S2E11",
-                "S2E12"
+                "S2E12",
+                "S2E13"
             ]
         }
     ]
