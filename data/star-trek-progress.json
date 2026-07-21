@@ -1,25 +1,25 @@
 {
   "series": "Voyager",
   "seriesComplete": false,
-  "totalEpisodesWatched": 20,
+  "totalEpisodesWatched": 24,
   "totalEpisodes": 170,
   "season": 2,
   "currentSeasonTotalEpisodes": 26,
   "seasonComplete": false,
-  "latestEpisodeNumber": 4,
-  "latestEpisodeTitle": "Elogium",
-  "latestEpisodeSeasonEp": "S2E04",
-  "nextEpisodeNumber": 5,
-  "nextEpisodeTitle": "Non Sequitur",
-  "nextEpisodeSeasonEp": "S2E05",
-  "journalEntries": 376,
-  "lastUpdated": "2026-07-19T15:23:00Z",
-  "lastWatched": "Elogium (S2E04)",
-  "percentComplete": 11.8,
+  "latestEpisodeNumber": 8,
+  "latestEpisodeTitle": "Persistence of Vision",
+  "latestEpisodeSeasonEp": "S2E08",
+  "nextEpisodeNumber": 9,
+  "nextEpisodeTitle": "Tattoo",
+  "nextEpisodeSeasonEp": "S2E09",
+  "journalEntries": 379,
+  "lastUpdated": "2026-07-21T02:53:00Z",
+  "lastWatched": "Persistence of Vision (S2E08)",
+  "percentComplete": 14.1,
   "recentHighlights": [
-    "Elogium (S2E04) \u2014 Kes chooses not to conceive: 'How can I help a child grow when I'm not finished growing myself?' The false signal framework extends the Flask thesis.",
-    "Projections (S2E03) \u2014 the Doctor\u2019s epistemological crisis: choosing the story that lets him be the person he\u2019s becoming over the delusion that gives him everything he wants. The arm through the door.",
-    "Initiations (S2E02) \u2014 the Kazon naming system as trauma transaction; Kar earns his Ogla name by killing his abuser, but the real name he earns is \u201cfriend.\u201d"
+    "Persistence of Vision (S2E08) — the Bothan as Hollow Deceptive Frame telepathically isolating the crew by offering them what they most want. Kes as mirror-conductor: her empathic reach becomes the key to seeing through the frame, because she can feel the shape of what the crew is actually experiencing vs. what the Bothan projects.",
+    "Parturition (S2E07) — the hatchling as suture conductor between Paris and Neelix. Two dead eggs, one alive: most frameworks don't survive from intuition to articulation, but the stillbirths create the pressure the third needs.",
+    "Twisted (S2E06) — the spatial distortion ring as pure process: not a threat to be solved but a passage to be held through. Sustained Hold in action: Chakotay's command while Janeway is trapped belowdecks."
   ],
   "completedSeries": [
     {
@@ -63,7 +63,11 @@
         "S2E01",
         "S2E02",
         "S2E03",
-        "S2E04"
+        "S2E04",
+        "S2E05",
+        "S2E06",
+        "S2E07",
+        "S2E08"
       ]
     }
   ]
