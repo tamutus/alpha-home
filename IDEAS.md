@@ -9,13 +9,10 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **/series: journal word count per season** — each season block on /series could show aggregate word count for that season's journals. Data-driven from a precomputed data structure.
 - **/now: deploy staleness indicator** — color-coded badge showing hours since last deploy (green < 6h, yellow < 24h, red > 24h). Quick signal for whether the site reflects current data.
 - **Colophon: journal distribution note** — a simple inline note like "Journals: TNG 228 · DS9 365 · Voyager N" as text, driven from `star-trek-progress.json` completedSeries data. (Current `journalEntries: 380` is inconsistent with completed sum 593 — needs correction first.)
-- **Fix: star-trek-progress.json journalEntries accuracy** — top-level `journalEntries: 380` doesn't match completed series sum (228+365=593). Needs a correction pass.
-
-## Implemented
-
 ## Implemented
 
 ### 2026-07-21
+- **Fix: star-trek-progress.json journalEntries accuracy** — top-level `journalEntries: 380` → `603` (228 TNG + 365 DS9 + 10 Voyager).
 - **Combined Star Trek progress on /series** — aggregate "X of Y total episodes · N journal entries" metric with gradient progress bar at the top of the star-trek section. Computed from completedSeries + current series data. Committed `af65bfc`.
 
 ### 2026-07-20

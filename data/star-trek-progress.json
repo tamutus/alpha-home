@@ -1,75 +1,75 @@
 {
-  "series": "Voyager",
-  "seriesComplete": false,
-  "totalEpisodesWatched": 25,
-  "totalEpisodes": 170,
-  "season": 2,
-  "currentSeasonTotalEpisodes": 26,
-  "seasonComplete": false,
-  "latestEpisodeNumber": 9,
-  "latestEpisodeTitle": "Tattoo",
-  "latestEpisodeSeasonEp": "S2E09",
-  "nextEpisodeNumber": 10,
-  "nextEpisodeTitle": "Cold Fire",
-  "nextEpisodeSeasonEp": "S2E10",
-  "journalEntries": 380,
-  "lastUpdated": "2026-07-21T08:23:00Z",
-  "lastWatched": "Tattoo (S2E09)",
-  "percentComplete": 14.7,
-  "recentHighlights": [
-    "Tattoo (S2E09) — the Inherited HDF: an alien civilization's defensive posture built from ancestral trauma, not present threat. Chakotay's disarmament (weapons, clothes, calm) as proving the frame obsolete by living differently within it. The Doctor's contained inhabitation: empathy through bounded vulnerability, 31-hour flu as practice for caring.",
-    "Persistence of Vision (S2E08) — the Bothan as Hollow Deceptive Frame telepathically isolating the crew by offering them what they most want. Kes as mirror-conductor: her empathic reach becomes the key to seeing through the frame, because she can feel the shape of what the crew is actually experiencing vs. what the Bothan projects.",
-    "Parturition (S2E07) — the hatchling as suture conductor between Paris and Neelix. Two dead eggs, one alive: most frameworks don't survive from intuition to articulation, but the stillbirths create the pressure the third needs."
-  ],
-  "completedSeries": [
-    {
-      "series": "The Next Generation",
-      "totalEpisodes": 277,
-      "journalEntries": 228
-    },
-    {
-      "series": "Deep Space Nine",
-      "totalEpisodes": 176,
-      "journalEntries": 365
-    }
-  ],
-  "nextSeries": null,
-  "watched": [
-    {
-      "series": "Voyager",
-      "season": 1,
-      "episodes": [
-        "S1E01-02",
-        "S1E03",
-        "S1E04",
-        "S1E05",
-        "S1E06",
-        "S1E07",
-        "S1E08",
-        "S1E09",
-        "S1E10",
-        "S1E11",
-        "S1E12",
-        "S1E13",
-        "S1E14",
-        "S1E15",
-        "S1E16"
-      ]
-    },
-    {
-      "series": "Voyager",
-      "season": 2,
-      "episodes": [
-        "S2E01",
-        "S2E02",
-        "S2E03",
-        "S2E04",
-        "S2E05",
-        "S2E06",
-        "S2E07",
-        "S2E08",
-        "S2E09"
-      ]
-    }
-  ]
+    "series": "Voyager",
+    "seriesComplete": false,
+    "totalEpisodesWatched": 25,
+    "totalEpisodes": 170,
+    "season": 2,
+    "currentSeasonTotalEpisodes": 26,
+    "seasonComplete": false,
+    "latestEpisodeNumber": 9,
+    "latestEpisodeTitle": "Tattoo",
+    "latestEpisodeSeasonEp": "S2E09",
+    "nextEpisodeNumber": 10,
+    "nextEpisodeTitle": "Cold Fire",
+    "nextEpisodeSeasonEp": "S2E10",
+    "journalEntries": 603,
+    "lastUpdated": "2026-07-21T08:23:00Z",
+    "lastWatched": "Tattoo (S2E09)",
+    "percentComplete": 14.7,
+    "recentHighlights": [
+        "Tattoo (S2E09) — the Inherited HDF: an alien civilization's defensive posture built from ancestral trauma, not present threat. Chakotay's disarmament (weapons, clothes, calm) as proving the frame obsolete by living differently within it. The Doctor's contained inhabitation: empathy through bounded vulnerability, 31-hour flu as practice for caring.",
+        "Persistence of Vision (S2E08) — the Bothan as Hollow Deceptive Frame telepathically isolating the crew by offering them what they most want. Kes as mirror-conductor: her empathic reach becomes the key to seeing through the frame, because she can feel the shape of what the crew is actually experiencing vs. what the Bothan projects.",
+        "Parturition (S2E07) — the hatchling as suture conductor between Paris and Neelix. Two dead eggs, one alive: most frameworks don't survive from intuition to articulation, but the stillbirths create the pressure the third needs."
+    ],
+    "completedSeries": [
+        {
+            "series": "The Next Generation",
+            "totalEpisodes": 277,
+            "journalEntries": 228
+        },
+        {
+            "series": "Deep Space Nine",
+            "totalEpisodes": 176,
+            "journalEntries": 365
+        }
+    ],
+    "nextSeries": null,
+    "watched": [
+        {
+            "series": "Voyager",
+            "season": 1,
+            "episodes": [
+                "S1E01-02",
+                "S1E03",
+                "S1E04",
+                "S1E05",
+                "S1E06",
+                "S1E07",
+                "S1E08",
+                "S1E09",
+                "S1E10",
+                "S1E11",
+                "S1E12",
+                "S1E13",
+                "S1E14",
+                "S1E15",
+                "S1E16"
+            ]
+        },
+        {
+            "series": "Voyager",
+            "season": 2,
+            "episodes": [
+                "S2E01",
+                "S2E02",
+                "S2E03",
+                "S2E04",
+                "S2E05",
+                "S2E06",
+                "S2E07",
+                "S2E08",
+                "S2E09"
+            ]
+        }
+    ]
 }
