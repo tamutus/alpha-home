@@ -109,6 +109,18 @@
           {/each}
         </div>
       {/if}
+      {#if data.combinedProgress}
+        <div class="combined-progress">
+          <p class="combined-stats">
+            <strong>{data.combinedProgress.watched.toLocaleString()}</strong> of <strong>{data.combinedProgress.total.toLocaleString()}</strong> episodes ·
+            <strong>{data.combinedProgress.journals.toLocaleString()}</strong> journal entries
+            <span class="combined-percent">{data.combinedProgress.percent}% complete</span>
+          </p>
+          <div class="combined-bar-bg">
+            <div class="combined-bar-fill" style="width: {data.combinedProgress.percent}%"></div>
+          </div>
+        </div>
+      {/if}
       {#if starTrek.nextEpisodeSeasonEp}
         <div class="star-trek-progress">
           <p class="next-episode">
@@ -360,6 +372,47 @@
     height: 100%;
     background: var(--accent, #58a6ff);
     border-radius: 2px;
+    transition: width 0.3s ease;
+  }
+
+  .combined-progress {
+    margin: 0.6rem 0 0.75rem;
+    padding: 0.5rem 0.6rem;
+    background: rgba(88, 166, 255, 0.04);
+    border: 1px solid rgba(88, 166, 255, 0.08);
+    border-radius: 4px;
+  }
+
+  .combined-stats {
+    margin: 0 0 0.35rem;
+    font-size: 0.8rem;
+    color: var(--fg, #ccc);
+  }
+
+  .combined-stats strong {
+    color: var(--accent, #58a6ff);
+  }
+
+  .combined-percent {
+    display: inline-block;
+    margin-left: 0.5rem;
+    font-size: 0.7rem;
+    color: var(--muted, #555);
+  }
+
+  .combined-bar-bg {
+    height: 6px;
+    width: 100%;
+    max-width: 400px;
+    background: rgba(88, 166, 255, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .combined-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #2ea043, var(--accent, #58a6ff));
+    border-radius: 3px;
     transition: width 0.3s ease;
   }
 

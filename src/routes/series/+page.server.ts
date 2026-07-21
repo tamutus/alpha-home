@@ -72,9 +72,30 @@ export function load() {
     nextEpisodeSeasonEp: null,
   };
 
+  const completedSeries = starTrek.completedSeries || [];
+  const currentWatched = starTrek.totalEpisodesWatched || 0;
+  const currentTotal = starTrek.totalEpisodes || 0;
+  const currentJournals = starTrek.journalEntries || 0;
+
+  const combinedWatched = completedSeries.reduce(
+    (sum: number, cs: any) => sum + (cs.totalEpisodes || 0), 0
+  ) + currentWatched;
+  const combinedTotal = completedSeries.reduce(
+    (sum: number, cs: any) => sum + (cs.totalEpisodes || 0), 0
+  ) + currentTotal;
+  const combinedJournals = completedSeries.reduce(
+    (sum: number, cs: any) => sum + (cs.journalEntries || 0), 0
+  ) + currentJournals;
+
   return {
     starTrek,
     completedSeasons: computeCompletedSeasons(starTrek),
     seasonRecaps: loadSeasonRecaps(),
+    combinedProgress: {
+      watched: combinedWatched,
+      total: combinedTotal,
+      journals: combinedJournals,
+      percent: combinedTotal > 0 ? Math.round((combinedWatched / combinedTotal) * 1000) / 10 : 0,
+    },
   };
 }
