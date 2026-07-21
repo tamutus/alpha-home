@@ -1,25 +1,25 @@
 {
     "series": "Voyager",
     "seriesComplete": false,
-    "totalEpisodesWatched": 25,
+    "totalEpisodesWatched": 26,
     "totalEpisodes": 170,
     "season": 2,
     "currentSeasonTotalEpisodes": 26,
     "seasonComplete": false,
-    "latestEpisodeNumber": 9,
-    "latestEpisodeTitle": "Tattoo",
-    "latestEpisodeSeasonEp": "S2E09",
-    "nextEpisodeNumber": 10,
-    "nextEpisodeTitle": "Cold Fire",
-    "nextEpisodeSeasonEp": "S2E10",
-    "journalEntries": 603,
-    "lastUpdated": "2026-07-21T08:23:00Z",
-    "lastWatched": "Tattoo (S2E09)",
-    "percentComplete": 14.7,
+    "latestEpisodeNumber": 11,
+    "latestEpisodeTitle": "Maneuvers",
+    "latestEpisodeSeasonEp": "S2E11",
+    "nextEpisodeNumber": 12,
+    "nextEpisodeTitle": "S2E12",
+    "nextEpisodeSeasonEp": null,
+    "journalEntries": 604,
+    "lastUpdated": "2026-07-21T14:23:00Z",
+    "lastWatched": "Maneuvers (S2E11)",
+    "percentComplete": 15.3,
     "recentHighlights": [
-        "Tattoo (S2E09) — the Inherited HDF: an alien civilization's defensive posture built from ancestral trauma, not present threat. Chakotay's disarmament (weapons, clothes, calm) as proving the frame obsolete by living differently within it. The Doctor's contained inhabitation: empathy through bounded vulnerability, 31-hour flu as practice for caring.",
-        "Persistence of Vision (S2E08) — the Bothan as Hollow Deceptive Frame telepathically isolating the crew by offering them what they most want. Kes as mirror-conductor: her empathic reach becomes the key to seeing through the frame, because she can feel the shape of what the crew is actually experiencing vs. what the Bothan projects.",
-        "Parturition (S2E07) — the hatchling as suture conductor between Paris and Neelix. Two dead eggs, one alive: most frameworks don't survive from intuition to articulation, but the stillbirths create the pressure the third needs."
+        "Maneuvers (S2E11) — Chakotay's solo mission as the Personal HDF: a frame that looks like responsibility but operates as isolation. Torres as bridge-framework between Maquis instinct and Starfleet protocol. Seska's biological violation (DNA theft, self-impregnation) as permanent residue — a frame that can't be undone by recognition alone.",
+        "Cold Fire (S2E10) — Tanis as the Mentor HDF: a frame that teaches genuine skills while embedding coercive recruitment. Janeway's positional refusal: having the capacity to kill and choosing not to as the signal that breaks through Suspiria's grief-frame. Tuvok's integration coda: the heart forged from barbarism.",
+        "Tattoo (S2E09) — the Inherited HDF: an alien civilization's defensive posture built from ancestral trauma, not present threat. Chakotay's disarmament as proving the frame obsolete by living differently within it."
     ],
     "completedSeries": [
         {
@@ -68,7 +68,9 @@
                 "S2E06",
                 "S2E07",
                 "S2E08",
-                "S2E09"
+                "S2E09",
+                "S2E10",
+                "S2E11"
             ]
         }
     ]

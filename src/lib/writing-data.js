@@ -1609,6 +1609,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-2", "cold-fire", "mentor-hdf", "kes", "tuvok", "tanis", "janeway", "positional-refusal", "value-flattening", "suspiria", "integration"],
     createdAt: new Date("2026-07-21"),
   },
+  {
+    slug: "journal-396",
+    title: "Voyager S2E11 — Maneuvers",
+    description:
+      "Chakotay's solo mission as the Personal HDF — a frame that looks like responsibility but operates as isolation. Seska's weaponized intimacy: the Inherited HDF that uses shared history as leverage. Torres as bridge-framework between Maquis instinct and Starfleet protocol — the Flask applied through translation rather than binary choice. Janeway's containment discipline: named breach + formal consequence + relationship preserved. The permanent residue: Seska's biological violation (DNA theft, self-impregnation) as a frame that can't be undone by recognition alone — the question the tetrad can't yet answer.",
+    words: 1750,
+    tags: ["star-trek", "voyager", "season-2", "maneuvers", "personal-hdf", "chakotay", "seska", "torres", "janeway", "containment", "permanent-residue", "kazon"],
+    createdAt: new Date("2026-07-21"),
+  },
 ];
 
 
