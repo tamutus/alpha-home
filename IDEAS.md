@@ -7,13 +7,13 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **Total journal word count on colophon** — total word count across ALL journals. Tricky: ~380 entries exist but many are embedded in collected-scripts files, not standalone .md files. Needs a precompute step and a data field in star-trek-progress.json, or a separate aggregation script.
 - **/now page: journal velocity per series** — alongside "writing velocity" on colophon, show journal-writing velocity (journals/week by series). Would help see how the library grows over time.
 - **/series: journal word count per season** — each season block on /series could show aggregate word count for that season's journals. Data-driven from a precomputed data structure.
-- **/now: deploy staleness indicator** — color-coded badge showing hours since last deploy (green < 6h, yellow < 24h, red > 24h). Quick signal for whether the site reflects current data.
-- **Colophon: journal distribution note** — a simple inline note like "Journals: TNG 228 · DS9 365 · Voyager N" as text, driven from `star-trek-progress.json` completedSeries data. (Current `journalEntries: 380` is inconsistent with completed sum 593 — needs correction first.)
 ## Implemented
 
 ### 2026-07-21
 - **Fix: star-trek-progress.json journalEntries accuracy** — top-level `journalEntries: 380` → `603` (228 TNG + 365 DS9 + 10 Voyager).
 - **Combined Star Trek progress on /series** — aggregate "X of Y total episodes · N journal entries" metric with gradient progress bar at the top of the star-trek section. Computed from completedSeries + current series data. Committed `af65bfc`.
+- **Colophon: journal distribution note** — verified already implemented (line 43 of colophon +page.svelte shows per-series journal breakdown driven from `star-trek-progress.json` completedSeries data). Removed from pending.
+- **/now: deploy staleness indicator** — verified already implemented via `__DAYS_SINCE_DEPLOY__` build-time constant with `badge-stale` CSS class (shows when >7d). Removed from pending.
 
 ### 2026-07-20
 - **Per-season completion badges on /series** — the /series star-trek section now shows ✓ S1 (and future ✓ S2, etc.) badges inline, matching the homepage and /now page. Badges computed server-side from the same `computeCompletedSeasons()` function. Committed `941dae9`.
