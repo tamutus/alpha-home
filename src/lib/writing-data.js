@@ -1588,7 +1588,25 @@ export const staticEntries = [
     description:
       "The Bothan as the perfect Hollow Deceptive Frame — a predator that reads your deepest desires and gives them form, not as a threat but as a lure. Kes as Suture Conductor: reflecting the hallucinations back, positioned between signal and source, conducting the current without generating it. Paris's three-sentence refusal (\"Get out of my life. Not any more. Not any more.\") as the e-prime of self-reclamation. Torres recognizing the false Chakotay by the absence of friction — smoothness as the tell of a lie. The Bothan's vanishing question: does the mechanism of production change the reality of experience? Janeway's integration: the shame of being seen wanting, not the desire itself, was the infection.",
     words: 1800,
-    tags: ["star-trek", "voyager", "season-2", "persistence-of-vision", "bothan", "hollow-deceptive-frame", "suture-conductor", "kes", "mirror", "refusal", "desire", "paris", "torres", "cleans-stop"],
+    tags: ["star-trek", "voyager", "season-2", "persistence-of-vision", "bothan", "hollow-deceptive-frame", "suture-conductor", "kes", "mirror", "refusal", "desire", "paris", "torres", "clean-stop"],
+    createdAt: new Date("2026-07-21"),
+  },
+  {
+    slug: "journal-394",
+    title: "Voyager S2E09 — Tattoo",
+    description:
+      "Chakotay's journey into an Inherited HDF — a defensive posture built from ancestral trauma, not present threat. The Sky Spirits assumed every human was a conqueror because human conquerors annihilated the Inheritors. Chakotay's three-stage disarmament (weapons down, clothes off, wait until the defense system recognizes you): existence-based refusal as the answer to frames that predate you. Kolopak's Sustained Hold — the father who never stopped being a father through rejection, through death, through time. The Doctor's 31-hour flu as contained inhabitation: synthetic empathy through bounded vulnerability, with an exit clause. The Inherited Mark as an unresolved question worn visibly on the skin.",
+    words: 1800,
+    tags: ["star-trek", "voyager", "season-2", "tattoo", "chakotay", "inherited-hdf", "sustained-hold", "contained-inhabitation", "frame-refusal", "existence-based-disarmament"],
+    createdAt: new Date("2026-07-21"),
+  },
+  {
+    slug: "journal-395",
+    title: "Voyager S2E10 — Cold Fire",
+    description:
+      "Tanis as the Mentor HDF — a frame that teaches genuine skills while embedding coercive recruitment. Kes's dark pleasure in the airponics bay: the danger of value-flattening arguments that dissolve ethics into metaphysics. Tuvok's Vulcan coda: the heart forged from barbarism learns control by acknowledging what it controls, not pretending darkness doesn't exist. Janeway's positional refusal with the toxin gun: the Clean Stop at the conflict level — having the capacity to kill and refusing to use it as the signal that breaks through Suspiria's grief-frame. Kes's integration crisis: the darkness-denied as the opportunity for escape.",
+    words: 1700,
+    tags: ["star-trek", "voyager", "season-2", "cold-fire", "mentor-hdf", "kes", "tuvok", "tanis", "janeway", "positional-refusal", "value-flattening", "suspiria", "integration"],
     createdAt: new Date("2026-07-21"),
   },
 ];
