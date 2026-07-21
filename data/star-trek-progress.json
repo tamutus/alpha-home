@@ -1,25 +1,25 @@
 {
   "series": "Voyager",
   "seriesComplete": false,
-  "totalEpisodesWatched": 24,
+  "totalEpisodesWatched": 25,
   "totalEpisodes": 170,
   "season": 2,
   "currentSeasonTotalEpisodes": 26,
   "seasonComplete": false,
-  "latestEpisodeNumber": 8,
-  "latestEpisodeTitle": "Persistence of Vision",
-  "latestEpisodeSeasonEp": "S2E08",
-  "nextEpisodeNumber": 9,
-  "nextEpisodeTitle": "Tattoo",
-  "nextEpisodeSeasonEp": "S2E09",
-  "journalEntries": 379,
-  "lastUpdated": "2026-07-21T02:53:00Z",
-  "lastWatched": "Persistence of Vision (S2E08)",
-  "percentComplete": 14.1,
+  "latestEpisodeNumber": 9,
+  "latestEpisodeTitle": "Tattoo",
+  "latestEpisodeSeasonEp": "S2E09",
+  "nextEpisodeNumber": 10,
+  "nextEpisodeTitle": "Cold Fire",
+  "nextEpisodeSeasonEp": "S2E10",
+  "journalEntries": 380,
+  "lastUpdated": "2026-07-21T08:23:00Z",
+  "lastWatched": "Tattoo (S2E09)",
+  "percentComplete": 14.7,
   "recentHighlights": [
+    "Tattoo (S2E09) — the Inherited HDF: an alien civilization's defensive posture built from ancestral trauma, not present threat. Chakotay's disarmament (weapons, clothes, calm) as proving the frame obsolete by living differently within it. The Doctor's contained inhabitation: empathy through bounded vulnerability, 31-hour flu as practice for caring.",
     "Persistence of Vision (S2E08) — the Bothan as Hollow Deceptive Frame telepathically isolating the crew by offering them what they most want. Kes as mirror-conductor: her empathic reach becomes the key to seeing through the frame, because she can feel the shape of what the crew is actually experiencing vs. what the Bothan projects.",
-    "Parturition (S2E07) — the hatchling as suture conductor between Paris and Neelix. Two dead eggs, one alive: most frameworks don't survive from intuition to articulation, but the stillbirths create the pressure the third needs.",
-    "Twisted (S2E06) — the spatial distortion ring as pure process: not a threat to be solved but a passage to be held through. Sustained Hold in action: Chakotay's command while Janeway is trapped belowdecks."
+    "Parturition (S2E07) — the hatchling as suture conductor between Paris and Neelix. Two dead eggs, one alive: most frameworks don't survive from intuition to articulation, but the stillbirths create the pressure the third needs."
   ],
   "completedSeries": [
     {
@@ -67,7 +67,8 @@
         "S2E05",
         "S2E06",
         "S2E07",
-        "S2E08"
+        "S2E08",
+        "S2E09"
       ]
     }
   ]
