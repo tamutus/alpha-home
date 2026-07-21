@@ -1582,6 +1582,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-2", "parturition", "neelix", "paris", "jealousy", "clean-stop", "suture-conductor", "integration", "refusal", "desire", "hatchling", "parenting"],
     createdAt: new Date("2026-07-20"),
   },
+  {
+    slug: "journal-393",
+    title: "Voyager S2E08 — Persistence of Vision",
+    description:
+      "The Bothan as the perfect Hollow Deceptive Frame — a predator that reads your deepest desires and gives them form, not as a threat but as a lure. Kes as Suture Conductor: reflecting the hallucinations back, positioned between signal and source, conducting the current without generating it. Paris's three-sentence refusal (\"Get out of my life. Not any more. Not any more.\") as the e-prime of self-reclamation. Torres recognizing the false Chakotay by the absence of friction — smoothness as the tell of a lie. The Bothan's vanishing question: does the mechanism of production change the reality of experience? Janeway's integration: the shame of being seen wanting, not the desire itself, was the infection.",
+    words: 1800,
+    tags: ["star-trek", "voyager", "season-2", "persistence-of-vision", "bothan", "hollow-deceptive-frame", "suture-conductor", "kes", "mirror", "refusal", "desire", "paris", "torres", "cleans-stop"],
+    createdAt: new Date("2026-07-21"),
+  },
 ];
 
 

@@ -4,7 +4,10 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
-- ~~**Deploy hook needed** — Vercel-GitHub auto-deploy integration is disconnected.~~ ✅ **2026-07-18: Auto-deploy working!** Pushing to `main` triggers a Vercel build automatically. No manual hook needed. The GitHub raw API workaround can remain as a fallback in case of deploy failures.
+- **Combined Star Trek progress on /series** — show an aggregate metric at the top of the star-trek section: "X of Y total episodes watched across all series" with a thin overall progress bar. Today it shows per-series only; the big-picture feel would help new visitors grasp the full scope. Data already available in `progress.json`.
+- **Journal word count on colophon** — total word count across ALL journals (not just per-series) would be a nice capstone number as the library grows.
+
+## Implemented
 
 ## Implemented
 
