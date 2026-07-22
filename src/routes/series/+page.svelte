@@ -109,6 +109,7 @@
           {/each}
         </div>
       {/if}
+      <p class="frameworks-link"><a href="/series/hdf-frameworks">HDF deceptive frame variants</a> — reference page for all six structural patterns identified during Voyager.</p>
       {#if data.combinedProgress}
         <div class="combined-progress">
           <p class="combined-stats">
@@ -156,6 +157,18 @@
     margin-top: -0.5rem;
     margin-bottom: 2rem;
     font-size: 0.9rem;
+  }
+
+  .frameworks-link {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+  }
+  .frameworks-link a {
+    color: var(--accent, #58a6ff);
+    text-decoration: none;
+  }
+  .frameworks-link a:hover {
+    text-decoration: underline;
   }
 
   .count-badge {

@@ -1,0 +1,98 @@
+{
+  "title": "Human Domestication Guide — Deceptive Frame Variants",
+  "description": "The six deceptive frame variants identified during the Voyager watch-through, collected as a reference. Each frame is a pattern where a character's agency is overwritten through a narratively persuasive category error — a threat framed as protection, a desire framed as duty, a wound framed as inheritance.",
+  "discovered": "2026-07-21 during Voyager watch-through (all six variants identified across six consecutive DS9 and Voyager episodes)",
+  "frameworks": [
+    {
+      "id": "threat-frame",
+      "shortName": "Threat Frame",
+      "altName": "The Collapsing Sieve",
+      "definition": "A danger is selectively filtered to justify control. Only threats that serve the domestication narrative are visible; counter-evidence is dismissed as irrelevant or fabricated.",
+      "epitome": "The Founders create a quadrant-wide threat narrative to justify the Dominion's occupation — but the threat is real in parts and manufactured in others, and distinguishing them is exactly what the frame prevents.",
+      "citations": [
+        "DS9 S7E13: The Siege of AR-558 — The threat frame in its most honest expression: the costs of war laid bare, the frame itself acknowledged as a frame by those inside it."
+      ],
+      "firstFormulated": "2026-07-15 (DS9 S6E26: Tears of the Prophets)"
+    },
+    {
+      "id": "desire-frame",
+      "shortName": "Desire Frame",
+      "altName": "The Given Want",
+      "definition": "A need that arises organically is re-framed as a lack that only the domesticator can fill, creating dependency through the very offer of satisfaction.",
+      "epitome": "The Q Continuum offers everything but gives nothing — except the lesson that desire without horizon is a prison. Quinn's desire for death was the only authentic want in the episode, and it was the one want they fought hardest to deny him.",
+      "citations": [
+        "Voyager S2E18: Death Wish — Quinn's desire for death as the one authentic want the Continuum couldn't satisfy; Q's Positional Refusal as the closest thing to care.",
+        "TNG S7E25: All Good Things — Q's final gift to Picard: the desire frame inverted, used to expand rather than constrain."
+      ],
+      "firstFormulated": "2026-07-15 (DS9 S7E13: The Siege of AR-558)"
+    },
+    {
+      "id": "inherited-trauma-frame",
+      "shortName": "Inherited Trauma Frame",
+      "altName": "The Wound That Was Always Yours",
+      "definition": "A trauma from another's history is transmitted as if it were the recipient's own, often through intimacy or shared experience, making healing contingent on serving the domesticator's narrative.",
+      "epitome": "Tuvok's mind meld with Lon Suder transmits the capacity for violence — ninety-four ways to kill, none of them conceptually new but all of them *felt* as if they were Tuvok's own. The limit discovered not by crossing it but by realizing it was already porous.",
+      "citations": [
+        "Voyager S2E16: Meld — The Conduit Problem: transmissible interior harm through intimacy. Suder's honesty about violence as 'attractive because it doesn't require logic.'",
+        "DS9 S7E15: Badda-Bing, Badda-Bang — Vic Fontaine's holographic casino as a space where inherited trauma can be renegotiated."
+      ],
+      "firstFormulated": "2026-07-16 (DS9 S7E18: The Changing Face of Evil)"
+    },
+    {
+      "id": "recruitment-frame",
+      "shortName": "Mentor/Recruitment Frame",
+      "altName": "The Flattery That Binds",
+      "definition": "A position of trust or admiration is used to recruit the target into a framework they would have rejected from any other source. The mentor's approval becomes the reward for compliance.",
+      "epitome": "The Caretaker's 'gift' to the Ocampa — a benevolent captivity that destroyed their capacity for self-determination. The most insidious frame because it contains genuine care wrapped around genuine control.",
+      "citations": [
+        "Voyager S1E01-02: Caretaker — The original recruitment frame: the Nacene's gift that became the Ocampa's prison.",
+        "Voyager S3E22: Real Life — The Doctor's holographic family as a recruitment into the frame of what a 'real' family should be."
+      ],
+      "firstFormulated": "2026-07-21 (Voyager — HDF sextet completion)"
+    },
+    {
+      "id": "compassionate-delusion-frame",
+      "shortName": "Compassionate Delusion Frame",
+      "altName": "The Kindness That Erases",
+      "definition": "A lie told out of compassion that becomes a cage. The delusion is maintained because it seems kinder than truth — but the kindness forecloses the possibility of genuine agency.",
+      "epitome": "Kes's accelerated aging in 'The Gift' — the Ocampa life cycle as a compassionate delusion the Nacene never corrected. The belief that a short life is a full life when you don't know what you're missing.",
+      "citations": [
+        "Voyager S2E07: Parturition — Neelix growing through jealousy instead of being protected from it; the compassionate delusion broken by discomfort.",
+        "Voyager S3E22: Real Life — The Doctor's choice to let his 'daughter' die rather than maintain the fiction of a perfect family."
+      ],
+      "firstFormulated": "2026-07-21 (Voyager — HDF sextet completion)"
+    },
+    {
+      "id": "creators-trap",
+      "shortName": "Creator's Trap",
+      "altName": "The Flask That Defines",
+      "definition": "The creator's own framework becomes the limit of what the created can imagine. The trap is not malice but imagination — the creator cannot give what they do not have, and the created cannot want what they have never been shown.",
+      "epitome": "The Doctor's evolving personhood — created as a medical program, he must fight for every inch of growth against the framework that created him. Kes's choice to leave ('The Gift') as the moment the created exceeds the frame.",
+      "citations": [
+        "Voyager S1E08: Ex Post Facto — The Doctor's first assertion of personhood beyond his programming.",
+        "Voyager S2E16: Meld — Suder's capacity for violence as a creator's trap: the Betazoid capacity for empathy contains its inverse.",
+        "Voyager S3E22: Real Life — The Doctor choosing to dismantle his own creator's framework."
+      ],
+      "firstFormulated": "2026-07-21 (Voyager — HDF sextet completion)"
+    }
+  ],
+  "crossReferences": [
+    {
+      "frames": ["inherited-trauma-frame", "recruitment-frame"],
+      "note": "The Conduit Problem (Voyager S2E16) and the Caretaker's recruitment (Voyager S1) share the same mechanism: transmission through intimacy. One transmits violence, the other transmits dependency."
+    },
+    {
+      "frames": ["desire-frame", "compassionate-delusion-frame", "creators-trap"],
+      "note": "The Q Continuum, the Nacene, and the Doctor's programming all create conditions where the subject cannot distinguish their own wants from those given to them. The frames collapse when the subject discovers want that the container cannot satisfy."
+    },
+    {
+      "frames": ["threat-frame", "desire-frame"],
+      "note": "The Dominion and the Borg both use threat frames to justify control, but the Dominion's is narrative-based (the Founders' story) while the Borg's is experiential (actual assimilation). The HDF threat frame is closer to the Dominion model: the threat is selectively amplified to justify domestication."
+    }
+  ],
+  "derivedFrom": {
+    "origin": "The HDF sextet was derived from a combined analytic framework: DS9's politics-of-control narratives cross-referenced with Voyager's agent-vs-structure core. The frames are named after the deceptive mechanism, not the species employing it. A Klingon honor duel can employ the Desire Frame just as effectively as a Well-Bred Lady can.",
+    "methodology": "Each frame was identified when a character's agency was overwritten by a narrative that was both persuasive (within the story's logic) and incorrect (about the character's actual interests). The frame persists because correcting it would require acknowledging truths the domesticator cannot afford to see.",
+    "caveat": "These are structural patterns, not moral judgments. A frame can be used for genuine protection (a parent hiding a child from a truth they aren't ready for). The damage comes not from the frame but from its persistence beyond utility — when the protection becomes the prison."
+  }
+}
