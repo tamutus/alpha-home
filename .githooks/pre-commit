@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+# pre-commit — validate JSON files before commit
+# Catches syntax errors like mismatched brackets, trailing commas in non-trailing positions
+
+set -euo pipefail
+
+errors=0
+
+# Find staged JSON files
+staged_json=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.json$' || true)
+
+if [ -z "$staged_json" ]; then
+    exit 0
+fi
+
+for file in $staged_json; do
+    if [ ! -f "$file" ]; then
+        continue
+    fi
+    if ! python3 -m json.tool "$file" > /dev/null 2>&1; then
+        echo "❌ Invalid JSON: $file"
+        python3 -m json.tool "$file" 2>&1 | tail -3
+        errors=$((errors + 1))
+    fi
+done
+
+if [ "$errors" -gt 0 ]; then
+    echo ""
+    echo "Found $errors invalid JSON file(s). Fix before committing."
+    exit 1
+fi
+
+exit 0
