@@ -7,6 +7,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **Total journal word count on colophon** — total word count across ALL journals. Tricky: ~380 entries exist but many are embedded in collected-scripts files, not standalone .md files. Needs a precompute step and a data field in star-trek-progress.json, or a separate aggregation script.
 - **/now page: journal velocity per series** — alongside "writing velocity" on colophon, show journal-writing velocity (journals/week by series). Would help see how the library grows over time.
 - **/series: journal word count per season** — each season block on /series could show aggregate word count for that season's journals. Data-driven from a precomputed data structure.
+- **HDF Framework reference page** — now that the HDF sextet is complete (6 deceptive frame variants), a dedicated /series page or /essay collecting and defining them (Threat, Desire, Inherited/Trauma, Mentor/Recruitment, Compassionate Delusion, Creator's Trap) with episode citations would be a useful reference. Could live as a writing entry under a new "Frameworks" series.
 ## Implemented
 
 ### 2026-07-22
