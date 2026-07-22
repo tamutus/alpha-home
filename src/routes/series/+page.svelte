@@ -124,7 +124,7 @@
       {#if starTrek.nextEpisodeSeasonEp}
         <div class="star-trek-progress">
           <p class="next-episode">
-            → next: <a href="/now">{starTrek.nextEpisodeSeasonEp} — {starTrek.nextEpisodeTitle}</a>
+            → next: <a href="/now">{starTrek.nextEpisodeSeasonEp}{#if starTrek.nextEpisodeTitle} — {starTrek.nextEpisodeTitle}{/if}</a>
             <span class="progress-percentage">{starTrek.percentComplete}%</span>
           </p>
           <div class="progress-bar-bg">

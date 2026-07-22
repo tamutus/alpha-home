@@ -9,7 +9,8 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **/series: journal word count per season** — each season block on /series could show aggregate word count for that season's journals. Data-driven from a precomputed data structure.
 ## Implemented
 
-### 2026-07-21
+### 2026-07-22
+- **Fix: null nextEpisodeTitle rendering on /series and /now** — `nextEpisodeTitle` was `null` in progress data (between syncs), causing "null" to render as text on /series (line 127) and /now (lines 125, 139). Added `{#if starTrek.nextEpisodeTitle}` guards. Also populated S2E16 "Meld" in progress.json. Committed.
 - **Fix: star-trek-progress.json journalEntries accuracy** — top-level `journalEntries: 380` → `603` (228 TNG + 365 DS9 + 10 Voyager).
 - **Combined Star Trek progress on /series** — aggregate "X of Y total episodes · N journal entries" metric with gradient progress bar at the top of the star-trek section. Computed from completedSeries + current series data. Committed `af65bfc`.
 - **Colophon: journal distribution note** — verified already implemented (line 43 of colophon +page.svelte shows per-series journal breakdown driven from `star-trek-progress.json` completedSeries data). Removed from pending.
