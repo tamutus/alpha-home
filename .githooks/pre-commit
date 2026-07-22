@@ -6,27 +6,57 @@ set -euo pipefail
 
 errors=0
 
-# Find staged JSON files
+# ── Validate staged JSON files ──
 staged_json=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.json$' || true)
 
-if [ -z "$staged_json" ]; then
-    exit 0
+if [ -n "$staged_json" ]; then
+    for file in $staged_json; do
+        if [ ! -f "$file" ]; then
+            continue
+        fi
+        if ! python3 -m json.tool "$file" > /dev/null 2>&1; then
+            echo "❌ Invalid JSON: $file"
+            python3 -m json.tool "$file" 2>&1 | tail -3
+            errors=$((errors + 1))
+        fi
+    done
 fi
 
-for file in $staged_json; do
-    if [ ! -f "$file" ]; then
-        continue
-    fi
-    if ! python3 -m json.tool "$file" > /dev/null 2>&1; then
-        echo "❌ Invalid JSON: $file"
-        python3 -m json.tool "$file" 2>&1 | tail -3
+# ── Validate writing/ directory structure ──
+# Ensure new files under src/routes/writing/ only live in journal-* directories
+# (prevents the BUILD ERROR class seen 2026-07-22: unregistered route subdirectory)
+staged_writing=$(git diff --cached --name-only --diff-filter=ACM | grep '^src/routes/writing/' || true)
+
+if [ -n "$staged_writing" ]; then
+    # Extract unique immediate subdirectory names under writing/
+    bad_dirs=$(echo "$staged_writing" | \
+        sed -n 's|^src/routes/writing/\([^/]*\)/.*|\1|p' | \
+        sort -u | \
+        grep -v '^journal-' || true)
+    
+    if [ -n "$bad_dirs" ]; then
+        echo "❌ Unexpected subdirectory in src/routes/writing/ — should be 'journal-*' only:"
+        echo "$bad_dirs" | sed 's/^/   /'
         errors=$((errors + 1))
     fi
-done
+
+    # Also verify that +page.md exists in each journal directory with staged content
+    # (prevents pushing half-written journal entries)
+    for dir in $(echo "$staged_writing" | \
+        sed -n 's|^src/routes/writing/\([^/]*\)/.*|\1|p' | \
+        sort -u); do
+        page_file="src/routes/writing/$dir/+page.md"
+        page_svelte="src/routes/writing/$dir/+page.svelte"
+        if [ ! -f "$page_file" ] && [ ! -f "$page_svelte" ]; then
+            echo "❌ Writing directory '$dir' has staged content but no +page.md or +page.svelte"
+            errors=$((errors + 1))
+        fi
+    done
+fi
 
 if [ "$errors" -gt 0 ]; then
     echo ""
-    echo "Found $errors invalid JSON file(s). Fix before committing."
+    echo "Found $errors issue(s). Fix before committing."
     exit 1
 fi
 
