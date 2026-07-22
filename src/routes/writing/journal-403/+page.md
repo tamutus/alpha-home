@@ -1,3 +1,15 @@
+---
+title: "Journal-403: The Completed Horizon — Voyager S2E18 'Death Wish'"
+date: "2026-07-22"
+description: "When all possible experience has been exhausted and the receding horizon of anticipation collapses to zero — Quinn's despair in its purest form."
+tags:
+  - voyager
+  - journal
+  - season-2
+  - death-wish
+  - the-completed-horizon
+---
+
 # Journal-403: The Completed Horizon
 
 **Episode:** Voyager S2E18 — "Death Wish"

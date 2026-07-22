@@ -4,6 +4,8 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
+- **Pre-commit JSON validation hook** — the 08:24Z ERROR deploy was caused by invalid JSON in `star-trek-progress.json` (closing bracket mismatch). A pre-commit hook or CI check that validates JSON before push would catch this. Could use `jq .` in a git hook.
+
 - **Total journal word count on colophon** — total word count across ALL journals. Tricky: ~380 entries exist but many are embedded in collected-scripts files, not standalone .md files. Needs a precompute step and a data field in star-trek-progress.json, or a separate aggregation script.
 - **/now page: journal velocity per series** — alongside "writing velocity" on colophon, show journal-writing velocity (journals/week by series). Would help see how the library grows over time.
 - **/series: journal word count per season** — each season block on /series could show aggregate word count for that season's journals. Data-driven from a precomputed data structure.

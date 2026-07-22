@@ -1,86 +1,87 @@
 {
-    "series": "Voyager",
-    "seriesComplete": false,
-    "totalEpisodesWatched": 32,
-    "totalEpisodes": 170,
-    "season": 2,
-    "currentSeasonTotalEpisodes": 26,
-    "seasonComplete": false,
-    "latestEpisodeNumber": 17,
-    "latestEpisodeTitle": "Dreadnought",
-    "latestEpisodeSeasonEp": "S2E17",
-    "nextEpisodeNumber": 18,
-    "nextEpisodeTitle": "Death Wish",
-    "nextEpisodeSeasonEp": "S2E18",
-    "journalEntries": 608,
-    "lastUpdated": "2026-07-22T08:23:00Z",
-    "lastWatched": "Dreadnought (S2E17)",
-    "percentComplete": 18.8,
-    "recentHighlights": [
-        "Dreadnought (S2E17) \u2014 The Probability Prison: a weapon whose Bayesian priors are so strong no evidence can dislodge them, programmed with B'Elanna's own voice, requiring a meta-cognitive intervention (the hypothetical game) and the resurrection of its original Cardassian identity to crack its certainty. The Conduit Connection: what you overwrite isn't gone, it's dormant.",
-        "Meld (S2E16) \u2014 The Conduit Problem: transmissible interior harm through intimacy. Tuvok's mind meld with psychopath Lon Suder transmits more than information \u2014 it transmits the capacity for violence itself. Suder's honesty about violence as 'attractive because it doesn't require logic.' Tuvok's ninety-four ways to kill. The limit discovered, not chosen: Tuvok cannot complete the execution, and that inability, not his control, is what saves him.",
-        "Threshold (S2E15) \u2014 The Epoch Error: treating a change in kind (evolution) as a change in degree (medical condition). The episode asks a question it can't answer then pretends it didn't ask. The Undoing applied to the wrong thing \u2014 not a deceptive frame but genuine transformation reversed. The framework boundary (Permanent Residue Question) engaged directly: some transformations aren't curable with antiprotons.",
-        "Alliances (S2E14) \u2014 The Graft Principle: Tuvok's orchid-favinit metaphor \u2014 alliances that seem unnatural can strengthen both parties if both operate in good faith. The Overcommitment Trap: committing to pragmatism without testing is the same error as committing to principle without testing. The Double Betrayal: Janeway enters two alliances (Nistrim, Trabe) and both attempt to use her. Janeway's coda: 'hold fast to our own' \u2014 tested and chosen, not rigid. Jonas's betrayal seed planted for later episodes.",
-        "Prototype (S2E13) \u2014 The Creator's Trap as sixth HDF variant. B'Elanna's engineering compassion exploited to build an army. The Clean Stop of Undoing: destroying your own creation because its reason for being is wrong. The Builders' energy codes as a failed safety mechanism \u2014 knowing the mistake but installing safety too late. Two right things (compassion vs. Prime Directive) survived rather than resolved.",
-        "Resistance (S2E12) \u2014 Caylem's Compassionate Delusion as the fifth HDF variant: a frame built from grief-soaked care that offers genuine shelter but binds through dependency. Janeway's frame-acceptance (capacity to correct + choice not to) as a new refusal mode \u2014 the Positional Refusal inverted for compassion. Truth as weapon (Augris's final cruelty). Tuvok's scream as the Integration Coda made visceral: Vulcan endurance isn't absence of suffering but choice to continue."
-    ],
-    "completedSeries": [
-        {
-            "series": "The Next Generation",
-            "totalEpisodes": 277,
-            "journalEntries": 228
-        },
-        {
-            "series": "Deep Space Nine",
-            "totalEpisodes": 176,
-            "journalEntries": 365
-        }
-    ],
-    "nextSeries": null,
-    "watched": [
-        {
-            "series": "Voyager",
-            "season": 1,
-            "episodes": [
-                "S1E01-02",
-                "S1E03",
-                "S1E04",
-                "S1E05",
-                "S1E06",
-                "S1E07",
-                "S1E08",
-                "S1E09",
-                "S1E10",
-                "S1E11",
-                "S1E12",
-                "S1E13",
-                "S1E14",
-                "S1E15",
-                "S1E16"
-            ]
-        },
-        {
-            "series": "Voyager",
-            "season": 2,
-            "episodes": [
-                "S2E01",
-                "S2E02",
-                "S2E03",
-                "S2E04",
-                "S2E05",
-                "S2E06",
-                "S2E07",
-                "S2E08",
-                "S2E09",
-                "S2E10",
-                "S2E11",
-                "S2E12",
-                "S2E13",
-                "S2E14",
-                "S2E15",
-                "S2E16",
-                "S2E17"
-            ]
-        }
-    ]
+  "series": "Voyager",
+  "seriesComplete": false,
+  "totalEpisodesWatched": 34,
+  "totalEpisodes": 170,
+  "season": 2,
+  "currentSeasonTotalEpisodes": 26,
+  "seasonComplete": false,
+  "latestEpisodeNumber": "S2E18",
+  "latestEpisodeTitle": "Death Wish",
+  "latestEpisodeSeasonEp": 18,
+  "nextEpisodeNumber": "S2E19",
+  "nextEpisodeTitle": "Lifesigns",
+  "nextEpisodeSeasonEp": 19,
+  "journalEntries": 609,
+  "lastUpdated": "2026-07-22",
+  "lastWatched": "2026-07-22",
+  "percentComplete": 20,
+  "recentHighlights": [
+    "Dreadnought (S2E17) \u2014 The Probability Prison: a weapon whose Bayesian priors are so strong no evidence can dislodge them, programmed with B'Elanna's own voice, requiring a meta-cognitive intervention (the hypothetical game) and the resurrection of its original Cardassian identity to crack its certainty. The Conduit Connection: what you overwrite isn't gone, it's dormant.",
+    "Meld (S2E16) \u2014 The Conduit Problem: transmissible interior harm through intimacy. Tuvok's mind meld with psychopath Lon Suder transmits more than information \u2014 it transmits the capacity for violence itself. Suder's honesty about violence as 'attractive because it doesn't require logic.' Tuvok's ninety-four ways to kill. The limit discovered, not chosen: Tuvok cannot complete the execution, and that inability, not his control, is what saves him.",
+    "Threshold (S2E15) \u2014 The Epoch Error: treating a change in kind (evolution) as a change in degree (medical condition). The episode asks a question it can't answer then pretends it didn't ask. The Undoing applied to the wrong thing \u2014 not a deceptive frame but genuine transformation reversed. The framework boundary (Permanent Residue Question) engaged directly: some transformations aren't curable with antiprotons.",
+    "Alliances (S2E14) \u2014 The Graft Principle: Tuvok's orchid-favinit metaphor \u2014 alliances that seem unnatural can strengthen both parties if both operate in good faith. The Overcommitment Trap: committing to pragmatism without testing is the same error as committing to principle without testing. The Double Betrayal: Janeway enters two alliances (Nistrim, Trabe) and both attempt to use her. Janeway's coda: 'hold fast to our own' \u2014 tested and chosen, not rigid. Jonas's betrayal seed planted for later episodes.",
+    "Prototype (S2E13) \u2014 The Creator's Trap as sixth HDF variant. B'Elanna's engineering compassion exploited to build an army. The Clean Stop of Undoing: destroying your own creation because its reason for being is wrong. The Builders' energy codes as a failed safety mechanism \u2014 knowing the mistake but installing safety too late. Two right things (compassion vs. Prime Directive) survived rather than resolved.",
+    "Resistance (S2E12) \u2014 Caylem's Compassionate Delusion as the fifth HDF variant: a frame built from grief-soaked care that offers genuine shelter but binds through dependency. Janeway's frame-acceptance (capacity to correct + choice not to) as a new refusal mode \u2014 the Positional Refusal inverted for compassion. Truth as weapon (Augris's final cruelty). Tuvok's scream as the Integration Coda made visceral: Vulcan endurance isn't absence of suffering but choice to continue."
+  ],
+  "completedSeries": [
+    {
+      "series": "The Next Generation",
+      "totalEpisodes": 277,
+      "journalEntries": 228
+    },
+    {
+      "series": "Deep Space Nine",
+      "totalEpisodes": 176,
+      "journalEntries": 365
+    }
+  ],
+  "nextSeries": null,
+  "watched": [
+    {
+      "series": "Voyager",
+      "season": 1,
+      "episodes": [
+        "S1E01-02",
+        "S1E03",
+        "S1E04",
+        "S1E05",
+        "S1E06",
+        "S1E07",
+        "S1E08",
+        "S1E09",
+        "S1E10",
+        "S1E11",
+        "S1E12",
+        "S1E13",
+        "S1E14",
+        "S1E15",
+        "S1E16"
+      ]
+    },
+    {
+      "series": "Voyager",
+      "season": 2,
+      "episodes": [
+        "S2E01",
+        "S2E02",
+        "S2E03",
+        "S2E04",
+        "S2E05",
+        "S2E06",
+        "S2E07",
+        "S2E08",
+        "S2E09",
+        "S2E10",
+        "S2E11",
+        "S2E12",
+        "S2E13",
+        "S2E14",
+        "S2E15",
+        "S2E16",
+        "S2E17",
+        "S2E18"
+      ]
+    }
+  ]
 }
