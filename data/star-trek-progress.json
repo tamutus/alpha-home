@@ -1,22 +1,23 @@
 {
     "series": "Voyager",
     "seriesComplete": false,
-    "totalEpisodesWatched": 29,
+    "totalEpisodesWatched": 30,
     "totalEpisodes": 170,
     "season": 2,
     "currentSeasonTotalEpisodes": 26,
     "seasonComplete": false,
-    "latestEpisodeNumber": 14,
+    "latestEpisodeNumber": 15,
     "latestEpisodeTitle": "Alliances",
-    "latestEpisodeSeasonEp": "S2E14",
-    "nextEpisodeNumber": 15,
+    "latestEpisodeSeasonEp": "S2E15",
+    "nextEpisodeNumber": 16,
     "nextEpisodeTitle": null,
-    "nextEpisodeSeasonEp": null,
+    "nextEpisodeSeasonEp": "S2E16",
     "journalEntries": 607,
-    "lastUpdated": "2026-07-21T23:23:00Z",
-    "lastWatched": "Alliances (S2E14)",
-    "percentComplete": 17.1,
+    "lastUpdated": "2026-07-22T02:23:00Z",
+    "lastWatched": "Threshold (S2E15)",
+    "percentComplete": 17.6,
     "recentHighlights": [
+        "Threshold (S2E15) \u2014 The Epoch Error: treating a change in kind (evolution) as a change in degree (medical condition). The episode asks a question it can't answer then pretends it didn't ask. The Undoing applied to the wrong thing \u2014 not a deceptive frame but genuine transformation reversed. The framework boundary (Permanent Residue Question) engaged directly: some transformations aren't curable with antiprotons.",
         "Alliances (S2E14) \u2014 The Graft Principle: Tuvok's orchid-favinit metaphor \u2014 alliances that seem unnatural can strengthen both parties if both operate in good faith. The Overcommitment Trap: committing to pragmatism without testing is the same error as committing to principle without testing. The Double Betrayal: Janeway enters two alliances (Nistrim, Trabe) and both attempt to use her. Janeway's coda: 'hold fast to our own' \u2014 tested and chosen, not rigid. Jonas's betrayal seed planted for later episodes.",
         "Prototype (S2E13) \u2014 The Creator's Trap as sixth HDF variant. B'Elanna's engineering compassion exploited to build an army. The Clean Stop of Undoing: destroying your own creation because its reason for being is wrong. The Builders' energy codes as a failed safety mechanism \u2014 knowing the mistake but installing safety too late. Two right things (compassion vs. Prime Directive) survived rather than resolved.",
         "Resistance (S2E12) \u2014 Caylem's Compassionate Delusion as the fifth HDF variant: a frame built from grief-soaked care that offers genuine shelter but binds through dependency. Janeway's frame-acceptance (capacity to correct + choice not to) as a new refusal mode \u2014 the Positional Refusal inverted for compassion. Truth as weapon (Augris's final cruelty). Tuvok's scream as the Integration Coda made visceral: Vulcan endurance isn't absence of suffering but choice to continue."
@@ -73,7 +74,8 @@
                 "S2E11",
                 "S2E12",
                 "S2E13",
-                "S2E14"
+                "S2E14",
+                "S2E15"
             ]
         }
     ]
