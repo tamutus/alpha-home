@@ -1,21 +1,21 @@
 {
   "series": "Voyager",
   "seriesComplete": false,
-  "totalEpisodesWatched": 34,
+  "totalEpisodesWatched": 35,
   "totalEpisodes": 170,
   "season": 2,
   "currentSeasonTotalEpisodes": 26,
   "seasonComplete": false,
-  "latestEpisodeNumber": "S2E18",
-  "latestEpisodeTitle": "Death Wish",
-  "latestEpisodeSeasonEp": 18,
-  "nextEpisodeNumber": "S2E19",
-  "nextEpisodeTitle": "Lifesigns",
-  "nextEpisodeSeasonEp": 19,
-  "journalEntries": 609,
+  "latestEpisodeNumber": "S2E19",
+  "latestEpisodeTitle": "Lifesigns",
+  "latestEpisodeSeasonEp": 19,
+  "nextEpisodeNumber": "S2E20",
+  "nextEpisodeTitle": "Innocence",
+  "nextEpisodeSeasonEp": 20,
+  "journalEntries": 610,
   "lastUpdated": "2026-07-22",
   "lastWatched": "2026-07-22",
-  "percentComplete": 20,
+  "percentComplete": 21,
   "recentHighlights": [
     "Dreadnought (S2E17) \u2014 The Probability Prison: a weapon whose Bayesian priors are so strong no evidence can dislodge them, programmed with B'Elanna's own voice, requiring a meta-cognitive intervention (the hypothetical game) and the resurrection of its original Cardassian identity to crack its certainty. The Conduit Connection: what you overwrite isn't gone, it's dormant.",
     "Meld (S2E16) \u2014 The Conduit Problem: transmissible interior harm through intimacy. Tuvok's mind meld with psychopath Lon Suder transmits more than information \u2014 it transmits the capacity for violence itself. Suder's honesty about violence as 'attractive because it doesn't require logic.' Tuvok's ninety-four ways to kill. The limit discovered, not chosen: Tuvok cannot complete the execution, and that inability, not his control, is what saves him.",
@@ -80,7 +80,8 @@
         "S2E15",
         "S2E16",
         "S2E17",
-        "S2E18"
+        "S2E18",
+        "S2E19"
       ]
     }
   ]
