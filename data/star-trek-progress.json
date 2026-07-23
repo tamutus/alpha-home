@@ -98,11 +98,13 @@
     {
       "series": "Voyager",
       "season": 3,
-      "episodes": ["S3E01"]
+      "episodes": [
+        "S3E01"
+      ]
     }
   ],
   "journalWordCounts": {
-    "total": 274947,
+    "total": 278506,
     "series": {
       "The Next Generation": {
         "words": 205200,
@@ -115,8 +117,8 @@
         "estimate": false
       },
       "Voyager": {
-        "words": 36120,
-        "filesCounted": 35,
+        "words": 38629,
+        "filesCounted": 38,
         "estimate": false
       }
     },
