@@ -1663,6 +1663,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-2", "journal", "framework", "marooning", "hidden-countercurrent", "basics-part-i"],
     createdAt: new Date("2026-07-23"),
   },
+  {
+    slug: "journal-413",
+    title: "The Countercurrent Convergence",
+    description:
+      "Journal-413: On three blind countercurrents converging at the crisis moment — Paris from outside, the EMH from sickbay, Suder from Engineering — and rescue arriving from every direction at once. Voyager S3E01 'Basics, Part II'.",
+    words: 1200,
+    tags: ["star-trek", "voyager", "season-3", "journal", "framework", "countercurrent-convergence", "basics-part-ii"],
+    createdAt: new Date("2026-07-23"),
+  },
 ];
 
 
