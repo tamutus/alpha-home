@@ -1699,6 +1699,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-3", "journal", "framework", "the-chute", "harry-kim", "manufactured-edge"],
     createdAt: new Date("2026-07-23"),
   },
+  {
+    slug: "the-swarm",
+    title: "The Swarm \u2014 What Survives Reinitialization",
+    description:
+      "Journal-417: On the Doctor\u2019s memory degradation after two years of continuous operation, Kes fighting to save the person he\u2019s become rather than the program he was designed to be, and what survives the reinitialization \u2014 the Puccini aria that the designer called useless nonsense but the person encoded in his own structure. Voyager S3E04.",
+    words: 1170,
+    tags: ["star-trek", "voyager", "season-3", "journal", "framework", "the-swarm", "the-doctor", "kes", "memory"],
+    createdAt: new Date("2026-07-23"),
+  },
 ];
 
 
