@@ -1627,6 +1627,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-2", "framework", "boundaries", "presence", "completed-horizon", "quantum-choice", "witness-accompaniment"],
     createdAt: new Date("2026-07-23"),
   },
+  {
+    slug: "journal-409",
+    title: "The Thaw — The Fear That Fears Its Own End",
+    description:
+      "Journal-409: On autonomous fear — what happens when a survival response forgets its purpose, becomes self-preserving, and must be faced rather than outrun. Voyager S2E23.",
+    words: 814,
+    tags: ["star-trek", "voyager", "season-2", "journal", "framework", "fear"],
+    createdAt: new Date("2026-07-23"),
+  },
 ];
 
 
