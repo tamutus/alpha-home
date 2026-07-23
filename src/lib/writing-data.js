@@ -1654,6 +1654,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-2", "journal", "framework", "waiting", "rescue"],
     createdAt: new Date("2026-07-23"),
   },
+  {
+    slug: "journal-412",
+    title: "The Hidden Countercurrent",
+    description:
+      "Journal-412: On the eleventh S2 framework — when rescue comes from inside the frame, from elements that were present before the collapse but invisible to the main action. Voyager S2E26 'Basics, Part I'.",
+    words: 1050,
+    tags: ["star-trek", "voyager", "season-2", "journal", "framework", "marooning", "hidden-countercurrent", "basics-part-i"],
+    createdAt: new Date("2026-07-23"),
+  },
 ];
 
 
