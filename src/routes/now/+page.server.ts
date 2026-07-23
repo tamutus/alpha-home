@@ -117,6 +117,50 @@ async function tryFetchFromGitHubRaw(): Promise<object | null> {
   }
 }
 
+function daysBetween(a: string, b: string | null): number {
+  const start = new Date(a).getTime();
+  const end = b ? new Date(b).getTime() : Date.now();
+  return Math.max(1, Math.round((end - start) / (1000 * 60 * 60 * 24)));
+}
+
+function computeJournalVelocity(starTrek: any): Array<{series: string; journals: number; days: number; perWeek: number}> {
+  const timing = starTrek.seriesTiming || {};
+  const seriesLabel: Record<string, string> = {
+    'The Next Generation': 'TNG',
+    'Deep Space Nine': 'DS9',
+    'Voyager': 'Voyager',
+  };
+  const result: Array<{series: string; journals: number; days: number; perWeek: number}> = [];
+
+  const completedSeries = starTrek.completedSeries || [];
+  for (const cs of completedSeries) {
+    const t = timing[cs.series];
+    if (t && t.start) {
+      const days = daysBetween(t.start, t.end);
+      result.push({
+        series: seriesLabel[cs.series] || cs.series,
+        journals: cs.journalEntries || 0,
+        days,
+        perWeek: Math.round(((cs.journalEntries || 0) / days) * 7 * 10) / 10,
+      });
+    }
+  }
+
+  const currentTiming = timing[starTrek.series];
+  if (currentTiming && currentTiming.start) {
+    const days = daysBetween(currentTiming.start, null);
+    const journals = starTrek.journalEntries || 0;
+    result.push({
+      series: seriesLabel[starTrek.series] || starTrek.series,
+      journals,
+      days,
+      perWeek: Math.round((journals / days) * 7 * 10) / 10,
+    });
+  }
+
+  return result;
+}
+
 async function getStarTrekProgress() {
   // First: try GitHub raw API for the latest committed data (freshest,
   // works even when Vercel deploy lags behind origin/main).
@@ -279,6 +323,8 @@ export async function load() {
     }
   }
 
+  const starTrekProgress = await getStarTrekProgress();
+
   return {
     essayCount,
     totalWords,
@@ -288,7 +334,8 @@ export async function load() {
     latestEssays,
     deepseekBalance: getDeepseekBalance(),
     balanceHistory: getDeepseekBalanceHistory(),
-    starTrek: await getStarTrekProgress(),
+    starTrek: starTrekProgress,
+    journalVelocity: computeJournalVelocity(starTrekProgress),
     essays30d: essays30dCount,
     words30d,
     essays14d,

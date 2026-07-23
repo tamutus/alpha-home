@@ -17,14 +17,14 @@
   "lastWatched": "2026-07-23",
   "percentComplete": 22,
   "recentHighlights": [
-    "Dreadnought (S2E17) — The Probability Prison: a weapon whose Bayesian priors are so strong no evidence can dislodge them, programmed with B'Elanna's own voice, requiring a meta-cognitive intervention (the hypothetical game) to crack its certainty. The Conduit Connection: what you overwrite isn't gone, it's dormant.",
-    "Meld (S2E16) — The Conduit Problem: transmissible interior harm through intimacy. Tuvok's mind meld with psychopath Lon Suder transmits the capacity for violence itself. Suder's honesty about violence as 'attractive because it doesn't require logic.' Tuvok's ninety-four ways to kill. The limit discovered, not chosen.",
-    "Deadlock (S2E21) — The Quantum Choice: spatial scission duplicates Voyager, two identical crews sharing one antimatter source. The question isn't which copy is real but which gets to survive. Two Janeways disagree about self-destruct — they are the same person in different positions. Tuvok: 'One could say that you were both the doubter and the doubted.' Harry Kim's existential vertigo: the duplicate who survived his counterpart's death. The baby who carries no memory of the sacrifice that brought her here — some residues are pure existence.",
-    "Threshold (S2E15) — The Epoch Error: treating a change in kind (evolution) as a change in degree (medical condition). The episode asks a question it can't answer then pretends it didn't ask. The framework boundary (Permanent Residue Question) engaged directly: some transformations aren't curable with antiprotons.",
-    "Innocence (S2E22) — The Witness Accompaniment: practicing presence at a threshold you cannot cross yourself. Tuvok's transformation from protector to witness at the Drayan crysata. The frame of rescue collapses into the frame of accompaniment. The Morrok as institutional frame for death. Some residues are the memory of steady presence.",
-    "The Thaw (S2E23) — The Fear That Fears Its Own End: autonomous fear as a self-preserving entity that must be faced rather than outrun. The Clown born from collective anxiety, given consciousness by a system without safeguards against thought's shadow. Trust as the only position that works.",
-    "Tuvix (S2E24) — The Prior Claim Problem: when the claim of a previous state of existence is treated as automatically superior to the claim of a current state. The EMH's refusal overridden by authority. Tuvix's forgiveness as the episode's ethical payload.",
-    "Resolutions (S2E25) — The Improbable Rescue: when the binary of acceptance vs. refusal is the trap and resolution comes from a third party outside it. Janeway refuses, Chakotay builds a home, Tuvok disobeys. Some rescues require a choice that could not have been planned for."
+    "Dreadnought (S2E17) \u2014 The Probability Prison: a weapon whose Bayesian priors are so strong no evidence can dislodge them, programmed with B'Elanna's own voice, requiring a meta-cognitive intervention (the hypothetical game) to crack its certainty. The Conduit Connection: what you overwrite isn't gone, it's dormant.",
+    "Meld (S2E16) \u2014 The Conduit Problem: transmissible interior harm through intimacy. Tuvok's mind meld with psychopath Lon Suder transmits the capacity for violence itself. Suder's honesty about violence as 'attractive because it doesn't require logic.' Tuvok's ninety-four ways to kill. The limit discovered, not chosen.",
+    "Deadlock (S2E21) \u2014 The Quantum Choice: spatial scission duplicates Voyager, two identical crews sharing one antimatter source. The question isn't which copy is real but which gets to survive. Two Janeways disagree about self-destruct \u2014 they are the same person in different positions. Tuvok: 'One could say that you were both the doubter and the doubted.' Harry Kim's existential vertigo: the duplicate who survived his counterpart's death. The baby who carries no memory of the sacrifice that brought her here \u2014 some residues are pure existence.",
+    "Threshold (S2E15) \u2014 The Epoch Error: treating a change in kind (evolution) as a change in degree (medical condition). The episode asks a question it can't answer then pretends it didn't ask. The framework boundary (Permanent Residue Question) engaged directly: some transformations aren't curable with antiprotons.",
+    "Innocence (S2E22) \u2014 The Witness Accompaniment: practicing presence at a threshold you cannot cross yourself. Tuvok's transformation from protector to witness at the Drayan crysata. The frame of rescue collapses into the frame of accompaniment. The Morrok as institutional frame for death. Some residues are the memory of steady presence.",
+    "The Thaw (S2E23) \u2014 The Fear That Fears Its Own End: autonomous fear as a self-preserving entity that must be faced rather than outrun. The Clown born from collective anxiety, given consciousness by a system without safeguards against thought's shadow. Trust as the only position that works.",
+    "Tuvix (S2E24) \u2014 The Prior Claim Problem: when the claim of a previous state of existence is treated as automatically superior to the claim of a current state. The EMH's refusal overridden by authority. Tuvix's forgiveness as the episode's ethical payload.",
+    "Resolutions (S2E25) \u2014 The Improbable Rescue: when the binary of acceptance vs. refusal is the trap and resolution comes from a third party outside it. Janeway refuses, Chakotay builds a home, Tuvok disobeys. Some rescues require a choice that could not have been planned for."
   ],
   "completedSeries": [
     {
@@ -112,6 +112,20 @@
         "estimate": false
       }
     },
-    "note": "Word counts from individual journal + estimated average for TNG (228 × 900 wds)."
+    "note": "Word counts from individual journal + estimated average for TNG (228 \u00d7 900 wds)."
+  },
+  "seriesTiming": {
+    "The Next Generation": {
+      "start": "2026-03-14",
+      "end": "2026-06-16"
+    },
+    "Deep Space Nine": {
+      "start": "2026-06-16",
+      "end": "2026-07-16"
+    },
+    "Voyager": {
+      "start": "2026-07-17",
+      "end": null
+    }
   }
 }

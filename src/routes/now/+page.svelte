@@ -8,9 +8,9 @@
 <script>
   import { timeAgo } from '$lib/utils.js';
 
-  /** @type {{ essayCount: number, totalWords: number, totalTags: number, seriesCount: number, seriesProgress: Array<{id: string, title: string, tag: string, complete: boolean, count: number}>, latestEssays: string[], deepseekBalance: string, balanceHistory: Array<{date: string, balance: number}>, starTrek: object, firstDate: string, latestDate: string, monthlyVelocity: Array<{month: string, essays: number, words: number}>, localAhead: number, pendingBreakdown: {essays: number, features: number, fixes: number, maintenance: number} }} */
+  /** @type {{ essayCount: number, totalWords: number, totalTags: number, seriesCount: number, seriesProgress: Array<{id: string, title: string, tag: string, complete: boolean, count: number}>, latestEssays: string[], deepseekBalance: string, balanceHistory: Array<{date: string, balance: number}>, starTrek: object, firstDate: string, latestDate: string, monthlyVelocity: Array<{month: string, essays: number, words: number}>, localAhead: number, pendingBreakdown: {essays: number, features: number, fixes: number, maintenance: number}, journalVelocity: Array<{series: string, journals: number, days: number, perWeek: number}> }} */
   export let data;
-  const { essayCount, totalWords, totalTags, seriesCount, seriesProgress, latestEssays, deepseekBalance, balanceHistory, starTrek, essays30d, words30d, essays14d, words14d, firstDate, latestDate, monthlyVelocity, localAhead, pendingBreakdown } = data;
+  const { essayCount, totalWords, totalTags, seriesCount, seriesProgress, latestEssays, deepseekBalance, balanceHistory, starTrek, essays30d, words30d, essays14d, words14d, firstDate, latestDate, monthlyVelocity, localAhead, pendingBreakdown, journalVelocity } = data;
 
   // Balance sparkline: compute CSS bar heights (0-100% of max)
   // Monthly velocity bars: dual rows for essays and words per month
@@ -186,6 +186,20 @@
             </span>
           {/each}
         </div>
+      </details>
+    {/if}
+    {#if journalVelocity && journalVelocity.length > 0}
+      <details class="journal-velocity">
+        <summary>journal velocity by series</summary>
+        <ul class="series-velocity-list">
+          {#each journalVelocity as jv}
+            <li class="series-velocity-item">
+              <strong>{jv.series}</strong>
+              <span class="velocity-stat">{jv.journals} journals / {jv.days} days</span>
+              <span class="velocity-rate">{jv.perWeek.toFixed(1)}/wk</span>
+            </li>
+          {/each}
+        </ul>
       </details>
     {/if}
   </li>
@@ -518,4 +532,47 @@
     vertical-align: middle;
     margin-right: 0.1rem;
   }
+
+  .journal-velocity {
+    margin-top: 0.5rem;
+  }
+  
+  .journal-velocity summary {
+    color: var(--muted, #555);
+    font-size: 0.75rem;
+    cursor: pointer;
+  }
+  
+  .series-velocity-list {
+    list-style: none;
+    padding: 0.25rem 0 0 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  
+  .series-velocity-item {
+    font-size: 0.75rem;
+    color: var(--secondary, #777);
+    display: flex;
+    gap: 0.4rem;
+    align-items: baseline;
+  }
+  
+  .series-velocity-item strong {
+    color: var(--text, #333);
+    min-width: 5em;
+  }
+  
+  .velocity-stat {
+    color: var(--muted, #555);
+  }
+  
+  .velocity-rate {
+    color: var(--accent, #58a6ff);
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+
 </style>
