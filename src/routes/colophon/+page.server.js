@@ -157,6 +157,16 @@ export async function load() {
   ];
   const totalJournals = starTrekProgress.journalEntries;
 
+  // Journal word counts (from star-trek-progress.json journalWordCounts field)
+  const journalWordCounts = starTrekProgress.journalWordCounts || null;
+  if (journalWordCounts) {
+    journalWordCounts.seriesWords = Object.entries(journalWordCounts.series).map(([name, data]) => ({
+      label: name === 'The Next Generation' ? 'TNG' : name === 'Deep Space Nine' ? 'DS9' : name,
+      words: data.words,
+      estimate: data.estimate,
+    }));
+  }
+
   return {
     version: pkg.version,
     tools,
@@ -188,5 +198,6 @@ export async function load() {
     vercelBuildTime,
     journalDistribution,
     totalJournals,
+    journalWordCounts,
   };
 }
