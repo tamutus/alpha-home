@@ -1690,6 +1690,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-3", "journal", "framework", "flashback", "tuvok", "parasitic-memory"],
     createdAt: new Date("2026-07-23"),
   },
+  {
+    slug: "the-manufactured-edge",
+    title: "The Manufactured Edge",
+    description:
+      "Journal-416: On a system designed to manufacture the aggression it punishes, the clamp that makes cooperation impossible, and Harry Kim refusing the knife — because the only victory in a rigged game is declining to play. Voyager S3E03 'The Chute'.",
+    words: 1170,
+    tags: ["star-trek", "voyager", "season-3", "journal", "framework", "the-chute", "harry-kim", "manufactured-edge"],
+    createdAt: new Date("2026-07-23"),
+  },
 ];
 
 

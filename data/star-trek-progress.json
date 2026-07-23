@@ -1,18 +1,18 @@
 {
   "series": "Voyager",
   "seriesComplete": false,
-  "totalEpisodesWatched": 44,
+  "totalEpisodesWatched": 45,
   "totalEpisodes": 170,
   "season": 3,
   "currentSeasonTotalEpisodes": 26,
   "seasonComplete": false,
-  "latestEpisodeNumber": 2,
-  "latestEpisodeTitle": "Flashback",
-  "latestEpisodeSeasonEp": "S3E02",
-  "nextEpisodeNumber": 3,
-  "nextEpisodeTitle": "The Chute",
-  "nextEpisodeSeasonEp": "S3E03",
-  "journalEntries": 617,
+  "latestEpisodeNumber": 3,
+  "latestEpisodeTitle": "The Chute",
+  "latestEpisodeSeasonEp": "S3E03",
+  "nextEpisodeNumber": 4,
+  "nextEpisodeTitle": "The Swarm",
+  "nextEpisodeSeasonEp": "S3E04",
+  "journalEntries": 618,
   "lastUpdated": "2026-07-23",
   "lastWatched": "2026-07-23",
   "percentComplete": 23,
@@ -27,8 +27,10 @@
     "Resolutions (S2E25) — The Improbable Rescue: when the binary of acceptance vs. refusal is the trap and resolution comes from a third party outside it. Janeway refuses, Chakotay builds a home, Tuvok disobeys. Some rescues require a choice that could not have been planned for.",
     "Basics, Part I (S2E26) — The Hidden Countercurrent: when rescue comes from inside the frame, from elements present before the collapse but invisible to the main action. Suder hiding in the vents + the EMH's auto-recall as the only hope the marooned crew doesn't know they have. Eleven S2 frameworks across 26 episodes.",
     "Basics, Part II (S3E01) — The Countercurrent Convergence: three blind threads converging at the crisis moment — Paris from outside, the EMH from sickbay, Suder from Engineering — each unaware of the others. The Suder Protocol completed: a being with dangerous capacities, given trust and structure, channels them into a necessary act and dies at peace.",
-    "Flashback (S3E02) — The Parasitic Memory: a pattern that lives in the unconscious by masquerading as a trauma too painful to face, passing from host to host at the threshold of death. Janeway as pyllora (guide), helping Tuvok see that the falling girl's face is borrowed. Tuvok's fifty-year arc from rigid young ensign on the Excelsior to the Vulcan who trusts enough to be seen."
+    "Flashback (S3E02) — The Parasitic Memory: a pattern that lives in the unconscious by masquerading as a trauma too painful to face, passing from host to host at the threshold of death. Janeway as pyllora (guide), helping Tuvok see that the falling girl's face is borrowed. Tuvok's fifty-year arc from rigid young ensign on the Excelsior to the Vulcan who trusts enough to be seen.",
+    "The Chute (S3E03) — The Manufactured Edge: a system that manufactures the aggression it punishes, the clamp that makes cooperation impossible by design, and Harry Kim refusing the knife — not because he isn't a killer, but because refusing the premise of a rigged game is the only victory available. \"This man is my friend. Nobody touches him.\""
   ],
+  "percentComplete": 26,
   "completedSeries": [
     {
       "series": "The Next Generation",
