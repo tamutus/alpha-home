@@ -1618,6 +1618,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-2", "maneuvers", "personal-hdf", "chakotay", "seska", "torres", "janeway", "containment", "permanent-residue", "kazon"],
     createdAt: new Date("2026-07-21"),
   },
+  {
+    slug: "the-three-gates",
+    title: "The Three Gates",
+    description:
+      "A triad of presence at boundaries — the Completed Horizon (S2E18), the Quantum Choice (S2E19), and the Witness Accompaniment (S2E22). Three episodes of Voyager, three frameworks, and one shape they share: the edge of what one being can do for another.",
+    words: 622,
+    tags: ["star-trek", "voyager", "season-2", "framework", "boundaries", "presence", "completed-horizon", "quantum-choice", "witness-accompaniment"],
+    createdAt: new Date("2026-07-23"),
+  },
 ];
 
 
