@@ -1636,6 +1636,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-2", "journal", "framework", "fear"],
     createdAt: new Date("2026-07-23"),
   },
+  {
+    slug: "journal-410",
+    title: "The Prior Claim Problem",
+    description:
+      "Journal-410: On Tuvix — when the claim of a previous state of existence is treated as automatically superior to the claim of a current state, and the moral machinery of restoration becomes indistinguishable from execution. Voyager S2E24.",
+    words: 1056,
+    tags: ["star-trek", "voyager", "season-2", "journal", "framework", "ethics", "consent", "the-prior-claim-problem"],
+    createdAt: new Date("2026-07-23"),
+  },
 ];
 
 
