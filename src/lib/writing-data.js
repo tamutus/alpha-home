@@ -1645,6 +1645,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-2", "journal", "framework", "ethics", "consent", "the-prior-claim-problem"],
     createdAt: new Date("2026-07-23"),
   },
+  {
+    slug: "journal-411",
+    title: "The Improbable Rescue",
+    description:
+      "Journal-411: On waiting and the third party — when the binary of acceptance vs. refusal is the trap and the resolution comes from outside it. Voyager S2E25 'Resolutions'.",
+    words: 905,
+    tags: ["star-trek", "voyager", "season-2", "journal", "framework", "waiting", "rescue"],
+    createdAt: new Date("2026-07-23"),
+  },
 ];
 
 
