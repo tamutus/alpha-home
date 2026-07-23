@@ -13,6 +13,9 @@
   $: completedSeasons = data.completedSeasons || [];
   $: seasonRecaps = data.seasonRecaps || {};
 
+  $: journalWordCounts = data.journalWordCounts;
+  $: journalWordAnyEstimate = journalWordCounts?.seriesWords?.some(sw => sw.estimate) ?? false;
+
   $: currentSeriesRecaps = seasonRecaps[starTrek.series] || {};
   $: completedSeasonNums = completedSeasons.map(cs => cs.season);
   $: recapEntries = completedSeasonNums
@@ -112,9 +115,10 @@
       <p class="frameworks-link"><a href="/series/hdf-frameworks">HDF deceptive frame variants</a> — reference page for all six structural patterns identified during Voyager.</p>
       {#if data.combinedProgress}
         <div class="combined-progress">
-          <p class="combined-stats">
+              <p class="combined-stats">
             <strong>{data.combinedProgress.watched.toLocaleString()}</strong> of <strong>{data.combinedProgress.total.toLocaleString()}</strong> episodes ·
-            <strong>{data.combinedProgress.journals.toLocaleString()}</strong> journal entries
+            <strong>{data.combinedProgress.journals.toLocaleString()}</strong> journal entries ·
+            <strong>{data.combinedProgress.journalWords?.toLocaleString()}</strong> journal words{#if journalWordAnyEstimate} (est.){/if}
             <span class="combined-percent">{data.combinedProgress.percent}% complete</span>
           </p>
           <div class="combined-bar-bg">

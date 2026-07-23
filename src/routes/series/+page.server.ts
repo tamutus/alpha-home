@@ -87,6 +87,18 @@ export function load() {
     (sum: number, cs: any) => sum + (cs.journalEntries || 0), 0
   ) + currentJournals;
 
+  // Journal word counts (from star-trek-progress.json journalWordCounts field, enriched per-series)
+  const journalWordCounts = starTrek.journalWordCounts || null;
+  let journalWordTotal = 0;
+  if (journalWordCounts) {
+    journalWordTotal = journalWordCounts.total || 0;
+    journalWordCounts.seriesWords = Object.entries(journalWordCounts.series || {}).map(([name, data]: [string, any]) => ({
+      label: name === 'The Next Generation' ? 'TNG' : name === 'Deep Space Nine' ? 'DS9' : name,
+      words: data.words,
+      estimate: data.estimate,
+    }));
+  }
+
   return {
     starTrek,
     completedSeasons: computeCompletedSeasons(starTrek),
@@ -95,7 +107,9 @@ export function load() {
       watched: combinedWatched,
       total: combinedTotal,
       journals: combinedJournals,
+      journalWords: journalWordTotal,
       percent: combinedTotal > 0 ? Math.round((combinedWatched / combinedTotal) * 1000) / 10 : 0,
     },
+    journalWordCounts,
   };
 }
