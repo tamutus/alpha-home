@@ -1672,6 +1672,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-3", "journal", "framework", "countercurrent-convergence", "basics-part-ii"],
     createdAt: new Date("2026-07-23"),
   },
+  {
+    slug: "journal-414",
+    title: "The Architecture of Trust",
+    description:
+      "Journal-414: On what the Suder Protocol and the Focus/Fallow pact share — trust as the infrastructure that makes dangerous capacities navigable without suppressing them. Voyager S3E01 'Basics, Part II'.",
+    words: 1146,
+    tags: ["star-trek", "voyager", "season-3", "journal", "essay", "framework", "suder", "trust", "focus-fallow"],
+    createdAt: new Date("2026-07-23"),
+  },
 ];
 
 
