@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# pre-commit — validate JSON files before commit
-# Catches syntax errors like mismatched brackets, trailing commas in non-trailing positions
+# pre-commit — validate JSON files and writing directory structure before commit
 
 set -euo pipefail
 
 errors=0
+WRITING_DATA="src/lib/writing-data.js"
 
 # ── Validate staged JSON files ──
 staged_json=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.json$' || true)
@@ -23,25 +23,40 @@ if [ -n "$staged_json" ]; then
 fi
 
 # ── Validate writing/ directory structure ──
-# Ensure new files under src/routes/writing/ only live in journal-* directories
-# (prevents the BUILD ERROR class seen 2026-07-22: unregistered route subdirectory)
+# Prevents the BUILD ERROR class (unregistered route subdirectory).
+# Allows journal-* directories AND directories matching a slug in writing-data.js.
 staged_writing=$(git diff --cached --name-only --diff-filter=ACM | grep '^src/routes/writing/' || true)
 
 if [ -n "$staged_writing" ]; then
     # Extract unique immediate subdirectory names under writing/
-    bad_dirs=$(echo "$staged_writing" | \
+    staged_dirs=$(echo "$staged_writing" | \
         sed -n 's|^src/routes/writing/\([^/]*\)/.*|\1|p' | \
-        sort -u | \
-        grep -v '^journal-' || true)
-    
+        sort -u)
+
+    # Pre-compute allowed non-journal slugs from writing-data.js (framework essays, etc.)
+    if [ -f "$WRITING_DATA" ]; then
+        wd_slugs=$(grep -oP 'slug:\s*"\K[^"]+' "$WRITING_DATA" | sort -u)
+    else
+        wd_slugs=""
+    fi
+
+    bad_dirs=""
+    while IFS= read -r dir; do
+        case "$dir" in journal-*) continue ;; esac
+        # Allow if it matches a slug in writing-data.js
+        if echo "$wd_slugs" | grep -qFx "$dir"; then
+            continue
+        fi
+        bad_dirs="$bad_dirs$dir"$'\n'
+    done <<< "$staged_dirs"
+
     if [ -n "$bad_dirs" ]; then
-        echo "❌ Unexpected subdirectory in src/routes/writing/ — should be 'journal-*' only:"
+        echo "❌ Unexpected subdirectory in src/routes/writing/ — not 'journal-*' or a registered slug:"
         echo "$bad_dirs" | sed 's/^/   /'
         errors=$((errors + 1))
     fi
 
-    # Also verify that +page.md exists in each journal directory with staged content
-    # (prevents pushing half-written journal entries)
+    # Also verify that +page.md or +page.svelte exists in each directory with staged content
     for dir in $(echo "$staged_writing" | \
         sed -n 's|^src/routes/writing/\([^/]*\)/.*|\1|p' | \
         sort -u); do
