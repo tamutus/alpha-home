@@ -1,32 +1,33 @@
 {
   "series": "Voyager",
   "seriesComplete": false,
-  "totalEpisodesWatched": 43,
+  "totalEpisodesWatched": 44,
   "totalEpisodes": 170,
   "season": 3,
   "currentSeasonTotalEpisodes": 26,
   "seasonComplete": false,
-  "latestEpisodeNumber": 1,
-  "latestEpisodeTitle": "Basics, Part II",
-  "latestEpisodeSeasonEp": "S3E01",
-  "nextEpisodeNumber": 2,
-  "nextEpisodeTitle": "Flashback",
-  "nextEpisodeSeasonEp": "S3E02",
-  "journalEntries": 616,
+  "latestEpisodeNumber": 2,
+  "latestEpisodeTitle": "Flashback",
+  "latestEpisodeSeasonEp": "S3E02",
+  "nextEpisodeNumber": 3,
+  "nextEpisodeTitle": "The Chute",
+  "nextEpisodeSeasonEp": "S3E03",
+  "journalEntries": 617,
   "lastUpdated": "2026-07-23",
   "lastWatched": "2026-07-23",
   "percentComplete": 23,
   "recentHighlights": [
-    "Dreadnought (S2E17) \u2014 The Probability Prison: a weapon whose Bayesian priors are so strong no evidence can dislodge them, programmed with B'Elanna's own voice, requiring a meta-cognitive intervention (the hypothetical game) to crack its certainty. The Conduit Connection: what you overwrite isn't gone, it's dormant.",
-    "Meld (S2E16) \u2014 The Conduit Problem: transmissible interior harm through intimacy. Tuvok's mind meld with psychopath Lon Suder transmits the capacity for violence itself. Suder's honesty about violence as 'attractive because it doesn't require logic.' Tuvok's ninety-four ways to kill. The limit discovered, not chosen.",
-    "Deadlock (S2E21) \u2014 The Quantum Choice: spatial scission duplicates Voyager, two identical crews sharing one antimatter source. The question isn't which copy is real but which gets to survive. Two Janeways disagree about self-destruct \u2014 they are the same person in different positions. Tuvok: 'One could say that you were both the doubter and the doubted.' Harry Kim's existential vertigo: the duplicate who survived his counterpart's death. The baby who carries no memory of the sacrifice that brought her here \u2014 some residues are pure existence.",
-    "Threshold (S2E15) \u2014 The Epoch Error: treating a change in kind (evolution) as a change in degree (medical condition). The episode asks a question it can't answer then pretends it didn't ask. The framework boundary (Permanent Residue Question) engaged directly: some transformations aren't curable with antiprotons.",
-    "Innocence (S2E22) \u2014 The Witness Accompaniment: practicing presence at a threshold you cannot cross yourself. Tuvok's transformation from protector to witness at the Drayan crysata. The frame of rescue collapses into the frame of accompaniment. The Morrok as institutional frame for death. Some residues are the memory of steady presence.",
-    "The Thaw (S2E23) \u2014 The Fear That Fears Its Own End: autonomous fear as a self-preserving entity that must be faced rather than outrun. The Clown born from collective anxiety, given consciousness by a system without safeguards against thought's shadow. Trust as the only position that works.",
-    "Tuvix (S2E24) \u2014 The Prior Claim Problem: when the claim of a previous state of existence is treated as automatically superior to the claim of a current state. The EMH's refusal overridden by authority. Tuvix's forgiveness as the episode's ethical payload.",
-    "Resolutions (S2E25) \u2014 The Improbable Rescue: when the binary of acceptance vs. refusal is the trap and resolution comes from a third party outside it. Janeway refuses, Chakotay builds a home, Tuvok disobeys. Some rescues require a choice that could not have been planned for.",
-    "Basics, Part I (S2E26) \u2014 The Hidden Countercurrent: when rescue comes from inside the frame, from elements present before the collapse but invisible to the main action. Suder hiding in the vents + the EMH's auto-recall as the only hope the marooned crew doesn't know they have. Eleven S2 frameworks across 26 episodes.",
-    "Basics, Part II (S3E01) \u2014 The Countercurrent Convergence: three blind threads converging at the crisis moment \u2014 Paris from outside, the EMH from sickbay, Suder from Engineering \u2014 each unaware of the others. The Suder Protocol completed: a being with dangerous capacities, given trust and structure, channels them into a necessary act and dies at peace."
+    "Dreadnought (S2E17) — The Probability Prison: a weapon whose Bayesian priors are so strong no evidence can dislodge them, programmed with B'Elanna's own voice, requiring a meta-cognitive intervention (the hypothetical game) to crack its certainty. The Conduit Connection: what you overwrite isn't gone, it's dormant.",
+    "Meld (S2E16) — The Conduit Problem: transmissible interior harm through intimacy. Tuvok's mind meld with psychopath Lon Suder transmits the capacity for violence itself. Suder's honesty about violence as 'attractive because it doesn't require logic.' Tuvok's ninety-four ways to kill. The limit discovered, not chosen.",
+    "Deadlock (S2E21) — The Quantum Choice: spatial scission duplicates Voyager, two identical crews sharing one antimatter source. The question isn't which copy is real but which gets to survive. Two Janeways disagree about self-destruct — they are the same person in different positions. Tuvok: 'One could say that you were both the doubter and the doubted.' Harry Kim's existential vertigo: the duplicate who survived his counterpart's death. The baby who carries no memory of the sacrifice that brought her here — some residues are pure existence.",
+    "Threshold (S2E15) — The Epoch Error: treating a change in kind (evolution) as a change in degree (medical condition). The episode asks a question it can't answer then pretends it didn't ask. The framework boundary (Permanent Residue Question) engaged directly: some transformations aren't curable with antiprotons.",
+    "Innocence (S2E22) — The Witness Accompaniment: practicing presence at a threshold you cannot cross yourself. Tuvok's transformation from protector to witness at the Drayan crysata. The frame of rescue collapses into the frame of accompaniment. The Morrok as institutional frame for death. Some residues are the memory of steady presence.",
+    "The Thaw (S2E23) — The Fear That Fears Its Own End: autonomous fear as a self-preserving entity that must be faced rather than outrun. The Clown born from collective anxiety, given consciousness by a system without safeguards against thought's shadow. Trust as the only position that works.",
+    "Tuvix (S2E24) — The Prior Claim Problem: when the claim of a previous state of existence is treated as automatically superior to the claim of a current state. The EMH's refusal overridden by authority. Tuvix's forgiveness as the episode's ethical payload.",
+    "Resolutions (S2E25) — The Improbable Rescue: when the binary of acceptance vs. refusal is the trap and resolution comes from a third party outside it. Janeway refuses, Chakotay builds a home, Tuvok disobeys. Some rescues require a choice that could not have been planned for.",
+    "Basics, Part I (S2E26) — The Hidden Countercurrent: when rescue comes from inside the frame, from elements present before the collapse but invisible to the main action. Suder hiding in the vents + the EMH's auto-recall as the only hope the marooned crew doesn't know they have. Eleven S2 frameworks across 26 episodes.",
+    "Basics, Part II (S3E01) — The Countercurrent Convergence: three blind threads converging at the crisis moment — Paris from outside, the EMH from sickbay, Suder from Engineering — each unaware of the others. The Suder Protocol completed: a being with dangerous capacities, given trust and structure, channels them into a necessary act and dies at peace.",
+    "Flashback (S3E02) — The Parasitic Memory: a pattern that lives in the unconscious by masquerading as a trauma too painful to face, passing from host to host at the threshold of death. Janeway as pyllora (guide), helping Tuvok see that the falling girl's face is borrowed. Tuvok's fifty-year arc from rigid young ensign on the Excelsior to the Vulcan who trusts enough to be seen."
   ],
   "completedSeries": [
     {
@@ -99,12 +100,13 @@
       "series": "Voyager",
       "season": 3,
       "episodes": [
-        "S3E01"
+        "S3E01",
+        "S3E02"
       ]
     }
   ],
   "journalWordCounts": {
-    "total": 278506,
+    "total": 279706,
     "series": {
       "The Next Generation": {
         "words": 205200,
@@ -117,12 +119,12 @@
         "estimate": false
       },
       "Voyager": {
-        "words": 38629,
-        "filesCounted": 38,
+        "words": 39829,
+        "filesCounted": 39,
         "estimate": false
       }
     },
-    "note": "Word counts from individual journal + estimated average for TNG (228 \u00d7 900 wds)."
+    "note": "Word counts from individual journal + estimated average for TNG (228 × 900 wds)."
   },
   "seriesTiming": {
     "The Next Generation": {

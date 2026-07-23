@@ -1681,6 +1681,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-3", "journal", "essay", "framework", "suder", "trust", "focus-fallow"],
     createdAt: new Date("2026-07-23"),
   },
+  {
+    slug: "journal-415",
+    title: "The Parasitic Memory",
+    description:
+      "Journal-415: On a pattern that lives in the unconscious by masquerading as a trauma too painful to face, passing from host to host at the threshold of death — and the pyllora who helps you see that the falling girl's face is borrowed. Voyager S3E02 'Flashback'.",
+    words: 1200,
+    tags: ["star-trek", "voyager", "season-3", "journal", "framework", "flashback", "tuvok", "parasitic-memory"],
+    createdAt: new Date("2026-07-23"),
+  },
 ];
 
 
