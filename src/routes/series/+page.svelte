@@ -121,6 +121,14 @@
             <strong>{data.combinedProgress.journalWords?.toLocaleString()}</strong> journal words{#if journalWordAnyEstimate} (est.){/if}
             <span class="combined-percent">{data.combinedProgress.percent}% complete</span>
           </p>
+          {#if journalWordCounts?.seriesWords?.length}
+            <p class="series-word-breakdown">
+              {#each journalWordCounts.seriesWords as sw, i}
+                {#if i > 0}<span class="breakdown-sep">·</span>{/if}
+                <span class="series-word-item">{sw.label}: <strong>{sw.words.toLocaleString()}</strong>{#if sw.estimate} <span class="est-tag">est.</span>{/if}</span>
+              {/each}
+            </p>
+          {/if}
           <div class="combined-bar-bg">
             <div class="combined-bar-fill" style="width: {data.combinedProgress.percent}%"></div>
           </div>
@@ -431,6 +439,37 @@
     background: linear-gradient(90deg, #2ea043, var(--accent, #58a6ff));
     border-radius: 3px;
     transition: width 0.3s ease;
+  }
+
+  .series-word-breakdown {
+    margin: 0 0 0.35rem;
+    font-size: 0.7rem;
+    color: var(--muted, #555);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    align-items: baseline;
+  }
+
+  .series-word-item strong {
+    color: var(--fg, #ccc);
+    font-weight: 600;
+  }
+
+  .breakdown-sep {
+    color: var(--border, #333);
+  }
+
+  .est-tag {
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: var(--warning, #d29922);
+    background: rgba(210, 153, 34, 0.1);
+    padding: 0.02rem 0.25rem;
+    border-radius: 2px;
+    margin-left: 0.1rem;
   }
 
   .season-recaps {
