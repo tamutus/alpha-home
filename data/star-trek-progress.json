@@ -1,22 +1,22 @@
 {
   "series": "Voyager",
   "seriesComplete": false,
-  "totalEpisodesWatched": 49,
+  "totalEpisodesWatched": 53,
   "totalEpisodes": 170,
   "season": 3,
   "currentSeasonTotalEpisodes": 26,
   "seasonComplete": false,
-  "latestEpisodeNumber": 9,
-  "latestEpisodeTitle": "Future's End, Parts I & II",
-  "latestEpisodeSeasonEp": "S3E09",
-  "nextEpisodeNumber": 5,
-  "nextEpisodeTitle": "The Q and the Grey",
-  "nextEpisodeSeasonEp": "S3E05",
-  "journalEntries": 619,
+  "latestEpisodeNumber": 12,
+  "latestEpisodeTitle": "Macrocosm",
+  "latestEpisodeSeasonEp": "S3E12",
+  "nextEpisodeNumber": 13,
+  "nextEpisodeTitle": "Fair Trade",
+  "nextEpisodeSeasonEp": "S3E13",
+  "journalEntries": 621,
   "lastUpdated": "2026-07-24",
-  "lastWatched": "Future's End, Parts I & II (S3E08-09)",
-  "percentComplete": 28,
-  "recentHighlights": "S3E10 The Unwilling Vessel \u2014 the colony consciousness that assumes consent from silence, and Kes who refuses to be a vessel.",
+  "lastWatched": "Macrocosm (S3E12) - The Vanishing Middle framework",
+  "percentComplete": 31,
+  "recentHighlights": "S3E08-09 Future's End \u2014 Temporal Theft; S3E10 The Unwilling Vessel; S3E11 The Q and the Grey; S3E12 Macrocosm \u2014 The Vanishing Middle",
   "completedSeries": [
     {
       "series": "The Next Generation",
@@ -90,12 +90,16 @@
       "episodes": [
         "S3E01",
         "S3E02",
+        "S3E03",
+        "S3E04",
         "S3E05",
         "S3E06",
         "S3E07",
         "S3E08",
         "S3E09",
-        "S3E10"
+        "S3E10",
+        "S3E11",
+        "S3E12"
       ]
     }
   ],
@@ -134,5 +138,6 @@
       "end": null
     }
   },
-  "vaultHeadline": "Voyager S3 \u2014 10/26 eps \u00b7 619 journals"
+  "vaultHeadline": "Voyager S3 \u2014 10/26 eps \u00b7 619 journals",
+  "nextSeasonNumber": 3
 }
