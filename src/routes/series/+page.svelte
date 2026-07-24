@@ -18,6 +18,7 @@
 
   $: currentSeriesRecaps = seasonRecaps[starTrek.series] || {};
   $: completedSeasonNums = completedSeasons.map(cs => cs.season);
+  $: seasonWordCounts = data.seasonWordCounts || {};
   $: recapEntries = completedSeasonNums
     .filter(n => currentSeriesRecaps[String(n)])
     .map(n => ({ season: n, recap: currentSeriesRecaps[String(n)] }));
@@ -98,7 +99,9 @@
       {#if completedSeasons.length > 0}
         <p class="completed-seasons">
           {#each completedSeasons as cs}
-            <span class="st-season-badge" title="season {cs.season} complete ({cs.episodes} episodes)">✓ S{cs.season}</span>
+            {@const sw = seasonWordCounts[starTrek.series]?.[cs.season]}
+            {@const titleText = sw ? `season ${cs.season} complete (${cs.episodes} episodes) · ${sw.journals} journals, ${sw.words.toLocaleString()} words` : `season ${cs.season} complete (${cs.episodes} episodes)`}
+            <span class="st-season-badge" title={titleText}>✓ S{cs.season}{#if sw}<span class="season-word-hint">: {sw.words.toLocaleString()}w</span>{/if}</span>
           {/each}
         </p>
       {/if}
@@ -334,6 +337,14 @@
     border-radius: 3px;
     margin-right: 0.25rem;
     line-height: 1.3;
+    cursor: default;
+  }
+
+  .season-word-hint {
+    font-weight: 400;
+    font-size: 0.55rem;
+    color: var(--muted, #888);
+    margin-left: 0.15rem;
   }
 
   .active-badge {

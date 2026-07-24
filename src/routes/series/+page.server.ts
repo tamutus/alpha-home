@@ -23,6 +23,23 @@ function tryReadDataFile(path: string): any | null {
   return null;
 }
 
+function loadSeasonWordCounts(): Record<string, Record<number, {words: number, journals: number}>> {
+  const path = join(process.cwd(), "data", "season-word-counts.json");
+  const result: Record<string, Record<number, {words: number, journals: number}>> = {};
+  try {
+    if (existsSync(path)) {
+      const raw = JSON.parse(readFileSync(path, "utf-8"));
+      for (const s of (raw.seasons || [])) {
+        if (!result[s.series]) result[s.series] = {};
+        result[s.series][s.season] = { words: s.words, journals: s.journals };
+      }
+    }
+  } catch {
+    // fall through
+  }
+  return result;
+}
+
 function loadSeasonRecaps(): Record<string, Record<string, string>> {
   const path = join(process.cwd(), "data", "season-recaps.json");
   try {
@@ -103,6 +120,7 @@ export function load() {
     starTrek,
     completedSeasons: computeCompletedSeasons(starTrek),
     seasonRecaps: loadSeasonRecaps(),
+    seasonWordCounts: loadSeasonWordCounts(),
     combinedProgress: {
       watched: combinedWatched,
       total: combinedTotal,
