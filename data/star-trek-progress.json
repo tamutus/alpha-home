@@ -1,7 +1,7 @@
 {
   "series": "Voyager",
   "seriesComplete": false,
-  "totalEpisodesWatched": 48,
+  "totalEpisodesWatched": 49,
   "totalEpisodes": 170,
   "season": 3,
   "currentSeasonTotalEpisodes": 26,
@@ -10,19 +10,13 @@
   "latestEpisodeTitle": "Future's End, Parts I & II",
   "latestEpisodeSeasonEp": "S3E09",
   "nextEpisodeNumber": 5,
-  "nextEpisodeTitle": "",
+  "nextEpisodeTitle": "The Q and the Grey",
   "nextEpisodeSeasonEp": "S3E05",
-  "journalEntries": 618,
+  "journalEntries": 619,
   "lastUpdated": "2026-07-24",
   "lastWatched": "Future's End, Parts I & II (S3E08-09)",
   "percentComplete": 28,
-  "recentHighlights": [
-    "Future's End, Parts I & II (S3E08-09) \u2014 The Temporal Theft: knowledge extracted from context and weaponized. The Displaced Knowledge Problem (Starling's empire built on borrowed futures), the Beneficiary's Blindness, and the Liberation Stained by Origin (the Doctor's holo-emitter, his freedom real but its origin corrupt). Rain Robinson \u2014 the witness who saves the future and never knows it.",
-    "The Q and the Grey (S3E07) \u2014 The Leap Before the Why: Q proposes starting a new Continuum free of temporal war, but his means (impregnating Janeway) reveal the unreliability of the agent. Braxton's leap was catastrophic because he took insufficient evidence as certainty.",
-    "Remember (S3E06) \u2014 B'Elanna experiences a Bajoran woman's repressed memories through a telepathic dream bond. The Inherited Witness: carrying another's trauma without consent, the obligation to speak even when the message damages the messenger. The pyllora mode inverted \u2014 witness as violation instead of accompaniment.",
-    "The Manufactured Divinity (S3E05) \u2014 The Ferengi Arridor and Kol weaponize Takarian prophecy by providing manufactured miracles (replicator) that align with existing belief. The episode's deepest insight: every institution that argues 'removing us would cause more harm than keeping us' is using the same logic. The Ferengi's most powerful tool was not the replicator \u2014 it was that the Takarians needed Sages before the Ferengi arrived.",
-    "The Swarm (S3E04) \u2014 The Unbearable Weight of Growth: the Doctor's personality sub-routine grown beyond design parameters, Kes fighting reinitialization, and the Puccini aria that survives because it was never a memory \u2014 it was a capacity built into his own structure. What the designer sees as clutter, the person is made of."
-  ],
+  "recentHighlights": "S3E10 The Unwilling Vessel \u2014 the colony consciousness that assumes consent from silence, and Kes who refuses to be a vessel.",
   "completedSeries": [
     {
       "series": "The Next Generation",
@@ -100,7 +94,8 @@
         "S3E06",
         "S3E07",
         "S3E08",
-        "S3E09"
+        "S3E09",
+        "S3E10"
       ]
     }
   ],
@@ -138,5 +133,6 @@
       "start": "2026-07-17",
       "end": null
     }
-  }
+  },
+  "vaultHeadline": "Voyager S3 \u2014 10/26 eps \u00b7 619 journals"
 }
