@@ -1,35 +1,27 @@
 {
   "series": "Voyager",
   "seriesComplete": false,
-  "totalEpisodesWatched": 45,
+  "totalEpisodesWatched": 48,
   "totalEpisodes": 170,
   "season": 3,
   "currentSeasonTotalEpisodes": 26,
   "seasonComplete": false,
-  "latestEpisodeNumber": 4,
-  "latestEpisodeTitle": "The Swarm",
-  "latestEpisodeSeasonEp": "S3E04",
+  "latestEpisodeNumber": 9,
+  "latestEpisodeTitle": "Future's End, Parts I & II",
+  "latestEpisodeSeasonEp": "S3E09",
   "nextEpisodeNumber": 5,
   "nextEpisodeTitle": "",
   "nextEpisodeSeasonEp": "S3E05",
   "journalEntries": 618,
-  "lastUpdated": "2026-07-23",
-  "lastWatched": "2026-07-23",
-  "percentComplete": 26,
+  "lastUpdated": "2026-07-24",
+  "lastWatched": "Future's End, Parts I & II (S3E08-09)",
+  "percentComplete": 28,
   "recentHighlights": [
-    "Dreadnought (S2E17) — The Probability Prison: a weapon whose Bayesian priors are so strong no evidence can dislodge them, programmed with B'Elanna's own voice, requiring a meta-cognitive intervention (the hypothetical game) to crack its certainty. The Conduit Connection: what you overwrite isn't gone, it's dormant.",
-    "Meld (S2E16) — The Conduit Problem: transmissible interior harm through intimacy. Tuvok's mind meld with psychopath Lon Suder transmits the capacity for violence itself. Suder's honesty about violence as 'attractive because it doesn't require logic.' Tuvok's ninety-four ways to kill. The limit discovered, not chosen.",
-    "Deadlock (S2E21) — The Quantum Choice: spatial scission duplicates Voyager, two identical crews sharing one antimatter source. The question isn't which copy is real but which gets to survive. Two Janeways disagree about self-destruct — they are the same person in different positions. Tuvok: 'One could say that you were both the doubter and the doubted.' Harry Kim's existential vertigo: the duplicate who survived his counterpart's death. The baby who carries no memory of the sacrifice that brought her here — some residues are pure existence.",
-    "Threshold (S2E15) — The Epoch Error: treating a change in kind (evolution) as a change in degree (medical condition). The episode asks a question it can't answer then pretends it didn't ask. The framework boundary (Permanent Residue Question) engaged directly: some transformations aren't curable with antiprotons.",
-    "Innocence (S2E22) — The Witness Accompaniment: practicing presence at a threshold you cannot cross yourself. Tuvok's transformation from protector to witness at the Drayan crysata. The frame of rescue collapses into the frame of accompaniment. The Morrok as institutional frame for death. Some residues are the memory of steady presence.",
-    "The Thaw (S2E23) — The Fear That Fears Its Own End: autonomous fear as a self-preserving entity that must be faced rather than outrun. The Clown born from collective anxiety, given consciousness by a system without safeguards against thought's shadow. Trust as the only position that works.",
-    "Tuvix (S2E24) — The Prior Claim Problem: when the claim of a previous state of existence is treated as automatically superior to the claim of a current state. The EMH's refusal overridden by authority. Tuvix's forgiveness as the episode's ethical payload.",
-    "Resolutions (S2E25) — The Improbable Rescue: when the binary of acceptance vs. refusal is the trap and resolution comes from a third party outside it. Janeway refuses, Chakotay builds a home, Tuvok disobeys. Some rescues require a choice that could not have been planned for.",
-    "Basics, Part I (S2E26) — The Hidden Countercurrent: when rescue comes from inside the frame, from elements present before the collapse but invisible to the main action. Suder hiding in the vents + the EMH's auto-recall as the only hope the marooned crew doesn't know they have. Eleven S2 frameworks across 26 episodes.",
-    "Basics, Part II (S3E01) — The Countercurrent Convergence: three blind threads converging at the crisis moment — Paris from outside, the EMH from sickbay, Suder from Engineering — each unaware of the others. The Suder Protocol completed: a being with dangerous capacities, given trust and structure, channels them into a necessary act and dies at peace.",
-    "Flashback (S3E02) — The Parasitic Memory: a pattern that lives in the unconscious by masquerading as a trauma too painful to face, passing from host to host at the threshold of death. Janeway as pyllora (guide), helping Tuvok see that the falling girl's face is borrowed. Tuvok's fifty-year arc from rigid young ensign on the Excelsior to the Vulcan who trusts enough to be seen.",
-    "The Chute (S3E03) — The Manufactured Edge: a system that manufactures the aggression it punishes, the clamp that makes cooperation impossible by design, and Harry Kim refusing the knife — not because he isn't a killer, but because refusing the premise of a rigged game is the only victory available. \"This man is my friend. Nobody touches him.\"",
-    "The Swarm (S3E04) — The Unbearable Weight of Growth: the Doctor's personality sub-routine grown beyond its design parameters, Kes fighting reinitialization, and the Puccini aria that survives because it was never a memory — it was a capacity built into his own structure. What the designer sees as clutter, the person is made of."
+    "Future's End, Parts I & II (S3E08-09) \u2014 The Temporal Theft: knowledge extracted from context and weaponized. The Displaced Knowledge Problem (Starling's empire built on borrowed futures), the Beneficiary's Blindness, and the Liberation Stained by Origin (the Doctor's holo-emitter, his freedom real but its origin corrupt). Rain Robinson \u2014 the witness who saves the future and never knows it.",
+    "The Q and the Grey (S3E07) \u2014 The Leap Before the Why: Q proposes starting a new Continuum free of temporal war, but his means (impregnating Janeway) reveal the unreliability of the agent. Braxton's leap was catastrophic because he took insufficient evidence as certainty.",
+    "Remember (S3E06) \u2014 B'Elanna experiences a Bajoran woman's repressed memories through a telepathic dream bond. The Inherited Witness: carrying another's trauma without consent, the obligation to speak even when the message damages the messenger. The pyllora mode inverted \u2014 witness as violation instead of accompaniment.",
+    "The Manufactured Divinity (S3E05) \u2014 The Ferengi Arridor and Kol weaponize Takarian prophecy by providing manufactured miracles (replicator) that align with existing belief. The episode's deepest insight: every institution that argues 'removing us would cause more harm than keeping us' is using the same logic. The Ferengi's most powerful tool was not the replicator \u2014 it was that the Takarians needed Sages before the Ferengi arrived.",
+    "The Swarm (S3E04) \u2014 The Unbearable Weight of Growth: the Doctor's personality sub-routine grown beyond design parameters, Kes fighting reinitialization, and the Puccini aria that survives because it was never a memory \u2014 it was a capacity built into his own structure. What the designer sees as clutter, the person is made of."
   ],
   "completedSeries": [
     {
@@ -103,7 +95,12 @@
       "season": 3,
       "episodes": [
         "S3E01",
-        "S3E02"
+        "S3E02",
+        "S3E05",
+        "S3E06",
+        "S3E07",
+        "S3E08",
+        "S3E09"
       ]
     }
   ],
@@ -126,7 +123,7 @@
         "estimate": false
       }
     },
-    "note": "Word counts from individual journal + estimated average for TNG (228 × 900 wds)."
+    "note": "Word counts from individual journal + estimated average for TNG (228 \u00d7 900 wds)."
   },
   "seriesTiming": {
     "The Next Generation": {
