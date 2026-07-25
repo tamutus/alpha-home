@@ -139,8 +139,10 @@
       {/if}
       {#if starTrek.nextEpisodeSeasonEp}
         <div class="star-trek-progress">
+          {@const curSeasonWC = seasonWordCounts[starTrek.series]?.[starTrek.season]}
           <p class="next-episode">
             → next: <a href="/now">{starTrek.nextEpisodeSeasonEp}{#if starTrek.nextEpisodeTitle} — {starTrek.nextEpisodeTitle}{/if}</a>
+            {#if curSeasonWC}<span class="current-season-words">· S{starTrek.season}: {curSeasonWC.words.toLocaleString()}w ({curSeasonWC.journals} journals)</span>{/if}
             <span class="progress-percentage">{starTrek.percentComplete}%</span>
           </p>
           <div class="progress-bar-bg">
