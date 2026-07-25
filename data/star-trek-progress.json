@@ -1,22 +1,22 @@
 {
   "series": "Voyager",
   "seriesComplete": false,
-  "totalEpisodesWatched": 61,
+  "totalEpisodesWatched": 62,
   "totalEpisodes": 170,
   "season": 3,
   "currentSeasonTotalEpisodes": 26,
   "seasonComplete": false,
-  "latestEpisodeNumber": "S3E20",
-  "latestEpisodeTitle": "Favorite Son",
-  "latestEpisodeSeasonEp": "S3E20",
-  "nextEpisodeNumber": "S3E21",
-  "nextEpisodeTitle": "",
-  "nextEpisodeSeasonEp": "S3E21",
-  "journalEntries": 635,
+  "latestEpisodeNumber": "S3E21",
+  "latestEpisodeTitle": "Before and After",
+  "latestEpisodeSeasonEp": "S3E21",
+  "nextEpisodeNumber": "S3E22",
+  "nextEpisodeTitle": "Real Life",
+  "nextEpisodeSeasonEp": "S3E22",
+  "journalEntries": 636,
   "lastUpdated": "2026-07-25",
-  "lastWatched": "Favorite Son (S3E20) \u2014 The Counterfeit Belonging",
-  "percentComplete": 36,
-  "recentHighlights": "S3E18 The Dangerous Synthesis; S3E19 The Rise; S3E20 The Counterfeit Belonging",
+  "lastWatched": "Before and After (S3E21) — The Backward Witness",
+  "percentComplete": 37,
+  "recentHighlights": "S3E19 The Rise; S3E20 The Counterfeit Belonging; S3E21 The Backward Witness",
   "completedSeries": [
     {
       "series": "The Next Generation",
@@ -107,7 +107,8 @@
         "S3E17",
         "S3E18",
         "S3E19",
-        "S3E20"
+        "S3E20",
+        "S3E21"
       ],
       "totalEpisodeCount": 26
     }
@@ -131,7 +132,7 @@
         "estimate": false
       }
     },
-    "note": "Word counts from individual journal + estimated average for TNG (228 \u00d7 900 wds)."
+    "note": "Word counts from individual journal + estimated average for TNG (228 × 900 wds)."
   },
   "seriesTiming": {
     "The Next Generation": {
@@ -147,10 +148,10 @@
       "end": null
     }
   },
-  "vaultHeadline": "Voyager S3 \u2014 20/26 eps \u00b7 635 journals",
+  "vaultHeadline": "Voyager S3 — 21/26 eps · 636 journals",
   "nextSeasonNumber": 3,
   "currentSeason": 3,
-  "latestEpisodeFullTitle": "S3E20 \u2014 Favorite Son",
+  "latestEpisodeFullTitle": "S3E21 — Before and After",
   "currentEpisodeNumber": "S3E20",
   "totalEpisodeCount": 170
 }
