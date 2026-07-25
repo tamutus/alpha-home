@@ -1,21 +1,21 @@
 {
   "series": "Voyager",
   "seriesComplete": false,
-  "totalEpisodesWatched": 56,
+  "totalEpisodesWatched": 57,
   "totalEpisodes": 170,
   "season": 3,
   "currentSeasonTotalEpisodes": 26,
   "seasonComplete": false,
-  "latestEpisodeNumber": 15,
-  "latestEpisodeTitle": "Coda",
-  "latestEpisodeSeasonEp": "S3E15",
-  "nextEpisodeNumber": 16,
-  "nextEpisodeTitle": "Blood Fever",
-  "nextEpisodeSeasonEp": "S3E16",
-  "journalEntries": 623,
+  "latestEpisodeNumber": "S3E16",
+  "latestEpisodeTitle": "Blood Fever",
+  "latestEpisodeSeasonEp": "S3E16",
+  "nextEpisodeNumber": "S3E17",
+  "nextEpisodeTitle": "Unity",
+  "nextEpisodeSeasonEp": "S3E17",
+  "journalEntries": 631,
   "lastUpdated": "2026-07-25",
-  "lastWatched": "Coda (S3E15) — The Vulture of the Threshold",
-  "percentComplete": 33,
+  "lastWatched": "Blood Fever (S3E16) \u2014 The Consent Under Fire",
+  "percentComplete": 34,
   "recentHighlights": "S3E10 The Unwilling Vessel; S3E13 The Expiring Map; S3E14 The Vulcan Answer; S3E15 The Vulture of the Threshold",
   "completedSeries": [
     {
@@ -102,7 +102,8 @@
         "S3E12",
         "S3E13",
         "S3E14",
-        "S3E15"
+        "S3E15",
+        "S3E16"
       ]
     }
   ],
@@ -141,6 +142,8 @@
       "end": null
     }
   },
-  "vaultHeadline": "Voyager S3 — 15/26 eps · 623 journals",
-  "nextSeasonNumber": 3
+  "vaultHeadline": "Voyager S3 \u2014 15/26 eps \u00b7 623 journals",
+  "nextSeasonNumber": 3,
+  "currentSeason": 3,
+  "latestEpisodeFullTitle": "S3E16 \u2014 Blood Fever"
 }

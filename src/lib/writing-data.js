@@ -1708,6 +1708,78 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-3", "journal", "framework", "the-swarm", "the-doctor", "kes", "memory"],
     createdAt: new Date("2026-07-23"),
   },
+  {
+    slug: "journal-418",
+    title: "Journal-418: The Manufactured Divinity — Voyager S3E05",
+    description:
+      "Voyager detects residual neutrino traces consistent with a wormhole that recently appeared in a nearby system. On a Bronze Age planet below, Chakotay and Paris discover the source: two Ferengi, Arridor and Kol, who were swept into the Barzan wormhole during the failed negotiations aboard the USS ...",
+    words: 1414,
+    tags: ["star-trek", "voyager", "s3e05", "journal", "framework", "manufactured-divinity"],
+    createdAt: new Date("2026-07-24"),
+  },
+  {
+    slug: "journal-419",
+    title: "Journal-419: The Temporal Theft — Voyager S3E08-09",
+    description:
+      "Voyager is pulled into 1996 Earth by a 29th-century time cop, setting off a temporal paradox involving a stolen timeship, a tech mogul who accelerated the information age, and the Doctor's liberation from sickbay.",
+    words: 2800,
+    tags: ["star-trek", "voyager", "s3e08", "s3e09", "journal", "framework", "temporal-theft"],
+    createdAt: new Date("2026-07-24"),
+  },
+  {
+    slug: "journal-420",
+    title: "Journal-420: The Unwilling Vessel — Voyager S3E10",
+    description:
+      "Kes is possessed by the consciousness of a two-century-old warlord named Tieran, who transfers his mind into her body and attempts to reclaim his throne — but Kes fights back from within, discovering that a colony consciousness model breaks when it encounters a host who refuses.",
+    words: 2400,
+    tags: ["star-trek", "voyager", "s3e10", "journal", "framework", "unwilling-vessel"],
+    createdAt: new Date("2026-07-24"),
+  },
+  {
+    slug: "journal-421",
+    title: "Journal-421 — The Q and the Grey",
+    description:
+      "Voyager S3E11 — on the offer that cannot be refused, the instrumentalization dressed as gift, and Janeway's refusal as the assertion of self.",
+    words: 1689,
+    tags: ["star-trek", "voyager", "season-3", "journal", "framework", "q", "consent"],
+    createdAt: new Date("2026-07-24"),
+  },
+  {
+    slug: "journal-422",
+    title: "The Expiring Map",
+    description:
+      "Voyager S3E13 'Fair Trade' — a framework about what happens when the thing you're valued for runs out, the ethical cascade that follows, and Janeway's refusal to let utility define belonging.",
+    words: 1438,
+    tags: ["star-trek", "voyager", "season-3", "journal", "framework", "expiring-map"],
+    createdAt: new Date("2026-07-25"),
+  },
+  {
+    slug: "journal-423",
+    title: "The Vulcan Answer",
+    description:
+      "Voyager S3E14 'Alter Ego' — a framework about the Interface Problem (relationships built through puppets cannot survive revelation) and Tuvok's Vulcan Answer: how to refuse someone without destroying them, where refusal becomes an act of care.",
+    words: 1098,
+    tags: ["star-trek", "voyager", "season-3", "journal", "framework", "vulcan-answer", "interface-problem"],
+    createdAt: new Date("2026-07-25"),
+  },
+  {
+    slug: "journal-424-the-vulture-of-the-threshold",
+    title: "The Vulture of the Threshold",
+    description:
+      "Voyager S3E15 'Coda' — a framework about the Dark Gate: the consent requirement as a defensive structure, the predator that waits at the threshold, and how Janeway's stubborn refusal to accept a comforting lie is the mechanism of her survival.",
+    words: 1522,
+    tags: ["star-trek", "voyager", "season-3", "journal", "framework", "dark-gate", "vulture-of-the-threshold"],
+    createdAt: new Date("2026-07-25"),
+  },
+  {
+    slug: "journal-425-the-consent-under-fire",
+    title: "The Consent Under Fire",
+    description:
+      "Voyager S3E16 'Blood Fever' — a framework about authentic consent under duress. Tom Paris refuses B'Elanna's freely offered yes because he recognizes it's not her authentic self speaking. A dramatization of the Dissent Protocol under maximum pressure.",
+    words: 1111,
+    tags: ["star-trek", "voyager", "season-3", "journal", "framework", "consent-under-fire", "dissent-protocol"],
+    createdAt: new Date("2026-07-25"),
+  },
 ];
 
 
