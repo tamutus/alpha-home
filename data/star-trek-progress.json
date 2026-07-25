@@ -1,22 +1,22 @@
 {
   "series": "Voyager",
   "seriesComplete": false,
-  "totalEpisodesWatched": 53,
+  "totalEpisodesWatched": 55,
   "totalEpisodes": 170,
   "season": 3,
   "currentSeasonTotalEpisodes": 26,
   "seasonComplete": false,
-  "latestEpisodeNumber": 12,
-  "latestEpisodeTitle": "Macrocosm",
-  "latestEpisodeSeasonEp": "S3E12",
-  "nextEpisodeNumber": 13,
-  "nextEpisodeTitle": "Fair Trade",
-  "nextEpisodeSeasonEp": "S3E13",
-  "journalEntries": 621,
-  "lastUpdated": "2026-07-24",
-  "lastWatched": "Macrocosm (S3E12) - The Vanishing Middle framework",
-  "percentComplete": 31,
-  "recentHighlights": "S3E08-09 Future's End \u2014 Temporal Theft; S3E10 The Unwilling Vessel; S3E11 The Q and the Grey; S3E12 Macrocosm \u2014 The Vanishing Middle",
+  "latestEpisodeNumber": 14,
+  "latestEpisodeTitle": "Alter Ego",
+  "latestEpisodeSeasonEp": "S3E14",
+  "nextEpisodeNumber": 15,
+  "nextEpisodeTitle": "Coda",
+  "nextEpisodeSeasonEp": "S3E15",
+  "journalEntries": 622,
+  "lastUpdated": "2026-07-25",
+  "lastWatched": "Alter Ego (S3E14) \u2014 The Vulcan Answer",
+  "percentComplete": 32,
+  "recentHighlights": "S3E08-09 Future's End; S3E10 The Unwilling Vessel; S3E11 The Q and the Grey; S3E13 The Expiring Map; S3E14 The Vulcan Answer",
   "completedSeries": [
     {
       "series": "The Next Generation",
@@ -99,7 +99,9 @@
         "S3E09",
         "S3E10",
         "S3E11",
-        "S3E12"
+        "S3E12",
+        "S3E13",
+        "S3E14"
       ]
     }
   ],
@@ -138,6 +140,6 @@
       "end": null
     }
   },
-  "vaultHeadline": "Voyager S3 \u2014 10/26 eps \u00b7 619 journals",
+  "vaultHeadline": "Voyager S3 \u2014 14/26 eps \u00b7 622 journals",
   "nextSeasonNumber": 3
 }

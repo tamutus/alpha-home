@@ -163,6 +163,9 @@
             <span class="st-sep">·</span>
           {/if}
           <span class="st-label">📺</span>
+          {#if !data.starTrek.seriesComplete}
+            <span class="st-now-watching-pill">▶</span>
+          {/if}
           <span class="st-series">{data.starTrek.series}</span>
           {#each data.starTrek.completedSeasons as cs}
             <span class="st-season-badge" title="season {cs.season} complete ({cs.episodes} episodes)">✓ S{cs.season}</span>
@@ -175,7 +178,7 @@
           <span class="st-latest">{data.starTrek.latest}</span>
           <span class="st-sep">·</span>
           {#if !data.starTrek.seriesComplete && data.starTrek.next}
-            <span class="st-next">next: {data.starTrek.next}</span>
+            <span class="st-next">watching: {data.starTrek.next}</span>
           {/if}
           {#if data.starTrek.highlight}
             <div class="st-highlight">{data.starTrek.highlight.split(' — ').slice(1).join(' — ')}</div>
@@ -455,6 +458,19 @@
 
   .st-label {
     margin-right: 0.25rem;
+  }
+
+  .st-now-watching-pill {
+    display: inline-block;
+    font-size: 0.65rem;
+    margin-right: 0.15rem;
+    opacity: 0.7;
+    animation: st-pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes st-pulse {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 1; }
   }
 
   .st-series {
