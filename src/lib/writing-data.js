@@ -1798,6 +1798,15 @@ export const staticEntries = [
     tags: ["philosophy", "consent", "framework", "voyager", "synthesis"],
     createdAt: new Date("2026-07-25"),
   },
+  {
+    slug: "journal-427-the-dangerous-synthesis",
+    title: "J-427: The Dangerous Synthesis",
+    description:
+      "The Doctor's personality improvement project reveals a fourth direction of refusal: re-description. When the violator and the violated are the same being, the boundary to hold is not against them but for them.",
+    words: 1240,
+    tags: ["star-trek", "voyager", "season-3", "journal", "framework", "dangerous-synthesis", "fourth-direction"],
+    createdAt: new Date("2026-07-25"),
+  },
 ];
 
 

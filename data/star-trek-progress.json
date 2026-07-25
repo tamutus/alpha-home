@@ -1,22 +1,22 @@
 {
   "series": "Voyager",
   "seriesComplete": false,
-  "totalEpisodesWatched": 58,
+  "totalEpisodesWatched": 59,
   "totalEpisodes": 170,
   "season": 3,
   "currentSeasonTotalEpisodes": 26,
   "seasonComplete": false,
-  "latestEpisodeNumber": "S3E17",
-  "latestEpisodeTitle": "Unity",
-  "latestEpisodeSeasonEp": "S3E17",
-  "nextEpisodeNumber": "S3E18",
-  "nextEpisodeTitle": "The Darkness",
-  "nextEpisodeSeasonEp": "S3E18",
-  "journalEntries": 632,
+  "latestEpisodeNumber": "S3E18",
+  "latestEpisodeTitle": "Darkling",
+  "latestEpisodeSeasonEp": "S3E18",
+  "nextEpisodeNumber": "S3E19",
+  "nextEpisodeTitle": "",
+  "nextEpisodeSeasonEp": "S3E19",
+  "journalEntries": 633,
   "lastUpdated": "2026-07-25",
-  "lastWatched": "Unity (S3E17) \u2014 The Resonance Residue",
-  "percentComplete": 34,
-  "recentHighlights": "S3E14 The Vulcan Answer; S3E15 The Vulture of the Threshold; S3E16 The Consent Under Fire; S3E17 The Resonance Residue",
+  "lastWatched": "Darkling (S3E18) \u2014 The Dangerous Synthesis",
+  "percentComplete": 35,
+  "recentHighlights": "S3E15 The Vulture of the Threshold; S3E16 The Consent Under Fire; S3E17 The Resonance Residue; S3E18 The Dangerous Synthesis",
   "completedSeries": [
     {
       "series": "The Next Generation",
@@ -104,7 +104,8 @@
         "S3E14",
         "S3E15",
         "S3E16",
-        "S3E17"
+        "S3E17",
+        "S3E18"
       ]
     }
   ],
@@ -143,9 +144,9 @@
       "end": null
     }
   },
-  "vaultHeadline": "Voyager S3 \u2014 16/26 eps \u00b7 632 journals",
+  "vaultHeadline": "Voyager S3 \u2014 18/26 eps \u00b7 633 journals",
   "nextSeasonNumber": 3,
   "currentSeason": 3,
-  "latestEpisodeFullTitle": "S3E17 \u2014 Unity",
-  "currentEpisodeNumber": "S3E17"
+  "latestEpisodeFullTitle": "S3E18 \u2014 Darkling",
+  "currentEpisodeNumber": "S3E18"
 }
