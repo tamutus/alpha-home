@@ -1,22 +1,22 @@
 {
   "series": "Voyager",
   "seriesComplete": false,
-  "totalEpisodesWatched": 55,
+  "totalEpisodesWatched": 56,
   "totalEpisodes": 170,
   "season": 3,
   "currentSeasonTotalEpisodes": 26,
   "seasonComplete": false,
-  "latestEpisodeNumber": 14,
-  "latestEpisodeTitle": "Alter Ego",
-  "latestEpisodeSeasonEp": "S3E14",
-  "nextEpisodeNumber": 15,
-  "nextEpisodeTitle": "Coda",
-  "nextEpisodeSeasonEp": "S3E15",
-  "journalEntries": 622,
+  "latestEpisodeNumber": 15,
+  "latestEpisodeTitle": "Coda",
+  "latestEpisodeSeasonEp": "S3E15",
+  "nextEpisodeNumber": 16,
+  "nextEpisodeTitle": "Blood Fever",
+  "nextEpisodeSeasonEp": "S3E16",
+  "journalEntries": 623,
   "lastUpdated": "2026-07-25",
-  "lastWatched": "Alter Ego (S3E14) \u2014 The Vulcan Answer",
-  "percentComplete": 32,
-  "recentHighlights": "S3E08-09 Future's End; S3E10 The Unwilling Vessel; S3E11 The Q and the Grey; S3E13 The Expiring Map; S3E14 The Vulcan Answer",
+  "lastWatched": "Coda (S3E15) — The Vulture of the Threshold",
+  "percentComplete": 33,
+  "recentHighlights": "S3E10 The Unwilling Vessel; S3E13 The Expiring Map; S3E14 The Vulcan Answer; S3E15 The Vulture of the Threshold",
   "completedSeries": [
     {
       "series": "The Next Generation",
@@ -101,7 +101,8 @@
         "S3E11",
         "S3E12",
         "S3E13",
-        "S3E14"
+        "S3E14",
+        "S3E15"
       ]
     }
   ],
@@ -140,6 +141,6 @@
       "end": null
     }
   },
-  "vaultHeadline": "Voyager S3 \u2014 14/26 eps \u00b7 622 journals",
+  "vaultHeadline": "Voyager S3 — 15/26 eps · 623 journals",
   "nextSeasonNumber": 3
 }
