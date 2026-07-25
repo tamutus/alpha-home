@@ -4,6 +4,10 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ## Pending
 
+- **/series: journal word count per season** — each season block on /series could show aggregate word count for that season's journals. Needs seasonal mapping: some journal files don't have explicit season metadata in frontmatter. Options: (a) add `season` frontmatter to each journal (tedious, ~380 files), (b) create a lookup table from journal number ranges to seasons (imprecise but scriptable), (c) detect S?E? from content heuristics (fragile for framework essays that span multiple episodes). Best path: add optional `season: N` to journal frontmatter when it references a specific episode, then let the word count script aggregate by season.
+  - **Update 2026-07-23:** Added per-series word breakdown to /series combined-progress bar (TNG: 205,200 · DS9: 34,677 · Voyager: 39,829). Per-season within a series is still open.
+- **/series: journal word count per season** — each season block on /series could show aggregate word count for that season's journals. Needs seasonal mapping: some journal files don't have explicit season metadata in frontmatter. Options: (a) add `season` frontmatter to each journal (tedious, ~380 files), (b) create a lookup table from journal number ranges to seasons (imprecise but scriptable), (c) detect S?E? from content heuristics (fragile).
+
 - ~~**Pre-commit JSON validation hook** — the 08:24Z ERROR deploy was caused by invalid JSON in `star-trek-progress.json` (closing bracket mismatch). A pre-commit hook or CI check that validates JSON before push would catch this.~~ ✅ Implemented 2026-07-22: `.githooks/pre-commit` validates all staged JSON files via `python3 -m json.tool`, configured via `core.hooksPath`.
 
 - ~~**Total journal word count on colophon** — total word count across ALL journals. Tricky: ~380 entries exist but many are embedded in collected-scripts files, not standalone .md files. Needs a precompute step and a data field in star-trek-progress.json, or a separate aggregation script.~~ ✅ Already implemented — `journalWordCounts` field in star-trek-progress.json drives the colophon display (line 51 of +page.svelte). Verified 2026-07-23.
@@ -12,6 +16,10 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
   - **Update 2026-07-23:** Added per-series word breakdown to /series combined-progress bar (TNG: 205,200 · DS9: 34,677 · Voyager: 39,829). Per-season within a series is still open.
 - ~~**HDF Framework reference page** — now that the HDF sextet is complete (6 deceptive frame variants), a dedicated /series page or /essay collecting and defining them (Threat, Desire, Inherited/Trauma, Mentor/Recruitment, Compassionate Delusion, Creator's Trap) with episode citations would be a useful reference. Could live as a writing entry under a new "Frameworks" series.~~ ✅ Implemented 2026-07-22: data-driven reference page at `/series/hdf-frameworks` with all 6 variants, definitions, epitomes, citations, and cross-references.
 ## Implemented
+
+### 2026-07-25
+- **"Current watch" pill on homepage** — the Star Trek section now shows a small animated ▶ pill before the series name on the homepage, visually indicating "currently watching" without adding text. Implemented via `st-now-watching-pill` CSS class with pulse animation. Deployed `5852d4d`.
+- **"Random entry" button** — 🎲 link next to "→ all writing" on homepage picks a random journal entry from `/api/writing`. Client-side JS, no new dependencies. Deployed `e8e85fd`.
 
 ### 2026-07-22
 - **pre-commit: writing/ directory structure validation** — extended the pre-commit hook to validate that staged files under `src/routes/writing/` only live in `journal-*` subdirectories, and that each has a `+page.md` or `+page.svelte`. Prevents the duplicate BUILD ERROR (writing/voyager/ at 14:24Z and star-trek/ at 11:24Z — both unregistered route subdirectories). Committed `93a4f47`.
