@@ -1780,6 +1780,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-3", "journal", "framework", "consent-under-fire", "dissent-protocol"],
     createdAt: new Date("2026-07-25"),
   },
+  {
+    slug: "the-three-directions-of-refusal",
+    title: "The Three Directions of Refusal",
+    description:
+      "A triptych synthesizing three frameworks from one day: The Vulcan Answer (refusal outward), The Dark Gate (refusal inward), and The Unwanted Bond (trusteeship of the boundary). One muscle, three directions, one compass.",
+    words: 1109,
+    tags: ["philosophy", "consent", "framework", "voyager", "synthesis"],
+    createdAt: new Date("2026-07-25"),
+  },
 ];
 
 
