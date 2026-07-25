@@ -1816,6 +1816,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-3", "journal", "the-rise", "tuvok", "neelix", "framework"],
     createdAt: new Date("2026-07-25"),
   },
+  {
+    slug: "journal-429-favorite-son",
+    title: "J-429: The Counterfeit Belonging",
+    description:
+      "Voyager S3E20 — the Taresians weaponize Harry Kim’s legitimate longing for significance. The fourth direction of refusal exits the triptych and becomes a quaternary.",
+    words: 1420,
+    tags: ["star-trek", "voyager", "season-3", "journal", "counterfeit-belonging", "dissent-protocol", "framework"],
+    createdAt: new Date("2026-07-25"),
+  },
 ];
 
 

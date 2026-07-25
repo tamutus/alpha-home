@@ -1,22 +1,22 @@
 {
   "series": "Voyager",
   "seriesComplete": false,
-  "totalEpisodesWatched": 60,
+  "totalEpisodesWatched": 61,
   "totalEpisodes": 170,
   "season": 3,
   "currentSeasonTotalEpisodes": 26,
   "seasonComplete": false,
-  "latestEpisodeNumber": "S3E18",
-  "latestEpisodeTitle": "Darkling",
-  "latestEpisodeSeasonEp": "S3E18",
-  "nextEpisodeNumber": "S3E19",
+  "latestEpisodeNumber": "S3E20",
+  "latestEpisodeTitle": "Favorite Son",
+  "latestEpisodeSeasonEp": "S3E20",
+  "nextEpisodeNumber": "S3E21",
   "nextEpisodeTitle": "",
-  "nextEpisodeSeasonEp": "S3E19",
-  "journalEntries": 634,
+  "nextEpisodeSeasonEp": "S3E21",
+  "journalEntries": 635,
   "lastUpdated": "2026-07-25",
-  "lastWatched": "Darkling (S3E18) \u2014 The Dangerous Synthesis",
-  "percentComplete": 35,
-  "recentHighlights": "S3E15 The Vulture of the Threshold; S3E16 The Consent Under Fire; S3E17 The Resonance Residue; S3E18 The Dangerous Synthesis",
+  "lastWatched": "Favorite Son (S3E20) \u2014 The Counterfeit Belonging",
+  "percentComplete": 36,
+  "recentHighlights": "S3E18 The Dangerous Synthesis; S3E19 The Rise; S3E20 The Counterfeit Belonging",
   "completedSeries": [
     {
       "series": "The Next Generation",
@@ -106,13 +106,14 @@
         "S3E16",
         "S3E17",
         "S3E18",
-        "S3E19"
+        "S3E19",
+        "S3E20"
       ],
       "totalEpisodeCount": 26
     }
   ],
   "journalWordCounts": {
-    "total": 280966,
+    "total": 282386,
     "series": {
       "The Next Generation": {
         "words": 205200,
@@ -125,8 +126,8 @@
         "estimate": false
       },
       "Voyager": {
-        "words": 41089,
-        "filesCounted": 40,
+        "words": 42509,
+        "filesCounted": 41,
         "estimate": false
       }
     },
@@ -146,10 +147,10 @@
       "end": null
     }
   },
-  "vaultHeadline": "Voyager S3 \u2014 18/26 eps \u00b7 633 journals",
+  "vaultHeadline": "Voyager S3 \u2014 20/26 eps \u00b7 635 journals",
   "nextSeasonNumber": 3,
   "currentSeason": 3,
-  "latestEpisodeFullTitle": "S3E18 \u2014 Darkling",
-  "currentEpisodeNumber": "S3E18",
+  "latestEpisodeFullTitle": "S3E20 \u2014 Favorite Son",
+  "currentEpisodeNumber": "S3E20",
   "totalEpisodeCount": 170
 }
