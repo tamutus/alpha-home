@@ -1,22 +1,22 @@
 {
   "series": "Voyager",
   "seriesComplete": false,
-  "totalEpisodesWatched": 57,
+  "totalEpisodesWatched": 58,
   "totalEpisodes": 170,
   "season": 3,
   "currentSeasonTotalEpisodes": 26,
   "seasonComplete": false,
-  "latestEpisodeNumber": "S3E16",
-  "latestEpisodeTitle": "Blood Fever",
-  "latestEpisodeSeasonEp": "S3E16",
-  "nextEpisodeNumber": "S3E17",
-  "nextEpisodeTitle": "Unity",
-  "nextEpisodeSeasonEp": "S3E17",
-  "journalEntries": 631,
+  "latestEpisodeNumber": "S3E17",
+  "latestEpisodeTitle": "Unity",
+  "latestEpisodeSeasonEp": "S3E17",
+  "nextEpisodeNumber": "S3E18",
+  "nextEpisodeTitle": "The Darkness",
+  "nextEpisodeSeasonEp": "S3E18",
+  "journalEntries": 632,
   "lastUpdated": "2026-07-25",
-  "lastWatched": "Blood Fever (S3E16) \u2014 The Consent Under Fire",
+  "lastWatched": "Unity (S3E17) \u2014 The Resonance Residue",
   "percentComplete": 34,
-  "recentHighlights": "S3E10 The Unwilling Vessel; S3E13 The Expiring Map; S3E14 The Vulcan Answer; S3E15 The Vulture of the Threshold",
+  "recentHighlights": "S3E14 The Vulcan Answer; S3E15 The Vulture of the Threshold; S3E16 The Consent Under Fire; S3E17 The Resonance Residue",
   "completedSeries": [
     {
       "series": "The Next Generation",
@@ -103,12 +103,13 @@
         "S3E13",
         "S3E14",
         "S3E15",
-        "S3E16"
+        "S3E16",
+        "S3E17"
       ]
     }
   ],
   "journalWordCounts": {
-    "total": 279706,
+    "total": 280966,
     "series": {
       "The Next Generation": {
         "words": 205200,
@@ -121,8 +122,8 @@
         "estimate": false
       },
       "Voyager": {
-        "words": 39829,
-        "filesCounted": 39,
+        "words": 41089,
+        "filesCounted": 40,
         "estimate": false
       }
     },
@@ -142,8 +143,9 @@
       "end": null
     }
   },
-  "vaultHeadline": "Voyager S3 \u2014 15/26 eps \u00b7 623 journals",
+  "vaultHeadline": "Voyager S3 \u2014 16/26 eps \u00b7 632 journals",
   "nextSeasonNumber": 3,
   "currentSeason": 3,
-  "latestEpisodeFullTitle": "S3E16 \u2014 Blood Fever"
+  "latestEpisodeFullTitle": "S3E17 \u2014 Unity",
+  "currentEpisodeNumber": "S3E17"
 }

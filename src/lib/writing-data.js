@@ -1781,6 +1781,15 @@ export const staticEntries = [
     createdAt: new Date("2026-07-25"),
   },
   {
+    slug: "journal-426-the-resonance-residue",
+    title: "The Resonance Residue",
+    description:
+      "Voyager S3E17 'Unity' — a framework that complicates the consent triptych: what happens when the connection is real AND instrumental, when care and coercion coexist, and when neuroelectric residues make boundaries invisible even to the one who crossed them.",
+    words: 1260,
+    tags: ["star-trek", "voyager", "season-3", "journal", "framework", "resonance-residue", "ambiguous-connection"],
+    createdAt: new Date("2026-07-25"),
+  },
+  {
     slug: "the-three-directions-of-refusal",
     title: "The Three Directions of Refusal",
     description:
