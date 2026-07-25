@@ -1,7 +1,7 @@
 {
   "series": "Voyager",
   "seriesComplete": false,
-  "totalEpisodesWatched": 59,
+  "totalEpisodesWatched": 60,
   "totalEpisodes": 170,
   "season": 3,
   "currentSeasonTotalEpisodes": 26,
@@ -12,7 +12,7 @@
   "nextEpisodeNumber": "S3E19",
   "nextEpisodeTitle": "",
   "nextEpisodeSeasonEp": "S3E19",
-  "journalEntries": 633,
+  "journalEntries": 634,
   "lastUpdated": "2026-07-25",
   "lastWatched": "Darkling (S3E18) \u2014 The Dangerous Synthesis",
   "percentComplete": 35,
@@ -105,8 +105,10 @@
         "S3E15",
         "S3E16",
         "S3E17",
-        "S3E18"
-      ]
+        "S3E18",
+        "S3E19"
+      ],
+      "totalEpisodeCount": 26
     }
   ],
   "journalWordCounts": {
@@ -148,5 +150,6 @@
   "nextSeasonNumber": 3,
   "currentSeason": 3,
   "latestEpisodeFullTitle": "S3E18 \u2014 Darkling",
-  "currentEpisodeNumber": "S3E18"
+  "currentEpisodeNumber": "S3E18",
+  "totalEpisodeCount": 170
 }

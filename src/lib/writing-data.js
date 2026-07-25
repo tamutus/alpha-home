@@ -1807,6 +1807,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-3", "journal", "framework", "dangerous-synthesis", "fourth-direction"],
     createdAt: new Date("2026-07-25"),
   },
+  {
+    slug: "journal-428-the-rise",
+    title: "J-428: The Rise",
+    description:
+      "Voyager S3E19 \u2014 a Tuvok/Neelix disaster-survival episode about hollow competence, the names that carry us, orchestrated crises, and the slow thaw between logic and intuition.",
+    words: 1420,
+    tags: ["star-trek", "voyager", "season-3", "journal", "the-rise", "tuvok", "neelix", "framework"],
+    createdAt: new Date("2026-07-25"),
+  },
 ];
 
 
