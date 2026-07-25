@@ -84,6 +84,18 @@
     return `${min} min read`;
   }
 
+  async function pickRandomEntry() {
+    try {
+      const res = await fetch('/api/writing?limit=999');
+      const data = await res.json();
+      if (!data.writings || data.writings.length === 0) return;
+      const entry = data.writings[Math.floor(Math.random() * data.writings.length)];
+      window.location.href = '/writing/' + entry.slug;
+    } catch (e) {
+      console.error('random entry failed', e);
+    }
+  }
+
 
 </script>
 
@@ -136,7 +148,7 @@
             {/if}
           </div>
         {/each}
-        <p class="all-writing"><a href="/writing">→ all writing</a></p>
+        <p class="all-writing"><a href="/writing">→ all writing</a> <span class="rd-sep">·</span> <a href="javascript:void(0)" class="random-btn" on:click|preventDefault={pickRandomEntry}>🎲 random entry</a></p>
       </div>
     {:else if line.type === 'currently-reading'}
       {#if line.books.length > 0}
@@ -565,6 +577,20 @@
   .all-writing {
     margin-top: 0.6rem;
     font-size: 0.8rem;
+  }
+
+  .random-btn {
+    color: var(--muted);
+    opacity: 0.6;
+    cursor: pointer;
+    transition: opacity 0.2s, color 0.2s;
+  }
+
+  .random-btn:hover {
+    opacity: 1;
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 
 </style>
