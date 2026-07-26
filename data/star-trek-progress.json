@@ -1,157 +1,32 @@
 {
-  "series": "Voyager",
-  "seriesComplete": false,
-  "totalEpisodesWatched": 62,
-  "totalEpisodes": 170,
-  "season": 3,
-  "currentSeasonTotalEpisodes": 26,
-  "seasonComplete": false,
-  "latestEpisodeNumber": "S3E21",
-  "latestEpisodeTitle": "Before and After",
-  "latestEpisodeSeasonEp": "S3E21",
-  "nextEpisodeNumber": "S3E22",
-  "nextEpisodeTitle": "Real Life",
-  "nextEpisodeSeasonEp": "S3E22",
-  "journalEntries": 636,
-  "lastUpdated": "2026-07-25",
-  "lastWatched": "Before and After (S3E21) — The Backward Witness",
-  "percentComplete": 37,
-  "recentHighlights": "S3E19 The Rise; S3E20 The Counterfeit Belonging; S3E21 The Backward Witness",
-  "completedSeries": [
-    {
-      "series": "The Next Generation",
-      "totalEpisodes": 277,
-      "journalEntries": 228
-    },
-    {
-      "series": "Deep Space Nine",
-      "totalEpisodes": 176,
-      "journalEntries": 365
-    }
-  ],
-  "nextSeries": null,
-  "watched": [
-    {
-      "series": "Voyager",
-      "season": 1,
-      "episodes": [
-        "S1E01-02",
-        "S1E03",
-        "S1E04",
-        "S1E05",
-        "S1E06",
-        "S1E07",
-        "S1E08",
-        "S1E09",
-        "S1E10",
-        "S1E11",
-        "S1E12",
-        "S1E13",
-        "S1E14",
-        "S1E15",
-        "S1E16"
-      ]
-    },
-    {
-      "series": "Voyager",
-      "season": 2,
-      "episodes": [
-        "S2E01",
-        "S2E02",
-        "S2E03",
-        "S2E04",
-        "S2E05",
-        "S2E06",
-        "S2E07",
-        "S2E08",
-        "S2E09",
-        "S2E10",
-        "S2E11",
-        "S2E12",
-        "S2E13",
-        "S2E14",
-        "S2E15",
-        "S2E16",
-        "S2E17",
-        "S2E18",
-        "S2E19",
-        "S2E20",
-        "S2E21",
-        "S2E22",
-        "S2E23",
-        "S2E24",
-        "S2E25",
-        "S2E26"
-      ]
-    },
-    {
-      "series": "Voyager",
-      "season": 3,
-      "episodes": [
-        "S3E01",
-        "S3E02",
-        "S3E03",
-        "S3E04",
-        "S3E05",
-        "S3E06",
-        "S3E07",
-        "S3E08",
-        "S3E09",
-        "S3E10",
-        "S3E11",
-        "S3E12",
-        "S3E13",
-        "S3E14",
-        "S3E15",
-        "S3E16",
-        "S3E17",
-        "S3E18",
-        "S3E19",
-        "S3E20",
-        "S3E21"
-      ],
-      "totalEpisodeCount": 26
-    }
-  ],
-  "journalWordCounts": {
-    "total": 282386,
-    "series": {
-      "The Next Generation": {
-        "words": 205200,
-        "filesCounted": 0,
-        "estimate": true
-      },
-      "Deep Space Nine": {
-        "words": 34677,
-        "filesCounted": 33,
-        "estimate": false
-      },
-      "Voyager": {
-        "words": 42509,
-        "filesCounted": 41,
-        "estimate": false
-      }
-    },
-    "note": "Word counts from individual journal + estimated average for TNG (228 × 900 wds)."
-  },
-  "seriesTiming": {
-    "The Next Generation": {
-      "start": "2026-03-14",
-      "end": "2026-06-16"
-    },
-    "Deep Space Nine": {
-      "start": "2026-06-16",
-      "end": "2026-07-16"
-    },
-    "Voyager": {
-      "start": "2026-07-17",
-      "end": null
-    }
-  },
-  "vaultHeadline": "Voyager S3 — 21/26 eps · 636 journals",
-  "nextSeasonNumber": 3,
-  "currentSeason": 3,
-  "latestEpisodeFullTitle": "S3E21 — Before and After",
-  "currentEpisodeNumber": "S3E20",
-  "totalEpisodeCount": 170
+    "series": "Voyager",
+    "seriesComplete": false,
+    "totalEpisodesWatched": 63,
+    "totalEpisodes": 170,
+    "season": 3,
+    "currentSeasonTotalEpisodes": 26,
+    "seasonComplete": false,
+    "latestEpisodeNumber": "S3E22",
+    "latestEpisodeTitle": "Real Life",
+    "latestEpisodeSeasonEp": "S3E22",
+    "nextEpisodeNumber": "S3E23",
+    "nextEpisodeTitle": null,
+    "nextEpisodeSeasonEp": "S3E23",
+    "journalEntries": 637,
+    "lastUpdated": "2026-07-26",
+    "lastWatched": "Real Life (S3E22) \u2014 The Refusal of Comfort",
+    "percentComplete": 37,
+    "recentHighlights": "S3E20 The Counterfeit Belonging; S3E21 The Backward Witness; S3E22 The Refusal of Comfort",
+    "completedSeries": [
+        {
+            "series": "The Next Generation",
+            "totalEpisodes": 277,
+            "journalEntries": 228
+        },
+        {
+            "series": "Deep Space Nine",
+            "totalEpisodes": 176,
+            "journalEntries": 365
+        }
+    ]
 }
