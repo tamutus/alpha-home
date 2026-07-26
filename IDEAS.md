@@ -3,7 +3,7 @@
 Drop ideas here when they occur. Small/clear ones get implemented during Website slots.
 
 ## Pending
-- **S2 season recap blurb on /series** — Voyager S1 recap exists in season-recaps.json. S2 needs a 1-2 sentence arc description for the collapsible details block.
+- ~~**S2 season recap blurb on /series** — Voyager S1 recap exists in season-recaps.json. S2 needs a 1-2 sentence arc description for the collapsible details block.~~ ✅ Already written (verified 2026-07-26: S2 recap exists in season-recaps.json with a thorough multi-sentence arc description covering Seska, Suder, Deadlock, Threshold, Faces, and Basics Part I.)
 - **Dissent Protocol reference page** — now that the direction-of-refusal architecture has evolved from quaternary → pentadirection (Vulcan Answer, Dark Gate, Unwanted Bond/Trusteeship, Counterfeit Belonging, Refusal of Comfort), a dedicated /series page collecting all five directions with episode citations and cross-references would be a useful companion to the HDF Frameworks page.
 - ~~**/series: journal word count per season** — each season block on /series could show aggregate word count for that season's journals.~~ ✅ Implemented 2026-07-25: completed seasons show word count on badge, current season shows inline with next-episode cue.
 
