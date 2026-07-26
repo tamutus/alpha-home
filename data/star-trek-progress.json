@@ -1,32 +1,32 @@
 {
-    "series": "Voyager",
-    "seriesComplete": false,
-    "totalEpisodesWatched": 64,
-    "totalEpisodes": 170,
-    "season": 3,
-    "currentSeasonTotalEpisodes": 26,
-    "seasonComplete": false,
-    "latestEpisodeNumber": "S3E23",
-    "latestEpisodeTitle": "Distant Origin",
-    "latestEpisodeSeasonEp": "S3E23",
-    "nextEpisodeNumber": "S3E24",
-    "nextEpisodeTitle": null,
-    "nextEpisodeSeasonEp": "S3E24",
-    "journalEntries": 638,
-    "lastUpdated": "2026-07-26",
-    "lastWatched": "Distant Origin (S3E23) \u2014 The Recantation Is the Harder Path",
-    "percentComplete": 38,
-    "recentHighlights": "S3E21 The Backward Witness; S3E22 The Refusal of Comfort; S3E23 The Recantation Is the Harder Path",
-    "completedSeries": [
-        {
-            "series": "The Next Generation",
-            "totalEpisodes": 277,
-            "journalEntries": 228
-        },
-        {
-            "series": "Deep Space Nine",
-            "totalEpisodes": 176,
-            "journalEntries": 365
-        }
-    ]
+  "series": "Voyager",
+  "seriesComplete": false,
+  "totalEpisodesWatched": 65,
+  "totalEpisodes": 170,
+  "season": 3,
+  "currentSeasonTotalEpisodes": 26,
+  "seasonComplete": false,
+  "latestEpisodeNumber": "S3E24",
+  "latestEpisodeTitle": "Displaced",
+  "latestEpisodeSeasonEp": 24,
+  "nextEpisodeNumber": "S3E25",
+  "nextEpisodeTitle": "Scorpion (Part 1)",
+  "nextEpisodeSeasonEp": 25,
+  "journalEntries": 639,
+  "lastUpdated": "2026-07-26",
+  "lastWatched": "Distant Origin (S3E23) \u2014 The Recantation Is the Harder Path",
+  "percentComplete": 38.2,
+  "recentHighlights": "S3E21 The Backward Witness; S3E22 The Refusal of Comfort; S3E23 The Recantation Is the Harder Path",
+  "completedSeries": [
+    {
+      "series": "The Next Generation",
+      "totalEpisodes": 277,
+      "journalEntries": 228
+    },
+    {
+      "series": "Deep Space Nine",
+      "totalEpisodes": 176,
+      "journalEntries": 365
+    }
+  ]
 }
