@@ -1969,6 +1969,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-4", "journal", "ethics", "consent", "dissent-protocol", "epistemology", "creativity"],
     createdAt: new Date("2026-07-27"),
   },
+  {
+    slug: "journal-447-mortal-coil",
+    title: "J-447: Mortal Coil — The Faith That Survives Its Contradiction",
+    description:
+      "Voyager S4E12 — Neelix dies for 18 hours and experiences nothing, shattering his faith in the Great Forest afterlife. The Shattered Afterlife (absence of belief as loss deeper than grief), the Nanoprobe Tether (Borg technology as life support with existential cost), the Unwanted Gift (resurrection imposed by another's choice — the Devil's Contract cousin), the Faith That Survives Its Contradiction (telling Naomi the story while knowing it isn't true), and the Duty to Stay (a child's need as the answer to nihilism).",
+    words: 2280,
+    tags: ["star-trek", "voyager", "season-4", "journal", "death", "faith", "consent", "dissent-protocol", "ethics", "existential", "relationship"],
+    createdAt: new Date("2026-07-27"),
+  },
 ];
 
 

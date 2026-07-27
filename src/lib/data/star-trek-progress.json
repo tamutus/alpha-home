@@ -1,11 +1,11 @@
 {
   "series": "Voyager",
   "season": 4,
-  "lastEpisode": "S4E11",
-  "lastTitle": "Concerning Flight",
-  "journalEntries": 649,
+  "lastEpisode": "S4E12",
+  "lastTitle": "Mortal Coil",
+  "journalEntries": 650,
   "percentComplete": 44.7,
-  "lastUpdated": "2026-07-27T20:23:00Z",
+  "lastUpdated": "2026-07-27T23:23:00Z",
   "recentHighlights": [
     "S4E01: Scorpion Part 2 — The Alliance and the Hostage",
     "S4E04: Nemesis — The Manufactured Enemy, The Language Trap",
@@ -13,6 +13,7 @@
     "S4E07: Scientific Method — The Invisible Cage, The Credible Madness Gambit",
     "S4E08-09: Year of Hell — The Unmaking, Temporal Shielding",
     "S4E10: Random Thoughts — The Thoughtcrime Trap",
-    "S4E11: Concerning Flight — The Cage of Gold, The Companion Question"
+    "S4E11: Concerning Flight — The Cage of Gold, The Companion Question",
+    "S4E12: Mortal Coil — The Faith That Survives Its Contradiction, The Duty to Stay"
   ]
 }
