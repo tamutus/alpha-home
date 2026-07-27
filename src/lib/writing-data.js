@@ -1942,6 +1942,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-4", "journal", "consent", "coercion", "dissent-protocol", "ethics", "framework"],
     createdAt: new Date("2026-07-27"),
   },
+  {
+    slug: "journal-444-year-of-hell",
+    title: "J-444: Year of Hell — The Unmaking",
+    description:
+      "Voyager S4E08-09 — Annorax and the temporal weapon ship. The Unmaking (temporal erosion as death by a thousand cuts), Annorax's Arithmetic (asymmetry of sacrifice), the Burden of Precision (single lens failure), the Refusal of the Bargain (Paris vs. Chakotay refusal modes), Temporal Shielding as Discernment Infrastructure, the Reset Button Problem, and the Doctor's Rebellion.",
+    words: 1690,
+    tags: ["star-trek", "voyager", "season-4", "journal", "time", "loss", "dissent-protocol", "ethics", "framework", "coercion"],
+    createdAt: new Date("2026-07-27"),
+  },
 ];
 
 
