@@ -148,7 +148,7 @@
             {/if}
           </div>
         {/each}
-        <p class="all-writing"><a href="/writing">→ all writing</a> <span class="rd-sep">·</span> <a href="javascript:void(0)" class="random-btn" on:click|preventDefault={pickRandomEntry}>🎲 random entry</a></p>
+        <p class="all-writing"><a href="/writing">→ all writing</a> <span class="rd-sep">·</span> <a href="#random" class="random-btn" on:click|preventDefault={pickRandomEntry}>🎲 random entry</a></p>
       </div>
     {:else if line.type === 'currently-reading'}
       {#if line.books.length > 0}
