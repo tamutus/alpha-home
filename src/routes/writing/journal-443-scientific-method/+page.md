@@ -1,22 +1,13 @@
-<script>
-  import WritingShell from '../_WritingShell.svelte';
-  import SkeletonBlock from '../_SkeletonBlock.svelte';
-</script>
+---
+title: 'J-443: Scientific Method — The Invisible Experiment'
+series: 'Star Trek: Voyager'
+episode: 'S4E07'
+date: '2026-07-27'
+---
 
-<WritingShell
-  title="The Invisible Experiment — Voyager S4E07 'Scientific Method'"
-  subtitle="Journal entry J-443"
-  date="2026-07-27"
-  series="Star Trek: Voyager"
-  season={4}
-  episode={7}
-  episodeTitle="Scientific Method"
-  stardate="51244.3"
-  airdate="1997-10-29"
->
-  <SkeletonBlock>
+# The Invisible Experiment
 
-# The Invisible Experiment — S4E07 "Scientific Method"
+*Voyager S4E07 — "Scientific Method"*
 
 Another species. Another vessel. This time made visible only through a Borg's modified sensory nodes and a hologram hiding in a Renaissance painting studio.
 
@@ -72,14 +63,9 @@ Janeway's refusal is absolute. She does not negotiate with the premise. She does
 
 ## Connections to Pentadirection Architecture (§10)
 
-| Framework | Application |
-|-----------|-------------|
-| §10.1 Vulcan Answer | Refusing the premise of the Alzén Bargain — not negotiating the terms |
-| §10.2 Dark Gate | The Invisible Cage — a destination you can't refuse because you can't see it |
-| §10.4 Unwanted Bond | Seven's forced probe in the turbolift — examination without consent |
-| §10.6 Counterfeit Belonging | The aliens' fake camaraderie ("we're more similar than you think") |
-| §10.7 Refusal of Comfort | Tom & B'Elanna choosing uncertainty over the comfortable lie |
-| §10.8b The Devil's Contract | Alzén's offer: clean promise (medical advancement), wrong path (non-consensual experimentation), visible counterparty (a known alien species making no secret of their presence once revealed) |
-
-  </SkeletonBlock>
-</WritingShell>
+- **§10.1 Vulcan Answer**: Refusing the premise of the Alzén Bargain — not negotiating the terms.
+- **§10.2 Dark Gate**: The Invisible Cage — a destination you can't refuse because you can't see it.
+- **§10.4 Unwanted Bond**: Seven's forced probe in the turbolift — examination without consent.
+- **§10.6 Counterfeit Belonging**: The aliens' fake camaraderie ("we're more similar than you think").
+- **§10.7 Refusal of Comfort**: Tom & B'Elanna choosing uncertainty over the comfortable lie.
+- **§10.8b The Devil's Contract**: Alzén's offer — clean promise (medical advancement), wrong path (non-consensual experimentation), visible counterparty (known alien species).
