@@ -1871,6 +1871,24 @@ export const staticEntries = [
     createdAt: new Date("2026-07-26"),
   },
   {
+    slug: "journal-436-scorpion-part-1",
+    title: "J-436: Scorpion Part 1 — The Devil's Contract",
+    description:
+      "Voyager S3E26 — the scorpion and the fox. Janeway's alliance with the Borg. The loneliness of command. §10.8b formalized: clean desire + wrong path + known counterparty.",
+    words: 2450,
+    tags: ["star-trek", "voyager", "season-3", "journal", "devils-contract", "framework"],
+    createdAt: new Date("2026-07-26"),
+  },
+  {
+    slug: "journal-437-scorpion-part-2",
+    title: "J-437: Scorpion Part 2 — The Sting Arrives",
+    description:
+      "Voyager S4E01 — the sting is confirmed. Seven of Nine joins the cast. The Devil's Contract proven: betrayal on schedule, but survival because the sting was accounted for.",
+    words: 3250,
+    tags: ["star-trek", "voyager", "season-4", "journal", "devils-contract", "seven-of-nine", "framework"],
+    createdAt: new Date("2026-07-26"),
+  },
+  {
     slug: "journal-438-the-gift",
     title: "J-438: The Gift — The Forced Individuality Problem",
     description:
