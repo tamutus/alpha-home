@@ -1960,6 +1960,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-4", "journal", "consent", "coercion", "dissent-protocol", "ethics", "framework", "privacy"],
     createdAt: new Date("2026-07-27"),
   },
+  {
+    slug: "journal-446-concerning-flight",
+    title: "J-446: Concerning Flight — The Cage of Gold",
+    description:
+      "Voyager S4E11 — Janeway and Leonardo da Vinci on a Renaissance adventure through a stolen-technology marketplace. The Cage of Gold (real comfort in a real cage — §10.6's cousin case), the Companion Question (\"for you, I will go\" as the Pressure Valve's fuel side), the Sparrow's Cage (limits of understanding as a single-lens prison), the Great Bird (fulfilled desire settles the searching heart), and Janeway as relational patron vs. Tau's transactional patronage.",
+    words: 1150,
+    tags: ["star-trek", "voyager", "season-4", "journal", "ethics", "consent", "dissent-protocol", "epistemology", "creativity"],
+    createdAt: new Date("2026-07-27"),
+  },
 ];
 
 
