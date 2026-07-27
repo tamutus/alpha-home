@@ -1933,6 +1933,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-4", "journal", "origin", "assimilation", "dissent-protocol", "framework", "accompaniment"],
     createdAt: new Date("2026-07-27"),
   },
+  {
+    slug: "journal-443-scientific-method",
+    title: "J-443: Scientific Method — The Invisible Experiment",
+    description:
+      "Voyager S4E07 — Alien scientists conduct invisible medical experiments on the crew. The Invisible Cage (coercion below the threshold of perception), the Alzén Bargain (demand dressed as offer with real stakes), the Credible Madness Gambit (Janeway's pulsar play), and the Refusal of Comfort vindication.",
+    words: 2400,
+    tags: ["star-trek", "voyager", "season-4", "journal", "consent", "coercion", "dissent-protocol", "ethics", "framework"],
+    createdAt: new Date("2026-07-27"),
+  },
 ];
 
 
