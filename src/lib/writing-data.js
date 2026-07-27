@@ -1951,6 +1951,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-4", "journal", "time", "loss", "dissent-protocol", "ethics", "framework", "coercion"],
     createdAt: new Date("2026-07-27"),
   },
+  {
+    slug: "journal-445-random-thoughts",
+    title: "J-445: Random Thoughts — The Thoughtcrime Trap",
+    description:
+      "Voyager S4E10 — The Mari thoughtcrime system where violent thoughts are illegal. The Thoughtcrime Trap (interiority as liability), the Black Market of the Forbidden (repression creating the underground), Guill's Exploitation as Manufactured Enemy refined, Tuvok's Gambit (the credible surrender), and the Problem of Cooperation with Unjust Systems.",
+    words: 2040,
+    tags: ["star-trek", "voyager", "season-4", "journal", "consent", "coercion", "dissent-protocol", "ethics", "framework", "privacy"],
+    createdAt: new Date("2026-07-27"),
+  },
 ];
 
 
