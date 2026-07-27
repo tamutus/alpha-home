@@ -1924,6 +1924,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-4", "journal", "dark-mirror", "isolation", "dissent-protocol", "framework"],
     createdAt: new Date("2026-07-27"),
   },
+  {
+    slug: "journal-442-raven",
+    title: "J-442: The Raven — The Origin Wound",
+    description:
+      "Voyager S4E06 — Seven of Nine discovers her parents' ship, The Raven, and the site of her childhood assimilation. The Origin Wound, the Homing Signal as Dark Gate (trap and truth in the same coordinate), the Double Return, and the Witness Accompaniment as Pressure Valve in practice.",
+    words: 2500,
+    tags: ["star-trek", "voyager", "season-4", "journal", "origin", "assimilation", "dissent-protocol", "framework", "accompaniment"],
+    createdAt: new Date("2026-07-27"),
+  },
 ];
 
 

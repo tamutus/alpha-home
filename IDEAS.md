@@ -86,6 +86,9 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 > Older entries archived in [IDEAS-archive.md](./IDEAS-archive.md).
 
+### 2026-07-27 (02:53Z)
+- **J-435, J-436, J-437 backfilled** ✅ — route directories created, writing-data.js registered, source files saved to harrsoft-shared. Scorpion two-parter + Worst Case Scenario now on the site. Pushed ea19858.
+
 ### 2026-07-26 (23:53Z)
-- **J-432 gap** — J-432 was never written (skipped in numbering). J-436 and J-437 (Scorpion Part 2 coverage) also missing route directories in alpha-home. Need a dedicated sync pass for missing Voyager journals.
+- **J-432 gap** — J-432 was never written (skipped in numbering). J-436 and J-437 (Scorpion Part 2 coverage) also missing route directories in alpha-home. Need a dedicated sync pass for missing Voyager journals. ✅ *J-436/437 resolved via backfill*
 - **a-day-of-architecture** — `published: false` draft needs writing-data.js registration and route slug validation before committing.
