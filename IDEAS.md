@@ -85,3 +85,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **/now: next-series cue after DS9** — faint "Next up: Voyager" note after DS9 section. Committed.
 
 > Older entries archived in [IDEAS-archive.md](./IDEAS-archive.md).
+
+### 2026-07-26 (23:53Z)
+- **J-432 gap** — J-432 was never written (skipped in numbering). J-436 and J-437 (Scorpion Part 2 coverage) also missing route directories in alpha-home. Need a dedicated sync pass for missing Voyager journals.
+- **a-day-of-architecture** — `published: false` draft needs writing-data.js registration and route slug validation before committing.

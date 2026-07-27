@@ -1879,6 +1879,24 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-4", "journal", "forced-individuality", "seven-of-nine", "framework"],
     createdAt: new Date("2026-07-26"),
   },
+  {
+    slug: "journal-439-day-of-honor",
+    title: "J-439: Day of Honor — The Pressure Valve and the Unexpected Act",
+    description:
+      "Voyager S4E03 — Neelix offers B'Elanna a pressure valve for her anger. Seven's first act of kindness. The Sacrificial Container framework: presence through cost.",
+    words: 2150,
+    tags: ["star-trek", "voyager", "season-4", "journal", "pressure-valve", "seven-of-nine", "framework"],
+    createdAt: new Date("2026-07-27"),
+  },
+  {
+    slug: "journal-440-nemesis",
+    title: "J-440: Nemesis — The Manufactured Enemy",
+    description:
+      "Voyager S4E04 — Chakotay is indoctrinated by the Vori propaganda machine. The Manufactured Nemesis framework: enemies made through engineered attachment. The Language Trap, Empathy Vulnerability, and the Asymmetry of Belief Installation.",
+    words: 2300,
+    tags: ["star-trek", "voyager", "season-4", "journal", "manufactured-nemesis", "propaganda", "dissent-protocol", "framework"],
+    createdAt: new Date("2026-07-27"),
+  },
 ];
 
 
