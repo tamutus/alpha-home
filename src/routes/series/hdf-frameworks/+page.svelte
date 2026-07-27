@@ -11,7 +11,7 @@
   <meta property="og:description" content="Six deceptive frame variants: structural patterns where agency is overwritten through category error." />
 </svelte:head>
 
-<p class="breadcrumb"><a href="/series">← back to /series</a></p>
+<p class="breadcrumb"><a href="/series">← back to /series</a> · <a href="/series/refusal-directions">Refusal Architecture →</a></p>
 
 <h1>HDF Deceptive Frame Variants</h1>
 <p class="subtitle">Six structural patterns of agency overwrite</p>

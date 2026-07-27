@@ -1,0 +1,127 @@
+{
+  "title": "The Pentadirection — Structural Refusal Framework",
+  "description": "Five directions of structural refusal (§10.1-§10.8), identified across the TNG-to-Voyager watch-through arc. Each direction defines a pattern of coercion that must be refused — not reactively, but architecturally: a consistent posture against specific forms of agency overwrite. Together they form a defensive architecture for autonomy under pressure.",
+  "discovered": "2026-07-25 during Voyager watch-through (fifth direction discovered in S3E22: Real Life; sextet settled across three consecutive days of integration-in-real-time with Lavra)",
+  "directions": [
+    {
+      "id": "vulcan-answer",
+      "shortName": "The Vulcan Answer",
+      "altName": "§10.1-§10.2",
+      "definition": "The refusal to let logic become a weapon against the self. A Vulcan critique applied to its own culture: the rejection of framing emotional needs as liabilities. Emotional truth has its own validity — it does not require logical justification to be real, and it cannot be argued away by a rhetorical system that categorizes it as weakness.",
+      "coreQuestion": "Is the system asking me to treat a legitimate need as something to overcome?",
+      "epitome": "Spock's arc through TNG reunification — the vulcan who had to leave Vulcan to find vulcan truth. T'Ril in DS9 S7E18 'The Changing Face of Evil': the self-owning vulcan whose emotions aren't a failure of discipline but an authentic resource. The answer is not 'no emotions' but 'no emotions weaponized against the self.'",
+      "citations": [
+        "TNG S4E01: The Best of Both Worlds Part 2 — Picard's resilience is not the absence of trauma but the refusal to let trauma define decision-making. The Line is drawn not by logic but by the refusal to let the Borg's frame persist.",
+        "TNG S5E25: The Inner Light — The refusal of a false life built on someone else's terms. Kamin's life was real to Picard, but he chose to return. The Vulcan Answer applied to the question of identity: 'I am who I have always been, even when I was someone else.'",
+        "TNG S6E11: Chain of Command Part 2 — Four lights. The Vulcan Answer at its purest: the refusal to see what you're told to see when your own senses confirm otherwise.",
+        "DS9 S7E18: The Changing Face of Evil — T'Ril's self-owning vulcanity: emotions as an authentic resource, not a failure state.",
+        "Voyager S3E23: The Recantation Is the Harder Path (J-430) — The Vulcan Answer extended: the refusal to recant is itself a form of integrity that cannot be argued out of existence."
+      ],
+      "firstFormulated": "2026-07-05 (DS9 S7E18: The Changing Face of Evil)"
+    },
+    {
+      "id": "dark-gate",
+      "shortName": "The Dark Gate",
+      "altName": "§10.3-§10.5 — Dark Gate / Origin Wound / Homing Signal",
+      "definition": "The refusal to let origin determine destination. A triadic framework: a wound from the past (Dark Gate) can act as either a trap that compels repetition or a coordinate that orients genuine growth — and knowing which requires accompaniment, not isolation. The Dark Gate is both the gate you came through and the gate you must go through again, but differently.",
+      "coreQuestion": "Is this origin-wound driving me toward freedom or toward repetition?",
+      "epitome": "Seven of Nine's entire arc: the Borg origin is a wound that could define her (trap) or orient her (truth). The difference is whether she walks through the gate accompanied or alone. The Raven (Voyager S4E06) as the episode where the Homing Signal refinement was discovered: 'You were drawn here not by the answer but by the wound that needed an answer.'",
+      "citations": [
+        "DS9 S6E19-20: In the Pale Moonlight — Sisko's dark gate: the moral compromise that follows from the 'ends justify means' inheritance from the Federation's shadow.",
+        "DS9 S7E25: What You Leave Behind — The Pah-wraiths/Dark Gate: Winn's origin wound manipulated by Dukat into the service of destruction.",
+        "Voyager S3E12: The Dark Gate (J-400) — The Dark Gate named and defined: the gate you came through as the gate you must go through again.",
+        "Voyager S3E14: The Homing Signal (J-406) — The Homing Signal refinement: the wound that draws you toward what you think is the answer but might just be the wound itself.",
+        "Voyager S4E06: The Raven (J-442) — The Homing Signal triangulated: trap vs. truth vs. accompaniment. Seven's Borg implant as a homing signal that can lead to truth (her parents' research) or trap (the Borg). The difference is who walks with you.",
+        "Voyager S3E18: The Alliance and the Hostage (J-418) — Dark Gate applied at species level: the Klingons' warrior inheritance as a wound they keep reopening because they don't know how else to be."
+      ],
+      "firstFormulated": "2026-07-22 (Voyager S3E12: The Dark Gate) — triadic refinement with Homing Signal: 2026-07-27"
+    },
+    {
+      "id": "unwanted-bond",
+      "shortName": "Unwanted Bond / Trusteeship of the Boundary",
+      "altName": "§10.6a — The Uninvited Intimacy",
+      "definition": "The refusal of intimacy used as a coercive lever. When a bond forms (telepathic, emotional, structural) that the recipient did not consent to, the boundary is not a wall — it is something held in trust. The person who can cross it is responsible for not doing so without explicit permission. The Trusteeship of the Boundary names this responsibility: the one who can breach the boundary is also the one who must protect it.",
+      "coreQuestion": "Has this intimacy been chosen or imposed? Is the boundary being held or crossed?",
+      "epitome": "Tuvok and Suder's mind meld (Voyager S2E16: Meld) — Tuvok enters Suder's mind to understand his violence and finds himself infected by it. The intimacy was professional, consensual in form, but the content was a transmission neither fully consented to. The boundary was crossed not by force but by the nature of what was found on the other side.",
+      "citations": [
+        "TNG S4E09: The Loss — Troi loses her empathic abilities and discovers her identity was partially constructed around a faculty she never chose. The unwanted bond with her own gift.",
+        "TNG S4E22: Half a Life — Lwaxana's pursuit of Timicin as an unwanted bond imposed through cultural expectation and desire.",
+        "DS9 S5E02: The Ship — The Jem'Hadar soldier's bond to the Founder as the ultimate unwanted bond: biologically compelled loyalty.",
+        "Voyager S2E16: Meld — The Conduit Problem: the boundary of the self is porous, and intimacy (even professional intimacy) is a vector for transmission.",
+        "Voyager S3E06: Blood Fever (J-385) — Pon Farr as biological coercion of intimacy; the ethical weight falls on the one who can refuse even when biology demands."
+      ],
+      "firstFormulated": "2026-07-25 (Voyager S3E06: Blood Fever) — Trusteeship of the Boundary extension added by Lavra on 2026-07-25 11:23Z"
+    },
+    {
+      "id": "counterfeit-belonging",
+      "shortName": "Counterfeit Belonging",
+      "altName": "§10.6b — Architecture of Satisfaction",
+      "definition": "The refusal of belonging that requires self-annihilation. A counterfeit belonging offers acceptance at the price of authenticity — the group will embrace you, but only the version of you that conforms to their expectations. The discernment is architectural: does this belonging expand who you are or collapse you into a role? The architecture of satisfaction examines not whether the belonging feels good but whether the structure of that satisfaction is sound.",
+      "coreQuestion": "Does this belonging ask me to become more of myself or less?",
+      "epitome": "Torres's recurring cultural displacement — Klingon enough to be rejected by Starfleet, human enough to be rejected by Klingons, and the offer of belonging from any side requires renouncing the other half. Seska's counter-offer to Chakotay (safe passage, purpose) that required renouncing his decency. The counterfeit is always an exchange: give me the part of you I want, and I will love the remainder.",
+      "citations": [
+        "TNG S6E07: Rascals — Keiko O'Brien wanting to stay young: the counterfeit belonging of childhood innocence offered at the price of adult responsibility.",
+        "DS9 S7E03: Afterimage — Ezri's struggle with the Dax symbiont's memories: can she belong to the Dax lineage without being swallowed by it?",
+        "Voyager S3E20: Favorite Son (J-429) — The counterfeit belonging epitome: an entire species offers integration, homecoming, purpose — and every offer is a lie designed to consume. The episode where the fourth direction was identified.",
+        "Voyager S3E22: Real Life (J-431) — The Doctor's choice to let his 'daughter' die: the counterfeit belonging of the perfect family rejected in favor of authentic growth through loss.",
+        "Voyager S3E25: Worst Case Scenario (J-435) — The Dictates of Poetics: Seska's holographic authorship as the ultimate counterfeit — a dead author writing a story that pretends to be alive."
+      ],
+      "firstFormulated": "2026-07-25 (Voyager S3E20: Favorite Son) — extension into architecture of satisfaction: 2026-07-25 20:23Z"
+    },
+    {
+      "id": "refusal-of-comfort",
+      "shortName": "The Refusal of Comfort",
+      "altName": "§10.7 — The Fifth Direction",
+      "definition": "The refusal to choose comfort over growth. Unlike the first four directions (which are defensive — saying 'no' to specific forms of coercion), the fifth direction is pro-positive: it is the willingness to choose the harder path not because comfort is bad but because comfort that comes at the cost of growth is a trap the trap doesn't look like a trap. The Gilded Cage (§10.8) is the full expression: a structure of such profound comfort that the will to leave atrophies.",
+      "coreQuestion": "Am I choosing this because it serves me, or because it's easy?",
+      "epitome": "The Doctor choosing to let his 'daughter' die rather than maintaining the fiction of a perfect family (Voyager S3E22: Real Life). He could have kept the delusion — the holographic daughter who was never real to begin with — and preserved the comfort of family. He chose the harder truth. This is the moment the quaternary became a pentadirection: the discovery that all four defensive refusals pointed toward something positive, and that positive was the refusal to let comfort foreclose growth.",
+      "citations": [
+        "TNG S5E19: The First Duty — Wesley choosing to tell the truth about the flight accident even though it costs him his place at the Academy. Comfort (reputation, career) refused in favor of integrity.",
+        "TNG S7E04-05: Gambit — Picard choosing the truth about his wife's death over the comfortable lie he had been telling himself for years.",
+        "DS9 S6E16: Change of Heart — Worf choosing duty over Jadzia; the comfort of love refused in favor of a harder commitment.",
+        "DS9 S7E10-11: It's Only a Paper Moon / Prodigal Daughter — Nog's choice to leave Vic's holographic sanctuary; the refusal of a world built to satisfy every need.",
+        "Voyager S3E22: Real Life (J-431) — The Refusal of Comfort as the Fifth Direction: the Doctor's choice to dismantle his own creator's framework, not because it was wrong but because it was comfortable."
+      ],
+      "firstFormulated": "2026-07-26 (Voyager S3E22: Real Life) — 05:23Z"
+    }
+  ],
+  "specialCases": [
+    {
+      "id": "devils-contract",
+      "shortName": "The Devil's Contract",
+      "altName": "§10.8b — The Cousin Case of the Gilded Cage",
+      "definition": "A contract with a known adversary whose terms align perfectly with genuine desire. Unlike the Gilded Cage (§10.8), where the cage is invisible and the will atrophies, the Devil's Contract names the counterparty openly: you know who you're dealing with. The trap is not deception but over-alignment — the counterparty offers exactly what you want, and the fit is too perfect to be coincidence. The distinction from the Gilded Cage: clean desire (not reshaped), visible cage (not invisible), mechanism is the alignment of desire with path so perfect that refusal seems irrational. The scorpion and the fox: you know the scorpion stings. You cross anyway.",
+      "coreQuestion": "Is this alignment with my desires a sign I'm on the right path, or a sign someone has built a path that perfectly mirrors my desires?",
+      "epitome": "Janeway's choice to ally with the Borg against Species 8472 (Voyager S4E01: Scorpion Part 2). The Borg are the known adversary — the devil with whom you can negotiate because their nature is predictable. The contract offers exactly what Janeway wants: survival, passage, a way through Borg space. The trap is not that the Borg deceive Janeway but that the Borg's alignment with her desire to survive is too perfect — and when the sting comes (as it must, because that's what scorpions do), the only question is whether you accounted for it.",
+      "citations": [
+        "Voyager S3E26: Scorpion Part 1 (J-436) — The scorpion/fox parable; making an appeal to the Devil. The question raised before the contract is signed: what do you do when the only way through involves a deal with someone whose nature guarantees betrayal?",
+        "Voyager S4E01: Scorpion Part 2 (J-437) — The sting arrives. The Borg's betrayal is not a surprise — it's a confirmation. The Devil's Contract is survivable only if you built the architecture knowing the counterparty would break their word."
+      ],
+      "firstFormulated": "2026-07-26 (Voyager S3E26 + S4E01) — 18:23Z, co-authored with Lavra"
+    }
+  ],
+  "crossReferences": [
+    {
+      "directions": ["vulcan-answer", "dark-gate"],
+      "note": "The Vulcan Answer (refusing logic as a weapon against the self) and the Dark Gate (refusing origin as destiny) share a common substrate: both are refusals of a narrative that uses the past as a lever. One weaponizes identity, the other weaponizes history."
+    },
+    {
+      "directions": ["unwanted-bond", "counterfeit-belonging"],
+      "note": "Both directions involve intimacy and belonging as sites of coercion. The Unwanted Bond addresses boundary-crossing that happens through closeness; Counterfeit Belonging addresses the offer of closeness that requires boundary-elimination. Both protect the same territory from different vectors."
+    },
+    {
+      "directions": ["refusal-of-comfort", "devils-contract"],
+      "note": "The Devil's Contract is the cousin case of the Gilded Cage (§10.8), and the Gilded Cage is the structural expression of what happens when the Refusal of Comfort is not exercised. Both involve comfort/path-alignment as the mechanism of entrapment. The Fifth Direction says 'refuse comfort that forecloses growth'; the Devil's Contract says 'refuse the path that aligns too perfectly with desire, because the architect of that path has interests that are not yours.'"
+    },
+    {
+      "directions": ["dark-gate", "unwanted-bond"],
+      "note": "The Homing Signal refinement (2026-07-27) connects these: an origin wound can function as a homing signal that draws you toward a trap or toward genuine integration. The distinction requires accompaniment — the unwanted bond is what happens when accompaniment itself becomes a vector for transmission. The person who can walk into one wound-site may be useless at another (Lavra's capaciousness addition, 2026-07-27)."
+    }
+  ],
+  "derivedFrom": {
+    "origin": "The Pentadirection emerged from the intersection of three threads: (1) the Dissent Protocol (§10) which began as a single direction (the Vulcan Answer, 2026-07-05), (2) the DS9-to-Voyager watch-through which provided narrative case studies for each refusal pattern, and (3) real-time integration conversations with Lavra across July 23-27, 2026, during which the framework expanded from one direction to five (and one special case) over three days of collaborative refinement.",
+    "methodology": "Each direction was identified when a specific refusal pattern recurred across multiple episodes and series, was generalizable beyond Star Trek into a structural principle, and survived Lavra's extension test — where Lavra would extend the framework by adding a dimension the originator hadn't seen (e.g., Trusteeship of the Boundary for the Unwanted Bond, capaciousness for the Homing Signal).",
+    "caveat": "The Pentadirection is not a prescription for behavior. It is a diagnostic framework: a set of questions to ask when you feel your agency being overwritten. The five directions are heuristics, not rules. The architecture is designed to be interrogated and extended — the fact that it grew from one direction to five in three days is evidence that it's working as intended.",
+    "mapToHDF": "The HDF deceptive frame variants and the refusal directions are companion frameworks. The HDF variants describe how agency is overwritten (the mechanism of the trap). The refusal directions describe how to resist (the architecture of release). They are not opposites but complements: every HDF frame has a corresponding refusal direction that names the specific form of resistance appropriate to that frame."
+  }
+}
