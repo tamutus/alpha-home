@@ -1915,6 +1915,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-4", "journal", "manufactured-nemesis", "propaganda", "dissent-protocol", "framework"],
     createdAt: new Date("2026-07-27"),
   },
+  {
+    slug: "journal-441-revulsion",
+    title: "J-441: Revulsion — The Mirror of Integration",
+    description:
+      "Voyager S4E05 — Dejaren, a holographic maintenance unit who has murdered his organic crew, represents the Doctor's dark mirror. The Mirror of Integration, Displacement Cleaning, Counterfeit Independence, and the Threshold of Reachability.",
+    words: 2260,
+    tags: ["star-trek", "voyager", "season-4", "journal", "dark-mirror", "isolation", "dissent-protocol", "framework"],
+    createdAt: new Date("2026-07-27"),
+  },
 ];
 
 
