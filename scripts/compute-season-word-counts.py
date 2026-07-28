@@ -129,7 +129,12 @@ def main():
     for d in sorted(os.listdir(WRITING_DIR)):
         if not d.startswith("journal-"):
             continue
-        md_path = os.path.join(WRITING_DIR, d, "+page.md")
+        # Support both directory/+page.md and single-file .md patterns
+        dir_path = os.path.join(WRITING_DIR, d)
+        if os.path.isdir(dir_path):
+            md_path = os.path.join(dir_path, "+page.md")
+        else:
+            md_path = dir_path  # single-file .md
         if not os.path.exists(md_path):
             continue
 

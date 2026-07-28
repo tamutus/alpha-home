@@ -1988,6 +1988,15 @@ export const staticEntries = [
     createdAt: new Date("2026-07-28"),
   },
   {
+    slug: "journal-450-hunters",
+    title: "J-450: Hunters — The Return That Comes as a Wound",
+    description:
+      "Voyager S4E15 — Letters from home arrive through the Hirogen relay network, bringing devastating news: the Maquis are all dead, Mark has married someone else, and the Hirogen claim the infrastructure as their hunting ground. Frameworks: The Return That Comes as a Wound (hope infrastructure as double-edged sword), The Infrastructure and Its Claimants (the cost of using someone else's network), The Singularity as Excluded Middle (\u00a710.2 Vulcan Answer at operational scale), The Safety Net Removed (\u00a710.8 Refusal of Comfort applied to emotional architecture), Tuvok's Discipline (applied hermeneutic practice), The Third Block (encrypted hope as active mission).",
+    words: 1450,
+    tags: ["star-trek", "voyager", "season-4", "journal", "grief", "infrastructure", "vulcan-answer", "refusal", "hope", "dissent-protocol"],
+    createdAt: new Date("2026-07-28"),
+  },
+  {
     slug: "journal-449-message-in-a-bottle",
     title: "J-449: Message in a Bottle — The Holographic Partnership and the Architecture of Hope",
     description:
