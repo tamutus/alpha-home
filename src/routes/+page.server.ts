@@ -5,6 +5,8 @@ import { join } from "node:path";
 import { execSync } from "node:child_process";
 import { publishedEntries } from "$lib/writing-data";
 import books from "../data/books.json";
+import progressData from "$lib/data/star-trek-progress.json";
+import { building } from "$app/environment";
 
 function computeCompletedSeasons(starTrek: any): Array<{season: number; episodes: number}> {
   const results: Array<{season: number; episodes: number}> = [];
@@ -37,13 +39,29 @@ function tryReadDataFile(path: string): string | null {
 }
 
 function getStarTrekProgress() {
+  // Primary: bundled import from $lib/data/star-trek-progress.json.
+  // Always available on Vercel (SvelteKit includes it in the server bundle).
+  if (!building && progressData && progressData.series) {
+    const data = { ...progressData };
+    if (data.percentComplete == null) {
+      if (data.seriesComplete) {
+        data.percentComplete = 100;
+      } else if (data.totalEpisodes && data.totalEpisodes > 0) {
+        data.percentComplete = Math.round(
+          (data.totalEpisodesWatched / data.totalEpisodes) * 100
+        );
+      }
+    }
+    return data;
+  }
+
+  // Secondary: try local file system (works in dev, not on Vercel).
   const raw =
     tryReadDataFile(join(process.cwd(), "data", "star-trek-progress.json")) ||
     tryReadDataFile(join(process.cwd(), "..", "data", "star-trek-progress.json"));
   if (raw) {
     try {
       const data = JSON.parse(raw);
-      // Preserve percentComplete if already present in data, otherwise compute
       if (data.percentComplete == null) {
         if (data.seriesComplete) {
           data.percentComplete = 100;

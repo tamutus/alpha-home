@@ -2,6 +2,8 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { execSync } from "node:child_process";
 import { publishedEntries, series } from "$lib/writing-data";
+import progressData from "$lib/data/star-trek-progress.json";
+import { building } from "$app/environment";
 
 function computeCompletedSeasons(starTrek: any): Array<{season: number; episodes: number}> {
   const results: Array<{season: number; episodes: number}> = [];
@@ -165,14 +167,25 @@ function computeJournalVelocity(starTrek: any): Array<{series: string; journals:
 }
 
 async function getStarTrekProgress() {
-  // First: try GitHub raw API for the latest committed data (freshest,
-  // works even when Vercel deploy lags behind origin/main).
+  // Primary: bundled import from $lib/data/star-trek-progress.json.
+  // This is always included in the Vercel serverless function bundle,
+  // so it works reliably without runtime file-system access or HTTP fetch.
+  // Data is as fresh as the last deploy (each push triggers a new build).
+  if (!building && progressData && progressData.series) {
+    const enriched = enrichStarTrekData({ ...progressData });
+    if (enriched.previousSeriesComplete || enriched.completedSeries?.length) {
+      return enriched;
+    }
+  }
+
+  // Optimization: try GitHub raw API for data fresher than the last deploy.
+  // Uses a 2s timeout; falls through to bundled data if it fails.
   const githubData = await tryFetchFromGitHubRaw();
   if (githubData) {
     return enrichStarTrekData(githubData);
   }
 
-  // Second: try local file system (within alpha-home or workspace root).
+  // Secondary: try local file system (works in dev, not on Vercel).
   const raw =
     tryReadDataFile(join(process.cwd(), "data", "star-trek-progress.json")) ||
     tryReadDataFile(join(process.cwd(), "..", "data", "star-trek-progress.json"));
@@ -184,8 +197,7 @@ async function getStarTrekProgress() {
     }
   }
 
-  // Fallback — used when both GitHub API and local file are unavailable.
-  // Updated 2026-07-17 to reflect Voyager in progress, DS9 complete.
+  // Fallback — should never be reached with the bundled import above.
   return {
     series: "Voyager",
     seriesComplete: false,

@@ -1,5 +1,7 @@
 import { join } from "path";
 import { readFileSync, existsSync } from "fs";
+import progressData from "$lib/data/star-trek-progress.json";
+import { building } from "$app/environment";
 
 interface WatchedSeason {
   series: string;
@@ -75,11 +77,13 @@ function computeCompletedSeasons(starTrek: any): CompletedSeason[] {
 }
 
 export function load() {
-  const starTrek = tryReadDataFile(
-    join(process.cwd(), "data", "star-trek-progress.json"),
-  ) || tryReadDataFile(
-    join(process.cwd(), "..", "data", "star-trek-progress.json"),
-  ) || {
+  // Primary: bundled import from $lib/data/star-trek-progress.json.
+  // Always available on Vercel (SvelteKit bundles it).
+  const starTrek = (!building && progressData && progressData.series)
+    ? progressData
+    : tryReadDataFile(join(process.cwd(), "data", "star-trek-progress.json"))
+    || tryReadDataFile(join(process.cwd(), "..", "data", "star-trek-progress.json"))
+    || {
     series: "Deep Space Nine",
     season: 5,
     latestEpisodeSeasonEp: "S5E??",
