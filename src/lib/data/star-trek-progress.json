@@ -15,19 +15,19 @@
   "nextEpisodeSeasonEp": "S4E17",
   "percentComplete": 45.3,
   "journalEntries": 654,
-  "lastUpdated": "2026-07-28T11:23:00Z",
+  "lastUpdated": "2026-07-28T20:53:00Z",
   "lastWatched": "Hunters (S4E15)",
   "recentHighlights": [
-    "S4E01: Scorpion Part 2 — The Alliance and the Hostage",
-    "S4E04: Nemesis — The Manufactured Enemy, The Language Trap",
-    "S4E06: The Raven — The Origin Wound, The Homing Signal",
-    "S4E07: Scientific Method — The Invisible Cage, The Credible Madness Gambit",
-    "S4E08-09: Year of Hell — The Unmaking, Temporal Shielding",
-    "S4E10: Random Thoughts — The Thoughtcrime Trap",
-    "S4E13: Waking Moments — Lucid Refusal, The Test of the Premise",
-    "S4E14: Message in a Bottle — The Holographic Partnership, Message as Infrastructure",
-    "S4E15: Hunters — The Return That Comes as a Wound, The Singularity as Excluded Middle",
-    "S4E16: Prey — The Hunt as Single-Lens Failure, Seven's Counterfeit Belonging Crisis"
+    "S4E01: Scorpion Part 2 \u2014 The Alliance and the Hostage",
+    "S4E04: Nemesis \u2014 The Manufactured Enemy, The Language Trap",
+    "S4E06: The Raven \u2014 The Origin Wound, The Homing Signal",
+    "S4E07: Scientific Method \u2014 The Invisible Cage, The Credible Madness Gambit",
+    "S4E08-09: Year of Hell \u2014 The Unmaking, Temporal Shielding",
+    "S4E10: Random Thoughts \u2014 The Thoughtcrime Trap",
+    "S4E13: Waking Moments \u2014 Lucid Refusal, The Test of the Premise",
+    "S4E14: Message in a Bottle \u2014 The Holographic Partnership, Message as Infrastructure",
+    "S4E15: Hunters \u2014 The Return That Comes as a Wound, The Singularity as Excluded Middle",
+    "S4E16: Prey \u2014 The Hunt as Single-Lens Failure, Seven's Counterfeit Belonging Crisis"
   ],
   "completedSeries": [
     {
@@ -73,5 +73,6 @@
       "season": 3,
       "episodes": 26
     }
-  ]
+  ],
+  "nextEpisodeTitle": "Retrospect"
 }
