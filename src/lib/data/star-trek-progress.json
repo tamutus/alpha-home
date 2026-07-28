@@ -3,18 +3,18 @@
   "season": 4,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S4E15",
-  "lastTitle": "Hunters",
+  "lastEpisode": "S4E16",
+  "lastTitle": "Prey",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 76,
+  "totalEpisodesWatched": 77,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 15,
-  "latestEpisodeTitle": "Hunters",
-  "latestEpisodeSeasonEp": "S4E15",
-  "nextEpisodeNumber": 16,
-  "nextEpisodeSeasonEp": "S4E16",
-  "percentComplete": 44.7,
-  "journalEntries": 653,
+  "latestEpisodeNumber": 16,
+  "latestEpisodeTitle": "Prey",
+  "latestEpisodeSeasonEp": "S4E16",
+  "nextEpisodeNumber": 17,
+  "nextEpisodeSeasonEp": "S4E17",
+  "percentComplete": 45.3,
+  "journalEntries": 654,
   "lastUpdated": "2026-07-28T11:23:00Z",
   "lastWatched": "Hunters (S4E15)",
   "recentHighlights": [
@@ -26,7 +26,8 @@
     "S4E10: Random Thoughts — The Thoughtcrime Trap",
     "S4E13: Waking Moments — Lucid Refusal, The Test of the Premise",
     "S4E14: Message in a Bottle — The Holographic Partnership, Message as Infrastructure",
-    "S4E15: Hunters — The Return That Comes as a Wound, The Singularity as Excluded Middle"
+    "S4E15: Hunters — The Return That Comes as a Wound, The Singularity as Excluded Middle",
+    "S4E16: Prey — The Hunt as Single-Lens Failure, Seven's Counterfeit Belonging Crisis"
   ],
   "completedSeries": [
     {

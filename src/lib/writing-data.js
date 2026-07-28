@@ -2005,6 +2005,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-4", "journal", "holograms", "partnership", "hope", "infrastructure", "dissent-protocol", "alliance"],
     createdAt: new Date("2026-07-28"),
   },
+  {
+    slug: "journal-451-prey",
+    title: "J-451: Prey — The Hunt as Single-Lens Failure",
+    description:
+      "Voyager S4E16 — The Hirogen hunt a wounded Species 8472 that only wants to go home. Three incompatible frames (hunt, compassion, tactical) collide, producing three different fates for the same dying creature. Frameworks: The Hunt as the Only Frame (single-lens hermeneutic failure), The Collision of Incompatible Frames, The Protagonist's Dilemma (Seven's Counterfeit Belonging crisis — §10.6 definitive case study), The Prey Narrative as Identity Imposition, The Nanoprobe Tether — Tool Neutrality, The Wounded Creature Test Case.",
+    words: 670,
+    tags: ["star-trek", "voyager", "season-4", "journal", "hermeneutic", "hunting", "counterfeit-belonging", "dissent-protocol", "seven-of-nine", "compassion"],
+    createdAt: new Date("2026-07-28"),
+  },
 ];
 
 
