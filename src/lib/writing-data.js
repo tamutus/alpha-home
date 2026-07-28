@@ -1987,6 +1987,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-4", "journal", "dreams", "consent", "reality", "hermeneutic", "dissent-protocol", "refusal", "epistemology"],
     createdAt: new Date("2026-07-28"),
   },
+  {
+    slug: "journal-449-message-in-a-bottle",
+    title: "J-449: Message in a Bottle — The Holographic Partnership and the Architecture of Hope",
+    description:
+      "Voyager S4E14 — The EMH is transmitted across the Hirogen sensor network to the USS Prometheus, a Starfleet prototype taken by Romulans. The Holographic Partnership (alliance across asymmetry between two EMH models), the Mirror of Progress (inversion of obsolescence — experience over design), the Message as Infrastructure (a sentient being as the vessel of context, not just content), the Hirogen as Gatekeeper (infrastructure sovereignty), and the Double Return (hope delivered but rescue deferred — the architecture of sustained survival).",
+    words: 1100,
+    tags: ["star-trek", "voyager", "season-4", "journal", "holograms", "partnership", "hope", "infrastructure", "dissent-protocol", "alliance"],
+    createdAt: new Date("2026-07-28"),
+  },
 ];
 
 
