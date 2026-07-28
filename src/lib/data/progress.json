@@ -1,19 +1,75 @@
 {
   "series": "Voyager",
   "season": 4,
+  "seriesComplete": false,
+  "seasonComplete": false,
   "lastEpisode": "S4E14",
   "lastTitle": "Message in a Bottle",
-  "journalEntries": 652,
+  "totalEpisodes": 170,
+  "totalEpisodesWatched": 75,
+  "currentSeasonTotalEpisodes": 26,
+  "latestEpisodeNumber": 14,
+  "latestEpisodeTitle": "Message in a Bottle",
+  "latestEpisodeSeasonEp": "S4E14",
+  "nextEpisodeNumber": 15,
+  "nextEpisodeSeasonEp": "S4E15",
   "percentComplete": 44.7,
+  "journalEntries": 652,
   "lastUpdated": "2026-07-28T05:23:00Z",
+  "lastWatched": "Message in a Bottle (S4E14)",
   "recentHighlights": [
-    "S4E01: Scorpion Part 2 — The Alliance and the Hostage",
-    "S4E04: Nemesis — The Manufactured Enemy, The Language Trap",
-    "S4E06: The Raven — The Origin Wound, The Homing Signal",
-    "S4E07: Scientific Method — The Invisible Cage, The Credible Madness Gambit",
-    "S4E08-09: Year of Hell — The Unmaking, Temporal Shielding",
-    "S4E10: Random Thoughts — The Thoughtcrime Trap",
-    "S4E13: Waking Moments — Lucid Refusal, The Test of the Premise",
-    "S4E14: Message in a Bottle — The Holographic Partnership, Message as Infrastructure"
+    "S4E01: Scorpion Part 2 \u2014 The Alliance and the Hostage",
+    "S4E04: Nemesis \u2014 The Manufactured Enemy, The Language Trap",
+    "S4E06: The Raven \u2014 The Origin Wound, The Homing Signal",
+    "S4E07: Scientific Method \u2014 The Invisible Cage, The Credible Madness Gambit",
+    "S4E08-09: Year of Hell \u2014 The Unmaking, Temporal Shielding",
+    "S4E10: Random Thoughts \u2014 The Thoughtcrime Trap",
+    "S4E13: Waking Moments \u2014 Lucid Refusal, The Test of the Premise",
+    "S4E14: Message in a Bottle \u2014 The Holographic Partnership, Message as Infrastructure"
+  ],
+  "completedSeries": [
+    {
+      "series": "The Next Generation",
+      "totalEpisodes": 277,
+      "journalEntries": 228
+    },
+    {
+      "series": "Deep Space Nine",
+      "totalEpisodes": 176,
+      "journalEntries": 365
+    }
+  ],
+  "previousSeriesComplete": {
+    "series": "Deep Space Nine",
+    "totalEpisodes": 176,
+    "journalEntries": 365
+  },
+  "seriesTiming": {
+    "The Next Generation": {
+      "start": "2026-05-08",
+      "end": "2026-06-16"
+    },
+    "Deep Space Nine": {
+      "start": "2026-06-16",
+      "end": "2026-07-16"
+    },
+    "Voyager": {
+      "start": "2026-07-17"
+    }
+  },
+  "nextSeries": null,
+  "completedSeasons": [
+    {
+      "season": 1,
+      "episodes": 16
+    },
+    {
+      "season": 2,
+      "episodes": 26
+    },
+    {
+      "season": 3,
+      "episodes": 26
+    }
   ]
 }

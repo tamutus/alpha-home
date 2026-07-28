@@ -43,13 +43,15 @@ function getStarTrekProgress() {
   if (raw) {
     try {
       const data = JSON.parse(raw);
-      // totalEpisodes comes from star-trek-progress.json (authoritative per-series)
-      if (data.seriesComplete) {
-        data.percentComplete = 100;
-      } else if (data.totalEpisodes && data.totalEpisodes > 0) {
-        data.percentComplete = Math.round(
-          (data.totalEpisodesWatched / data.totalEpisodes) * 100
-        );
+      // Preserve percentComplete if already present in data, otherwise compute
+      if (data.percentComplete == null) {
+        if (data.seriesComplete) {
+          data.percentComplete = 100;
+        } else if (data.totalEpisodes && data.totalEpisodes > 0) {
+          data.percentComplete = Math.round(
+            (data.totalEpisodesWatched / data.totalEpisodes) * 100
+          );
+        }
       }
       return data;
     } catch {
