@@ -42,6 +42,7 @@ if [ -n "$staged_writing" ]; then
 
     bad_dirs=""
     while IFS= read -r dir; do
+        [ -z "$dir" ] && continue  # skip empty lines from <<< heredoc
         case "$dir" in journal-*) continue ;; esac
         # Allow if it matches a slug in writing-data.js
         if echo "$wd_slugs" | grep -qFx "$dir"; then
