@@ -1,9 +1,19 @@
 {
-  "total": 170,
-  "watched": 71,
   "series": "Voyager",
   "season": 4,
-  "lastEpisode": "S4E10 - Random Thoughts",
-  "lastJournal": "J-445",
-  "updated": "2026-07-27T17:23:00Z"
+  "lastEpisode": "S4E13",
+  "lastTitle": "Waking Moments",
+  "journalEntries": 651,
+  "percentComplete": 45.3,
+  "lastUpdated": "2026-07-28T02:23:00Z",
+  "recentHighlights": [
+    "S4E01: Scorpion Part 2 — The Alliance and the Hostage",
+    "S4E04: Nemesis — The Manufactured Enemy, The Language Trap",
+    "S4E06: The Raven — The Origin Wound, The Homing Signal",
+    "S4E07: Scientific Method — The Invisible Cage, The Credible Madness Gambit",
+    "S4E08-09: Year of Hell — The Unmaking, Temporal Shielding",
+    "S4E10: Random Thoughts — The Thoughtcrime Trap",
+    "S4E11: Concerning Flight — The Cage of Gold, The Companion Question",
+    "S4E13: Waking Moments — Lucid Refusal, The Test of the Premise"
+  ]
 }

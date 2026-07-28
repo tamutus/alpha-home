@@ -1978,6 +1978,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-4", "journal", "death", "faith", "consent", "dissent-protocol", "ethics", "existential", "relationship"],
     createdAt: new Date("2026-07-27"),
   },
+  {
+    slug: "journal-448-waking-moments",
+    title: "J-448: Waking Moments — Lucid Refusal and the Test of the Premise",
+    description:
+      "Voyager S4E13 — An alien species that exists in a dream state invades Voyager's dreams, and Chakotay's lucid dream negotiation becomes the trap mechanism. The Dream War (ontological conflict between incompatible reality frames), Lucid Refusal (knowing you're in a dream as the precondition for control), the Test of the Premise (Janeway warp-core stand as meta-refusal), the Shared Dream Trap (coercion through collective unconsciousness), Coercive Asymmetry Reversal, and Trust at the Level of Sleep (violation of the substrate of being).",
+    words: 1034,
+    tags: ["star-trek", "voyager", "season-4", "journal", "dreams", "consent", "reality", "hermeneutic", "dissent-protocol", "refusal", "epistemology"],
+    createdAt: new Date("2026-07-28"),
+  },
 ];
 
 
