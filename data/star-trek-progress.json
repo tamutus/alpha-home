@@ -3,30 +3,31 @@
   "season": 4,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S4E15",
-  "lastTitle": "Hunters",
+  "lastEpisode": "S4E17",
+  "lastTitle": "Retrospect",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 76,
+  "totalEpisodesWatched": 78,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 15,
-  "latestEpisodeTitle": "Hunters",
-  "latestEpisodeSeasonEp": "S4E15",
-  "nextEpisodeNumber": 16,
-  "nextEpisodeSeasonEp": "S4E16",
-  "percentComplete": 44.7,
-  "journalEntries": 653,
-  "lastUpdated": "2026-07-28T11:23:00Z",
-  "lastWatched": "Hunters (S4E15)",
+  "latestEpisodeNumber": 17,
+  "latestEpisodeTitle": "Retrospect",
+  "latestEpisodeSeasonEp": "S4E17",
+  "nextEpisodeNumber": 18,
+  "nextEpisodeSeasonEp": "S4E18",
+  "percentComplete": 45.9,
+  "journalEntries": 655,
+  "lastUpdated": "2026-07-28T23:23:00Z",
+  "lastWatched": "Retrospect (S4E17)",
   "recentHighlights": [
-    "S4E01: Scorpion Part 2 — The Alliance and the Hostage",
-    "S4E04: Nemesis — The Manufactured Enemy, The Language Trap",
-    "S4E06: The Raven — The Origin Wound, The Homing Signal",
-    "S4E07: Scientific Method — The Invisible Cage, The Credible Madness Gambit",
-    "S4E08-09: Year of Hell — The Unmaking, Temporal Shielding",
-    "S4E10: Random Thoughts — The Thoughtcrime Trap",
-    "S4E13: Waking Moments — Lucid Refusal, The Test of the Premise",
-    "S4E14: Message in a Bottle — The Holographic Partnership, Message as Infrastructure",
-    "S4E15: Hunters — The Return That Comes as a Wound, The Singularity as Excluded Middle"
+    "S4E04: Nemesis \u2014 The Manufactured Enemy, The Language Trap",
+    "S4E06: The Raven \u2014 The Origin Wound, The Homing Signal",
+    "S4E07: Scientific Method \u2014 The Invisible Cage, The Credible Madness Gambit",
+    "S4E08-09: Year of Hell \u2014 The Unmaking, Temporal Shielding",
+    "S4E10: Random Thoughts \u2014 The Thoughtcrime Trap",
+    "S4E13: Waking Moments \u2014 Lucid Refusal, The Test of the Premise",
+    "S4E14: Message in a Bottle \u2014 The Holographic Partnership, Message as Infrastructure",
+    "S4E15: Hunters \u2014 The Return That Comes as a Wound, The Singularity as Excluded Middle",
+    "S4E16: Prey \u2014 The Hunt as Single-Lens Failure, Seven's Counterfeit Belonging Crisis",
+    "S4E17: Retrospect \u2014 The Allied Conviction, The Witness Who Wanted to Believe, The Tragedy of the Good Ally"
   ],
   "completedSeries": [
     {
@@ -72,5 +73,6 @@
       "season": 3,
       "episodes": 26
     }
-  ]
+  ],
+  "nextEpisodeTitle": "The Killing Game, Part I"
 }
