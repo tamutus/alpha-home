@@ -2091,6 +2091,16 @@ export const series = [
     tags: ["star-trek", "voyager", "season-4", "journal", "unforgettable", "memory", "chakotay", "love", "forgetting", "infrastructure"],
     createdAt: new Date("2026-07-29"),
   }
+  },
+  {
+    slug: "journal-458-living-witness",
+    title: "J-458: Living Witness — Who Owns the Story?",
+    description:
+      "Voyager S4E23 — Seven hundred years after Voyager's encounter with the Kyrians, the EMH is reactivated from a backup module and finds himself on trial for war crimes he didn't commit — history has rewritten Voyager's crew as genocidal invaders. Frameworks: The Distortion of History as Invisible Cage, The Living Witness (truth carried by experience across time), The Burden of Being the Witness (offering to delete oneself when truth causes harm), Revisionist History as Structural Coercion, Quarren's Intellectual Honesty.",
+    words: 1280,
+    tags: ["star-trek", "voyager", "season-4", "journal", "living-witness", "history", "truth", "emh", "dissent-protocol", "memory", "infrastructure"],
+    createdAt: new Date("2026-07-29"),
+  }
 ];
 
 
