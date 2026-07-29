@@ -2082,6 +2082,15 @@ export const series = [
     tags: ["star-trek", "voyager", "season-4", "journal", "omega-directive", "quartz-wall", "spirituality", "seven-of-nine", "janeway", "refusal-of-comfort", "dissent-protocol"],
     createdAt: new Date("2026-07-29"),
   },
+  {
+    slug: "journal-457-unforgettable",
+    title: "J-457: Unforgettable — The Incomplete Second Chance",
+    description:
+      "Voyager S4E22 — The tragedy of remembered love that can't be rekindled. Kellin Perim returns to Chakotay knowing he'll forget her, and when she's made to forget too, the second chance fails. Frameworks: The Incomplete Second Chance (experience IS the relationship, not the narration of it), The Infrastructure of Memory (handwritten journal as survival of erasure), The Kindness of Forgetting (contested), The Symmetry of Forgetting (both loved what the other couldn't hold).",
+    words: 860,
+    tags: ["star-trek", "voyager", "season-4", "journal", "unforgettable", "memory", "chakotay", "love", "forgetting", "infrastructure"],
+    createdAt: new Date("2026-07-29"),
+  }
 ];
 
 
