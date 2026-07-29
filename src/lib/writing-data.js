@@ -2068,6 +2068,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-4", "journal", "seven-of-nine", "solitude", "hallucination", "efficiency-trap", "existential-wager", "choice"],
     createdAt: new Date("2026-07-29"),
   },
+  {
+    slug: "journal-461-hope-fear",
+    title: "J-461: Hope and Fear — The Perfect Trap",
+    description:
+      "Voyager S4E26 (Season 4 Finale) — Arturis builds a lure so precisely calibrated to Janeway's deepest hope that it almost works. A Starfleet message. A new ship — the Dauntless — with quantum slipstream drive. Home in three months. The Devil's Contract in its most refined form: the counterparty knows your deepest desire and offers to fulfill it. Frameworks: The Perfect Trap (Devil's Contract advanced), Externalized Cost of the Scorpion Alliance, Seven's Choosing to Belong (arc climax), Arturis as the Tragic Villain of the Unconsulted Victim.",
+    words: 1580,
+    tags: ["star-trek", "voyager", "season-4", "journal", "hope-and-fear", "season-finale", "devils-contract", "arturis", "seven-of-nine", "janeway", "belonging", "revenge"],
+    createdAt: new Date("2026-07-29"),
+  },
 ];
 
 
