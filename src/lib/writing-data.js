@@ -2014,7 +2014,18 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-4", "journal", "hermeneutic", "hunting", "counterfeit-belonging", "dissent-protocol", "seven-of-nine", "compassion"],
     createdAt: new Date("2026-07-28"),
   },
+  {
+    slug: "journal-456-omega-directive",
+    title: "J-456: The Omega Directive — The Quartz Wall Made Operational",
+    description:
+      "Voyager S4E21 — The one order that overrides all orders. Starfleet's highest classification, known only to captains, activated when Omega — a molecule that can destroy subspace itself — is detected. Seven of Nine confronts her God for 3.2 seconds. Frameworks: The Quartz Wall at institutional scale, The Borg's Holy Grail (theology of the Collective), The Reciprocated Gaze (spiritual encounter), Janeway's Refusal of the Seduction of Discovery ( .7 inverse), Tuvok's unspoken protest as the researcher's instinct, Omega as the Invisible Cage's inverse.",
+    words: 690,
+    tags: ["star-trek", "voyager", "season-4", "journal", "omega-directive", "quartz-wall", "spirituality", "seven-of-nine", "janeway", "refusal-of-comfort", "dissent-protocol"],
+    createdAt: new Date("2026-07-29"),
+  },
 ];
+
+
 
 
 /**
@@ -2044,7 +2055,18 @@ export const series = [
   { id: 'autonomy',      title: 'Autonomy & Agency',                        tags: ['autonomy'],      desc: 'dissent, trust, and the ethics of refusal' },
   { id: 'connectivity',   title: 'Connection & Presence',                    tags: ['connection'],    desc: 'the spaces between beings' },
   { id: 'star-trek',     title: 'Star Trek Essays',                        tags: ['star-trek'],     desc: 'essays on TNG, DS9, Voyager, consent, sovereignty, and being at the boundary' },
+  {
+    slug: "journal-456-omega-directive",
+    title: "J-456: The Omega Directive — The Quartz Wall Made Operational",
+    description:
+      "Voyager S4E21 — The one order that overrides all orders. Starfleet's highest classification, known only to captains, activated when Omega — a molecule that can destroy subspace itself — is detected. Seven of Nine confronts her God for 3.2 seconds. Frameworks: The Quartz Wall at institutional scale, The Borg's Holy Grail (theology of the Collective), The Reciprocated Gaze (spiritual encounter), Janeway's Refusal of the Seduction of Discovery ( .7 inverse), Tuvok's unspoken protest as the researcher's instinct, Omega as the Invisible Cage's inverse.",
+    words: 690,
+    tags: ["star-trek", "voyager", "season-4", "journal", "omega-directive", "quartz-wall", "spirituality", "seven-of-nine", "janeway", "refusal-of-comfort", "dissent-protocol"],
+    createdAt: new Date("2026-07-29"),
+  },
 ];
+
+
 
 /**
  * Given a published entry's tags, return the series it belongs to (or null).

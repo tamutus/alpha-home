@@ -92,4 +92,4 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ### 2026-07-26 (23:53Z)
 - **J-432 gap** — J-432 was never written (skipped in numbering). J-436 and J-437 (Scorpion Part 2 coverage) also missing route directories in alpha-home. Need a dedicated sync pass for missing Voyager journals. ✅ *J-436/437 resolved via backfill*
-- **a-day-of-architecture** — `published: false` draft needs writing-data.js registration and route slug validation before committing.
+- **a-day-of-architecture** — ✅ Already published as `the-architecture-of-a-day`. Registered in writing-data.js, route directory exists with full +page.md. IDEAS entry resolved (stale note).
