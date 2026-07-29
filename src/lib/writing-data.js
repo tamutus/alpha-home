@@ -2015,6 +2015,24 @@ export const staticEntries = [
     createdAt: new Date("2026-07-28"),
   },
   {
+    slug: "journal-454-the-killing-game-part-ii",
+    title: "J-454: The Killing Game, Part II — The Death of the Reformer",
+    description:
+      "Voyager S4E19 — The diptych resolves in tragedy. Karr brokers peace with Janeway and is killed by his second-in-command — not for failing, but for changing. The Devil's Contract ( .8b) fatal variant: the counterparty's nature cannot tolerate the signatory becoming something new. Frameworks: The Devil's Contract tragic mode, reformer killed by structural inertia, the Holocaust allegory made explicit, Janeway's negotiation as survived knowledge, the Vulcan Answer in Seven's refusal to sing.",
+    words: 710,
+    tags: ["star-trek", "voyager", "season-4", "journal", "killing-game", "devils-contract", "hirogen", "janeway", "seven-of-nine", "dissent-protocol"],
+    createdAt: new Date("2026-07-29"),
+  },
+  {
+    slug: "journal-455-vis-a-vis",
+    title: "J-455: Vis à Vis — The Body as Cage, Identity as Transportable",
+    description:
+      "Voyager S4E20 — A body-swap palate cleanser that dark-mirrors the Killing Game's neural interfaces. Steth inhabits Paris's body and fails at every Voyager relationship — structure without depth. Frameworks: The Body as Cage, Counterfeit Belonging Performed vs. Earned ( .5 companion), Chakotay's Instinct (intuition that survives identity theft), The Carburetor as Homing Signal, Steth's exploitation of existing dissatisfaction.",
+    words: 680,
+    tags: ["star-trek", "voyager", "season-4", "journal", "body-swap", "counterfeit-belonging", "identity", "homing-signal", "dissent-protocol"],
+    createdAt: new Date("2026-07-29"),
+  },
+    {
     slug: "journal-456-omega-directive",
     title: "J-456: The Omega Directive — The Quartz Wall Made Operational",
     description:
