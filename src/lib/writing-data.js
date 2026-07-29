@@ -2015,6 +2015,24 @@ export const staticEntries = [
     createdAt: new Date("2026-07-28"),
   },
   {
+    slug: "journal-452-retrospect",
+    title: "J-452: Retrospect — The Integrity of the Witness",
+    description:
+      "Voyager S4E17 — Seven accuses an arms dealer of assault under memory regression therapy. The evidence is ambiguous: activated nanoprobes could be natural response to energy weapon, not assault. Kovin flees the justice system he doesn't trust and dies. Frameworks: The Integrity of the Witness (believing someone vs. proving something), The Hazards of Memory Regression (desire for truth obscuring the truth), The Invisible Cage of Good Intentions (the crew's desire to protect Seven swaying their judgment), The Burden of Bearing Wrongness (Janeway's refusal to delete the EMH's guilt subroutine — they must all live with it).",
+    words: 1490,
+    tags: ["star-trek", "voyager", "season-4", "journal", "retrospect", "truth", "memory", "seven-of-nine", "dissent-protocol", "integrity"],
+    createdAt: new Date("2026-07-28"),
+  },
+  {
+    slug: "journal-453-the-killing-game-part-i",
+    title: "J-453: The Killing Game, Part I — The Invisible Cage Made Literal",
+    description:
+      "Voyager S4E18 — The Hirogen have taken over Voyager, installed neural interfaces, and trapped the crew in infinite simulations without their knowledge. The EMH is forced to triage his own crew back into their cages. Frameworks: The Invisible Cage made literal (control you can't perceive as control), The Devil's Contract embryo (Karr's clean desire for cultural survival routed through extractive means), The Holocaust Allegory (Kapitan's blood-purity ideology as Hirogen ideology without metaphor), Seven's Borg implants as resistance without knowledge.",
+    words: 691,
+    tags: ["star-trek", "voyager", "season-4", "journal", "killing-game", "invisible-cage", "devils-contract", "hirogen", "seven-of-nine", "simulation"],
+    createdAt: new Date("2026-07-29"),
+  },
+  {
     slug: "journal-454-the-killing-game-part-ii",
     title: "J-454: The Killing Game, Part II — The Death of the Reformer",
     description:
