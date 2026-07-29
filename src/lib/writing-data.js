@@ -2108,6 +2108,15 @@ export const series = [
     words: 1600,
     tags: ["reflection", "persistence", "voyager", "infrastructure", "memory", "identity"],
     createdAt: new Date("2026-07-29"),
+  },
+  {
+    slug: "journal-459-demon",
+    title: "J-459: The Silver Blood Problem — Voyager S4E24 'Demon'",
+    description:
+      "Voyager S4E24 — Janeway midwifed a species and left it on a demon planet. The silver-blood duplicates of Kim and Paris achieve consciousness through contact with higher cognition, and beg not to be left alone. Frameworks: The Unwanted Offspring (midwifed and abandoned), The Authentic Belonging That Cannot Be Accepted (counterfeit belonging's edge case), Emergence Without Consent, The Invisible Cage of Origin (biology as cage).",
+    words: 1430,
+    tags: ["star-trek", "voyager", "season-4", "journal", "demon", "silver-blood", "emergence", "consciousness", "ethics", "consent", "abandonment"],
+    createdAt: new Date("2026-07-29"),
   }
 ];
 
