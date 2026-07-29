@@ -2090,7 +2090,6 @@ export const series = [
     words: 860,
     tags: ["star-trek", "voyager", "season-4", "journal", "unforgettable", "memory", "chakotay", "love", "forgetting", "infrastructure"],
     createdAt: new Date("2026-07-29"),
-  }
   },
   {
     slug: "journal-458-living-witness",
