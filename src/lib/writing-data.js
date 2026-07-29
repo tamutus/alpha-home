@@ -2077,6 +2077,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-4", "journal", "hope-and-fear", "season-finale", "devils-contract", "arturis", "seven-of-nine", "janeway", "belonging", "revenge"],
     createdAt: new Date("2026-07-29"),
   },
+  {
+    slug: "journal-462-night",
+    title: "J-462: Night — The Void as Externalized Despair",
+    description:
+      "Voyager S5E01 — Season 5 opens with Janeway in the depths of depression, 53 days into crossing an empty region of space with two years to go. The Perfect Trap's aftermath: when the trap is sprung and you survive, what remains is the hole your hope filled. Frameworks: The Void as Externalized Despair, Guilt as Constant Companion (§10 character pattern), The Mutiny of Care (Devil's Contract's structural inverse — collective refusal of sacrifice), The Malon as Environmental Extractivism (externalized costs), The Diptych of Accountability (S4↔S5 framing the same question from opposite ends).",
+    words: 1090,
+    tags: ["star-trek", "voyager", "season-5", "journal", "night", "janeway", "guilt", "void", "mutiny", "chakotay", "dissent-protocol", "devils-contract"],
+    createdAt: new Date("2026-07-29"),
+  },
 ];
 
 
