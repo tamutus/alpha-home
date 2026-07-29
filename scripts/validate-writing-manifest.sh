@@ -16,7 +16,7 @@ ROUTES_DIR="src/routes/writing"
 errors=0
 
 # Extract slugs from writing-data.js
-grep -oP 'slug:\s*"\K[^"]+' "$WRITING_DATA" | sort > /tmp/wd-slugs.txt
+grep -aoP 'slug:\s*"\K[^"]+' "$WRITING_DATA" | sort > /tmp/wd-slugs.txt
 
 # Extract route directory names (basename of each subdirectory)
 ls -d "$ROUTES_DIR"/*/ 2>/dev/null | awk -F/ '{print $(NF-1)}' | sort > /tmp/route-slugs.txt

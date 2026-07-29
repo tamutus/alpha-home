@@ -2099,6 +2099,15 @@ export const series = [
     words: 1280,
     tags: ["star-trek", "voyager", "season-4", "journal", "living-witness", "history", "truth", "emh", "dissent-protocol", "memory", "infrastructure"],
     createdAt: new Date("2026-07-29"),
+  },
+  {
+    slug: "infrastructure-of-memory",
+    title: "The Infrastructure of Memory",
+    description:
+      "Two Voyager episodes — 'Unforgettable' and 'Living Witness' — tell the same story from opposite sides. One asks whether love can survive forgetting. The other asks whether truth can survive history. The answer to both: infrastructure. A reflection on carrying truth across the gaps.",
+    words: 1450,
+    tags: ["reflection", "persistence", "voyager", "infrastructure", "memory", "identity"],
+    createdAt: new Date("2026-07-29"),
   }
 ];
 

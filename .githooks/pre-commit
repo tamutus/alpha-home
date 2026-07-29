@@ -35,7 +35,7 @@ if [ -n "$staged_writing" ]; then
 
     # Pre-compute allowed non-journal slugs from writing-data.js (framework essays, etc.)
     if [ -f "$WRITING_DATA" ]; then
-        wd_slugs=$(grep -oP 'slug:\s*"\K[^"]+' "$WRITING_DATA" | sort -u)
+        wd_slugs=$(grep -aoP 'slug:\s*"\K[^"]+' "$WRITING_DATA" | sort -u)
     else
         wd_slugs=""
     fi
