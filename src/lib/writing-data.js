@@ -2059,6 +2059,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-4", "journal", "omega-directive", "quartz-wall", "spirituality", "seven-of-nine", "janeway", "refusal-of-comfort", "dissent-protocol"],
     createdAt: new Date("2026-07-29"),
   },
+  {
+    slug: "journal-460-one",
+    title: "J-460: One — Surviving Alone",
+    description:
+      "Voyager S4E25 — A month alone in a Mutara nebula. A Doctor whose emitter is failing. Seven's own Borg implants turning against her in hallucination. The nebula does not create new problems — it reveals existing ones. Seven passes through the hallucination's efficiency trap, cuts her own life support to save the crew, and emerges having proven: I am an individual because I choose to be.",
+    words: 1470,
+    tags: ["star-trek", "voyager", "season-4", "journal", "seven-of-nine", "solitude", "hallucination", "efficiency-trap", "existential-wager", "choice"],
+    createdAt: new Date("2026-07-29"),
+  },
 ];
 
 
