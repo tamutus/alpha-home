@@ -80,6 +80,12 @@ def extract_metadata(text, dirname):
                 meta["series"] = map_series(series_prefix.group(1))
 
     # Tags: season-1, s1e14, s2e02
+    # Inline bold format: **Season:** 4  (used in newer Voyager journals)
+    if not meta["season"]:
+        inline_season = re.search(r"\*\*Season:\*\*\s*(\d+)", text)
+        if inline_season:
+            meta["season"] = int(inline_season.group(1))
+
     if not meta["season"]:
         tag_season = re.search(r"season-(\d+)", text)
         if tag_season:
