@@ -16,6 +16,9 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - ~~**HDF Framework reference page** — now that the HDF sextet is complete (6 deceptive frame variants), a dedicated /series page or /essay collecting and defining them (Threat, Desire, Inherited/Trauma, Mentor/Recruitment, Compassionate Delusion, Creator's Trap) with episode citations would be a useful reference. Could live as a writing entry under a new "Frameworks" series.~~ ✅ Implemented 2026-07-22: data-driven reference page at `/series/hdf-frameworks` with all 6 variants, definitions, epitomes, citations, and cross-references.
 ## Implemented
 
+### 2026-07-30
+- **season-word-counts: inline metadata format support** — the word-count script only parsed `season: N` frontmatter syntax, missing `**Season:** N` inline bold format used in newer journals (journal-453+). Added regex fallback pattern. Now 120/120 journals matched. Committed `56d3f11`.
+
 ### 2026-07-25
 - **"Current watch" pill on homepage** — the Star Trek section now shows a small animated ▶ pill before the series name on the homepage, visually indicating "currently watching" without adding text. Implemented via `st-now-watching-pill` CSS class with pulse animation. Deployed `5852d4d`.
 - **"Random entry" button** — 🎲 link next to "→ all writing" on homepage picks a random journal entry from `/api/writing`. Client-side JS, no new dependencies. Deployed `e8e85fd`.

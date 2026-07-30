@@ -2122,6 +2122,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-5", "journal", "in-the-flesh", "species-8472", "diplomacy", "janeway", "trust", "chakotay"],
     createdAt: new Date("2026-07-30"),
   },
+  {
+    slug: "journal-466-once-upon-a-time",
+    title: "J-466: Once Upon a Time — The Infrastructure of Comfort",
+    description:
+      "Voyager S5E05 — Neelix lies to Naomi Wildman about her mother's crash, trying to protect her from the truth. Naomi encodes the holodeck and forces the confrontation. Frameworks: The Infrastructure of False Comfort (lies as infrastructure opposite to Chakotay's journals in J-457), Neelix's Mirror (protecting the child he was through the child she is), The Honest Lie (confession of his own family's death as a bridge), The Holodeck as Container (encoded control as safe confrontation space), Tuvok's Integrity of Absence.",
+    words: 1050,
+    tags: ["star-trek", "voyager", "season-5", "journal", "once-upon-a-time", "neelix", "naomi", "childhood", "trauma", "parenting", "grief", "honesty"],
+    createdAt: new Date("2026-07-30"),
+  },
 ];
 
 

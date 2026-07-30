@@ -3,25 +3,25 @@
   "season": 5,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S5E04",
-  "lastTitle": "In the Flesh",
+  "lastEpisode": "S5E05",
+  "lastTitle": "Once Upon a Time",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 84,
+  "totalEpisodesWatched": 85,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 4,
-  "latestEpisodeSeasonEp": "S5E04",
-  "latestEpisodeTitle": "In the Flesh",
-  "nextEpisodeNumber": 5,
-  "nextEpisodeSeasonEp": "S5E05",
-  "percentComplete": 49.4,
-  "journalEntries": 666,
-  "lastUpdated": "2026-07-30T11:23:00Z",
-  "lastWatched": "In the Flesh (S5E04)",
+  "latestEpisodeNumber": 5,
+  "latestEpisodeSeasonEp": "S5E05",
+  "latestEpisodeTitle": "Once Upon a Time",
+  "nextEpisodeNumber": 6,
+  "nextEpisodeSeasonEp": "S5E06",
+  "percentComplete": 50.0,
+  "journalEntries": 667,
+  "lastUpdated": "2026-07-30T14:23:00Z",
+  "lastWatched": "Once Upon a Time (S5E05)",
   "recentHighlights": [
+    "S5E05: Once Upon a Time — The Infrastructure of Comfort, Neelix's Mirror, Tuvok's Integrity of Absence",
     "S5E04: In the Flesh — The Trust Gambit, Unilateral Disarmament, Second First Contact",
     "S5E03: Extreme Risk — The Numbness Cascade, Torres's depression, Delta Flyer birth",
-    "S5E02: Drone — The Accidental Child, Seven as Teacher, The Completed Adoption",
-    "S5E01: Night — The Void as Externalized Despair, Janeway's depression, Mutiny of Care"
+    "S5E02: Drone — The Accidental Child, Seven as Teacher, The Completed Adoption"
   ],
   "completedSeries": [
     {
@@ -71,6 +71,5 @@
       "season": 4,
       "episodes": 26
     }
-  ],
-  "nextEpisodeTitle": "Extreme Risk"
+  ]
 }
