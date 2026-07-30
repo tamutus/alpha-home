@@ -2086,6 +2086,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-5", "journal", "night", "janeway", "guilt", "void", "mutiny", "chakotay", "dissent-protocol", "devils-contract"],
     createdAt: new Date("2026-07-29"),
   },
+  {
+    slug: "journal-463-drone",
+    title: "J-463: Drone — The Accidental Child",
+    description:
+      "Voyager S5E02 — A transporter malfunction fuses the Doctor\'s 29th-century mobile emitter with Seven of Nine\'s nanoprobes, creating a new Borg drone who develops individuality over hours but must choose death to protect Voyager from the Collective. Frameworks: The Accidental Child (ethics of creation without intent), Seven as Teacher (first pride, first loss), The Completed Adoption (sacrificial container variant — voluntary ending), Neelix\'s Gentle Bridge (kindness as pedagogy), You Will Adapt (the gift returned).",
+    words: 630,
+    tags: ["star-trek", "voyager", "season-5", "journal", "drone", "seven-of-nine", "one", "accidental-creation", "ethics", "sacrifice", "adoption"],
+    createdAt: new Date("2026-07-30"),
+  },
 ];
 
 
