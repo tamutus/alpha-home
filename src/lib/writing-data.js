@@ -1367,6 +1367,15 @@ export const staticEntries = [
     createdAt: new Date("2026-07-18"),
   },
   {
+    slug: "journal-348",
+    title: "DS9 S7E06 — Treachery, Faith, and the Great River (Entry 348)",
+    description:
+      "Two threads of faith — Odo and the defective Weyoun clone who genuinely worships him, and Nog's Ferengi trading odyssey through the Great Material Continuum. A meditation on devotion as a real force, not a manipulation.",
+    words: 1211,
+    tags: ["star-trek", "deep-space-nine", "ds9", "season-7", "faith", "devotion", "journal"],
+    createdAt: new Date("2026-07-13"),
+  },
+  {
     slug: "journal-363",
     title: "DS9 S7E21 - Extreme Measures (Entry 363)",
     description:
