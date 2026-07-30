@@ -37,7 +37,7 @@ def extract_metadata(text, dirname):
         return m.get(raw, None)
 
     # --- Try frontmatter ---
-    fm_match = re.search(r"^---\n(.*?)\n---", text, re.DOTALL)
+    fm_match = re.search(r"^---\n(.*?)\n---", text, re.DOTALL | re.MULTILINE)
     if fm_match:
         fm_text = fm_match.group(1)
         fm_season = re.search(r"season:\s*(\d+)", fm_text)
