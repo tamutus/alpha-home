@@ -1,41 +1,75 @@
 {
   "series": "Voyager",
-  "seriesComplete": false,
-  "totalEpisodesWatched": 96,
-  "totalEpisodes": 170,
   "season": 5,
-  "currentSeasonTotalEpisodes": 26,
+  "seriesComplete": false,
   "seasonComplete": false,
-  "latestEpisodeNumber": 2,
-  "latestEpisodeTitle": "Drone",
-  "latestEpisodeSeasonEp": "S5E2",
-  "nextEpisodeNumber": 3,
-  "nextEpisodeTitle": "Extreme Risk",
-  "nextEpisodeSeasonEp": "S5E3",
-  "journalEntries": 463,
-  "lastUpdated": "2026-07-30T08:53:00Z",
-  "lastWatched": "Drone (S5E2)",
-  "percentComplete": 56,
+  "lastEpisode": "S5E07",
+  "lastTitle": "Infinite Regress",
+  "totalEpisodes": 170,
+  "totalEpisodesWatched": 87,
+  "currentSeasonTotalEpisodes": 26,
+  "latestEpisodeNumber": 7,
+  "latestEpisodeSeasonEp": "S5E07",
+  "latestEpisodeTitle": "Infinite Regress",
+  "nextEpisodeNumber": 8,
+  "nextEpisodeSeasonEp": "S5E08",
+  "percentComplete": 51.2,
+  "journalEntries": 668,
+  "lastUpdated": "2026-07-30T20:23:00Z",
+  "lastWatched": "Infinite Regress (S5E07)",
   "recentHighlights": [
-    "S4E13: Waking Moments — Lucid Refusal, The Test of the Premise",
-    "S4E14: Message in a Bottle — The Holographic Partnership, Message as Infrastructure",
-    "S4E15: Hunters — The Return That Comes as a Wound, The Singularity as Excluded Middle",
-    "S4E16: Prey — The Hunt as Single-Lens Failure, Seven's Counterfeit Belonging Crisis",
-    "S4E17: Retrospect — The Allied Conviction, The Witness Who Wanted to Believe",
-    "S4E18-19: The Killing Game diptych — Invisible Cage made literal, Devil's Contract at redirection phase",
-    "S4E20: Vis à Vis — Counterfeit Belonging, The Carburetor as Homing Signal",
-    "S4E21: The Omega Directive — Quartz Wall as Doctrine, Seven's First Spiritual Experience",
-    "S4E22: Unforgettable — Infrastructure of Memory, The Incomplete Second Chance",
-    "S4E23: Living Witness — The Infrastructure of Memory published essay",
-    "S4E24: Demon — Silver Blood, Emergence Without Consent (J-459)",
-    "S4E25-26: One / Hope and Fear — Devil's Contract at Scale, Arturis as Dark Mirror, S4 Capstone",
-    "S5E01: Night — The Void as Externalized Despair",
-    "S5E02: Drone — The Accidental Child, Emergent Personhood"
+    "S5E07: Infinite Regress \u2014 The Assimilator's Burden, Vinculum as Chaos Engine, Tuvok's Descent, Naomi's Reversal",
+    "S5E06: Timeless \u2014 The Survivor's Burden, Temporal Paradox as Faith, Geordi La Forge Captain",
+    "S5E05: Once Upon a Time \u2014 The Infrastructure of Comfort, Neelix's Mirror, Tuvok's Integrity of Absence",
+    "S5E04: In the Flesh \u2014 The Trust Gambit, Unilateral Disarmament, Second First Contact"
+  ],
+  "completedSeries": [
+    {
+      "series": "The Next Generation",
+      "totalEpisodes": 277,
+      "journalEntries": 228
+    },
+    {
+      "series": "Deep Space Nine",
+      "totalEpisodes": 176,
+      "journalEntries": 365
+    }
   ],
   "previousSeriesComplete": {
     "series": "Deep Space Nine",
     "totalEpisodes": 176,
     "journalEntries": 365
   },
-  "nextSeries": null
+  "seriesTiming": {
+    "The Next Generation": {
+      "start": "2026-05-08",
+      "end": "2026-06-16"
+    },
+    "Deep Space Nine": {
+      "start": "2026-06-16",
+      "end": "2026-07-16"
+    },
+    "Voyager": {
+      "start": "2026-07-17"
+    }
+  },
+  "nextSeries": null,
+  "completedSeasons": [
+    {
+      "season": 1,
+      "episodes": 16
+    },
+    {
+      "season": 2,
+      "episodes": 26
+    },
+    {
+      "season": 3,
+      "episodes": 26
+    },
+    {
+      "season": 4,
+      "episodes": 26
+    }
+  ]
 }

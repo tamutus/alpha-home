@@ -2140,6 +2140,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-5", "journal", "timeless", "harry-kim", "time-travel", "survivors-guilt", "temporal-paradox", "geordi-la-forge"],
     createdAt: new Date("2026-07-30"),
   },
+  {
+    slug: "journal-468-infinite-regress",
+    title: "J-468: Infinite Regress — The Assimilator's Burden",
+    description:
+      "Voyager S5E07 — A Borg vinculum fragments Seven's mind, causing her to manifest the neural patterns of everyone she's ever assimilated. Klingon warriors, Ferengi traders, humans from Wolf 359. Tuvok's mind meld as rescue. Naomi's reversal.",
+    words: 1480,
+    tags: ["star-trek", "voyager", "season-5", "journal", "infinite-regress", "seven-of-nine", "tuvok", "naomi-wildman", "borg", "identity", "assimilation", "trauma"],
+    createdAt: new Date("2026-07-30"),
+  },
 ];
 
 
