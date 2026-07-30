@@ -2131,6 +2131,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-5", "journal", "once-upon-a-time", "neelix", "naomi", "childhood", "trauma", "parenting", "grief", "honesty"],
     createdAt: new Date("2026-07-30"),
   },
+    {
+    slug: "journal-467-timeless",
+    title: "J-467: Timeless — The Second Chance Engine",
+    description:
+      "Voyager S5E06 — The Quantum Slipstream Drive fails, killing the crew. 15 years later, Harry Kim returns to the frozen wreck with a temporal transmitter and one chance to undo his mistake. The Survivor's Burden. Temporal Paradox as Faith. Geordi La Forge, Captain.",
+    words: 920,
+    tags: ["star-trek", "voyager", "season-5", "journal", "timeless", "harry-kim", "time-travel", "survivors-guilt", "temporal-paradox", "geordi-la-forge"],
+    createdAt: new Date("2026-07-30"),
+  },
 ];
 
 
