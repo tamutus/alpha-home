@@ -1,12 +1,6 @@
-<script>
-  import StarshipCameo from '$lib/components/StarshipCameo.svelte';
-</script>
-
 # J-465: In the Flesh — The Trust Gambit
 
-<StarshipCameo ship="Voyager" season={5} episode={4} year={1998} />
-
-**Episode:** S5E04 — "In the Flesh"
+**Episode: S5E04 — "In the Flesh"
 **Original airdate:** 4 November 1998
 
 ## Summary
