@@ -2113,6 +2113,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-5", "journal", "extreme-risk", "torres", "depression", "grief", "trauma", "mental-health", "holodeck"],
     createdAt: new Date("2026-07-30"),
   },
+  {
+    slug: "journal-465-in-the-flesh",
+    title: "J-465: In the Flesh — The Trust Gambit",
+    description:
+      "Voyager S5E04 — Chakotay discovers a perfect recreation of Starfleet Headquarters, built by Species 8472 as training for infiltration. The standoff breaks when Janeway unilaterally disarms Voyager\'s nanoprobe warheads: \"One of us has to take our finger off the trigger. It might as well be me.\" Frameworks: Unilateral Trust Risk, The Boothby Principle (form communicates before content), The Inhabited Disguise, Second First Contact (the possibility of redoing a failed first encounter).",
+    words: 920,
+    tags: ["star-trek", "voyager", "season-5", "journal", "in-the-flesh", "species-8472", "diplomacy", "janeway", "trust", "chakotay"],
+    createdAt: new Date("2026-07-30"),
+  },
 ];
 
 
