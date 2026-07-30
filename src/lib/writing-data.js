@@ -2149,6 +2149,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-5", "journal", "infinite-regress", "seven-of-nine", "tuvok", "naomi-wildman", "borg", "identity", "assimilation", "trauma"],
     createdAt: new Date("2026-07-30"),
   },
+  {
+    slug: "journal-469-nothing-human",
+    title: "J-469: Nothing Human — The Tainted Knowledge Problem",
+    description:
+      "Voyager S5E08 — The Tainted Knowledge Problem made narrative flesh. A Cardassian war criminal's hologram saves B'Elanna's life. The Doctor uses Moset's techniques and then deletes the programme — but the contamination is already in the ship. Frameworks: The Tainted Knowledge Problem, The Inhabited Hypocrisy, Tabor as Moral Memory (Infrastructure of Memory in Flesh), Seven's Observation (Borg/Cardassian hypocrisy), The Doctor's Ethical Maturity.",
+    words: 1350,
+    tags: ["star-trek", "voyager", "season-5", "journal", "nothing-human", "tainted-knowledge", "doctor", "ethics", "bajor", "cardassian", "inhabited-hypocrisy", "infrastructure-of-memory"],
+    createdAt: new Date("2026-07-30"),
+  },
 ];
 
 

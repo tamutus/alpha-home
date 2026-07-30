@@ -138,11 +138,17 @@ def main():
         # Support both directory/+page.md and single-file .md patterns
         dir_path = os.path.join(WRITING_DIR, d)
         if os.path.isdir(dir_path):
+            # Support both +page.md and +page.svx (mdsvex)
             md_path = os.path.join(dir_path, "+page.md")
+            if not os.path.exists(md_path):
+                md_path = os.path.join(dir_path, "+page.svx")
+            if not os.path.exists(md_path):
+                continue
         else:
-            md_path = dir_path  # single-file .md
-        if not os.path.exists(md_path):
-            continue
+            # Support single-file .md and .svx
+            if not os.path.exists(dir_path):
+                continue
+            md_path = dir_path
 
         total += 1
         text = open(md_path).read()

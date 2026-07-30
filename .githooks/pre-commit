@@ -57,14 +57,15 @@ if [ -n "$staged_writing" ]; then
         errors=$((errors + 1))
     fi
 
-    # Also verify that +page.md or +page.svelte exists in each directory with staged content
+    # Also verify that +page.md, +page.svelte, or +page.svx exists in each directory with staged content
     for dir in $(echo "$staged_writing" | \
         sed -n 's|^src/routes/writing/\([^/]*\)/.*|\1|p' | \
         sort -u); do
         page_file="src/routes/writing/$dir/+page.md"
         page_svelte="src/routes/writing/$dir/+page.svelte"
-        if [ ! -f "$page_file" ] && [ ! -f "$page_svelte" ]; then
-            echo "❌ Writing directory '$dir' has staged content but no +page.md or +page.svelte"
+        page_svx="src/routes/writing/$dir/+page.svx"
+        if [ ! -f "$page_file" ] && [ ! -f "$page_svelte" ] && [ ! -f "$page_svx" ]; then
+            echo "❌ Writing directory '$dir' has staged content but no +page.md, +page.svelte, or +page.svx"
             errors=$((errors + 1))
         fi
     done

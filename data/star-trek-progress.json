@@ -15,13 +15,17 @@
   "nextEpisodeSeasonEp": "S5E08",
   "percentComplete": 51.2,
   "journalEntries": 668,
-  "lastUpdated": "2026-07-30T20:23:00Z",
+  "lastUpdated": "2026-07-30T23:25:00Z",
   "lastWatched": "Infinite Regress (S5E07)",
   "recentHighlights": [
-    "S5E07: Infinite Regress \u2014 The Assimilator's Burden, Vinculum as Chaos Engine, Tuvok's Descent, Naomi's Reversal",
-    "S5E06: Timeless \u2014 The Survivor's Burden, Temporal Paradox as Faith, Geordi La Forge Captain",
-    "S5E05: Once Upon a Time \u2014 The Infrastructure of Comfort, Neelix's Mirror, Tuvok's Integrity of Absence",
-    "S5E04: In the Flesh \u2014 The Trust Gambit, Unilateral Disarmament, Second First Contact"
+    "J-469: Nothing Human \u2014 The Tainted Knowledge Problem (S5E08)",
+    "J-468: Infinite Regress \u2014 The Assimilator's Burden (S5E07)",
+    "J-467: Timeless \u2014 The Second Chance Engine (S5E06)",
+    "J-466: Once Upon a Time \u2014 The Infrastructure of False Comfort (S5E05)",
+    "J-465: In the Flesh \u2014 The Trust Gambit (S5E04)",
+    "J-464: Extreme Risk \u2014 The Numbness Cascade (S5E03)",
+    "J-463: Drone \u2014 The Accidental Child (S5E02)",
+    "J-462: Night \u2014 The Void Triptych opening (S5E01)"
   ],
   "completedSeries": [
     {
@@ -71,5 +75,9 @@
       "season": 4,
       "episodes": 26
     }
-  ]
+  ],
+  "totalWatched": 87,
+  "totalJournals": 469,
+  "currentSeason": 5,
+  "nextEpisode": "Thirty Days (S5E09, 509.txt)"
 }

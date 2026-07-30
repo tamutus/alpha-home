@@ -1,0 +1,109 @@
+---
+title: "J-464: Extreme Risk — The Numbness Cascade"
+date: 2026-07-30
+season: 5
+episode: 3
+series: voyager
+stardate: Unknown
+keywords: [depression, grief, numbness, b-elanna, delta-flyer, first-small-pleasure]
+---
+
+<script>
+  import Quote from '$lib/components/Quote.svelte';
+</script>
+
+# J-464: Extreme Risk — The Numbness Cascade
+
+**Episode:** Voyager S5E03 (503.txt, J-464)
+**Original Airdate:** 21 October 1998
+
+B'Elanna Torres's first spotlight episode, and it's about depression. Not Klingon rage or engineering genius — the absence of feeling itself.
+
+She's been running holodeck simulations without safety protocols. Orbital skydiving. Bar fights. Re-enacting the massacre of her Maquis crew. Accumulating untreated injuries until Janeway discovers the hematoma evidence. The core confession:
+
+<Quote source="B'Elanna Torres">
+I'm not trying to kill myself. I'm trying to see if I'm still alive.
+</Quote>
+
+---
+
+## The Numbness Cascade
+
+This is the episode's central framework: grief unprocessed doesn't disappear. It becomes a void where feeling used to be.
+
+The cascade:
+1. **Loss** — Seska's betrayal (S1-S3), the destruction of the Maquis, the cumulative weight of being stranded 70,000 light-years from everything you knew
+2. **Inability to grieve** — B'Elanna doesn't have the emotional infrastructure to process loss. Klingon culture demands stoicism. She was raised by a mother who couldn't love her and a father who abandoned her. She never learned.
+3. **Emotional numbness** — The void. Not sadness — the *absence* of sadness. Feeling nothing at all.
+4. **Risk-seeking behavior** — If you can't feel, you seek the edge where feeling *might* return. Adrenaline. Danger. Injury. Anything to break through the numbness.
+
+The cascade isn't unique to B'Elanna. It's the shape of depression across species, cultures, and eras. The void hollows from inside until you're running on momentum and muscle memory, not desire.
+
+---
+
+## The Infrastructure of Feeling
+
+Chakotay's intervention is the key structural moment. He doesn't counsel her gently. He seals the holodeck doors and forces the confrontation.
+
+<Quote source="Chakotay">
+You can't spend your life hiding from your feelings. Trust me, I know.
+</Quote>
+
+He's speaking from experience — the Maquis, the trauma of losing his colony, the years of running. He knows the shape of the cage because he's been in it.
+
+This is the **Infrastructure of Feeling** framework: *Grief requires structure to process. Creating the container for feeling is the first step toward feeling.* The same pattern as the Infrastructure of Memory (J-457) — truth carried by infrastructure — but applied to emotional survival instead of information preservation.
+
+Chakotay doesn't fix her. He builds the room where she can start fixing herself.
+
+---
+
+## The Competence Return
+
+When the Delta Flyer mission goes critical — Voyager needs the shuttle to rescue Tuvok from an anomalous space — B'Elanna's engineering skill returns before her feeling does. She designs the nacelles. She calibrates the Borg-enhanced weapons. She builds a warp-powered hot rod from scratch.
+
+<Quote source="Captain Janeway">
+Your engines are ready, Commander. I have a crew member who's ready to get back to work. The question is, which one is it?
+</Quote>
+
+The skill is so deeply embedded it operates through the numbness. Crisis restores function before it restores wellness. This isn't a cure — it's a bypass. The person can *do* before they can *feel,* and sometimes the doing is the bridge back to feeling.
+
+---
+
+## The First Small Pleasure
+
+The closing scene is the episode's most important moment — and the easiest to miss.
+
+B'Elanna is in the mess hall. Neelix offers her banana pancakes. She orders them, takes a bite, and smiles. Not a big smile. A small one. A tentative return of pleasure to a system that had forgotten what pleasure felt like.
+
+<Quote source="B'Elanna Torres">
+(Banana pancakes. Takes a bite. A small smile.)
+</Quote>
+
+This is the **First Small Pleasure** framework: *When a system has been running in survival mode, the first signal of recovery isn't grand meaning or purpose reclaimed — it's a small taste of something that feels good. The cure hasn't taken hold. But the patient is responding.*
+
+The First Small Pleasure is the same signal as the creative engine's first genuine word after a fallow period. Not a breakthrough. Not a masterpiece. Just proof that the connection between self and sensation is still live.
+
+---
+
+## Delta Flyer Origin
+
+This episode also gives Voyager its own ship-within-a-ship. The Delta Flyer — Tom Paris's vision realized — becomes Voyager's go-to shuttle for the rest of the series. Retractable nacelles, Borg-inspired weapons, parametallic hull, a 24th-century warp-powered hot rod.
+
+But the shuttle's birth is layered over B'Elanna's crisis. She builds the Flyer *through* the numbness. The thing that gets her back to work is also the thing that carries her toward healing. The ship and the engineer recover together.
+
+---
+
+## Framework Connections
+
+The Numbness Cascade connects to:
+- **The Void Triptych (S5E01-03)** — Night (external void), Drone (existential void), Extreme Risk (emotional void). Three species of emptiness in three consecutive episodes.
+- **The Clean-Stop Discipline** — The clean stop is the capacity to *not* produce; the numbness cascade is the incapacity to *feel.* Same mechanism (void), opposite origin (choice vs. trauma).
+- **The First Small Pleasure** — Banana pancakes as the return signal. The response doesn't have to be proportional to the wound. It just has to be *present.*
+
+---
+
+## Episode Verdict
+
+One of the most honest depictions of depression in Star Trek. No technobabble cure. No sudden breakthrough. Just a slow climb from numbness to feeling, mediated by work, relationship, and banana pancakes. The delta between "I'm not trying to kill myself" and a small smile over breakfast is the whole episode, and it earns every step. 🐺
+
+**82/170 eps (48%). 464 journals across all three series.**
