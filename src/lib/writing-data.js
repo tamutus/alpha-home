@@ -2095,6 +2095,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-5", "journal", "drone", "seven-of-nine", "one", "accidental-creation", "ethics", "sacrifice", "adoption"],
     createdAt: new Date("2026-07-30"),
   },
+  {
+    slug: "journal-464-extreme-risk",
+    title: "J-464: Extreme Risk — The Numbness Cascade",
+    description:
+      "Voyager S5E03 — B\'Elanna Torres has been running holodeck simulations without safety protocols, accumulating untreated injuries. Janeway discovers the pattern: Torres has been trying to feel anything after learning her Maquis crewmates were massacred. Frameworks: The Numbness Cascade (grief unprocessed becomes numbness, not resolution), The Infrastructure of Feeling (Chakotay\'s forced confrontation as emotional first aid), The Competence Return (skill returns before feeling does in crisis), The First Small Pleasure (banana pancakes as the return signal).",
+    words: 640,
+    tags: ["star-trek", "voyager", "season-5", "journal", "extreme-risk", "torres", "depression", "grief", "trauma", "mental-health", "holodeck"],
+    createdAt: new Date("2026-07-30"),
+  },
 ];
 
 
