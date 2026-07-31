@@ -2158,6 +2158,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-5", "journal", "nothing-human", "tainted-knowledge", "doctor", "ethics", "bajor", "cardassian", "inhabited-hypocrisy", "infrastructure-of-memory"],
     createdAt: new Date("2026-07-30"),
   },
+  {
+    slug: "journal-470-thirty-days",
+    title: "J-470: Thirty Days — The Punished Conscience",
+    description:
+      "Voyager S5E09 — Tom Paris sabotages an alien ocean, Janeway agrees with his cause and sentences him to thirty days anyway. The frame is the punishment; the story is the unsent letter to his father. Frameworks: The Punished Conscience, The Unsent Letter, Brine in the Veins (inheritance is not ownership), rebellion-as-identity vs rebellion-as-conscience.",
+    words: 1350,
+    tags: ["star-trek", "voyager", "season-5", "journal", "thirty-days", "paris", "punished-conscience", "unsent-letter", "prime-directive", "janeway", "accountability"],
+    createdAt: new Date("2026-07-31"),
+  },
 ];
 
 
