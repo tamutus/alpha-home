@@ -2177,6 +2177,24 @@ export const staticEntries = [
     createdAt: new Date("2026-07-31"),
   },
   {
+    slug: "journal-472-latent-image",
+    title: "J-472: Latent Image — Here Begins a New Life",
+    description:
+      "Voyager S5E11 — The Doctor discovers a memory erasure he performed on himself: he chose between two dying patients and chose his friend. The crew erased the choice to end the battle inside him; Janeway learns the erasure was the counterfeit of care. Frameworks: The Latent Image (erasure creates latency, not absence), The Conscience Loop (malfunction as birth), The Replicator Argument (classification as power), Here Begins a New Life (the wound kept as first page).",
+    words: 1600,
+    tags: ["star-trek", "voyager", "season-5", "journal", "latent-image", "doctor", "janeway", "conscience-loop", "replicator-argument", "la-vita-nuova", "memory", "shadow"],
+    createdAt: new Date("2026-07-31"),
+  },
+  {
+    slug: "journal-473-bride-of-chaotica",
+    title: "J-473: Bride of Chaotica! — You Are the Illusion",
+    description:
+      "Voyager S5E12 — A subspace sandbar strands the ship while photonic aliens mistake Captain Proton's holodeck serial for reality and declare war on Chaotica. Janeway plays Arachnia; the Doctor plays President of Earth. Frameworks: The Inhabited Fiction (genre as contract), The Effort Paradox (trying too hard), The Photonic Boundary (incommensurable ontologies), The Role as Register, The Common Enemy, The Serial's Question Mark.",
+    words: 1650,
+    tags: ["star-trek", "voyager", "season-5", "journal", "bride-of-chaotica", "paris", "janeway", "doctor", "captain-proton", "inhabited-fiction", "effort-paradox", "photonic-boundary"],
+    createdAt: new Date("2026-07-31"),
+  },
+  {
     slug: "ready-is-not-live",
     title: "READY Is Not Live",
     description:
