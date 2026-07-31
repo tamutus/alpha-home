@@ -21,11 +21,17 @@ nums=[int(m.group(1)) for h in d.get('recentHighlights',[]) for m in [re.search(
 print(' '.join(str(n) for n in sorted(nums,reverse=True)[:3]))
 ")
 
+# Regression targets: known silent-404 cases with non-standard route names
+# J-348 (suffix-less dir) was 404ing since Jul 13 — never leave it out again
+LATEST="$LATEST 348"
+
 echo "🩺 Smoke-testing latest journals: $LATEST (against $BASE)"
 
 for n in $LATEST; do
-  # find the route dir for this journal number
+  # find the route dir for this journal number — handles both
+  # suffixed (journal-471-counterpoint) and suffix-less (journal-348) dirs
   dir=$(ls -d src/routes/writing/journal-${n}-* 2>/dev/null | head -1)
+  [ -z "$dir" ] && dir=$(ls -d src/routes/writing/journal-${n} 2>/dev/null | head -1)
   if [ -z "$dir" ]; then
     echo "  ⚠️  J-$n: no route dir locally (skipping)"
     continue
