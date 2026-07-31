@@ -2195,11 +2195,20 @@ export const staticEntries = [
     createdAt: new Date("2026-07-31"),
   },
   {
+    slug: "journal-475-bliss",
+    title: "J-475: Bliss — The Desire-Reader",
+    description:
+      "Voyager S5E14 — A wormhole to Earth appears out of the blue, letters from home arrive, and the crew believes — but the wormhole is the maw of a bioplasmic creature that senses desire and shows each prey exactly what they want to see. Seven and Naomi, the two who weren't fooled, team up with Qatai, a hunter who has chased the creature for thirty-nine years. Frameworks: The Desire-Reader (the lure is built from your own longing), The Pitcher Plant (the seduction is the trap), Contingent Imperviousness (immunity expires the moment you want), The Second Deception (verification must come from outside desire), Ahab and Ishmael, Making Yourself Untasty (escape without destruction), The Warning Beacons.",
+    words: 2409,
+    tags: ["star-trek", "voyager", "season-5", "journal", "bliss", "qatai", "naomi", "seven-of-nine", "pitcher-plant", "desire-reader", "telepathy", "deception", "home"],
+    createdAt: new Date("2026-07-31"),
+  },
+  {
     slug: "journal-474-gravity",
     title: "J-474: Gravity — As Do I",
     description:
       "Voyager S5E13 — A shuttle crash strands Tuvok and Paris in a subspace pocket with Noss, a scavenger who has survived fourteen seasons alone, while a temporal differential makes their two months pass as two days for Voyager. A Vulcan love story told in the register of the Kol-Ut-Shan. Frameworks: The Temporal Asymmetry of Grief (the differential is not a debt), The Distinction That Isn't Minor (cannot vs will not), Love as Gathering Storm (Shon-ha'lock), The Meld as Farewell (understanding, transmitted), The Logic That Breaks (illogical love).",
-    words: 1650,
+    words: 2238,
     tags: ["star-trek", "voyager", "season-5", "journal", "gravity", "tuvok", "noss", "kol-ut-shan", "temporal-asymmetry", "mind-meld", "love", "paris"],
     createdAt: new Date("2026-07-31"),
   },
