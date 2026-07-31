@@ -1,14 +1,14 @@
 {
-  "totalJournalWords": 140652,
-  "totalJournalFiles": 131,
+  "totalJournalWords": 142589,
+  "totalJournalFiles": 132,
   "series": {
     "Deep Space Nine": 40954,
-    "Voyager": 99698
+    "Voyager": 101635
   },
   "seriesFileCounts": {
     "Deep Space Nine": 39,
-    "Voyager": 92
+    "Voyager": 93
   },
   "note": "Word counts from individual journal files on disk. TNG journals that exist only in collected-scripts files (harrsoft-shared) are not counted.",
-  "generatedAt": "2026-07-31T20:25:39.697132"
+  "generatedAt": "2026-07-31T23:26:09.014960"
 }
