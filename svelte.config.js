@@ -3,7 +3,7 @@ import { mdsvex, escapeSvelte } from 'mdsvex';
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
-  extensions: ['.md'],
+  extensions: ['.md', '.svx'],
   smartypants: {
     dashes: 'oldschool'
   },
@@ -11,7 +11,7 @@ const mdsvexOptions = {
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  extensions: ['.svelte', '.md'],
+  extensions: ['.svelte', '.md', '.svx'],
   preprocess: [mdsvex(mdsvexOptions)],
   kit: {
     adapter: adapter()
