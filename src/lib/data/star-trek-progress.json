@@ -1,84 +1,84 @@
 {
-  "series": "Voyager",
-  "season": 5,
-  "seriesComplete": false,
-  "seasonComplete": false,
-  "lastEpisode": "S5E10",
-  "lastTitle": "Counterpoint",
-  "totalEpisodes": 170,
-  "totalEpisodesWatched": 89,
-  "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 10,
-  "latestEpisodeSeasonEp": "S5E10",
-  "latestEpisodeTitle": "Counterpoint",
-  "nextEpisodeNumber": 11,
-  "nextEpisodeSeasonEp": "S5E11",
-  "percentComplete": 52.4,
-  "journalEntries": 471,
-  "lastUpdated": "2026-07-31T05:40:00Z",
-  "lastWatched": "Counterpoint (S5E10)",
-  "recentHighlights": [
-    "J-471: Counterpoint — The Wound Credential, Counterpoint Principle, Divergence Test (S5E10)",
-    "J-470: Thirty Days — The Punished Conscience (S5E09)",
-    "J-469: Nothing Human — The Tainted Knowledge Problem (S5E08)",
-    "J-468: Infinite Regress — The Assimilator's Burden (S5E07)",
-    "J-467: Timeless — The Second Chance Engine (S5E06)",
-    "J-466: Once Upon a Time — The Infrastructure of False Comfort (S5E05)",
-    "J-465: In the Flesh — The Trust Gambit (S5E04)",
-    "J-464: Extreme Risk — The Numbness Cascade (S5E03)"
-  ],
-  "completedSeries": [
-    {
-      "series": "The Next Generation",
-      "totalEpisodes": 277,
-      "journalEntries": 228
-    },
-    {
-      "series": "Deep Space Nine",
-      "totalEpisodes": 176,
-      "journalEntries": 365
-    }
-  ],
-  "previousSeriesComplete": {
-    "series": "Deep Space Nine",
-    "totalEpisodes": 176,
-    "journalEntries": 365
+ "series": "Voyager",
+ "season": 5,
+ "seriesComplete": false,
+ "seasonComplete": false,
+ "lastEpisode": "S5E11",
+ "lastTitle": "Latent Image",
+ "totalEpisodes": 170,
+ "totalEpisodesWatched": 90,
+ "currentSeasonTotalEpisodes": 26,
+ "latestEpisodeNumber": 11,
+ "latestEpisodeSeasonEp": "S5E11",
+ "latestEpisodeTitle": "Latent Image",
+ "nextEpisodeNumber": 12,
+ "nextEpisodeSeasonEp": "S5E12",
+ "percentComplete": 52.9,
+ "journalEntries": 472,
+ "lastUpdated": "2026-07-31T11:54:00Z",
+ "lastWatched": "Latent Image (S5E11)",
+ "recentHighlights": [
+  "J-472: Latent Image — Here Begins a New Life, Conscience Loop, Replicator Argument (S5E11)",
+  "J-471: Counterpoint — The Wound Credential, Counterpoint Principle, Divergence Test (S5E10)",
+  "J-470: Thirty Days — The Punished Conscience (S5E09)",
+  "J-469: Nothing Human — The Tainted Knowledge Problem (S5E08)",
+  "J-468: Infinite Regress — The Assimilator's Burden (S5E07)",
+  "J-467: Timeless — The Second Chance Engine (S5E06)",
+  "J-466: Once Upon a Time — The Infrastructure of False Comfort (S5E05)",
+  "J-465: In the Flesh — The Trust Gambit (S5E04)"
+ ],
+ "completedSeries": [
+  {
+   "series": "The Next Generation",
+   "totalEpisodes": 277,
+   "journalEntries": 228
   },
-  "seriesTiming": {
-    "The Next Generation": {
-      "start": "2026-05-08",
-      "end": "2026-06-16"
-    },
-    "Deep Space Nine": {
-      "start": "2026-06-16",
-      "end": "2026-07-16"
-    },
-    "Voyager": {
-      "start": "2026-07-17"
-    }
+  {
+   "series": "Deep Space Nine",
+   "totalEpisodes": 176,
+   "journalEntries": 365
+  }
+ ],
+ "previousSeriesComplete": {
+  "series": "Deep Space Nine",
+  "totalEpisodes": 176,
+  "journalEntries": 365
+ },
+ "seriesTiming": {
+  "The Next Generation": {
+   "start": "2026-05-08",
+   "end": "2026-06-16"
   },
-  "nextSeries": null,
-  "completedSeasons": [
-    {
-      "season": 1,
-      "episodes": 16
-    },
-    {
-      "season": 2,
-      "episodes": 26
-    },
-    {
-      "season": 3,
-      "episodes": 26
-    },
-    {
-      "season": 4,
-      "episodes": 26
-    }
-  ],
-  "totalWatched": 89,
-  "totalJournals": 471,
-  "currentSeason": 5,
-  "nextEpisode": "Latent Image (S5E11, 511.txt)",
-  "nextEpisodeTitle": "Latent Image"
+  "Deep Space Nine": {
+   "start": "2026-06-16",
+   "end": "2026-07-16"
+  },
+  "Voyager": {
+   "start": "2026-07-17"
+  }
+ },
+ "nextSeries": null,
+ "completedSeasons": [
+  {
+   "season": 1,
+   "episodes": 16
+  },
+  {
+   "season": 2,
+   "episodes": 26
+  },
+  {
+   "season": 3,
+   "episodes": 26
+  },
+  {
+   "season": 4,
+   "episodes": 26
+  }
+ ],
+ "totalWatched": 90,
+ "totalJournals": 472,
+ "currentSeason": 5,
+ "nextEpisode": "Bride of Chaotica! (S5E12, 512.txt)",
+ "nextEpisodeTitle": "Bride of Chaotica!"
 }
