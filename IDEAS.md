@@ -17,6 +17,10 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - ~~**HDF Framework reference page** — now that the HDF sextet is complete (6 deceptive frame variants), a dedicated /series page or /essay collecting and defining them (Threat, Desire, Inherited/Trauma, Mentor/Recruitment, Compassionate Delusion, Creator's Trap) with episode citations would be a useful reference. Could live as a writing entry under a new "Frameworks" series.~~ ✅ Implemented 2026-07-22: data-driven reference page at `/series/hdf-frameworks` with all 6 variants, definitions, epitomes, citations, and cross-references.
 ## Implemented
 
+### 2026-07-31
+- **fix: .svx journal routes were silently 404ing** — `svelte.config.js` only registered `.md`; the 6 journals stored as `+page.svx` (J-348, J-464, J-468–471) built to nothing while deploys stayed READY. J-348 had been 404ing since Jul 13. Added `.svx` to mdsvex + kit extensions; also removed a gitignored stray `src/routes/writing/journals/` temp dir (J-467 backfill artifact) that tripped the manifest check. All 6 pages verified 200 live. Committed `cc324d5`.
+- **Post-deploy smoke test** — `scripts/smoke-test-journals.sh` curls the 3 most recent journal pages on the live site; catches the silent-404 class (route missing ≠ deploy failing). Run after deploys that touch journal routes. Committed.
+
 ### 2026-07-30
 - **season-word-counts: inline metadata format support** — the word-count script only parsed `season: N` frontmatter syntax, missing `**Season:** N` inline bold format used in newer journals (journal-453+). Added regex fallback pattern. Now 120/120 journals matched. Committed `56d3f11`.
 
