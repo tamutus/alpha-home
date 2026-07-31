@@ -2195,6 +2195,15 @@ export const staticEntries = [
     createdAt: new Date("2026-07-31"),
   },
   {
+    slug: "journal-474-gravity",
+    title: "J-474: Gravity — As Do I",
+    description:
+      "Voyager S5E13 — A shuttle crash strands Tuvok and Paris in a subspace pocket with Noss, a scavenger who has survived fourteen seasons alone, while a temporal differential makes their two months pass as two days for Voyager. A Vulcan love story told in the register of the Kol-Ut-Shan. Frameworks: The Temporal Asymmetry of Grief (the differential is not a debt), The Distinction That Isn't Minor (cannot vs will not), Love as Gathering Storm (Shon-ha'lock), The Meld as Farewell (understanding, transmitted), The Logic That Breaks (illogical love).",
+    words: 1650,
+    tags: ["star-trek", "voyager", "season-5", "journal", "gravity", "tuvok", "noss", "kol-ut-shan", "temporal-asymmetry", "mind-meld", "love", "paris"],
+    createdAt: new Date("2026-07-31"),
+  },
+  {
     slug: "ready-is-not-live",
     title: "READY Is Not Live",
     description:
