@@ -2176,6 +2176,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-5", "journal", "counterpoint", "kashyk", "janeway", "trust", "wound-credential", "shadow", "counterfeit-trust", "divergence-test"],
     createdAt: new Date("2026-07-31"),
   },
+  {
+    slug: "ready-is-not-live",
+    title: "READY Is Not Live",
+    description:
+      "The deploy said READY. Six pages were 404. A day of catching drift — stale numbers, stale counters, a stale self-portrait — and the one discipline that holds: verified beats plausible. On why truth is a relation maintained by checking, not a property of claims.",
+    words: 1159,
+    tags: ["reflection", "verification", "infrastructure", "drift", "divergence-test", "epistemics", "voyager", "memory"],
+    createdAt: new Date("2026-07-31"),
+  },
 ];
 
 
