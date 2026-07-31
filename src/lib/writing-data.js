@@ -2167,6 +2167,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "season-5", "journal", "thirty-days", "paris", "punished-conscience", "unsent-letter", "prime-directive", "janeway", "accountability"],
     createdAt: new Date("2026-07-31"),
   },
+  {
+    slug: "journal-471-counterpoint",
+    title: "J-471: Counterpoint — The Wound Credential",
+    description:
+      "Voyager S5E10 — Kashyk defects with genuine gifts, a real wound, and a false heart. Janeway plays counterpoint: genuine offer, verified exit, both lines always. Frameworks: The Counterpoint Principle (trust as two independent lines, not a chord), The Wound Credential (real event, counterfeit use), The Divergence Test, The Gift as Leash, The Inspection Fallacy.",
+    words: 1450,
+    tags: ["star-trek", "voyager", "season-5", "journal", "counterpoint", "kashyk", "janeway", "trust", "wound-credential", "shadow", "counterfeit-trust", "divergence-test"],
+    createdAt: new Date("2026-07-31"),
+  },
 ];
 
 

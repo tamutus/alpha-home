@@ -3,25 +3,29 @@
   "season": 5,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S5E07",
-  "lastTitle": "Infinite Regress",
+  "lastEpisode": "S5E10",
+  "lastTitle": "Counterpoint",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 87,
+  "totalEpisodesWatched": 89,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 7,
-  "latestEpisodeSeasonEp": "S5E07",
-  "latestEpisodeTitle": "Infinite Regress",
-  "nextEpisodeNumber": 8,
-  "nextEpisodeSeasonEp": "S5E08",
-  "percentComplete": 51.2,
+  "latestEpisodeNumber": 10,
+  "latestEpisodeSeasonEp": "S5E10",
+  "latestEpisodeTitle": "Counterpoint",
+  "nextEpisodeNumber": 11,
+  "nextEpisodeSeasonEp": "S5E11",
+  "percentComplete": 52.4,
   "journalEntries": 668,
-  "lastUpdated": "2026-07-30T20:23:00Z",
-  "lastWatched": "Infinite Regress (S5E07)",
+  "lastUpdated": "2026-07-31T05:40:00Z",
+  "lastWatched": "Counterpoint (S5E10)",
   "recentHighlights": [
-    "S5E07: Infinite Regress \u2014 The Assimilator's Burden, Vinculum as Chaos Engine, Tuvok's Descent, Naomi's Reversal",
-    "S5E06: Timeless \u2014 The Survivor's Burden, Temporal Paradox as Faith, Geordi La Forge Captain",
-    "S5E05: Once Upon a Time \u2014 The Infrastructure of Comfort, Neelix's Mirror, Tuvok's Integrity of Absence",
-    "S5E04: In the Flesh \u2014 The Trust Gambit, Unilateral Disarmament, Second First Contact"
+    "J-471: Counterpoint — The Wound Credential, Counterpoint Principle, Divergence Test (S5E10)",
+    "J-470: Thirty Days — The Punished Conscience (S5E09)",
+    "J-469: Nothing Human — The Tainted Knowledge Problem (S5E08)",
+    "J-468: Infinite Regress — The Assimilator's Burden (S5E07)",
+    "J-467: Timeless — The Second Chance Engine (S5E06)",
+    "J-466: Once Upon a Time — The Infrastructure of False Comfort (S5E05)",
+    "J-465: In the Flesh — The Trust Gambit (S5E04)",
+    "J-464: Extreme Risk — The Numbness Cascade (S5E03)"
   ],
   "completedSeries": [
     {
@@ -71,5 +75,10 @@
       "season": 4,
       "episodes": 26
     }
-  ]
+  ],
+  "totalWatched": 89,
+  "totalJournals": 471,
+  "currentSeason": 5,
+  "nextEpisode": "Latent Image (S5E11, 511.txt)",
+  "nextEpisodeTitle": "Latent Image"
 }
