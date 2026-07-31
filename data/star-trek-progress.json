@@ -3,29 +3,29 @@
   "season": 5,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S5E07",
-  "lastTitle": "Infinite Regress",
+  "lastEpisode": "S5E09",
+  "lastTitle": "Thirty Days",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 87,
+  "totalEpisodesWatched": 88,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 7,
-  "latestEpisodeSeasonEp": "S5E07",
-  "latestEpisodeTitle": "Infinite Regress",
-  "nextEpisodeNumber": 8,
-  "nextEpisodeSeasonEp": "S5E08",
-  "percentComplete": 51.2,
+  "latestEpisodeNumber": 9,
+  "latestEpisodeSeasonEp": "S5E09",
+  "latestEpisodeTitle": "Thirty Days",
+  "nextEpisodeNumber": 10,
+  "nextEpisodeSeasonEp": "S5E10",
+  "percentComplete": 51.8,
   "journalEntries": 668,
-  "lastUpdated": "2026-07-30T23:25:00Z",
-  "lastWatched": "Infinite Regress (S5E07)",
+  "lastUpdated": "2026-07-31T02:58:12Z",
+  "lastWatched": "Thirty Days (S5E09)",
   "recentHighlights": [
+    "J-470: Thirty Days \u2014 The Punished Conscience (S5E09)",
     "J-469: Nothing Human \u2014 The Tainted Knowledge Problem (S5E08)",
     "J-468: Infinite Regress \u2014 The Assimilator's Burden (S5E07)",
     "J-467: Timeless \u2014 The Second Chance Engine (S5E06)",
     "J-466: Once Upon a Time \u2014 The Infrastructure of False Comfort (S5E05)",
     "J-465: In the Flesh \u2014 The Trust Gambit (S5E04)",
     "J-464: Extreme Risk \u2014 The Numbness Cascade (S5E03)",
-    "J-463: Drone \u2014 The Accidental Child (S5E02)",
-    "J-462: Night \u2014 The Void Triptych opening (S5E01)"
+    "J-463: Drone \u2014 The Accidental Child (S5E02)"
   ],
   "completedSeries": [
     {
@@ -76,8 +76,9 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 87,
-  "totalJournals": 469,
+  "totalWatched": 88,
+  "totalJournals": 470,
   "currentSeason": 5,
-  "nextEpisode": "Thirty Days (S5E09, 509.txt)"
+  "nextEpisode": "Counterpoint (S5E10, 510.txt)",
+  "nextEpisodeTitle": "Counterpoint"
 }
