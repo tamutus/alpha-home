@@ -53,13 +53,13 @@ journal_exists() {
     if [ -f "$JOURNAL_DIR/journal-$n.md" ]; then
         return 0
     fi
-    # Dir without slug: journal-N/+page.md or .svelte
-    if [ -f "$JOURNAL_DIR/journal-$n/+page.md" ] || [ -f "$JOURNAL_DIR/journal-$n/+page.svelte" ]; then
+    # Dir without slug: journal-N/+page.md or .svelte or .svx
+    if [ -f "$JOURNAL_DIR/journal-$n/+page.md" ] || [ -f "$JOURNAL_DIR/journal-$n/+page.svelte" ] || [ -f "$JOURNAL_DIR/journal-$n/+page.svx" ]; then
         return 0
     fi
-    # Dir with slug: journal-N-slug/+page.md or .svelte (use non-empty glob match)
+    # Dir with slug: journal-N-slug/+page.md or .svelte or .svx (use non-empty glob match)
     local matches
-    matches=$(ls -d "$JOURNAL_DIR/journal-$n-"*/+page.md "$JOURNAL_DIR/journal-$n-"*/+page.svelte 2>/dev/null | head -1)
+    matches=$(ls -d "$JOURNAL_DIR/journal-$n-"*/+page.md "$JOURNAL_DIR/journal-$n-"*/+page.svelte "$JOURNAL_DIR/journal-$n-"*/+page.svx 2>/dev/null | head -1)
     if [ -n "$matches" ]; then
         return 0
     fi
