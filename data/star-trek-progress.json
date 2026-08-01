@@ -3,21 +3,22 @@
   "season": 5,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S5E15",
-  "lastTitle": "Dark Frontier Part 1",
+  "lastEpisode": "S5E16",
+  "lastTitle": "Dark Frontier Part 2",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 94,
+  "totalEpisodesWatched": 95,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 15,
-  "latestEpisodeSeasonEp": "S5E15",
-  "latestEpisodeTitle": "Dark Frontier Part 1",
-  "nextEpisodeNumber": 16,
-  "nextEpisodeSeasonEp": "S5E16",
-  "percentComplete": 55.3,
-  "journalEntries": 476,
-  "lastUpdated": "2026-07-31T23:30:00Z",
-  "lastWatched": "Dark Frontier Part 1 (S5E15)",
+  "latestEpisodeNumber": 16,
+  "latestEpisodeSeasonEp": "S5E16",
+  "latestEpisodeTitle": "Dark Frontier Part 2",
+  "nextEpisodeNumber": 17,
+  "nextEpisodeSeasonEp": "S5E17",
+  "percentComplete": 55.9,
+  "journalEntries": 477,
+  "lastUpdated": "2026-08-01T02:53:00Z",
+  "lastWatched": "Dark Frontier Part 2 (S5E16)",
   "recentHighlights": [
+    "J-477: Dark Frontier Pt. 2 — The Meld's Answer, The Refusal That Costs Everything, Compassion as the Unassimilable (S5E16)",
     "J-476: Dark Frontier Pt. 1 — The Counter-Meld, Raven’s Treasure, Chosen Collective (S5E15)",
     "J-475: Bliss — The Desire-Reader, Pitcher Plant, Contingent Imperviousness (S5E14)",
     "J-474: Gravity — The Temporal Asymmetry of Grief, The Meld as Farewell (S5E13)",
@@ -26,8 +27,7 @@
     "J-471: Counterpoint — The Wound Credential, Counterpoint Principle, Divergence Test (S5E10)",
     "J-470: Thirty Days — The Punished Conscience (S5E09)",
     "J-469: Nothing Human — The Tainted Knowledge Problem (S5E08)",
-    "J-468: Infinite Regress — The Assimilator's Burden (S5E07)",
-    "J-467: Timeless — The Second Chance Engine (S5E06)"
+    "J-468: Infinite Regress — The Assimilator's Burden (S5E07)"
   ],
   "completedSeries": [
     {
@@ -82,5 +82,5 @@
   "totalJournals": 475,
   "currentSeason": 5,
   "nextEpisode": "S5E15",
-  "nextEpisodeTitle": "In the Flesh"
+  "nextEpisodeTitle": "The Disease"
 }
