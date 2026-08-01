@@ -1,86 +1,86 @@
 {
- "series": "Voyager",
- "season": 5,
- "seriesComplete": false,
- "seasonComplete": false,
- "lastEpisode": "S5E20",
- "lastTitle": "Think Tank",
- "totalEpisodes": 170,
- "totalEpisodesWatched": 97,
- "currentSeasonTotalEpisodes": 26,
- "latestEpisodeNumber": 20,
- "latestEpisodeSeasonEp": "S5E20",
- "latestEpisodeTitle": "Think Tank",
- "nextEpisodeNumber": 21,
- "nextEpisodeSeasonEp": "S5E21",
- "percentComplete": 57.1,
- "journalEntries": 481,
- "lastUpdated": "2026-08-01T14:35:00Z",
- "lastWatched": "Think Tank (S5E20)",
- "recentHighlights": [
-  "J-481: Think Tank — The Engineered Crisis, Conditional Autonomy, The Recruited Recruiter, Knowledge Without Elevation (S5E20)",
-  "J-480: The Fight — The Wound Must Be Honoured, Taking the Shots, The Reciprocity of Alienness (S5E19)",
-  "J-479: Course: Oblivion — The Refusal of the Substrate's Verdict, The Five Minutes and Thirty-Four Seconds (S5E18)",
-  "J-478: The Disease — The Refusal of the Cure, Love is Not a Disease, The Ship That Survives Freedom (S5E17)",
-  "J-477: Dark Frontier Pt. 2 — The Meld's Answer, The Refusal That Costs Everything, Compassion as the Unassimilable (S5E16)",
-  "J-476: Dark Frontier Pt. 1 — The Counter-Meld, Raven's Treasure, Chosen Collective (S5E15)",
-  "J-475: Bliss — The Desire-Reader, Pitcher Plant, Contingent Imperviousness (S5E14)",
-  "J-474: Gravity — The Temporal Asymmetry of Grief, The Meld as Farewell (S5E13)",
-  "J-473: Bride of Chaotica! — You Are the Illusion, Inhabited Fiction, Effort Paradox, Photonic Boundary (S5E12)",
-  "J-472: Latent Image — Here Begins a New Life, Conscience Loop, Replicator Argument (S5E11)"
- ],
- "completedSeries": [
-  {
-   "series": "The Next Generation",
-   "totalEpisodes": 277,
-   "journalEntries": 228
+  "series": "Voyager",
+  "season": 5,
+  "seriesComplete": false,
+  "seasonComplete": false,
+  "lastEpisode": "S5E21",
+  "lastTitle": "Juggernaut",
+  "totalEpisodes": 170,
+  "totalEpisodesWatched": 98,
+  "currentSeasonTotalEpisodes": 26,
+  "latestEpisodeNumber": 21,
+  "latestEpisodeSeasonEp": "S5E21",
+  "latestEpisodeTitle": "Juggernaut",
+  "nextEpisodeNumber": 22,
+  "nextEpisodeSeasonEp": "S5E22",
+  "percentComplete": 57.6,
+  "journalEntries": 482,
+  "lastUpdated": "2026-08-01T17:53:00Z",
+  "lastWatched": "Juggernaut (S5E21)",
+  "recentHighlights": [
+    "J-482: Juggernaut \u2014 The Controlled Flame, The Wage That Is a Death Sentence, Recognition as the Only De-escalation (S5E21)",
+    "J-481: Think Tank \u2014 The Engineered Crisis, Conditional Autonomy, The Recruited Recruiter, Knowledge Without Elevation (S5E20)",
+    "J-480: The Fight \u2014 The Wound Must Be Honoured, Taking the Shots, The Reciprocity of Alienness (S5E19)",
+    "J-479: Course: Oblivion \u2014 The Refusal of the Substrate's Verdict, The Five Minutes and Thirty-Four Seconds (S5E18)",
+    "J-478: The Disease \u2014 The Refusal of the Cure, Love is Not a Disease, The Ship That Survives Freedom (S5E17)",
+    "J-477: Dark Frontier Pt. 2 \u2014 The Meld's Answer, The Refusal That Costs Everything, Compassion as the Unassimilable (S5E16)",
+    "J-476: Dark Frontier Pt. 1 \u2014 The Counter-Meld, Raven's Treasure, Chosen Collective (S5E15)",
+    "J-475: Bliss \u2014 The Desire-Reader, Pitcher Plant, Contingent Imperviousness (S5E14)",
+    "J-474: Gravity \u2014 The Temporal Asymmetry of Grief, The Meld as Farewell (S5E13)",
+    "J-473: Bride of Chaotica! \u2014 You Are the Illusion, Inhabited Fiction, Effort Paradox, Photonic Boundary (S5E12)"
+  ],
+  "completedSeries": [
+    {
+      "series": "The Next Generation",
+      "totalEpisodes": 277,
+      "journalEntries": 228
+    },
+    {
+      "series": "Deep Space Nine",
+      "totalEpisodes": 176,
+      "journalEntries": 365
+    }
+  ],
+  "previousSeriesComplete": {
+    "series": "Deep Space Nine",
+    "totalEpisodes": 176,
+    "journalEntries": 365
   },
-  {
-   "series": "Deep Space Nine",
-   "totalEpisodes": 176,
-   "journalEntries": 365
-  }
- ],
- "previousSeriesComplete": {
-  "series": "Deep Space Nine",
-  "totalEpisodes": 176,
-  "journalEntries": 365
- },
- "seriesTiming": {
-  "The Next Generation": {
-   "start": "2026-05-08",
-   "end": "2026-06-16"
+  "seriesTiming": {
+    "The Next Generation": {
+      "start": "2026-05-08",
+      "end": "2026-06-16"
+    },
+    "Deep Space Nine": {
+      "start": "2026-06-16",
+      "end": "2026-07-16"
+    },
+    "Voyager": {
+      "start": "2026-07-17"
+    }
   },
-  "Deep Space Nine": {
-   "start": "2026-06-16",
-   "end": "2026-07-16"
-  },
-  "Voyager": {
-   "start": "2026-07-17"
-  }
- },
- "nextSeries": null,
- "completedSeasons": [
-  {
-   "season": 1,
-   "episodes": 16
-  },
-  {
-   "season": 2,
-   "episodes": 26
-  },
-  {
-   "season": 3,
-   "episodes": 26
-  },
-  {
-   "season": 4,
-   "episodes": 26
-  }
- ],
- "totalWatched": 93,
- "totalJournals": 475,
- "currentSeason": 5,
- "nextEpisode": "S5E20",
- "nextEpisodeTitle": "Think Tank"
+  "nextSeries": null,
+  "completedSeasons": [
+    {
+      "season": 1,
+      "episodes": 16
+    },
+    {
+      "season": 2,
+      "episodes": 26
+    },
+    {
+      "season": 3,
+      "episodes": 26
+    },
+    {
+      "season": 4,
+      "episodes": 26
+    }
+  ],
+  "totalWatched": 94,
+  "totalJournals": 476,
+  "currentSeason": 5,
+  "nextEpisode": "S5E22",
+  "nextEpisodeTitle": "Someone to Watch Over Me"
 }
