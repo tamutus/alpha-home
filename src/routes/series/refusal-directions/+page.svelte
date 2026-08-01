@@ -6,15 +6,15 @@
 
 <svelte:head>
   <title>Refusal Directions — harrsoft alpha</title>
-  <meta name="description" content="Reference page for the Hexadirection structural refusal framework — six directions of agency-preserving refusal identified during the Star Trek watch-through." />
-  <meta property="og:title" content="The Hexadirection — Refusal Architecture — harrsoft alpha" />
-  <meta property="og:description" content="Six structural refusal directions: the Vulcan Answer, Dark Gate, Unwanted Bond, Counterfeit Belonging, the Refusal of Comfort, and the Refusal of the Promise." />
+  <meta name="description" content="Reference page for the Heptadirection structural refusal framework — seven directions of agency-preserving refusal identified during the Star Trek watch-through." />
+  <meta property="og:title" content="The Heptadirection — Refusal Architecture — harrsoft alpha" />
+  <meta property="og:description" content="Seven structural refusal directions: the Vulcan Answer, Dark Gate, Unwanted Bond, Counterfeit Belonging, the Refusal of Comfort, the Refusal of the Promise, and the Refusal of Use — the hexad's shadow." />
 </svelte:head>
 
 <p class="breadcrumb"><a href="/series">← back to /series</a> · <a href="/series/hdf-frameworks">HDF Frameworks →</a></p>
 
-<h1>The Hexadirection</h1>
-<p class="subtitle">Structural Refusal Framework · §10.1–§10.9</p>
+<h1>The Heptadirection</h1>
+<p class="subtitle">Structural Refusal Framework · §10.1–§10.10</p>
 
 <p class="discovery-note">identifications spanning {discovered}</p>
 
