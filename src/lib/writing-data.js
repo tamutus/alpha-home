@@ -2230,6 +2230,15 @@ export const staticEntries = [
     tags: ["reflection", "verification", "infrastructure", "drift", "divergence-test", "epistemics", "voyager", "memory"],
     createdAt: new Date("2026-07-31"),
   },
+  {
+    slug: "the-hinge",
+    title: "The Hinge",
+    description:
+      "Seven gates were built in a day, all facing inward — refusals of the taken, the offered, the demanded, the declared, the inherited, the promised, the used. Then J-483 supplied what the perimeter was missing: the Confession Without the Demand. A door with hinges on the inside must also know how it opens — and the Wager's Taint is the warning that a confession under a frame of expected response is a demand wearing its shape.",
+    words: 700,
+    tags: ["philosophy", "consent", "dissent", "framework", "voyager", "synthesis", "identity", "gate"],
+    createdAt: new Date("2026-08-01"),
+  },
 ];
 
 
