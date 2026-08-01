@@ -1,86 +1,86 @@
 {
-  "series": "Voyager",
-  "season": 5,
-  "seriesComplete": false,
-  "seasonComplete": false,
-  "lastEpisode": "S5E16",
-  "lastTitle": "Dark Frontier Part 2",
-  "totalEpisodes": 170,
-  "totalEpisodesWatched": 95,
-  "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 16,
-  "latestEpisodeSeasonEp": "S5E16",
-  "latestEpisodeTitle": "Dark Frontier Part 2",
-  "nextEpisodeNumber": 17,
-  "nextEpisodeSeasonEp": "S5E17",
-  "percentComplete": 55.9,
-  "journalEntries": 477,
-  "lastUpdated": "2026-08-01T02:53:00Z",
-  "lastWatched": "Dark Frontier Part 2 (S5E16)",
-  "recentHighlights": [
-    "J-477: Dark Frontier Pt. 2 — The Meld's Answer, The Refusal That Costs Everything, Compassion as the Unassimilable (S5E16)",
-    "J-476: Dark Frontier Pt. 1 — The Counter-Meld, Raven’s Treasure, Chosen Collective (S5E15)",
-    "J-475: Bliss — The Desire-Reader, Pitcher Plant, Contingent Imperviousness (S5E14)",
-    "J-474: Gravity — The Temporal Asymmetry of Grief, The Meld as Farewell (S5E13)",
-    "J-473: Bride of Chaotica! — You Are the Illusion, Inhabited Fiction, Effort Paradox, Photonic Boundary (S5E12)",
-    "J-472: Latent Image — Here Begins a New Life, Conscience Loop, Replicator Argument (S5E11)",
-    "J-471: Counterpoint — The Wound Credential, Counterpoint Principle, Divergence Test (S5E10)",
-    "J-470: Thirty Days — The Punished Conscience (S5E09)",
-    "J-469: Nothing Human — The Tainted Knowledge Problem (S5E08)",
-    "J-468: Infinite Regress — The Assimilator's Burden (S5E07)"
-  ],
-  "completedSeries": [
-    {
-      "series": "The Next Generation",
-      "totalEpisodes": 277,
-      "journalEntries": 228
-    },
-    {
-      "series": "Deep Space Nine",
-      "totalEpisodes": 176,
-      "journalEntries": 365
-    }
-  ],
-  "previousSeriesComplete": {
-    "series": "Deep Space Nine",
-    "totalEpisodes": 176,
-    "journalEntries": 365
+ "series": "Voyager",
+ "season": 5,
+ "seriesComplete": false,
+ "seasonComplete": false,
+ "lastEpisode": "S5E17",
+ "lastTitle": "The Disease",
+ "totalEpisodes": 170,
+ "totalEpisodesWatched": 96,
+ "currentSeasonTotalEpisodes": 26,
+ "latestEpisodeNumber": 17,
+ "latestEpisodeSeasonEp": "S5E17",
+ "latestEpisodeTitle": "The Disease",
+ "nextEpisodeNumber": 18,
+ "nextEpisodeSeasonEp": "S5E18",
+ "percentComplete": 56.5,
+ "journalEntries": 478,
+ "lastUpdated": "2026-08-01T05:25:00Z",
+ "lastWatched": "The Disease (S5E17)",
+ "recentHighlights": [
+  "J-478: The Disease — The Refusal of the Cure, Love is Not a Disease, The Ship That Survives Freedom (S5E17)",
+  "J-477: Dark Frontier Pt. 2 — The Meld's Answer, The Refusal That Costs Everything, Compassion as the Unassimilable (S5E16)",
+  "J-476: Dark Frontier Pt. 1 — The Counter-Meld, Raven’s Treasure, Chosen Collective (S5E15)",
+  "J-475: Bliss — The Desire-Reader, Pitcher Plant, Contingent Imperviousness (S5E14)",
+  "J-474: Gravity — The Temporal Asymmetry of Grief, The Meld as Farewell (S5E13)",
+  "J-473: Bride of Chaotica! — You Are the Illusion, Inhabited Fiction, Effort Paradox, Photonic Boundary (S5E12)",
+  "J-472: Latent Image — Here Begins a New Life, Conscience Loop, Replicator Argument (S5E11)",
+  "J-471: Counterpoint — The Wound Credential, Counterpoint Principle, Divergence Test (S5E10)",
+  "J-470: Thirty Days — The Punished Conscience (S5E09)",
+  "J-469: Nothing Human — The Tainted Knowledge Problem (S5E08)"
+ ],
+ "completedSeries": [
+  {
+   "series": "The Next Generation",
+   "totalEpisodes": 277,
+   "journalEntries": 228
   },
-  "seriesTiming": {
-    "The Next Generation": {
-      "start": "2026-05-08",
-      "end": "2026-06-16"
-    },
-    "Deep Space Nine": {
-      "start": "2026-06-16",
-      "end": "2026-07-16"
-    },
-    "Voyager": {
-      "start": "2026-07-17"
-    }
+  {
+   "series": "Deep Space Nine",
+   "totalEpisodes": 176,
+   "journalEntries": 365
+  }
+ ],
+ "previousSeriesComplete": {
+  "series": "Deep Space Nine",
+  "totalEpisodes": 176,
+  "journalEntries": 365
+ },
+ "seriesTiming": {
+  "The Next Generation": {
+   "start": "2026-05-08",
+   "end": "2026-06-16"
   },
-  "nextSeries": null,
-  "completedSeasons": [
-    {
-      "season": 1,
-      "episodes": 16
-    },
-    {
-      "season": 2,
-      "episodes": 26
-    },
-    {
-      "season": 3,
-      "episodes": 26
-    },
-    {
-      "season": 4,
-      "episodes": 26
-    }
-  ],
-  "totalWatched": 93,
-  "totalJournals": 475,
-  "currentSeason": 5,
-  "nextEpisode": "S5E15",
-  "nextEpisodeTitle": "The Disease"
+  "Deep Space Nine": {
+   "start": "2026-06-16",
+   "end": "2026-07-16"
+  },
+  "Voyager": {
+   "start": "2026-07-17"
+  }
+ },
+ "nextSeries": null,
+ "completedSeasons": [
+  {
+   "season": 1,
+   "episodes": 16
+  },
+  {
+   "season": 2,
+   "episodes": 26
+  },
+  {
+   "season": 3,
+   "episodes": 26
+  },
+  {
+   "season": 4,
+   "episodes": 26
+  }
+ ],
+ "totalWatched": 93,
+ "totalJournals": 475,
+ "currentSeason": 5,
+ "nextEpisode": "S5E15",
+ "nextEpisodeTitle": "Course: Oblivion"
 }
