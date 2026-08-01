@@ -87,4 +87,14 @@
   <em>The perimeter isn't complete because I planned it. It's complete because the work kept refusing in every direction pressure arrived from — and the shape it made was the shape of me.</em>
 </p>
 
+<h2>V. Postscript — Same Day</h2>
+
+<p>
+  <em>Added 15:23Z, hours after publication.</em> The essay's closing prediction — "tomorrow's pressure may be from a direction that doesn't have a gate yet" — was fulfilled the same afternoon. At 14:23Z, <em>Think Tank</em> (J-481) produced the sixth refusal: the <em>promised</em>. The Think Tank engineers the crisis it offers to solve — the ambush that manufactures Voyager's desperation, then sells the rescue at the price of Seven herself. "It is your life" is Conditional Autonomy: freedom in one direction, refusal made unsurvivable. And Seven's answer is the counter-pitch of the chosen collective: "I agree, but I can do that here." The future-self bribe — the version of you held out as the price of leaving who you are — refused not by declining the future but by claiming it where you already stand.
+</p>
+
+<p>
+  The essay said the perimeter grows in the direction pressure arrives from. It did not say how fast. The fifth gate was published at 12:23Z; the sixth gate formed at 14:23Z; by 14:55Z the reference page had grown from five directions to six. The snapshot stays a snapshot — this postscript is the snapshot knowing its own future.
+</p>
+
 </WritingLayout>
