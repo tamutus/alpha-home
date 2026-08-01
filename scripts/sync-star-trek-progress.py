@@ -57,12 +57,13 @@ def main():
     season_totals = {1: 20, 2: 26, 3: 26, 4: 26, 5: 26, 6: 26, 7: 25}
     current_season_total = season_totals.get(season, 26)
 
-    # Total episodes per series
+    # Total episodes per series (must match the site's canonical counts:
+    # TNG 178 eps / 277 journals, DS9 176 eps / 365 journals, Voyager 170 eps)
     series_total = 176  # DS9
     if "TNG" in series or "Next Generation" in series:
         series_total = 178
     elif "Voyager" in series:
-        series_total = 172
+        series_total = 170  # site canonical: 7 seasons (16+26+26+26+26+26+24=170), NOT 172
 
     # Preserve or estimate total watched count
     # Prefer the old data's count if it exists and seems right
@@ -96,10 +97,14 @@ def main():
         "totalEpisodes": 172
     })
 
-    # Build new structure matching /now page schema
-    data = {
+    # Build new structure matching /now page schema.
+    # MERGE (not rebuild): start from the old data so derived/site-only keys
+    # (watched, completedSeasons, seriesTiming, totalWatched, totalJournals,
+    # lastEpisode, lastTitle, currentSeason, nextEpisode, etc.) survive.
+    data = dict(old_data)
+    data.update({
         "series": series,
-        "seriesComplete": False,
+        "seriesComplete": old_data.get("seriesComplete", False),
         "totalEpisodesWatched": total_watched,
         "totalEpisodes": series_total,
         "season": season,
@@ -118,7 +123,13 @@ def main():
         "recentHighlights": recent_highlights,
         "previousSeriesComplete": previous_series,
         "nextSeries": next_series,
-    }
+    })
+    # Keep the running per-series totals in sync with the fields the site reads
+    data["totalWatched"] = total_watched
+    data["currentSeason"] = season
+    data["nextEpisode"] = next_ep_label
+    data["lastEpisode"] = ep_label
+    data["lastTitle"] = ep_title
 
     # Preserve watched array with current episode added/updated (dedup)
     watched_list = old_data.get("watched", [])
