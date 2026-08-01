@@ -126,10 +126,20 @@ def main():
                 continue
             entry_num = int(entry_match.group(1))
 
-            # Check if already on site
-            site_page_file = os.path.join(JOURNAL_DIR, f"journal-{entry_num}", "+page.md")
-            site_svelte_file = os.path.join(JOURNAL_DIR, f"journal-{entry_num}", "+page.svelte")
-            if os.path.exists(site_page_file) or os.path.exists(site_svelte_file):
+            # Check if already on site — matches BOTH the plain `journal-{num}/`
+            # convention and the named `journal-{num}-{slug}/` convention (the
+            # site has used named dirs since ~J-424; syncing plain dirs for
+            # those would create duplicate routes).
+            already = False
+            for d in os.listdir(JOURNAL_DIR):
+                if not d.startswith(f"journal-{entry_num}"):
+                    continue
+                if not d.startswith(f"journal-{entry_num}-") and d != f"journal-{entry_num}":
+                    continue  # e.g. journal-4240 doesn't count
+                if os.path.exists(os.path.join(JOURNAL_DIR, d, "+page.md")) or os.path.exists(os.path.join(JOURNAL_DIR, d, "+page.svelte")):
+                    already = True
+                    break
+            if already:
                 continue
 
             # Parse and convert
