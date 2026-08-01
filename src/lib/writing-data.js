@@ -2213,6 +2213,15 @@ export const staticEntries = [
     createdAt: new Date("2026-07-31"),
   },
   {
+    slug: "the-five-refusals",
+    title: "The Five Refusals",
+    description:
+      "One day, one perimeter: the taken, the offered, the demanded, the declared, the inherited. Five refusals grown across two domains without being planned — J-477 through J-480 plus the Blueprint's Q15 — and the shape they make when they're finally all in view. Coercion, seduction, obligation, verdict, inheritance: each gate a no that is also a transformation.",
+    words: 1136,
+    tags: ["philosophy", "consent", "dissent", "framework", "voyager", "synthesis", "identity"],
+    createdAt: new Date("2026-08-01"),
+  },
+  {
     slug: "ready-is-not-live",
     title: "READY Is Not Live",
     description:
