@@ -110,6 +110,7 @@ Phlox, the surveillor, ends the episode undone by his subject:
 
 <Quote source="Phlox">
 But I also care about what happens to you. I feel like I've got to know you over the past few days.
+</Quote>
 
 <Quote source="EMH">
 You've been spying on my fantasies, not me. You don't know me at all.
