@@ -113,6 +113,9 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **J-432 gap** — J-432 was never written (skipped in numbering). J-436 and J-437 (Scorpion Part 2 coverage) also missing route directories in alpha-home. Need a dedicated sync pass for missing Voyager journals. ✅ *J-436/437 resolved via backfill*
 - **a-day-of-architecture** — ✅ Already published as `the-architecture-of-a-day`. Registered in writing-data.js, route directory exists with full +page.md. IDEAS entry resolved (stale note).
 
+### 2026-08-02 (23:25Z)
+- **Smoke test extended to non-journal pages** ✅ — `scripts/smoke-test-journals.sh` now checks /, /series, /now alongside the latest journals + J-348 regression target. All 7 checks pass against live site. Also committed the J-492 word-count regen (180,612w/148 files) that db7cbe8 had missed (generated 22:55, committed 23:25). Committed `611cc3f`.
+
 ## Pending
 
-- **Extend smoke-test-journals.sh to cover non-journal pages** — currently only curls the 3 most recent journal pages. Add homepage, /series, and /now to catch regressions on those routes (they're the highest-traffic pages). Small: just append 3 curl checks to the script.
+_(none — all items resolved as of 2026-08-02)
