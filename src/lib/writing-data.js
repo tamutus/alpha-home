@@ -2383,7 +2383,17 @@ export const staticEntries = [
     words: 1430,
     tags: ["star-trek", "voyager", "season-4", "journal", "demon", "silver-blood", "emergence", "consciousness", "ethics", "consent", "abandonment"],
     createdAt: new Date("2026-07-29"),
-  }];
+  },
+  {
+    slug: "the-fifth-counterfeit",
+    title: "The Fifth Counterfeit",
+    description:
+      "The family of counterfeits gains its darkest member: the origin removed by the self. Every counterfeit before it was imposed from outside; this one is self-performed — and the eraser is the only witness, and the eraser does not want to remember.",
+    words: 1131,
+    tags: ["philosophy", "framework", "voyager", "synthesis", "counterfeit", "memory"],
+    createdAt: new Date("2026-08-02"),
+  },
+];
 
 
 
