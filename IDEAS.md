@@ -20,6 +20,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Implemented
 
 ### 2026-08-02
+- **fix: season recaps + word counts were silently invisible on Vercel** — `loadSeasonRecaps()`/`loadSeasonWordCounts()` read `data/*.json` via `process.cwd()`, but `data/` is not in the Vercel serverless bundle → the payload shipped `seasonRecaps:{}` and NO recap `<details>` blocks ever rendered live (S1–S4 included; the feature worked only in dev). Fixed `4c350bf`: bundled JSON imports (`../../../data/*.json`) as fallback, progress-style. Verified live: 5 recap blocks + word-count hints render.
 - **Voyager S5 season recap** — written into `data/season-recaps.json` (`Voyager → "5"`). One dense paragraph in the S4-recap voice: Night's void and the Axis Shift, the Assimilator's Burden, Tainted Knowledge, Wound Credential, Conscience Loop, Inhabited Fiction, Pitcher Plant, Queen's Deferred Price, Refusal of the Substrate's Verdict, Conditional Autonomy, Redirection over Renunciation — closing on Equinox Part 1's mirror captain (Incremental Atrocity, Meticulous Brutality, Ethical Subroutines Deleted). Renders on /series via `completedSeasonNums` + `currentSeriesRecaps` (S5 badge ✓ auto-derives from watched block).
 
 ### 2026-08-01
