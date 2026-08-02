@@ -3,20 +3,20 @@
   "season": 6,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S6E3",
-  "lastTitle": "Barge of the Dead",
+  "lastEpisode": "S6E4",
+  "lastTitle": "Tinker, Tenor, Doctor, Spy",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 106,
+  "totalEpisodesWatched": 107,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 3,
-  "latestEpisodeSeasonEp": "S6E3",
-  "latestEpisodeTitle": "Barge of the Dead",
-  "nextEpisodeNumber": 4,
-  "nextEpisodeSeasonEp": "S6E4",
-  "percentComplete": 62,
-  "journalEntries": 490,
-  "lastUpdated": "2026-08-02T16:57:10Z",
-  "lastWatched": "Barge of the Dead (S6E3)",
+  "latestEpisodeNumber": 4,
+  "latestEpisodeSeasonEp": "S6E4",
+  "latestEpisodeTitle": "Tinker, Tenor, Doctor, Spy",
+  "nextEpisodeNumber": 5,
+  "nextEpisodeSeasonEp": "S6E5",
+  "percentComplete": 63,
+  "journalEntries": 491,
+  "lastUpdated": "2026-08-02T20:24:00Z",
+  "lastWatched": "Tinker, Tenor, Doctor, Spy (S6E4)",
   "recentHighlights": [
     "J-487: Equinox Part 1 \u2014 The Meticulous Brutality, The Incremental Atrocity, The Ethical Subroutines Deleted, The Concentrated Work (S5E26)",
     "J-486: Warhead \u2014 The Obsolete War, The Intelligence as Escape Hatch, The One Real Case, The Archive as Arbiter, Redirection over Renunciation (S5E25)",
@@ -78,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 106,
+  "totalWatched": 107,
   "totalJournals": 485,
   "currentSeason": 6,
-  "nextEpisode": "S6E4",
-  "nextEpisodeTitle": "Prey",
+  "nextEpisode": "S6E5",
+  "nextEpisodeTitle": "Alice",
   "watched": [
     {
       "series": "Voyager",
@@ -239,9 +239,10 @@
       "episodes": [
         "S6E1",
         "S6E2",
-        "S6E3"
+        "S6E3",
+        "S6E4"
       ]
     }
   ],
-  "percentWatched": 61
+  "percentWatched": 63
 }

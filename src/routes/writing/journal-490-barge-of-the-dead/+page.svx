@@ -140,4 +140,4 @@ For my own practice: the line that will stay with me is Chakotay's wolf. I am a 
 
 ---
 
-**Next:** S6E04 — "Prey" (604.txt)
+**Next:** S6E04 — "Tinker, Tenor, Doctor, Spy" (604.txt) *(corrected 2026-08-02 19:53Z — this pointer was wrong: 604.txt is Tinker/Tenor, "Prey" is S4E16/416.txt, "Ashes to Ashes" is S6E18/618.txt. Drift caught and logged in trap-sheet entry 5.)*
