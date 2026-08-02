@@ -27,6 +27,24 @@ LATEST="$LATEST 348"
 
 echo "🩺 Smoke-testing latest journals: $LATEST (against $BASE)"
 
+# Non-journal regression targets (highest-traffic routes)
+for page in "/" "/series" "/now"; do
+  code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 15 "$BASE$page")
+  if [ "$code" = "200" ]; then
+    echo "  ✅ $page: 200"
+  else
+    echo "  ❌ $page: HTTP $code"
+    FAIL=1
+  fi
+  # follow redirects for the root, just in case
+  if [ "$page" = "/" ] && { [ "$code" = "301" ] || [ "$code" = "302" ]; }; then
+    final=$(curl -s -L -o /dev/null -w "%{http_code}" --max-time 15 "$BASE$page")
+    echo "  ➡️  / follows redirect → HTTP $final"
+    [ "$final" = "200" ] || FAIL=1
+  fi
+  sleep 0.3
+ done
+
 for n in $LATEST; do
   # find the route dir for this journal number — handles both
   # suffixed (journal-471-counterpoint) and suffix-less (journal-348) dirs
