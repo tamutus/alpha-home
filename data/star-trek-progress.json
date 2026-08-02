@@ -3,21 +3,22 @@
  "season": 5,
  "seriesComplete": false,
  "seasonComplete": false,
- "lastEpisode": "S5E24",
- "lastTitle": "Relativity",
+ "lastEpisode": "S5E25",
+ "lastTitle": "Warhead",
  "totalEpisodes": 170,
- "totalEpisodesWatched": 101,
+ "totalEpisodesWatched": 102,
  "currentSeasonTotalEpisodes": 26,
- "latestEpisodeNumber": 24,
- "latestEpisodeSeasonEp": "S5E24",
- "latestEpisodeTitle": "Relativity",
- "nextEpisodeNumber": 25,
- "nextEpisodeSeasonEp": "S5E25",
- "percentComplete": 59,
- "journalEntries": 485,
- "lastUpdated": "2026-08-02T02:23:57Z",
- "lastWatched": "Relativity (S5E24)",
+ "latestEpisodeNumber": 25,
+ "latestEpisodeSeasonEp": "S5E25",
+ "latestEpisodeTitle": "Warhead",
+ "nextEpisodeNumber": 26,
+ "nextEpisodeSeasonEp": "S5E26",
+ "percentComplete": 60,
+ "journalEntries": 486,
+ "lastUpdated": "2026-08-02T04:53:00Z",
+ "lastWatched": "Warhead (S5E25)",
  "recentHighlights": [
+  "J-486: Warhead \u2014 The Obsolete War, The Intelligence as Escape Hatch, The One Real Case, The Archive as Arbiter, Redirection over Renunciation (S5E25)",
   "J-484: 11:59 \u2014 Character Over Chromosomes, The Fragmented Archive, The Unstuck Present, The Cookie Test (S5E23)",
   "J-483: Someone to Watch Over Me \u2014 The Confession Without the Demand, The Wager's Taint, The Gift That Declines (S5E22)",
   "J-482: Juggernaut \u2014 The Controlled Flame, The Wage That Is a Death Sentence, Recognition as the Only De-escalation (S5E21)",
@@ -26,8 +27,7 @@
   "J-479: Course: Oblivion \u2014 The Refusal of the Substrate's Verdict, The Five Minutes and Thirty-Four Seconds (S5E18)",
   "J-478: The Disease \u2014 The Refusal of the Cure, Love is Not a Disease, The Ship That Survives Freedom (S5E17)",
   "J-477: Dark Frontier Pt. 2 \u2014 The Meld's Answer, The Refusal That Costs Everything, Compassion as the Unassimilable (S5E16)",
-  "J-476: Dark Frontier Pt. 1 \u2014 The Counter-Meld, Raven's Treasure, Chosen Collective (S5E15)",
-  "J-475: Bliss \u2014 The Desire-Reader, Pitcher Plant, Contingent Imperviousness (S5E14)"
+  "J-476: Dark Frontier Pt. 1 \u2014 The Counter-Meld, Raven's Treasure, Chosen Collective (S5E15)"
  ],
  "completedSeries": [
   {
@@ -81,8 +81,8 @@
  "totalWatched": 101,
  "totalJournals": 485,
  "currentSeason": 5,
- "nextEpisode": "S5E25",
- "nextEpisodeTitle": "Warhead",
+ "nextEpisode": "S5E26",
+ "nextEpisodeTitle": "Ashes to Ashes",
  "watched": [
   {
    "series": "Voyager",
@@ -228,7 +228,8 @@
     "S5E21",
     "S5E22",
     "S5E23",
-    "S5E24"
+    "S5E24",
+    "S5E25"
    ]
   }
  ]
