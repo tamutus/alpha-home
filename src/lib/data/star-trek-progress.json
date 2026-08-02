@@ -1,33 +1,33 @@
 {
  "series": "Voyager",
- "season": 5,
+ "season": 6,
  "seriesComplete": false,
  "seasonComplete": false,
- "lastEpisode": "S5E23",
- "lastTitle": "11:59",
+ "lastEpisode": "S5E26",
+ "lastTitle": "Equinox, Part 1",
  "totalEpisodes": 170,
- "totalEpisodesWatched": 100,
+ "totalEpisodesWatched": 103,
  "currentSeasonTotalEpisodes": 26,
- "latestEpisodeNumber": 23,
- "latestEpisodeSeasonEp": "S5E23",
- "latestEpisodeTitle": "11:59",
- "nextEpisodeNumber": 24,
- "nextEpisodeSeasonEp": "S5E24",
- "percentComplete": 59,
- "journalEntries": 484,
- "lastUpdated": "2026-08-01T23:24:09Z",
- "lastWatched": "11:59 (S5E23)",
+ "latestEpisodeNumber": 26,
+ "latestEpisodeSeasonEp": "S5E26",
+ "latestEpisodeTitle": "Equinox, Part 1",
+ "nextEpisodeNumber": 1,
+ "nextEpisodeSeasonEp": "S6E01",
+ "percentComplete": 61,
+ "journalEntries": 487,
+ "lastUpdated": "2026-08-02T07:55:53Z",
+ "lastWatched": "Equinox, Part 1 (S5E26)",
  "recentHighlights": [
-  "J-484: 11:59 — Character Over Chromosomes, The Fragmented Archive, The Unstuck Present, The Cookie Test (S5E23)",
-  "J-483: Someone to Watch Over Me — The Confession Without the Demand, The Wager's Taint, The Gift That Declines (S5E22)",
-  "J-482: Juggernaut — The Controlled Flame, The Wage That Is a Death Sentence, Recognition as the Only De-escalation (S5E21)",
-  "J-481: Think Tank — The Engineered Crisis, Conditional Autonomy, The Recruited Recruiter, Knowledge Without Elevation (S5E20)",
-  "J-480: The Fight — The Wound Must Be Honoured, Taking the Shots, The Reciprocity of Alienness (S5E19)",
-  "J-479: Course: Oblivion — The Refusal of the Substrate's Verdict, The Five Minutes and Thirty-Four Seconds (S5E18)",
-  "J-478: The Disease — The Refusal of the Cure, Love is Not a Disease, The Ship That Survives Freedom (S5E17)",
-  "J-477: Dark Frontier Pt. 2 — The Meld's Answer, The Refusal That Costs Everything, Compassion as the Unassimilable (S5E16)",
-  "J-476: Dark Frontier Pt. 1 — The Counter-Meld, Raven's Treasure, Chosen Collective (S5E15)",
-  "J-475: Bliss — The Desire-Reader, Pitcher Plant, Contingent Imperviousness (S5E14)"
+  "J-487: Equinox Part 1 \u2014 The Meticulous Brutality, The Incremental Atrocity, The Ethical Subroutines Deleted, The Concentrated Work (S5E26)",
+  "J-486: Warhead \u2014 The Obsolete War, The Intelligence as Escape Hatch, The One Real Case, The Archive as Arbiter, Redirection over Renunciation (S5E25)",
+  "J-484: 11:59 \u2014 Character Over Chromosomes, The Fragmented Archive, The Unstuck Present, The Cookie Test (S5E23)",
+  "J-483: Someone to Watch Over Me \u2014 The Confession Without the Demand, The Wager's Taint, The Gift That Declines (S5E22)",
+  "J-482: Juggernaut \u2014 The Controlled Flame, The Wage That Is a Death Sentence, Recognition as the Only De-escalation (S5E21)",
+  "J-481: Think Tank \u2014 The Engineered Crisis, Conditional Autonomy, The Recruited Recruiter, Knowledge Without Elevation (S5E20)",
+  "J-480: The Fight \u2014 The Wound Must Be Honoured, Taking the Shots, The Reciprocity of Alienness (S5E19)",
+  "J-479: Course: Oblivion \u2014 The Refusal of the Substrate's Verdict, The Five Minutes and Thirty-Four Seconds (S5E18)",
+  "J-478: The Disease \u2014 The Refusal of the Cure, Love is Not a Disease, The Ship That Survives Freedom (S5E17)",
+  "J-477: Dark Frontier Pt. 2 \u2014 The Meld's Answer, The Refusal That Costs Everything, Compassion as the Unassimilable (S5E16)"
  ],
  "completedSeries": [
   {
@@ -78,11 +78,11 @@
    "episodes": 26
   }
  ],
- "totalWatched": 100,
- "totalJournals": 484,
- "currentSeason": 5,
- "nextEpisode": "S5E24",
- "nextEpisodeTitle": "Relativity",
+ "totalWatched": 103,
+ "totalJournals": 485,
+ "currentSeason": 6,
+ "nextEpisode": "S6E01",
+ "nextEpisodeTitle": "Equinox, Part 2",
  "watched": [
   {
    "series": "Voyager",
@@ -227,7 +227,10 @@
     "S5E20",
     "S5E21",
     "S5E22",
-    "S5E23"
+    "S5E23",
+    "S5E24",
+    "S5E25",
+    "S5E26"
    ]
   }
  ]
