@@ -1,6 +1,8 @@
 import { join } from "path";
 import { readFileSync, existsSync } from "fs";
 import progressData from "$lib/data/star-trek-progress.json";
+import seasonRecapsData from "../../../data/season-recaps.json";
+import seasonWordCountsData from "../../../data/season-word-counts.json";
 import { building } from "$app/environment";
 
 interface WatchedSeason {
@@ -26,6 +28,8 @@ function tryReadDataFile(path: string): any | null {
 }
 
 function loadSeasonWordCounts(): Record<string, Record<number, {words: number, journals: number}>> {
+  // Bundled import always available on Vercel (SvelteKit bundles it);
+  // runtime read used in dev where process.cwd() is the repo root.
   const path = join(process.cwd(), "data", "season-word-counts.json");
   const result: Record<string, Record<number, {words: number, journals: number}>> = {};
   try {
@@ -39,10 +43,18 @@ function loadSeasonWordCounts(): Record<string, Record<number, {words: number, j
   } catch {
     // fall through
   }
+  if (Object.keys(result).length === 0) {
+    for (const s of (seasonWordCountsData.seasons || [])) {
+      if (!result[s.series]) result[s.series] = {};
+      result[s.series][s.season] = { words: s.words, journals: s.journals };
+    }
+  }
   return result;
 }
 
 function loadSeasonRecaps(): Record<string, Record<string, string>> {
+  // Bundled import always available on Vercel (SvelteKit bundles it);
+  // runtime read used in dev where process.cwd() is the repo root.
   const path = join(process.cwd(), "data", "season-recaps.json");
   try {
     if (existsSync(path)) {
@@ -51,7 +63,7 @@ function loadSeasonRecaps(): Record<string, Record<string, string>> {
   } catch {
     // fall through
   }
-  return {};
+  return seasonRecapsData;
 }
 
 function computeCompletedSeasons(starTrek: any): CompletedSeason[] {
