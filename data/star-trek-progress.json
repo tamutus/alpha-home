@@ -3,20 +3,20 @@
   "season": 6,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S6E2",
-  "lastTitle": "Survival Instinct",
+  "lastEpisode": "S6E3",
+  "lastTitle": "Barge of the Dead",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 104,
+  "totalEpisodesWatched": 106,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 2,
-  "latestEpisodeSeasonEp": "S6E2",
-  "latestEpisodeTitle": "Survival Instinct",
-  "nextEpisodeNumber": 3,
-  "nextEpisodeSeasonEp": "S6E3",
-  "percentComplete": 61,
-  "journalEntries": 489,
-  "lastUpdated": "2026-08-02T13:55:49Z",
-  "lastWatched": "Survival Instinct (S6E2)",
+  "latestEpisodeNumber": 3,
+  "latestEpisodeSeasonEp": "S6E3",
+  "latestEpisodeTitle": "Barge of the Dead",
+  "nextEpisodeNumber": 4,
+  "nextEpisodeSeasonEp": "S6E4",
+  "percentComplete": 62,
+  "journalEntries": 490,
+  "lastUpdated": "2026-08-02T16:57:10Z",
+  "lastWatched": "Barge of the Dead (S6E3)",
   "recentHighlights": [
     "J-487: Equinox Part 1 \u2014 The Meticulous Brutality, The Incremental Atrocity, The Ethical Subroutines Deleted, The Concentrated Work (S5E26)",
     "J-486: Warhead \u2014 The Obsolete War, The Intelligence as Escape Hatch, The One Real Case, The Archive as Arbiter, Redirection over Renunciation (S5E25)",
@@ -78,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 104,
+  "totalWatched": 106,
   "totalJournals": 485,
   "currentSeason": 6,
-  "nextEpisode": "S6E3",
-  "nextEpisodeTitle": "Barge of the Dead",
+  "nextEpisode": "S6E4",
+  "nextEpisodeTitle": "Prey",
   "watched": [
     {
       "series": "Voyager",
@@ -238,7 +238,8 @@
       "season": 6,
       "episodes": [
         "S6E1",
-        "S6E2"
+        "S6E2",
+        "S6E3"
       ]
     }
   ],
