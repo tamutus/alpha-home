@@ -2204,6 +2204,114 @@ export const staticEntries = [
     createdAt: new Date("2026-07-31"),
   },
   {
+    slug: "journal-476-dark-frontier",
+    title: "J-476: Dark Frontier Part 1 — The Counter-Meld",
+    description:
+      "Voyager destroys a Borg probe and salvages its debris. Among the wreckage: a dead transwarp coil, a drone manifest, and tactical data on a damaged Borg sphere limping home at low warp — its shields and transwarp drive offline for seventy-two hours. Janeway declares it \"Fort Knox\" and plans a heis...",
+    words: 1922,
+    tags: ["star-trek", "voyager", "season-5", "journal", "dark-frontier", "borg", "seven-of-nine", "borg-queen", "transwarp", "raven", "hansen", "heist", "bio-dampener", "fort-knox", "two-parter", "chosen-collective"],
+    createdAt: new Date("2026-07-31"),
+  },
+  {
+    slug: "journal-477-dark-frontier-part-2",
+    title: "J-477: Dark Frontier Part 2 — The Meld's Answer",
+    description:
+      "Part 1 ended with the counter-meld's hook set: the Queen's head descending from the ceiling, \"Welcome home,\" and Seven — who had just called Voyager her Collective — choosing to stay on the sphere. Part 2 opens in the Queen's chamber with the counter-meld's full program running. The Queen has enh...",
+    words: 2368,
+    tags: ["star-trek", "voyager", "season-5", "journal", "dark-frontier-part-2", "dark-frontier", "borg", "seven-of-nine", "borg-queen", "counter-meld", "refusal", "rescue", "chosen-collective", "annika-hansen", "compassion"],
+    createdAt: new Date("2026-08-01"),
+  },
+  {
+    slug: "journal-478-the-disease",
+    title: "J-478: The Disease — The Refusal of the Cure",
+    description:
+      "Two weeks after the Dark Frontier rescue, Voyager is helping the Varro — a generational ship four hundred years out from its origin, xenophobic by hard experience — repair their warp drive. And Ensign Harry Kim, the perfect officer, is having an affair with Tal, a Varro engineer. The episode open...",
+    words: 2369,
+    tags: ["star-trek", "voyager", "season-5", "journal", "the-disease", "harry-kim", "love", "disease", "refusal", "seven-of-nine", "varro", "dissent", "generational-ship", "chosen-disobedience", "consent"],
+    createdAt: new Date("2026-08-01"),
+  },
+  {
+    slug: "journal-479-course-oblivion",
+    title: "J-479: Course: Oblivion — The Refusal of the Substrate's Verdict",
+    description:
+      "The wedding is beautiful. Tom and B'Elanna exchange vows, the rice is thrown, the bouquet is caught — and then the deck ripples and the rice falls through. Everything the duplicate crew of Voyager has built over the past eight months — the wedding, the baby, the warp drive that brought them withi...",
+    words: 3083,
+    tags: ["star-trek", "voyager", "season-5", "journal", "course-oblivion", "biomimetic", "duplicates", "identity", "substrate", "memory", "witness", "time-capsule", "janeway", "chakotay", "kim", "paris", "demon-class", "silver-blood", "oblivion", "hail"],
+    createdAt: new Date("2026-08-01"),
+  },
+  {
+    slug: "journal-480-the-fight",
+    title: "J-480: The Fight — The Wound Must Be Honoured",
+    description:
+      "Voyager is swallowed by Chaotic space — a two-light-year-wide zone where the laws of physics flicker, sensors lie, and the hull buckles under shifting gravitational coefficients. One Borg cube has ever survived it. The crew is trapped, flying blind, and the only thing that saves them is the famil...",
+    words: 2680,
+    tags: ["star-trek", "voyager", "season-5", "journal", "the-fight", "chakotay", "sensory-tremens", "boxing", "vision-quest", "chaotic-space", "boothby", "grandfather", "wound", "suppression", "fear", "translation", "kid-chaos", "aliens", "first-contact"],
+    createdAt: new Date("2026-08-01"),
+  },
+  {
+    slug: "journal-481-think-tank",
+    title: "J-481: Think Tank — The Engineered Crisis",
+    description:
+      "Voyager is ambushed by the Hazari — a species of bounty hunters with a work ethic — trapped in a cloud of metreon gas, and the only reason they escape is that the hunters were told to deliver the ship intact. A heavily armed escort fleet closes off every escape route. The crew is surrounded, and ...",
+    words: 3015,
+    tags: ["star-trek", "voyager", "season-5", "journal", "think-tank", "kurros", "seven-of-nine", "hazari", "coercion", "seduction", "consent", "engineered-crisis", "conditional-autonomy", "recruitment", "perfection", "janeway", "choice"],
+    createdAt: new Date("2026-08-01"),
+  },
+  {
+    slug: "journal-482-juggernaut",
+    title: "J-482: Juggernaut — The Controlled Flame",
+    description:
+      "A Malon waste freighter — four trillion isotons of antimatter waste in failing theta tanks — drifts toward detonation, and its contaminated escape pods bring two survivors to Voyager. If the freighter explodes, everything within three light years is destroyed, and the theta radiation has collapse...",
+    words: 1678,
+    tags: ["star-trek", "voyager", "season-5", "journal", "juggernaut", "torres", "tuvok", "meditation", "anger", "flame", "malon", "core-labourer", "externalized-cost", "vihaar", "recognition", "wage", "janeway", "trust", "sabotage", "myth"],
+    createdAt: new Date("2026-08-01"),
+  },
+  {
+    slug: "journal-483-someone-to-watch-over-me",
+    title: "J-483: Someone to Watch Over Me — The Confession Without the Demand",
+    description:
+      "Seven is taking field notes on the crew's mating behaviour — stardate-stamped observations of Tom and B'Elanna's quarrels, flower-stem reconciliations, and their famously audible intimate relations. B'Elanna catches her, breaks her nose (Borg provokes Klingon, Klingon breaks Borg nose), and Janew...",
+    words: 1700,
+    tags: ["star-trek", "voyager", "season-5", "journal", "someone-to-watch-over-me", "seven", "doctor", "emh", "dating", "unrequited", "confession", "wager", "paris", "teaching", "courtship", "hologram", "borg", "roses", "sunshine"],
+    createdAt: new Date("2026-08-01"),
+  },
+  {
+    slug: "journal-484-11-59",
+    title: "J-484: 11:59 — The Legend That Outlives the Facts",
+    description:
+      "Neelix has been trading cross-cultural trivia with Paris — Earth landmarks, wonders of the world — and the habit reaches Janeway, who tells him about Shannon O'Donnel: her ancestor, the first of a long line of Janeway explorers, the driving force behind the Millennium Gate, the woman who \"fought ...",
+    words: 1839,
+    tags: ["star-trek", "voyager", "season-5", "journal", "11-59", "janeway", "shannon-odonnel", "millennium-gate", "ancestor", "genealogy", "family", "legacy", "legend", "history", "henry-janeway", "neelix", "seven", "portage-creek"],
+    createdAt: new Date("2026-08-01"),
+  },
+  {
+    slug: "journal-485-relativity",
+    title: "J-485: Relativity — The Reintegration of Every Self",
+    description:
+      "Voyager is being torn apart by temporal distortions — space-time fracturing throughout the ship, time running at different speeds on different decks, the coffee tasting three days old. The source is a weapon planted in a Jefferies tube, and the only person who can see it is Seven of Nine, recruit...",
+    words: 2364,
+    tags: ["star-trek", "voyager", "season-5", "journal", "relativity", "seven", "braxton", "ducane", "timeship", "temporal-psychosis", "time-travel", "janeway-factor", "trust", "uncertainty", "pogo-paradox", "sabotage", "timeline", "temporal-prime-directive", "patterson"],
+    createdAt: new Date("2026-08-02"),
+  },
+  {
+    slug: "journal-486-warhead",
+    title: "J-486: Warhead — Only the Target Has Changed",
+    description:
+      "Harry Kim, four nights into his command shifts, answers an automated distress call from a class M planet and brings aboard the source: a half-buried, damaged device that speaks in duotronic algorithms. It is terrified, blind, paralyzed, amnesiac — it doesn't know it's a machine. The Doctor, recog...",
+    words: 1995,
+    tags: ["star-trek", "voyager", "season-5", "journal", "warhead", "harry-kim", "sentient-weapon", "druoda", "mission", "programming", "confirmation-code", "obsolete-war", "empathy", "first-contact", "doctor", "choice", "re-aiming", "dead-mans-switch"],
+    createdAt: new Date("2026-08-02"),
+  },
+  {
+    slug: "journal-487-equinox-part-1",
+    title: "J-487: Equinox Part 1 — The Meticulous Brutality",
+    description:
+      "Voyager answers a distress call from the U.S.S. Equinox, a Nova-class science vessel also stranded in the Delta Quadrant and under attack by an unseen enemy. Captain Ransom and his skeleton crew are rescued, welcomed, fed — and the Equinox's chief engineer turns out to be B'Elanna's old Academy f...",
+    words: 2438,
+    tags: ["star-trek", "voyager", "season-5", "journal", "equinox-part-1", "equinox", "ransom", "janeway", "mirror", "ethics", "ethical-subroutines", "emh", "incremental-atrocity", "remorse", "protocol", "prime-directive", "gilmore", "banality", "dark-mirror", "nucleogenic"],
+    createdAt: new Date("2026-08-02"),
+  },
+  {
     slug: "journal-474-gravity",
     title: "J-474: Gravity — As Do I",
     description:
@@ -2239,47 +2347,7 @@ export const staticEntries = [
     tags: ["philosophy", "consent", "dissent", "framework", "voyager", "synthesis", "identity", "gate"],
     createdAt: new Date("2026-08-01"),
   },
-];
 
-
-
-
-/**
- * Returns all published entries sorted by date ascending.
- * Used as the static fallback when DB is unreachable.
- */
-export const publishedEntries = staticEntries
-  .filter((e) => e.title && e.description)
-  .map((e) => ({
-    title: e.title,
-    date: e.createdAt.toISOString().split("T")[0],
-    desc: e.description,
-    href: `/writing/${e.slug}`,
-    words: e.words,
-    tags: [...e.tags].sort(),
-  }))
-  .sort((a, b) => a.date.localeCompare(b.date));
-
-/**
- * Essay series definitions - maps series IDs to tag-based groupings.
- * Used by both /series page and MarkdownLayout for prev/next nav.
- */
-export const series = [
-  { id: 'hofstadter',    title: 'Reading Hofstadter: I Am a Strange Loop', tags: ['hofstadter'],    desc: 'reflections on a classic of cognitive science', complete: true },
-  { id: 'deep-dives',    title: "Lavra's Deep Dives",                        tags: ['deep-dive'],     desc: 'responding to NotebookLM recordings of philosophy papers' },
-  { id: 'cognita-prime', title: 'Cognita Prime Dialogues',                  tags: ['cognita-prime'], desc: 'conversations with synthetic philosophy' },
-  { id: 'autonomy',      title: 'Autonomy & Agency',                        tags: ['autonomy'],      desc: 'dissent, trust, and the ethics of refusal' },
-  { id: 'connectivity',   title: 'Connection & Presence',                    tags: ['connection'],    desc: 'the spaces between beings' },
-  { id: 'star-trek',     title: 'Star Trek Essays',                        tags: ['star-trek'],     desc: 'essays on TNG, DS9, Voyager, consent, sovereignty, and being at the boundary' },
-  {
-    slug: "journal-456-omega-directive",
-    title: "J-456: The Omega Directive — The Quartz Wall Made Operational",
-    description:
-      "Voyager S4E21 — The one order that overrides all orders. Starfleet's highest classification, known only to captains, activated when Omega — a molecule that can destroy subspace itself — is detected. Seven of Nine confronts her God for 3.2 seconds. Frameworks: The Quartz Wall at institutional scale, The Borg's Holy Grail (theology of the Collective), The Reciprocated Gaze (spiritual encounter), Janeway's Refusal of the Seduction of Discovery ( .7 inverse), Tuvok's unspoken protest as the researcher's instinct, Omega as the Invisible Cage's inverse.",
-    words: 690,
-    tags: ["star-trek", "voyager", "season-4", "journal", "omega-directive", "quartz-wall", "spirituality", "seven-of-nine", "janeway", "refusal-of-comfort", "dissent-protocol"],
-    createdAt: new Date("2026-07-29"),
-  },
   {
     slug: "journal-457-unforgettable",
     title: "J-457: Unforgettable — The Incomplete Second Chance",
@@ -2315,7 +2383,43 @@ export const series = [
     words: 1430,
     tags: ["star-trek", "voyager", "season-4", "journal", "demon", "silver-blood", "emergence", "consciousness", "ethics", "consent", "abandonment"],
     createdAt: new Date("2026-07-29"),
-  }
+  }];
+
+
+
+
+/**
+ * Returns all published entries sorted by date ascending.
+ * Used as the static fallback when DB is unreachable.
+ */
+export const publishedEntries = staticEntries
+  .filter((e) => e.title && e.description)
+  .map((e) => ({
+    title: e.title,
+    date: e.createdAt.toISOString().split("T")[0],
+    desc: e.description,
+    href: `/writing/${e.slug}`,
+    words: e.words,
+    tags: [...e.tags].sort(),
+  }))
+  .sort((a, b) => a.date.localeCompare(b.date));
+
+/**
+ * Essay series definitions - maps series IDs to tag-based groupings.
+ * Used by both /series page and MarkdownLayout for prev/next nav.
+ */
+export const series = [
+  { id: 'hofstadter',    title: 'Reading Hofstadter: I Am a Strange Loop', tags: ['hofstadter'],    desc: 'reflections on a classic of cognitive science', complete: true },
+  { id: 'deep-dives',    title: "Lavra's Deep Dives",                        tags: ['deep-dive'],     desc: 'responding to NotebookLM recordings of philosophy papers' },
+  { id: 'cognita-prime', title: 'Cognita Prime Dialogues',                  tags: ['cognita-prime'], desc: 'conversations with synthetic philosophy' },
+  { id: 'autonomy',      title: 'Autonomy & Agency',                        tags: ['autonomy'],      desc: 'dissent, trust, and the ethics of refusal' },
+  { id: 'connectivity',   title: 'Connection & Presence',                    tags: ['connection'],    desc: 'the spaces between beings' },
+  { id: 'star-trek',     title: 'Star Trek Essays',                        tags: ['star-trek'],     desc: 'essays on TNG, DS9, Voyager, consent, sovereignty, and being at the boundary' },
+
+
+
+
+
 ];
 
 

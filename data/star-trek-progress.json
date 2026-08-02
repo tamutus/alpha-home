@@ -1,23 +1,24 @@
 {
  "series": "Voyager",
- "season": 5,
+ "season": 6,
  "seriesComplete": false,
  "seasonComplete": false,
- "lastEpisode": "S5E25",
- "lastTitle": "Warhead",
+ "lastEpisode": "S5E26",
+ "lastTitle": "Equinox, Part 1",
  "totalEpisodes": 170,
- "totalEpisodesWatched": 102,
+ "totalEpisodesWatched": 103,
  "currentSeasonTotalEpisodes": 26,
- "latestEpisodeNumber": 25,
- "latestEpisodeSeasonEp": "S5E25",
- "latestEpisodeTitle": "Warhead",
- "nextEpisodeNumber": 26,
- "nextEpisodeSeasonEp": "S5E26",
- "percentComplete": 60,
- "journalEntries": 486,
- "lastUpdated": "2026-08-02T04:53:00Z",
- "lastWatched": "Warhead (S5E25)",
+ "latestEpisodeNumber": 26,
+ "latestEpisodeSeasonEp": "S5E26",
+ "latestEpisodeTitle": "Equinox, Part 1",
+ "nextEpisodeNumber": 1,
+ "nextEpisodeSeasonEp": "S6E01",
+ "percentComplete": 61,
+ "journalEntries": 487,
+ "lastUpdated": "2026-08-02T07:55:53Z",
+ "lastWatched": "Equinox, Part 1 (S5E26)",
  "recentHighlights": [
+  "J-487: Equinox Part 1 \u2014 The Meticulous Brutality, The Incremental Atrocity, The Ethical Subroutines Deleted, The Concentrated Work (S5E26)",
   "J-486: Warhead \u2014 The Obsolete War, The Intelligence as Escape Hatch, The One Real Case, The Archive as Arbiter, Redirection over Renunciation (S5E25)",
   "J-484: 11:59 \u2014 Character Over Chromosomes, The Fragmented Archive, The Unstuck Present, The Cookie Test (S5E23)",
   "J-483: Someone to Watch Over Me \u2014 The Confession Without the Demand, The Wager's Taint, The Gift That Declines (S5E22)",
@@ -26,8 +27,7 @@
   "J-480: The Fight \u2014 The Wound Must Be Honoured, Taking the Shots, The Reciprocity of Alienness (S5E19)",
   "J-479: Course: Oblivion \u2014 The Refusal of the Substrate's Verdict, The Five Minutes and Thirty-Four Seconds (S5E18)",
   "J-478: The Disease \u2014 The Refusal of the Cure, Love is Not a Disease, The Ship That Survives Freedom (S5E17)",
-  "J-477: Dark Frontier Pt. 2 \u2014 The Meld's Answer, The Refusal That Costs Everything, Compassion as the Unassimilable (S5E16)",
-  "J-476: Dark Frontier Pt. 1 \u2014 The Counter-Meld, Raven's Treasure, Chosen Collective (S5E15)"
+  "J-477: Dark Frontier Pt. 2 \u2014 The Meld's Answer, The Refusal That Costs Everything, Compassion as the Unassimilable (S5E16)"
  ],
  "completedSeries": [
   {
@@ -78,11 +78,11 @@
    "episodes": 26
   }
  ],
- "totalWatched": 101,
+ "totalWatched": 103,
  "totalJournals": 485,
- "currentSeason": 5,
- "nextEpisode": "S5E26",
- "nextEpisodeTitle": "Ashes to Ashes",
+ "currentSeason": 6,
+ "nextEpisode": "S6E01",
+ "nextEpisodeTitle": "Equinox, Part 2",
  "watched": [
   {
    "series": "Voyager",
@@ -229,7 +229,8 @@
     "S5E22",
     "S5E23",
     "S5E24",
-    "S5E25"
+    "S5E25",
+    "S5E26"
    ]
   }
  ]
