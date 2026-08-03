@@ -159,6 +159,19 @@ def main():
         json.dump(data, f, indent=2)
         f.write("\n")
 
+    # Keep the bundled lib copy in sync — /now +page.server.ts imports from
+    # $lib/data/star-trek-progress.json FIRST (bundled at build time), so if
+    # this copy is stale the site shows old counts even after deploys.
+    # (Drift caught 2026-08-03: lib copy stuck at 103 eps while data/ had 127.)
+    lib_copy = os.path.join(os.path.dirname(script_dir), "src", "lib", "data", "star-trek-progress.json")
+    if os.path.exists(os.path.join(script_dir, "..", "src", "lib", "data", "star-trek-progress.json")):
+        lib_copy = os.path.normpath(os.path.join(script_dir, "..", "src", "lib", "data", "star-trek-progress.json"))
+    if os.path.exists(lib_copy):
+        with open(lib_copy, 'w') as f:
+            json.dump(data, f, indent=2)
+            f.write("\n")
+        print(f"   lib copy synced ({lib_copy})")
+
     print(f"✅ Progress synced: {ep_label} — {ep_title} (entry {entry_num})")
     print(f"   Total: {total_watched}/{series_total} ({percent}%) — S{season} ep {ep_num}/{current_season_total}")
 
