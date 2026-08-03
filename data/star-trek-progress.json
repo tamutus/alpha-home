@@ -3,21 +3,24 @@
   "season": 6,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S6E7",
-  "lastTitle": "Dragon's Teeth",
+  "lastEpisode": "S6E8",
+  "lastTitle": "One Small Step",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 127,
+  "totalEpisodesWatched": 128,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 7,
-  "latestEpisodeSeasonEp": "S6E7",
-  "latestEpisodeTitle": "Dragon's Teeth",
-  "nextEpisodeNumber": 8,
-  "nextEpisodeSeasonEp": "S6E8",
+  "latestEpisodeNumber": 8,
+  "latestEpisodeSeasonEp": "S6E8",
+  "latestEpisodeTitle": "One Small Step",
+  "nextEpisodeNumber": 9,
+  "nextEpisodeSeasonEp": "S6E9",
   "percentComplete": 75,
-  "journalEntries": 494,
-  "lastUpdated": "2026-08-03T06:58:43Z",
-  "lastWatched": "Dragon's Teeth (S6E7)",
+  "journalEntries": 495,
+  "lastUpdated": "2026-08-03T08:55:38Z",
+  "lastWatched": "One Small Step (S6E8)",
   "recentHighlights": [
+    "J-495: One Small Step \u2014 The Bookended Flight, The Last Reading, The Regret Completed, Probes vs Starships, The Obsession Check, Not Unlike a Quest for Perfection (S6E8)",
+    "J-494: Dragon's Teeth \u2014 The Dragon's Teeth, The Etymology of the Defeated, The Folklore as Debris Check, The Reviver's Responsibility, The Umbrella, The Oral Map (S6E7)",
+    "J-493: Riddles \u2014 The Riddle of the Self, The Cure as Erasure, The Patient's History (S6E6)",
     "J-492: Alice \u2014 The Amplified Wound, The Recited Myth, The Interface That Replaces the Self, The Alarm Clock Witness, The Destination Test, The Sleepwalking Confession (S6E5)",
     "J-487: Equinox Part 1 \u2014 The Meticulous Brutality, The Incremental Atrocity, The Ethical Subroutines Deleted, The Concentrated Work (S5E26)",
     "J-486: Warhead \u2014 The Obsolete War, The Intelligence as Escape Hatch, The One Real Case, The Archive as Arbiter, Redirection over Renunciation (S5E25)",
@@ -63,7 +66,7 @@
   "completedSeasons": [
     {
       "season": 1,
-      "episodes": 15
+      "episodes": 16
     },
     {
       "season": 2,
@@ -78,11 +81,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 127,
+  "totalWatched": 128,
   "totalJournals": 487,
   "currentSeason": 6,
-  "nextEpisode": "S6E8",
-  "nextEpisodeTitle": "One Small Step",
+  "nextEpisode": "S6E9",
+  "nextEpisodeTitle": "The Voyager Conspiracy",
   "watched": [
     {
       "series": "Voyager",
@@ -243,10 +246,11 @@
         "S6E4",
         "S6E5",
         "S6E6",
-        "S6E7"
+        "S6E7",
+        "S6E8"
       ]
     }
   ],
-  "percentWatched": 63,
-  "nextTitle": "Memorial"
+  "percentWatched": 75,
+  "nextTitle": "The Voyager Conspiracy"
 }
