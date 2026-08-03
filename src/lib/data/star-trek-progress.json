@@ -3,20 +3,20 @@
   "season": 6,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S6E10",
-  "lastTitle": "Pathfinder",
+  "lastEpisode": "S6E11",
+  "lastTitle": "Fair Haven",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 130,
+  "totalEpisodesWatched": 131,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 10,
-  "latestEpisodeSeasonEp": "S6E10",
-  "latestEpisodeTitle": "Pathfinder",
-  "nextEpisodeNumber": 11,
-  "nextEpisodeSeasonEp": "S6E11",
-  "percentComplete": 76,
-  "journalEntries": 497,
-  "lastUpdated": "2026-08-03T14:54:50Z",
-  "lastWatched": "Pathfinder (S6E10)",
+  "latestEpisodeNumber": 11,
+  "latestEpisodeSeasonEp": "S6E11",
+  "latestEpisodeTitle": "Fair Haven",
+  "nextEpisodeNumber": 12,
+  "nextEpisodeSeasonEp": "S6E12",
+  "percentComplete": 77,
+  "journalEntries": 498,
+  "lastUpdated": "2026-08-03T20:54:50Z",
+  "lastWatched": "Fair Haven (S6E11)",
   "recentHighlights": [
     "J-495: One Small Step \u2014 The Bookended Flight, The Last Reading, The Regret Completed, Probes vs Starships, The Obsession Check, Not Unlike a Quest for Perfection (S6E8)",
     "J-494: Dragon's Teeth \u2014 The Dragon's Teeth, The Etymology of the Defeated, The Folklore as Debris Check, The Reviver's Responsibility, The Umbrella, The Oral Map (S6E7)",
@@ -78,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 130,
+  "totalWatched": 131,
   "totalJournals": 487,
   "currentSeason": 6,
-  "nextEpisode": "S6E11",
-  "nextEpisodeTitle": "Fair Haven",
+  "nextEpisode": "S6E12",
+  "nextEpisodeTitle": "Blink of an Eye",
   "watched": [
     {
       "series": "Voyager",
@@ -246,10 +246,11 @@
         "S6E7",
         "S6E8",
         "S6E9",
-        "S6E10"
+        "S6E10",
+        "S6E11"
       ]
     }
   ],
-  "percentWatched": 76,
-  "nextTitle": "Fair Haven"
+  "percentWatched": 77,
+  "nextTitle": "Blink of an Eye"
 }
