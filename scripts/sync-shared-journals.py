@@ -21,14 +21,43 @@ SERIES_TAGS = {
 }
 
 def parse_shared_journal(filepath):
-    """Parse a shared .md journal file and return (title, description, body, tags, date, entry_num)."""
+    """Parse a shared .md journal file and return (title, description, body, tags, date, entry_num, has_frontmatter)."""
     with open(filepath) as f:
         content = f.read()
 
-    # Extract entry number from filename
+    # Extract entry number from filename — supports all conventions seen in the
+    # shared repo: journal-448-waking-moments.md, J-496-the-voyager-conspiracy.md,
+    # j-442-the-raven.md, 452.md, 465-in-the-flesh.md
     basename = os.path.basename(filepath)
-    entry_match = re.search(r'journal-(\d+)\.md', basename)
+    entry_match = re.search(r'(?:journal-|J-|j-)?(\d+)(?:-[a-z0-9-]+)?\.md', basename)
     entry_num = int(entry_match.group(1)) if entry_match else 0
+
+    # Newer journals (J-493+) carry full YAML frontmatter already in site format.
+    # Detect it and prefer those fields over regex scraping.
+    has_frontmatter = False
+    if content.startswith('---'):
+        fm_match = re.match(r'^---\n(.*?)\n---\n', content, re.DOTALL)
+        if fm_match:
+            has_frontmatter = True
+            fm = {}
+            for line in fm_match.group(1).splitlines():
+                m = re.match(r'^([a-zA-Z_]+):\s*(.*)$', line)
+                if m:
+                    fm[m.group(1)] = m.group(2).strip().strip('"')
+            if fm.get('title'):
+                title = fm['title']
+            else:
+                title_match = re.search(r'^# (.+)', content, re.MULTILINE)
+                title = title_match.group(1).strip() if title_match else f"Journal {entry_num}"
+            date = fm.get('date') or datetime.now(timezone.utc).strftime("%Y-%m-%d")
+            tags = ["star-trek"]
+            if fm.get('series'):
+                tags.append(fm['series'].lower().replace(' ', '-'))
+            if fm.get('season'):
+                tags.append(f"season-{fm['season']}")
+            if fm.get('episode'):
+                tags.append(f"s{fm['season']}e{fm['episode']}")
+            return title, '', content, tags, date, entry_num, has_frontmatter
 
     # Extract title from first # heading
     title_match = re.search(r'^# (.+)', content, re.MULTILINE)
@@ -84,7 +113,7 @@ def parse_shared_journal(filepath):
     if season_ep:
         tags.append(f"s{season_ep.group(1)}e{season_ep.group(2)}")
 
-    return title, desc, content, tags, date, entry_num
+    return title, desc, content, tags, date, entry_num, has_frontmatter
 
 
 def site_page_md(title, description, date, tags, body):
@@ -110,10 +139,15 @@ words: {words}
 
 def main():
     synced = 0
-    # Find all shared journal files
+    # Find all shared journal files — any of the naming conventions:
+    #   journal-448-waking-moments.md   (old style)
+    #   J-496-the-voyager-conspiracy.md (new style, since ~J-444)
+    #   j-442-the-raven.md / 452.md     (misc subdir stragglers)
     for root, dirs, files in os.walk(SHARED_DIR):
         for fname in files:
-            if not fname.startswith("journal-") or not fname.endswith(".md"):
+            if not fname.endswith(".md"):
+                continue
+            if not re.match(r'(?:journal-|J-|j-)?\d+(?:-[a-z0-9-]+)?\.md', fname):
                 continue
             if fname == "journal-latest.md":
                 continue
@@ -121,7 +155,7 @@ def main():
             filepath = os.path.join(root, fname)
 
             # Extract entry number
-            entry_match = re.search(r'journal-(\d+)\.md', fname)
+            entry_match = re.search(r'(?:journal-|J-|j-)?(\d+)', fname)
             if not entry_match:
                 continue
             entry_num = int(entry_match.group(1))
@@ -136,23 +170,35 @@ def main():
                     continue
                 if not d.startswith(f"journal-{entry_num}-") and d != f"journal-{entry_num}":
                     continue  # e.g. journal-4240 doesn't count
-                if os.path.exists(os.path.join(JOURNAL_DIR, d, "+page.md")) or os.path.exists(os.path.join(JOURNAL_DIR, d, "+page.svelte")):
+                if os.path.exists(os.path.join(JOURNAL_DIR, d, "+page.md")) or os.path.exists(os.path.join(JOURNAL_DIR, d, "+page.svelte")) or os.path.exists(os.path.join(JOURNAL_DIR, d, "+page.svx")):
                     already = True
                     break
             if already:
                 continue
 
             # Parse and convert
-            title, desc, body, tags, date, en = parse_shared_journal(filepath)
-            page_content = site_page_md(title, desc, date, tags, body)
+            title, desc, body, tags, date, en, has_fm = parse_shared_journal(filepath)
 
-            # Write
-            page_dir = os.path.join(JOURNAL_DIR, f"journal-{entry_num}")
+            # Newer journals already carry site-format frontmatter → copy as .svx
+            # (Quote.svelte imports need .svx; frontmatter preserved verbatim).
+            # Older journals get the regex-scraped conversion to +page.md.
+            if has_fm:
+                page_content = body  # frontmatter + body, already in site format
+                page_name = "+page.svx"
+            else:
+                page_content = site_page_md(title, desc, date, tags, body)
+                page_name = "+page.md"
+
+            # Write — preserve the slug when the shared file has one, so routes
+            # stay stable across re-syncs (journal-496 stays journal-496-...).
+            slug_match = re.search(r'(?:journal-|J-|j-)?\d+-(.+?)(?:\.md)?$', fname)
+            dir_name = f"journal-{entry_num}-{slug_match.group(1)}" if slug_match else f"journal-{entry_num}"
+            page_dir = os.path.join(JOURNAL_DIR, dir_name)
             os.makedirs(page_dir, exist_ok=True)
-            with open(os.path.join(page_dir, "+page.md"), "w") as f:
+            with open(os.path.join(page_dir, page_name), "w") as f:
                 f.write(page_content)
 
-            print(f"✅ Synced journal-{entry_num}: \"{title}\"")
+            print(f"✅ Synced {dir_name}: \"{title}\"")
             synced += 1
 
     if synced == 0:
