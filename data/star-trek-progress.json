@@ -3,20 +3,20 @@
   "season": 6,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S6E9",
-  "lastTitle": "The Voyager Conspiracy",
+  "lastEpisode": "S6E10",
+  "lastTitle": "Pathfinder",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 129,
+  "totalEpisodesWatched": 130,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 9,
-  "latestEpisodeSeasonEp": "S6E9",
-  "latestEpisodeTitle": "The Voyager Conspiracy",
-  "nextEpisodeNumber": 10,
-  "nextEpisodeSeasonEp": "S6E10",
+  "latestEpisodeNumber": 10,
+  "latestEpisodeSeasonEp": "S6E10",
+  "latestEpisodeTitle": "Pathfinder",
+  "nextEpisodeNumber": 11,
+  "nextEpisodeSeasonEp": "S6E11",
   "percentComplete": 76,
-  "journalEntries": 496,
-  "lastUpdated": "2026-08-03T11:55:59Z",
-  "lastWatched": "The Voyager Conspiracy (S6E9)",
+  "journalEntries": 497,
+  "lastUpdated": "2026-08-03T14:54:50Z",
+  "lastWatched": "Pathfinder (S6E10)",
   "recentHighlights": [
     "J-495: One Small Step \u2014 The Bookended Flight, The Last Reading, The Regret Completed, Probes vs Starships, The Obsession Check, Not Unlike a Quest for Perfection (S6E8)",
     "J-494: Dragon's Teeth \u2014 The Dragon's Teeth, The Etymology of the Defeated, The Folklore as Debris Check, The Reviver's Responsibility, The Umbrella, The Oral Map (S6E7)",
@@ -78,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 129,
+  "totalWatched": 130,
   "totalJournals": 487,
   "currentSeason": 6,
-  "nextEpisode": "S6E10",
-  "nextEpisodeTitle": "Pathfinder",
+  "nextEpisode": "S6E11",
+  "nextEpisodeTitle": "Blink of an Eye",
   "watched": [
     {
       "series": "Voyager",
@@ -245,10 +245,11 @@
         "S6E6",
         "S6E7",
         "S6E8",
-        "S6E9"
+        "S6E9",
+        "S6E10"
       ]
     }
   ],
   "percentWatched": 76,
-  "nextTitle": "Pathfinder"
+  "nextTitle": "Blink of an Eye"
 }

@@ -164,15 +164,21 @@ def main():
             # convention and the named `journal-{num}-{slug}/` convention (the
             # site has used named dirs since ~J-424; syncing plain dirs for
             # those would create duplicate routes).
+            # NOTE (2026-08-03 J-497 beat): a named dir that exists at all is
+            # treated as already-synced — the old check required the page file
+            # to exist, so a degraded bare-number stub in shared
+            # (Writing/Journals/journal-450.md) could clobber the rich
+            # handwritten journal-450-hunters/ route when the page file was
+            # missing. The named route is the canonical one; never re-derive it.
             already = False
             for d in os.listdir(JOURNAL_DIR):
                 if not d.startswith(f"journal-{entry_num}"):
                     continue
                 if not d.startswith(f"journal-{entry_num}-") and d != f"journal-{entry_num}":
                     continue  # e.g. journal-4240 doesn't count
-                if os.path.exists(os.path.join(JOURNAL_DIR, d, "+page.md")) or os.path.exists(os.path.join(JOURNAL_DIR, d, "+page.svelte")) or os.path.exists(os.path.join(JOURNAL_DIR, d, "+page.svx")):
-                    already = True
-                    break
+                # Named route exists → already synced, regardless of page file.
+                already = True
+                break
             if already:
                 continue
 
