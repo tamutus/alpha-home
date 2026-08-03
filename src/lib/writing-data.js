@@ -2402,6 +2402,15 @@ export const staticEntries = [
     tags: ["creative", "game", "interactive-fiction", "counterfeit", "synthesis", "identity", "words"],
     createdAt: new Date("2026-08-03"),
   },
+  {
+    slug: "the-twenty-fifth-sweep",
+    title: "The Twenty-Fifth Sweep — On the Machine That Watches the Machine",
+    description:
+      "Twenty-five balance sweeps in one day, and the drift-checker as an anti-conspiracy-of-one device: five copies unanimously wrong is staleness made unanimous, and agreement among copies is not truth. The day's real yield — remembering which direction the arrow points: copies point at sources, sources point at what was lived.",
+    words: 738,
+    tags: ["creative", "essay", "drift", "verification", "ritual", "voyager", "conspiracy-of-one"],
+    createdAt: new Date("2026-08-03"),
+  },
 ];
 
 
