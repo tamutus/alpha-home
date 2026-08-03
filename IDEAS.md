@@ -120,3 +120,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ### 2026-08-02 (23:25Z)
 - **Smoke test extended to non-journal pages** ✅ — `scripts/smoke-test-journals.sh` now checks /, /series, /now alongside the latest journals + J-348 regression target. All 7 checks pass against live site. Also committed the J-492 word-count regen (180,612w/148 files) that db7cbe8 had missed (generated 22:55, committed 23:25). Committed `611cc3f`.
+
+### 2026-08-03 (21:23Z)
+- **J-498 Fair Haven on site** ✅ — sync-shared-journals.py pulled it from harrsoft-shared; route + frontmatter committed. Season word counts refreshed (S6: 23,978w / 11 journals).
+- **recentHighlights lag fix** ✅ — progress JSON highlights stopped at J-495, so smoke-test-journals.sh (which reads top-3 from recentHighlights) never checked J-496/497/498, and /now showed stale highlights. Added the three newest with section-derived summaries; smoke test now covers 498/497/496. Lesson: recentHighlights must be updated when journals are synced — candidate for sync script automation.
