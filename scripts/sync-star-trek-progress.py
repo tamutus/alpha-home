@@ -65,13 +65,18 @@ def main():
     elif "Voyager" in series:
         series_total = 170  # site canonical: 7 seasons (16+26+26+26+26+26+24=170), NOT 172
 
-    # Preserve or estimate total watched count
-    # Prefer the old data's count if it exists and seems right
-    total_watched = old_data.get("totalEpisodesWatched", 0)
+    # Recompute total watched count from the watched array (the site's
+    # source of truth). The old preserved-count approach drifted badly
+    # (S6E5 was missing for two commits; counter diverged from the array).
+    # Convention: entries like "S1E01-02" (double-length pilot) count as 2.
+    watched_list = old_data.get("watched", [])
+    total_watched = 0
+    for block in watched_list:
+        for ep in block.get("episodes", []):
+            total_watched += 2 if "-" in ep else 1
 
-    # If old count seems stale (< 20 per season gap check), recalculate
+    # Fallback estimate if the array is empty/unavailable
     if total_watched == 0:
-        # Estimate: sum full previous seasons + current episode
         prev_total = sum(season_totals.get(i, 26) for i in range(1, season))
         total_watched = prev_total + ep_num
         if "TNG" in series or "Next Generation" in series:

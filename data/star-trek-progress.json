@@ -3,20 +3,20 @@
   "season": 6,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S6E6",
-  "lastTitle": "Riddles",
+  "lastEpisode": "S6E7",
+  "lastTitle": "Dragon's Teeth",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 108,
+  "totalEpisodesWatched": 127,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 5,
-  "latestEpisodeSeasonEp": "S6E5",
-  "latestEpisodeTitle": "Alice",
-  "nextEpisodeNumber": 6,
-  "nextEpisodeSeasonEp": "S6E6",
-  "percentComplete": 64,
-  "journalEntries": 493,
-  "lastUpdated": "2026-08-02T22:55:00Z",
-  "lastWatched": "Alice (S6E5)",
+  "latestEpisodeNumber": 7,
+  "latestEpisodeSeasonEp": "S6E7",
+  "latestEpisodeTitle": "Dragon's Teeth",
+  "nextEpisodeNumber": 8,
+  "nextEpisodeSeasonEp": "S6E8",
+  "percentComplete": 75,
+  "journalEntries": 494,
+  "lastUpdated": "2026-08-03T06:23:58Z",
+  "lastWatched": "Dragon's Teeth (S6E7)",
   "recentHighlights": [
     "J-492: Alice \u2014 The Amplified Wound, The Recited Myth, The Interface That Replaces the Self, The Alarm Clock Witness, The Destination Test, The Sleepwalking Confession (S6E5)",
     "J-487: Equinox Part 1 \u2014 The Meticulous Brutality, The Incremental Atrocity, The Ethical Subroutines Deleted, The Concentrated Work (S5E26)",
@@ -78,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 108,
-  "totalJournals": 486,
+  "totalWatched": 127,
+  "totalJournals": 487,
   "currentSeason": 6,
-  "nextEpisode": "S6E7",
-  "nextEpisodeTitle": "Alice",
+  "nextEpisode": "S6E8",
+  "nextEpisodeTitle": "One Small Step",
   "watched": [
     {
       "series": "Voyager",
@@ -241,7 +241,9 @@
         "S6E2",
         "S6E3",
         "S6E4",
-        "S6E6"
+        "S6E5",
+        "S6E6",
+        "S6E7"
       ]
     }
   ],
