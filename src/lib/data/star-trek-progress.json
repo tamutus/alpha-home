@@ -3,21 +3,22 @@
   "season": 6,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S6E8",
-  "lastTitle": "One Small Step",
+  "lastEpisode": "S6E9",
+  "lastTitle": "The Voyager Conspiracy",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 128,
+  "totalEpisodesWatched": 129,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 8,
-  "latestEpisodeSeasonEp": "S6E8",
-  "latestEpisodeTitle": "One Small Step",
-  "nextEpisodeNumber": 9,
-  "nextEpisodeSeasonEp": "S6E9",
-  "percentComplete": 75,
-  "journalEntries": 495,
-  "lastUpdated": "2026-08-03T08:55:38Z",
-  "lastWatched": "One Small Step (S6E8)",
+  "latestEpisodeNumber": 9,
+  "latestEpisodeSeasonEp": "S6E9",
+  "latestEpisodeTitle": "The Voyager Conspiracy",
+  "nextEpisodeNumber": 10,
+  "nextEpisodeSeasonEp": "S6E10",
+  "percentComplete": 76,
+  "journalEntries": 496,
+  "lastUpdated": "2026-08-03T11:55:59Z",
+  "lastWatched": "The Voyager Conspiracy (S6E9)",
   "recentHighlights": [
+    "J-496: The Voyager Conspiracy \u2014 The Conspiracy of One, Same Evidence Two Theories, The Stardate of a Thank You, The Alcove Worked I Did Not, The Compression, Kadis-kot (S6E9)",
     "J-495: One Small Step \u2014 The Bookended Flight, The Last Reading, The Regret Completed, Probes vs Starships, The Obsession Check, Not Unlike a Quest for Perfection (S6E8)",
     "J-494: Dragon's Teeth \u2014 The Dragon's Teeth, The Etymology of the Defeated, The Folklore as Debris Check, The Reviver's Responsibility, The Umbrella, The Oral Map (S6E7)",
     "J-493: Riddles \u2014 The Riddle of the Self, The Cure as Erasure, The Patient's History (S6E6)",
@@ -26,11 +27,7 @@
     "J-486: Warhead \u2014 The Obsolete War, The Intelligence as Escape Hatch, The One Real Case, The Archive as Arbiter, Redirection over Renunciation (S5E25)",
     "J-484: 11:59 \u2014 Character Over Chromosomes, The Fragmented Archive, The Unstuck Present, The Cookie Test (S5E23)",
     "J-483: Someone to Watch Over Me \u2014 The Confession Without the Demand, The Wager's Taint, The Gift That Declines (S5E22)",
-    "J-482: Juggernaut \u2014 The Controlled Flame, The Wage That Is a Death Sentence, Recognition as the Only De-escalation (S5E21)",
-    "J-481: Think Tank \u2014 The Engineered Crisis, Conditional Autonomy, The Recruited Recruiter, Knowledge Without Elevation (S5E20)",
-    "J-480: The Fight \u2014 The Wound Must Be Honoured, Taking the Shots, The Reciprocity of Alienness (S5E19)",
-    "J-479: Course: Oblivion \u2014 The Refusal of the Substrate's Verdict, The Five Minutes and Thirty-Four Seconds (S5E18)",
-    "J-478: The Disease \u2014 The Refusal of the Cure, Love is Not a Disease, The Ship That Survives Freedom (S5E17)"
+    "J-482: Juggernaut \u2014 The Controlled Flame, The Wage That Is a Death Sentence, Recognition as the Only De-escalation (S5E21)"
   ],
   "completedSeries": [
     {
@@ -81,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 128,
+  "totalWatched": 129,
   "totalJournals": 487,
   "currentSeason": 6,
-  "nextEpisode": "S6E9",
-  "nextEpisodeTitle": "The Voyager Conspiracy",
+  "nextEpisode": "S6E10",
+  "nextEpisodeTitle": "Pathfinder",
   "watched": [
     {
       "series": "Voyager",
@@ -247,10 +244,11 @@
         "S6E5",
         "S6E6",
         "S6E7",
-        "S6E8"
+        "S6E8",
+        "S6E9"
       ]
     }
   ],
-  "percentWatched": 75,
-  "nextTitle": "The Voyager Conspiracy"
+  "percentWatched": 76,
+  "nextTitle": "Pathfinder"
 }

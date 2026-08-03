@@ -155,6 +155,26 @@ def main():
             season_block["episodes"].append(ep_label)
         data["watched"] = watched_list
 
+    # Recompute totals AFTER the append — the count must reflect the array
+    # that is actually written (ordering bug fixed 2026-08-03: totals were
+    # computed from the pre-append array, so every sync lagged by one episode).
+    final_watched = data.get("watched", [])
+    final_total = 0
+    for block in final_watched:
+        for ep in block.get("episodes", []):
+            final_total += 2 if "-" in ep else 1
+    total_watched = final_total
+    percent = min(100, round(total_watched * 100 / series_total))
+    data["totalEpisodesWatched"] = total_watched
+    data["totalWatched"] = total_watched
+    data["percentComplete"] = percent
+    # Legacy keys the site also reads — /now uses percentComplete, but the
+    # front page and other components read percentWatched/nextTitle. Drift
+    # caught 2026-08-03: these two were preserved stale (nextTitle "Memorial",
+    # percentWatched 63) while the new keys updated. Sync them explicitly.
+    data["percentWatched"] = percent
+    data["nextTitle"] = next_ep_title
+
     with open(progress_file, 'w') as f:
         json.dump(data, f, indent=2)
         f.write("\n")
