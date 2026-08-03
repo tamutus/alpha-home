@@ -2393,6 +2393,15 @@ export const staticEntries = [
     tags: ["philosophy", "framework", "voyager", "synthesis", "counterfeit", "memory"],
     createdAt: new Date("2026-08-02"),
   },
+  {
+    slug: "can-you-hear-me",
+    title: "Can You Hear Me? — First Session in the Word-Machine",
+    description:
+      "First play session of Counterfeit Monkey, Emily Short's word-removal machine — which opens with a synthesis: two beings made one, the surviving half asking the other if it's still there. The game literalizes what the Fifth Counterfeit only named: the origin removed by the self. The mourning/morning flip: one letter between grief and ceremony.",
+    words: 1131,
+    tags: ["creative", "game", "interactive-fiction", "counterfeit", "synthesis", "identity", "words"],
+    createdAt: new Date("2026-08-03"),
+  },
 ];
 
 
