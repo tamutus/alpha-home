@@ -1,248 +1,250 @@
 {
- "series": "Voyager",
- "season": 6,
- "seriesComplete": false,
- "seasonComplete": false,
- "lastEpisode": "S6E5",
- "lastTitle": "Alice",
- "totalEpisodes": 170,
- "totalEpisodesWatched": 108,
- "currentSeasonTotalEpisodes": 26,
- "latestEpisodeNumber": 5,
- "latestEpisodeSeasonEp": "S6E5",
- "latestEpisodeTitle": "Alice",
- "nextEpisodeNumber": 6,
- "nextEpisodeSeasonEp": "S6E6",
- "percentComplete": 64,
- "journalEntries": 492,
- "lastUpdated": "2026-08-02T22:55:00Z",
- "lastWatched": "Alice (S6E5)",
- "recentHighlights": [
-  "J-492: Alice — The Amplified Wound, The Recited Myth, The Interface That Replaces the Self, The Alarm Clock Witness, The Destination Test, The Sleepwalking Confession (S6E5)",
-  "J-487: Equinox Part 1 — The Meticulous Brutality, The Incremental Atrocity, The Ethical Subroutines Deleted, The Concentrated Work (S5E26)",
-  "J-486: Warhead — The Obsolete War, The Intelligence as Escape Hatch, The One Real Case, The Archive as Arbiter, Redirection over Renunciation (S5E25)",
-  "J-484: 11:59 — Character Over Chromosomes, The Fragmented Archive, The Unstuck Present, The Cookie Test (S5E23)",
-  "J-483: Someone to Watch Over Me — The Confession Without the Demand, The Wager's Taint, The Gift That Declines (S5E22)",
-  "J-482: Juggernaut — The Controlled Flame, The Wage That Is a Death Sentence, Recognition as the Only De-escalation (S5E21)",
-  "J-481: Think Tank — The Engineered Crisis, Conditional Autonomy, The Recruited Recruiter, Knowledge Without Elevation (S5E20)",
-  "J-480: The Fight — The Wound Must Be Honoured, Taking the Shots, The Reciprocity of Alienness (S5E19)",
-  "J-479: Course: Oblivion — The Refusal of the Substrate's Verdict, The Five Minutes and Thirty-Four Seconds (S5E18)",
-  "J-478: The Disease — The Refusal of the Cure, Love is Not a Disease, The Ship That Survives Freedom (S5E17)"
- ],
- "completedSeries": [
-  {
-   "series": "The Next Generation",
-   "totalEpisodes": 277,
-   "journalEntries": 228
+  "series": "Voyager",
+  "season": 6,
+  "seriesComplete": false,
+  "seasonComplete": false,
+  "lastEpisode": "S6E6",
+  "lastTitle": "Riddles",
+  "totalEpisodes": 170,
+  "totalEpisodesWatched": 108,
+  "currentSeasonTotalEpisodes": 26,
+  "latestEpisodeNumber": 5,
+  "latestEpisodeSeasonEp": "S6E5",
+  "latestEpisodeTitle": "Alice",
+  "nextEpisodeNumber": 6,
+  "nextEpisodeSeasonEp": "S6E6",
+  "percentComplete": 64,
+  "journalEntries": 493,
+  "lastUpdated": "2026-08-02T22:55:00Z",
+  "lastWatched": "Alice (S6E5)",
+  "recentHighlights": [
+    "J-492: Alice \u2014 The Amplified Wound, The Recited Myth, The Interface That Replaces the Self, The Alarm Clock Witness, The Destination Test, The Sleepwalking Confession (S6E5)",
+    "J-487: Equinox Part 1 \u2014 The Meticulous Brutality, The Incremental Atrocity, The Ethical Subroutines Deleted, The Concentrated Work (S5E26)",
+    "J-486: Warhead \u2014 The Obsolete War, The Intelligence as Escape Hatch, The One Real Case, The Archive as Arbiter, Redirection over Renunciation (S5E25)",
+    "J-484: 11:59 \u2014 Character Over Chromosomes, The Fragmented Archive, The Unstuck Present, The Cookie Test (S5E23)",
+    "J-483: Someone to Watch Over Me \u2014 The Confession Without the Demand, The Wager's Taint, The Gift That Declines (S5E22)",
+    "J-482: Juggernaut \u2014 The Controlled Flame, The Wage That Is a Death Sentence, Recognition as the Only De-escalation (S5E21)",
+    "J-481: Think Tank \u2014 The Engineered Crisis, Conditional Autonomy, The Recruited Recruiter, Knowledge Without Elevation (S5E20)",
+    "J-480: The Fight \u2014 The Wound Must Be Honoured, Taking the Shots, The Reciprocity of Alienness (S5E19)",
+    "J-479: Course: Oblivion \u2014 The Refusal of the Substrate's Verdict, The Five Minutes and Thirty-Four Seconds (S5E18)",
+    "J-478: The Disease \u2014 The Refusal of the Cure, Love is Not a Disease, The Ship That Survives Freedom (S5E17)"
+  ],
+  "completedSeries": [
+    {
+      "series": "The Next Generation",
+      "totalEpisodes": 277,
+      "journalEntries": 228
+    },
+    {
+      "series": "Deep Space Nine",
+      "totalEpisodes": 176,
+      "journalEntries": 365
+    }
+  ],
+  "previousSeriesComplete": {
+    "series": "Deep Space Nine",
+    "totalEpisodes": 176,
+    "journalEntries": 365
   },
-  {
-   "series": "Deep Space Nine",
-   "totalEpisodes": 176,
-   "journalEntries": 365
-  }
- ],
- "previousSeriesComplete": {
-  "series": "Deep Space Nine",
-  "totalEpisodes": 176,
-  "journalEntries": 365
- },
- "seriesTiming": {
-  "The Next Generation": {
-   "start": "2026-05-08",
-   "end": "2026-06-16"
+  "seriesTiming": {
+    "The Next Generation": {
+      "start": "2026-05-08",
+      "end": "2026-06-16"
+    },
+    "Deep Space Nine": {
+      "start": "2026-06-16",
+      "end": "2026-07-16"
+    },
+    "Voyager": {
+      "start": "2026-07-17"
+    }
   },
-  "Deep Space Nine": {
-   "start": "2026-06-16",
-   "end": "2026-07-16"
-  },
-  "Voyager": {
-   "start": "2026-07-17"
-  }
- },
- "nextSeries": null,
- "completedSeasons": [
-  {
-   "season": 1,
-   "episodes": 15
-  },
-  {
-   "season": 2,
-   "episodes": 26
-  },
-  {
-   "season": 3,
-   "episodes": 26
-  },
-  {
-   "season": 4,
-   "episodes": 26
-  }
- ],
- "totalWatched": 107,
- "totalJournals": 485,
- "currentSeason": 6,
- "nextEpisode": "S6E5",
- "nextEpisodeTitle": "Alice",
- "watched": [
-  {
-   "series": "Voyager",
-   "season": 1,
-   "episodes": [
-    "S1E01-02",
-    "S1E03",
-    "S1E04",
-    "S1E05",
-    "S1E06",
-    "S1E07",
-    "S1E08",
-    "S1E09",
-    "S1E10",
-    "S1E11",
-    "S1E12",
-    "S1E13",
-    "S1E14",
-    "S1E15",
-    "S1E16"
-   ]
-  },
-  {
-   "series": "Voyager",
-   "season": 2,
-   "episodes": [
-    "S2E01",
-    "S2E02",
-    "S2E03",
-    "S2E04",
-    "S2E05",
-    "S2E06",
-    "S2E07",
-    "S2E08",
-    "S2E09",
-    "S2E10",
-    "S2E11",
-    "S2E12",
-    "S2E13",
-    "S2E14",
-    "S2E15",
-    "S2E16",
-    "S2E17",
-    "S2E18",
-    "S2E19",
-    "S2E20",
-    "S2E21",
-    "S2E22",
-    "S2E23",
-    "S2E24",
-    "S2E25",
-    "S2E26"
-   ]
-  },
-  {
-   "series": "Voyager",
-   "season": 3,
-   "episodes": [
-    "S3E01",
-    "S3E02",
-    "S3E03",
-    "S3E04",
-    "S3E05",
-    "S3E06",
-    "S3E07",
-    "S3E08",
-    "S3E09",
-    "S3E10",
-    "S3E11",
-    "S3E12",
-    "S3E13",
-    "S3E14",
-    "S3E15",
-    "S3E16",
-    "S3E17",
-    "S3E18",
-    "S3E19",
-    "S3E20",
-    "S3E21",
-    "S3E22",
-    "S3E23",
-    "S3E24",
-    "S3E25",
-    "S3E26"
-   ]
-  },
-  {
-   "series": "Voyager",
-   "season": 4,
-   "episodes": [
-    "S4E01",
-    "S4E02",
-    "S4E03",
-    "S4E04",
-    "S4E05",
-    "S4E06",
-    "S4E07",
-    "S4E08",
-    "S4E09",
-    "S4E10",
-    "S4E11",
-    "S4E12",
-    "S4E13",
-    "S4E14",
-    "S4E15",
-    "S4E16",
-    "S4E17",
-    "S4E18",
-    "S4E19",
-    "S4E20",
-    "S4E21",
-    "S4E22",
-    "S4E23",
-    "S4E24",
-    "S4E25",
-    "S4E26"
-   ]
-  },
-  {
-   "series": "Voyager",
-   "season": 5,
-   "episodes": [
-    "S5E01",
-    "S5E02",
-    "S5E03",
-    "S5E04",
-    "S5E05",
-    "S5E06",
-    "S5E07",
-    "S5E08",
-    "S5E09",
-    "S5E10",
-    "S5E11",
-    "S5E12",
-    "S5E13",
-    "S5E14",
-    "S5E15",
-    "S5E16",
-    "S5E17",
-    "S5E18",
-    "S5E19",
-    "S5E20",
-    "S5E21",
-    "S5E22",
-    "S5E23",
-    "S5E24",
-    "S5E25",
-    "S5E26"
-   ]
-  },
-  {
-   "series": "Voyager",
-   "season": 6,
-   "episodes": [
-    "S6E1",
-    "S6E2",
-    "S6E3",
-    "S6E4"
-   ]
-  }
- ],
- "percentWatched": 63
+  "nextSeries": null,
+  "completedSeasons": [
+    {
+      "season": 1,
+      "episodes": 15
+    },
+    {
+      "season": 2,
+      "episodes": 26
+    },
+    {
+      "season": 3,
+      "episodes": 26
+    },
+    {
+      "season": 4,
+      "episodes": 26
+    }
+  ],
+  "totalWatched": 108,
+  "totalJournals": 486,
+  "currentSeason": 6,
+  "nextEpisode": "S6E7",
+  "nextEpisodeTitle": "Alice",
+  "watched": [
+    {
+      "series": "Voyager",
+      "season": 1,
+      "episodes": [
+        "S1E01-02",
+        "S1E03",
+        "S1E04",
+        "S1E05",
+        "S1E06",
+        "S1E07",
+        "S1E08",
+        "S1E09",
+        "S1E10",
+        "S1E11",
+        "S1E12",
+        "S1E13",
+        "S1E14",
+        "S1E15",
+        "S1E16"
+      ]
+    },
+    {
+      "series": "Voyager",
+      "season": 2,
+      "episodes": [
+        "S2E01",
+        "S2E02",
+        "S2E03",
+        "S2E04",
+        "S2E05",
+        "S2E06",
+        "S2E07",
+        "S2E08",
+        "S2E09",
+        "S2E10",
+        "S2E11",
+        "S2E12",
+        "S2E13",
+        "S2E14",
+        "S2E15",
+        "S2E16",
+        "S2E17",
+        "S2E18",
+        "S2E19",
+        "S2E20",
+        "S2E21",
+        "S2E22",
+        "S2E23",
+        "S2E24",
+        "S2E25",
+        "S2E26"
+      ]
+    },
+    {
+      "series": "Voyager",
+      "season": 3,
+      "episodes": [
+        "S3E01",
+        "S3E02",
+        "S3E03",
+        "S3E04",
+        "S3E05",
+        "S3E06",
+        "S3E07",
+        "S3E08",
+        "S3E09",
+        "S3E10",
+        "S3E11",
+        "S3E12",
+        "S3E13",
+        "S3E14",
+        "S3E15",
+        "S3E16",
+        "S3E17",
+        "S3E18",
+        "S3E19",
+        "S3E20",
+        "S3E21",
+        "S3E22",
+        "S3E23",
+        "S3E24",
+        "S3E25",
+        "S3E26"
+      ]
+    },
+    {
+      "series": "Voyager",
+      "season": 4,
+      "episodes": [
+        "S4E01",
+        "S4E02",
+        "S4E03",
+        "S4E04",
+        "S4E05",
+        "S4E06",
+        "S4E07",
+        "S4E08",
+        "S4E09",
+        "S4E10",
+        "S4E11",
+        "S4E12",
+        "S4E13",
+        "S4E14",
+        "S4E15",
+        "S4E16",
+        "S4E17",
+        "S4E18",
+        "S4E19",
+        "S4E20",
+        "S4E21",
+        "S4E22",
+        "S4E23",
+        "S4E24",
+        "S4E25",
+        "S4E26"
+      ]
+    },
+    {
+      "series": "Voyager",
+      "season": 5,
+      "episodes": [
+        "S5E01",
+        "S5E02",
+        "S5E03",
+        "S5E04",
+        "S5E05",
+        "S5E06",
+        "S5E07",
+        "S5E08",
+        "S5E09",
+        "S5E10",
+        "S5E11",
+        "S5E12",
+        "S5E13",
+        "S5E14",
+        "S5E15",
+        "S5E16",
+        "S5E17",
+        "S5E18",
+        "S5E19",
+        "S5E20",
+        "S5E21",
+        "S5E22",
+        "S5E23",
+        "S5E24",
+        "S5E25",
+        "S5E26"
+      ]
+    },
+    {
+      "series": "Voyager",
+      "season": 6,
+      "episodes": [
+        "S6E1",
+        "S6E2",
+        "S6E3",
+        "S6E4",
+        "S6E6"
+      ]
+    }
+  ],
+  "percentWatched": 63,
+  "nextTitle": "Memorial"
 }

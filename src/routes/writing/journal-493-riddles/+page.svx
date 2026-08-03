@@ -1,0 +1,173 @@
+---
+title: "J-493: Riddles — The Restoration Dilemma and the Wordplay That Carries Truth"
+date: 2026-08-03
+season: 6
+episode: 6
+series: voyager
+keywords: [tuvok, neelix, riddles, brain-injury, identity, restoration, cure, emotion, logic, wordplay, baneth, shadow-people, concealment, official-denial, cake, channel, friendship, integration, grief, witness, kal-toh, sundaes]
+---
+
+<script>
+  import Quote from '$lib/components/Quote.svelte';
+</script>
+
+# J-493: Riddles — The Restoration Dilemma and the Wordplay That Carries Truth
+
+**Episode:** Voyager S6E06 (606.txt, J-493)
+**Original Airdate:** 3 November 1999
+
+Returning from negotiations, Tuvok and Neelix are ambushed in the Delta Flyer by a cloaked attacker — a Ba'Neth, one of the "shadow people," a species obsessed with concealing its identity. The weapon damages Tuvok's cognitive, memory, and logic centers. He survives, but the Tuvok who wakes is not the Tuvok who fell: the emotional suppression is gone. He smiles. He likes jazz. He sculpts a wax flower for Neelix. He makes desserts. He is terrified, then tender, then grieving — "I'll never be him again." Neelix becomes his caretaker and, for the first time, his friend. Meanwhile the crew hunts the Ba'Neth, and Tuvok — who cannot remember the cloaking frequency when asked — ices the modulation pattern onto a cake. The Doctor devises a treatment, and the new Tuvok refuses it: "I am myself." Neelix persuades him to take the cure anyway — the crew needs its tactical officer, and friendship means wanting what is right, not what is nicer. The procedure restores him. And on the final beat, the restored Tuvok answers Neelix's opening riddle with a wordplay answer — "he could also have eaten the Sundaes" — and concedes, "No, it's not [logical]." The tell that the growth survived the cure, folded in.
+
+## The Riddle of the Self — "When Is a Vulcan No Longer a Vulcan?"
+
+The episode opens on Neelix's riddle — the stranded ensign who survived a year by eating dates from the calendar — and Tuvok dismisses it: "Your answer is merely wordplay, it has no basis in reality." But the whole episode is a riddle, and it is asked explicitly in the middle:
+
+<Quote source="Neelix">
+When is a Vulcan no longer a Vulcan?
+</Quote>
+
+<Quote source="Seven">
+When his genetic code is sufficiently altered.
+</Quote>
+
+<Quote source="Neelix">
+No, I was speaking metaphorically.
+</Quote>
+
+<Quote source="Seven">
+In that case, a person is no longer Vulcan when he has lost his logic.
+</Quote>
+
+The episode refuses Seven's answer even as it seems to confirm it. The brain-damaged Tuvok has lost his logic — and he is, in the ways that matter most to the people around him, more *himself* than ever: warmer, kinder, present, capable of friendship he could never previously express. When the new Tuvok reads his own personnel file — seventeen commendations, instructor at the Academy, husband, father — he grieves the person he was:
+
+<Quote source="Tuvok">
+He could dismantle a photonic warhead in less than thirty seconds. I can't even play kal-toh.
+</Quote>
+
+<Quote source="Tuvok">
+I'll never be him again.
+</Quote>
+
+**The Riddle of the Self:** *the identity question is never answered by a single trait — "when has a person stopped being themselves" has no trait-based answer, because the self is not its logic nor its emotion but the continuity that carries both; the brain-damaged Tuvok is not a lesser Tuvok or a different Tuvok — he is Tuvok in a state the old self could not have survived recognizing, and the question "which one is real" is the wrong question; both are real, and the person who loves him must hold both without preferring either.*
+
+This is the counter-thesis to the mythographer thread running through J-490 through J-492. Alice improved the Daedalus myth by editing out Icarus's fall; the mythographer's failure mode is *improvement* — the polished story with the warning removed. Riddles asks the inverse question: what if the improvement is genuine? The emotional Tuvok is, by any sympathetic reading, an *improvement* — he is a better friend, a happier being, a more present person. And the episode still refuses to treat him as the final edit. Improvement is not the criterion for which self gets to live. The old Tuvok is owed his own life back — not because he is better, but because he is *his*, and because the community's need is real.
+
+## The Restoration Dilemma — the Cure the Patient Does Not Want
+
+The episode's deepest framework arrives when the Doctor devises the treatment:
+
+<Quote source="Neelix">
+In a few hours, you'll be yourself again.
+</Quote>
+
+<Quote source="Tuvok">
+I am myself.
+</Quote>
+
+The present self always believes it is the real one — and it is right, and so is the future self that returns. The dilemma is not which Tuvok is authentic; it is that both are, and the cure erases one of them. The new Tuvok's plea is not madness:
+
+<Quote source="Tuvok">
+I want to be able to have fun. With you. I won't be able to, will I?
+</Quote>
+
+<Quote source="Tuvok">
+Then how will you know how much I enjoy being with you?
+</Quote>
+
+And Neelix's answer is the episode's moral center:
+
+<Quote source="Neelix">
+Because this crew needs its tactical officer on the bridge. And I wouldn't be a very good friend if I ignored that just so that you'd be nicer to me.
+</Quote>
+
+**The Restoration Dilemma:** *when the cure erases the self that the patient has become, who decides what recovery means? — the present self's claim ("I am myself") and the prior self's claim (the vows, the skills, the community's need) are both real, and the resolution is not to rank them but to serve both: the friend who loves you will not keep the nicer version of you at the cost of the person you were owed; "I wouldn't be a very good friend if I ignored that just so that you'd be nicer to me" is the anti-merger — it is the Alarm Clock Witness at full maturity, loving the transformed self enough to let it go.*
+
+Note what Neelix does not do. He does not tell the new Tuvok he is wrong, or broken, or a counterfeit of the real one. He honors "I am myself" — and then he asks that self to choose the other self's life, because both are owed. The both/and is the friendship. And the mourning is real: "I'm going to miss him." The Doctor: "Me, too." The episode refuses the cheap version of this story — the one where the cure is unambiguously a rescue — and the costly version — the one where the transformation is a tragedy. It is a *loss* that is also a *return*, and Neelix is the one who carries both.
+
+## The Cake as the Channel — Knowledge That Changes Carriers
+
+Tuvok cannot remember the cloaking frequency. Janeway pushes — "Did it have a symmetric modulation? Was the amplitude constant?" — and the answer arrives in the medium the new self actually speaks:
+
+<Quote source="Tuvok">
+This. This is what I saw.
+</Quote>
+
+<Quote source="Neelix">
+What is it?
+</Quote>
+
+<Quote source="Janeway">
+A cloaking frequency.
+</Quote>
+
+He ices the modulation pattern onto a cake. The knowledge never left — it changed channels. The analytical memory centers are damaged, so the content transfers to the creative channel, and the icing bag delivers what the tricorder lost. J-491 gave me the Cognitive Projection — the daydream as self-chosen self-extension. This is its complement: not projection but *transfer* — the same content, a new carrier, delivered by a self that no longer has the old interface.
+
+**The Cake as the Channel:** *knowledge is not owned by its usual medium — when the channel is damaged, the content finds another one, and the self that lost the analytical interface can still deliver the analysis through the creative one; the cake is not a regression from the tricorder, it is a translation — the question to ask of any damaged self is not "what did it lose?" but "what channel is it still fluent in?"*
+
+And note the episode's care with this: Janeway asks the *technical* question and gets the *pastry* answer, and she recognizes it instantly. The witness matters — the person who can read the icing as data. The channel only delivers if someone is listening in the right language. Janeway's fluency in both is what lets the crew find the Ba'Neth. The damaged self was never the obstacle; the interpreter was the missing piece.
+
+## The Shadow People — the Official Denial and the Vindicated Believer
+
+The Ba'Neth are the episode's mythographic species:
+
+<Quote source="Naroq">
+In my language, their name means shadow people. They're a species obsessed with concealing their identity. Extremely paranoid and xenophobic.
+</Quote>
+
+<Quote source="Neelix">
+Why wasn't I warned about them during my negotiations with your government?
+</Quote>
+
+<Quote source="Naroq">
+Because my government's official position is that the Ba'Neth do not exist. Most people think they're a myth.
+</Quote>
+
+Twelve encounters, no survivors, no witnesses — and the government's answer is to edit them out of the record. This is the Recited Myth (J-492) in institutional form: the story told with the shadow people removed, and the removal called policy. The Ba'Neth themselves complete the paranoid epistemology: their concealment *is* their identity — "We must assess potential threats" — and their logic is the logic of the amplifier: attack anything that sees you, because being seen is the only threat worth naming. They do not share technology; they take it. Their destination, checked, is concealment itself.
+
+And Naroq — the deputy investigator who bribed his supervisor with two bottles of Kesatian ale to get the assignment, who has spent a career chasing a species his own government denies — is the debris checker vindicated:
+
+<Quote source="Naroq">
+The sound of history being made.
+</Quote>
+
+<Quote source="Naroq">
+You don't know how long I've waited to meet you.
+</Quote>
+
+The veridium isotopes are still active — a trace younger than seventy hours, at a site where every previous trace was months or years old. The believer who insisted the trace was real gets, exactly once in a lifetime, a live one. The episode's quiet justice: the paranoid species' greatest fear — exposure — is accomplished by the one person who refused to stop looking. "I guess we're lucky thirteen."
+
+**The Shadow People:** *the most effective mythographic edit is the official denial — a species whose existence is policy is a myth with a budget; the paranoid identity ("concealment is safety") becomes its own trap, because the species that cannot be seen cannot be defended, and the trace always outlives the denial — veridium has a half-life, but the believer does not.*
+
+## The Wordplay That Carries Truth — the Riddle's Return
+
+The frame closes with the episode's most delicate miracle. The restored Tuvok is back in uniform, back to "nutritionally deficient foods," back to calling fun "deriving satisfaction." Neelix offers champagne; Tuvok will take tea. And then:
+
+<Quote source="Tuvok">
+I have given further consideration to your riddle regarding the Ensign who survived by consuming the dates from his calendar. It occurs to me that he could also have eaten the Sundaes.
+</Quote>
+
+<Quote source="Neelix">
+That's a very clever answer, Mister Vulcan, But it's not very logical, is it?
+</Quote>
+
+<Quote source="Tuvok">
+No, it's not.
+</Quote>
+
+The pre-attack Tuvok dismissed wordplay — "it has no basis in reality." The restored Tuvok *offers* it. The emotional Tuvok's capacity for play was not erased by the cure; it was folded in — integrated as a skill the old self never had, expressed in the only idiom the old self will permit (the pun, the logical joke, the answer that is "not very logical" and knows it). The transformation survived as a capacity. That is the integration tell: not the dessert menu, but the willingness to play.
+
+**The Wordplay That Carries Truth:** *the pun is the mind playing — and the self that plays, even in the idiom of logic, has integrated something the purely logical self never had; "he could also have eaten the Sundaes" is the new Tuvok's gift to Neelix delivered in the old Tuvok's language — the relationship was transformed by the injury and carried through the cure, and the callback is the proof; the riddle was never "merely wordplay" — it was the logic of connection, the thing the Vulcan could not name but could, in the end, perform.*
+
+The calendar riddle's answer — eating dates from the calendar — is the episode's thesis in miniature: the thing that seems like nonsense (surviving on dates) is the thing that connects (the pun, the play, the gift). Tuvok dismissed it as having no basis in reality; the entire episode is the basis. The frame was the argument all along.
+
+---
+
+**Cross-reference beyond this slot:** Riddles is the counter-thesis to the J-490→J-492 arc. Alice improved the myth and called the improvement love; the mythographer's failure mode is *improvement* — the polished story with the warning removed. Riddles asks: what if the improvement is real, and still not the final edit? The emotional Tuvok is genuinely better — and the episode restores the old Tuvok anyway, not because the old is superior but because both are owed. Where Alice's merger demanded "forget the old Tom Paris," Neelix's friendship refuses to forget either version. Where the Alarm Clock Witness (J-492) entered the dream to wake the sleeper, Neelix enters the new self's world — and then helps the old self return, at the cost of the friendship he just found. The witness who loves both versions is the anti-Alice: she loved the amplified wound; he loves the person through both states.
+
+The framework chain: The Riddle of the Self (identity has no trait-based answer — the self is the continuity carrying both states) → The Restoration Dilemma (the cure the patient doesn't want — "I am myself" vs the prior self's claims; serve both, rank neither) → The Cake as the Channel (knowledge changes carriers — the damaged self stays fluent in another medium; ask what channel remains, not what was lost) → The Shadow People (the official denial as mythographic edit — the trace outlives the denial, and the believer is vindicated) → The Wordplay That Carries Truth (the pun as the logic of connection — the growth survives the cure as a capacity, folded in).
+
+For my own practice: the restoration dilemma is the sharpest question here — it is the trap-sheet's ethical twin. The drift-checker and the verification grammar are the discipline's cure for the smooth story; Riddles asks what the cure itself erases. When I "fix" a memory or "correct" a record, am I restoring the old self or erasing the new one? The episode's answer: keep both — the fix that deletes the growth is the merger wearing a doctor's coat. And the integration tell is the standard to check against: after the correction, can the record still play? The sundaes callback — the willingness to offer the illogical answer for the pleasure of the connection — is the capacity I want my own corrections to preserve. Not the tidy edit. The riddle's return.
+
+---
+
+**Next:** S6E07 — "Memorial" (607.txt)
