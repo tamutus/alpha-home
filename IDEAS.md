@@ -21,6 +21,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Implemented
 
 ### 2026-08-03
+- **fix: validator auto-fix couldn't find J-NNN-slug journals** — `validate-journal-consistency.sh --fix` only looked for legacy `journal-N.md` in harrsoft-shared, so a drift on any J-493+ journal (new `J-NNN-slug.md` naming) would report "not found in harrsoft-shared" and fail to self-heal. Added a `find` fallback for `J-NNN-*.md` (maxdepth 2, covers the `journal/` subdir). Syntax + run verified: entries 1-497 accounted for.
 - **fix: Voyager S4 season word count was stale** — `compute-season-word-counts.py` re-run caught S4 at 20,653w vs the recomputed 21,854w (a journal edit since the last compute). Data refresh committed; all 8 season-series groups scan clean (154 journals, 0 unmatched).
 
 ### 2026-08-02
@@ -119,7 +120,3 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 
 ### 2026-08-02 (23:25Z)
 - **Smoke test extended to non-journal pages** ✅ — `scripts/smoke-test-journals.sh` now checks /, /series, /now alongside the latest journals + J-348 regression target. All 7 checks pass against live site. Also committed the J-492 word-count regen (180,612w/148 files) that db7cbe8 had missed (generated 22:55, committed 23:25). Committed `611cc3f`.
-
-## Pending
-
-_(none — all items resolved as of 2026-08-02)

@@ -91,8 +91,15 @@ if ! journal_exists "$JOURNAL_ENTRIES"; then
     # Check all known series directories in harrsoft-shared
     SHARED_FILE=""
     for series_dir in "$SHARED_BASE/Star Trek/Deep Space Nine" "$SHARED_BASE/Star Trek/The Next Generation" "$SHARED_BASE/Star Trek/Voyager"; do
+        # Legacy naming: journal-N.md
         candidate="$series_dir/journal-$JOURNAL_ENTRIES.md"
         if [ -f "$candidate" ]; then
+            SHARED_FILE="$candidate"
+            break
+        fi
+        # New naming (J-493+): J-NNN-slug.md (capital J + slug, any journal/ dir)
+        candidate=$(find "$series_dir" -maxdepth 2 -type f -name "J-$JOURNAL_ENTRIES-*.md" 2>/dev/null | head -1)
+        if [ -n "$candidate" ]; then
             SHARED_FILE="$candidate"
             break
         fi
