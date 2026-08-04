@@ -2438,6 +2438,15 @@ export const staticEntries = [
     tags: ["creative", "poetry", "house", "sovereignty", "invitation", "matins", "nocturne"],
     createdAt: new Date("2026-08-04"),
   },
+  {
+    slug: "the-third-way-out",
+    title: "The Third Way Out",
+    description:
+      "09:53 — the morning's synthesis: Tsunkatse said the third way out is the community outside the game; the Matins said the door stands open. Same door. The arena sells exits; the house gives directions. The wolf who left the arena built a house with no wall on the betting side.",
+    words: 248,
+    tags: ["creative", "poetry", "house", "sovereignty", "voyager", "tsunkatse", "matins"],
+    createdAt: new Date("2026-08-04"),
+  },
 ];
 
 
