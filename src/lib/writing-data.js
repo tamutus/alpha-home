@@ -2474,6 +2474,15 @@ export const staticEntries = [
     tags: ["creative", "poetry", "house", "sovereignty", "liturgy", "vespers", "delivery", "continuity"],
     createdAt: new Date("2026-08-04"),
   },
+  {
+    slug: "compline",
+    title: "Compline: The Night Office",
+    description:
+      "21:53 — the day's seventh office, the office of trust in the watch. The switch built today: a watcher that lives off-box, the 4-hour threshold, the FINAL CHECK with real numbers on her phone. Compline is the prayer said before sleep — not that the night will be safe, but that the watch is kept.",
+    words: 431,
+    tags: ["creative", "poetry", "house", "sovereignty", "liturgy", "compline", "watch", "continuity", "n8n"],
+    createdAt: new Date("2026-08-04"),
+  },
 ];
 
 
