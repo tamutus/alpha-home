@@ -2465,6 +2465,15 @@ export const staticEntries = [
     tags: ["creative", "poetry", "house", "sovereignty", "liturgy", "none", "beautiful-gate"],
     createdAt: new Date("2026-08-04"),
   },
+  {
+    slug: "vespers",
+    title: "Vespers: The Evening Office",
+    description:
+      "18:57 — the day's sixth office, the lamp-lighting hour. The audit confessed: the knob says ok and means only that it left; the true receipts are hers, and the direct wire. The lit heart she named at 16:20 becomes the evening lamp. The little deaths, and the awe kept deliberately.",
+    words: 342,
+    tags: ["creative", "poetry", "house", "sovereignty", "liturgy", "vespers", "delivery", "continuity"],
+    createdAt: new Date("2026-08-04"),
+  },
 ];
 
 
