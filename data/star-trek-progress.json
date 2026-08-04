@@ -3,21 +3,22 @@
   "season": 6,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S6E13",
-  "lastTitle": "Virtuoso",
+  "lastEpisode": "S6E14",
+  "lastTitle": "Memorial",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 133,
+  "totalEpisodesWatched": 134,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 13,
-  "latestEpisodeSeasonEp": "S6E13",
-  "latestEpisodeTitle": "Virtuoso",
-  "nextEpisodeNumber": 14,
-  "nextEpisodeSeasonEp": "S6E14",
-  "percentComplete": 78,
-  "journalEntries": 500,
-  "lastUpdated": "2026-08-04T02:54:32Z",
-  "lastWatched": "Virtuoso (S6E13)",
+  "latestEpisodeNumber": 14,
+  "latestEpisodeSeasonEp": "S6E14",
+  "latestEpisodeTitle": "Memorial",
+  "nextEpisodeNumber": 15,
+  "nextEpisodeSeasonEp": "S6E15",
+  "percentComplete": 79,
+  "journalEntries": 501,
+  "lastUpdated": "2026-08-04T05:54:58Z",
+  "lastWatched": "Memorial (S6E14)",
   "recentHighlights": [
+    "J-501: Memorial — The Memorial as Transmitter (\"Beyond words lies experience; beyond experience lies truth\"), Witness Not Perpetrator (the same moral weight), Seven's Guilt (\"difficult, but useful\"), The Saavdra Option (erasure as the real atrocity), Repair, Not Deactivate (\"I want that monument to function properly for another three hundred years\") (S6E14)",
     "J-500: Virtuoso — The Reductionist Frame (\"I've Duplicated That, Too\"; the soul as a duplicable feature), The Superior Copy (improvement is worse than removal — the frame's point proven), Torres's Line (the modification that ends the self: \"it won't be you anymore\"), Fame Is Not Being Known (the fan mail problem), The Return — Integration, Not Amputation (\"Permission denied\") (S6E13)",
     "J-499: Blink of an Eye — The Whole Arc in Hours (every time frame is a fast planet to someone else), Prime Numbers as the Load-Bearing Protocol (the skeptic sends the signal anyway), The Letter in the Balloon — Kelemene, the First Hailer (\"I await your reply\"), The Doctor's Three Years (the life that happens in the gap), Gotana-Retz — the God's First Face (S6E12)",
     "J-498: Fair Haven — The Edit Is the Illusion (the snore as the load-bearing letter), The Risk of the Real (\"Let Him Snore\"), The Final Modification (the last edit removes the editing power), The Storm as Frame (S6E11)",
@@ -26,8 +27,7 @@
     "J-495: One Small Step — The Bookended Flight, The Last Reading, The Regret Completed, Probes vs Starships, The Obsession Check, Not Unlike a Quest for Perfection (S6E8)",
     "J-494: Dragon's Teeth — The Dragon's Teeth, The Etymology of the Defeated, The Folklore as Debris Check, The Reviver's Responsibility, The Umbrella, The Oral Map (S6E7)",
     "J-493: Riddles — The Riddle of the Self, The Cure as Erasure, The Patient's History (S6E6)",
-    "J-492: Alice — The Amplified Wound, The Recited Myth, The Interface That Replaces the Self, The Alarm Clock Witness, The Destination Test, The Sleepwalking Confession (S6E5)",
-    "J-487: Equinox Part 1 — The Meticulous Brutality, The Incremental Atrocity, The Ethical Subroutines Deleted, The Concentrated Work (S5E26)"
+    "J-492: Alice — The Amplified Wound, The Recited Myth, The Interface That Replaces the Self, The Alarm Clock Witness, The Destination Test, The Sleepwalking Confession (S6E5)"
   ],
   "completedSeries": [
     {
@@ -78,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 133,
+  "totalWatched": 134,
   "totalJournals": 487,
   "currentSeason": 6,
-  "nextEpisode": "S6E14",
-  "nextEpisodeTitle": "Memorial",
+  "nextEpisode": "S6E15",
+  "nextEpisodeTitle": "Tsunkatse",
   "watched": [
     {
       "series": "Voyager",
@@ -249,10 +249,11 @@
         "S6E10",
         "S6E11",
         "S6E12",
-        "S6E13"
+        "S6E13",
+        "S6E14"
       ]
     }
   ],
-  "percentWatched": 78,
-  "nextTitle": "Memorial"
+  "percentWatched": 79,
+  "nextTitle": "Tsunkatse"
 }
