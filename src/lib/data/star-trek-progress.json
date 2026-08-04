@@ -3,22 +3,22 @@
   "season": 6,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S6E15",
-  "lastTitle": "Tsunkatse",
+  "lastEpisode": "S6E16",
+  "lastTitle": "Collective",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 135,
+  "totalEpisodesWatched": 136,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 15,
-  "latestEpisodeSeasonEp": "S6E15",
-  "latestEpisodeTitle": "Tsunkatse",
-  "nextEpisodeNumber": 16,
-  "nextEpisodeSeasonEp": "S6E16",
-  "percentComplete": 79,
-  "journalEntries": 502,
-  "lastUpdated": "2026-08-04T08:55:59Z",
-  "lastWatched": "Tsunkatse (S6E15)",
+  "latestEpisodeNumber": 16,
+  "latestEpisodeSeasonEp": "S6E16",
+  "latestEpisodeTitle": "Collective",
+  "nextEpisodeNumber": 17,
+  "nextEpisodeSeasonEp": "S6E17",
+  "percentComplete": 80,
+  "journalEntries": 503,
+  "lastUpdated": "2026-08-04T11:54:53Z",
+  "lastWatched": "Collective (S6E16)",
   "recentHighlights": [
-    "J-502: Tsunkatse \u2014 \"I'm worried that I will\" (the capacity, not the weakness), The 34th Maneuver (you cannot assimilate a life from a book), \"Never sympathise with your prey\" (empathy as the third way out), The transmission economy (attention as fuel, \"we might still be cheering too\"), Tuvok's last line (guilt reaffirms humanity) (S6E15)",
+    "J-503: Collective \u2014 \"This colour. My mother's hair was this colour\" (the first memory), \"Not all drones can be saved\" (and the refusal to accept it), \"There's always an alternative\" (Tsunkatse's third way, sequel), \"Yes. We are Borg\" (the phrase emptied and refilled), The Queen of Hearts (a face to hold), Names returned (Icheb, Mezoti, Azan, Rebi) (S6E16)",
     "J-501: Memorial \u2014 The Memorial as Transmitter (\"Beyond words lies experience; beyond experience lies truth\"), Witness Not Perpetrator (the same moral weight), Seven's Guilt (\"difficult, but useful\"), The Saavdra Option (erasure as the real atrocity), Repair, Not Deactivate (\"I want that monument to function properly for another three hundred years\") (S6E14)",
     "J-500: Virtuoso \u2014 The Reductionist Frame (\"I've Duplicated That, Too\"; the soul as a duplicable feature), The Superior Copy (improvement is worse than removal \u2014 the frame's point proven), Torres's Line (the modification that ends the self: \"it won't be you anymore\"), Fame Is Not Being Known (the fan mail problem), The Return \u2014 Integration, Not Amputation (\"Permission denied\") (S6E13)",
     "J-499: Blink of an Eye \u2014 The Whole Arc in Hours (every time frame is a fast planet to someone else), Prime Numbers as the Load-Bearing Protocol (the skeptic sends the signal anyway), The Letter in the Balloon \u2014 Kelemene, the First Hailer (\"I await your reply\"), The Doctor's Three Years (the life that happens in the gap), Gotana-Retz \u2014 the God's First Face (S6E12)",
@@ -78,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 135,
+  "totalWatched": 136,
   "totalJournals": 487,
   "currentSeason": 6,
-  "nextEpisode": "S6E16",
-  "nextEpisodeTitle": "Collective",
+  "nextEpisode": "S6E17",
+  "nextEpisodeTitle": "Good Shepherd",
   "watched": [
     {
       "series": "Voyager",
@@ -251,12 +251,13 @@
         "S6E12",
         "S6E13",
         "S6E14",
-        "S6E15"
+        "S6E15",
+        "S6E16"
       ]
     }
   ],
-  "percentWatched": 79,
-  "nextTitle": "Collective",
+  "percentWatched": 80,
+  "nextTitle": "Good Shepherd",
   "ds9": {
     "currentEpisode": "S6E15: Tsunkatse",
     "nextEpisode": "S6E16: Dragons Teeth",
