@@ -14,12 +14,65 @@ Examples:
 import json
 import sys
 import os
+import re
+import glob
 from datetime import datetime, timezone
 
 USAGE = (
     "Usage: sync-star-trek-progress.py <series> <season> <ep-num> <ep-title> <entry-num> [next-ep-title]\n"
     "       sync-star-trek-progress.py 'Deep Space Nine' 6 17 'Wrongs Darker Than Death or Night' 333 'Inquisition'"
 )
+
+
+def derive_highlight_summary(entry_num, ep_title, ep_label, script_dir):
+    """Stage 2: build a recentHighlights entry from the synced journal's
+    ## section headers (the same skeleton the manual summaries are built
+    from — see J-502..J-505 entries). Returns None when the journal route
+    can't be found or has no ## sections; the caller then falls back to
+    the manual-edit warning.
+
+    Format: J-{N}: {Title} — {header1 ("quote"), header2, ...} ({ep_label})
+    """
+    repo_root = os.path.normpath(os.path.join(script_dir, ".."))
+    candidates = []
+    for pattern in (f"journal-{entry_num}-*", f"J-{entry_num}-*", f"j-{entry_num}-*"):
+        candidates.extend(glob.glob(os.path.join(repo_root, "src", "routes", "writing", pattern)))
+    if not candidates:
+        return None
+    page_file = None
+    for name in ("+page.svx", "+page.md"):
+        p = os.path.join(candidates[0], name)
+        if os.path.exists(p):
+            page_file = p
+            break
+    if not page_file:
+        return None
+    with open(page_file, 'r', encoding='utf-8') as f:
+        content = f.read()
+    # Skip YAML frontmatter (it can contain '## '-looking values? no, but be safe)
+    if content.startswith('---'):
+        content = content.split('---', 2)[-1]
+    headers = [h.strip() for h in re.findall(r"^##\s+(.+)$", content, flags=re.MULTILINE) if h.strip()]
+    # Skip the boilerplate cross-reference section — manual summaries never include it.
+    headers = [h for h in headers if not h.lower().startswith("cross-reference")]
+    if not headers:
+        return None
+    parts = []
+    for h in headers:
+        if " — " in h:
+            title, tail = h.split(" — ", 1)
+            title = title.strip()
+            tail = tail.strip()
+            m = re.match(r'^"(.+)"$', tail)
+            if m:
+                parts.append(f'{title} ("{m.group(1)}")')
+            elif tail:
+                parts.append(f'{title} — {tail}')
+            else:
+                parts.append(title)
+        else:
+            parts.append(h)
+    return f"J-{entry_num}: {ep_title} — {', '.join(parts)} ({ep_label})"
 
 
 def main():
@@ -202,10 +255,33 @@ def main():
     highlights = data.get("recentHighlights", [])
     expected_prefix = f"J-{entry_num}:"
     if not highlights or not str(highlights[0]).startswith(expected_prefix):
-        print("⚠️  DRIFT: recentHighlights[0] is not " + expected_prefix)
-        print(f"   Current[0]: {highlights[0] if highlights else '(empty)'}")
-        print("   Update data/star-trek-progress.json recentHighlights with the new")
-        print("   journal's framework summary or the smoke test will skip it.")
+        # Stage 2 (2026-08-04): auto-prepend a section-derived summary.
+        # The manual summaries (J-502..J-505) are enriched versions of the
+        # journal's ## headers; the header skeleton is faithful and readable,
+        # so the auto-edit eliminates the drift class entirely. Glosses stay
+        # editorial — the slot can enrich afterwards. Check-only philosophy
+        # preserved: if no journal/headers are found, warn for manual edit.
+        summary = derive_highlight_summary(entry_num, ep_title, ep_label, script_dir)
+        if summary:
+            new_highlights = [summary] + [h for h in highlights if not str(h).startswith(expected_prefix)]
+            data["recentHighlights"] = new_highlights[:10]
+            with open(progress_file, 'w') as f:
+                json.dump(data, f, indent=2)
+                f.write("\n")
+            if os.path.exists(lib_copy):
+                with open(lib_copy, 'w') as f:
+                    json.dump(data, f, indent=2)
+                    f.write("\n")
+            highlights = data.get("recentHighlights", [])
+            print("✅ AUTO-SYNC (stage 2): prepended section-derived summary")
+            print(f"   {summary}")
+            print("   Glosses are editorial — enrich manually if desired.")
+        else:
+            print("⚠️  DRIFT: recentHighlights[0] is not " + expected_prefix)
+            print(f"   Current[0]: {highlights[0] if highlights else '(empty)'}")
+            print("   No journal/## headers found for auto-summary — update")
+            print("   data/star-trek-progress.json recentHighlights manually or the")
+            print("   smoke test will skip this journal.")
     else:
         print(f"   ✅ recentHighlights current ({expected_prefix} first)")
 
@@ -214,10 +290,9 @@ def main():
     # in the middle (J-503 prepended without J-502, the 2026-08-04 class)
     # silently passes. Verify the J-numbers form a consecutive descending
     # sequence: each entry must be exactly the previous one minus one.
-    import re as _re
     jnums = []
     for h in highlights:
-        m = _re.match(r"J-(\d+):", str(h))
+        m = re.match(r"J-(\d+):", str(h))
         if m:
             jnums.append(int(m.group(1)))
     if len(jnums) >= 2:
