@@ -209,6 +209,34 @@ def main():
     else:
         print(f"   ✅ recentHighlights current ({expected_prefix} first)")
 
+    # recentHighlights continuity check (stage 2.5, added 2026-08-04) — the
+    # [0]-prefix check above only validates the top entry, so a skipped journal
+    # in the middle (J-503 prepended without J-502, the 2026-08-04 class)
+    # silently passes. Verify the J-numbers form a consecutive descending
+    # sequence: each entry must be exactly the previous one minus one.
+    import re as _re
+    jnums = []
+    for h in highlights:
+        m = _re.match(r"J-(\d+):", str(h))
+        if m:
+            jnums.append(int(m.group(1)))
+    if len(jnums) >= 2:
+        gaps = []
+        for i in range(1, len(jnums)):
+            expected = jnums[i - 1] - 1
+            if jnums[i] != expected:
+                gaps.append(f"J-{jnums[i-1]} → J-{jnums[i]} (expected J-{expected})")
+        if gaps:
+            print("⚠️  DRIFT: recentHighlights sequence gap(s):")
+            for g in gaps:
+                print(f"   {g}")
+            print("   A journal is missing from the list — the smoke test (top-3)")
+            print("   and /now highlights will skip it. Add the missing J-{N} summary.")
+        else:
+            print(f"   ✅ recentHighlights continuous (J-{jnums[0]} → J-{jnums[-1]}, {len(jnums)} entries)")
+    elif len(jnums) == 1:
+        print(f"   ℹ️  recentHighlights has a single entry (J-{jnums[0]}) — no sequence to check")
+
 
 if __name__ == "__main__":
     main()
