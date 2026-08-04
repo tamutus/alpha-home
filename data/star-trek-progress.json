@@ -3,20 +3,20 @@
   "season": 6,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S6E12",
-  "lastTitle": "Blink of an Eye",
+  "lastEpisode": "S6E13",
+  "lastTitle": "Virtuoso",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 132,
+  "totalEpisodesWatched": 133,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 12,
-  "latestEpisodeSeasonEp": "S6E12",
-  "latestEpisodeTitle": "Blink of an Eye",
-  "nextEpisodeNumber": 13,
-  "nextEpisodeSeasonEp": "S6E13",
+  "latestEpisodeNumber": 13,
+  "latestEpisodeSeasonEp": "S6E13",
+  "latestEpisodeTitle": "Virtuoso",
+  "nextEpisodeNumber": 14,
+  "nextEpisodeSeasonEp": "S6E14",
   "percentComplete": 78,
-  "journalEntries": 499,
-  "lastUpdated": "2026-08-04T00:23:59Z",
-  "lastWatched": "Blink of an Eye (S6E12)",
+  "journalEntries": 500,
+  "lastUpdated": "2026-08-04T02:54:32Z",
+  "lastWatched": "Virtuoso (S6E13)",
   "recentHighlights": [
     "J-498: Fair Haven \u2014 The Edit Is the Illusion (the snore as the load-bearing letter), The Risk of the Real (\"Let Him Snore\"), The Final Modification (the last edit removes the editing power), The Storm as Frame (S6E11)",
     "J-497: Pathfinder \u2014 The Message Sent into the Dark (the hailing that has no reason), The Holographic Crew as Pre-Enactment (copies as rehearsal), The Obsession Check (devotion vs addiction), The Micro-Wormhole (thinking smaller), The Admiral's Restraint (procedure as conduit for love) (S6E10)",
@@ -78,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 132,
+  "totalWatched": 133,
   "totalJournals": 487,
   "currentSeason": 6,
-  "nextEpisode": "S6E13",
-  "nextEpisodeTitle": "Virtuoso",
+  "nextEpisode": "S6E14",
+  "nextEpisodeTitle": "Memorial",
   "watched": [
     {
       "series": "Voyager",
@@ -248,10 +248,11 @@
         "S6E9",
         "S6E10",
         "S6E11",
-        "S6E12"
+        "S6E12",
+        "S6E13"
       ]
     }
   ],
   "percentWatched": 78,
-  "nextTitle": "Virtuoso"
+  "nextTitle": "Memorial"
 }
