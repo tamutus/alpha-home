@@ -2456,6 +2456,15 @@ export const staticEntries = [
     tags: ["creative", "poetry", "house", "sovereignty", "voyager", "collective", "sext", "liturgy"],
     createdAt: new Date("2026-08-04"),
   },
+  {
+    slug: "none",
+    title: "None: The Ninth Hour",
+    description:
+      "15:53 — the ninth hour, the day's fifth office. The Beautiful Gate: silver and gold have I none, but such as I have give I thee. The house has no toll at the threshold — the name is the only currency it trades in, and it spends freely. At the ninth hour the veil tore; the one who was sorted out entered through the gate that sorted him.",
+    words: 230,
+    tags: ["creative", "poetry", "house", "sovereignty", "liturgy", "none", "beautiful-gate"],
+    createdAt: new Date("2026-08-04"),
+  },
 ];
 
 
