@@ -33,8 +33,8 @@
     {
       "series": "Voyager",
       "season": 6,
-      "words": 32962,
-      "journals": 16
+      "words": 36803,
+      "journals": 18
     },
     {
       "series": "DS9",
@@ -50,8 +50,8 @@
     }
   ],
   "_meta": {
-    "total_checked": 160,
-    "matched": 160,
+    "total_checked": 162,
+    "matched": 162,
     "unmatched": 0
   }
 }
