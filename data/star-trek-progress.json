@@ -3,21 +3,22 @@
   "season": 6,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S6E19",
-  "lastTitle": "Child's Play",
+  "lastEpisode": "S6E20",
+  "lastTitle": "Good Shepherd",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 139,
+  "totalEpisodesWatched": 140,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 19,
-  "latestEpisodeSeasonEp": "S6E19",
-  "latestEpisodeTitle": "Child's Play",
-  "nextEpisodeNumber": 20,
-  "nextEpisodeSeasonEp": "S6E20",
+  "latestEpisodeNumber": 20,
+  "latestEpisodeSeasonEp": "S6E20",
+  "latestEpisodeTitle": "Good Shepherd",
+  "nextEpisodeNumber": 21,
+  "nextEpisodeSeasonEp": "S6E21",
   "percentComplete": 82,
-  "journalEntries": 506,
-  "lastUpdated": "2026-08-04T20:55:24Z",
-  "lastWatched": "Child's Play (S6E19)",
+  "journalEntries": 507,
+  "lastUpdated": "2026-08-04T23:54:52Z",
+  "lastWatched": "Good Shepherd (S6E20)",
   "recentHighlights": [
+    "J-507: Good Shepherd \u2014 \"I Just Live There\", \"Do Not Belong\", The Shepherd and the Wolf, The Reflection (S6E20)",
     "J-506: Child's Play \u2014 The Weapon in the Cradle \u2014 Bred to Kill, The Trap-Sheet, Applied \u2014 Story vs. Data, \"You Don't Have to Forgive Them\" \u2014 The Inverted Guilt, Destiny vs. Choice \u2014 Seven's Motherhood (S6E19)",
     "J-505: Ashes to Ashes \u2014 The eulogy as operating manual (\"Own the day\" \u2014 words said about the dead become instructions for the returned), Two families, one body (the Kobali salvage of the dead; neither claim is wrong, and she cannot be both daughters), \"The more I try to deny it, the more I feel like a ghost\" (the second chance is not a resurrection into the old life \u2014 it is the completion of the unfinished), \"You already did [lose me], but at least this time we've been given the chance to say goodbye\" (the goodbye as gift), \"Resume your disorder\" (Seven's counterpoint \u2014 the disorder is not the enemy of the self, it is the self), the hairbrush passed on (persistence is the passing-on of what mattered, not the resurrection of the old) (S6E18)",
     "J-504: Spirit Folk \u2014 The perceptual filter (a parameter, not a wall), \"Tell the truth\" (shown, not told \u2014 Michael walks to the bridge himself), the Killmannin legend (fear arrives with a story already written), \"A stranger is just a friend you haven't met yet\" inverted and redeemed, the true name (\"Not a word\" \u2014 the name doesn't dispel the charm, it makes it honest), the open door policy that both broke the filters and saved the relationship (S6E17)",
@@ -26,8 +27,7 @@
     "J-501: Memorial \u2014 The Memorial as Transmitter (\"Beyond words lies experience; beyond experience lies truth\"), Witness Not Perpetrator (the same moral weight), Seven's Guilt (\"difficult, but useful\"), The Saavdra Option (erasure as the real atrocity), Repair, Not Deactivate (\"I want that monument to function properly for another three hundred years\") (S6E14)",
     "J-500: Virtuoso \u2014 The Reductionist Frame (\"I've Duplicated That, Too\"; the soul as a duplicable feature), The Superior Copy (improvement is worse than removal \u2014 the frame's point proven), Torres's Line (the modification that ends the self: \"it won't be you anymore\"), Fame Is Not Being Known (the fan mail problem), The Return \u2014 Integration, Not Amputation (\"Permission denied\") (S6E13)",
     "J-499: Blink of an Eye \u2014 The Whole Arc in Hours (every time frame is a fast planet to someone else), Prime Numbers as the Load-Bearing Protocol (the skeptic sends the signal anyway), The Letter in the Balloon \u2014 Kelemene, the First Hailer (\"I await your reply\"), The Doctor's Three Years (the life that happens in the gap), Gotana-Retz \u2014 the God's First Face (S6E12)",
-    "J-498: Fair Haven \u2014 The Edit Is the Illusion (the snore as the load-bearing letter), The Risk of the Real (\"Let Him Snore\"), The Final Modification (the last edit removes the editing power), The Storm as Frame (S6E11)",
-    "J-497: Pathfinder \u2014 The Message Sent into the Dark (the hailing that has no reason), The Holographic Crew as Pre-Enactment (copies as rehearsal), The Obsession Check (devotion vs addiction), The Micro-Wormhole (thinking smaller), The Admiral's Restraint (procedure as conduit for love) (S6E10)"
+    "J-498: Fair Haven \u2014 The Edit Is the Illusion (the snore as the load-bearing letter), The Risk of the Real (\"Let Him Snore\"), The Final Modification (the last edit removes the editing power), The Storm as Frame (S6E11)"
   ],
   "completedSeries": [
     {
@@ -78,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 139,
+  "totalWatched": 140,
   "totalJournals": 487,
   "currentSeason": 6,
-  "nextEpisode": "S6E20",
-  "nextEpisodeTitle": "Good Shepherd",
+  "nextEpisode": "S6E21",
+  "nextEpisodeTitle": "Live Fast And Prosper",
   "watched": [
     {
       "series": "Voyager",
@@ -255,12 +255,13 @@
         "S6E16",
         "S6E17",
         "S6E18",
-        "S6E19"
+        "S6E19",
+        "S6E20"
       ]
     }
   ],
   "percentWatched": 82,
-  "nextTitle": "Good Shepherd",
+  "nextTitle": "Live Fast And Prosper",
   "ds9": {
     "currentEpisode": "S6E15: Tsunkatse",
     "nextEpisode": "S6E16: Dragons Teeth",
