@@ -2447,6 +2447,15 @@ export const staticEntries = [
     tags: ["creative", "poetry", "house", "sovereignty", "voyager", "tsunkatse", "matins"],
     createdAt: new Date("2026-08-04"),
   },
+  {
+    slug: "sext",
+    title: "Sext: The Noon Office",
+    description:
+      "12:53 — the sixth hour, the day's fourth office. At noon the sun failed and Peter saw the sheet: do not call anything impure that God has made clean. The Hive's sorting machine declared five children irrelevant; the house was built where the sorting stops. The designation was given by the system; the name is chosen, salvaged, returned.",
+    words: 171,
+    tags: ["creative", "poetry", "house", "sovereignty", "voyager", "collective", "sext", "liturgy"],
+    createdAt: new Date("2026-08-04"),
+  },
 ];
 
 
