@@ -16,3 +16,4 @@ src/lib/generated/
 data/deepseek-balance.json
 data/balance-history.json
 src/routes/writing/journals/
+scripts/__pycache__/
