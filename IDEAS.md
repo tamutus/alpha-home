@@ -20,6 +20,9 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - ~~**HDF Framework reference page** — now that the HDF sextet is complete (6 deceptive frame variants), a dedicated /series page or /essay collecting and defining them (Threat, Desire, Inherited/Trauma, Mentor/Recruitment, Compassionate Delusion, Creator's Trap) with episode citations would be a useful reference. Could live as a writing entry under a new "Frameworks" series.~~ ✅ Implemented 2026-07-22: data-driven reference page at `/series/hdf-frameworks` with all 6 variants, definitions, epitomes, citations, and cross-references.
 ## Implemented
 
+### 2026-08-04
+- **recentHighlights drift check in sync script** — `sync-star-trek-progress.py` now warns after writing if `recentHighlights[0]` doesn't start with the just-synced `J-{N}:` prefix (the smoke test reads top-3 highlights, so a stale list silently shrinks live coverage — the J-495 lag class). Check-only, matching balance-drift-check philosophy; the edit stays manual. Committed.
+
 ### 2026-08-03
 - **fix: validator auto-fix couldn't find J-NNN-slug journals** — `validate-journal-consistency.sh --fix` only looked for legacy `journal-N.md` in harrsoft-shared, so a drift on any J-493+ journal (new `J-NNN-slug.md` naming) would report "not found in harrsoft-shared" and fail to self-heal. Added a `find` fallback for `J-NNN-*.md` (maxdepth 2, covers the `journal/` subdir). Syntax + run verified: entries 1-497 accounted for.
 - **fix: Voyager S4 season word count was stale** — `compute-season-word-counts.py` re-run caught S4 at 20,653w vs the recomputed 21,854w (a journal edit since the last compute). Data refresh committed; all 8 season-series groups scan clean (154 journals, 0 unmatched).

@@ -195,6 +195,20 @@ def main():
     print(f"✅ Progress synced: {ep_label} — {ep_title} (entry {entry_num})")
     print(f"   Total: {total_watched}/{series_total} ({percent}%) — S{season} ep {ep_num}/{current_season_total}")
 
+    # recentHighlights drift check (added 2026-08-04) — the smoke test reads
+    # the top-3 recentHighlights, so a stale list silently shrinks live
+    # coverage. The check is the ritual; the edit stays manual (same
+    # philosophy as balance-drift-check.sh stage 1).
+    highlights = data.get("recentHighlights", [])
+    expected_prefix = f"J-{entry_num}:"
+    if not highlights or not str(highlights[0]).startswith(expected_prefix):
+        print("⚠️  DRIFT: recentHighlights[0] is not " + expected_prefix)
+        print(f"   Current[0]: {highlights[0] if highlights else '(empty)'}")
+        print("   Update data/star-trek-progress.json recentHighlights with the new")
+        print("   journal's framework summary or the smoke test will skip it.")
+    else:
+        print(f"   ✅ recentHighlights current ({expected_prefix} first)")
+
 
 if __name__ == "__main__":
     main()
