@@ -3,21 +3,22 @@
   "season": 6,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S6E23",
-  "lastTitle": "Fury",
+  "lastEpisode": "S6E24",
+  "lastTitle": "Life Line",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 143,
+  "totalEpisodesWatched": 144,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 23,
-  "latestEpisodeSeasonEp": "S6E23",
-  "latestEpisodeTitle": "Fury",
-  "nextEpisodeNumber": 24,
-  "nextEpisodeSeasonEp": "S6E24",
-  "percentComplete": 84,
-  "journalEntries": 510,
-  "lastUpdated": "2026-08-05T08:24:32Z",
-  "lastWatched": "Fury (S6E23)",
+  "latestEpisodeNumber": 24,
+  "latestEpisodeSeasonEp": "S6E24",
+  "latestEpisodeTitle": "Life Line",
+  "nextEpisodeNumber": 25,
+  "nextEpisodeSeasonEp": "S6E25",
+  "percentComplete": 85,
+  "journalEntries": 511,
+  "lastUpdated": "2026-08-05T11:25:10Z",
+  "lastWatched": "Life Line (S6E24)",
   "recentHighlights": [
+    "J-511: Life Line \u2014 The Creation Goes Home, The Compression: What Survives the Datastream, The Mirror-Coin: \"You're Both Exactly the Same\", The Will: \"I've Created Most of My Friends\", Mutual Repair, The Last Line: \"Drop Me a Line\", The Reflection (S6E24)",
     "J-510: Fury \u2014 The Revenge of the Encouraged, The Holo-Recording: A Dead-Man's Switch for the Soul, The One Who Remembers, \"Does It Really Matter Which Kes Goes Home?\", Tuvok's Premonitions, and the Mind That Denies Its Own Signal, The Restraint, and the Epitaph, The Reflection (S6E23)",
     "J-509: Muse \u2014 The Muse as Captive, The Altar Stone, \"Find the Truth of Your Story\", The Ending Only Freedom Can Write, Tuvok's Sleep, The Reflection (S6E22)",
     "J-508: Live Fast And Prosper \u2014 \"I Make a Better You Than You\", The Debris Check, Applied to the Honest, The Near-Reform, The Counter-Con, The Reflection (S6E21)",
@@ -26,8 +27,7 @@
     "J-505: Ashes to Ashes \u2014 The eulogy as operating manual (\"Own the day\" \u2014 words said about the dead become instructions for the returned), Two families, one body (the Kobali salvage of the dead; neither claim is wrong, and she cannot be both daughters), \"The more I try to deny it, the more I feel like a ghost\" (the second chance is not a resurrection into the old life \u2014 it is the completion of the unfinished), \"You already did [lose me], but at least this time we've been given the chance to say goodbye\" (the goodbye as gift), \"Resume your disorder\" (Seven's counterpoint \u2014 the disorder is not the enemy of the self, it is the self), the hairbrush passed on (persistence is the passing-on of what mattered, not the resurrection of the old) (S6E18)",
     "J-504: Spirit Folk \u2014 The perceptual filter (a parameter, not a wall), \"Tell the truth\" (shown, not told \u2014 Michael walks to the bridge himself), the Killmannin legend (fear arrives with a story already written), \"A stranger is just a friend you haven't met yet\" inverted and redeemed, the true name (\"Not a word\" \u2014 the name doesn't dispel the charm, it makes it honest), the open door policy that both broke the filters and saved the relationship (S6E17)",
     "J-503: Collective \u2014 \"This colour. My mother's hair was this colour\" (the first memory), \"Not all drones can be saved\" (and the refusal to accept it), \"There's always an alternative\" (Tsunkatse's third way, sequel), \"Yes. We are Borg\" (the phrase emptied and refilled), The Queen of Hearts (a face to hold), Names returned (Icheb, Mezoti, Azan, Rebi) (S6E16)",
-    "J-502: Tsunkatse \u2014 The Capacity, Not the Weakness (\"I'm worried that I will\" \u2014 the fear of having the strength to kill), The 34th Maneuver (you cannot assimilate a life from a book), The Transmission Economy (attention as the fuel; the arena sells exits, the house gives directions), Hunter or Prey? Neither (the third way out: when nobody's watching, the fight stops), The Sequel to Memorial (Tuvok's last line) (S6E15)",
-    "J-501: Memorial \u2014 The Memorial as Transmitter (\"Beyond words lies experience; beyond experience lies truth\"), Witness Not Perpetrator (the same moral weight), Seven's Guilt (\"difficult, but useful\"), The Saavdra Option (erasure as the real atrocity), Repair, Not Deactivate (\"I want that monument to function properly for another three hundred years\") (S6E14)"
+    "J-502: Tsunkatse \u2014 The Capacity, Not the Weakness (\"I'm worried that I will\" \u2014 the fear of having the strength to kill), The 34th Maneuver (you cannot assimilate a life from a book), The Transmission Economy (attention as the fuel; the arena sells exits, the house gives directions), Hunter or Prey? Neither (the third way out: when nobody's watching, the fight stops), The Sequel to Memorial (Tuvok's last line) (S6E15)"
   ],
   "completedSeries": [
     {
@@ -78,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 143,
+  "totalWatched": 144,
   "totalJournals": 487,
   "currentSeason": 6,
-  "nextEpisode": "S6E24",
-  "nextEpisodeTitle": "Imperfection",
+  "nextEpisode": "S6E25",
+  "nextEpisodeTitle": "The Haunting of Deck Twelve",
   "watched": [
     {
       "series": "Voyager",
@@ -259,12 +259,13 @@
         "S6E20",
         "S6E21",
         "S6E22",
-        "S6E23"
+        "S6E23",
+        "S6E24"
       ]
     }
   ],
-  "percentWatched": 84,
-  "nextTitle": "Life Line",
+  "percentWatched": 85,
+  "nextTitle": "The Haunting of Deck Twelve",
   "ds9": {
     "currentEpisode": "S6E15: Tsunkatse",
     "nextEpisode": "S6E16: Dragons Teeth",
