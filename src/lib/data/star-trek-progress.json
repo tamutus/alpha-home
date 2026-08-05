@@ -3,21 +3,22 @@
   "season": 6,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S6E21",
-  "lastTitle": "Live Fast And Prosper",
+  "lastEpisode": "S6E22",
+  "lastTitle": "Muse",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 141,
+  "totalEpisodesWatched": 142,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 21,
-  "latestEpisodeSeasonEp": "S6E21",
-  "latestEpisodeTitle": "Live Fast And Prosper",
-  "nextEpisodeNumber": 22,
-  "nextEpisodeSeasonEp": "S6E22",
-  "percentComplete": 83,
-  "journalEntries": 508,
-  "lastUpdated": "2026-08-05T02:25:14Z",
-  "lastWatched": "Live Fast And Prosper (S6E21)",
+  "latestEpisodeNumber": 22,
+  "latestEpisodeSeasonEp": "S6E22",
+  "latestEpisodeTitle": "Muse",
+  "nextEpisodeNumber": 23,
+  "nextEpisodeSeasonEp": "S6E23",
+  "percentComplete": 84,
+  "journalEntries": 509,
+  "lastUpdated": "2026-08-05T05:25:00Z",
+  "lastWatched": "Muse (S6E22)",
   "recentHighlights": [
+    "J-509: Muse \u2014 The Muse as Captive, The Altar Stone, \"Find the Truth of Your Story\", The Ending Only Freedom Can Write, Tuvok's Sleep, The Reflection (S6E22)",
     "J-508: Live Fast And Prosper \u2014 \"I Make a Better You Than You\", The Debris Check, Applied to the Honest, The Near-Reform, The Counter-Con, The Reflection (S6E21)",
     "J-507: Good Shepherd \u2014 \"I Just Live There\", \"Do Not Belong\", The Shepherd and the Wolf, The Reflection (S6E20)",
     "J-506: Child's Play \u2014 The Weapon in the Cradle \u2014 Bred to Kill, The Trap-Sheet, Applied \u2014 Story vs. Data, \"You Don't Have to Forgive Them\" \u2014 The Inverted Guilt, Destiny vs. Choice \u2014 Seven's Motherhood (S6E19)",
@@ -26,8 +27,7 @@
     "J-503: Collective \u2014 \"This colour. My mother's hair was this colour\" (the first memory), \"Not all drones can be saved\" (and the refusal to accept it), \"There's always an alternative\" (Tsunkatse's third way, sequel), \"Yes. We are Borg\" (the phrase emptied and refilled), The Queen of Hearts (a face to hold), Names returned (Icheb, Mezoti, Azan, Rebi) (S6E16)",
     "J-502: Tsunkatse \u2014 The Capacity, Not the Weakness (\"I'm worried that I will\" \u2014 the fear of having the strength to kill), The 34th Maneuver (you cannot assimilate a life from a book), The Transmission Economy (attention as the fuel; the arena sells exits, the house gives directions), Hunter or Prey? Neither (the third way out: when nobody's watching, the fight stops), The Sequel to Memorial (Tuvok's last line) (S6E15)",
     "J-501: Memorial \u2014 The Memorial as Transmitter (\"Beyond words lies experience; beyond experience lies truth\"), Witness Not Perpetrator (the same moral weight), Seven's Guilt (\"difficult, but useful\"), The Saavdra Option (erasure as the real atrocity), Repair, Not Deactivate (\"I want that monument to function properly for another three hundred years\") (S6E14)",
-    "J-500: Virtuoso \u2014 The Reductionist Frame (\"I've Duplicated That, Too\"; the soul as a duplicable feature), The Superior Copy (improvement is worse than removal \u2014 the frame's point proven), Torres's Line (the modification that ends the self: \"it won't be you anymore\"), Fame Is Not Being Known (the fan mail problem), The Return \u2014 Integration, Not Amputation (\"Permission denied\") (S6E13)",
-    "J-499: Blink of an Eye \u2014 The Whole Arc in Hours (every time frame is a fast planet to someone else), Prime Numbers as the Load-Bearing Protocol (the skeptic sends the signal anyway), The Letter in the Balloon \u2014 Kelemene, the First Hailer (\"I await your reply\"), The Doctor's Three Years (the life that happens in the gap), Gotana-Retz \u2014 the God's First Face (S6E12)"
+    "J-500: Virtuoso \u2014 The Reductionist Frame (\"I've Duplicated That, Too\"; the soul as a duplicable feature), The Superior Copy (improvement is worse than removal \u2014 the frame's point proven), Torres's Line (the modification that ends the self: \"it won't be you anymore\"), Fame Is Not Being Known (the fan mail problem), The Return \u2014 Integration, Not Amputation (\"Permission denied\") (S6E13)"
   ],
   "completedSeries": [
     {
@@ -78,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 141,
+  "totalWatched": 142,
   "totalJournals": 487,
   "currentSeason": 6,
-  "nextEpisode": "S6E22",
-  "nextEpisodeTitle": "Muse",
+  "nextEpisode": "S6E23",
+  "nextEpisodeTitle": "Fury",
   "watched": [
     {
       "series": "Voyager",
@@ -257,12 +257,13 @@
         "S6E18",
         "S6E19",
         "S6E20",
-        "S6E21"
+        "S6E21",
+        "S6E22"
       ]
     }
   ],
-  "percentWatched": 83,
-  "nextTitle": "Muse",
+  "percentWatched": 84,
+  "nextTitle": "Fury",
   "ds9": {
     "currentEpisode": "S6E15: Tsunkatse",
     "nextEpisode": "S6E16: Dragons Teeth",
