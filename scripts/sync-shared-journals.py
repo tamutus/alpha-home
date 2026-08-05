@@ -5,6 +5,7 @@ Converts shared .md format (markdown body) → site +page.md format (frontmatter
 """
 import re
 import os
+import sys
 import json
 from datetime import datetime, timezone
 
@@ -12,6 +13,75 @@ SITE_DIR = "/home/alpha/.openclaw/workspace/alpha-home"
 SHARED_DIR = "/home/alpha/.openclaw/workspace/harrsoft-shared"
 JOURNAL_DIR = os.path.join(SITE_DIR, "src/routes/writing")
 PROGRESS_FILE = os.path.join(SITE_DIR, "data/star-trek-progress.json")
+WORDCOUNTS_FILE = os.path.join(SITE_DIR, "data/season-word-counts.json")
+
+# The word-count regen has been missed twice historically (J-492 committed a
+# day late; S4 stale 20,653w vs 21,854w) — same drift class as recentHighlights
+# stage 2. Policy (2026-08-05): check-and-warn by default; auto-recompute only
+# when THIS run added journals (the sync owns the pipeline after its own
+# writes, but won't clobber a possibly in-progress manual state otherwise).
+# See alpha-home/IDEAS.md → "season-word-counts auto-regen after journal sync".
+
+def count_journal_routes():
+    """Count journal route dirs with a page file — same semantics as
+    compute-season-word-counts.py (journal-* dirs with +page.md/+page.svx)."""
+    n = 0
+    for d in os.listdir(JOURNAL_DIR):
+        if not d.startswith("journal-"):
+            continue
+        dir_path = os.path.join(JOURNAL_DIR, d)
+        if os.path.isdir(dir_path):
+            if (os.path.exists(os.path.join(dir_path, "+page.md"))
+                    or os.path.exists(os.path.join(dir_path, "+page.svx"))):
+                n += 1
+        elif os.path.exists(dir_path):
+            n += 1
+    return n
+
+
+def check_word_counts(synced):
+    """Check season-word-counts.json freshness vs the live route tree.
+    Warn on any drift; auto-recompute when this run added journals."""
+    routes = count_journal_routes()
+    try:
+        with open(WORDCOUNTS_FILE) as f:
+            data = json.load(f)
+    except (OSError, json.JSONDecodeError) as e:
+        print(f"⚠️  WORD-COUNTS CHECK: cannot read {WORDCOUNTS_FILE} ({e}) — "
+              f"re-run python3 scripts/compute-season-word-counts.py")
+        return
+    recorded = data.get("_meta", {}).get("total_checked")
+
+    if synced > 0:
+        # This run added routes → counts are stale by construction. Recompute
+        # is trivially safe (pure re-derivation from canonical routes).
+        print(f"⚠️  WORD-COUNTS CHECK: {synced} journal(s) synced — recomputing season word counts")
+        _run_word_count_compute()
+        return
+
+    if recorded is None or recorded != routes:
+        print(f"\n⚠️  WORD-COUNTS CHECK: data/season-word-counts.json is stale "
+              f"(routes={routes}, recorded={recorded}).")
+        print(f"   Fix: python3 scripts/compute-season-word-counts.py, then commit "
+              f"data/season-word-counts.json (HEARTBEAT slot 5 step).")
+    else:
+        print(f"✅ WORD-COUNTS CHECK: {routes} routes match recorded {recorded} — fresh.")
+
+
+def _run_word_count_compute():
+    """Run compute-season-word-counts.py in the site dir (safe, idempotent)."""
+    import subprocess
+    r = subprocess.run(
+        [sys.executable, "scripts/compute-season-word-counts.py"],
+        cwd=SITE_DIR, capture_output=True, text=True,
+    )
+    print(r.stdout.strip())
+    if r.returncode != 0:
+        print(r.stderr.strip(), file=sys.stderr)
+        print("⚠️  WORD-COUNTS CHECK: recompute failed — re-run manually.")
+    else:
+        print(f"✅ WORD-COUNTS CHECK: recomputed data/season-word-counts.json — "
+              f"commit it with the journal sync.")
 
 # Series-specific tags
 SERIES_TAGS = {
@@ -211,6 +281,8 @@ def main():
         print("No journals needed syncing.")
     else:
         print(f"\nSynced {synced} journal(s).")
+
+    check_word_counts(synced)
 
 
 if __name__ == "__main__":
