@@ -3,21 +3,22 @@
   "season": 7,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S7E1",
-  "lastTitle": "Unimatrix Zero, Part II",
+  "lastEpisode": "S7E2",
+  "lastTitle": "Imperfection",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 147,
+  "totalEpisodesWatched": 148,
   "currentSeasonTotalEpisodes": 25,
-  "latestEpisodeNumber": 1,
-  "latestEpisodeSeasonEp": "S7E1",
-  "latestEpisodeTitle": "Unimatrix Zero, Part II",
-  "nextEpisodeNumber": 2,
-  "nextEpisodeSeasonEp": "S7E2",
-  "percentComplete": 86,
-  "journalEntries": 514,
-  "lastUpdated": "2026-08-05T21:24:49Z",
-  "lastWatched": "Unimatrix Zero, Part II (S7E1)",
+  "latestEpisodeNumber": 2,
+  "latestEpisodeSeasonEp": "S7E2",
+  "latestEpisodeTitle": "Imperfection",
+  "nextEpisodeNumber": 3,
+  "nextEpisodeSeasonEp": "S7E3",
+  "percentComplete": 87,
+  "journalEntries": 515,
+  "lastUpdated": "2026-08-06T00:25:21Z",
+  "lastWatched": "Imperfection (S7E2)",
   "recentHighlights": [
+    "J-515: Imperfection \u2014 \"My Ocular Implant Must Be Malfunctioning\", \"It Will Be As If I Never Existed\", The Living Donor, \"You're the One Who Needs to Rely on Others\", \"Actually, It's Functioning Perfectly\" (S7E2)",
     "J-514: Unimatrix Zero, Part II \u2014 \"Stay Tuvok. That's an Order.\", The Queen in the Garden, \"It Gave Us a Chance to Fall in Love Again\", \"Remind Me About Today\", The S7 Premiere, and What It Opens (S7E1)",
     "J-513: Unimatrix Zero, Part I \u2014 The Dream That Isn't, the Mutation as Selfhood, the Sanctuary That Becomes a Resistance, We Were More Than Friends Weren't We, Janeway's Annika Would Disagree, The Sanctuary Becomes a Resistance (S6E26)",
     "J-512: The Haunting of Deck Twelve \u2014 The Frame Story: Ghost Stories as Childcare, The Creature: A Lost Being, Not a Monster, The Salvoxia: The Parable That Must Be Refused, Mezoti's Fear: \"I Felt Alone\", Janeway and Voyager: Talking to the Ship, The Bluff and the Bargain, The Correction: \"It's Not a Monster\", The Reflection (S6E25)",
@@ -26,8 +27,7 @@
     "J-509: Muse \u2014 The Muse as Captive, The Altar Stone, \"Find the Truth of Your Story\", The Ending Only Freedom Can Write, Tuvok's Sleep, The Reflection (S6E22)",
     "J-508: Live Fast And Prosper \u2014 \"I Make a Better You Than You\", The Debris Check, Applied to the Honest, The Near-Reform, The Counter-Con, The Reflection (S6E21)",
     "J-507: Good Shepherd \u2014 \"I Just Live There\", \"Do Not Belong\", The Shepherd and the Wolf, The Reflection (S6E20)",
-    "J-506: Child's Play \u2014 The Weapon in the Cradle \u2014 Bred to Kill, The Trap-Sheet, Applied \u2014 Story vs. Data, \"You Don't Have to Forgive Them\" \u2014 The Inverted Guilt, Destiny vs. Choice \u2014 Seven's Motherhood (S6E19)",
-    "J-505: Ashes to Ashes \u2014 The eulogy as operating manual (\"Own the day\" \u2014 words said about the dead become instructions for the returned), Two families, one body (the Kobali salvage of the dead; neither claim is wrong, and she cannot be both daughters), \"The more I try to deny it, the more I feel like a ghost\" (the second chance is not a resurrection into the old life \u2014 it is the completion of the unfinished), \"You already did [lose me], but at least this time we've been given the chance to say goodbye\" (the goodbye as gift), \"Resume your disorder\" (Seven's counterpoint \u2014 the disorder is not the enemy of the self, it is the self), the hairbrush passed on (persistence is the passing-on of what mattered, not the resurrection of the old) (S6E18)"
+    "J-506: Child's Play \u2014 The Weapon in the Cradle \u2014 Bred to Kill, The Trap-Sheet, Applied \u2014 Story vs. Data, \"You Don't Have to Forgive Them\" \u2014 The Inverted Guilt, Destiny vs. Choice \u2014 Seven's Motherhood (S6E19)"
   ],
   "completedSeries": [
     {
@@ -78,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 147,
+  "totalWatched": 148,
   "totalJournals": 487,
   "currentSeason": 7,
-  "nextEpisode": "S7E2",
-  "nextEpisodeTitle": "Imperfection",
+  "nextEpisode": "S7E3",
+  "nextEpisodeTitle": "Drive",
   "watched": [
     {
       "series": "Voyager",
@@ -269,12 +269,13 @@
       "series": "Voyager",
       "season": 7,
       "episodes": [
-        "S7E1"
+        "S7E1",
+        "S7E2"
       ]
     }
   ],
-  "percentWatched": 86,
-  "nextTitle": "Imperfection",
+  "percentWatched": 87,
+  "nextTitle": "Drive",
   "ds9": {
     "currentEpisode": "S6E15: Tsunkatse",
     "nextEpisode": "S6E16: Dragons Teeth",
