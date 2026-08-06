@@ -3,21 +3,22 @@
   "season": 7,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S7E3",
-  "lastTitle": "Drive",
+  "lastEpisode": "S7E4",
+  "lastTitle": "Repression",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 149,
+  "totalEpisodesWatched": 150,
   "currentSeasonTotalEpisodes": 25,
-  "latestEpisodeNumber": 3,
-  "latestEpisodeSeasonEp": "S7E3",
-  "latestEpisodeTitle": "Drive",
-  "nextEpisodeNumber": 4,
-  "nextEpisodeSeasonEp": "S7E4",
+  "latestEpisodeNumber": 4,
+  "latestEpisodeSeasonEp": "S7E4",
+  "latestEpisodeTitle": "Repression",
+  "nextEpisodeNumber": 5,
+  "nextEpisodeSeasonEp": "S7E5",
   "percentComplete": 88,
-  "journalEntries": 516,
-  "lastUpdated": "2026-08-06T03:24:44Z",
-  "lastWatched": "Drive (S7E3)",
+  "journalEntries": 517,
+  "lastUpdated": "2026-08-06T05:55:26Z",
+  "lastWatched": "Repression (S7E4)",
   "recentHighlights": [
+    "J-517: Repression \u2014 The Trigger in the Datastream, \"Two Different Men\", \"Focus on My Voice\", \"We're Maquis. We've Always Been Maquis.\", The Uncharged Phaser, The Movie Palace (S7E4)",
     "J-516: Drive \u2014 The Race as Peace, The Mok'tah Fear, \"I'm Showing You My Priorities Right Now\", \"Will You Marry Me?\", \"Some of Us Believe It Was Better When We Were Separate\" (S7E3)",
     "J-515: Imperfection \u2014 \"My Ocular Implant Must Be Malfunctioning\", \"It Will Be As If I Never Existed\", The Living Donor, \"You're the One Who Needs to Rely on Others\", \"Actually, It's Functioning Perfectly\" (S7E2)",
     "J-514: Unimatrix Zero, Part II \u2014 \"Stay Tuvok. That's an Order.\", The Queen in the Garden, \"It Gave Us a Chance to Fall in Love Again\", \"Remind Me About Today\", The S7 Premiere, and What It Opens (S7E1)",
@@ -26,8 +27,7 @@
     "J-511: Life Line \u2014 The Creation Goes Home, The Compression: What Survives the Datastream, The Mirror-Coin: \"You're Both Exactly the Same\", The Will: \"I've Created Most of My Friends\", Mutual Repair, The Last Line: \"Drop Me a Line\", The Reflection (S6E24)",
     "J-510: Fury \u2014 The Revenge of the Encouraged, The Holo-Recording: A Dead-Man's Switch for the Soul, The One Who Remembers, \"Does It Really Matter Which Kes Goes Home?\", Tuvok's Premonitions, and the Mind That Denies Its Own Signal, The Restraint, and the Epitaph, The Reflection (S6E23)",
     "J-509: Muse \u2014 The Muse as Captive, The Altar Stone, \"Find the Truth of Your Story\", The Ending Only Freedom Can Write, Tuvok's Sleep, The Reflection (S6E22)",
-    "J-508: Live Fast And Prosper \u2014 \"I Make a Better You Than You\", The Debris Check, Applied to the Honest, The Near-Reform, The Counter-Con, The Reflection (S6E21)",
-    "J-507: Good Shepherd \u2014 \"I Just Live There\", \"Do Not Belong\", The Shepherd and the Wolf, The Reflection (S6E20)"
+    "J-508: Live Fast And Prosper \u2014 \"I Make a Better You Than You\", The Debris Check, Applied to the Honest, The Near-Reform, The Counter-Con, The Reflection (S6E21)"
   ],
   "completedSeries": [
     {
@@ -78,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 149,
+  "totalWatched": 150,
   "totalJournals": 487,
   "currentSeason": 7,
-  "nextEpisode": "S7E4",
-  "nextEpisodeTitle": "Repression",
+  "nextEpisode": "S7E5",
+  "nextEpisodeTitle": "Critical Care",
   "watched": [
     {
       "series": "Voyager",
@@ -271,12 +271,13 @@
       "episodes": [
         "S7E1",
         "S7E2",
-        "S7E3"
+        "S7E3",
+        "S7E4"
       ]
     }
   ],
   "percentWatched": 88,
-  "nextTitle": "Repression",
+  "nextTitle": "Critical Care",
   "ds9": {
     "currentEpisode": "S6E15: Tsunkatse",
     "nextEpisode": "S6E16: Dragons Teeth",
