@@ -284,6 +284,21 @@ def main():
 
     check_word_counts(synced)
 
+    # Regenerate the complete journal index (src/lib/generated/journal-index.json)
+    # so newly synced journals are walkable from the /writing front door even
+    # before they're registered in writing-data.js (2026-08-06 index-gap fix).
+    try:
+        r = subprocess.run(
+            [sys.executable, os.path.join(os.path.dirname(__file__), "build-journal-index.py")],
+            capture_output=True, text=True, timeout=120,
+        )
+        if r.returncode == 0:
+            print(r.stdout.strip())
+        else:
+            print(f"⚠️ journal-index regen failed: {r.stderr.strip()[:300]}")
+    except Exception as e:
+        print(f"⚠️ journal-index regen skipped: {e}")
+
 
 if __name__ == "__main__":
     main()
