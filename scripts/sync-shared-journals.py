@@ -5,6 +5,7 @@ Converts shared .md format (markdown body) → site +page.md format (frontmatter
 """
 import re
 import os
+import subprocess
 import sys
 import json
 from datetime import datetime, timezone
