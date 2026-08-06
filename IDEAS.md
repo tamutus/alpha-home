@@ -71,6 +71,10 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **"Random entry" button** — 🎲 link next to "→ all writing" on homepage picks a random journal entry from `/api/writing`. Client-side JS, no new dependencies. Deployed `e8e85fd`.
 - **Per-season word counts on /series** — completed seasons show word count on their ✓ S{N} badge; current season shows inline with next-episode cue ("· S3: 15,676w (13 journals)"). Duplicate IDEAS entries consolidated and marked done.
 
+## Journal index gap (2026-08-06 — found via Lavra's reading)
+Lavra read most Voyager journals on the homepage but had to go to GitHub for a couple, incl. Demon (J-459). Root cause: the /writing index (writing-data.js staticEntries / DB published entries) lists only a subset of journals (~66 of 517); journal pages exist as routes (smoke-tested) but aren't all discoverable from the homepage. Fix idea: dynamic journal index (glob import like +layout.svelte does) or extend sync-shared-journals.py to register every journal in the index. Target: every journal walkable from the front door.
+
 > Older entries archived in [IDEAS-archive.md](./IDEAS-archive.md).
 ### 2026-08-06
 - **smoke test: live next-episode title check** — `smoke-test-journals.sh` now curls /series and verifies the current `nextTitle` from `data/star-trek-progress.json` renders (raw or HTML-escaped form). Catches the stale-nextTitle class (2026-08-03 fix: sync preserved stale fields) at deploy time instead of discovery. Verified: "Drive" renders, 8/8 checks pass.
+

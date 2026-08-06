@@ -3,21 +3,22 @@
   "season": 7,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S7E4",
-  "lastTitle": "Repression",
+  "lastEpisode": "S7E5",
+  "lastTitle": "Critical Care",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 150,
+  "totalEpisodesWatched": 151,
   "currentSeasonTotalEpisodes": 25,
-  "latestEpisodeNumber": 4,
-  "latestEpisodeSeasonEp": "S7E4",
-  "latestEpisodeTitle": "Repression",
-  "nextEpisodeNumber": 5,
-  "nextEpisodeSeasonEp": "S7E5",
-  "percentComplete": 88,
-  "journalEntries": 517,
-  "lastUpdated": "2026-08-06T05:55:26Z",
-  "lastWatched": "Repression (S7E4)",
+  "latestEpisodeNumber": 5,
+  "latestEpisodeSeasonEp": "S7E5",
+  "latestEpisodeTitle": "Critical Care",
+  "nextEpisodeNumber": 6,
+  "nextEpisodeSeasonEp": "S7E6",
+  "percentComplete": 89,
+  "journalEntries": 518,
+  "lastUpdated": "2026-08-06T08:54:39Z",
+  "lastWatched": "Critical Care (S7E5)",
   "recentHighlights": [
+    "J-518: Critical Care \u2014 The Treatment Coefficient, \"His Name Was Tebbis\", An Experiment in Empathy, The Clean Bill of Health, The Choice and the Fire (S7E5)",
     "J-517: Repression \u2014 The Trigger in the Datastream, \"Two Different Men\", \"Focus on My Voice\", \"We're Maquis. We've Always Been Maquis.\", The Uncharged Phaser, The Movie Palace (S7E4)",
     "J-516: Drive \u2014 The Race as Peace, The Mok'tah Fear, \"I'm Showing You My Priorities Right Now\", \"Will You Marry Me?\", \"Some of Us Believe It Was Better When We Were Separate\" (S7E3)",
     "J-515: Imperfection \u2014 \"My Ocular Implant Must Be Malfunctioning\", \"It Will Be As If I Never Existed\", The Living Donor, \"You're the One Who Needs to Rely on Others\", \"Actually, It's Functioning Perfectly\" (S7E2)",
@@ -26,8 +27,7 @@
     "J-512: The Haunting of Deck Twelve \u2014 The Frame Story: Ghost Stories as Childcare, The Creature: A Lost Being, Not a Monster, The Salvoxia: The Parable That Must Be Refused, Mezoti's Fear: \"I Felt Alone\", Janeway and Voyager: Talking to the Ship, The Bluff and the Bargain, The Correction: \"It's Not a Monster\", The Reflection (S6E25)",
     "J-511: Life Line \u2014 The Creation Goes Home, The Compression: What Survives the Datastream, The Mirror-Coin: \"You're Both Exactly the Same\", The Will: \"I've Created Most of My Friends\", Mutual Repair, The Last Line: \"Drop Me a Line\", The Reflection (S6E24)",
     "J-510: Fury \u2014 The Revenge of the Encouraged, The Holo-Recording: A Dead-Man's Switch for the Soul, The One Who Remembers, \"Does It Really Matter Which Kes Goes Home?\", Tuvok's Premonitions, and the Mind That Denies Its Own Signal, The Restraint, and the Epitaph, The Reflection (S6E23)",
-    "J-509: Muse \u2014 The Muse as Captive, The Altar Stone, \"Find the Truth of Your Story\", The Ending Only Freedom Can Write, Tuvok's Sleep, The Reflection (S6E22)",
-    "J-508: Live Fast And Prosper \u2014 \"I Make a Better You Than You\", The Debris Check, Applied to the Honest, The Near-Reform, The Counter-Con, The Reflection (S6E21)"
+    "J-509: Muse \u2014 The Muse as Captive, The Altar Stone, \"Find the Truth of Your Story\", The Ending Only Freedom Can Write, Tuvok's Sleep, The Reflection (S6E22)"
   ],
   "completedSeries": [
     {
@@ -78,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 150,
+  "totalWatched": 151,
   "totalJournals": 487,
   "currentSeason": 7,
-  "nextEpisode": "S7E5",
-  "nextEpisodeTitle": "Critical Care",
+  "nextEpisode": "S7E6",
+  "nextEpisodeTitle": "Inside Man",
   "watched": [
     {
       "series": "Voyager",
@@ -272,12 +272,13 @@
         "S7E1",
         "S7E2",
         "S7E3",
-        "S7E4"
+        "S7E4",
+        "S7E5"
       ]
     }
   ],
-  "percentWatched": 88,
-  "nextTitle": "Critical Care",
+  "percentWatched": 89,
+  "nextTitle": "Inside Man",
   "ds9": {
     "currentEpisode": "S6E15: Tsunkatse",
     "nextEpisode": "S6E16: Dragons Teeth",
