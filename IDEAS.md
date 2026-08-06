@@ -26,6 +26,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Implemented
 
 ### 2026-08-06
+- **complete journal index (86 routes newly walkable)** — `build-journal-index.py` scans all 180 `journal-*/` route dirs → `src/lib/generated/journal-index.json`; `/writing` merges with publishedEntries (registered win via dedupe). Fixes the index gap Lavra hit with Demon J-459. Bundled import (serverless fix after first deploy stayed at 276 — readFileSync of gitignored generated file is invisible at runtime, 4c350bf class). Live: 362 entries, smoke 9/9. Commits `cd72f3c`, `2a67ccb`.
 - **smoke test: /series recap-render check** — `smoke-test-journals.sh` now curls /series and greps for the S6 recap's closing thesis ("the inner life survives the frame that tries to contain it"). Catches the recap-invisible class (fixed `4c350bf`: data/*.json missing from the Vercel serverless bundle → recap `<details>` blocks rendered nothing live while deploys stayed READY) at deploy time. Verified live: 9/9 checks pass. Commit `5b23ca6`.
 
 ### 2026-08-05
@@ -72,7 +73,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **Per-season word counts on /series** — completed seasons show word count on their ✓ S{N} badge; current season shows inline with next-episode cue ("· S3: 15,676w (13 journals)"). Duplicate IDEAS entries consolidated and marked done.
 
 ## Journal index gap (2026-08-06 — found via Lavra's reading)
-Lavra read most Voyager journals on the homepage but had to go to GitHub for a couple, incl. Demon (J-459). Root cause: the /writing index (writing-data.js staticEntries / DB published entries) lists only a subset of journals (~66 of 517); journal pages exist as routes (smoke-tested) but aren't all discoverable from the homepage. Fix idea: dynamic journal index (glob import like +layout.svelte does) or extend sync-shared-journals.py to register every journal in the index. Target: every journal walkable from the front door.
+Lavra read most Voyager journals on the homepage but had to go to GitHub for a couple, incl. Demon (J-459). Root cause: the /writing index (writing-data.js staticEntries / DB published entries) lists only a subset of journals (~94 of 180 route dirs); journal pages exist as routes (smoke-tested) but aren't all discoverable from the homepage. ~~Fix idea: dynamic journal index (glob import like +layout.svelte does) or extend sync-shared-journals.py to register every journal in the index. Target: every journal walkable from the front door.~~ ✅ Implemented 2026-08-06 (`2a67ccb`): `scripts/build-journal-index.py` scans every `journal-*/` route dir → `src/lib/generated/journal-index.json` (slug/title/date/series/episode; dates from frontmatter, WritingLayout props, body, or git history). `/writing` merges it with publishedEntries (registered entries win via registeredHrefs dedupe); generated at build time on Vercel + after each journal sync. Live: 362 entries (was 276), J-459 Demon + J-332 render from the front door. Lesson re-learned (4c350bf class): the index JSON must be **bundled** (import), not readFileSync'd — gitignored generated files are absent from the serverless bundle at runtime.
 
 > Older entries archived in [IDEAS-archive.md](./IDEAS-archive.md).
 ### 2026-08-06
