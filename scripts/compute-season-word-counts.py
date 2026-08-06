@@ -125,6 +125,92 @@ def word_count(text):
     return len(text.split())
 
 
+def extract_metadata_svelte(text, dirname):
+    """Extract series/season from a hand-built +page.svelte journal.
+
+    These pages pass props to WritingLayout: series="Voyager", episode="S4E24",
+    and optionally seasonWordCount={N}. Falls back to the title string
+    ("Voyager S1E15 — Jetrel") which the generic extractor already handles.
+    """
+    meta = {"season": None, "series": None}
+
+    def map_series(raw):
+        raw = raw.strip().lower()
+        m = {
+            "voyager": "Voyager", "ds9": "DS9", "deep space nine": "DS9",
+            "tng": "TNG", "the next generation": "TNG",
+        }
+        return m.get(raw, None)
+
+    # series="Voyager" prop
+    prop_series = re.search(r'series\s*=\s*"([\w\s]+)"', text)
+    if prop_series:
+        meta["series"] = map_series(prop_series.group(1))
+
+    # episode="S4E24" prop
+    prop_ep = re.search(r'episode\s*=\s*"S(\d+)E', text, re.IGNORECASE)
+    if prop_ep:
+        meta["season"] = int(prop_ep.group(1))
+
+    # Fallback: title line ("Voyager S1E15 — Jetrel")
+    if not (meta["series"] and meta["season"]):
+        title_ep = re.search(
+            r"(Voyager|DS9|TNG|Deep Space Nine)\s+S(\d+)E(\d+)",
+            text[:2000], re.IGNORECASE,
+        )
+        if title_ep:
+            if not meta["season"]:
+                meta["season"] = int(title_ep.group(2))
+            if not meta["series"]:
+                meta["series"] = map_series(title_ep.group(1))
+
+    # Journal-number fallback (shared with generic path)
+    if not meta["series"]:
+        jm = re.search(r"journal-(\d+)", dirname)
+        if jm:
+            num = int(jm.group(1))
+            if num <= 228:
+                meta["series"] = "TNG"
+            elif num <= 393:
+                meta["series"] = "DS9"
+            else:
+                meta["series"] = "Voyager"
+
+    return meta
+
+
+def word_count_svelte(text):
+    """Word count for a +page.svelte journal.
+
+    Computes the prose word count (script block + HTML tags stripped). If the
+    author set an explicit count (seasonWordCount={N} prop or const words = N)
+    and it is within 20% of the computed prose, keep the author's number
+    (their rounding); otherwise use the computed count — explicit metadata
+    has carried copy-paste errors before (journal-376 declared 1400 for a
+    720-word page, journal-460 declared 1470 for 956).
+    """
+    body = re.sub(r"<script>.*?</script>", "", text, flags=re.DOTALL)
+    body = re.sub(r"<[^>]+>", " ", body)
+    body = (
+        body.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
+        .replace("&quot;", '"').replace("&#39;", "'")
+    )
+    computed = len(body.split())
+
+    declared = None
+    prop_wc = re.search(r"seasonWordCount\s*=\s*\{(\d+)\}", text)
+    if prop_wc:
+        declared = int(prop_wc.group(1))
+    const_wc = re.search(r"const\s+words\s*=\s*(\d+)", text)
+    if const_wc:
+        declared = int(const_wc.group(1))
+
+    if declared is not None and computed > 0:
+        if abs(declared - computed) / computed <= 0.20:
+            return declared
+    return computed if computed > 0 else (declared or 0)
+
+
 def main():
     results = {}
 
@@ -138,10 +224,12 @@ def main():
         # Support both directory/+page.md and single-file .md patterns
         dir_path = os.path.join(WRITING_DIR, d)
         if os.path.isdir(dir_path):
-            # Support both +page.md and +page.svx (mdsvex)
+            # Support +page.md, +page.svx (mdsvex), and hand-built +page.svelte
             md_path = os.path.join(dir_path, "+page.md")
             if not os.path.exists(md_path):
                 md_path = os.path.join(dir_path, "+page.svx")
+            if not os.path.exists(md_path):
+                md_path = os.path.join(dir_path, "+page.svelte")
             if not os.path.exists(md_path):
                 continue
         else:
@@ -152,8 +240,12 @@ def main():
 
         total += 1
         text = open(md_path).read()
-        meta = extract_metadata(text, d)
-        wc = word_count(text)
+        if md_path.endswith("+page.svelte"):
+            meta = extract_metadata_svelte(text, d)
+            wc = word_count_svelte(text)
+        else:
+            meta = extract_metadata(text, d)
+            wc = word_count(text)
 
         if meta["series"] and meta["season"]:
             matched += 1

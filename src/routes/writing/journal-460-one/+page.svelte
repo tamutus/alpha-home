@@ -10,7 +10,7 @@
   episode="S4E25"
   j="460"
   starDate="51929.3"
-  seasonWordCount={1470}
+  seasonWordCount={956}
 >
 
 <p><em>One</em> is a pressure-cooker episode — literally, since most of the crew spend it in stasis while Voyager traverses a Mutara-class nebula whose radiation is lethal to organic tissue. Only Seven and the EMH remain active. The nebula degrades all of Voyager's technology, including the Doctor's mobile emitter, and the radiation interferes with Seven's Borg implants, causing hallucinations that grow progressively more vivid and more vicious.</p>

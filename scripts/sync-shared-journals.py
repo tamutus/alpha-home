@@ -33,7 +33,8 @@ def count_journal_routes():
         dir_path = os.path.join(JOURNAL_DIR, d)
         if os.path.isdir(dir_path):
             if (os.path.exists(os.path.join(dir_path, "+page.md"))
-                    or os.path.exists(os.path.join(dir_path, "+page.svx"))):
+                    or os.path.exists(os.path.join(dir_path, "+page.svx"))
+                    or os.path.exists(os.path.join(dir_path, "+page.svelte"))):
                 n += 1
         elif os.path.exists(dir_path):
             n += 1

@@ -4,7 +4,7 @@
   const description = "Tuvok trains Maquis crewmembers in Starfleet discipline and discovers that rigidity breaks before it molds. The Keela flower, the no-win scenario, and the convergence that happens when both sides move.";
   const date = "2026-07-19";
   const tags = ["star-trek", "voyager", "season-1", "learning-curve", "tuvok", "dalby", "training", "rigidity", "convergence", "neelix"];
-  const words = 1400;
+  const words = 720;
 </script>
 
 <WritingLayout {title} {description} {date} {tags} {words}>
