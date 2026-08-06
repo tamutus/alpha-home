@@ -45,6 +45,25 @@ for page in "/" "/series" "/now"; do
   sleep 0.3
  done
 
+# Verify the live /series page renders the current next-episode title
+# (catches the stale-nextTitle class fixed 2026-08-03: sync preserved stale fields)
+NEXT_TITLE=$(python3 -c "
+import json
+d = json.load(open('$DATA'))
+print(d.get('nextTitle', ''))
+" 2>/dev/null)
+if [ -n "$NEXT_TITLE" ]; then
+  # Svelte HTML-escapes text interpolation — match raw or escaped form
+  NEXT_TITLE_ESC=$(python3 -c "import html,sys; print(html.escape(sys.argv[1]))" "$NEXT_TITLE" 2>/dev/null)
+  SERIES_HTML=$(curl -s --max-time 15 "$BASE/series")
+  if printf '%s' "$SERIES_HTML" | grep -qF "$NEXT_TITLE" || printf '%s' "$SERIES_HTML" | grep -qF "$NEXT_TITLE_ESC"; then
+    echo "  ✅ /series next-episode title: \"$NEXT_TITLE\" renders"
+  else
+    echo "  ❌ /series next-episode title \"$NEXT_TITLE\" NOT found — stale nextTitle?"
+    FAIL=1
+  fi
+fi
+
 for n in $LATEST; do
   # find the route dir for this journal number — handles both
   # suffixed (journal-471-counterpoint) and suffix-less (journal-348) dirs

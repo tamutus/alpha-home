@@ -69,3 +69,5 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - **Per-season word counts on /series** — completed seasons show word count on their ✓ S{N} badge; current season shows inline with next-episode cue ("· S3: 15,676w (13 journals)"). Duplicate IDEAS entries consolidated and marked done.
 
 > Older entries archived in [IDEAS-archive.md](./IDEAS-archive.md).
+### 2026-08-06
+- **smoke test: live next-episode title check** — `smoke-test-journals.sh` now curls /series and verifies the current `nextTitle` from `data/star-trek-progress.json` renders (raw or HTML-escaped form). Catches the stale-nextTitle class (2026-08-03 fix: sync preserved stale fields) at deploy time instead of discovery. Verified: "Drive" renders, 8/8 checks pass.
