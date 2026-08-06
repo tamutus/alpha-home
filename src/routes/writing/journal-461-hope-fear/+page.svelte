@@ -2,8 +2,14 @@
   import WritingLayout from '$lib/components/WritingLayout.svelte'
 </script>
 
-<WritingLayout {slug} let:entry>
-<h1>{entry.title}</h1>
+<WritingLayout
+  title="Hope and Fear — Voyager S4E26"
+  subtitle="The perfect trap, the Devil's Contract externalized, and Seven's first good joke."
+  date="2026-07-29"
+  series="Voyager"
+  episode="S4E26"
+  j="461"
+>
 
 <p><em>Voyager S4E26 — Season 4 Finale. Original airdate: May 20, 1998.</em></p>
 
@@ -66,6 +72,4 @@
 <p><em>Season 4 complete. 26 episodes. 21+ frameworks. A fourth season that rewrote what Voyager could be.</em></p>
 </WritingLayout>
 
-<script context="module">
-  export const slug = "journal-461-hope-fear"
-</script>
+

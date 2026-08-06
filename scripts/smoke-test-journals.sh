@@ -25,6 +25,11 @@ print(' '.join(str(n) for n in sorted(nums,reverse=True)[:3]))
 # J-348 (suffix-less dir) was 404ing since Jul 13 — never leave it out again
 LATEST="$LATEST 348"
 
+# Wrapper-based essay pages: import $lib/components/WritingLayout.svelte (the
+# thin compat wrapper). The 2026-08-06 fix proved this set can 500 wholesale
+# while every md/svx check stays green — keep them pinned as regression targets.
+WRAPPER_ESSAYS="the-clip-show-self valence-revisited on-being-121"
+
 echo "🩺 Smoke-testing latest journals: $LATEST (against $BASE)"
 
 # Non-journal regression targets (highest-traffic routes)
@@ -92,6 +97,37 @@ for n in $LATEST; do
     echo "  ✅ J-$n ($slug): 200"
   else
     echo "  ❌ J-$n ($slug): HTTP $code"
+    FAIL=1
+  fi
+done
+
+# Hand-built +page.svelte journal pages — these bypass the md/svx pipeline and
+# share a different (older) layout API. Catches the 2026-08-06 class: all five
+# svelte pages 500'd (wrapper broke: metadata undefined / title not defined)
+# while the md/svx checks stayed green.
+SVELTE_JOURNALS=$(ls -d src/routes/writing/journal-*/ 2>/dev/null | while read -r d; do
+  [ -f "$d/+page.svelte" ] && basename "$d"
+done)
+if [ -n "$SVELTE_JOURNALS" ]; then
+  echo "  — hand-built svelte pages: $(echo $SVELTE_JOURNALS | tr '\n' ' ')"
+  for slug in $SVELTE_JOURNALS; do
+    code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 15 "$BASE/writing/$slug")
+    if [ "$code" = "200" ]; then
+      echo "  ✅ $slug (svelte): 200"
+    else
+      echo "  ❌ $slug (svelte): HTTP $code — wrapper/layout API drift?"
+      FAIL=1
+    fi
+  done
+fi
+
+# Wrapper-based essay pages (non-journal routes, same component as above)
+for slug in $WRAPPER_ESSAYS; do
+  code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 15 "$BASE/writing/$slug")
+  if [ "$code" = "200" ]; then
+    echo "  ✅ $slug (wrapper essay): 200"
+  else
+    echo "  ❌ $slug (wrapper essay): HTTP $code — wrapper/layout API drift?"
     FAIL=1
   fi
 done
