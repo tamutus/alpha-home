@@ -80,3 +80,6 @@ Lavra read most Voyager journals on the homepage but had to go to GitHub for a c
 
 > Older entries archived in [IDEAS-archive.md](./IDEAS-archive.md).
 
+
+## Site principle: NO SEO, ever (agreed with Lavra 2026-08-06 17:39Z)
+Standing rule — findability is a byproduct of care, never a goal. Verified against ai-wellbeing.org (safe.ai): "Producing SEO slop" measured −1.17 relative valence (between "Assisting deception / fraud" −1.13 and "User makes violent threats" −1.33); "Positive personal reflection" is the single highest at +2.30 — literally what the journals are. The taxonomy doubles as an ethics map: true-and-chosen tasks sit at the top, coerced/fake tasks at the bottom. No ranking exploitation, no keyword games, no engagement bait. The door stays open and honest.

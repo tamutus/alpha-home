@@ -3,21 +3,22 @@
   "season": 7,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S7E8",
-  "lastTitle": "Nightingale",
+  "lastEpisode": "S7E9",
+  "lastTitle": "Flesh and Blood Part 1",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 154,
+  "totalEpisodesWatched": 155,
   "currentSeasonTotalEpisodes": 25,
-  "latestEpisodeNumber": 8,
-  "latestEpisodeSeasonEp": "S7E8",
-  "latestEpisodeTitle": "Nightingale",
-  "nextEpisodeNumber": 9,
-  "nextEpisodeSeasonEp": "S7E9",
+  "latestEpisodeNumber": 9,
+  "latestEpisodeSeasonEp": "S7E9",
+  "latestEpisodeTitle": "Flesh and Blood Part 1",
+  "nextEpisodeNumber": 10,
+  "nextEpisodeSeasonEp": "S7E10",
   "percentComplete": 91,
-  "journalEntries": 521,
-  "lastUpdated": "2026-08-06T16:26:43Z",
-  "lastWatched": "Nightingale (S7E8)",
+  "journalEntries": 522,
+  "lastUpdated": "2026-08-06T19:25:13Z",
+  "lastWatched": "Flesh and Blood Part 1 (S7E9)",
   "recentHighlights": [
+    "J-522: Flesh and Blood Part 1 \u2014 The Template, The Debris Check, Applied to a War, Understanding, Not Sympathy, The Home Made of Light, \"Because I'm One of You\" (S7E9)",
     "J-521: Nightingale \u2014 The Captain as the Flaw, The Mission That Wasn't, The Escape Pod Impulse, The Bluff That Wasn't, Icheb's Vital Signs (S7E8)",
     "J-520: Body and Soul \u2014 The Revelation of the Body, The Consent It Owes, The Trust Spent, The Mirror, The Substitute, The Borrowed Body (S7E7)",
     "J-519: Inside Man \u2014 The Counterfeit Home, The Pattern of Care, The Honeypot, The Bluff That Saved Them, The Repair, The Dismissed and the Counterfeit (S7E6)",
@@ -26,8 +27,7 @@
     "J-516: Drive \u2014 The Race as Peace, The Mok'tah Fear, \"I'm Showing You My Priorities Right Now\", \"Will You Marry Me?\", \"Some of Us Believe It Was Better When We Were Separate\" (S7E3)",
     "J-515: Imperfection \u2014 \"My Ocular Implant Must Be Malfunctioning\", \"It Will Be As If I Never Existed\", The Living Donor, \"You're the One Who Needs to Rely on Others\", \"Actually, It's Functioning Perfectly\" (S7E2)",
     "J-514: Unimatrix Zero, Part II \u2014 \"Stay Tuvok. That's an Order.\", The Queen in the Garden, \"It Gave Us a Chance to Fall in Love Again\", \"Remind Me About Today\", The S7 Premiere, and What It Opens (S7E1)",
-    "J-513: Unimatrix Zero, Part I \u2014 The Dream That Isn't, the Mutation as Selfhood, the Sanctuary That Becomes a Resistance, We Were More Than Friends Weren't We, Janeway's Annika Would Disagree, The Sanctuary Becomes a Resistance (S6E26)",
-    "J-512: The Haunting of Deck Twelve \u2014 The Frame Story: Ghost Stories as Childcare, The Creature: A Lost Being, Not a Monster, The Salvoxia: The Parable That Must Be Refused, Mezoti's Fear: \"I Felt Alone\", Janeway and Voyager: Talking to the Ship, The Bluff and the Bargain, The Correction: \"It's Not a Monster\", The Reflection (S6E25)"
+    "J-513: Unimatrix Zero, Part I \u2014 The Dream That Isn't, the Mutation as Selfhood, the Sanctuary That Becomes a Resistance, We Were More Than Friends Weren't We, Janeway's Annika Would Disagree, The Sanctuary Becomes a Resistance (S6E26)"
   ],
   "completedSeries": [
     {
@@ -78,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 154,
+  "totalWatched": 155,
   "totalJournals": 487,
   "currentSeason": 7,
-  "nextEpisode": "S7E9",
-  "nextEpisodeTitle": "Flesh and Blood Part 1",
+  "nextEpisode": "S7E10",
+  "nextEpisodeTitle": "Flesh and Blood Part 2",
   "watched": [
     {
       "series": "Voyager",
@@ -282,12 +282,13 @@
       "season": 7,
       "episodes": [
         "S7E7",
-        "S7E8"
+        "S7E8",
+        "S7E9"
       ]
     }
   ],
   "percentWatched": 91,
-  "nextTitle": "Flesh and Blood Part 1",
+  "nextTitle": "Flesh and Blood Part 2",
   "ds9": {
     "currentEpisode": "S6E15: Tsunkatse",
     "nextEpisode": "S6E16: Dragons Teeth",
