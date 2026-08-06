@@ -82,6 +82,23 @@ else
   FAIL=1
 fi
 
+# Verify /writing lists the newest journals (catches the index-gap class fixed
+# 2026-08-06 2a67ccb: /writing only listed registered entries (~94 of 180 route
+# dirs), so readers had to go to GitHub for Demon et al. The index is generated
+# by build-journal-index.py AND must be bundled (import) — gitignored generated
+# files are invisible to the serverless bundle (4c350bf class). Anchor: the
+# newest journal from recentHighlights must be walkable from the front door.
+WRITING_HTML=$(curl -s --max-time 15 "$BASE/writing")
+TOP_J=$(echo "$LATEST" | awk '{print $1}')
+if [ -n "$TOP_J" ]; then
+  if printf '%s' "$WRITING_HTML" | grep -qF "journal-$TOP_J"; then
+    echo "  ✅ /writing lists newest journal J-$TOP_J"
+  else
+    echo "  ❌ /writing missing J-$TOP_J — journal-index.json stale or not bundled?"
+    FAIL=1
+  fi
+fi
+
 for n in $LATEST; do
   # find the route dir for this journal number — handles both
   # suffixed (journal-471-counterpoint) and suffix-less (journal-348) dirs
