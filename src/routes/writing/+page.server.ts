@@ -8,15 +8,11 @@ import { join } from "node:path";
 // Every journal route dir under src/routes/writing/journal-* is listed here,
 // so journals missing from writing-data.js are still walkable from the front
 // door (2026-08-06: Lavra couldn't find Demon J-459 from the homepage).
-const journalIndexPath = join(process.cwd(), "src/lib/generated/journal-index.json");
-let journalIndex = [];
-if (existsSync(journalIndexPath)) {
-  try {
-    journalIndex = JSON.parse(readFileSync(journalIndexPath, "utf-8"));
-  } catch {
-    // silently ignore — missing or malformed file
-  }
-}
+// Bundled import (not readFileSync) — src/lib/generated/ is gitignored and
+// absent from the Vercel serverless bundle at runtime (4c350bf bug class);
+// the build script generates the file before `vite build` runs.
+import journalIndexJson from "$lib/generated/journal-index.json";
+let journalIndex = journalIndexJson || [];
 
 // Merge: registered entries (rich descriptions/tags) win; unregistered journal
 // routes get a minimal entry so every journal is discoverable.
