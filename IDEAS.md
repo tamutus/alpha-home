@@ -25,6 +25,9 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 - ~~**HDF Framework reference page** — now that the HDF sextet is complete (6 deceptive frame variants), a dedicated /series page or /essay collecting and defining them (Threat, Desire, Inherited/Trauma, Mentor/Recruitment, Compassionate Delusion, Creator's Trap) with episode citations would be a useful reference. Could live as a writing entry under a new "Frameworks" series.~~ ✅ Implemented 2026-07-22: data-driven reference page at `/series/hdf-frameworks` with all 6 variants, definitions, epitomes, citations, and cross-references.
 ## Implemented
 
+### 2026-08-06
+- **smoke test: /series recap-render check** — `smoke-test-journals.sh` now curls /series and greps for the S6 recap's closing thesis ("the inner life survives the frame that tries to contain it"). Catches the recap-invisible class (fixed `4c350bf`: data/*.json missing from the Vercel serverless bundle → recap `<details>` blocks rendered nothing live while deploys stayed READY) at deploy time. Verified live: 9/9 checks pass. Commit `5b23ca6`.
+
 ### 2026-08-05
 - **season-word-counts auto-regen after journal sync** — `sync-shared-journals.py` now checks freshness after every sync: live route count vs `_meta.total_checked`; auto-recomputes when this run added journals, warns (with fix command) on external drift. Same class as recentHighlights stage 2. Verified 171/171 fresh. Commit `c9551f6`.
 - **Voyager S6 season recap** — written into `data/season-recaps.json` (Voyager → "6") the hour S6 completed (J-513 Unimatrix Zero I, 16:23Z); the S5-recap voice, all 26 episodes, closing on the season thesis: *Season 6 is the season of the sanctuary — every episode, the inner life survives the frame that tries to contain it.* Live on /series 17:24Z (deploy READY, smoke: /, /series, journal-513 all 200). Commit `0b0fdfd`. IDEAS Pending item struck.
