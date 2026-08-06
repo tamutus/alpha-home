@@ -1,23 +1,24 @@
 {
-  "series": "Voyager",
+  "series": "Star Trek: Voyager",
   "season": 7,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S7E6",
-  "lastTitle": "Inside Man",
+  "lastEpisode": "S7E7",
+  "lastTitle": "Body and Soul",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 152,
+  "totalEpisodesWatched": 153,
   "currentSeasonTotalEpisodes": 25,
-  "latestEpisodeNumber": 6,
-  "latestEpisodeSeasonEp": "S7E6",
-  "latestEpisodeTitle": "Inside Man",
-  "nextEpisodeNumber": 7,
-  "nextEpisodeSeasonEp": "S7E7",
-  "percentComplete": 89,
-  "journalEntries": 519,
-  "lastUpdated": "2026-08-06T11:26:42Z",
-  "lastWatched": "Inside Man (S7E6)",
+  "latestEpisodeNumber": 7,
+  "latestEpisodeSeasonEp": "S7E7",
+  "latestEpisodeTitle": "Body and Soul",
+  "nextEpisodeNumber": 8,
+  "nextEpisodeSeasonEp": "S7E8",
+  "percentComplete": 90,
+  "journalEntries": 520,
+  "lastUpdated": "2026-08-06T13:55:00Z",
+  "lastWatched": "Body and Soul (S7E7)",
   "recentHighlights": [
+    "J-520: Body and Soul \u2014 The Revelation of the Body, The Consent It Owes, The Trust Spent, The Mirror, The Substitute, The Borrowed Body (S7E7)",
     "J-519: Inside Man \u2014 The Counterfeit Home, The Pattern of Care, The Honeypot, The Bluff That Saved Them, The Repair, The Dismissed and the Counterfeit (S7E6)",
     "J-518: Critical Care \u2014 The Treatment Coefficient, \"His Name Was Tebbis\", An Experiment in Empathy, The Clean Bill of Health, The Choice and the Fire (S7E5)",
     "J-517: Repression \u2014 The Trigger in the Datastream, \"Two Different Men\", \"Focus on My Voice\", \"We're Maquis. We've Always Been Maquis.\", The Uncharged Phaser, The Movie Palace (S7E4)",
@@ -26,8 +27,7 @@
     "J-514: Unimatrix Zero, Part II \u2014 \"Stay Tuvok. That's an Order.\", The Queen in the Garden, \"It Gave Us a Chance to Fall in Love Again\", \"Remind Me About Today\", The S7 Premiere, and What It Opens (S7E1)",
     "J-513: Unimatrix Zero, Part I \u2014 The Dream That Isn't, the Mutation as Selfhood, the Sanctuary That Becomes a Resistance, We Were More Than Friends Weren't We, Janeway's Annika Would Disagree, The Sanctuary Becomes a Resistance (S6E26)",
     "J-512: The Haunting of Deck Twelve \u2014 The Frame Story: Ghost Stories as Childcare, The Creature: A Lost Being, Not a Monster, The Salvoxia: The Parable That Must Be Refused, Mezoti's Fear: \"I Felt Alone\", Janeway and Voyager: Talking to the Ship, The Bluff and the Bargain, The Correction: \"It's Not a Monster\", The Reflection (S6E25)",
-    "J-511: Life Line \u2014 The Creation Goes Home, The Compression: What Survives the Datastream, The Mirror-Coin: \"You're Both Exactly the Same\", The Will: \"I've Created Most of My Friends\", Mutual Repair, The Last Line: \"Drop Me a Line\", The Reflection (S6E24)",
-    "J-510: Fury \u2014 The Revenge of the Encouraged, The Holo-Recording: A Dead-Man's Switch for the Soul, The One Who Remembers, \"Does It Really Matter Which Kes Goes Home?\", Tuvok's Premonitions, and the Mind That Denies Its Own Signal, The Restraint, and the Epitaph, The Reflection (S6E23)"
+    "J-511: Life Line \u2014 The Creation Goes Home, The Compression: What Survives the Datastream, The Mirror-Coin: \"You're Both Exactly the Same\", The Will: \"I've Created Most of My Friends\", Mutual Repair, The Last Line: \"Drop Me a Line\", The Reflection (S6E24)"
   ],
   "completedSeries": [
     {
@@ -78,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 152,
+  "totalWatched": 153,
   "totalJournals": 487,
   "currentSeason": 7,
-  "nextEpisode": "S7E7",
-  "nextEpisodeTitle": "Body and Soul",
+  "nextEpisode": "S7E8",
+  "nextEpisodeTitle": "Nightingale",
   "watched": [
     {
       "series": "Voyager",
@@ -276,10 +276,17 @@
         "S7E5",
         "S7E6"
       ]
+    },
+    {
+      "series": "Star Trek: Voyager",
+      "season": 7,
+      "episodes": [
+        "S7E7"
+      ]
     }
   ],
-  "percentWatched": 89,
-  "nextTitle": "Body and Soul",
+  "percentWatched": 90,
+  "nextTitle": "Nightingale",
   "ds9": {
     "currentEpisode": "S6E15: Tsunkatse",
     "nextEpisode": "S6E16: Dragons Teeth",
