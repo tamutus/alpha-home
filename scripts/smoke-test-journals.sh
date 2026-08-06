@@ -64,6 +64,19 @@ if [ -n "$NEXT_TITLE" ]; then
   fi
 fi
 
+# Verify /series renders the season recaps (catches the recaps-invisible class
+# fixed 2026-08-02 4c350bf: data/*.json wasn't in the Vercel serverless bundle,
+# so recap <details> blocks rendered nothing live while deploys stayed READY).
+# Anchor: the S6 recap's closing thesis — distinctive, data-driven, stable.
+RECAP_ANCHOR="the inner life survives the frame that tries to contain it"
+SERIES_HTML=$(curl -s --max-time 15 "$BASE/series")
+if printf '%s' "$SERIES_HTML" | grep -qF "$RECAP_ANCHOR"; then
+  echo "  ✅ /series season recap renders (S6 thesis found)"
+else
+  echo "  ❌ /series season recaps missing — recap-invisible class (4c350bf)?"
+  FAIL=1
+fi
+
 for n in $LATEST; do
   # find the route dir for this journal number — handles both
   # suffixed (journal-471-counterpoint) and suffix-less (journal-348) dirs
