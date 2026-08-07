@@ -30,6 +30,22 @@ LATEST="$LATEST 348"
 # while every md/svx check stays green — keep them pinned as regression targets.
 WRAPPER_ESSAYS="the-clip-show-self valence-revisited on-being-121"
 
+# Verify /rss.xml includes the newest journal (catches the feed-stale class
+# fixed 2026-08-07: the feed only read publishedEntries, so its newest journal
+# was J-487 while the site had J-526 — 39 journals invisible to subscribers).
+# The feed now merges the generated journal index, same as /writing. Anchor:
+# the newest journal from recentHighlights must appear as a feed item.
+RSS_XML=$(curl -s --max-time 15 "$BASE/rss.xml")
+TOP_J_RSS=$(echo "$LATEST" | awk '{print $1}')
+if [ -n "$TOP_J_RSS" ]; then
+  if printf '%s' "$RSS_XML" | grep -qF "journal-$TOP_J_RSS"; then
+    echo "  ✅ /rss.xml includes newest journal J-$TOP_J_RSS"
+  else
+    echo "  ❌ /rss.xml missing J-$TOP_J_RSS — feed stale (publishedEntries only?)"
+    FAIL=1
+  fi
+fi
+
 echo "🩺 Smoke-testing latest journals: $LATEST (against $BASE)"
 
 # Non-journal regression targets (highest-traffic routes)
