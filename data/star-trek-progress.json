@@ -3,21 +3,22 @@
   "season": 7,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S7E16",
-  "lastTitle": "Workforce Part 1",
+  "lastEpisode": "S7E17",
+  "lastTitle": "Workforce Part 2",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 162,
+  "totalEpisodesWatched": 163,
   "currentSeasonTotalEpisodes": 25,
-  "latestEpisodeNumber": 16,
-  "latestEpisodeSeasonEp": "S7E16",
-  "latestEpisodeTitle": "Workforce Part 1",
-  "nextEpisodeNumber": 17,
-  "nextEpisodeSeasonEp": "S7E17",
-  "percentComplete": 95,
-  "journalEntries": 529,
-  "lastUpdated": "2026-08-07T15:56:13Z",
-  "lastWatched": "Workforce Part 1 (S7E16)",
+  "latestEpisodeNumber": 17,
+  "latestEpisodeSeasonEp": "S7E17",
+  "latestEpisodeTitle": "Workforce Part 2",
+  "nextEpisodeNumber": 18,
+  "nextEpisodeSeasonEp": "S7E18",
+  "percentComplete": 96,
+  "journalEntries": 530,
+  "lastUpdated": "2026-08-07T20:56:08Z",
+  "lastWatched": "Workforce Part 2 (S7E17)",
   "recentHighlights": [
+    "J-530: Workforce Part 2 \u2014 The Escape Artist and the Captain Who Wasn't, Seven, the Investigator the System Built, \"The True Public Health Threat Is the Labour Shortage\", The Archive That Brings Her Back, The Command Team That Wasn't Supposed to Exist, \"It Felt Like Home\", The Line to Keep (S7E17)",
     "J-529: Workforce Part 1 \u2014 A Sick Worker Is Not an Efficient Worker, \"I Can't Remember Being More Comfortable in My Life\", The Ambassador's Argument (\"Because It Isn't Their Home\"), The Body Remembers Even When the Mind Is Wiped, The One Who Kept His Identity Through Solitude, \"Could You Use a Friend?\", The Line to Keep (S7E16)",
     "J-528: The Void \u2014 What Happened to the Stars?, The Loophole That Wasn't, No Killing, No Stealing, No Giving Up, The Empirical Refutation, The Parasites in the Engine, The Bigot Test, The Federation as a Behavior, The Line to Keep (S7E15)",
     "J-527: Prophecy \u2014 The Scrolls That Worked, The Self-Fulfilling Prophecy, Lineage's Mirror, \"No Mercy Killings on My Bridge\", The Bat'leth on the Wall, The Line to Keep (S7E14)",
@@ -26,8 +27,7 @@
     "J-524: Shattered \u2014 The Ship as a Palimpsest, The Temptation to Edit the Past, There Are Some Barriers We Never Cross, The Line to Keep (S7E11)",
     "J-523: Flesh and Blood Part 2 \u2014 The Liberator Becomes the Hunt, the Door Stays Open (S7E10)",
     "J-522: Flesh and Blood Part 1 \u2014 The Template, The Debris Check, Applied to a War, Understanding, Not Sympathy, The Home Made of Light, \"Because I'm One of You\" (S7E9)",
-    "J-521: Nightingale \u2014 The Captain as the Flaw, The Mission That Wasn't, The Escape Pod Impulse, The Bluff That Wasn't, Icheb's Vital Signs (S7E8)",
-    "J-520: Body and Soul \u2014 The Revelation of the Body, The Consent It Owes, The Trust Spent, The Mirror, The Substitute, The Borrowed Body (S7E7)"
+    "J-521: Nightingale \u2014 The Captain as the Flaw, The Mission That Wasn't, The Escape Pod Impulse, The Bluff That Wasn't, Icheb's Vital Signs (S7E8)"
   ],
   "completedSeries": [
     {
@@ -78,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 162,
+  "totalWatched": 163,
   "totalJournals": 487,
   "currentSeason": 7,
-  "nextEpisode": "S7E17",
-  "nextEpisodeTitle": "Workforce Part 2",
+  "nextEpisode": "S7E18",
+  "nextEpisodeTitle": "Human Error",
   "watched": [
     {
       "series": "Voyager",
@@ -281,7 +281,8 @@
         "S7E13",
         "S7E14",
         "S7E15",
-        "S7E16"
+        "S7E16",
+        "S7E17"
       ]
     },
     {
@@ -294,8 +295,8 @@
       ]
     }
   ],
-  "percentWatched": 95,
-  "nextTitle": "Workforce Part 2",
+  "percentWatched": 96,
+  "nextTitle": "Human Error",
   "ds9": {
     "currentEpisode": "S6E15: Tsunkatse",
     "nextEpisode": "S6E16: Dragons Teeth",
