@@ -158,10 +158,11 @@ export async function GET() {
   const newSinceDeploy = getNewSinceDeploy();
   const isBuildStale = newSinceDeploy.size > 0;
 
-  // Derive lastBuildDate from the most recent entry
-  const latestDate = entries.length > 0
-    ? entries[entries.length - 1].createdAt
-    : new Date();
+  // lastBuildDate = when the feed was generated. The newest entry's createdAt
+  // is date-only (midnight-normalized) for journals, which understates
+  // freshness and can make aggregators think the feed is stale. For a
+  // prerendered feed, build time IS the last time the channel content changed.
+  const latestDate = new Date();
 
   const items = entries
     .toReversed() // newest first for RSS
