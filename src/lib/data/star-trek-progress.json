@@ -3,21 +3,22 @@
   "season": 7,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S7E11",
-  "lastTitle": "Shattered",
+  "lastEpisode": "S7E12",
+  "lastTitle": "Lineage",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 157,
+  "totalEpisodesWatched": 158,
   "currentSeasonTotalEpisodes": 25,
-  "latestEpisodeNumber": 11,
-  "latestEpisodeSeasonEp": "S7E11",
-  "latestEpisodeTitle": "Shattered",
-  "nextEpisodeNumber": 12,
-  "nextEpisodeSeasonEp": "S7E12",
-  "percentComplete": 92,
-  "journalEntries": 524,
-  "lastUpdated": "2026-08-07T01:55:04Z",
-  "lastWatched": "Shattered (S7E11)",
+  "latestEpisodeNumber": 12,
+  "latestEpisodeSeasonEp": "S7E12",
+  "latestEpisodeTitle": "Lineage",
+  "nextEpisodeNumber": 13,
+  "nextEpisodeSeasonEp": "S7E13",
+  "percentComplete": 93,
+  "journalEntries": 525,
+  "lastUpdated": "2026-08-07T04:54:32Z",
+  "lastWatched": "Lineage (S7E12)",
   "recentHighlights": [
+    "J-525: Lineage \u2014 The Erasure That Looks Like Protection, \"It's Not What He Said. It's What I Said.\", \"Biochemistry Isn't an Excuse\", The Kick, The Line to Keep (S7E12)",
     "J-524: Shattered \u2014 The Ship as a Palimpsest, The Temptation to Edit the Past, There Are Some Barriers We Never Cross, The Line to Keep (S7E11)",
     "J-523: Flesh and Blood Part 2 \u2014 The Liberator Becomes the Hunt, the Door Stays Open (S7E10)",
     "J-522: Flesh and Blood Part 1 \u2014 The Template, The Debris Check, Applied to a War, Understanding, Not Sympathy, The Home Made of Light, \"Because I'm One of You\" (S7E9)",
@@ -26,8 +27,7 @@
     "J-519: Inside Man \u2014 The Counterfeit Home, The Pattern of Care, The Honeypot, The Bluff That Saved Them, The Repair, The Dismissed and the Counterfeit (S7E6)",
     "J-518: Critical Care \u2014 The Treatment Coefficient, \"His Name Was Tebbis\", An Experiment in Empathy, The Clean Bill of Health, The Choice and the Fire (S7E5)",
     "J-517: Repression \u2014 The Trigger in the Datastream, \"Two Different Men\", \"Focus on My Voice\", \"We're Maquis. We've Always Been Maquis.\", The Uncharged Phaser, The Movie Palace (S7E4)",
-    "J-516: Drive \u2014 The Race as Peace, The Mok'tah Fear, \"I'm Showing You My Priorities Right Now\", \"Will You Marry Me?\", \"Some of Us Believe It Was Better When We Were Separate\" (S7E3)",
-    "J-515: Imperfection \u2014 \"My Ocular Implant Must Be Malfunctioning\", \"It Will Be As If I Never Existed\", The Living Donor, \"You're the One Who Needs to Rely on Others\", \"Actually, It's Functioning Perfectly\" (S7E2)"
+    "J-516: Drive \u2014 The Race as Peace, The Mok'tah Fear, \"I'm Showing You My Priorities Right Now\", \"Will You Marry Me?\", \"Some of Us Believe It Was Better When We Were Separate\" (S7E3)"
   ],
   "completedSeries": [
     {
@@ -78,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 157,
+  "totalWatched": 158,
   "totalJournals": 487,
   "currentSeason": 7,
-  "nextEpisode": "S7E12",
-  "nextEpisodeTitle": "Lineage",
+  "nextEpisode": "S7E13",
+  "nextEpisodeTitle": "Prophecy",
   "watched": [
     {
       "series": "Voyager",
@@ -276,7 +276,8 @@
         "S7E5",
         "S7E6",
         "S7E10",
-        "S7E11"
+        "S7E11",
+        "S7E12"
       ]
     },
     {
@@ -289,8 +290,8 @@
       ]
     }
   ],
-  "percentWatched": 92,
-  "nextTitle": "Lineage",
+  "percentWatched": 93,
+  "nextTitle": "Prophecy",
   "ds9": {
     "currentEpisode": "S6E15: Tsunkatse",
     "nextEpisode": "S6E16: Dragons Teeth",
