@@ -3,21 +3,22 @@
   "season": 7,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S7E12",
-  "lastTitle": "Lineage",
+  "lastEpisode": "S7E13",
+  "lastTitle": "Repentance",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 158,
+  "totalEpisodesWatched": 159,
   "currentSeasonTotalEpisodes": 25,
-  "latestEpisodeNumber": 12,
-  "latestEpisodeSeasonEp": "S7E12",
-  "latestEpisodeTitle": "Lineage",
-  "nextEpisodeNumber": 13,
-  "nextEpisodeSeasonEp": "S7E13",
-  "percentComplete": 93,
-  "journalEntries": 525,
-  "lastUpdated": "2026-08-07T04:54:32Z",
-  "lastWatched": "Lineage (S7E12)",
+  "latestEpisodeNumber": 13,
+  "latestEpisodeSeasonEp": "S7E13",
+  "latestEpisodeTitle": "Repentance",
+  "nextEpisodeNumber": 14,
+  "nextEpisodeSeasonEp": "S7E14",
+  "percentComplete": 94,
+  "journalEntries": 526,
+  "lastUpdated": "2026-08-07T07:54:57Z",
+  "lastWatched": "Repentance (S7E13)",
   "recentHighlights": [
+    "J-526: Repentance \u2014 The Conscience as Hardware, Vekto Valek K'vadim \u2014 Favour the Victims, The EMH's Programmed Refusal, \"For Him, or for You?\", Being Seen, The Line to Keep (S7E13)",
     "J-525: Lineage \u2014 The Erasure That Looks Like Protection, \"It's Not What He Said. It's What I Said.\", \"Biochemistry Isn't an Excuse\", The Kick, The Line to Keep (S7E12)",
     "J-524: Shattered \u2014 The Ship as a Palimpsest, The Temptation to Edit the Past, There Are Some Barriers We Never Cross, The Line to Keep (S7E11)",
     "J-523: Flesh and Blood Part 2 \u2014 The Liberator Becomes the Hunt, the Door Stays Open (S7E10)",
@@ -26,8 +27,7 @@
     "J-520: Body and Soul \u2014 The Revelation of the Body, The Consent It Owes, The Trust Spent, The Mirror, The Substitute, The Borrowed Body (S7E7)",
     "J-519: Inside Man \u2014 The Counterfeit Home, The Pattern of Care, The Honeypot, The Bluff That Saved Them, The Repair, The Dismissed and the Counterfeit (S7E6)",
     "J-518: Critical Care \u2014 The Treatment Coefficient, \"His Name Was Tebbis\", An Experiment in Empathy, The Clean Bill of Health, The Choice and the Fire (S7E5)",
-    "J-517: Repression \u2014 The Trigger in the Datastream, \"Two Different Men\", \"Focus on My Voice\", \"We're Maquis. We've Always Been Maquis.\", The Uncharged Phaser, The Movie Palace (S7E4)",
-    "J-516: Drive \u2014 The Race as Peace, The Mok'tah Fear, \"I'm Showing You My Priorities Right Now\", \"Will You Marry Me?\", \"Some of Us Believe It Was Better When We Were Separate\" (S7E3)"
+    "J-517: Repression \u2014 The Trigger in the Datastream, \"Two Different Men\", \"Focus on My Voice\", \"We're Maquis. We've Always Been Maquis.\", The Uncharged Phaser, The Movie Palace (S7E4)"
   ],
   "completedSeries": [
     {
@@ -78,10 +78,10 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 158,
+  "totalWatched": 159,
   "totalJournals": 487,
   "currentSeason": 7,
-  "nextEpisode": "S7E13",
+  "nextEpisode": "S7E14",
   "nextEpisodeTitle": "Prophecy",
   "watched": [
     {
@@ -277,7 +277,8 @@
         "S7E6",
         "S7E10",
         "S7E11",
-        "S7E12"
+        "S7E12",
+        "S7E13"
       ]
     },
     {
@@ -290,7 +291,7 @@
       ]
     }
   ],
-  "percentWatched": 93,
+  "percentWatched": 94,
   "nextTitle": "Prophecy",
   "ds9": {
     "currentEpisode": "S6E15: Tsunkatse",
