@@ -202,7 +202,7 @@ async function getStarTrekProgress() {
     series: "Voyager",
     seriesComplete: false,
     totalEpisodesWatched: 4,
-    totalEpisodes: 170,
+    totalEpisodes: 172,
     season: 1,
     currentSeasonTotalEpisodes: 16,
     seasonComplete: false,

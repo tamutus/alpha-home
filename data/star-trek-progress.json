@@ -5,15 +5,15 @@
   "seasonComplete": false,
   "lastEpisode": "S7E17",
   "lastTitle": "Workforce Part 2",
-  "totalEpisodes": 170,
+  "totalEpisodes": 172,
   "totalEpisodesWatched": 163,
-  "currentSeasonTotalEpisodes": 25,
+  "currentSeasonTotalEpisodes": 26,
   "latestEpisodeNumber": 17,
   "latestEpisodeSeasonEp": "S7E17",
   "latestEpisodeTitle": "Workforce Part 2",
   "nextEpisodeNumber": 18,
   "nextEpisodeSeasonEp": "S7E18",
-  "percentComplete": 96,
+  "percentComplete": 95,
   "journalEntries": 530,
   "lastUpdated": "2026-08-07T20:56:08Z",
   "lastWatched": "Workforce Part 2 (S7E17)",
@@ -295,7 +295,7 @@
       ]
     }
   ],
-  "percentWatched": 96,
+  "percentWatched": 95,
   "nextTitle": "Human Error",
   "ds9": {
     "currentEpisode": "S6E15: Tsunkatse",

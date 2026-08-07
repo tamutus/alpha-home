@@ -106,17 +106,34 @@ def main():
     next_ep_num = ep_num + 1
     next_ep_label = f"S{season}E{next_ep_num}"
 
-    # Season boundaries for DS9
-    season_totals = {1: 20, 2: 26, 3: 26, 4: 26, 5: 26, 6: 26, 7: 25}
-    current_season_total = season_totals.get(season, 26)
+    # Season episode totals (EPISODES, not files — double-length entries
+    # count as 2: Caretaker 101 = E01+E02, Endgame 725 = E25+E26).
+    # Voyager: 16+26*5+26 = 172. DS9: 20+26*6 = 176. TNG: 26+22+26*5 = 178.
+    # Corrected 2026-08-07: the old single dict {7: 25} was DS9-flavored
+    # AND wrong for Voyager S7 (26 eps in 25 files) — it made the finale
+    # land at 170/172 and fabricated "S7E27" after Endgame.
+    season_totals = {
+        "Voyager": {1: 16, 2: 26, 3: 26, 4: 26, 5: 26, 6: 26, 7: 26},
+        "DS9":     {1: 20, 2: 26, 3: 26, 4: 26, 5: 26, 6: 26, 7: 26},
+        "TNG":     {1: 26, 2: 22, 3: 26, 4: 26, 5: 26, 6: 26, 7: 26},
+    }
+    series_totals = {"Voyager": 172, "DS9": 176, "TNG": 178}
+    series_key = ("Voyager" if "Voyager" in series
+                  else "TNG" if ("TNG" in series or "Next Generation" in series)
+                  else "DS9")
+    current_season_total = season_totals[series_key].get(season, 26)
+    series_total = series_totals[series_key]
 
-    # Total episodes per series (must match the site's canonical counts:
-    # TNG 178 eps / 277 journals, DS9 176 eps / 365 journals, Voyager 170 eps)
-    series_total = 176  # DS9
-    if "TNG" in series or "Next Generation" in series:
-        series_total = 178
-    elif "Voyager" in series:
-        series_total = 170  # site canonical: 7 seasons (16+26+26+26+26+26+24=170), NOT 172
+    # Endgame guard (2026-08-07): Voyager's final file (725.txt) is
+    # "Endgame", double-length covering E25+E26 (Caretaker convention).
+    # The final sync passes ep 26 (or 25); either way, append "S7E25-26"
+    # (counts 2, mirroring "S1E01-02") instead of a lone "S7E26", null
+    # the phantom "next" fields, and let seriesComplete flip below.
+    if series_key == "Voyager" and season == 7 and ep_num >= current_season_total - 1:
+        ep_label = f"S{season}E{current_season_total-1}-{current_season_total}"
+        next_ep_num = None
+        next_ep_label = None
+        next_ep_title = ""
 
     # Recompute total watched count from the watched array (the site's
     # source of truth). The old preserved-count approach drifted badly
@@ -130,10 +147,8 @@ def main():
 
     # Fallback estimate if the array is empty/unavailable
     if total_watched == 0:
-        prev_total = sum(season_totals.get(i, 26) for i in range(1, season))
+        prev_total = sum(season_totals[series_key].get(i, 26) for i in range(1, season))
         total_watched = prev_total + ep_num
-        if "TNG" in series or "Next Generation" in series:
-            total_watched = prev_total + ep_num
 
     # Calculate percent on the safe side
     percent = min(100, round(total_watched * 100 / series_total))
@@ -227,6 +242,13 @@ def main():
     # percentWatched 63) while the new keys updated. Sync them explicitly.
     data["percentWatched"] = percent
     data["nextTitle"] = next_ep_title
+
+    # Series finale: no next episode exists — mark the series complete so
+    # /now and the homepage render the completion branch instead of a
+    # phantom "next up: S7E27" (Endgame guard above).
+    if next_ep_label is None:
+        data["seriesComplete"] = True
+        data["seasonComplete"] = True
 
     with open(progress_file, 'w') as f:
         json.dump(data, f, indent=2)
