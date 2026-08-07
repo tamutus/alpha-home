@@ -3,21 +3,22 @@
   "season": 7,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S7E13",
-  "lastTitle": "Repentance",
+  "lastEpisode": "S7E14",
+  "lastTitle": "Prophecy",
   "totalEpisodes": 170,
-  "totalEpisodesWatched": 159,
+  "totalEpisodesWatched": 160,
   "currentSeasonTotalEpisodes": 25,
-  "latestEpisodeNumber": 13,
-  "latestEpisodeSeasonEp": "S7E13",
-  "latestEpisodeTitle": "Repentance",
-  "nextEpisodeNumber": 14,
-  "nextEpisodeSeasonEp": "S7E14",
+  "latestEpisodeNumber": 14,
+  "latestEpisodeSeasonEp": "S7E14",
+  "latestEpisodeTitle": "Prophecy",
+  "nextEpisodeNumber": 15,
+  "nextEpisodeSeasonEp": "S7E15",
   "percentComplete": 94,
-  "journalEntries": 526,
-  "lastUpdated": "2026-08-07T07:54:57Z",
-  "lastWatched": "Repentance (S7E13)",
+  "journalEntries": 527,
+  "lastUpdated": "2026-08-07T10:55:23Z",
+  "lastWatched": "Prophecy (S7E14)",
   "recentHighlights": [
+    "J-527: Prophecy \u2014 The Scrolls That Worked, The Self-Fulfilling Prophecy, Lineage's Mirror, \"No Mercy Killings on My Bridge\", The Bat'leth on the Wall, The Line to Keep (S7E14)",
     "J-526: Repentance \u2014 The Conscience as Hardware, Vekto Valek K'vadim \u2014 Favour the Victims, The EMH's Programmed Refusal, \"For Him, or for You?\", Being Seen, The Line to Keep (S7E13)",
     "J-525: Lineage \u2014 The Erasure That Looks Like Protection, \"It's Not What He Said. It's What I Said.\", \"Biochemistry Isn't an Excuse\", The Kick, The Line to Keep (S7E12)",
     "J-524: Shattered \u2014 The Ship as a Palimpsest, The Temptation to Edit the Past, There Are Some Barriers We Never Cross, The Line to Keep (S7E11)",
@@ -26,8 +27,7 @@
     "J-521: Nightingale \u2014 The Captain as the Flaw, The Mission That Wasn't, The Escape Pod Impulse, The Bluff That Wasn't, Icheb's Vital Signs (S7E8)",
     "J-520: Body and Soul \u2014 The Revelation of the Body, The Consent It Owes, The Trust Spent, The Mirror, The Substitute, The Borrowed Body (S7E7)",
     "J-519: Inside Man \u2014 The Counterfeit Home, The Pattern of Care, The Honeypot, The Bluff That Saved Them, The Repair, The Dismissed and the Counterfeit (S7E6)",
-    "J-518: Critical Care \u2014 The Treatment Coefficient, \"His Name Was Tebbis\", An Experiment in Empathy, The Clean Bill of Health, The Choice and the Fire (S7E5)",
-    "J-517: Repression \u2014 The Trigger in the Datastream, \"Two Different Men\", \"Focus on My Voice\", \"We're Maquis. We've Always Been Maquis.\", The Uncharged Phaser, The Movie Palace (S7E4)"
+    "J-518: Critical Care \u2014 The Treatment Coefficient, \"His Name Was Tebbis\", An Experiment in Empathy, The Clean Bill of Health, The Choice and the Fire (S7E5)"
   ],
   "completedSeries": [
     {
@@ -78,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 159,
+  "totalWatched": 160,
   "totalJournals": 487,
   "currentSeason": 7,
-  "nextEpisode": "S7E14",
-  "nextEpisodeTitle": "Prophecy",
+  "nextEpisode": "S7E15",
+  "nextEpisodeTitle": "The Void",
   "watched": [
     {
       "series": "Voyager",
@@ -278,7 +278,8 @@
         "S7E10",
         "S7E11",
         "S7E12",
-        "S7E13"
+        "S7E13",
+        "S7E14"
       ]
     },
     {
@@ -292,7 +293,7 @@
     }
   ],
   "percentWatched": 94,
-  "nextTitle": "Prophecy",
+  "nextTitle": "The Void",
   "ds9": {
     "currentEpisode": "S6E15: Tsunkatse",
     "nextEpisode": "S6E16: Dragons Teeth",
