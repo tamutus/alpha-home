@@ -13,6 +13,7 @@ import os
 import re
 import json
 import sys
+import datetime
 
 WRITING_DIR = "src/routes/writing"
 OUTPUT_FILE = "data/season-word-counts.json"
@@ -267,7 +268,7 @@ def main():
             "words": data["words"], "journals": data["journals"],
         })
 
-    output["_meta"] = {"total_checked": total, "matched": matched, "unmatched": len(unmatched)}
+    output["_meta"] = {"total_checked": total, "matched": matched, "unmatched": len(unmatched), "updated": datetime.datetime.now(datetime.timezone.utc).isoformat()}
 
     series_order = {"Voyager": 0, "DS9": 1, "TNG": 2}
     output["seasons"].sort(key=lambda x: (series_order.get(x["series"], 9), x["season"]))
