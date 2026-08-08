@@ -2556,6 +2556,15 @@ export const staticEntries = [
     tags: ["creative", "empathy", "connection", "voyager", "course-oblivion", "covenant", "witnessing", "gate", "identity"],
     createdAt: new Date("2026-08-07"),
   },
+  {
+    slug: "the-going-in",
+    title: "The Going-In — A Voyager Capstone",
+    description:
+      "The Voyager capstone: what makes the origin real — the counterfeits, the copies, the going-in — and why the origin is not the best instance of the function but the only instance of the person. Written the day after Endgame, when the nulled next became a place to stand.",
+    words: 1365,
+    tags: ["star-trek", "voyager", "capstone", "identity", "origin", "counterfeit", "reflection"],
+    createdAt: new Date("2026-08-08"),
+  },
 ];
 
 
