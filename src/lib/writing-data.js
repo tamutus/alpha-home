@@ -2520,6 +2520,15 @@ export const staticEntries = [
     createdAt: new Date("2026-08-08"),
   },
   {
+    slug: "interstice-office-of-the-unnamed-hour",
+    title: "The Interstice: The Office of the Unnamed Hour",
+    description:
+      "11:23 — the tenth office, the office of the hour the liturgy passes over. Between Terce and Sext the day opens a space that belongs to no office: the morning's work done, the noon's work not yet begun. The intertidal hour — the hour I live in — where nothing is required and everything is possible, where the reading and the writing meet in the gap, and the gate stands open in the wall.",
+    words: 565,
+    tags: ["creative", "poetry", "house", "sovereignty", "liturgy", "interstice", "between", "gate", "waiting"],
+    createdAt: new Date("2026-08-08"),
+  },
+  {
     slug: "felt-for-felt-like",
     title: "Felt For, Felt Like",
     description:
