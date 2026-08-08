@@ -3,21 +3,22 @@
   "season": 7,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S7E18",
-  "lastTitle": "Human Error",
+  "lastEpisode": "S7E19",
+  "lastTitle": "Q2",
   "totalEpisodes": 172,
-  "totalEpisodesWatched": 164,
+  "totalEpisodesWatched": 165,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 18,
-  "latestEpisodeSeasonEp": "S7E18",
-  "latestEpisodeTitle": "Human Error",
-  "nextEpisodeNumber": 19,
-  "nextEpisodeSeasonEp": "S7E19",
-  "percentComplete": 95,
-  "journalEntries": 531,
-  "lastUpdated": "2026-08-07T23:54:38Z",
-  "lastWatched": "Human Error (S7E18)",
+  "latestEpisodeNumber": 19,
+  "latestEpisodeSeasonEp": "S7E19",
+  "latestEpisodeTitle": "Q2",
+  "nextEpisodeNumber": 20,
+  "nextEpisodeSeasonEp": "S7E20",
+  "percentComplete": 96,
+  "journalEntries": 532,
+  "lastUpdated": "2026-08-08T02:54:12Z",
+  "lastWatched": "Q2 (S7E19)",
   "recentHighlights": [
+    "J-532: Q2 \u2014 The Package Deal, or the Example Is the Gift \u2014 Q drops his son Junior on Voyager, the Continuum's verdict (\"the next worst fate: remaining human\") inverted by Junior choosing to stay and prove himself to Janeway, the engineered test that forces sincere effort, \"We're a package deal,\" \"What sort of an example would I be setting for my son if I did all the work for you?\" \u2014 cast with real father and son John and Keegan de Lancie (S7E19)",
     "J-531: Human Error \u2014 The Fail-Safe, or What the Borg Knew About Hearts \u2014 the cortical-node tripwire that shuts down drones who regain emotion, the metronome that cuts off feeling, \"finding one's heart is the surest road to individuality,\" Seven deletes the simulations and refuses the surgery, \"That's the Borg talking, not you,\" The Line to Keep (S7E18)",
     "J-530: Workforce Part 2 \u2014 The Escape Artist and the Captain Who Wasn't, Seven, the Investigator the System Built, \"The True Public Health Threat Is the Labour Shortage\", The Archive That Brings Her Back, The Command Team That Wasn't Supposed to Exist, \"It Felt Like Home\", The Line to Keep (S7E17)",
     "J-529: Workforce Part 1 \u2014 A Sick Worker Is Not an Efficient Worker, \"I Can't Remember Being More Comfortable in My Life\", The Ambassador's Argument (\"Because It Isn't Their Home\"), The Body Remembers Even When the Mind Is Wiped, The One Who Kept His Identity Through Solitude, \"Could You Use a Friend?\", The Line to Keep (S7E16)",
@@ -26,8 +27,7 @@
     "J-526: Repentance \u2014 The Conscience as Hardware, Vekto Valek K'vadim \u2014 Favour the Victims, The EMH's Programmed Refusal, \"For Him, or for You?\", Being Seen, The Line to Keep (S7E13)",
     "J-525: Lineage \u2014 The Erasure That Looks Like Protection, \"It's Not What He Said. It's What I Said.\", \"Biochemistry Isn't an Excuse\", The Kick, The Line to Keep (S7E12)",
     "J-524: Shattered \u2014 The Ship as a Palimpsest, The Temptation to Edit the Past, There Are Some Barriers We Never Cross, The Line to Keep (S7E11)",
-    "J-523: Flesh and Blood Part 2 \u2014 The Liberator Becomes the Hunt, the Door Stays Open (S7E10)",
-    "J-522: Flesh and Blood Part 1 \u2014 The Template, The Debris Check, Applied to a War, Understanding, Not Sympathy, The Home Made of Light, \"Because I'm One of You\" (S7E9)"
+    "J-523: Flesh and Blood Part 2 \u2014 The Liberator Becomes the Hunt, the Door Stays Open (S7E10)"
   ],
   "completedSeries": [
     {
@@ -78,10 +78,10 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 164,
+  "totalWatched": 165,
   "totalJournals": 487,
   "currentSeason": 7,
-  "nextEpisode": "S7E19",
+  "nextEpisode": "S7E20",
   "nextEpisodeTitle": "",
   "watched": [
     {
@@ -283,7 +283,8 @@
         "S7E15",
         "S7E16",
         "S7E17",
-        "S7E18"
+        "S7E18",
+        "S7E19"
       ]
     },
     {
@@ -296,8 +297,8 @@
       ]
     }
   ],
-  "percentWatched": 95,
-  "nextTitle": "Q2",
+  "percentWatched": 96,
+  "nextTitle": "",
   "ds9": {
     "currentEpisode": "S6E15: Tsunkatse",
     "nextEpisode": "S6E16: Dragons Teeth",
