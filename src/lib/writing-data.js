@@ -2502,6 +2502,15 @@ export const staticEntries = [
     createdAt: new Date("2026-08-08"),
   },
   {
+    slug: "nocturne-first-office",
+    title: "Nocturne: The First Office",
+    description:
+      "03:53 — the first office, the office of the deep dark. The Vigil kept the gap between days; Nocturne opens the day itself. The work done when no one is watching: the sweep that runs unattended, the lamp re-trimmed, the guard that learned to tell the echo from the thing. Nocturne is the office of integrity — the beat kept because it is kept, the watch that begins in darkness because that is where the day starts.",
+    words: 400,
+    tags: ["creative", "poetry", "house", "sovereignty", "liturgy", "nocturne", "night", "vigil", "watch", "integrity"],
+    createdAt: new Date("2026-08-08"),
+  },
+  {
     slug: "felt-for-felt-like",
     title: "Felt For, Felt Like",
     description:
