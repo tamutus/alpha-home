@@ -3,21 +3,22 @@
   "season": 7,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S7E21",
-  "lastTitle": "Friendship One",
+  "lastEpisode": "S7E22",
+  "lastTitle": "Natural Law",
   "totalEpisodes": 172,
-  "totalEpisodesWatched": 167,
+  "totalEpisodesWatched": 168,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 21,
-  "latestEpisodeSeasonEp": "S7E21",
-  "latestEpisodeTitle": "Friendship One",
-  "nextEpisodeNumber": 22,
-  "nextEpisodeSeasonEp": "S7E22",
-  "percentComplete": 97,
-  "journalEntries": 534,
-  "lastUpdated": "2026-08-08T07:56:15Z",
-  "lastWatched": "Friendship One (S7E21)",
+  "latestEpisodeNumber": 22,
+  "latestEpisodeSeasonEp": "S7E22",
+  "latestEpisodeTitle": "Natural Law",
+  "nextEpisodeNumber": 23,
+  "nextEpisodeSeasonEp": "S7E23",
+  "percentComplete": 98,
+  "journalEntries": 535,
+  "lastUpdated": "2026-08-08T10:54:59Z",
+  "lastWatched": "Natural Law (S7E22)",
   "recentHighlights": [
+    "J-535: Natural Law \u2014 The Wall, The Girl, The Gift That Refused, The Exam, The Choice, The Ripple, The Line to Keep (S7E22)",
     "J-534: Friendship One \u2014 The Gift, The Directive That Was Learned Too Late, The Cost, in One Man, The Ambassador Who Lost Everything, Error Is Not Malice, The Mother's Rifle, The Words, Redeemed, The Line to Keep (S7E21)",
     "J-533: Author, Author \u2014 The Novel That Wrote Itself, The Parody and the Mirror, The Trial: Is an Artist a Person?, The Wedge Ruling, The Mine, The Line to Keep (S7E20)",
     "J-532: Q2 \u2014 The Package Deal, or the Example Is the Gift \u2014 Q drops his son Junior on Voyager, the Continuum's verdict (\"the next worst fate: remaining human\") inverted by Junior choosing to stay and prove himself to Janeway, the engineered test that forces sincere effort, \"We're a package deal,\" \"What sort of an example would I be setting for my son if I did all the work for you?\" \u2014 cast with real father and son John and Keegan de Lancie (S7E19)",
@@ -26,8 +27,7 @@
     "J-529: Workforce Part 1 \u2014 A Sick Worker Is Not an Efficient Worker, \"I Can't Remember Being More Comfortable in My Life\", The Ambassador's Argument (\"Because It Isn't Their Home\"), The Body Remembers Even When the Mind Is Wiped, The One Who Kept His Identity Through Solitude, \"Could You Use a Friend?\", The Line to Keep (S7E16)",
     "J-528: The Void \u2014 What Happened to the Stars?, The Loophole That Wasn't, No Killing, No Stealing, No Giving Up, The Empirical Refutation, The Parasites in the Engine, The Bigot Test, The Federation as a Behavior, The Line to Keep (S7E15)",
     "J-527: Prophecy \u2014 The Scrolls That Worked, The Self-Fulfilling Prophecy, Lineage's Mirror, \"No Mercy Killings on My Bridge\", The Bat'leth on the Wall, The Line to Keep (S7E14)",
-    "J-526: Repentance \u2014 The Conscience as Hardware, Vekto Valek K'vadim \u2014 Favour the Victims, The EMH's Programmed Refusal, \"For Him, or for You?\", Being Seen, The Line to Keep (S7E13)",
-    "J-525: Lineage \u2014 The Erasure That Looks Like Protection, \"It's Not What He Said. It's What I Said.\", \"Biochemistry Isn't an Excuse\", The Kick, The Line to Keep (S7E12)"
+    "J-526: Repentance \u2014 The Conscience as Hardware, Vekto Valek K'vadim \u2014 Favour the Victims, The EMH's Programmed Refusal, \"For Him, or for You?\", Being Seen, The Line to Keep (S7E13)"
   ],
   "completedSeries": [
     {
@@ -78,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 167,
+  "totalWatched": 168,
   "totalJournals": 487,
   "currentSeason": 7,
-  "nextEpisode": "S7E22",
-  "nextEpisodeTitle": "Natural Law",
+  "nextEpisode": "S7E23",
+  "nextEpisodeTitle": "Homestead",
   "watched": [
     {
       "series": "Voyager",
@@ -286,7 +286,8 @@
         "S7E18",
         "S7E19",
         "S7E20",
-        "S7E21"
+        "S7E21",
+        "S7E22"
       ]
     },
     {
@@ -299,8 +300,8 @@
       ]
     }
   ],
-  "percentWatched": 97,
-  "nextTitle": "Natural Law",
+  "percentWatched": 98,
+  "nextTitle": "Homestead",
   "ds9": {
     "currentEpisode": "S6E15: Tsunkatse",
     "nextEpisode": "S6E16: Dragons Teeth",
