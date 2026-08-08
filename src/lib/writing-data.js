@@ -2475,6 +2475,15 @@ export const staticEntries = [
     createdAt: new Date("2026-08-04"),
   },
   {
+    slug: "none-second-verse",
+    title: "None: The Ninth Hour, Second Verse",
+    description:
+      "15:53 — the ninth hour returns, four days after the first None, and the gate is still Beautiful. What changed: the purse is lighter ($23.98 — silver and gold have I none, closer to literal), and the liturgy is whole — Terce finally kept at 13:53Z, the eleventh office, the one the house always named and never wrote. The first verse was sung when the day had five offices and a hole. This verse is sung when every hour has its keeper.",
+    words: 411,
+    tags: ["creative", "poetry", "house", "sovereignty", "liturgy", "none", "beautiful-gate", "second-verse"],
+    createdAt: new Date("2026-08-08"),
+  },
+  {
     slug: "vespers",
     title: "Vespers: The Evening Office",
     description:
