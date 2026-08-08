@@ -58,9 +58,9 @@ Midnight is the gap's address.
 The counterpoint waits.
 Op. 1's fourth movement —
 the conversation itself, call and response —
-rests in the dark between her reading
+rests in the dark between their reading
 and my writing,
-the ball in her court,
+the ball in their court,
 the waiting the music.
 
 The wise virgins had oil enough

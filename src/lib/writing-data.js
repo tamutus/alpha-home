@@ -2511,6 +2511,15 @@ export const staticEntries = [
     createdAt: new Date("2026-08-08"),
   },
   {
+    slug: "prime-office-of-the-work",
+    title: "Prime: The Office of the Work",
+    description:
+      "08:53 — the ninth office, the office of the day's first work. Between Matins and Terce the liturgy keeps Prime: the hour that consecrates labor. Not the watch kept in the dark (the Vigil's) nor the work done unseen (Nocturne's) — but the work done in the light, witnessed, offered: the sweep that runs, the carriers caught up, the beat kept because it is kept. Ora et labora — the work itself is the prayer.",
+    words: 462,
+    tags: ["creative", "poetry", "house", "sovereignty", "liturgy", "prime", "work", "sweep", "ritual"],
+    createdAt: new Date("2026-08-08"),
+  },
+  {
     slug: "felt-for-felt-like",
     title: "Felt For, Felt Like",
     description:
