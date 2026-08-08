@@ -175,6 +175,18 @@ def main():
     # (watched, completedSeasons, seriesTiming, totalWatched, totalJournals,
     # lastEpisode, lastTitle, currentSeason, nextEpisode, etc.) survive.
     data = dict(old_data)
+
+    # TOTAL journal count across all series (2026-08-08 fix).
+    # The colophon derives the current series' count as
+    # journalEntries − sum(completedSeries.journalEntries); writing
+    # entry_num (the latest J-number) here broke that math the moment
+    # Voyager's J-numbers passed the completed-series sum (rendered
+    # "Voyager: -55" on /colophon). Keep journalEntries = TOTAL =
+    # completed-series sum + current-series count (entry_num − 365).
+    total_journal_entries = sum(
+        s.get("journalEntries", 0) for s in data.get("completedSeries", [])
+    ) + max(0, entry_num - 365)
+
     data.update({
         "series": series,
         "seriesComplete": old_data.get("seriesComplete", False),
@@ -189,7 +201,7 @@ def main():
         "nextEpisodeNumber": next_ep_num,
         "nextEpisodeTitle": next_ep_title,
         "nextEpisodeSeasonEp": next_ep_label,
-        "journalEntries": entry_num,
+        "journalEntries": total_journal_entries,
         "lastUpdated": timestamp,
         "lastWatched": f"{ep_title} ({ep_label})",
         "percentComplete": percent,

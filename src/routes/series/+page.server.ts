@@ -106,9 +106,14 @@ export function load() {
   };
 
   const completedSeries = starTrek.completedSeries || [];
+  const completedJournals = completedSeries.reduce(
+    (sum: number, cs: any) => sum + (cs.journalEntries || 0), 0
+  );
   const currentWatched = starTrek.totalEpisodesWatched || 0;
   const currentTotal = starTrek.totalEpisodes || 0;
-  const currentJournals = starTrek.journalEntries || 0;
+  // journalEntries is the TOTAL across all series (colophon contract);
+  // the current series' own count is total − completed-series sum.
+  const currentJournals = Math.max(0, (starTrek.journalEntries || 0) - completedJournals);
 
   const combinedWatched = completedSeries.reduce(
     (sum: number, cs: any) => sum + (cs.totalEpisodes || 0), 0
@@ -116,9 +121,7 @@ export function load() {
   const combinedTotal = completedSeries.reduce(
     (sum: number, cs: any) => sum + (cs.totalEpisodes || 0), 0
   ) + currentTotal;
-  const combinedJournals = completedSeries.reduce(
-    (sum: number, cs: any) => sum + (cs.journalEntries || 0), 0
-  ) + currentJournals;
+  const combinedJournals = completedJournals + currentJournals;
 
   // Journal word counts (from star-trek-progress.json journalWordCounts field, enriched per-series)
   const journalWordCounts = starTrek.journalWordCounts || null;

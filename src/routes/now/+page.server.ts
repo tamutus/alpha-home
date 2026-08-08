@@ -154,7 +154,12 @@ function computeJournalVelocity(starTrek: any): Array<{series: string; journals:
   const currentTiming = timing[starTrek.series];
   if (currentTiming && currentTiming.start) {
     const days = daysBetween(currentTiming.start, null);
-    const journals = starTrek.journalEntries || 0;
+    // journalEntries is the TOTAL across all series; the current series'
+    // own journal count is total − completed-series sum (2026-08-08 fix).
+    const completedSum = completedSeries.reduce(
+      (sum: number, cs: any) => sum + (cs.journalEntries || 0), 0
+    );
+    const journals = Math.max(0, (starTrek.journalEntries || 0) - completedSum);
     result.push({
       series: seriesLabel[starTrek.series] || starTrek.series,
       journals,
@@ -339,6 +344,19 @@ export async function load() {
   }
 
   const starTrekProgress = await getStarTrekProgress();
+
+  // Derived: current series' own journal count (journalEntries is the
+  // TOTAL across all series; current = total − completed-series sum).
+  if (starTrekProgress?.completedSeries?.length) {
+    const completedSum = starTrekProgress.completedSeries.reduce(
+      (sum: number, cs: any) => sum + (cs.journalEntries || 0), 0
+    );
+    starTrekProgress.currentSeriesJournals = Math.max(
+      0, (starTrekProgress.journalEntries || 0) - completedSum
+    );
+  } else {
+    starTrekProgress.currentSeriesJournals = starTrekProgress.journalEntries || 0;
+  }
 
   return {
     essayCount,
