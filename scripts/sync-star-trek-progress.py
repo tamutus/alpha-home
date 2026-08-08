@@ -205,23 +205,68 @@ def main():
     data["lastTitle"] = ep_title
 
     # Preserve watched array with current episode added/updated (dedup)
+    # SHADOW-BLOCK GUARD (2026-08-08): normalize the series name before
+    # matching AND before creating a block. J-520/521/522 syncs were invoked
+    # with "Star Trek: Voyager" instead of "Voyager"; the exact-match lookup
+    # missed the canonical block and spawned a duplicate "Star Trek: Voyager"
+    # block holding S7E7-9 (totals stayed correct — the count loop sums all
+    # blocks — but per-season views on /series lost three episodes and the
+    # completedSeasons derivation had two S7 rows). The watched array uses
+    # short forms ("Voyager"/"TNG"/"DS9"); map any full-name input down.
+    canonical_series = series_key  # short form the array already uses
+    block_series = series.replace("Star Trek: ", "").replace("Star Trek", "")
+    if "Next Generation" in block_series:
+        block_series = "TNG"
+    elif "Deep Space Nine" in block_series:
+        block_series = "DS9"
+    elif "Voyager" in block_series:
+        block_series = "Voyager"
+    if block_series not in ("Voyager", "TNG", "DS9"):
+        block_series = canonical_series
     watched_list = old_data.get("watched", [])
     if watched_list:
         season_block = None
         for block in watched_list:
             if (
-                block.get("series", "").replace("_", " ") == series.replace("_", " ")
+                block.get("series", "").replace("_", " ") == block_series.replace("_", " ")
                 and block.get("season") == season
             ):
                 season_block = block
                 break
         if season_block is None:
-            season_block = {"series": series, "season": season, "episodes": []}
+            season_block = {"series": canonical_series, "season": season, "episodes": []}
             watched_list.append(season_block)
             watched_list.sort(key=lambda b: b.get("season", 0))
         if ep_label not in season_block["episodes"]:
             season_block["episodes"].append(ep_label)
         data["watched"] = watched_list
+    # Post-sync shadow-block merge: any block for this series+season under a
+    # non-canonical name (e.g. a pre-existing "Star Trek: Voyager") gets its
+    # episodes folded into the canonical block and dropped.
+    canonical_blocks = [b for b in data.get("watched", [])
+                        if b.get("series", "").replace("_", " ") == canonical_series
+                        and b.get("season") == season]
+    merged_any = False
+    for block in list(data.get("watched", [])):
+        if canonical_blocks and block is canonical_blocks[0]:
+            continue
+        if (block.get("season") == season
+                and block.get("series", "") != canonical_series
+                and (canonical_series in block.get("series", "") or block.get("series", "") in canonical_series)):
+            if canonical_blocks:
+                for ep in block.get("episodes", []):
+                    if ep not in canonical_blocks[0]["episodes"]:
+                        canonical_blocks[0]["episodes"].append(ep)
+            data["watched"].remove(block)
+            merged_any = True
+    if merged_any:
+        # Re-sort merged block numerically (S7E10 before S7E2)
+        def _ep_sort_key(e):
+            import re
+            m = re.match(r"S\d+E(\d+)", e)
+            return int(m.group(1)) if m else 0
+        canonical_blocks[0]["episodes"].sort(key=_ep_sort_key)
+        print(f"NOTE: merged shadow block(s) into canonical '{canonical_series}' S{season}")
 
     # Recompute totals AFTER the append — the count must reflect the array
     # that is actually written (ordering bug fixed 2026-08-03: totals were
