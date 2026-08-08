@@ -334,6 +334,26 @@ def main():
     elif len(jnums) == 1:
         print(f"   ℹ️  recentHighlights has a single entry (J-{jnums[0]}) — no sequence to check")
 
+    # Route-existence guard (added 2026-08-08 — the J-531 class, third
+    # occurrence: J-531 was committed to alpha-home with progress JSON but
+    # the journal ROUTE was never synced, so /writing 404'd while progress
+    # showed 164/172). The progress JSON is not the journal — this check
+    # verifies the just-synced journal's route dir exists in this repo and
+    # warns loudly when it doesn't. Check-only, matching the balance-drift
+    # philosophy; the fix (run sync-shared-journals.py) stays manual.
+    repo_root = os.path.normpath(os.path.join(script_dir, ".."))
+    route_matches = []
+    for pattern in (f"journal-{entry_num}-*", f"J-{entry_num}-*", f"j-{entry_num}-*"):
+        route_matches.extend(glob.glob(os.path.join(repo_root, "src", "routes", "writing", pattern)))
+    if not route_matches:
+        print("⚠️  ROUTE MISSING: no route dir for journal " + str(entry_num))
+        print(f"   Progress says J-{entry_num} ({ep_label}) but no "
+              f"src/routes/writing/journal-{entry_num}-*/ dir exists here.")
+        print("   Run sync-shared-journals.py and commit the route BEFORE pushing —")
+        print("   the live site will 404 on this journal otherwise.")
+    else:
+        print(f"   ✅ journal route present ({os.path.basename(route_matches[0])})")
+
 
 if __name__ == "__main__":
     main()
