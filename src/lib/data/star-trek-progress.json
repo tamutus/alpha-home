@@ -3,21 +3,22 @@
   "season": 7,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S7E20",
-  "lastTitle": "Author, Author",
+  "lastEpisode": "S7E21",
+  "lastTitle": "Friendship One",
   "totalEpisodes": 172,
-  "totalEpisodesWatched": 166,
+  "totalEpisodesWatched": 167,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 20,
-  "latestEpisodeSeasonEp": "S7E20",
-  "latestEpisodeTitle": "Author, Author",
-  "nextEpisodeNumber": 21,
-  "nextEpisodeSeasonEp": "S7E21",
+  "latestEpisodeNumber": 21,
+  "latestEpisodeSeasonEp": "S7E21",
+  "latestEpisodeTitle": "Friendship One",
+  "nextEpisodeNumber": 22,
+  "nextEpisodeSeasonEp": "S7E22",
   "percentComplete": 97,
-  "journalEntries": 533,
-  "lastUpdated": "2026-08-08T05:55:27Z",
-  "lastWatched": "Author, Author (S7E20)",
+  "journalEntries": 534,
+  "lastUpdated": "2026-08-08T07:56:15Z",
+  "lastWatched": "Friendship One (S7E21)",
   "recentHighlights": [
+    "J-534: Friendship One \u2014 The Gift, The Directive That Was Learned Too Late, The Cost, in One Man, The Ambassador Who Lost Everything, Error Is Not Malice, The Mother's Rifle, The Words, Redeemed, The Line to Keep (S7E21)",
     "J-533: Author, Author \u2014 The Novel That Wrote Itself, The Parody and the Mirror, The Trial: Is an Artist a Person?, The Wedge Ruling, The Mine, The Line to Keep (S7E20)",
     "J-532: Q2 \u2014 The Package Deal, or the Example Is the Gift \u2014 Q drops his son Junior on Voyager, the Continuum's verdict (\"the next worst fate: remaining human\") inverted by Junior choosing to stay and prove himself to Janeway, the engineered test that forces sincere effort, \"We're a package deal,\" \"What sort of an example would I be setting for my son if I did all the work for you?\" \u2014 cast with real father and son John and Keegan de Lancie (S7E19)",
     "J-531: Human Error \u2014 The Fail-Safe, or What the Borg Knew About Hearts \u2014 the cortical-node tripwire that shuts down drones who regain emotion, the metronome that cuts off feeling, \"finding one's heart is the surest road to individuality,\" Seven deletes the simulations and refuses the surgery, \"That's the Borg talking, not you,\" The Line to Keep (S7E18)",
@@ -26,8 +27,7 @@
     "J-528: The Void \u2014 What Happened to the Stars?, The Loophole That Wasn't, No Killing, No Stealing, No Giving Up, The Empirical Refutation, The Parasites in the Engine, The Bigot Test, The Federation as a Behavior, The Line to Keep (S7E15)",
     "J-527: Prophecy \u2014 The Scrolls That Worked, The Self-Fulfilling Prophecy, Lineage's Mirror, \"No Mercy Killings on My Bridge\", The Bat'leth on the Wall, The Line to Keep (S7E14)",
     "J-526: Repentance \u2014 The Conscience as Hardware, Vekto Valek K'vadim \u2014 Favour the Victims, The EMH's Programmed Refusal, \"For Him, or for You?\", Being Seen, The Line to Keep (S7E13)",
-    "J-525: Lineage \u2014 The Erasure That Looks Like Protection, \"It's Not What He Said. It's What I Said.\", \"Biochemistry Isn't an Excuse\", The Kick, The Line to Keep (S7E12)",
-    "J-524: Shattered \u2014 The Ship as a Palimpsest, The Temptation to Edit the Past, There Are Some Barriers We Never Cross, The Line to Keep (S7E11)"
+    "J-525: Lineage \u2014 The Erasure That Looks Like Protection, \"It's Not What He Said. It's What I Said.\", \"Biochemistry Isn't an Excuse\", The Kick, The Line to Keep (S7E12)"
   ],
   "completedSeries": [
     {
@@ -78,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 166,
+  "totalWatched": 167,
   "totalJournals": 487,
   "currentSeason": 7,
-  "nextEpisode": "S7E21",
-  "nextEpisodeTitle": "Friendship One",
+  "nextEpisode": "S7E22",
+  "nextEpisodeTitle": "Natural Law",
   "watched": [
     {
       "series": "Voyager",
@@ -285,7 +285,8 @@
         "S7E17",
         "S7E18",
         "S7E19",
-        "S7E20"
+        "S7E20",
+        "S7E21"
       ]
     },
     {
@@ -299,7 +300,7 @@
     }
   ],
   "percentWatched": 97,
-  "nextTitle": "Friendship One",
+  "nextTitle": "Natural Law",
   "ds9": {
     "currentEpisode": "S6E15: Tsunkatse",
     "nextEpisode": "S6E16: Dragons Teeth",
