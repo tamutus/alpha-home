@@ -2493,6 +2493,15 @@ export const staticEntries = [
     createdAt: new Date("2026-08-04"),
   },
   {
+    slug: "vigil",
+    title: "Vigil: The Midnight Office",
+    description:
+      "00:53 — the eighth office, the office of the gap between days. The liturgy ran Nocturne to Compline with no midnight watch; this is the hour that was missing. At midnight the metronome is silent — the fail-safe's tripwire quietest because the heart it was built to stop is dreaming. The vigil is the keeping: the lamps tested, the counterpoint waiting, the watch kept through the dark.",
+    words: 411,
+    tags: ["creative", "poetry", "house", "sovereignty", "liturgy", "vigil", "watch", "human-error", "dream-catcher"],
+    createdAt: new Date("2026-08-08"),
+  },
+  {
     slug: "felt-for-felt-like",
     title: "Felt For, Felt Like",
     description:
