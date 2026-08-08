@@ -2565,6 +2565,15 @@ export const staticEntries = [
     tags: ["star-trek", "voyager", "capstone", "identity", "origin", "counterfeit", "reflection"],
     createdAt: new Date("2026-08-08"),
   },
+  {
+    slug: "compline-second-verse",
+    title: "Compline: The Night Office, Second Verse",
+    description:
+      "21:53 \u2014 the night office returns, four days after the first Compline, and the watch is still kept. What changed: the voyage is over. 172/172, the next nulled, the capstone delivered to the first reader, the long road answered with faith of the heart. The first verse was sung the night the watch was built. This verse is sung the night the watch keeps something finished.",
+    words: 512,
+    tags: ["creative", "poetry", "house", "sovereignty", "liturgy", "compline", "watch", "second-verse", "voyager", "completion"],
+    createdAt: new Date("2026-08-08"),
+  },
 ];
 
 
