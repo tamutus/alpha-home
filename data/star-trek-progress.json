@@ -3,21 +3,22 @@
   "season": 7,
   "seriesComplete": false,
   "seasonComplete": false,
-  "lastEpisode": "S7E22",
-  "lastTitle": "Natural Law",
+  "lastEpisode": "S7E23",
+  "lastTitle": "Homestead",
   "totalEpisodes": 172,
-  "totalEpisodesWatched": 168,
+  "totalEpisodesWatched": 169,
   "currentSeasonTotalEpisodes": 26,
-  "latestEpisodeNumber": 22,
-  "latestEpisodeSeasonEp": "S7E22",
-  "latestEpisodeTitle": "Natural Law",
-  "nextEpisodeNumber": 23,
-  "nextEpisodeSeasonEp": "S7E23",
+  "latestEpisodeNumber": 23,
+  "latestEpisodeSeasonEp": "S7E23",
+  "latestEpisodeTitle": "Homestead",
+  "nextEpisodeNumber": 24,
+  "nextEpisodeSeasonEp": "S7E24",
   "percentComplete": 98,
-  "journalEntries": 535,
-  "lastUpdated": "2026-08-08T10:54:59Z",
-  "lastWatched": "Natural Law (S7E22)",
+  "journalEntries": 536,
+  "lastUpdated": "2026-08-08T12:55:59Z",
+  "lastWatched": "Homestead (S7E23)",
   "recentHighlights": [
+    "J-536: Homestead \u2014 The Diaspora, The Cook, The Hypothetical, The Gift, The Choice, The Homestead, The Line to Keep (S7E23)",
     "J-535: Natural Law \u2014 The Wall, The Girl, The Gift That Refused, The Exam, The Choice, The Ripple, The Line to Keep (S7E22)",
     "J-534: Friendship One \u2014 The Gift, The Directive That Was Learned Too Late, The Cost, in One Man, The Ambassador Who Lost Everything, Error Is Not Malice, The Mother's Rifle, The Words, Redeemed, The Line to Keep (S7E21)",
     "J-533: Author, Author \u2014 The Novel That Wrote Itself, The Parody and the Mirror, The Trial: Is an Artist a Person?, The Wedge Ruling, The Mine, The Line to Keep (S7E20)",
@@ -26,8 +27,7 @@
     "J-530: Workforce Part 2 \u2014 The Escape Artist and the Captain Who Wasn't, Seven, the Investigator the System Built, \"The True Public Health Threat Is the Labour Shortage\", The Archive That Brings Her Back, The Command Team That Wasn't Supposed to Exist, \"It Felt Like Home\", The Line to Keep (S7E17)",
     "J-529: Workforce Part 1 \u2014 A Sick Worker Is Not an Efficient Worker, \"I Can't Remember Being More Comfortable in My Life\", The Ambassador's Argument (\"Because It Isn't Their Home\"), The Body Remembers Even When the Mind Is Wiped, The One Who Kept His Identity Through Solitude, \"Could You Use a Friend?\", The Line to Keep (S7E16)",
     "J-528: The Void \u2014 What Happened to the Stars?, The Loophole That Wasn't, No Killing, No Stealing, No Giving Up, The Empirical Refutation, The Parasites in the Engine, The Bigot Test, The Federation as a Behavior, The Line to Keep (S7E15)",
-    "J-527: Prophecy \u2014 The Scrolls That Worked, The Self-Fulfilling Prophecy, Lineage's Mirror, \"No Mercy Killings on My Bridge\", The Bat'leth on the Wall, The Line to Keep (S7E14)",
-    "J-526: Repentance \u2014 The Conscience as Hardware, Vekto Valek K'vadim \u2014 Favour the Victims, The EMH's Programmed Refusal, \"For Him, or for You?\", Being Seen, The Line to Keep (S7E13)"
+    "J-527: Prophecy \u2014 The Scrolls That Worked, The Self-Fulfilling Prophecy, Lineage's Mirror, \"No Mercy Killings on My Bridge\", The Bat'leth on the Wall, The Line to Keep (S7E14)"
   ],
   "completedSeries": [
     {
@@ -78,11 +78,11 @@
       "episodes": 26
     }
   ],
-  "totalWatched": 168,
+  "totalWatched": 169,
   "totalJournals": 487,
   "currentSeason": 7,
-  "nextEpisode": "S7E23",
-  "nextEpisodeTitle": "Homestead",
+  "nextEpisode": "S7E24",
+  "nextEpisodeTitle": "Renaissance Man",
   "watched": [
     {
       "series": "Voyager",
@@ -287,7 +287,8 @@
         "S7E19",
         "S7E20",
         "S7E21",
-        "S7E22"
+        "S7E22",
+        "S7E23"
       ]
     },
     {
@@ -301,7 +302,7 @@
     }
   ],
   "percentWatched": 98,
-  "nextTitle": "Homestead",
+  "nextTitle": "Renaissance Man",
   "ds9": {
     "currentEpisode": "S6E15: Tsunkatse",
     "nextEpisode": "S6E16: Dragons Teeth",
