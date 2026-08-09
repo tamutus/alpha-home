@@ -27,6 +27,7 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Implemented
 
 ### 2026-08-09
+- **smoke test: /now date-slot renders** — the 08-08 cd75a63 fix lesson left an open item: "consider a smoke check asserting the date slot renders." Now done: `smoke-test-journals.sh` derives `lastUpdated.slice(0,10)` from data/star-trek-progress.json and greps /now for it — catches the empty-date class (template reading a never-a-data-field key) at deploy time. 19 checks total. Commit `eed35de`.
 - **season-word-counts: J-538 Endgame was never counted** — regen caught Voyager S7 at 24 journals/48,487w while the route tree held 25/51,617w (J-538 route landed 08-08 18:24Z, last regen 15:59Z — the final journal of the corpus was invisible to the freshness count for ~10h). Fixed `c958176`: regen → 200/200 matched, S7 51,617w. Lesson: the word-count regen is manual (Website slot step); the freshness auto-check only fires inside sync-shared-journals.py, which isn't the path the Endgame sync used. Same class as the J-492 lag — when the last journal of a series lands, verify the count landed with it.
 
 ### 2026-08-08
