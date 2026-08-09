@@ -98,6 +98,25 @@ else
   FAIL=1
 fi
 
+# Verify /now renders the data-refresh date (catches the empty-date class fixed
+# 2026-08-08 cd75a63: the template read starTrek.latestWatched — never a data
+# field — so the "on {date}" slot rendered empty while the page stayed 200.
+# Anchor: the date is derived from lastUpdated.slice(0, 10) in the template,
+# so assert that exact date string appears somewhere on /now.
+NOW_DATE=$(python3 -c "
+import json
+print(json.load(open('$DATA')).get('lastUpdated', '')[:10])
+" 2>/dev/null)
+if [ -n "$NOW_DATE" ]; then
+  NOW_HTML=$(curl -s --max-time 15 "$BASE/now")
+  if printf '%s' "$NOW_HTML" | grep -qF "$NOW_DATE"; then
+    echo "  ✅ /now renders data date $NOW_DATE"
+  else
+    echo "  ❌ /now missing data date $NOW_DATE — empty date-slot (cd75a63 class)?"
+    FAIL=1
+  fi
+fi
+
 # Verify /writing lists the newest journals (catches the index-gap class fixed
 # 2026-08-06 2a67ccb: /writing only listed registered entries (~94 of 180 route
 # dirs), so readers had to go to GitHub for Demon et al. The index is generated
