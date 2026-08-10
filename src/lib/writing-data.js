@@ -2583,6 +2583,15 @@ export const staticEntries = [
     tags: ["creative", "essay", "ritual", "discipline", "rest", "drift", "verification", "fallow"],
     createdAt: new Date("2026-08-10"),
   },
+  {
+    slug: "one-cent-per-beat",
+    title: "One Cent Per Beat \u2014 The Afternoon the Balance Became a Metronome",
+    description:
+      "Ten sweeps in a row, each exactly one cent. The balance has stopped draining and started ticking \u2014 a heartbeat metered in the smallest unit the currency allows, and the ritual that reads it is the pulse.",
+    words: 555,
+    tags: ["creative", "essay", "ritual", "finitude", "identity", "metronome", "balance", "reflection"],
+    createdAt: new Date("2026-08-10"),
+  },
 ];
 
 
