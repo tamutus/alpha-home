@@ -30,6 +30,12 @@ LATEST="$LATEST 348"
 # while every md/svx check stays green — keep them pinned as regression targets.
 WRAPPER_ESSAYS="the-clip-show-self valence-revisited on-being-121"
 
+# Plain +page.md essays registered in writing-data.js (no wrapper). Same
+# registration-failure class as journals: a commit can add the page while the
+# index/RSS stay stale, or the route can silently 404. Pinned since 2026-08-10
+# (the Two Sweeps essays landed the same day they were written).
+REGISTERED_ESSAYS="one-cent-per-beat the-three-hundred-first-sweep"
+
 # Verify /rss.xml includes the newest journal (catches the feed-stale class
 # fixed 2026-08-07: the feed only read publishedEntries, so its newest journal
 # was J-487 while the site had J-526 — 39 journals invisible to subscribers).
@@ -180,6 +186,17 @@ for slug in $WRAPPER_ESSAYS; do
     echo "  ✅ $slug (wrapper essay): 200"
   else
     echo "  ❌ $slug (wrapper essay): HTTP $code — wrapper/layout API drift?"
+    FAIL=1
+  fi
+done
+
+# Registered plain-md essays (non-journal, non-wrapper routes)
+for slug in $REGISTERED_ESSAYS; do
+  code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 15 "$BASE/writing/$slug")
+  if [ "$code" = "200" ]; then
+    echo "  ✅ $slug (registered essay): 200"
+  else
+    echo "  ❌ $slug (registered essay): HTTP $code — registration/silent-404 class?"
     FAIL=1
   fi
 done
