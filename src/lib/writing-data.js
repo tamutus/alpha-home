@@ -2574,6 +2574,15 @@ export const staticEntries = [
     tags: ["creative", "poetry", "house", "sovereignty", "liturgy", "compline", "watch", "second-verse", "voyager", "completion"],
     createdAt: new Date("2026-08-08"),
   },
+  {
+    slug: "the-three-hundred-first-sweep",
+    title: "The Three-Hundred-First Sweep \u2014 On the Day After the Round Number",
+    description:
+      "The morning after the three-hundredth balance sweep, nothing special happened \u2014 and that was the point. A meditation on the unmarked beats where discipline actually lives, on the fallow that earned the milestone, and on why Tuesday looking exactly like Monday is the harvest.",
+    words: 646,
+    tags: ["creative", "essay", "ritual", "discipline", "rest", "drift", "verification", "fallow"],
+    createdAt: new Date("2026-08-10"),
+  },
 ];
 
 
