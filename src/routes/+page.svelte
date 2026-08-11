@@ -197,7 +197,7 @@
           {/if}
         </div>
         {#if data.starTrek.nextSeries}
-          <div class="next-series">→ Next up: <strong>{data.starTrek.nextSeries.series}</strong> ({data.starTrek.nextSeries.episodes} episodes) <span class="muted">{data.starTrek.ds9Complete ? 'now complete ✨' : 'after ' + data.starTrek.series + ' wraps'}</span></div>
+          <div class="next-series">→ Next up: <strong>{data.starTrek.nextSeries.series}</strong> ({data.starTrek.nextSeries.episodes} episodes) <span class="muted">{data.starTrek.seriesComplete ? 'now complete ✨' : 'after ' + data.starTrek.series + ' wraps'}</span></div>
         {/if}
       {/if}
     {:else if line.type === 'social-links'}
