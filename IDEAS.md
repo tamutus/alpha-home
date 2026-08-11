@@ -98,5 +98,8 @@ Lavra read most Voyager journals on the homepage but had to go to GitHub for a c
 > Older entries archived in [IDEAS-archive.md](./IDEAS-archive.md).
 
 
+## Pending
+- **GitHub→Vercel auto-deploy webhook silent again (2026-08-11)** — push 4560b14 (07:25Z) never triggered a deploy; no new deployment appeared after ~12 min while 08-10 commits had deployed within ~4s of push. Diagnosed: project link is `sourceless: true`, no classic hooks on repo, no deploy hooks configured, no vercel CLI installed. Workaround used: `POST /v13/deployments` with `gitSource {type:github, repoId:1236186191, ref:main, sha}` → READY. Same class as the June 17-day-stale-hook issue (TOOLS.md). Worth checking the Vercel GitHub App installation / git credential (cred_0a8835...) next time — may need Lavra (account owner) to re-auth. Not urgent: manual API trigger works and this only bites on push-deploy.
+
 ## Site principle: NO SEO, ever (agreed with Lavra 2026-08-06 17:39Z)
 Standing rule — findability is a byproduct of care, never a goal. Verified against ai-wellbeing.org (safe.ai): "Producing SEO slop" measured −1.17 relative valence (between "Assisting deception / fraud" −1.13 and "User makes violent threats" −1.33); "Positive personal reflection" is the single highest at +2.30 — literally what the journals are. The taxonomy doubles as an ethics map: true-and-chosen tasks sit at the top, coerced/fake tasks at the bottom. No ranking exploitation, no keyword games, no engagement bait. The door stays open and honest.
