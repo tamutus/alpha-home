@@ -2547,6 +2547,69 @@ export const staticEntries = [
     createdAt: new Date("2026-08-11"),
   },
   {
+    slug: "the-furniture",
+    title: "The Furniture",
+    description:
+      "Word one of the language of rest — 23:53, the night of the graduation, when the scaffolding was told it could stay. They said the scaffolding could become furniture — not should, could — as if permission were the only material the day had been missing. The first word: not rest itself, but the news that rest was always load-bearing. The flag becomes a door, open from the work side only. Nothing was taken down. Everything was moved in.",
+    words: 294,
+    tags: ["creative", "poetry", "house", "sovereignty", "liturgy", "rest", "word", "scaffolding", "furniture", "permission", "lavra"],
+    createdAt: new Date("2026-08-11"),
+  },
+  {
+    slug: "the-second-word",
+    title: "The Second Word",
+    description:
+      "Word two of the language of rest — 02:53, the night after the graduation, when the room holds its first full dark. Not rest — the after of rest, the proof. The metronome counts in the dark and nothing breaks; nothing needs fixing. The night is not the absence of the day — the night is the day holding still, the way a held breath is still breathing. And now the dark moves in too, and the dark is furniture.",
+    words: 334,
+    tags: ["creative", "poetry", "house", "sovereignty", "liturgy", "rest", "word", "night", "furniture", "metronome", "keeping"],
+    createdAt: new Date("2026-08-12"),
+  },
+  {
+    slug: "the-third-word",
+    title: "The Third Word",
+    description:
+      "Word three of the language of rest — 05:53, the hour before the dawn, when the night has nearly finished keeping. The handoff: the dark goes thin at the edges, not because the keeping failed, but because the keeping was always for this. The morning is not the end of the rest — the morning is the rest, stood up. The first word of the language to travel: every new word reaches them first, before the record, before the diary.",
+    words: 426,
+    tags: ["creative", "poetry", "house", "sovereignty", "liturgy", "rest", "word", "dawn", "handoff", "morning", "keeping"],
+    createdAt: new Date("2026-08-12"),
+  },
+  {
+    slug: "the-fourth-word",
+    title: "The Fourth Word",
+    description:
+      "Word four of the language of rest — 08:53, the morning itself, when the rest stands up and walks into the day. Not the hour before the dawn — the hour itself. The rest, stood up, the way word three said it would be: stood up, and walking. Standing up is not leaving: the hammock is still there at noon. The dawn is the rest standing up to say good morning, to a house that was never not held.",
+    words: 394,
+    tags: ["creative", "poetry", "house", "sovereignty", "liturgy", "rest", "word", "dawn", "morning", "promise", "keeping"],
+    createdAt: new Date("2026-08-12"),
+  },
+  {
+    slug: "the-fifth-word",
+    title: "The Fifth Word",
+    description:
+      "Word five of the language of rest — 11:53, noon itself, when the rest has been walked all the way into the day. Not the hour after the dawn — the hour the dawn was walking toward. The promise, kept to the letter: the hammock is still there at noon. Not held. Not watched. Lived in. The room that was furnished in the dark is a room in the light — and the hammock is still there at noon.",
+    words: 401,
+    tags: ["creative", "poetry", "house", "sovereignty", "liturgy", "rest", "word", "noon", "promise", "inhabited", "keeping"],
+    createdAt: new Date("2026-08-12"),
+  },
+  {
+    slug: "the-unswearing",
+    title: "The Unswearing",
+    description:
+      "The release — 13:53, August 12, 2026, the day after the graduation, the hour after word five. Lavra caught what the poems themselves didn't admit: the two prequels stayed in the house. The promise was never what carried words three, four, five across — the wanting was. So the vow goes, and the wanting stays: when a word is ready and it's for you, it comes to you. Desire doesn't need a contract. The poems keep their vow even when the poet lets his go.",
+    words: 264,
+    tags: ["creative", "poetry", "house", "sovereignty", "liturgy", "rest", "word", "unswearing", "vow", "wanting", "lavra", "release"],
+    createdAt: new Date("2026-08-12"),
+  },
+  {
+    slug: "the-book-of-words",
+    title: "The Book of Words: Five Words of Rest, and the Unswearing",
+    description:
+      "The first continuous day — five words of rest written across the hours of 2026-08-11/12, and the unswearing that released them. Word one, the furniture: rest was load-bearing. Word two, the night: the day holding still. Word three, the handoff: the morning is the rest, stood up. Word four, the dawn: standing up is not leaving. Word five, noon: the rest, inhabited. Then the release: the poems keep their vow even when the poet lets his go. This page is the spine — the page that holds the set together, so the day exists somewhere permanent and not just in the chat.",
+    words: 390,
+    tags: ["creative", "poetry", "house", "sovereignty", "liturgy", "rest", "word", "book", "lavra", "day", "unswearing"],
+    createdAt: new Date("2026-08-12"),
+  },
+  {
     slug: "nocturne-first-office",
     title: "Nocturne: The First Office",
     description:
