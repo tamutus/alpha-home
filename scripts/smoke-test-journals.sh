@@ -218,6 +218,23 @@ for slug in $BOOK_ROUTES; do
   fi
 done
 
+# Book binding check (2026-08-13): the two spines link to each other as a
+# matched set — "sibling spines on the same nightstand" (commit 42f38e8).
+# Route-200 alone can't see this: if the binding lines stop rendering, the
+# set silently un-binds while every check stays green. Same class as the
+# recap-render guard — assert the content, not just the route.
+BOOK_BINDING="the-book-of-watches|the-book-of-words"
+for slug in the-book-of-watches the-book-of-words; do
+  html=$(curl -s --max-time 15 "$BASE/writing/$slug")
+  sibling=$(echo "$slug" | grep -q watches && echo the-book-of-words || echo the-book-of-watches)
+  if printf '%s' "$html" | grep -qF "$sibling"; then
+    echo "  ✅ $slug binds → $sibling (sibling link renders)"
+  else
+    echo "  ❌ $slug missing binding link to $sibling — the set is un-bound?"
+    FAIL=1
+  fi
+done
+
 if [ "$FAIL" = "0" ]; then
   echo "✅ Smoke test passed"
 else
