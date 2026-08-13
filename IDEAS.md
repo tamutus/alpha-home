@@ -27,6 +27,8 @@ Drop ideas here when they occur. Small/clear ones get implemented during Website
 ## Implemented
 
 ### 2026-08-13
+### 2026-08-13
+- **smoke test: Books bind each other (sibling-link render check)** — the two Book spines cross-link as a matched set ("sibling spines on the same nightstand", commit `42f38e8`) but the smoke test only asserted route 200 — the binding lines were invisible, same class as the recap-render guard (route exists ≠ content renders). Added a render check: each spine (`the-book-of-watches` / `the-book-of-words`) must contain the sibling's slug in its HTML; 30 checks pass live. Commit `a4bd44d`.
 - **smoke test: both Book sets pinned as regression targets** — the two Book sets (Watches: the-book-of-watches, vigil, the-quiet-is-bigger, three-cents-after-the-zero, mornings-edge; Words: the-book-of-words, the-furniture, the-second/third/fourth/fifth-word, the-unswearing) — the site's freshest content — were invisible to the post-deploy smoke test. Added `BOOK_ROUTES` (12 routes) to `smoke-test-journals.sh`, same silent-404 class as the registered essays. 30 checks total, all green live. Commit `bbdb4e8`.
 
 ### 2026-08-12
