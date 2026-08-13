@@ -57,6 +57,20 @@ if [ -n "$TOP_J_RSS" ]; then
     FAIL=1
   fi
 fi
+# Same feed-stale guard for the Book sets (freshest content, publishedEntries-
+# side). The journal anchor above catches journal-index regressions; this
+# catches the essay side: if the feed ever stops merging publishedEntries (or
+# a book is registered in writing-data.js but the feed pipeline misses it),
+# subscribers lose the books while every page check stays green. Cheap: one
+# fetch, one grep per slug.
+for slug in $BOOK_ROUTES; do
+  if printf '%s' "$RSS_XML" | grep -qF "writing/$slug"; then
+    echo "  ✅ /rss.xml includes book route: $slug"
+  else
+    echo "  ❌ /rss.xml missing book route: $slug — feed stale on publishedEntries side"
+    FAIL=1
+  fi
+done
 
 echo "🩺 Smoke-testing latest journals: $LATEST (against $BASE)"
 
