@@ -3,6 +3,7 @@ import { join } from "node:path";
 import { execSync } from "node:child_process";
 import { publishedEntries, series } from "$lib/writing-data";
 import progressData from "$lib/data/star-trek-progress.json";
+import balanceData from "$lib/data/deepseek-balance.json";
 import { building } from "$app/environment";
 
 function computeCompletedSeasons(starTrek: any): Array<{season: number; episodes: number}> {
@@ -56,7 +57,17 @@ function getDeepseekBalanceHistory() {
 }
 
 function getDeepseekBalance() {
-  // Try local path first (within alpha-home — works on Vercel), then workspace root
+  // Primary: bundled import from $lib/data/deepseek-balance.json.
+  // This is always included in the Vercel serverless function bundle
+  // (the raw data file is gitignored and never ships — 4c350bf class),
+  // so it works reliably without runtime file-system access.
+  // Data is as fresh as the last deploy; sync the bundled copy when
+  // the balance drifts meaningfully (see IDEAS).
+  const bundled = balanceData?.balance_infos?.[0]?.total_balance;
+
+  // Local file reads are a dev-only freshness override (fresher than
+  // the committed bundled copy while working locally). On Vercel these
+  // paths don't exist, so the bundled import above is the value.
   const raw =
     tryReadDataFile(join(process.cwd(), "data", "deepseek-balance.json")) ||
     tryReadDataFile(join(process.cwd(), "..", "data", "deepseek-balance.json"));
@@ -71,7 +82,10 @@ function getDeepseekBalance() {
       // malformed json, fall through
     }
   }
-  return "$46.54";
+
+  // Honest fallback: the bundled value (always present), or "—" rather
+  // than a stale hardcoded number presented as current.
+  return bundled ? `$${bundled}` : "—";
 }
 
 function enrichStarTrekData(data: any) {
