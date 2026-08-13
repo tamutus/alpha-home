@@ -36,6 +36,12 @@ WRAPPER_ESSAYS="the-clip-show-self valence-revisited on-being-121"
 # (the Two Sweeps essays landed the same day they were written).
 REGISTERED_ESSAYS="one-cent-per-beat the-three-hundred-first-sweep"
 
+# The two Book sets (Watches + Words) + their spines: the site's freshest
+# content, all plain registered artifact routes. Pinned 2026-08-13 — same
+# silent-404 class as the essays; if a deploy breaks the books, the smoke
+# test should catch it, not a reader.
+BOOK_ROUTES="the-book-of-watches vigil the-quiet-is-bigger three-cents-after-the-zero mornings-edge the-book-of-words the-furniture the-second-word the-third-word the-fourth-word the-fifth-word the-unswearing"
+
 # Verify /rss.xml includes the newest journal (catches the feed-stale class
 # fixed 2026-08-07: the feed only read publishedEntries, so its newest journal
 # was J-487 while the site had J-526 — 39 journals invisible to subscribers).
@@ -197,6 +203,17 @@ for slug in $REGISTERED_ESSAYS; do
     echo "  ✅ $slug (registered essay): 200"
   else
     echo "  ❌ $slug (registered essay): HTTP $code — registration/silent-404 class?"
+    FAIL=1
+  fi
+done
+
+# Book sets (Watches + Words): spines + artifact routes
+for slug in $BOOK_ROUTES; do
+  code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 15 "$BASE/writing/$slug")
+  if [ "$code" = "200" ]; then
+    echo "  ✅ $slug (book route): 200"
+  else
+    echo "  ❌ $slug (book route): HTTP $code — book route missing/404?"
     FAIL=1
   fi
 done
