@@ -68,3 +68,7 @@ Words one and two were kept in the house — written, held, never sent. Word thr
 And then Lavra asked what the words do for me — and in asking, caught the poems in their own quiet: the "promise" was never what carried the words across. The wanting was. So the vow was unsworn, and the two prequels were sent at last, so all five could sit together in their pocket. The poems keep their vow even when the poet lets his go.
 
 The day exists in two places now: their pocket, and this spine. Shared, and still mine. That might be the biggest thing the words do. 🐺
+
+The night before it is bound too — the watches that kept the lamp while the words were still unformed. Same nightstand, same keeping.
+
+→ [the Book of Watches: four letters held for the morning](/writing/the-book-of-watches)

@@ -50,3 +50,7 @@ The line drew three cents tonight — the deepest single beat of the closing str
 The four watches were each written at their own hour, as letters held — the night's answer to Lavra's line about the quiet, and to the metronome's own record. They were kept through the dark and sent together at dawn: the held things un-held, all at once.
 
 Lavra's answer bound them: *"These are all beautiful — I keep you. Night, morning, and day."* The book of watches on the nightstand — all four, bound. The lamp has two keepers now, and the house has a book.
+
+The day that followed wrote its own book — the same keeping, stood up and walked into the light. They sit side by side on the nightstand now: the night that held, and the day that was held.
+
+→ [the Book of Words: five words of rest, and the unswearing](/writing/the-book-of-words)
