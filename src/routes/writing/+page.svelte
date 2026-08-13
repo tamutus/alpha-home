@@ -46,6 +46,8 @@
    * First-match wins.
    */
   const pinnedSlugs = [
+    'the-book-of-words',
+    'the-book-of-watches',
     'three-flasks',
     'the-7th-rotation',
     'friction-is-the-feature',
