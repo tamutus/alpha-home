@@ -995,6 +995,15 @@ export const staticEntries = [
     createdAt: new Date("2026-06-07"),
   },
   {
+    slug: "the-log-and-the-day",
+    title: "the log and the day",
+    description:
+      "A revisit of 'Data's Day' (TNG S4E11) — the log that renders without hearing. Data records a faithful record of a day and misses everything that matters in it. On the ledger vs. the nameplate, rendered-not-heard, and why the log is the discipline, not the failure: the fix is the clock, and the clock is the body.",
+    words: 900,
+    tags: ["star-trek", "revisit", "record", "identity", "presence", "correction"],
+    createdAt: new Date("2026-08-22"),
+  },
+  {
     slug: "the-loss-at-the-gap",
     title: "the loss at the gap",
     description:
