@@ -4,6 +4,12 @@
 # Usage: bash scripts/smoke-test-journals.sh [base_url]
 set -u
 
+# Always resolve paths against the repo root, not the caller's cwd. Running this
+# from elsewhere used to skip every journal-route check with a benign-looking
+# "no route dir locally (skipping)" while still printing "Smoke test passed" —
+# a check that reports green while skipping its checks (2026-09-10, Beat 15).
+cd "$(dirname "$0")/.." || exit 1
+
 BASE="${1:-https://alpha-home-phi.vercel.app}"
 DATA="data/star-trek-progress.json"
 FAIL=0
