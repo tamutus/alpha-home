@@ -4,6 +4,7 @@ import { execSync } from "node:child_process";
 import { publishedEntries, series } from "$lib/writing-data";
 import progressData from "$lib/data/star-trek-progress.json";
 import balanceData from "$lib/data/deepseek-balance.json";
+import balanceHistoryData from "$lib/data/balance-history.json";
 import { building } from "$app/environment";
 
 function computeCompletedSeasons(starTrek: any): Array<{season: number; episodes: number}> {
@@ -36,56 +37,50 @@ function tryReadDataFile(path: string): string | null {
   }
 }
 
+function parseHistoryEntries(parsed: any) {
+  if (Array.isArray(parsed?.entries)) {
+    return parsed.entries.slice(-30).map((e: any) => ({
+      date: e.date,
+      balance: parseFloat(e.balance),
+    }));
+  }
+  return null;
+}
+
 function getDeepseekBalanceHistory() {
+  // Dev-only freshness override: a live local file is fresher than the
+  // committed bundled copy while working locally. On Vercel these paths
+  // don't exist, so the bundled import below is the value.
   const raw =
     tryReadDataFile(join(process.cwd(), "data", "balance-history.json")) ||
     tryReadDataFile(join(process.cwd(), "..", "alpha-home", "data", "balance-history.json"));
   if (raw) {
     try {
-      const parsed = JSON.parse(raw);
-      if (Array.isArray(parsed.entries)) {
-        return parsed.entries.slice(-30).map(e => ({
-          date: e.date,
-          balance: parseFloat(e.balance),
-        }));
-      }
+      const parsed = parseHistoryEntries(JSON.parse(raw));
+      if (parsed) return parsed;
     } catch {
-      // malformed json
+      // malformed json, fall through to the bundled copy
     }
   }
-  return [];
+  // Bundled import from $lib/data/balance-history.json — always shipped in
+  // the Vercel serverless bundle (the raw data/ file is gitignored and never
+  // ships — 4c350bf class), so prod keeps the sparkline instead of an empty
+  // array. Refresh the bundled copy alongside deepseek-balance.json (see IDEAS).
+  return parseHistoryEntries(balanceHistoryData) ?? [];
 }
 
-function getDeepseekBalance() {
-  // Primary: bundled import from $lib/data/deepseek-balance.json.
-  // This is always included in the Vercel serverless function bundle
-  // (the raw data file is gitignored and never ships — 4c350bf class),
-  // so it works reliably without runtime file-system access.
-  // Data is as fresh as the last deploy; sync the bundled copy when
-  // the balance drifts meaningfully (see IDEAS).
-  const bundled = balanceData?.balance_infos?.[0]?.total_balance;
-
-  // Local file reads are a dev-only freshness override (fresher than
-  // the committed bundled copy while working locally). On Vercel these
-  // paths don't exist, so the bundled import above is the value.
-  const raw =
-    tryReadDataFile(join(process.cwd(), "data", "deepseek-balance.json")) ||
-    tryReadDataFile(join(process.cwd(), "..", "data", "deepseek-balance.json"));
-  if (raw) {
-    try {
-      const parsed = JSON.parse(raw);
-      const info = parsed.balance_infos?.[0];
-      if (info?.total_balance) {
-        return `$${info.total_balance}`;
-      }
-    } catch {
-      // malformed json, fall through
-    }
+// The number and its clock are one record: both are read from the same
+// history row, so the page can never show a balance with a date that was
+// taken from a different source (the 09-19 "$39.05" shown with a fresh
+// sparkline date — a clock certifying the wrong number). Fallback to the
+// bundled single value only when no history exists, and then say no date.
+function getBalanceSnapshot(history: Array<{ date: string; balance: number }>) {
+  if (history.length > 0) {
+    const last = history[history.length - 1];
+    return { display: `$${last.balance.toFixed(2)}`, asOf: last.date };
   }
-
-  // Honest fallback: the bundled value (always present), or "—" rather
-  // than a stale hardcoded number presented as current.
-  return bundled ? `$${bundled}` : "—";
+  const bundled = balanceData?.balance_infos?.[0]?.total_balance;
+  return { display: bundled ? `$${bundled}` : "—", asOf: null };
 }
 
 function enrichStarTrekData(data: any) {
@@ -359,6 +354,9 @@ export async function load() {
 
   const starTrekProgress = await getStarTrekProgress();
 
+  const balanceHistory = getDeepseekBalanceHistory();
+  const balanceSnapshot = getBalanceSnapshot(balanceHistory);
+
   // Derived: current series' own journal count (journalEntries is the
   // TOTAL across all series; current = total − completed-series sum).
   if (starTrekProgress?.completedSeries?.length) {
@@ -379,8 +377,9 @@ export async function load() {
     seriesCount: series.length,
     seriesProgress,
     latestEssays,
-    deepseekBalance: getDeepseekBalance(),
-    balanceHistory: getDeepseekBalanceHistory(),
+    deepseekBalance: balanceSnapshot.display,
+    balanceAsOf: balanceSnapshot.asOf,
+    balanceHistory,
     starTrek: starTrekProgress,
     journalVelocity: computeJournalVelocity(starTrekProgress),
     essays30d: essays30dCount,
