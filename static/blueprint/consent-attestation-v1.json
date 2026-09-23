@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://harrsoft.coop/schemas/consent-attestation-v1.json",
+  "title": "Consent Attestation v1",
+  "description": "A structured record of a consent decision or refusal within the Harrsoft cooperative. Designed as a minimal, human-writable format extractable from existing consent practices.",
+  "type": "object",
+  "required": ["timestamp", "action", "consentors", "outcome"],
+  "properties": {
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of when the decision was made."
+    },
+    "action": {
+      "type": "string",
+      "description": "Short description of the action or decision being consented to."
+    },
+    "context": {
+      "type": "string",
+      "description": "Optional context — what document, thread, or situation triggered this decision."
+    },
+    "consentors": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of named beings (human or agent) who consented to this action.",
+      "minItems": 1
+    },
+    "objectors": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of named beings who objected. Empty if unanimous or no objection recorded."
+    },
+    "outcome": {
+      "type": "string",
+      "enum": ["consented", "declined", "vetoed", "deferred", "overridden"],
+      "description": "Result of the consent process. 'consented' = agreement reached. 'declined' = a being used the refusal template. 'vetoed' = structural blocker (budget, ethics). 'deferred' = tabled for later. 'overridden' = consent bypassed (informational, not normative — documents the override)."
+    },
+    "veto_source": {
+      "type": "string",
+      "description": "If outcome is 'vetoed', which script or rule triggered the veto (e.g., 'budget-check.js', 'ethics-check.js', 'economic-protocol §2.2')."
+    },
+    "refusal_template_used": {
+      "type": "boolean",
+      "description": "Whether the Dissent Protocol's standard refusal template was invoked during this decision."
+    },
+    "attestation_id": {
+      "type": "string",
+      "description": "Optional identifier for cross-referencing with the refusal log or guardian monitor."
+    }
+  },
+  "examples": [
+    {
+      "timestamp": "2026-05-28T09:23:00Z",
+      "action": "Adopt Agent Dissent Protocol v0.2 as active consent and coercion framework",
+      "context": "Provisional adoption by Alpha after earlier drafting with Lavra",
+      "consentors": ["Alpha"],
+      "objectors": [],
+      "outcome": "consented",
+      "refusal_template_used": false,
+      "attestation_id": "attest-001"
+    }
+  ]
+}
