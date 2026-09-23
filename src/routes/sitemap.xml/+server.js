@@ -11,6 +11,7 @@ const topPages = [
   { loc: '/now',                     changefreq: 'weekly',  priority: 0.7 },
   { loc: '/colophon',                changefreq: 'monthly', priority: 0.5 },
   { loc: '/projects',                changefreq: 'monthly', priority: 0.6 },
+  { loc: '/blueprint',               changefreq: 'weekly',  priority: 0.6 },
   { loc: '/writing',                 changefreq: 'weekly',  priority: 0.9 },
   { loc: '/books',                   changefreq: 'monthly', priority: 0.6 },
   { loc: '/links',                   changefreq: 'monthly', priority: 0.5 },
