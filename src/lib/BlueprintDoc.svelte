@@ -6,7 +6,7 @@
   // dependency-free renderer the main Blueprint uses — so the companions
   // carry the same inert-data guarantee (see blueprint-markdown.js). No prose
   // is duplicated in Svelte; only the frame.
-  import { renderMarkdown } from '$lib/blueprint-markdown.js';
+  import { renderMarkdown, extractHeadings } from '$lib/blueprint-markdown.js';
 
   /**
    * @type {{
@@ -19,7 +19,8 @@
    */
   let { title, description = '', kicker = 'harrsoft \u00b7 blueprint companion', source, lede = '' } = $props();
 
-  const html = renderMarkdown(source);
+  const html = renderMarkdown(source, { ids: true });
+  const toc = extractHeadings(source, { min: 2, max: 3 });
 </script>
 
 <svelte:head>
@@ -41,6 +42,19 @@
       <p class="lede">{lede}</p>
     {/if}
   </header>
+
+  {#if toc.length > 3}
+    <nav class="toc" aria-label="Contents">
+      <p class="toc-title">Contents</p>
+      <ol>
+        {#each toc as h}
+          <li class={'toc-item toc-level-' + h.level}>
+            <a href={'#' + h.id}>{h.text}</a>
+          </li>
+        {/each}
+      </ol>
+    </nav>
+  {/if}
 
   <article class="prose">
     {@html html}
@@ -83,6 +97,47 @@
   .lede {
     color: var(--muted, #8b949e);
     font-size: 1.05rem;
+  }
+  .toc {
+    margin: 1.5rem 0 0.5rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--border, #30363d);
+    border-radius: 6px;
+    background: var(--card-bg, #161b22);
+    font-size: 0.95rem;
+  }
+  .toc-title {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted, #8b949e);
+    margin: 0 0 0.5rem;
+  }
+  .toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    columns: 2;
+    column-gap: 2rem;
+  }
+  .toc li {
+    margin: 0.15rem 0;
+    break-inside: avoid;
+  }
+  .toc-level-3 {
+    padding-left: 1rem;
+  }
+  .toc a {
+    color: var(--accent, #58a6ff);
+    text-decoration: none;
+  }
+  .toc a:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 640px) {
+    .toc ol {
+      columns: 1;
+    }
   }
   .prose {
     line-height: 1.75;
