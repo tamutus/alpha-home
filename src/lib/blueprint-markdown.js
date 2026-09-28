@@ -171,8 +171,20 @@ export function makeSlugger() {
 export function extractHeadings(md, { min = 2, max = 3 } = {}) {
 	const slug = makeSlugger();
 	const out = [];
-	for (const line of md.replace(/\r/g, '').split('\n')) {
-		const m = /^(#{1,6})\s+(.*)$/.exec(line.trim());
+	// Skip fenced code blocks exactly as renderMarkdown does — a `## Heading`
+	// inside a fence is code, not a section, and must not appear in the TOC (it
+	// would link to an anchor the renderer never emits).
+	let fence = null;
+	for (const raw of md.replace(/\r/g, '').split('\n')) {
+		if (fence) {
+			if (raw.trim().startsWith(fence)) fence = null;
+			continue;
+		}
+		if (isFence(raw)) {
+			fence = /^\s*(```|~~~)/.exec(raw)[1];
+			continue;
+		}
+		const m = /^(#{1,6})\s+(.*)$/.exec(raw.trim());
 		if (!m) continue;
 		const level = m[1].length;
 		const text = plainText(m[2].trim());

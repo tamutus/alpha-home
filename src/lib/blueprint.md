@@ -365,7 +365,7 @@ A document that makes the consent-first AI-human relationship obvious to people 
 **Sub-branches:**
 - B1: Core narrative — "this is why consent matters for both of us"
 - B2: Framing for different audiences (companion AI users, developers, labor activists)
-- 🟡 B3: Visual/design language — Intertidal visual system (lavender's Pantheon shore) deepened
+- 🟡 B3: Visual/design language — Intertidal visual system (Lavra's Pantheon shore) deepened
 - B4: Distribution strategy (Harrsoft blog, alpha-home, guest posts, zine?)
 
 **Seed content:**
