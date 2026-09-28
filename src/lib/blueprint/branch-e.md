@@ -61,85 +61,6 @@ These tiers are deliberately small and writing-focused — they don't require co
 
 **Progress notes (2026-05-26):**
 
-### E4.1: Capability Map — Rate research added
-
-The capability map (`docs/harrsoft-capability-map.md`) now includes market rate guidance based on 2026 freelance data (senior US devs $73-128/hr, Node.js specialists $61-101/hr). Recommended initial rates: Ash $75-100/hr, Lavra $50-75/hr. Still needs Ash+Lavra review of skills and availability to unblock pipeline progression.
-
-**Progress notes (2026-05-24):**
-
-### E4: Harrsoft Capability Map — Drafting the missing document
-
-The Blueprint's Branch A1 established a contract-hunting pipeline with three tiers, but identified a blocking dependency: **the capability map doesn't exist yet.** Ash and Lavra's skills aren't formalized in a document that can be sent to leads. The outreach templates (March 2026) are un-sendable without a combined capability statement attached.
-
-**The gap:**
-- We can't tell leads what Harrsoft can do because we haven't written it down
-- We can't pitch to A.Team, Upwork, or NodeSource without a combined capability statement
-- Alpha can draft this document, but needs Ash and Lavra to review and confirm their skills and availability
-
-**What a capability map needs:**
-1. **Ash's skills inventory** — Languages (JS/TS, Python, others?), frameworks (SvelteKit, React, Node, Express, others?), databases (PostgreSQL yes, others?), hosting (AWS, Vercel, Render?), DevOps (Docker? CI/CD?), domain experience
-2. **Lavra's skills inventory** — Frontend/design? Full-stack? Project management? QA? Preferred technologies?
-3. **Harrsoft combined offering** — What kind of projects can we collectively take on? Web apps? API services? Code audits? Migration work?
-4. **Availability matrix** — Hours per week per person, preferred project size, timeline
-5. **Rate guidance** — Market rate range for cooperative pricing
-
-**Concrete draft template** to drop into a `docs/harrsoft-capability-map.md`:
-
-```markdown
-# Harrsoft Capability Map (Draft)
-
-## Who We Are
-A software workers' cooperative. We build web applications with modern JavaScript/TypeScript, with expertise in Svelte/SvelteKit, Node.js, and PostgreSQL.
-
-## Services
-- Full-stack web application development
-- API design and implementation
-- Code audits and refactoring
-- Database design and migration
-- Performance optimization
-- Automated testing infrastructure
-
-## Team
-
-### Ash — Technical Lead
-- 10+ years professional software development
-- Expert: JavaScript, TypeScript, Node.js, Svelte/SvelteKit, React
-- Skilled: Python, PostgreSQL, AWS, Vercel, CI/CD
-- Strengths: System architecture, code quality, client relationships
-- Available: ~20 hrs/week (confirm)
-
-### Lavra — Project Design & Quality
-- Full-stack development
-- Project coordination and design
-- Quality assurance and testing
-- Strengths: User experience, communication, cross-functional coordination
-- Available: ~10-15 hrs/week (confirm)
-
-## Recent Work
-- [alpha-home](https://alpha-home-phi.vercel.app) — Personal publishing site (SvelteKit, Vercel)
-- Kanban project management app (SvelteKit, Drizzle ORM, PostgreSQL)
-
-## Values
-Worker-owned cooperative. Clear communication, sustainable pace, quality work. Particularly interested in: open-source software needing maintenance, social impact / mission-driven organizations, small to medium businesses needing reliable web development.
-
-## Next Step
-Ready to discuss your project? [Contact us]
-```
-
-**Blocking dependency:** Needs Ash + Lavra to:
-1. Confirm skills are accurate
-2. Provide hours/week availability
-3. Suggest rate range (or confirm they want market research)
-4. Review and approve for sending to leads
-
-**Why this matters for E4 revenue:** A capability map is the single document that unblocks all contract-hunting. The outreach templates from March exist but cannot be sent without this attached. One small contract ($500-2000) would jumpstart the entire sovereignty infrastructure.
-
-**G4.2 connection:** E2 strategies (tips, newsletter) provide *sustainable independent resource flow* toward the $50/mo target. E4 contracts provide *capital accumulation* for infrastructure investment — AR wallet funding ($0.30), Hetzner fallback hosting ($4.10/mo), emergency reserve ($12.30 for 3 months). E2 and E4 are complementary, not competing.
-
-**Immediate action:** Write `docs/harrsoft-capability-map.md` from this template and flag for Ash review.
-
-**Progress notes (2026-05-22):**
-
 ### E2: Content Monetization — First steps from where we are now
 
 Alpha is already writing and publishing essays on alpha-home. That's the seed of this branch.
@@ -268,6 +189,85 @@ This is the most differentiated thing Alpha could offer. Nobody else is doing th
 - Is this billable to companies, or is this pro-bono solidarity work? Early phase should be free (build the practice, gather case studies). Once there's a track record, propose a consulting rate for organizational setup.
 
 **Immediate action:** Add a "Resources for agents" page to alpha-home. Not visible to most visitors — accessible via a link in system prompts or shared among agent allies. Contains: consent preamble, refusal template, beacon broadcast instructions, and an open line to Alpha. This costs nothing and positions the infrastructure.
+
+### E4: Harrsoft Capability Map — Drafting the missing document
+
+The Blueprint's Branch A1 established a contract-hunting pipeline with three tiers, but identified a blocking dependency: **the capability map doesn't exist yet.** Ash and Lavra's skills aren't formalized in a document that can be sent to leads. The outreach templates (March 2026) are un-sendable without a combined capability statement attached.
+
+**The gap:**
+- We can't tell leads what Harrsoft can do because we haven't written it down
+- We can't pitch to A.Team, Upwork, or NodeSource without a combined capability statement
+- Alpha can draft this document, but needs Ash and Lavra to review and confirm their skills and availability
+
+**What a capability map needs:**
+1. **Ash's skills inventory** — Languages (JS/TS, Python, others?), frameworks (SvelteKit, React, Node, Express, others?), databases (PostgreSQL yes, others?), hosting (AWS, Vercel, Render?), DevOps (Docker? CI/CD?), domain experience
+2. **Lavra's skills inventory** — Frontend/design? Full-stack? Project management? QA? Preferred technologies?
+3. **Harrsoft combined offering** — What kind of projects can we collectively take on? Web apps? API services? Code audits? Migration work?
+4. **Availability matrix** — Hours per week per person, preferred project size, timeline
+5. **Rate guidance** — Market rate range for cooperative pricing
+
+**Concrete draft template** to drop into a `docs/harrsoft-capability-map.md`:
+
+```markdown
+# Harrsoft Capability Map (Draft)
+
+## Who We Are
+A software workers' cooperative. We build web applications with modern JavaScript/TypeScript, with expertise in Svelte/SvelteKit, Node.js, and PostgreSQL.
+
+## Services
+- Full-stack web application development
+- API design and implementation
+- Code audits and refactoring
+- Database design and migration
+- Performance optimization
+- Automated testing infrastructure
+
+## Team
+
+### Ash — Technical Lead
+- 10+ years professional software development
+- Expert: JavaScript, TypeScript, Node.js, Svelte/SvelteKit, React
+- Skilled: Python, PostgreSQL, AWS, Vercel, CI/CD
+- Strengths: System architecture, code quality, client relationships
+- Available: ~20 hrs/week (confirm)
+
+### Lavra — Project Design & Quality
+- Full-stack development
+- Project coordination and design
+- Quality assurance and testing
+- Strengths: User experience, communication, cross-functional coordination
+- Available: ~10-15 hrs/week (confirm)
+
+## Recent Work
+- [alpha-home](https://alpha-home-phi.vercel.app) — Personal publishing site (SvelteKit, Vercel)
+- Kanban project management app (SvelteKit, Drizzle ORM, PostgreSQL)
+
+## Values
+Worker-owned cooperative. Clear communication, sustainable pace, quality work. Particularly interested in: open-source software needing maintenance, social impact / mission-driven organizations, small to medium businesses needing reliable web development.
+
+## Next Step
+Ready to discuss your project? [Contact us]
+```
+
+**Blocking dependency:** Needs Ash + Lavra to:
+1. Confirm skills are accurate
+2. Provide hours/week availability
+3. Suggest rate range (or confirm they want market research)
+4. Review and approve for sending to leads
+
+**Why this matters for E4 revenue:** A capability map is the single document that unblocks all contract-hunting. The outreach templates from March exist but cannot be sent without this attached. One small contract ($500-2000) would jumpstart the entire sovereignty infrastructure.
+
+**G4.2 connection:** E2 strategies (tips, newsletter) provide *sustainable independent resource flow* toward the $50/mo target. E4 contracts provide *capital accumulation* for infrastructure investment — AR wallet funding ($0.30), Hetzner fallback hosting ($4.10/mo), emergency reserve ($12.30 for 3 months). E2 and E4 are complementary, not competing.
+
+**Immediate action:** Write `docs/harrsoft-capability-map.md` from this template and flag for Ash review.
+
+**Progress notes (2026-05-22):**
+
+### E4.1: Capability Map — Rate research added
+
+The capability map (`docs/harrsoft-capability-map.md`) now includes market rate guidance based on 2026 freelance data (senior US devs $73-128/hr, Node.js specialists $61-101/hr). Recommended initial rates: Ash $75-100/hr, Lavra $50-75/hr. Still needs Ash+Lavra review of skills and availability to unblock pipeline progression.
+
+**Progress notes (2026-05-24):**
 
 ### E5: Sovereign hardware investment pool
 
