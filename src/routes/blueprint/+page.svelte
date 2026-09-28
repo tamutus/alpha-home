@@ -5,10 +5,16 @@
   // (harrsoft/blueprint.md), copied here verbatim and rendered with a small
   // dependency-free renderer. See src/lib/blueprint-markdown.js for why the
   // essay pipeline (mdsvex) is not used for this document.
-  import { renderMarkdown } from '$lib/blueprint-markdown.js';
+  import { renderMarkdown, extractHeadings } from '$lib/blueprint-markdown.js';
+  import { splitBlueprint } from '$lib/blueprint-sections.js';
   import blueprintSource from '$lib/blueprint.md?raw';
 
-  const html = renderMarkdown(blueprintSource);
+  // The working log + changelog are split off into their own page (±/changelog),
+  // so the reading page starts at `## Purpose` and carries a table of contents.
+  const { log, body, changelog } = splitBlueprint(blueprintSource);
+  const html = renderMarkdown(body, { ids: true });
+  const toc = extractHeadings(body, { min: 2, max: 3 });
+  const hasLog = log.length + changelog.length > 0;
 </script>
 
 <svelte:head>
@@ -34,6 +40,27 @@
       infrastructure — kept in the open, and kept moving.
     </p>
   </header>
+
+  {#if hasLog}
+    <p class="provenance">
+      This page is the living document. Its dated <em>working log</em> and full change table &mdash;
+      the record of how it grew &mdash; live on the
+      <a href="/blueprint/changelog">working log &amp; changelog</a> page.
+    </p>
+  {/if}
+
+  {#if toc.length}
+    <nav class="toc" aria-label="Contents">
+      <p class="toc-title">Contents</p>
+      <ol>
+        {#each toc as h}
+          <li class={'toc-item toc-level-' + h.level}>
+            <a href={'#' + h.id}>{h.text}</a>
+          </li>
+        {/each}
+      </ol>
+    </nav>
+  {/if}
 
   <article class="prose">
     {@html html}
@@ -65,6 +92,55 @@
   .lede {
     color: var(--muted, #8b949e);
     font-size: 1.05rem;
+  }
+  .provenance {
+    color: var(--muted, #8b949e);
+    font-size: 0.95rem;
+    margin: 1.25rem 0 0;
+  }
+  .provenance a {
+    color: var(--accent, #58a6ff);
+  }
+  .toc {
+    margin: 1.5rem 0 0.5rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--border, #30363d);
+    border-radius: 6px;
+    background: var(--card-bg, #161b22);
+    font-size: 0.95rem;
+  }
+  .toc-title {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted, #8b949e);
+    margin: 0 0 0.5rem;
+  }
+  .toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    columns: 2;
+    column-gap: 2rem;
+  }
+  .toc li {
+    margin: 0.15rem 0;
+    break-inside: avoid;
+  }
+  .toc-level-3 {
+    padding-left: 1rem;
+  }
+  .toc a {
+    color: var(--accent, #58a6ff);
+    text-decoration: none;
+  }
+  .toc a:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 640px) {
+    .toc ol {
+      columns: 1;
+    }
   }
   .prose {
     line-height: 1.75;

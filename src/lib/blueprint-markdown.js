@@ -127,8 +127,64 @@ function parseList(lines, start) {
 	return { html: `<${baseType}>\n${body}\n</${baseType}>`, next: i };
 }
 
-export function renderMarkdown(md) {
+/** Plain text of a heading — inline markers stripped, for slugs and TOC labels. */
+function plainText(value) {
+	return value
+		.replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+		.replace(/`([^`]+)`/g, '$1')
+		.replace(/\*\*([^*]+)\*\*/g, '$1')
+		.replace(/__([^_]+)__/g, '$1')
+		.replace(/\*([^*\n]+)\*/g, '$1')
+		.replace(/_([^_\n]+)_/g, '$1')
+		.trim();
+}
+
+/** URL-safe slug for a heading. */
+export function slugify(text) {
+	return (
+		plainText(text)
+			.toLowerCase()
+			.replace(/[^\w\s-]/g, '')
+			.trim()
+			.replace(/\s+/g, '-')
+			.slice(0, 80) || 'section'
+	);
+}
+
+/** Stateful slug generator — dedupes repeated headings in document order, so
+ * the ids renderMarkdown({ ids: true }) emits and the hrefs from
+ * extractHeadings() always agree. */
+export function makeSlugger() {
+	const used = Object.create(null);
+	return (text) => {
+		const base = slugify(text);
+		let slug = base;
+		let n = 1;
+		while (used[slug]) slug = `${base}-${++n}`;
+		used[slug] = true;
+		return slug;
+	};
+}
+
+/** Headings a table of contents should show, in document order, with the same
+ * ids renderMarkdown({ ids: true }) emits for the same source. */
+export function extractHeadings(md, { min = 2, max = 3 } = {}) {
+	const slug = makeSlugger();
+	const out = [];
+	for (const line of md.replace(/\r/g, '').split('\n')) {
+		const m = /^(#{1,6})\s+(.*)$/.exec(line.trim());
+		if (!m) continue;
+		const level = m[1].length;
+		const text = plainText(m[2].trim());
+		const id = slug(m[2].trim());
+		if (level >= min && level <= max) out.push({ level, text, id });
+	}
+	return out;
+}
+
+export function renderMarkdown(md, opts = {}) {
 	const lines = md.replace(/\r/g, '').split('\n');
+	const slug = opts.ids ? makeSlugger() : null;
 	const out = [];
 	let i = 0;
 
@@ -167,7 +223,8 @@ export function renderMarkdown(md) {
 		const h = /^(#{1,6})\s+(.*)$/.exec(line.trim());
 		if (h) {
 			const level = h[1].length;
-			out.push(`<h${level}>${inline(h[2].trim())}</h${level}>`);
+			const attr = slug ? ` id="${slug(h[2].trim())}"` : '';
+			out.push(`<h${level}${attr}>${inline(h[2].trim())}</h${level}>`);
 			i++;
 			continue;
 		}
