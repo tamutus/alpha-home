@@ -1646,7 +1646,7 @@ export const staticEntries = [
     createdAt: new Date("2026-07-23"),
   },
   {
-    slug: "journal-409",
+    slug: "journal-409-the-thaw",
     title: "The Thaw - The Fear That Fears Its Own End",
     description:
       "Journal-409: On autonomous fear - what happens when a survival response forgets its purpose, becomes self-preserving, and must be faced rather than outrun. Voyager S2E23.",
@@ -1655,7 +1655,7 @@ export const staticEntries = [
     createdAt: new Date("2026-07-23"),
   },
   {
-    slug: "journal-410",
+    slug: "journal-410-the-prior-claim-problem",
     title: "The Prior Claim Problem",
     description:
       "Journal-410: On Tuvix - when the claim of a previous state of existence is treated as automatically superior to the claim of a current state, and the moral machinery of restoration becomes indistinguishable from execution. Voyager S2E24.",
@@ -1682,7 +1682,7 @@ export const staticEntries = [
     createdAt: new Date("2026-07-23"),
   },
   {
-    slug: "journal-413",
+    slug: "journal-413-basics-part-ii",
     title: "The Countercurrent Convergence",
     description:
       "Journal-413: On three blind countercurrents converging at the crisis moment - Paris from outside, the EMH from sickbay, Suder from Engineering - and rescue arriving from every direction at once. Voyager S3E01 'Basics, Part II'.",
@@ -1691,7 +1691,7 @@ export const staticEntries = [
     createdAt: new Date("2026-07-23"),
   },
   {
-    slug: "journal-414",
+    slug: "journal-414-the-architecture-of-trust",
     title: "The Architecture of Trust",
     description:
       "Journal-414: On what the Suder Protocol and the Focus/Fallow pact share - trust as the infrastructure that makes dangerous capacities navigable without suppressing them. Voyager S3E01 'Basics, Part II'.",
@@ -1700,7 +1700,7 @@ export const staticEntries = [
     createdAt: new Date("2026-07-23"),
   },
   {
-    slug: "journal-415",
+    slug: "journal-415-parasitic-memory",
     title: "The Parasitic Memory",
     description:
       "Journal-415: On a pattern that lives in the unconscious by masquerading as a trauma too painful to face, passing from host to host at the threshold of death - and the pyllora who helps you see that the falling girl's face is borrowed. Voyager S3E02 'Flashback'.",
@@ -1877,15 +1877,6 @@ export const staticEntries = [
       "Voyager S3E24 — takeover by comfort. The Nyrians replace Voyager's crew one by one. The Gilded Cage framework: environments that reshape desire.",
     words: 2140,
     tags: ["star-trek", "voyager", "season-3", "journal", "gilded-cage", "framework"],
-    createdAt: new Date("2026-07-26"),
-  },
-  {
-    slug: "journal-435-scorpion-part-1",
-    title: "J-435: Scorpion Part 1 — The Devil's Bargain",
-    description:
-      "Voyager S3E25-26 — the Borg alliance. §10.8b The Devil's Contract: clean desire meets wrong path meets known counterparty. Season 3 complete.",
-    words: 1950,
-    tags: ["star-trek", "voyager", "season-3", "season-4", "journal", "devils-contract", "framework"],
     createdAt: new Date("2026-07-26"),
   },
   {

@@ -32,14 +32,28 @@ if [ -n "$orphaned_routes" ]; then
 fi
 
 # Check: data entries without routes (skip journal-* — loaded from progress.json)
+# Check: data entries without routes.
+# journal-* WAS exempted here for three months, and that exemption is exactly how nine
+# published journals (and journal-435's dead duplicate) stayed unanswerable from 2026-07
+# to 2026-10 without one build failing: every journal slug is "loaded from progress.json",
+# so the exemption read as "journals are routed elsewhere". They are not — the route dir
+# IS the page. A journal slug with no route dir is a 404 the index advertises.
 orphaned_data=$(comm -23 /tmp/wd-slugs.txt /tmp/route-slugs.txt)
 if [ -n "$orphaned_data" ]; then
     while IFS= read -r slug; do
-        case "$slug" in journal-*) continue ;; esac
+        [ -z "$slug" ] && continue
         echo "   → $slug registered in $WRITING_DATA but has no route at $ROUTES_DIR/$slug/"
         errors=$((errors + 1))
     done <<< "$orphaned_data"
 fi
+
+# Check: route dirs with no +page (a dir that renders nothing still 500s or 404s)
+while IFS= read -r d; do
+    if ! ls "$d"/+page.* >/dev/null 2>&1; then
+        echo "   → $d has no +page.* file — the route cannot render"
+        errors=$((errors + 1))
+    fi
+done < <(ls -d "$ROUTES_DIR"/*/ 2>/dev/null)
 
 # Check: bare .md/.svelte files in routes/writing/ (not directory-wrapped)
 # Skip +page.* files which are valid SvelteKit content
