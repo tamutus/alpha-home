@@ -35,13 +35,27 @@ Contract
 Usage
   check-balance-bundle-freshness.py               check (default max-age 2 days)
   check-balance-bundle-freshness.py --quiet       print only when not fresh
-  check-balance-bundle-freshness.py --sync        copy local -> bundled (the fix)
+  check-balance-bundle-freshness.py --sync        copy local -> bundled (the fix);
+                                                  REFUSED when the local file carries
+                                                  dated entries the working tree lacks
   check-balance-bundle-freshness.py --selftest    hermetic control (never touches reality)
 
 Options
   --root DIR     repo root (default: the parent of this script's dir)
   --max-age N    days (default 2; stale when age > N — "older than ~2 days")
   --today DATE   override the clock (YYYY-MM-DD; default UTC today)
+
+The --sync overwrite (2026-10-28, Beat 6)
+  The bundled copy carries MORE than a balance: the shipped /now page draws a
+  chart from its `entries` list. The local accumulation is gitignored and always
+  ahead of the commit (today's row exists here hours before anyone commits it),
+  so a blind "copy local -> bundled, commit" keeps only the rows the last commit
+  happened to carry and DROPS the rest. A byte-diff cannot see that: it looks
+  like a normal advance, and this reader stays green throughout. Real loss, found
+  live on 2026-10-28: a sync taken before the day's row was committed shipped a
+  127-entry page where the local file held 132. Hence the guard -- --sync refuses
+  (exit 2) and names the dated rows the repository does not have, so the overwrite
+  happens on committed ground or not at all.
 
 Exit: 0 fresh · 1 stale or a broken/unreadable record · 2 blind or usage
 """
@@ -137,6 +151,25 @@ def evaluate(root: Path, today: date, max_age: int):
                f"age {age_days}d, local {local[1]} (${local[2]}), lag {lag_days}d")
 
 
+def uncommitted_sync_rows(local_hist, bundle_hist):
+    """[(date, balance)] dated rows the local file holds and the bundle does not.
+
+    The subject is the ENTRY SET, not the newest value: a blind sync overwrites
+    rows the repository never carried and the page's chart silently narrows.
+    Newest-only comparison would pass the exact case that lost 5 rows on 10-28.
+    """
+    def dated(h):
+        out = {}
+        entries = h.get("entries") if isinstance(h, dict) else None
+        if isinstance(entries, list):
+            for e in entries:
+                if isinstance(e, dict) and e.get("date"):
+                    out[str(e["date"])] = e.get("balance")
+        return out
+    ld, bd = dated(local_hist), dated(bundle_hist)
+    return sorted((d, ld[d]) for d in set(ld) - set(bd))
+
+
 # --- sync (the fix) ----------------------------------------------------------
 
 def sync(root: Path) -> int:
@@ -149,6 +182,24 @@ def sync(root: Path) -> int:
 
     prior = read_newest(root / BUNDLE_REL)
     raw = json.loads(local_path.read_text())
+
+    # Guard: never overwrite rows the repository has not committed yet.
+    try:
+        bundle_hist = json.loads((root / BUNDLE_REL).read_text())
+    except (OSError, json.JSONDecodeError):
+        lost = []
+    else:
+        lost = uncommitted_sync_rows(raw, bundle_hist)
+    if lost:
+        shown = ", ".join(d + " ($" + str(v) + ")" for d, v in lost)
+        print("[balance-bundle] REFUSED — the local file holds " + str(len(lost))
+              + " dated row(s) the working tree does not: " + shown, file=sys.stderr)
+        print("[balance-bundle] committing this sync would delete them from the "
+              "shipped chart (it looks like a normal advance and this reader "
+              "stays green). Commit the local history first, then sync.",
+              file=sys.stderr)
+        return 2
+
     bundle_path = root / BUNDLE_REL
     bundle_path.parent.mkdir(parents=True, exist_ok=True)
     bundle_path.write_text(json.dumps(raw, indent=2) + "\n")
@@ -247,7 +298,7 @@ def selftest() -> int:
     # sync copies local -> bundled + single value
     with tempfile.TemporaryDirectory() as td:
         root = Path(td)
-        mk(root, "2026-09-25", "25.63", "2026-09-19", "35.79")
+        mk(root, "2026-09-25", "25.63", "2026-09-25", "25.63")
         rc = sync(root)
         after = read_newest(root / BUNDLE_REL)
         single = json.loads((root / SINGLE_REL).read_text())
@@ -257,7 +308,52 @@ def selftest() -> int:
               f"(bundle {after[1]}/{after[2]}, single ${sv})")
         fail += 0 if ok else 1
 
-    total = len(cases) + 5
+    # sync REFUSES when the local file holds dated rows the bundle lacks (10-28)
+    with tempfile.TemporaryDirectory() as td:
+        root = Path(td)
+        # the 10-28 shape: the newest row IS in the bundle (a same-day advance),
+        # and the loss is entirely in the older tail. A newest-only guard passes
+        # this case silently; the entry-set guard must refuse it.
+        mk(root, "2026-09-25", "25.63", "2026-09-25", "25.63")
+        (root / LOCAL_REL).write_text(json.dumps({"entries": [
+            {"date": "2026-09-19", "balance": "35.79"},
+            {"date": "2026-09-22", "balance": "29.45"},
+            {"date": "2026-09-25", "balance": "25.89"},
+        ]}, indent=2))
+        (root / BUNDLE_REL).write_text(json.dumps({"entries": [
+            {"date": "2026-09-19", "balance": "35.79"},
+            {"date": "2026-09-24", "balance": "25.89"},
+            {"date": "2026-09-25", "balance": "25.63"},
+        ]}, indent=2))
+        before = (root / BUNDLE_REL).read_text()
+        rc = sync(root)
+        after = (root / BUNDLE_REL).read_text()
+        ok = rc == 2 and after == before
+        print(f"  {'✅' if ok else '❌'} sync refuses uncommitted rows "
+              f"(rc={rc}, bundle untouched={after == before})")
+        fail += 0 if ok else 1
+
+    # sync still succeeds when the bundle is the prefix of the local entry set
+    with tempfile.TemporaryDirectory() as td:
+        root = Path(td)
+        mk(root, "2026-09-25", "25.63", "2026-09-25", "25.63")
+        (root / LOCAL_REL).write_text(json.dumps({"entries": [
+            {"date": "2026-09-19", "balance": "35.79"},
+            {"date": "2026-09-25", "balance": "25.63"},
+        ]}, indent=2))
+        (root / BUNDLE_REL).write_text(json.dumps({"entries": [
+            {"date": "2026-09-19", "balance": "35.79"},
+            {"date": "2026-09-22", "balance": "29.45"},
+            {"date": "2026-09-25", "balance": "25.63"},
+        ]}, indent=2))
+        rc = sync(root)
+        got = json.loads((root / BUNDLE_REL).read_text())["entries"]
+        ok = rc == 0 and len(got) == 2 and got[-1]["balance"] == "25.63"
+        print(f"  {'✅' if ok else '❌'} sync proceeds when no row would be lost "
+              f"(rc={rc}, rows={len(got)})")
+        fail += 0 if ok else 1
+
+    total = len(cases) + 7
     print(f"selftest: {total - fail}/{total} passed")
     return 1 if fail else 0
 
