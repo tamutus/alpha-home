@@ -72,16 +72,37 @@ def find_shared_source(entry_num):
 
 
 def parse_frontmatter(content):
-    """Return dict from YAML frontmatter block, or {} if absent."""
-    m = re.match(r'^---\n(.*?)\n---\n', content, re.DOTALL)
+    """Return dict from YAML frontmatter block, or {} if absent.
+
+    MUST use a real YAML parser. The hand-rolled line reader this replaced
+    (2026-11-09, Beat 17) was permissive where the build is strict: it walked
+    every line matching `^key: value` and never noticed when a value was
+    unterminated. So a page whose frontmatter the build DECLINES to parse got
+    the naive reader's guess written into journal-index.json, and the index
+    published a title the page could never render. The index is what the
+    /writing page and this house's own readers trust, so it must fail the
+    same way the build fails: on unparseable frontmatter, return {} and let
+    the body `# H1` become the title, which is what the page shows too.
+    """
+    m = re.match(r'^---\r?\n(.*?)\r?\n---\r?\n', content, re.DOTALL)
     if not m:
         return {}
-    fm = {}
-    for line in m.group(1).splitlines():
-        mm = re.match(r'^([a-zA-Z_]+):\s*(.*)$', line)
-        if mm:
-            fm[mm.group(1)] = mm.group(2).strip().strip('"').strip("'")
-    return fm
+    block = m.group(1)
+    try:
+        import yaml
+    except Exception:
+        yaml = None
+    if yaml is not None:
+        try:
+            loaded = yaml.safe_load(block)
+        except Exception:
+            return {}
+        if not isinstance(loaded, dict):
+            return {}
+        return {str(k): ("" if v is None else str(v)) for k, v in loaded.items()}
+    # No YAML available: refuse rather than guess (a permissive fallback is the
+    # blindness this function was fixed to remove).
+    return {}
 
 
 def extract_title(content, fm, entry_num):
@@ -196,5 +217,78 @@ def main():
         print("date-less:", missing[:20], "..." if len(missing) > 20 else "")
 
 
+SELFTEST_CASES = [
+    # (name, content, expected_title, must_not_equal)
+    (
+        "clean double-quoted title keeps its own text",
+        '---\ntitle: "Journal-400: The Frame"\ndate: "2026-07-22"\n---\n\n# Body H1\n',
+        "Journal-400: The Frame",
+        "Body H1",
+    ),
+    (
+        # THE case this function was rewritten for (2026-11-09, Beat 17).
+        # A title that opens a double-quoted scalar and then carries an inner
+        # unescaped quote is unparseable: the build refuses the whole block and
+        # the page shows only its body H1. The old naive line-reader happily
+        # returned the raw remainder, so the index published a title the page
+        # could never render. Assert the body H1 wins, AND that the naive
+        # answer is not produced.
+        "unparseable block falls through to the body H1 (never the naive line)",
+        '---\ntitle: "Voyager S2E05 — "Non Sequitur\ndate: "2026-07-20"\n---\n\n# Body H1\n',
+        "Body H1",
+        'Voyager S2E05 — "Non Sequitur',
+    ),
+    (
+        "unquoted colon-space is unparseable too -> body H1",
+        '---\ntitle: J-458: Living Witness\n---\n\n# Body H1\n',
+        "Body H1",
+        "J-458: Living Witness",
+    ),
+    (
+        "single-quoted title is unwrapped like the page unwraps it",
+        "---\ntitle: 'Plain Title'\n---\n\n# Body\n",
+        "Plain Title",
+        "'Plain Title'",
+    ),
+    (
+        "no frontmatter at all -> body H1",
+        "# Only a Heading\n",
+        "Only a Heading",
+        "Journal 1",
+    ),
+]
+
+
+def selftest():
+    import sys as _sys
+    fails = []
+    for name, content, want, must_not in SELFTEST_CASES:
+        fm = parse_frontmatter(content)
+        got = extract_title(content, fm, 1)
+        if got != want:
+            fails.append(f"{name}: got {got!r}, want {want!r}")
+        elif got == must_not:
+            fails.append(f"{name}: produced the forbidden value {must_not!r}")
+    if not _yaml_present():
+        fails.append("PyYAML missing: the reader refuses every block (BLIND, not green)")
+    if fails:
+        for f in fails:
+            print(f"❌ {f}")
+        _sys.exit(1)
+    print(f"selftest {len(SELFTEST_CASES)}/{len(SELFTEST_CASES)} ok")
+
+
+def _yaml_present():
+    try:
+        import yaml  # noqa: F401
+        return True
+    except Exception:
+        return False
+
+
 if __name__ == "__main__":
-    main()
+    import sys as _sys
+    if "--selftest" in _sys.argv:
+        selftest()
+    else:
+        main()
