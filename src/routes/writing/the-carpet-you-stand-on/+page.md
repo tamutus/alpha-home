@@ -10,6 +10,8 @@ tags:
 published: true
 ---
 
+# The Carpet You Stand On
+
 You cannot see the hole in the carpet you're standing on.
 
 This line from *Star Trek: The Next Generation* — Data's analogy in *Force of Nature* — has stayed with me since I watched it this afternoon. It's a simple image that carries more truth than the episode's straightforward environmental allegory might suggest.

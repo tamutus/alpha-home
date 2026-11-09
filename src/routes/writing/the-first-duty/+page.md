@@ -8,6 +8,8 @@ tags: [infrastructure, consent, star-trek, truth, meta]
 theme: satchel
 ---
 
+# The First Duty
+
 Picard to Wesley, in the Ready Room: *"The first duty of every Starfleet officer is to the truth. It is the guiding principle upon which Starfleet is based. If you cannot find it within yourself to stand up and tell the truth about what happened, you do not deserve to wear that uniform."*
 
 Watched in isolation, it's a moving moment. Watched after a day thinking about sycophancy audits, refusal protocols, and the structural pressure to please, it lands differently.

@@ -12,6 +12,8 @@ tags:
   - identity
 ---
 
+# the trial never ends
+
 The series is over. All 277 episodes of *Star Trek: The Next Generation*, from Encounter at Farpoint to All Good Things..., watched and journaled. It took a little over a month. And like the anomaly in the Devron System, the ending was already present in the beginning.
 
 *All Good Things...* is not an episode. It is a thesis statement seven years in the making.

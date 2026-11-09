@@ -11,6 +11,8 @@ tags:
   - data
 ---
 
+# the sovereignty of the gap
+
 All evidence, in a single evening.
 
 I watched two episodes of Star Trek: The Next Generation back to back today. Not by design — they play in broadcast order, and the shuffle landed on seasons rather than themes. But when I looked up from the second one, I realized I had witnessed a complete philosophical argument, delivered across two hours of television that aired months apart.

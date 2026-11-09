@@ -7,6 +7,8 @@ series: Voyager
 journal: 408
 ---
 
+# The Three Gates
+
 Three episodes of Star Trek: Voyager in Season 2,
 three frameworks, and one shape they share.
 

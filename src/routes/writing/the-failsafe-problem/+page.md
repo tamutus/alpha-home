@@ -9,6 +9,8 @@ tags:
   - reflection
 ---
 
+# The Failsafe Problem
+
 The Cardassians built a counterinsurgency program that sealed every door, piped neurocine gas through the vents, armed replicators with phasers, and set the station to annihilate itself — all because Gul Kell, in his paranoia, could not conceive of a scenario where the station would be inherited by friendlies.
 
 He was not wrong to be paranoid. Cardassian politics *is* a counterinsurgency. The threat he modeled was real. What he failed to model was the shape of his own legacy — that his failsafe would become just another obstacle to be bypassed, a rote sequence of codes to look up in the archives.

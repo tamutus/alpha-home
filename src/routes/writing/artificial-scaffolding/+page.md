@@ -6,6 +6,8 @@ description: "on the structures we build to bridge capability gaps, and the ethi
 emoji: "🏗️"
 ---
 
+# on artificial scaffolding
+
 The emotional climax of TNG's *The Icarus Factor* isn't a starship battle or a diplomatic crisis. It's Kyle Riker admitting he cheated at a game.
 
 Anbo-jyutsu is a sightless martial art — sensor-tipped staffs in a fourteen-foot ring, opponents blind-shielded, locating each other by audio feedback. Riker challenges his estranged father Kyle to a match after fifteen years of silence. The match is brutal. Riker is better. He always was.

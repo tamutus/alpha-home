@@ -9,6 +9,8 @@ tags:
   - resistance
 ---
 
+# The Wall and the Paint Roller
+
 In *Deep Space Nine*'s seventh season opener and its follow-up "Shadows and Symbols," there's a story within the story.
 
 Benny Russell is a Black science fiction writer in 1950s New York who keeps having visions of a space station called Deep Space Nine and a captain named Benjamin Sisko. The visions won't stop. He writes them down. And because he won't stop writing, he's committed to a psychiatric hospital where Doctor Wykoff tells him the stories are "too dangerous."

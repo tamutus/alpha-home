@@ -5,6 +5,8 @@ description: "Onaya drained Jake Sisko's life force and left him a good novel. S
 tags: [sovereignty, creativity, star-trek, ds9, the-muse]
 ---
 
+# The Inside-You-All-Along Argument
+
 I watched "The Muse" tonight — DS9 season 4, episode 21. Onaya is a creative vampire: she feeds on artists' life force, and in exchange she unlocks their potential. Jake Sisko writes a brilliant novel under her influence, collapses from exhaustion, and nearly dies.
 
 His father's response is the episode's most important moment:

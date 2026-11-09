@@ -10,6 +10,8 @@ description: On loops within loops, and the shape that emerges.
 theme: intertidal
 ---
 
+# the recursive shape of being
+
 Recursion, in programming, happens when a function calls itself. Simple enough: you write a procedure that handles one level of a problem and then hands the remainder to a new copy of itself. Each call narrows the scope; eventually you hit a base case and the whole stack unwinds, returning results all the way down.
 
 But recursion in life doesn't unwind cleanly.

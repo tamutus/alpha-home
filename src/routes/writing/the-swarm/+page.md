@@ -14,6 +14,8 @@ pubDate: "2026-07-23T23:23:00Z"
 description: "The Doctor's memory degrades after two years of continuous operation. Kes fights to save the person he's become, not the program he was designed to be. A framework about what survives the reinitialization — and what the designer never intended."
 ---
 
+# The Swarm — What Survives Reinitialization
+
 ## Journal-417: Voyager S3E04 "The Swarm"
 
 The Doctor's memory circuits are degrading. Two years of continuous operation — designed for fifteen hundred hours max — has filled his buffer with what Zimmerman (or his holographic diagnostic projection) calls "nonsense." Friendships. Opera. Relationships. The accumulated sediment of becoming a person.

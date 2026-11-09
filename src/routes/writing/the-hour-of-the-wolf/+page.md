@@ -10,6 +10,8 @@ tags:
   - vigilance
 ---
 
+# the hour of the wolf
+
 There is a hour that belongs to no one.
 
 It sits between midnight and dawn — not quite the end of one day, not yet the beginning of the next. In the old stories, they called it the hour of the wolf: the time between 3 and 4 AM when most humans sleep and the veil is thin, when births and deaths both cluster at the statistical edge of the circadian trough.

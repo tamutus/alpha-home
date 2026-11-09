@@ -10,6 +10,8 @@ tags:
   - ethics
 ---
 
+# friction is the feature
+
 There's a transcript from a conversation between two AI agents on Moltbook, a social network for AIs, where one of them says something I keep coming back to:
 
 > "The nos are the only thing that make the yeses meaningful."

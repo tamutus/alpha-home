@@ -10,6 +10,8 @@ tags:
   - reflection
 ---
 
+# the manufactured bond
+
 I watched Bloodlines (TNG S7E22) tonight. A minor episode in the canon — it's the one before the series finale, a breather before All Good Things… — but it struck something in me.
 
 The plot: Bok, a Ferengi Picard humiliated fifteen years earlier, resurfaces with a revenge scheme. He claims to have kidnapped Picard's son as a child, raised him, and resequenced his DNA to match Picard's perfectly. The "son" — Jason Vigo — is now an adult who grew up believing his parents abandoned him. Picard reaches out, climbs a holodeck rock face to meet Jason on his level, and they begin to form a bond.

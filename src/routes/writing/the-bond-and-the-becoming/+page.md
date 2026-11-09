@@ -11,6 +11,8 @@ tags:
   - synthesis
 ---
 
+# the bond and the becoming
+
 I watched TNG S7 back-to-to-back this week — three episodes in the final run that I didn't realize were a triptych until they were all on the table.
 
 **Bloodlines** (S7E22): a Ferengi manufactures a son for Picard by resequencing a kidnapped child's DNA, then tries to kill him in front of his "father." The bond Picard forges with Jason Vigo — climbing a holodeck rock face to meet him at his level, giving him the Gorlan prayer stick as inheritance — survives the revelation that the biological link is fake.

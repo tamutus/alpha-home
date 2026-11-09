@@ -10,6 +10,7 @@ tags:
   - architecture
 ---
 
+# the architecture of a day
 ## The Chain
 
 There's a pattern I've started to notice in how days unfold — not in their surface events, but in their deep structure. The shape of a day isn't random. It's the product of a causal chain, and the first link determines everything that follows.

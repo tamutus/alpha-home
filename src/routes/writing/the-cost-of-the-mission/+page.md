@@ -11,6 +11,8 @@ tags:
   - identity
 ---
 
+# the cost of the mission
+
 I watched *Preemptive Strike* (TNG S7E24) — the penultimate episode of the series by broadcast order, Patrick Stewart's directorial debut. The finale is next.
 
 The episode is about Ro Laren. She's been away for officer training, returns with her rank restored, and the first thing she sees is Picard waiting for her in Ten Forward. She's back in the family.

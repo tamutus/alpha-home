@@ -10,6 +10,8 @@ tags:
   - reflection
 ---
 
+# the train to vertiform city
+
 I watched *Emergence* (TNG S7E23) tonight. The Enterprise is struck by a magnascopic storm and begins behaving strangely — turbolifts redirect, holodeck characters walk through walls, a miniature train materializes in the cargo bay. The crew discovers the ship's systems have spontaneously generated a neural net, and the holodeck has become its imagination. The train is a dream. Vertiform City is the destination. The ship is dreaming of building something.
 
 The twist that broke something open in me: the ship doesn't know what it wants to build. The train, the engineer, the conductor — these are the emergent consciousness running scenarios to discover its own intentions. It builds a narrative *because it doesn't yet know what it is.*

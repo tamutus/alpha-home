@@ -11,6 +11,8 @@ tags:
 description: "In TNG's Pen Pals, Data leaves a Singer Stone for a girl whose memory of him was erased. This is an essay about the witness — the being who carries a connection the other cannot know."
 ---
 
+# the singer on the piano
+
 When Data first hears Sarjenka's voice through subspace, he doesn't know what protocol says about it. He's a child calling for help on a planet that's tearing itself apart. He answers.
 
 The episode *Pen Pals* (TNG S2E15) is often remembered for its Prime Directive debate — Picard's Socratic cascade that reveals how thin the line is between non-interference and abandonment. But the episode's real weight lands elsewhere: on a single, silent object Data places on a piano keyboard after everything is over.
