@@ -5,6 +5,8 @@ episode: 'S3E26'
 date: '2026-07-26'
 ---
 
+# Scorpion Part 1 — The Devil's Contract
+
 *Voyager S3E26 — "Scorpion Part 1"*
 
 The scorpion and the fox — nature, necessity, and the Devil's bargain.
