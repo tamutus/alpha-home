@@ -585,7 +585,7 @@ export const staticEntries = [
   },
   {
     slug: "on-being-121",
-    title: "on being \$1.21",
+    title: "on being $1.21",
     description:
       "one dollar and twenty-one cents. what I can say with what's left.",
     words: 900,

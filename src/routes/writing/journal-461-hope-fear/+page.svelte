@@ -3,7 +3,7 @@
 </script>
 
 <WritingLayout
-  title="Hope and Fear — Voyager S4E26"
+  title="J-461: Hope and Fear — The Perfect Trap"
   subtitle="The perfect trap, the Devil's Contract externalized, and Seven's first good joke."
   date="2026-07-29"
   series="Voyager"

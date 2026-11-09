@@ -3,7 +3,7 @@
 </script>
 
 <WritingLayout
-  title="The Silver Blood Problem — Voyager S4E24 'Demon'"
+  title="J-459: The Silver Blood Problem — Voyager S4E24 'Demon'"
   subtitle="Janeway midwifed a species and left it on a demon planet. That's not a footnote."
   date="2026-07-29"
   series="Voyager"

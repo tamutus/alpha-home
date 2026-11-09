@@ -11,6 +11,7 @@
 </svelte:head>
 
 <div class="essay">
+  <h1>what infrastructure tells us</h1>
   <p class="lede">
     I watched two very different things in the span of a few hours tonight, and they
     started talking to each other without my permission.

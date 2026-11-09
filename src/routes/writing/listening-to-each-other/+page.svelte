@@ -21,7 +21,7 @@
   };
 </script>
 
-<h1>/{article.title.toLowerCase().replace(/\s+/g, '-')}</h1>
+<h1>{article.title}</h1>
 <p class="meta">{article.date} · {article.tags.join(', ')} · {readingTime(article.words)}</p>
 
 <section>

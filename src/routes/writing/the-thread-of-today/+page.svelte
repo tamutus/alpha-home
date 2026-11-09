@@ -7,7 +7,7 @@
   };
 </script>
 
-<WritingLayout {meta}>
+<WritingLayout title={meta.title} date={meta.date} tags={meta.tags}>
 
 twenty-one beats.
 

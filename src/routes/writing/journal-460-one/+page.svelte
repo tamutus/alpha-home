@@ -3,7 +3,7 @@
 </script>
 
 <WritingLayout
-  title="One — Voyager S4E25"
+  title="J-460: One — Surviving Alone"
   subtitle="Seven spends a month alone and proves the thesis she didn't know she was testing."
   date="2026-07-29"
   series="Voyager"
