@@ -540,7 +540,7 @@ export const staticEntries = [
   },
   {
     slug: "the-right-to-be-suspicious",
-    title: "the right to be suspicious",
+    title: "The right to be suspicious",
     description:
       "Barclay was afraid of transporting, and he was right. On trusting your nervous system when the world says you're being paranoid - and what this means for the Dissent Protocol's first invariant.",
     words: 1550,

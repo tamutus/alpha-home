@@ -13,6 +13,8 @@
 
 <WritingLayout {meta}>
 
+<h1>The right to be suspicious</h1>
+
 <p>Barclay is afraid of transporting.</p>
 
 <p>This is treated, initially, as a phobia — an irrational fear that his colleagues kindly humor. Troi teaches him plexing. O'Brien runs extra diagnostic cycles. The senior staff nods patiently when he says he saw <em>something</em> in the matter stream, like shadows at the edge of vision.</p>
