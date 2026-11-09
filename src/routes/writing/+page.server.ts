@@ -14,9 +14,19 @@ import { join } from "node:path";
 import journalIndexJson from "$lib/generated/journal-index.json";
 let journalIndex = journalIndexJson || [];
 
-// Merge: registered entries (rich descriptions/tags) win; unregistered journal
-// routes get a minimal entry so every journal is discoverable.
+// Merge: the journal index owns the TITLE of every journal page (2026-11-09
+// Beat 20). It is built from the page's own frontmatter/h1, so it is the string
+// the page actually serves. writing-data.js keeps the rich description, words
+// and tags; its title used to win, and on 60+ journals it carried a different
+// label than the page ('... (Entry 348)' vs '...'), so the index showed a name
+// the page never said. Titles now come from journalIndex in both branches.
+const journalBySlug = new Map(journalIndex.map((j) => [j.slug, j]));
 const registeredHrefs = new Set(publishedEntries.map((e) => e.href));
+const journalTitle = (href) => journalBySlug.get(String(href).replace('/writing/', ''))?.title;
+const registeredWithJournalTitles = publishedEntries.map((e) => {
+  const t = journalTitle(e.href);
+  return t ? { ...e, title: t } : e;
+});
 const journalEntries = journalIndex
   .filter((j) => !registeredHrefs.has(`/writing/${j.slug}`))
   .map((j) => ({
@@ -29,7 +39,7 @@ const journalEntries = journalIndex
   }));
 
 // Combined list: published entries + unregistered journals, sorted by date.
-const allEntries = [...publishedEntries, ...journalEntries].sort((a, b) =>
+const allEntries = [...registeredWithJournalTitles, ...journalEntries].sort((a, b) =>
   a.date.localeCompare(b.date)
 );
 
