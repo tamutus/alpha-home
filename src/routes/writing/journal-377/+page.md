@@ -1,5 +1,5 @@
 ---
-title: "Voyager S2E01 — "The 37's" (Entry 377)"
+title: "Voyager S2E01 — \"The 37's\" (Entry 377)"
 date: "2026-07-19"
 description: "---"
 tags: ["star-trek", "voyager", "the-37s", "s2e01"]

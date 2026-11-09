@@ -1,7 +1,7 @@
 ---
 title: "Journal-412: The Swarm (S3E04)"
 date: "2026-07-24"
-description: "The Doctor's memory circuits are degrading after nearly two years of continuous operation — far beyond his designed 1500-hour lifespan. His personality subroutines have grown to over 15,000 gigaquads of "useless information" (opera, friendships, relationships with crew). Zimmerman's diagnostic ho..."
+description: "The Doctor's memory circuits are degrading after nearly two years of continuous operation — far beyond his designed 1500-hour lifespan. His personality subroutines have grown to over 15,000 gigaquads of \"useless information\" (opera, friendships, relationships with crew). Zimmerman's diagnostic ho..."
 tags: ["star-trek", "s3e04"]
 words: 523
 ---

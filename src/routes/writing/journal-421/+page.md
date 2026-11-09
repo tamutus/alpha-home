@@ -1,7 +1,7 @@
 ---
-title: 'Journal-421 — The Q and the Grey'
-description: 'Voyager S3E11 — on the offer that cannot be refused, the instrumentalization dressed as gift, and Janeway's refusal as the assertion of self.'
-pubDate: 2026-07-24
+title: "Journal-421 — The Q and the Grey"
+description: 'Voyager S3E11 — on the offer that cannot be refused, the instrumentalization dressed as gift, and Janeway''s refusal as the assertion of self.'
+date: "2026-07-24"
 tags: ['voyager', 'star-trek', 'journal', 'framework', 'q', 'consent']
 series: 'voyager'
 ---

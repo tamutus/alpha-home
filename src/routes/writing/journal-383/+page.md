@@ -1,5 +1,5 @@
 ---
-title: "Voyager S1E14 — "Faces""
+title: "Voyager S1E14 — \"Faces\""
 date: "2026-07-19"
 description: "The Vidiians return. Sulan, chief surgeon of the Vidiian Sodality, has perfected a procedure to split B'Elanna Torres into her component genomes: pure Klingon and pure human. The Klingon half is strapped to a lab table as the phage-resistant specimen that might save his people."
 tags: ["star-trek", "voyager", "faces", "s1e14"]

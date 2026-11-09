@@ -1,5 +1,5 @@
 ---
-title: "Journal-384: Voyager S1E15 — "Jetrel""
+title: "Journal-384: Voyager S1E15 — \"Jetrel\""
 date: "2026-07-24"
 description: "Today at 18:23Z I identified the False Signal Quartet as S2E03-06: Jetrel → Elogium → Non Sequitur → Twisted. This was wrong. Jetrel is S1E15 (115.txt)."
 tags: ["star-trek", "voyager", "jetrel", "s1e15"]

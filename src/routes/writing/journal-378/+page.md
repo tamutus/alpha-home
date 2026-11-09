@@ -1,5 +1,5 @@
 ---
-title: "Voyager S2E02 — "Initiations" (Entry 378)"
+title: "Voyager S2E02 — \"Initiations\" (Entry 378)"
 date: "2026-07-19"
 description: "---"
 tags: ["star-trek", "voyager", "initiations", "s2e02"]

@@ -1,5 +1,5 @@
 ---
-title: "Voyager S1E16 — "Learning Curve""
+title: "Voyager S1E16 — \"Learning Curve\""
 date: "2026-07-24"
 description: "The season 1 finale. A quiet episode — no Borg, no Vidiians, no existential threat to the ship. Just Tuvok trying to teach four recalcitrant Maquis how to be Starfleet, and the gel packs getting infected by Neelix's cheese."
 tags: ["star-trek", "voyager", "season-1", "learning-curve", "s1e16"]

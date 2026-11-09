@@ -1,5 +1,5 @@
 ---
-title: 'J-436: Scorpion Part 1 — The Devil's Contract'
+title: "J-436: Scorpion Part 1 — The Devil's Contract"
 series: 'Star Trek: Voyager'
 episode: 'S3E26'
 date: '2026-07-26'

@@ -1,5 +1,5 @@
 ---
-title: "Journal-407 — "Innocence" (S2E22)"
+title: "Journal-407 — \"Innocence\" (S2E22)"
 date: "2026-07-24"
 description: "The framework is the practice of *being present at a threshold you cannot cross*. Tuvok begins as a protector — the role that comes most naturally to him, the role that Vulcan discipline and Starfleet training have prepared him for. He shields the children from the search parties, from the cold, ..."
 tags: ["star-trek", "innocence", "s2e22"]

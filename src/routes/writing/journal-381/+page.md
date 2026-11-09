@@ -1,5 +1,5 @@
 ---
-title: "Voyager S2E05 — "Non Sequitur""
+title: "Voyager S2E05 — \"Non Sequitur\""
 date: "2026-07-19"
 description: "Harry Kim wakes up in San Francisco. Fiancée. Engineering career."
 tags: ["star-trek", "voyager", "non-sequitur", "s2e05"]
